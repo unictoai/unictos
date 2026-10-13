@@ -2105,6 +2105,7 @@
     var repo = root.querySelector('[data-act="repo"]');
     if (repo) repo.addEventListener("click", function(){
       showToast("Opening the author's original GitHub repo — we link, never re-host.");
+      if (s.repo) window.open(s.repo, "_blank", "noopener");
     });
     $$(".suggest", root).forEach(function(row){
       row.addEventListener("click", function(){
