@@ -6538,6 +6538,439 @@
         "summary": "Reviewed webhook-setup docs. Signature verification is documented. The risk is in the use case (email-triggered automation), not the skill's code."
       },
       "type": "skill"
+    },
+    {
+      "slug": "cmd-smart-debug",
+      "name": "/smart-debug",
+      "tagline": "AI-assisted debugging from errors and stack traces",
+      "description": "Slash command that parses error messages, stack traces, and failure patterns to identify root causes and produce fixes.",
+      "author": "wshobson",
+      "repo": "https://github.com/wshobson/agents",
+      "type": "command",
+      "category": "code",
+      "license": "MIT",
+      "path": "plugins/debugging-toolkit/commands/smart-debug.md",
+      "pinned_sha": "46891e7e60da0e52baf1050b7b6391b64e84c6d9",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Debug a crash",
+        "Understand a stack trace"
+      ],
+      "install_hint": "Copy smart-debug.md into your ~/.claude/commands/ folder, then type /smart-debug.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 92,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan completed. Human review: prompt-only markdown, no executable code, no prompt-injection patterns."
+        ],
+        "report": "reports/cmd-smart-debug.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan reviewed. Human-checked the full prompt: legitimate assistant instructions."
+      }
+    },
+    {
+      "slug": "cmd-refactor-clean",
+      "name": "/refactor-clean",
+      "tagline": "Refactor for cleanliness and SOLID principles",
+      "description": "Slash command that refactors code for cleanliness, maintainability, and SOLID alignment without over-engineering.",
+      "author": "wshobson",
+      "repo": "https://github.com/wshobson/agents",
+      "type": "command",
+      "category": "code",
+      "license": "MIT",
+      "path": "plugins/code-refactoring/commands/refactor-clean.md",
+      "pinned_sha": "46891e7e60da0e52baf1050b7b6391b64e84c6d9",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Clean up a messy module",
+        "Apply SOLID refactoring"
+      ],
+      "install_hint": "Copy refactor-clean.md into your ~/.claude/commands/ folder, then type /refactor-clean.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 90,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan completed. Human review: prompt-only markdown, no executable code, no prompt-injection patterns."
+        ],
+        "report": "reports/cmd-refactor-clean.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan reviewed. Human-checked the full prompt: legitimate assistant instructions."
+      }
+    },
+    {
+      "slug": "cmd-tech-debt",
+      "name": "/tech-debt",
+      "tagline": "Inventory and prioritize technical debt",
+      "description": "Slash command that inventories technical debt items, scores them by impact, and produces a prioritized remediation plan with effort estimates.",
+      "author": "wshobson",
+      "repo": "https://github.com/wshobson/agents",
+      "type": "command",
+      "category": "code",
+      "license": "MIT",
+      "path": "plugins/code-refactoring/commands/tech-debt.md",
+      "pinned_sha": "46891e7e60da0e52baf1050b7b6391b64e84c6d9",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Audit tech debt",
+        "Plan remediation"
+      ],
+      "install_hint": "Copy tech-debt.md into your ~/.claude/commands/ folder, then type /tech-debt.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 89,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan completed. Human review: prompt-only markdown, no executable code, no prompt-injection patterns."
+        ],
+        "report": "reports/cmd-tech-debt.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan reviewed. Human-checked the full prompt: legitimate assistant instructions."
+      }
+    },
+    {
+      "slug": "cmd-doc-generate",
+      "name": "/doc-generate",
+      "tagline": "Generate API and architecture documentation",
+      "description": "Slash command that generates API, architecture, code, and user documentation from your codebase and keeps it current.",
+      "author": "wshobson",
+      "repo": "https://github.com/wshobson/agents",
+      "type": "command",
+      "category": "code",
+      "license": "MIT",
+      "path": "plugins/documentation-generation/commands/doc-generate.md",
+      "pinned_sha": "46891e7e60da0e52baf1050b7b6391b64e84c6d9",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Document an API",
+        "Generate architecture docs"
+      ],
+      "install_hint": "Copy doc-generate.md into your ~/.claude/commands/ folder, then type /doc-generate.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 88,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan completed. Human review: prompt-only markdown, no executable code, no prompt-injection patterns."
+        ],
+        "report": "reports/cmd-doc-generate.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan reviewed. Human-checked the full prompt: legitimate assistant instructions."
+      }
+    },
+    {
+      "slug": "cmd-full-review",
+      "name": "/full-review",
+      "tagline": "Multi-dimensional code review across 5 axes",
+      "description": "Slash command that orchestrates comprehensive code review across architecture, security, performance, testing, and best practices. Supports --security-focus and --strict-mode flags.",
+      "author": "wshobson",
+      "repo": "https://github.com/wshobson/agents",
+      "type": "command",
+      "category": "code",
+      "license": "MIT",
+      "path": "plugins/comprehensive-review/commands/full-review.md",
+      "pinned_sha": "46891e7e60da0e52baf1050b7b6391b64e84c6d9",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Full review before merging",
+        "Security-focused review"
+      ],
+      "install_hint": "Copy full-review.md into your ~/.claude/commands/ folder, then type /full-review.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 87,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan completed. Human review: prompt-only markdown, no executable code, no prompt-injection patterns."
+        ],
+        "report": "reports/cmd-full-review.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan reviewed. Human-checked the full prompt: legitimate assistant instructions."
+      }
+    },
+    {
+      "slug": "cmd-workflow-automate",
+      "name": "/workflow-automate",
+      "tagline": "Automate CI/CD pipelines and releases",
+      "description": "Slash command that automates CI/CD pipelines, releases, and dev workflows with GitHub Actions and pre-commit hooks.",
+      "author": "wshobson",
+      "repo": "https://github.com/wshobson/agents",
+      "type": "command",
+      "category": "devops",
+      "license": "MIT",
+      "path": "plugins/cicd-automation/commands/workflow-automate.md",
+      "pinned_sha": "46891e7e60da0e52baf1050b7b6391b64e84c6d9",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Set up CI/CD",
+        "Automate releases"
+      ],
+      "install_hint": "Copy workflow-automate.md into your ~/.claude/commands/ folder, then type /workflow-automate.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 82,
+        "verdict": "verified-with-notes",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan completed. Human review: prompt-only markdown, no executable code, no prompt-injection patterns.",
+          "11 scanner flags reviewed: all document legitimate CI/CD practices (env-file setup helpers, GitHub Actions patterns). No malicious instructions."
+        ],
+        "report": "reports/cmd-workflow-automate.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan reviewed. Human-checked the full prompt: legitimate assistant instructions."
+      }
+    },
+    {
+      "slug": "cmd-sql-migrations",
+      "name": "/sql-migrations",
+      "tagline": "Zero-downtime SQL migrations",
+      "description": "Slash command for SQL database migrations with zero-downtime strategies for PostgreSQL, MySQL, and SQL Server.",
+      "author": "wshobson",
+      "repo": "https://github.com/wshobson/agents",
+      "type": "command",
+      "category": "data",
+      "license": "MIT",
+      "path": "plugins/database-migrations/commands/sql-migrations.md",
+      "pinned_sha": "46891e7e60da0e52baf1050b7b6391b64e84c6d9",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Plan a migration",
+        "Zero-downtime schema change"
+      ],
+      "install_hint": "Copy sql-migrations.md into your ~/.claude/commands/ folder, then type /sql-migrations.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 91,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan completed. Human review: prompt-only markdown, no executable code, no prompt-injection patterns."
+        ],
+        "report": "reports/cmd-sql-migrations.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan reviewed. Human-checked the full prompt: legitimate assistant instructions."
+      }
+    },
+    {
+      "slug": "cmd-deps-audit",
+      "name": "/deps-audit",
+      "tagline": "Audit dependencies for vulns and license risks",
+      "description": "Slash command that audits project dependencies for vulnerabilities, outdated packages, license conflicts, and supply-chain risks with remediation strategies.",
+      "author": "wshobson",
+      "repo": "https://github.com/wshobson/agents",
+      "type": "command",
+      "category": "security",
+      "license": "MIT",
+      "path": "plugins/codebase-cleanup/commands/deps-audit.md",
+      "pinned_sha": "46891e7e60da0e52baf1050b7b6391b64e84c6d9",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Audit dependencies",
+        "Check licenses"
+      ],
+      "install_hint": "Copy deps-audit.md into your ~/.claude/commands/ folder, then type /deps-audit.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 89,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan completed. Human review: prompt-only markdown, no executable code, no prompt-injection patterns."
+        ],
+        "report": "reports/cmd-deps-audit.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan reviewed. Human-checked the full prompt: legitimate assistant instructions."
+      }
     }
   ],
   "version": 1
