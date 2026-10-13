@@ -1660,6 +1660,13 @@
 
   /* ---------------- helpers ---------------- */
   var $ = function(s, el){ return (el||document).querySelector(s); };
+  /* temporary on-screen error reporter for debugging blank pages */
+  window.addEventListener("error", function(e){
+    var d = document.createElement("div");
+    d.style.cssText = "position:fixed;top:8px;left:8px;right:8px;z-index:99999;background:#7a1f1f;color:#fff;font:12px monospace;padding:10px;border-radius:8px;word-break:break-all";
+    d.textContent = "JS ERROR: " + (e.message || e.type) + " @ " + (e.lineno || "?");
+    document.body.appendChild(d);
+  });
   var $$ = function(s, el){ return Array.prototype.slice.call((el||document).querySelectorAll(s)); };
 
   var HUES = [74, 96, 152, 187, 210, 258, 318, 16, 36, 128];
