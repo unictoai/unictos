@@ -116,6 +116,13 @@
   .wrap{max-width:1240px;margin:0 auto;padding:0 20px 96px}
   @media (max-width:760px){.wrap{padding:0 14px 110px}}
 
+  /* ---------- hero MCP strip ---------- */
+  .hero-mcp{flex:1 1 100%;display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:rgba(205,241,77,.06);border:1px solid rgba(205,241,77,.22);border-radius:14px;padding:11px 14px}
+  .hero-mcp-tag{font-size:10.5px;font-weight:800;letter-spacing:.1em;background:var(--brand);color:#0A0A0A;border-radius:7px;padding:3px 8px;flex-shrink:0}
+  .hero-mcp-text{font-size:13.5px;color:var(--text-2)}
+  .hero-mcp-text a{color:var(--brand);font-weight:700;text-decoration:none}
+  .hero-mcp code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:#D8F7A0;background:rgba(0,0,0,.45);border:1px solid var(--border-soft);border-radius:8px;padding:5px 10px;white-space:nowrap;overflow-x:auto;max-width:100%}
+  .hero-mcp .copy-btn{margin-left:auto;flex-shrink:0}
   /* ---------- MCP promo ---------- */
   .mcp-card{background:linear-gradient(160deg,#101208,#0B0B0C 60%);border:1px solid var(--border);border-radius:22px;padding:30px 28px;overflow-wrap:break-word}
   .mcp-card .kicker{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);margin-bottom:10px}
@@ -1238,6 +1245,12 @@
       <p>unictos is the phone-first store for AI agent skills, commands and tools. Every listing is security-scanned, pinned to the exact version we checked, and re-scanned whenever its code changes. Nothing here installs silently — ever.</p>
       <div class="hero-ctas">
         <a class="btn-primary" href="#/categories">Browse the catalog</a>
+        <div class="hero-mcp">
+          <span class="hero-mcp-tag">MCP</span>
+          <span class="hero-mcp-text">Use unictos inside your agent — <a href="#mcpHome" id="mcpLearn">learn more</a></span>
+          <code id="heroMcpCmd">npx -y unictos-mcp</code>
+          <button class="copy-btn" type="button" id="heroMcpCopy">Copy</button>
+        </div>
         <a class="btn-ghost" href="#/verify">How verification works</a>
       </div>
       <div class="hero-stats">
@@ -2334,6 +2347,16 @@
   }
   window.addEventListener("hashchange", route);
 
+  var heroMcpCopy = $("#heroMcpCopy");
+  if (heroMcpCopy) heroMcpCopy.addEventListener("click", function(){
+    copyText($("#heroMcpCmd").textContent.trim(), "MCP command copied — paste it in your terminal.");
+  });
+  var mcpLearn = $("#mcpLearn");
+  if (mcpLearn) mcpLearn.addEventListener("click", function(e){
+    e.preventDefault();
+    var t = $("#mcpHome");
+    if (t) t.scrollIntoView({behavior:"smooth", block:"start"});
+  });
   var mcpCopy = $("#mcpCopy");
   if (mcpCopy) mcpCopy.addEventListener("click", function(){
     copyText($("#mcpCmd").textContent.trim(), "MCP install command copied.");
