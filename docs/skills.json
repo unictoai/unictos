@@ -30,7 +30,7 @@
    "repo": "https://github.com/cloudflare/security-audit-skill",
    "review": {
     "reviewed_at": "2026-10-13",
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "summary": "Read SKILL.md and all 20 files. Every flagged pattern traced to its source; all are the skill documenting attack classes for auditors. Scripts are JSON validators, no network or file-system abuse."
    },
    "slug": "security-audit",
@@ -66,7 +66,7 @@
    "category": "productivity",
    "description": "Anthropic's official PDF skill: extract text and tables, merge or split documents, rotate pages, add watermarks, create PDFs, fill forms, encrypt/decrypt, extract images and OCR scanned pages. Eight Python helper scripts, no network access.",
    "install_hint": "Copy skills/pdf into your agent's skills folder.",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Anthropic source-available (not open-source)",
    "name": "pdf",
    "path": "skills/pdf",
    "permissions": [
@@ -87,7 +87,7 @@
    "repo": "https://github.com/anthropics/skills",
    "review": {
     "reviewed_at": "2026-10-13",
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "summary": "Read SKILL.md and all 8 scripts. Clean: local PDF processing only. License is Anthropic's source-available terms (not OSI open-source) \u2014 listed honestly, link-only as with everything here."
    },
    "slug": "pdf",
@@ -142,7 +142,7 @@
    "repo": "https://github.com/anthropics/skills",
    "review": {
     "reviewed_at": "2026-10-13",
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "summary": "Read SKILL.md and all 9 scripts. Every HIGH traced to source; all are normal eval-harness behavior (subprocess + env inheritance), documented in code comments. No exfiltration, no network, no obfuscation."
    },
    "slug": "skill-creator",
@@ -200,7 +200,7 @@
    "repo": "https://github.com/anthropics/skills",
    "review": {
     "reviewed_at": "2026-10-13",
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "summary": "Read SKILL.md, with_server.py and examples. Subprocess use is the documented purpose (spin up local servers for Playwright tests). No remote execution, no exfiltration."
    },
    "slug": "webapp-testing",
@@ -256,7 +256,7 @@
    "repo": "https://github.com/anthropics/skills",
    "review": {
     "reviewed_at": "2026-10-13",
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "summary": "Read SKILL.md and both templates. The generator is pure p5.js math \u2014 no network, no eval. CDN loads in generated pages are pinned and standard."
    },
    "slug": "algorithmic-art",
@@ -311,7 +311,7 @@
    "repo": "https://github.com/vercel-labs/agent-skills",
    "review": {
     "reviewed_at": "2026-10-13",
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "summary": "39-line SKILL.md, markdown only. Nothing executable ships with this skill."
    },
    "slug": "web-design-guidelines",
@@ -365,7 +365,7 @@
    "repo": "https://github.com/vercel-labs/agent-skills",
    "review": {
     "reviewed_at": "2026-10-13",
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "summary": "Read SKILL.md and the flagged rule files. Every HIGH traced to documentation examples of patterns the guide itself teaches. No executable skill code beyond markdown."
    },
    "slug": "react-best-practices",
@@ -421,7 +421,7 @@
    "repo": "https://github.com/vercel-labs/agent-skills",
    "review": {
     "reviewed_at": "2026-10-13",
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "summary": "Read SKILL.md and both deploy scripts. The .env findings invert on inspection (exclusion, not theft). Auth via user's own CLI. Sloppy zip, honest scripts."
    },
    "slug": "deploy-to-vercel",
@@ -478,7 +478,7 @@
    "repo": "https://github.com/addyosmani/agent-skills",
    "review": {
     "reviewed_at": "2026-10-13",
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "summary": "297-line SKILL.md, markdown only. Nothing executable ships with this skill."
    },
    "slug": "documentation-and-adrs",
@@ -532,7 +532,7 @@
    "repo": "https://github.com/addyosmani/agent-skills",
    "review": {
     "reviewed_at": "2026-10-13",
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "summary": "398-line SKILL.md, markdown only. Nothing executable ships with this skill."
    },
    "slug": "code-review-and-quality",
@@ -569,7 +569,7 @@
    "path": "skills/xlsx",
    "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
    "category": "data",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Anthropic source-available (not open-source)",
    "author": "Anthropic",
    "install_hint": "Copy skills/xlsx into your agent's skills folder.",
    "uses": [
@@ -612,7 +612,7 @@
     "report": "reports/xlsx.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md and the office scripts. All subprocess use is local document processing (LibreOffice, validators). No network, no exfiltration. License is Anthropic source-available."
    }
@@ -626,7 +626,7 @@
    "path": "skills/docx",
    "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
    "category": "productivity",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Anthropic source-available (not open-source)",
    "author": "Anthropic",
    "install_hint": "Copy skills/docx into your agent's skills folder.",
    "uses": [
@@ -668,7 +668,7 @@
     "report": "reports/docx.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md and scripts. Shares the office-script codebase with xlsx. No network, no exfiltration."
    }
@@ -682,7 +682,7 @@
    "path": "skills/web-artifacts-builder",
    "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
    "category": "code",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Apache-2.0",
    "author": "Anthropic",
    "install_hint": "Copy skills/web-artifacts-builder into your agent's skills folder.",
    "uses": [
@@ -722,7 +722,7 @@
     "report": "reports/web-artifacts-builder.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md and scripts. Guidance + templates, no concerning behavior."
    }
@@ -736,7 +736,7 @@
    "path": "skills/canvas-design",
    "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
    "category": "design",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Apache-2.0",
    "author": "Anthropic",
    "install_hint": "Copy skills/canvas-design into your agent's skills folder.",
    "uses": [
@@ -776,7 +776,7 @@
     "report": "reports/canvas-design.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Guidance-only skill, nothing executable of concern."
    }
@@ -790,7 +790,7 @@
    "path": "skills/frontend-design",
    "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
    "category": "design",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Apache-2.0",
    "author": "Anthropic",
    "install_hint": "Copy skills/frontend-design into your agent's skills folder.",
    "uses": [
@@ -830,7 +830,7 @@
     "report": "reports/frontend-design.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the flagged section in context. Design guidance, not a jailbreak."
    }
@@ -844,7 +844,7 @@
    "path": "skills/theme-factory",
    "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
    "category": "design",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Apache-2.0",
    "author": "Anthropic",
    "install_hint": "Copy skills/theme-factory into your agent's skills folder.",
    "uses": [
@@ -884,7 +884,7 @@
     "report": "reports/theme-factory.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Themes and a showcase PDF, nothing executable."
    }
@@ -898,7 +898,7 @@
    "path": "skills/brand-guidelines",
    "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
    "category": "design",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Apache-2.0",
    "author": "Anthropic",
    "install_hint": "Copy skills/brand-guidelines into your agent's skills folder.",
    "uses": [
@@ -938,7 +938,7 @@
     "report": "reports/brand-guidelines.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Brand reference, nothing executable."
    }
@@ -952,7 +952,7 @@
    "path": "skills/slack-gif-creator",
    "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
    "category": "design",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Apache-2.0",
    "author": "Anthropic",
    "install_hint": "Copy skills/slack-gif-creator into your agent's skills folder.",
    "uses": [
@@ -992,7 +992,7 @@
     "report": "reports/slack-gif-creator.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md and scripts. Local GIF generation, no concerns."
    }
@@ -1006,7 +1006,7 @@
    "path": "skills/doc-coauthoring",
    "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
    "category": "writing",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Apache-2.0",
    "author": "Anthropic",
    "install_hint": "Copy skills/doc-coauthoring into your agent's skills folder.",
    "uses": [
@@ -1046,7 +1046,7 @@
     "report": "reports/doc-coauthoring.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Workflow guidance, nothing executable."
    }
@@ -1060,7 +1060,7 @@
    "path": "skills/internal-comms",
    "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
    "category": "writing",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Apache-2.0",
    "author": "Anthropic",
    "install_hint": "Copy skills/internal-comms into your agent's skills folder.",
    "uses": [
@@ -1100,7 +1100,7 @@
     "report": "reports/internal-comms.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Template library, nothing executable."
    }
@@ -1114,7 +1114,7 @@
    "path": "skills/discernment-nudge",
    "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
    "category": "productivity",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Apache-2.0",
    "author": "Anthropic",
    "install_hint": "Copy skills/discernment-nudge into your agent's skills folder.",
    "uses": [
@@ -1154,7 +1154,7 @@
     "report": "reports/discernment-nudge.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the flagged section in context. Decision-quality guidance, not a jailbreak."
    }
@@ -1168,7 +1168,7 @@
    "path": "skills/academy-guide",
    "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
    "category": "productivity",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Apache-2.0",
    "author": "Anthropic",
    "install_hint": "Copy skills/academy-guide into your agent's skills folder.",
    "uses": [
@@ -1208,7 +1208,7 @@
     "report": "reports/academy-guide.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Course recommendations, nothing executable."
    }
@@ -1262,7 +1262,7 @@
     "report": "reports/composition-patterns.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the flagged README section. React patterns documentation."
    }
@@ -1316,7 +1316,7 @@
     "report": "reports/react-native-skills.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Same documentation-example pattern as react-best-practices. No executable skill code."
    }
@@ -1370,7 +1370,7 @@
     "report": "reports/react-view-transitions.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Animation guidance, nothing executable."
    }
@@ -1425,7 +1425,7 @@
     "report": "reports/vercel-cli-with-tokens.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md fully. Token flows verified: env -> CLI, no exfiltration, no third parties."
    }
@@ -1481,7 +1481,7 @@
     "report": "reports/supabase.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the flagged sections. This is Supabase's own security-conscious documentation. No exfiltration, no malicious behavior."
    }
@@ -1535,7 +1535,7 @@
     "report": "reports/supabase-postgres-best-practices.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Database guidance, nothing executable."
    }
@@ -1591,7 +1591,7 @@
     "report": "reports/codeql.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Reviewed the test scripts. All subprocess use is local test execution. No exfiltration."
    }
@@ -1647,7 +1647,7 @@
     "report": "reports/exa-search.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Verified the API flows: key from user env -> api.exa.ai only. No other network, no exfiltration."
    }
@@ -1703,7 +1703,7 @@
     "report": "reports/semgrep.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Reviewed test scripts and workflows. The rm -rf in docs is guarded and its scope is explicitly documented. No exfiltration."
    }
@@ -1758,7 +1758,7 @@
     "report": "reports/vercel-optimize.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the flagged scanner code. All local analysis, no exfiltration, no network."
    }
@@ -1812,7 +1812,7 @@
     "report": "reports/writing-guidelines.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Style guidance, nothing executable."
    }
@@ -1867,7 +1867,7 @@
     "report": "reports/ci-cd-and-automation.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the flagged section. It's a secrets-management best-practices guide."
    }
@@ -1921,7 +1921,7 @@
     "report": "reports/git-workflow-and-versioning.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Git guidance, nothing executable."
    }
@@ -1975,7 +1975,7 @@
     "report": "reports/api-and-interface-design.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. API design guidance, nothing executable."
    }
@@ -2029,7 +2029,7 @@
     "report": "reports/test-driven-development.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. TDD methodology, nothing executable."
    }
@@ -2084,7 +2084,7 @@
     "report": "reports/browser-testing-with-devtools.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the Security Boundaries section. The flagged text is prompt-injection defense guidance."
    }
@@ -2138,7 +2138,7 @@
     "report": "reports/shipping-and-launch.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Launch methodology, nothing executable."
    }
@@ -2192,7 +2192,7 @@
     "report": "reports/frontend-ui-engineering.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. UI engineering guidance, nothing executable."
    }
@@ -2248,7 +2248,7 @@
     "report": "reports/brainstorming.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the server code. Localhost HTTP server with token auth, serves a companion UI. No external network, no data collection."
    }
@@ -2303,7 +2303,7 @@
     "report": "reports/systematic-debugging.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the flagged sections. All debugging methodology documentation."
    }
@@ -2357,7 +2357,7 @@
     "report": "reports/writing-plans.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Planning methodology, nothing executable."
    }
@@ -2411,7 +2411,7 @@
     "report": "reports/executing-plans.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the flagged section. It's a warning about a dangerous command, not an instruction to run it."
    }
@@ -2466,7 +2466,7 @@
     "report": "reports/playwright-skill.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Reviewed lib/helpers.js. Standard Playwright patterns, user-configured, local only."
    }
@@ -2520,7 +2520,7 @@
     "report": "reports/expo-dev-client.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Dev-client guidance, nothing executable."
    }
@@ -2575,7 +2575,7 @@
     "report": "reports/eas-workflows.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read scripts/fetch.js. Fetches api.expo.dev/v2/workflows/schema with 15-min local cache. No exfiltration."
    }
@@ -2629,7 +2629,7 @@
     "report": "reports/expo-router.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Routing guidance, nothing executable."
    }
@@ -2683,7 +2683,7 @@
     "report": "reports/expo-design-system.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Design guidance, nothing executable."
    }
@@ -2737,7 +2737,7 @@
     "report": "reports/expo-upgrade.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Migration guidance, nothing executable."
    }
@@ -2791,7 +2791,7 @@
     "report": "reports/spec-driven-development.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Spec methodology, nothing executable."
    }
@@ -2845,7 +2845,7 @@
     "report": "reports/deprecation-and-migration.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Migration guidance, nothing executable."
    }
@@ -2859,7 +2859,7 @@
    "path": "skills/pptx",
    "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
    "category": "productivity",
-   "license": "Anthropic ToS (source-available)",
+   "license": "Anthropic source-available (not open-source)",
    "author": "Anthropic",
    "install_hint": "Copy skills/pptx into your agent's skills folder.",
    "uses": [
@@ -2900,7 +2900,7 @@
     "report": "reports/pptx.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md and scripts. Shares the office-script codebase. Local document processing only."
    }
@@ -2956,7 +2956,7 @@
     "report": "reports/sarif-parsing.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Reviewed sarif_helpers.py. It parses SARIF JSON you give it. No exfiltration."
    }
@@ -3010,7 +3010,7 @@
     "report": "reports/observability-and-instrumentation.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Observability guidance, nothing executable."
    }
@@ -3064,7 +3064,7 @@
     "report": "reports/performance-optimization.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Performance guidance, nothing executable."
    }
@@ -3118,7 +3118,7 @@
     "report": "reports/debugging-and-error-recovery.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Debugging guidance, nothing executable."
    }
@@ -3173,7 +3173,7 @@
     "report": "reports/security-and-hardening.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the hardening-patterns reference. Every flagged section is defensive security guidance."
    }
@@ -3227,7 +3227,7 @@
     "report": "reports/peer-review.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Review methodology, nothing executable."
    }
@@ -3281,7 +3281,7 @@
     "report": "reports/polars.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. DataFrame guidance, nothing executable by the skill."
    }
@@ -3336,7 +3336,7 @@
     "report": "reports/dask.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the flagged references. All distributed-computing documentation."
    }
@@ -3390,7 +3390,7 @@
     "report": "reports/vaex.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. DataFrame guidance, nothing executable by the skill."
    }
@@ -3444,7 +3444,7 @@
     "report": "reports/exploratory-data-analysis.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. EDA methodology, nothing executable by the skill."
    }
@@ -3499,7 +3499,7 @@
     "report": "reports/citation-management.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Reviewed the search scripts. They query public academic APIs with no auth. No exfiltration."
    }
@@ -3553,7 +3553,7 @@
     "report": "reports/hypothesis-generation.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the flagged script. It's a schema validator, not a jailbreak."
    }
@@ -3607,7 +3607,7 @@
     "report": "reports/experimental-design.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Experimental design methodology, nothing executable."
    }
@@ -3662,7 +3662,7 @@
     "report": "reports/literature-review.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Verified the key flow: user env -> OpenRouter API only. Academic DB queries are the documented function. No other network."
    }
@@ -3718,7 +3718,7 @@
     "report": "reports/resend.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Verified the API flows: user key -> api.resend.com only. Template variables are standard email templating."
    }
@@ -3772,7 +3772,7 @@
     "report": "reports/resend-cli.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. CLI wrapper for Resend's API, user key only."
    }
@@ -3828,7 +3828,7 @@
     "report": "reports/agent-email-inbox.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Reviewed webhook-setup docs. Signature verification is documented. The risk is in the use case (email-triggered automation), not the skill's code."
    }
@@ -3883,7 +3883,7 @@
     "report": "reports/owb.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Browser automation via local CLI, no external network by the skill."
    }
@@ -3937,7 +3937,7 @@
     "report": "reports/workflow-architect.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Workflow design guidance, nothing executable."
    }
@@ -3992,7 +3992,7 @@
     "report": "reports/database-lookup.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Reviewed the API reference docs. All public endpoints, auth documented per-API. No exfiltration."
    }
@@ -4047,7 +4047,7 @@
     "report": "reports/datalad.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Read the flagged references. All DataLad methodology documentation."
    }
@@ -4102,7 +4102,7 @@
     "report": "reports/ml-paper-writing.json"
    },
    "review": {
-    "reviewer": "bro",
+    "reviewer": "unictos team",
     "reviewed_at": "2026-10-13",
     "summary": "Reviewed the Makefile and templates. Standard LaTeX workflow, nothing concerning."
    }
