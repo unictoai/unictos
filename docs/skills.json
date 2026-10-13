@@ -2196,6 +2196,334 @@
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. UI engineering guidance, nothing executable."
    }
+  },
+  {
+   "slug": "brainstorming",
+   "name": "brainstorming",
+   "tagline": "A Socratic brainstorming partner that asks before it builds",
+   "description": "obra's brainstorming: a Socratic brainstorming partner \u2014 asks what you actually know before replying, challenges vague requests. Ships an optional localhost companion UI.",
+   "repo": "https://github.com/obra/superpowers",
+   "path": "skills/brainstorming",
+   "pinned_sha": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+   "category": "productivity",
+   "license": "MIT",
+   "author": "obra",
+   "install_hint": "Copy skills/brainstorming into your agent's skills folder.",
+   "uses": [
+    "Brainstorm an idea properly",
+    "Pressure-test a vague request",
+    "Think before building"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Optional: runs a localhost web server for the companion UI"
+    ],
+    [
+     "ok",
+     "Server is localhost-only with token auth"
+    ],
+    [
+     "ok",
+     "No network calls"
+    ]
+   ],
+   "uniscan": {
+    "score": 85,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 2,
+     "medium": 6,
+     "low": 0
+    },
+    "notes": [
+     "8 findings, all reviewed. 'Hidden Instructions' flags are on HTML template strings in the companion-UI server code \u2014 templates, not hidden prompts.",
+     "'Session Persistence' is the localhost server staying up during the brainstorming session. 'Tool Parameter Abuse' is on the stop-server script.",
+     "The server is a legitimate interactive pattern: localhost-only, token-authenticated, user-initiated. But it IS more invasive than a markdown skill \u2014 disclosed here."
+    ],
+    "report": "reports/brainstorming.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the server code. Localhost HTTP server with token auth, serves a companion UI. No external network, no data collection."
+   }
+  },
+  {
+   "slug": "systematic-debugging",
+   "name": "systematic-debugging",
+   "tagline": "Debug by science \u2014 hypotheses, not guessing",
+   "description": "obra's systematic-debugging: a disciplined debugging methodology \u2014 form hypotheses, test them, don't guess. Includes defense-in-depth debugging layers.",
+   "repo": "https://github.com/obra/superpowers",
+   "path": "skills/systematic-debugging",
+   "pinned_sha": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+   "category": "code",
+   "license": "MIT",
+   "author": "obra",
+   "install_hint": "Copy skills/systematic-debugging into your agent's skills folder.",
+   "uses": [
+    "Debug methodically",
+    "Stop guessing at bugs",
+    "Add defense-in-depth"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 92,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 4,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "5 findings, all reviewed. 'Credential Access' flags are on documentation showing how to debug Apple code-signing (IDENTITY env var, keychain listing) \u2014 debugging guidance, not theft.",
+     "'Context Leakage' is on debug-instrumentation docs. 'Unbounded Resource Access' is on condition-based-waiting docs."
+    ],
+    "report": "reports/systematic-debugging.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged sections. All debugging methodology documentation."
+   }
+  },
+  {
+   "slug": "writing-plans",
+   "name": "writing-plans",
+   "tagline": "Write implementation plans before touching code",
+   "description": "obra's writing-plans: write a clear implementation plan before touching code \u2014 scope, steps, verification.",
+   "repo": "https://github.com/obra/superpowers",
+   "path": "skills/writing-plans",
+   "pinned_sha": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+   "category": "productivity",
+   "license": "MIT",
+   "author": "obra",
+   "install_hint": "Copy skills/writing-plans into your agent's skills folder.",
+   "uses": [
+    "Plan before coding",
+    "Scope a task properly",
+    "Write verifiable steps"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/writing-plans.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Planning methodology, nothing executable."
+   }
+  },
+  {
+   "slug": "executing-plans",
+   "name": "executing-plans",
+   "tagline": "Execute a written plan with a ledger and recovery",
+   "description": "obra's executing-plans: execute a written implementation plan with a ledger \u2014 track progress, recover from mistakes.",
+   "repo": "https://github.com/obra/superpowers",
+   "path": "skills/executing-plans",
+   "pinned_sha": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+   "category": "productivity",
+   "license": "MIT",
+   "author": "obra",
+   "install_hint": "Copy skills/executing-plans into your agent's skills folder.",
+   "uses": [
+    "Execute a plan step by step",
+    "Track implementation progress",
+    "Recover from mistakes"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 95,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "1 HIGH 'Tool Parameter Abuse' is on documentation mentioning git clean -fdx \u2014 and the docs explicitly warn it 'will destroy the workspace'. The scanner flagged the warning as the threat."
+    ],
+    "report": "reports/executing-plans.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged section. It's a warning about a dangerous command, not an instruction to run it."
+   }
+  },
+  {
+   "slug": "playwright-skill",
+   "name": "playwright-skill",
+   "tagline": "Complete browser automation with Playwright",
+   "description": "lackeyjb's playwright-skill: complete browser automation with Playwright \u2014 reusable test scripts, screenshots, responsive checks, login flows. Ships a helper library.",
+   "repo": "https://github.com/lackeyjb/playwright-skill",
+   "path": "skills/playwright-skill",
+   "pinned_sha": "dd47a6a023e249eb1b36e9e943eab89d0900865d",
+   "category": "automation",
+   "license": "MIT",
+   "author": "lackeyjb",
+   "install_hint": "Copy skills/playwright-skill into your agent's skills folder.",
+   "uses": [
+    "Automate a browser flow",
+    "Take screenshots",
+    "Test responsive layouts"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Drives a real browser (user-initiated)"
+    ],
+    [
+     "ok",
+     "Helper library reviewed"
+    ],
+    [
+     "ok",
+     "Local only"
+    ]
+   ],
+   "uniscan": {
+    "score": 90,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 3,
+     "medium": 13,
+     "low": 0
+    },
+    "notes": [
+     "16 findings, all reviewed. HIGH 'env' + 'Memory Manipulation' are on the Playwright helper library \u2014 env vars (PW_HEADER_NAME/VALUE) are user-configured HTTP headers; the 'manipulation' is object spread in context options.",
+     "13 MEDIUM are npx/docs suggestions in API_REFERENCE.md. All local browser automation, no exfiltration."
+    ],
+    "report": "reports/playwright-skill.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Reviewed lib/helpers.js. Standard Playwright patterns, user-configured, local only."
+   }
+  },
+  {
+   "slug": "expo-dev-client",
+   "name": "expo-dev-client",
+   "tagline": "Custom dev clients for Expo and React Native",
+   "description": "Expo's expo-dev-client: build custom development clients for Expo and React Native \u2014 native modules, config plugins, EAS builds.",
+   "repo": "https://github.com/expo/skills",
+   "path": "plugins/expo/skills/expo-dev-client",
+   "pinned_sha": "d4f484024fec15196bfd3c272e953e3f983972cf",
+   "category": "code",
+   "license": "MIT",
+   "author": "Expo",
+   "install_hint": "Copy plugins/expo/skills/expo-dev-client into your agent's skills folder.",
+   "uses": [
+    "Build a custom dev client",
+    "Add native modules to Expo",
+    "Configure EAS builds"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Reads code you share"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 97,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 2,
+     "low": 0
+    },
+    "notes": [
+     "2 MEDIUM are unpinned npx suggestions in docs, not executed by the skill."
+    ],
+    "report": "reports/expo-dev-client.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Dev-client guidance, nothing executable."
+   }
   }
  ],
  "version": 1
