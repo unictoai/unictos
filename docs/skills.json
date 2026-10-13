@@ -3448,6 +3448,224 @@
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. EDA methodology, nothing executable by the skill."
    }
+  },
+  {
+   "slug": "citation-management",
+   "name": "citation-management",
+   "tagline": "Multi-database citation discovery and BibTeX generation",
+   "description": "K-Dense-AI's citation-management: discover citations across OpenAlex, PubMed and Scholar \u2014 metadata extraction, dedup, BibTeX generation. Ships search and validation scripts.",
+   "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "path": "skills/citation-management",
+   "pinned_sha": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+   "category": "research",
+   "license": "MIT",
+   "author": "K-Dense-AI",
+   "install_hint": "Copy skills/citation-management into your agent's skills folder.",
+   "uses": [
+    "Find citations for a paper",
+    "Generate a BibTeX file",
+    "Validate citation metadata"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Queries OpenAlex/PubMed/Scholar APIs (its purpose)"
+    ],
+    [
+     "ok",
+     "Scripts reviewed"
+    ],
+    [
+     "ok",
+     "No API keys needed"
+    ]
+   ],
+   "uniscan": {
+    "score": 88,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 7,
+     "medium": 19,
+     "low": 0
+    },
+    "notes": [
+     "26 findings, all reviewed. 'External Transmission' flags are the skill's API calls to OpenAlex, PubMed and Google Scholar \u2014 citation discovery is its entire purpose.",
+     "Dynamic __import__ calls are a plugin/loader pattern in the search scripts. 'Anti-Refusal' is on a LaTeX checklist ('PDF renders correctly'). 'env' is standard config loading."
+    ],
+    "report": "reports/citation-management.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Reviewed the search scripts. They query public academic APIs with no auth. No exfiltration."
+   }
+  },
+  {
+   "slug": "hypothesis-generation",
+   "name": "hypothesis-generation",
+   "tagline": "Evidence-bounded hypotheses with rival explanations",
+   "description": "K-Dense-AI's hypothesis-generation: formulate evidence-bounded hypotheses \u2014 rival explanations, discriminating predictions, preregistration-ready plans.",
+   "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "path": "skills/hypothesis-generation",
+   "pinned_sha": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+   "category": "research",
+   "license": "MIT",
+   "author": "K-Dense-AI",
+   "install_hint": "Copy skills/hypothesis-generation into your agent's skills folder.",
+   "uses": [
+    "Formulate a hypothesis",
+    "Generate rival explanations",
+    "Plan a preregistration"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance + validator script"
+    ],
+    [
+     "ok",
+     "No network access"
+    ],
+    [
+     "ok",
+     "No data collection"
+    ]
+   ],
+   "uniscan": {
+    "score": 95,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 2,
+     "medium": 2,
+     "low": 0
+    },
+    "notes": [
+     "4 findings, all false positives. 'Anti-Refusal' is on a validator script docstring ('Validate a structured hypothesis record without judging scientific merit')."
+    ],
+    "report": "reports/hypothesis-generation.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged script. It's a schema validator, not a jailbreak."
+   }
+  },
+  {
+   "slug": "experimental-design",
+   "name": "experimental-design",
+   "tagline": "Design experiments before collecting data",
+   "description": "K-Dense-AI's experimental-design: design experiments before data collection \u2014 randomization, blocking, DOE matrices, and a catalog of study-ruining mistakes.",
+   "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "path": "skills/experimental-design",
+   "pinned_sha": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+   "category": "research",
+   "license": "MIT",
+   "author": "K-Dense-AI",
+   "install_hint": "Copy skills/experimental-design into your agent's skills folder.",
+   "uses": [
+    "Design an experiment",
+    "Choose randomization strategy",
+    "Avoid study-ruining mistakes"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/experimental-design.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Experimental design methodology, nothing executable."
+   }
+  },
+  {
+   "slug": "literature-review",
+   "name": "literature-review",
+   "tagline": "Systematic literature reviews via PubMed, arXiv, Semantic Scholar",
+   "description": "K-Dense-AI's literature-review: systematic, scoping and narrative literature reviews via PubMed, arXiv, bioRxiv and Semantic Scholar \u2014 PRISMA reporting, citation verification, PDF generation.",
+   "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "path": "skills/literature-review",
+   "pinned_sha": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+   "category": "research",
+   "license": "MIT",
+   "author": "K-Dense-AI",
+   "install_hint": "Copy skills/literature-review into your agent's skills folder.",
+   "uses": [
+    "Run a systematic review",
+    "Search PubMed and arXiv",
+    "Verify citations"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Optional AI schematics need your OpenRouter API key"
+    ],
+    [
+     "warn",
+     "Queries academic database APIs (its purpose)"
+    ],
+    [
+     "ok",
+     "Key stays in your environment"
+    ]
+   ],
+   "uniscan": {
+    "score": 86,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 14,
+     "medium": 13,
+     "low": 0
+    },
+    "notes": [
+     "27 findings, all reviewed. 12 'Credential Access' flags are on the schematic generator resolving your OPENROUTER_API_KEY (env/.env/CLI) to call OpenRouter's API for AI-generated diagrams \u2014 documented, user key, sent only to OpenRouter.",
+     "'External Transmission' flags are queries to PubMed/arXiv/Semantic Scholar \u2014 the skill's purpose. Subprocess calls generate PDFs locally."
+    ],
+    "report": "reports/literature-review.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Verified the key flow: user env -> OpenRouter API only. Academic DB queries are the documented function. No other network."
+   }
   }
  ],
  "version": 1
