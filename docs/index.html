@@ -1603,6 +1603,7 @@
     {id:"writing",  label:"Writing", blurb:"Draft, polish and format words — prompts, posts, docs and meta."},
     {id:"data",     label:"Data", blurb:"Query, clean and explain datasets, spreadsheets and documents."},
     {id:"devops",   label:"DevOps", blurb:"Deploy, test and ship — the pipeline skills."},
+    {id:"testing",  label:"Testing", blurb:"Unit, end-to-end, API and accessibility testing."},
     {id:"automation",label:"Automation", blurb:"Schedules, scrapers and the glue between your tools."},
     {id:"design",   label:"Design", blurb:"Interfaces, palettes and brand assets with an eye for detail."},
     {id:"productivity",label:"Productivity", blurb:"Meetings, inboxes and changelogs — the daily admin, handled."},
@@ -1677,7 +1678,7 @@
   function slugOf(s){ return s.slug || s.name.toLowerCase().replace(/[^a-z0-9]+/g,"-"); }
   function bySlug(slug){ var m = SKILLS.filter(function(x){ return slugOf(x)===slug; }); return m[0] || null; }
   function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
-  function installCmd(s){ return s.repo+"/tree/"+s.fullsha+"/"+s.path; }
+  function installCmd(s){ return s.repo+"/tree/"+s.fullsha+(s.path?"/"+s.path:""); }
 
   var ICON_CHECK = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
   var ICON_SHIELD = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.6 8-10V5l-8-3-8 3v7c0 6.4 8 10 8 10z"/><path d="m9 11.5 2 2 4-4.5"/></svg>';
