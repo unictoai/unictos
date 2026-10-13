@@ -1,5 +1,5 @@
 /* unictos PWA service worker: network-first for pages (always fresh), cache-first for icons, offline fallback */
-var CACHE = "unictos-v5";
+var CACHE = "unictos-v6";
 var ASSETS = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png"];
 
 self.addEventListener("install", function(e){
@@ -21,8 +21,7 @@ self.addEventListener("fetch", function(e){
   if (req.mode === "navigate" || req.destination === "document" || url.pathname.endsWith("skills.json")){
     e.respondWith(
       fetch(req).then(function(res){
-        var copy = res.clone();
-        caches.open(CACHE).then(function(c){ c.put(req, copy); });
+        if(res.ok){ var copy = res.clone(); caches.open(CACHE).then(function(c){ c.put(req, copy); }); }
         return res;
       }).catch(function(){ return caches.match(req, { ignoreSearch: true }); })
     );
