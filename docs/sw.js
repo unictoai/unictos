@@ -1,5 +1,5 @@
 /* unictos PWA service worker — app-shell cache, network fallback, offline page */
-var CACHE = "unictos-v1";
+var CACHE = "unictos-v2";
 var ASSETS = [
   "./",
   "index.html",
