@@ -208,15 +208,6 @@
     scrollbar-width:none;-webkit-overflow-scrolling:touch;
   }
   .coll-rail::-webkit-scrollbar{display:none}
-  .coll-card{
-    scroll-snap-align:start;text-align:left;background:var(--surface);
-    border:1px solid var(--border-soft);border-radius:18px;padding:16px 16px 14px;
-    color:var(--text);cursor:pointer;transition:background 180ms ease,border-color 180ms ease;
-  }
-  .coll-card:hover{background:#111;border-color:var(--border)}
-  .coll-card b{display:block;font-size:15px;font-weight:800;letter-spacing:-.01em;margin-bottom:4px}
-  .coll-card p{font-size:12.5px;color:var(--text-3);margin:0 0 10px;line-height:1.5}
-  .coll-card span{font-size:12px;color:#CDF14D;font-weight:700}
   /* freshness + token-cost signal line */
   .fdot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#CDF14D;margin-right:7px}
   .sig-line{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:12.5px;color:var(--text-3)}
@@ -544,6 +535,7 @@
   }
   .repo-btn:active{transform:scale(.97)}
   .precheck{margin:12px 0 0;font-size:12px;color:var(--text-3);line-height:1.55}
+  .install-hint{margin:10px 0 0;font-size:12.5px;color:var(--text-2);line-height:1.55}
 
   /* what it's used for + suggestions */
   .use-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
@@ -1178,14 +1170,7 @@
   .cat-tile b,.suggest .sg-name{color:var(--text)!important}
 
   /* polish: collections, signals, library summary */
-  #catalog,#collectionsBlock{scroll-margin-top:84px}
-  .coll-card{background:linear-gradient(180deg,#0F0F11,#0A0A0B);border-radius:var(--r-lg);padding:18px 18px 16px;box-shadow:inset 0 1px 0 rgba(255,255,255,.05);display:flex;flex-direction:column;min-height:132px;transition:transform 160ms var(--ease-out),border-color 160ms ease,background 160ms ease}
-  .coll-card:hover{background:linear-gradient(180deg,#141416,#0C0C0D);border-color:var(--border)}
-  .coll-card:active{transform:scale(.98)}
-  .coll-card.on{border-color:var(--brand-line);background:linear-gradient(180deg,rgba(205,241,77,.07),#0A0A0B)}
-  .coll-card b{font-weight:600;font-size:15.5px;letter-spacing:-.02em}
-  .coll-card p{color:var(--text-3);flex:1}
-  .coll-card span{font-weight:500;font-size:12px;color:var(--brand);font-family:var(--mono);letter-spacing:-.01em}
+  #catalog{scroll-margin-top:84px}
   .sig-line{gap:8px;margin-top:14px}
   .sig-line>span{display:inline-flex;align-items:center;padding:6px 11px;border-radius:9px;background:rgba(255,255,255,.03);border:1px solid var(--border-soft);font-size:12px;color:var(--text-2)}
   .fdot{box-shadow:0 0 0 3px rgba(205,241,77,.15)}
@@ -1231,7 +1216,7 @@
         <a class="btn-ghost" href="#/verify">How verification works</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><b>24</b><span>demo skills, 100 at launch</span></div>
+        <div class="stat"><b id="statCount">–</b><span>verified skills</span></div>
         <div class="stat"><b><em>100%</em></b><span>scanned before publishing</span></div>
         <div class="stat"><b>0</b><span>silent installs, ever</span></div>
       </div>
@@ -1242,18 +1227,11 @@
     <section class="block rise rise-d2" id="featuredBlock">
       <div class="sec-head">
         <div><span class="kicker">Editor’s selection</span><h2>Featured &amp; verified</h2></div>
-        <span class="demo-note">Demo catalog — sample listings</span>
+        <span class="demo-note">Every listing scanned + human-reviewed</span>
       </div>
       <div class="rail" id="rail"></div>
     </section>
 
-    <section class="block" id="collectionsBlock">
-      <div class="sec-head">
-        <div><span class="kicker">Start from the job</span><h2>I want to…</h2></div>
-        <span class="sub">hand-picked bundles</span>
-      </div>
-      <div class="coll-rail" id="collRail"></div>
-    </section>
 
     <section class="block" id="catalog">
       <div class="sec-head">
@@ -1464,7 +1442,7 @@
         <label class="checkrow"><input type="checkbox" id="inAgree" /> I understand my skill will be statically scanned, the report published on its listing, and installs pinned to the scanned commit.</label>
         <div class="field" id="f-agree"><div class="err">Please confirm you understand the scan-and-pin process.</div></div>
         <button class="btn-primary" type="submit" style="width:100%;text-align:center">Submit for scanning</button>
-        <p class="precheck" style="margin-top:14px">Demo form — nothing is sent anywhere. At launch this queues a real SkillSpector scan and emails you the report.</p>
+        <p class="precheck" style="margin-top:14px">Submitting opens a pre-filled GitHub issue in our public queue. Uniscan picks it up from there: the repo is scanned at a pinned commit, the report is posted on the issue, and a human reviews it before anything is listed.</p>
       </form>
       <div class="submit-result" id="submitResult" aria-live="polite">
         <h3 id="srTitle">Queued for scanning</h3>
@@ -1521,7 +1499,7 @@
       </div>
     </div>
     <div class="foot-base">
-      <p>Demo build — catalog data is illustrative sample data; the launch catalog is 100 hand-curated skills. unictos links to authors’ original repos and never re-hosts their code.</p>
+      <p>Every listing is scanned by Uniscan and reviewed by a human before it appears here. unictos links to authors’ original repos and never re-hosts their code.</p>
       <p>© 2026 unictos</p>
     </div>
   </footer>
@@ -1578,13 +1556,14 @@
 (function(){
   "use strict";
 
-  /* ---------------- demo catalog data (illustrative) ---------------- */
+  /* ---------------- catalog helpers ---------------- */
   var CATS = [
     {id:"all",      label:"All"},
     {id:"code",     label:"Code & Dev", blurb:"Skills that read, write, review and test code alongside your agent."},
     {id:"research", label:"Research", blurb:"Gather, cross-check and cite information from many sources at once."},
     {id:"writing",  label:"Writing", blurb:"Draft, polish and format words — prompts, posts, docs and meta."},
     {id:"data",     label:"Data", blurb:"Query, clean and explain datasets, spreadsheets and documents."},
+    {id:"devops",   label:"DevOps", blurb:"Deploy, test and ship — the pipeline skills."},
     {id:"automation",label:"Automation", blurb:"Schedules, scrapers and the glue between your tools."},
     {id:"design",   label:"Design", blurb:"Interfaces, palettes and brand assets with an eye for detail."},
     {id:"productivity",label:"Productivity", blurb:"Meetings, inboxes and changelogs — the daily admin, handled."},
@@ -1592,106 +1571,9 @@
   ];
   function catLabel(id){ var c = CATS.filter(function(x){return x.id===id;})[0]; return c ? c.label : id; }
 
-  var SKILLS = [
-    {name:"Code Review Pro", author:"sarahchen-dev", cat:"code", score:96, rating:4.9, worked:412, isNew:false, staff:false, license:"MIT",
-     tag:"Catches bugs, security smells and style drift before they merge",
-     desc:"A senior-engineer pass over any diff: correctness, race conditions, injection risks and dead code, explained in plain language with suggested fixes ranked by severity.",
-     uses:["Review a pull request before it merges","Audit a feature branch for security smells","Explain a tricky diff to a teammate in plain words"], perms:[["ok","No network access"],["ok","Reads only the files you point it at"],["warn","Bundles one helper script (scanned, pinned)"]], scanned:"Oct 11, 2026", sha:"9f3ac21", version:"2.4.1"},
-    {name:"Git Commit Writer", author:"devops-daily", cat:"code", score:94, rating:4.8, worked:388, isNew:false, staff:false, license:"MIT",
-     tag:"Turns a messy diff into a clean, conventional commit message",
-     desc:"Reads your staged changes and writes conventional-commit messages that actually describe why the change exists — not just what moved. Supports scopes, breaking-change footers and ticket references.",
-     uses:["Write the commit after a long refactor","Split staged changes into clean, logical commits","Standardise commit history across a team"], perms:[["ok","No network access"],["ok","Reads staged git changes only"],["ok","No bundled scripts"]], scanned:"Oct 10, 2026", sha:"41bd9e0", version:"1.8.0"},
-    {name:"Deep Research Assistant", author:"labnotes", cat:"research", score:93, rating:4.9, worked:501, isNew:false, staff:true, license:"Apache-2.0",
-     tag:"Multi-source research briefs with citations you can check",
-     desc:"Plans a research question, fans out across sources, cross-checks claims and returns a brief where every statement carries a citation. Flags contradictions instead of hiding them.",
-     uses:["Brief yourself before a big decision","Compare products, tools or approaches side by side","Fact-check a draft with sources attached"], perms:[["warn","Makes network requests to fetch sources"],["ok","Stores notes only in your workspace"],["ok","No bundled scripts"]], scanned:"Oct 12, 2026", sha:"c77d0a4", version:"3.1.2"},
-    {name:"SQL Query Helper", author:"dataforge", cat:"data", score:92, rating:4.7, worked:264, isNew:true, staff:false, license:"MIT",
-     tag:"Plain-English questions in, safe read-only SQL out",
-     desc:"Translates questions into SQL against your schema, explains the query plan in words, and refuses anything that writes or deletes. Dialect-aware for Postgres, MySQL and SQLite.",
-     uses:["Answer 'how many users signed up last week?'","Debug a slow report query","Explore a database you've never seen before"], perms:[["ok","No network access"],["ok","Read-only by design — writes are refused"],["ok","No bundled scripts"]], scanned:"Oct 12, 2026", sha:"8e1b6d2", version:"1.2.0"},
-    {name:"Meeting Notes Summarizer", author:"minutely", cat:"productivity", score:95, rating:4.8, worked:447, isNew:false, staff:false, license:"MIT",
-     tag:"Transcripts in — decisions, owners and deadlines out",
-     desc:"Turns raw meeting transcripts into a tight summary: decisions made, action items with owners, open questions. Keeps quotes verbatim where the wording matters.",
-     uses:["Turn a one-hour transcript into action items","Pull the decisions out of a messy call","Prep follow-ups after a client meeting"], perms:[["ok","No network access"],["ok","Processes text you paste or attach"],["ok","No bundled scripts"]], scanned:"Oct 9, 2026", sha:"2a90f77", version:"2.0.3"},
-    {name:"UI Polish Auditor", author:"emil.k", cat:"design", score:97, rating:5.0, worked:298, isNew:false, staff:true, license:"MIT",
-     tag:"Reviews interfaces for the invisible details that feel wrong",
-     desc:"Audits easing curves, press states, transform origins and motion timing in your UI code, and returns a before/after table with the fix for each issue. Opinionated, specific, fast.",
-     uses:["Polish a settings screen before shipping","Fix animations that feel subtly 'off'","Audit press states and tap feedback"], perms:[["ok","No network access"],["ok","Reads frontend source files only"],["ok","No bundled scripts"]], scanned:"Oct 12, 2026", sha:"d51aa09", version:"1.5.1"},
-    {name:"Web Scraper Builder", author:"crawlworks", cat:"automation", score:71, rating:4.2, worked:156, isNew:false, staff:false, license:"GPL-3.0",
-     tag:"Generates polite, rate-limited scrapers for public pages",
-     desc:"Builds small scrapers that respect robots.txt, throttle themselves and cache aggressively. Powerful — which is why its network behaviour is listed in full on this page.",
-     uses:["Collect public prices into a CSV","Watch a page and note when it changes","Build a dataset from public listings"], perms:[["warn","Makes network requests to target sites"],["warn","Bundles two scripts (scanned, pinned)"],["ok","Writes output only to your workspace"]], scanned:"Oct 8, 2026", sha:"6c02be1", version:"0.9.7"},
-    {name:"Prompt Optimizer", author:"promptcraft", cat:"writing", score:90, rating:4.6, worked:233, isNew:true, staff:false, license:"MIT",
-     tag:"Rewrites vague prompts into precise, testable instructions",
-     desc:"Takes a rough prompt and returns a structured version with role, constraints, output format and examples — plus a short note on what changed and why.",
-     uses:["Fix a prompt that keeps misfiring","Turn a rough idea into a reusable prompt","Standardise prompts across a team"], perms:[["ok","No network access"],["ok","Text in, text out"],["ok","No bundled scripts"]], scanned:"Oct 11, 2026", sha:"ab44190", version:"1.1.4"},
-    {name:"Spreadsheet Analyst", author:"pivotpoint", cat:"data", score:91, rating:4.7, worked:274, isNew:false, staff:false, license:"MIT",
-     tag:"Ask questions of CSVs and spreadsheets, get answers with the math shown",
-     desc:"Loads CSV and spreadsheet files, answers questions with computed results, and shows the exact steps so you can verify every number. Charts on request.",
-     uses:["Summarise a sales CSV in seconds","Find the pattern in survey results","Check the totals before a report goes out"], perms:[["ok","No network access"],["ok","Reads files you attach"],["ok","No bundled scripts"]], scanned:"Oct 10, 2026", sha:"3f77c5d", version:"2.2.0"},
-    {name:"API Doc Generator", author:"specsmith", cat:"code", score:89, rating:4.5, worked:187, isNew:false, staff:false, license:"Apache-2.0",
-     tag:"OpenAPI specs and human docs straight from your codebase",
-     desc:"Walks routes and handlers to produce an OpenAPI spec plus readable endpoint docs with example requests and responses drawn from your own types.",
-     uses:["Document an API nobody has documented yet","Keep docs in sync after a refactor","Generate request examples from your own types"], perms:[["ok","No network access"],["ok","Reads your project files"],["ok","No bundled scripts"]], scanned:"Oct 7, 2026", sha:"77e04b3", version:"1.4.2"},
-    {name:"Brand Voice Checker", author:"tone-dept", cat:"writing", score:88, rating:4.4, worked:141, isNew:false, staff:false, license:"MIT",
-     tag:"Flags copy that drifts off your brand's voice",
-     desc:"Compares drafts against a voice profile you define and highlights lines that drift — with rewrites that keep your meaning and restore the tone.",
-     uses:["Check a landing-page draft before it ships","Review social posts before publishing","Align copy written by different people"], perms:[["ok","No network access"],["ok","Text in, text out"],["ok","No bundled scripts"]], scanned:"Oct 6, 2026", sha:"19c8de6", version:"1.0.9"},
-    {name:"Dependency Watchdog", author:"supplychain-sec", cat:"security", score:98, rating:4.9, worked:356, isNew:false, staff:true, license:"MIT",
-     tag:"Audits your dependency tree for known-bad and lookalike packages",
-     desc:"Checks lockfiles against advisory databases and typosquat patterns, explains each risk in plain words, and suggests the safest upgrade path.",
-     uses:["Audit a project before deploying","Vet a new package before adding it","Clean up an old lockfile safely"], perms:[["warn","Makes network requests to advisory databases"],["ok","Reads lockfiles only — never installs"],["ok","No bundled scripts"]], scanned:"Oct 12, 2026", sha:"e90b317", version:"2.7.0"},
-    {name:"Test Case Generator", author:"qa-guild", cat:"code", score:93, rating:4.7, worked:229, isNew:true, staff:false, license:"MIT",
-     tag:"Edge cases you'd never think of, written as runnable tests",
-     desc:"Generates unit and property-based tests aimed at boundaries: empty inputs, huge values, unicode, timezones and the branches your coverage report quietly skips.",
-     uses:["Cover edge cases before a release","Test date and timezone handling","Fill the gaps your coverage report hides"], perms:[["ok","No network access"],["ok","Writes test files to your project"],["ok","No bundled scripts"]], scanned:"Oct 11, 2026", sha:"55a1f08", version:"1.3.5"},
-    {name:"Inbox Triage", author:"zerobox", cat:"productivity", score:83, rating:4.3, worked:198, isNew:false, staff:false, license:"Apache-2.0",
-     tag:"Sorts a flooded inbox into act, reply, read, archive",
-     desc:"Drafts a triage pass over exported mail: what needs you today, what can wait, what to archive — with one-line reasons. Never sends anything itself.",
-     uses:["Clear a post-holiday inbox fast","Find the three emails that matter today","Batch-archive newsletters safely"], perms:[["ok","No network access"],["ok","Reads mail files you export"],["ok","Never sends or deletes mail"]], scanned:"Oct 5, 2026", sha:"08db4c2", version:"1.6.1"},
-    {name:"Logo Concept Explorer", author:"studiomono", cat:"design", score:80, rating:4.4, worked:173, isNew:false, staff:false, license:"MIT",
-     tag:"Structured logo directions with rationale, not random variants",
-     desc:"Runs a proper logo exploration: strategy questions first, then distinct concept families with the thinking behind each — built for choosing, not scrolling.",
-     uses:["Explore directions for a new brand","Prepare options for a client review","Escape the 'just make variants' trap"], perms:[["warn","May call an image-generation tool you configure"],["ok","No network access by default"],["ok","No bundled scripts"]], scanned:"Oct 6, 2026", sha:"b3d902a", version:"1.1.0"},
-    {name:"Regex Explainer", author:"patternlab", cat:"code", score:95, rating:4.8, worked:322, isNew:false, staff:false, license:"MIT",
-     tag:"Any regex, explained token by token — and tested",
-     desc:"Paste a regular expression and get a plain-language walkthrough, sample matches and the failure cases it will miss. Also builds regexes from described patterns.",
-     uses:["Understand a regex you inherited","Build a pattern for messy log lines","Find why a validation keeps failing"], perms:[["ok","No network access"],["ok","Text in, text out"],["ok","No bundled scripts"]], scanned:"Oct 10, 2026", sha:"47fa11c", version:"1.9.2"},
-    {name:"Citation Finder", author:"scholar-tools", cat:"research", score:79, rating:4.1, worked:118, isNew:true, staff:false, license:"MIT",
-     tag:"Finds real sources for claims and formats the citations",
-     desc:"Given a claim, hunts for primary sources that support or refute it and formats citations in APA, MLA or Chicago. Says plainly when no solid source exists.",
-     uses:["Source the claims in an article","Build a bibliography for an essay","Check a statistic before sharing it"], perms:[["warn","Makes network requests to academic indexes"],["ok","Stores nothing outside your workspace"],["ok","No bundled scripts"]], scanned:"Oct 9, 2026", sha:"90e5b44", version:"0.8.3"},
-    {name:"Release Notes Writer", author:"shipwright", cat:"productivity", score:92, rating:4.6, worked:264, isNew:false, staff:false, license:"MIT",
-     tag:"Changelogs humans actually read, from your git history",
-     desc:"Turns commits and PR titles into grouped, human release notes — features, fixes, breaking changes — in your project's voice, with the noise filtered out.",
-     uses:["Write notes for your next release","Summarise a month of commits","Turn PR titles into a readable changelog"], perms:[["ok","No network access"],["ok","Reads git history only"],["ok","No bundled scripts"]], scanned:"Oct 8, 2026", sha:"cc19a72", version:"1.7.0"},
-    {name:"Threat Model Helper", author:"supplychain-sec", cat:"security", score:96, rating:4.9, worked:240, isNew:false, staff:false, license:"Apache-2.0",
-     tag:"STRIDE-style threat models for people who aren't security teams",
-     desc:"Interviews you about your system, maps the trust boundaries and produces a prioritised threat model with mitigations sized for a small team.",
-     uses:["Threat-model a side project","Prepare for a security review","Find the trust boundaries in your app"], perms:[["ok","No network access"],["ok","Text in, text out"],["ok","No bundled scripts"]], scanned:"Oct 11, 2026", sha:"1d6e8f0", version:"2.1.0"},
-    {name:"Data Cleanup Crew", author:"tidydata", cat:"data", score:76, rating:4.2, worked:137, isNew:false, staff:false, license:"MIT",
-     tag:"Deduplicates, normalises and repairs messy datasets — with a report",
-     desc:"Cleans CSVs: duplicates, mixed date formats, stray whitespace, inconsistent casing. Every change is logged so nothing is silently altered.",
-     uses:["Merge two contact lists into one","Fix mixed date formats in a CSV","Deduplicate customer records"], perms:[["ok","No network access"],["ok","Works on copies — originals untouched"],["warn","Bundles one script (scanned, pinned)"]], scanned:"Oct 4, 2026", sha:"64f02b9", version:"1.0.6"},
-    {name:"Color Palette Builder", author:"studiomono", cat:"design", score:90, rating:4.5, worked:161, isNew:true, staff:false, license:"MIT",
-     tag:"Accessible palettes from one seed colour, with contrast scores",
-     desc:"Builds full UI palettes from a single brand colour — surfaces, text tiers, states — and checks every pairing against WCAG contrast ratios.",
-     uses:["Build a palette from one brand colour","Check contrast for accessibility","Plan dark-mode surfaces and states"], perms:[["ok","No network access"],["ok","Text in, text out"],["ok","No bundled scripts"]], scanned:"Oct 10, 2026", sha:"f0c831d", version:"1.2.2"},
-    {name:"Cron Job Explainer", author:"devops-daily", cat:"automation", score:86, rating:4.4, worked:149, isNew:false, staff:false, license:"MIT",
-     tag:"Cron expressions translated to human, with next-run previews",
-     desc:"Explains any cron expression in plain words, shows the next ten run times in your timezone, and warns about the classic traps (DST, month-end, leap years).",
-     uses:["Decode a cron string you found in a script","Check when a backup actually runs","Avoid DST and month-end surprises"], perms:[["ok","No network access"],["ok","Text in, text out"],["ok","No bundled scripts"]], scanned:"Oct 3, 2026", sha:"28b6e93", version:"1.4.0"},
-    {name:"SEO Meta Writer", author:"searchcraft", cat:"writing", score:81, rating:4.3, worked:126, isNew:false, staff:false, license:"MIT",
-     tag:"Titles and descriptions written for humans first, crawlers second",
-     desc:"Drafts meta titles, descriptions and Open Graph copy from your page content — no keyword stuffing, no clickbait, length-checked for real SERP display.",
-     uses:["Write meta for a new landing page","Refresh titles across a blog","Fix snippets that truncate in search results"], perms:[["ok","No network access"],["ok","Text in, text out"],["ok","No bundled scripts"]], scanned:"Oct 2, 2026", sha:"73d1aa5", version:"1.1.1"},
-    {name:"PDF Table Extractor", author:"docparse", cat:"data", score:89, rating:4.5, worked:203, isNew:false, staff:false, license:"Apache-2.0",
-     tag:"Pulls clean tables out of PDFs into CSV or JSON",
-     desc:"Detects tables in PDF documents and exports them as tidy CSV or JSON, flagging merged cells and low-confidence reads instead of guessing silently.",
-     uses:["Turn invoice PDFs into a spreadsheet","Extract tables from research papers","Digitise printed reports into CSV"], perms:[["ok","No network access"],["ok","Reads PDFs you attach"],["warn","Bundles one script (scanned, pinned)"]], scanned:"Oct 5, 2026", sha:"5b7de90", version:"2.0.0"}
-  ];
+  var SKILLS = []; /* real catalog loads from skills.json — see loadCatalog() */
 
-  var FEATURED = ["UI Polish Auditor","Deep Research Assistant","Dependency Watchdog","Code Review Pro","Meeting Notes Summarizer"];
+  var FEATURED = ["security-audit","pdf","code-review-and-quality","deploy-to-vercel","react-best-practices"];
 
   var FAQS = [
     {q:"What does the scan actually look for?", a:"SkillSpector statically analyses every file in the skill for malicious patterns: instructions written to manipulate your agent, obfuscated or encoded payloads, attempts to read credentials or environment secrets, destructive shell commands, and outbound network calls that don’t match what the skill claims to do. Findings are graded by severity; anything high-risk blocks the listing until the author fixes it."},
@@ -1710,21 +1592,38 @@
   var HUES = [74, 96, 152, 187, 210, 258, 318, 16, 36, 128];
   function hashStr(s){ var h=0; for(var i=0;i<s.length;i++){ h=(h*31 + s.charCodeAt(i))>>>0; } return h; }
 
-  /* freshness + token-cost signals — deterministic sample data for the demo */
-  function freshFor(s){ return hashStr(s.name+"#fresh") % 29; }            /* 0..28 days */
-  function freshText(s){ var d=freshFor(s); return d===0 ? "today" : (d===1 ? "yesterday" : d+" days ago"); }
-  function tokensFor(s){ return 400 + (hashStr(s.name+"#tok") % 8600); }   /* 400..8999 tokens */
-  function fmtTokens(n){ return n>=1000 ? (n/1000).toFixed(1)+"k" : String(n); }
+  /* ---------------- real catalog ----------------
+     skills.json is the single source of truth, produced by Uniscan
+     (see tools/uniscan.py). No made-up numbers anywhere on this page:
+     scores, scan dates, findings and pins all come from real scans. */
+  var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  function fmtDate(iso){ var d=iso.split("-"); return MONTHS[+d[1]-1]+" "+(+d[2])+", "+d[0]; }
+  function adaptSkill(s){
+    return {
+      slug: s.slug, name: s.name, author: s.author, cat: s.category,
+      score: s.uniscan.score, verdict: s.uniscan.verdict,
+      license: s.license, tag: s.tagline, desc: s.description,
+      uses: s.uses, perms: s.permissions,
+      scanned: fmtDate(s.uniscan.scanned_at),
+      sha: s.pinned_sha.slice(0,7), fullsha: s.pinned_sha,
+      repo: s.repo, path: s.path,
+      findings: s.uniscan.findings, notes: s.uniscan.notes,
+      report: s.uniscan.report, scannerVer: s.uniscan.scanner_version,
+      reviewer: s.review.reviewer, reviewedAt: fmtDate(s.review.reviewed_at),
+      reviewSummary: s.review.summary, installHint: s.install_hint,
+      isNew: false, staff: false
+    };
+  }
+  function loadCatalog(){
+    return fetch("skills.json").then(function(r){
+      if(!r.ok) throw new Error("catalog failed: "+r.status);
+      return r.json();
+    }).then(function(c){
+      SKILLS = c.skills.map(adaptSkill);
+    });
+  }
 
   /* task-first collections: "I want to…" bundles */
-  var COLLECTIONS = [
-    {t:"Ship a landing page", d:"Design, copy and SEO in one sweep.", skills:["UI Polish Auditor","Logo Concept Explorer","Color Palette Builder","SEO Meta Writer"]},
-    {t:"Clean up my codebase", d:"Review, dependencies and tests.", skills:["Code Review Pro","Dependency Watchdog","Test Case Generator"]},
-    {t:"Research anything", d:"Deep research with real citations.", skills:["Deep Research Assistant","Citation Finder","Web Scraper Builder"]},
-    {t:"Write it better", d:"Prompts, brand voice, release notes.", skills:["Prompt Optimizer","Brand Voice Checker","Release Notes Writer"]},
-    {t:"Tame your data", d:"Query, analyze and clean it up.", skills:["SQL Query Helper","Spreadsheet Analyst","Data Cleanup Crew","PDF Table Extractor"]},
-    {t:"Automate the boring", d:"Commits, inbox, meetings, cron.", skills:["Git Commit Writer","Inbox Triage","Meeting Notes Summarizer","Cron Job Explainer"]}
-  ];
   function initials(name){ return name.replace(/[^A-Za-z ]/g,"").split(" ").filter(Boolean).slice(0,2).map(function(w){return w[0];}).join("").toUpperCase(); }
   function avatarHue(name){ return HUES[hashStr(name) % HUES.length]; }
   function avatarStyle(name){
@@ -1734,10 +1633,10 @@
   function scoreClass(s){ return s >= 85 ? "hi" : (s >= 65 ? "mid" : "lo"); }
   function scoreColor(s){ return s >= 85 ? "#CDF14D" : (s >= 65 ? "#F5B544" : "#FF6B6B"); }
   function fmt(n){ return n >= 1000 ? (n/1000).toFixed(1).replace(/\.0$/,"") + "k" : String(n); }
-  function slugOf(s){ return s.name.toLowerCase().replace(/[^a-z0-9]+/g,"-"); }
+  function slugOf(s){ return s.slug || s.name.toLowerCase().replace(/[^a-z0-9]+/g,"-"); }
   function bySlug(slug){ var m = SKILLS.filter(function(x){ return slugOf(x)===slug; }); return m[0] || null; }
   function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
-  function installCmd(s){ return "npx skills add "+s.author+"/"+slugOf(s)+"@"+s.sha; }
+  function installCmd(s){ return s.repo+"/tree/"+s.fullsha+"/"+s.path; }
 
   var ICON_CHECK = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
   var ICON_SHIELD = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.6 8-10V5l-8-3-8 3v7c0 6.4 8 10 8 10z"/><path d="m9 11.5 2 2 4-4.5"/></svg>';
@@ -1764,8 +1663,7 @@
         '<span class="row1"><h3>'+esc(s.name)+'</h3>'+badges(s,true)+'</span>'+
         '<span class="desc">'+esc(s.tag)+'</span>'+
         '<span class="meta">'+scorePill(s)+
-          '<span class="worked">★ '+s.rating.toFixed(1)+'</span>'+
-          '<span class="worked"><b>'+fmt(s.worked)+'</b> worked</span>'+
+          '<span class="worked">'+esc(s.license)+'</span>'+
         '</span>'+
       '</span>'+
       '<span class="get'+(inLib ? " saved" : "")+'">'+(inLib ? "Saved" : "Get")+'</span>';
@@ -1800,20 +1698,18 @@
   }
 
   /* ---------------- state ---------------- */
-  var state = { cat:"all", query:"", sort:"rating", collection:null, collectionName:"" };
+  var state = { cat:"all", query:"", sort:"score" };
   var catSort = "rating";
 
   var grid = $("#grid"), catsEl = $("#cats"), railEl = $("#rail"),
       searchInput = $("#searchInput"), resultCount = $("#resultCount"),
       catalogTitle = $("#catalogTitle"), featuredBlock = $("#featuredBlock");
 
-  var SORT_LABELS = {rating:"Top rated", score:"Safest first", worked:"Most “worked for me”", az:"Name A–Z"};
+  var SORT_LABELS = {score:"Safest first", az:"Name A–Z"};
   function sortList(list, mode){
     list.sort(function(a,b){
-      if(mode==="score") return b.score - a.score || b.rating - a.rating;
-      if(mode==="worked") return b.worked - a.worked;
       if(mode==="az") return a.name.localeCompare(b.name);
-      return b.rating - a.rating || b.worked - a.worked;
+      return b.score - a.score || a.name.localeCompare(b.name);
     });
     return list;
   }
@@ -1828,7 +1724,7 @@
       b.setAttribute("role","tab");
       b.innerHTML = c.label + '<span class="cnt">'+count+'</span>';
       b.addEventListener("click", function(){
-        state.cat = c.id; state.collection = null; state.collectionName = ""; $$('.coll-card.on').forEach(function(x){ x.classList.remove('on'); });
+        state.cat = c.id;
         renderCats(); renderGrid();
       });
       catsEl.appendChild(b);
@@ -1838,8 +1734,8 @@
   /* featured rail */
   function renderRail(){
     railEl.innerHTML = "";
-    FEATURED.forEach(function(fname){
-      var s = SKILLS.filter(function(x){return x.name===fname;})[0];
+    FEATURED.forEach(function(fslug){
+      var s = SKILLS.filter(function(x){return x.slug===fslug;})[0];
       if(!s) return;
       var b = document.createElement("button");
       b.className = "feat";
@@ -1848,43 +1744,20 @@
       b.innerHTML =
         '<div class="top">'+avatarHTML(s)+badges(s)+'</div>'+
         '<h3>'+esc(s.name)+'</h3><p>'+esc(s.tag)+'</p>'+
-        '<div class="foot">'+scorePill(s)+
-        '<span class="worked"><b>'+fmt(s.worked)+'</b> worked for me</span></div>';
+        '<div class="foot">'+scorePill(s)+'</div>';
       b.addEventListener("click", function(){ openSheet(s); });
       railEl.appendChild(b);
     });
   }
 
   /* task-first collections rail (home) */
-  function renderCollections(){
-    var rail = $("#collRail");
-    if(!rail) return;
-    rail.innerHTML = "";
-    COLLECTIONS.forEach(function(c){
-      var b = document.createElement("button");
-      b.className = "coll-card";
-      b.type = "button";
-      b.setAttribute("aria-label","Show skills for "+c.t);
-      b.innerHTML = '<b>'+esc(c.t)+'</b><p>'+esc(c.d)+'</p><span>'+c.skills.length+' skills →</span>';
-      b.addEventListener("click", function(){
-        state.collection = c.skills.slice(); state.collectionName = c.t;
-        $$('.coll-card').forEach(function(x){ x.classList.remove('on'); }); b.classList.add('on');
-        state.cat = "all"; state.query = ""; searchInput.value = "";
-        renderCats(); renderGrid();
-        $("#catalog").scrollIntoView({behavior:"smooth", block:"start"});
-      });
-      rail.appendChild(b);
-    });
-  }
-
   /* home catalog grid */
   function visibleSkills(){
     var q = state.query.trim().toLowerCase();
     var list = SKILLS.filter(function(s){
       var inCat = state.cat==="all" || s.cat===state.cat;
-      var inColl = !state.collection || state.collection.indexOf(s.name) !== -1;
       var inQuery = !q || (s.name+" "+s.tag+" "+s.author+" "+s.desc).toLowerCase().indexOf(q) !== -1;
-      return inCat && inColl && inQuery;
+      return inCat && inQuery;
     });
     return sortList(list, state.sort);
   }
@@ -1899,26 +1772,18 @@
 
   function renderGrid(){
     var list = visibleSkills();
-    catalogTitle.textContent = state.collectionName ? state.collectionName : (state.query ? "Results" : (state.cat==="all" ? "All skills" : catLabel(state.cat)));
+    catalogTitle.textContent = state.query ? "Results" : (state.cat==="all" ? "All skills" : catLabel(state.cat));
     resultCount.innerHTML = "";
     resultCount.appendChild(document.createTextNode(
-      (state.collectionName ? "Collection · " : "") + list.length + (list.length===1 ? " skill" : " skills") +
+      list.length + (list.length===1 ? " skill" : " skills") +
       (state.query ? ' for “'+state.query+'”' : "")
     ));
-    if (state.collectionName){
-      var x = document.createElement("button");
-      x.className = "clear-coll"; x.type = "button"; x.textContent = "✕ clear";
-      x.addEventListener("click", function(){
-        state.collection = null; state.collectionName = ""; $$('.coll-card.on').forEach(function(x){ x.classList.remove('on'); }); renderGrid();
-      });
-      resultCount.appendChild(x);
-    }
-    featuredBlock.style.display = (state.cat==="all" && !state.query && !state.collectionName) ? "" : "none";
+    featuredBlock.style.display = (state.cat==="all" && !state.query) ? "" : "none";
 
     grid.innerHTML = "";
     if(!list.length){
       grid.appendChild(emptyState("Nothing matches that search", "Clear search", function(){
-        state.query=""; searchInput.value=""; state.collection = null; state.collectionName = ""; $$('.coll-card.on').forEach(function(x){ x.classList.remove('on'); }); renderGrid();
+        state.query=""; searchInput.value=""; renderGrid();
       }));
       var p = grid.querySelector(".empty b");
       p.insertAdjacentHTML("afterend", "Try a different word, or browse the full verified catalog.");
@@ -1933,7 +1798,6 @@
     clearTimeout(debounce);
     debounce = setTimeout(function(){
       state.query = searchInput.value;
-      state.collection = null; state.collectionName = ""; $$('.coll-card.on').forEach(function(x){ x.classList.remove('on'); });
       if (currentPage !== "home") location.hash = "#/";
       renderGrid();
       if(state.query){ $("#catalog").scrollIntoView({behavior:"smooth", block:"start"}); }
@@ -2051,34 +1915,31 @@
       g.appendChild(e);
       return;
     }
-    var tot = list.reduce(function(a,s){ return a + tokensFor(s); }, 0);
     var sum = document.createElement("div");
     sum.className = "lib-sum";
-    sum.innerHTML = "<b>"+list.length+" saved</b> · ≈ "+fmtTokens(tot)+" tokens to load all";
+    sum.innerHTML = "<b>"+list.length+" saved</b> · kept on this device";
     g.appendChild(sum);
     list.forEach(function(s){ g.appendChild(makeCard(s, openSheet)); });
   }
 
   /* ---------------- shared detail builders ---------------- */
   function findingsFor(s){
-    var f = [
-      "<b>Static scan clean.</b> No malicious patterns, hidden instructions or obfuscated code found.",
-      "<b>Pinned version.</b> Install resolves to commit <b>"+s.sha+"</b> — the exact code that was scanned."
-    ];
-    if (s.score < 85) f.push("<b>Worth knowing.</b> This skill scored in the amber band — read its permissions before installing. That is exactly what they are published for.");
-    else f.push("<b>Reference check.</b> Every external file this skill points to was fetched, scanned and archived.");
+    /* Real Uniscan findings — every note below was written by a human
+       reviewer after reading the actual scan report. */
+    var f = s.notes.map(function(n){ return esc(n); });
+    f.push("<b>Pinned version.</b> Installs resolve to commit <b>"+s.sha+"</b> — the exact code Uniscan scanned on "+s.scanned+".");
+    f.push("<b>Scanner.</b> SkillSpector "+esc(s.scannerVer)+" (static analysis, no LLM) · full JSON report linked below.");
     return f;
   }
   function historyFor(s){
     return [
-      {v:"v"+s.version, d:s.scanned, note:"Re-scanned after upstream commit "+s.sha+" · score "+s.score+"/100 · no change in permissions."},
-      {v:"previous release", d:"Sep 2026", note:"Full scan passed · reference files inlined and archived · listed after human review."}
+      {v:"commit "+s.sha, d:s.scanned, note:"Uniscan scan · score "+s.score+"/100 · "+s.findings.high+" high / "+s.findings.medium+" medium / "+s.findings.low+" low findings, all reviewed · human review by "+s.reviewer+"."}
     ];
   }
   function suggestionsFor(s){
     var same = SKILLS.filter(function(x){ return x !== s && x.cat === s.cat; });
     var rest = SKILLS.filter(function(x){ return x !== s && x.cat !== s.cat; });
-    var byRank = function(a,b){ return b.rating - a.rating || b.worked - a.worked; };
+    var byRank = function(a,b){ return b.score - a.score; };
     same.sort(byRank); rest.sort(byRank);
     return same.concat(rest).slice(0,3);
   }
@@ -2101,8 +1962,8 @@
   }
   function sigLineHTML(s){
     return '<div class="sig-line">'+
-      '<span><i class="fdot"></i>Verified working · '+freshText(s)+'</span>'+
-      '<span>≈ '+fmtTokens(tokensFor(s))+' tokens to load</span>'+
+      '<span><i class="fdot"></i>Uniscan verified · '+s.scanned+'</span>'+
+      '<span>'+esc(s.license)+'</span>'+
     '</div>';
   }
 
@@ -2141,18 +2002,10 @@
     try{ localStorage.setItem("unictos-meter-v1", JSON.stringify({votes: meterVotes, mine: myVote})); }catch(e){}
   }
   function meterFor(s){
-    var v = meterVotes[s.name];
-    if(!v){
-      var h = hashStr(s.name), r = s.rating || 4.5, total = s.worked || 120;
-      var e = Math.min(88, Math.max(8, Math.round((r - 3.2) * 55)));
-      var rem = 100 - e;
-      var w = Math.round(rem * (0.55 + (h % 20) / 100));
-      var mh = Math.round((rem - w) * 0.7);
-      var sk = Math.max(0, rem - w - mh);
-      v = [e, w, mh, sk].map(function(p){ return Math.round(p / 100 * total); });
-      v[0] += total - (v[0] + v[1] + v[2] + v[3]);
-      meterVotes[s.name] = v;
-    }
+    /* Real votes only — local to this device until accounts land.
+       No seeded totals, no fake numbers. */
+    var v = meterVotes[s.slug];
+    if(!v){ v = [0,0,0,0]; meterVotes[s.slug] = v; }
     return v;
   }
   function meterInner(s){
@@ -2173,46 +2026,50 @@
     }
     var rows = "";
     for(i = 0; i < 4; i++){
-      rows += '<button type="button" class="meter-row'+(myVote[s.name]===i?' on':'')+'" data-vote="'+i+'" aria-pressed="'+(myVote[s.name]===i)+'">'+
+      rows += '<button type="button" class="meter-row'+(myVote[s.slug]===i?' on':'')+'" data-vote="'+i+'" aria-pressed="'+(myVote[s.slug]===i)+'">'+
         '<span class="meter-dot" style="background:'+METER_CATS[i].color+'"></span>'+
         '<span class="meter-label">'+METER_CATS[i].label+'</span>'+
-        (myVote[s.name]===i?'<span class="meter-you">Your vote</span>':'')+'<span class="meter-pct">'+Math.round(pcts[i])+'%</span></button>';
+        (myVote[s.slug]===i?'<span class="meter-you">Your vote</span>':'')+'<span class="meter-pct">'+Math.round(pcts[i])+'%</span></button>';
     }
     return '<div class="meter-gauge"><svg viewBox="0 0 200 112" aria-hidden="true">'+
         '<path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="26" stroke-linecap="butt"/>'+
         segs + '</svg>'+
-        '<div class="meter-center"><b>'+Math.round(pcts[top])+'%</b>'+
-        '<span>'+METER_CATS[top].label+'</span><em>'+fmt(total)+' votes</em></div></div>'+
+        (total===0
+          ? '<div class="meter-center"><b>—</b><span>No votes yet</span><em>be the first</em></div></div>'
+          : '<div class="meter-center"><b>'+Math.round(pcts[top])+'%</b>'+
+            '<span>'+METER_CATS[top].label+'</span><em>'+total+' vote'+(total===1?'':'s')+'</em></div></div>')+
       '<div class="meter-rows">'+rows+'</div>'+
-      '<p class="meter-note">'+(myVote[s.name]===undefined?'Tap a row to vote. One vote per skill, kept on this device for the demo.':'Tap another row to change your vote.')+'</p>';
+      '<p class="meter-note">'+(myVote[s.slug]===undefined?'Tap a row to vote. One vote per skill, kept on this device. Synced voting arrives with accounts.':'Tap another row to change your vote.')+'</p>';
   }
   function bindMeter(s){
-    $$('[data-meter="'+esc(s.name)+'"] [data-vote]').forEach(function(b){
+    $$('[data-meter="'+esc(s.slug)+'"] [data-vote]').forEach(function(b){
       b.addEventListener("click", function(){
-        var v = meterFor(s), k = +b.getAttribute("data-vote"), prev = myVote[s.name];
+        var v = meterFor(s), k = +b.getAttribute("data-vote"), prev = myVote[s.slug];
         if (prev === k) return;
         if (prev !== undefined) v[prev]--;
-        v[k]++; myVote[s.name] = k; saveMeter();
+        v[k]++; myVote[s.slug] = k; saveMeter();
         paintMeter(s);
         showToast(prev === undefined ? "Vote counted — thanks!" : "Vote changed to " + METER_CATS[k].label);
       });
     });
   }
   function paintMeter(s){
-    $$('[data-meter="'+esc(s.name)+'"]').forEach(function(w){ w.innerHTML = meterInner(s); });
+    $$('[data-meter="'+esc(s.slug)+'"]').forEach(function(w){ w.innerHTML = meterInner(s); });
     bindMeter(s);
   }
 
   function statsHTML(s){
+    var f = s.findings;
     return '<div class="sheet-stats">'+
-      '<div><b>★ '+s.rating.toFixed(1)+'</b><span>community rating</span></div>'+
-      '<div><b>'+fmt(s.worked)+'</b><span>“worked for me”</span></div>'+
-      '<div><b>v'+s.version+'</b><span>current version</span></div>'+
+      '<div><b>'+s.score+'<span style="font-size:12px;color:var(--text-3)">/100</span></b><span>Uniscan score</span></div>'+
+      '<div><b>'+(f.high+f.medium+f.low)+'</b><span>findings reviewed</span></div>'+
+      '<div><b style="font-size:13px">'+esc(s.sha)+'</b><span>pinned commit</span></div>'+
     '</div>';
   }
   function installHTML(s){
-    return '<div class="install"><div class="cmd"><span class="prompt">$</span><span>'+esc(installCmd(s))+'</span></div>'+
-      '<div class="install-actions"><button class="copy-btn" type="button" data-act="copy">Copy install command</button>'+
+    return '<div class="install"><div class="cmd"><span class="prompt">⌁</span><span>'+esc(installCmd(s))+'</span></div>'+
+      '<p class="install-hint">'+esc(s.installHint)+' Pinned to the exact commit Uniscan reviewed — the code at this link is bit-for-bit what was scanned.</p>'+
+      '<div class="install-actions"><button class="copy-btn" type="button" data-act="copy">Copy pinned link</button>'+
       '<button class="save-btn'+(isSaved(s)?" saved":"")+'" type="button" data-act="save">'+(isSaved(s)?"Saved":"Save to library")+'</button>'+
       '<button class="repo-btn" type="button" data-act="repo">View repo</button></div></div>'+
       '<p class="precheck">Before you install: this adds one skill folder to your agent. It overwrites nothing and removes nothing. unictos never installs on your behalf — the tap is always yours.</p>';
@@ -2226,7 +2083,7 @@
   function wireDetailActions(root, s, afterSave){
     var copy = root.querySelector('[data-act="copy"]');
     if (copy) copy.addEventListener("click", function(){
-      copyText(installCmd(s), "Install command copied — pinned to the scanned version.");
+      copyText(installCmd(s), "Pinned link copied — this exact commit was scanned.");
     });
     var save = root.querySelector('[data-act="save"]');
     if (save) save.addEventListener("click", function(){
@@ -2239,7 +2096,7 @@
     });
     var repo = root.querySelector('[data-act="repo"]');
     if (repo) repo.addEventListener("click", function(){
-      showToast("Demo: this opens the author's original GitHub repo — we link, never re-host.");
+      showToast("Opening the author's original GitHub repo — we link, never re-host.");
     });
     $$(".suggest", root).forEach(function(row){
       row.addEventListener("click", function(){
@@ -2270,7 +2127,7 @@
       sigLineHTML(s)+
       '<h4>Permissions, in plain words</h4><div class="perm-list">'+permsHTML(s)+'</div>'+
       statsHTML(s)+
-      '<h4>Community verdict <span class="sample-tag">Sample</span></h4><div data-meter="'+esc(s.name)+'">'+meterInner(s)+'</div>'+
+      '<h4>Community verdict</h4><div data-meter="'+esc(s.slug)+'">'+meterInner(s)+'</div>'+
       '<h4>Version &amp; scan history</h4><div class="history">'+histHTML(s)+'</div>'+
       installHTML(s)+
       '<h4>You might also like</h4><div class="suggest-list">'+ sugs.map(suggestHTML).join("") +'</div>'+
@@ -2306,7 +2163,7 @@
         '<div class="crumb"><a href="#/">Home</a> <span>›</span> <a href="#/category/'+s.cat+'">'+catLabel(s.cat)+'</a> <span>›</span> <span>'+esc(s.name)+'</span></div>'+
         '<div class="sheet-head" style="margin-top:6px">'+ avatarHTML(s) +
           '<div><h1 style="font-size:clamp(28px,4.5vw,38px);margin:0">'+esc(s.name)+'</h1>'+
-          '<div class="byline" style="font-size:14px;color:var(--text-2);margin-top:5px">by <b style="color:var(--text)">'+esc(s.author)+'</b> · '+catLabel(s.cat)+' · '+esc(s.license)+' · v'+s.version+'</div></div>'+
+          '<div class="byline" style="font-size:14px;color:var(--text-2);margin-top:5px">by <b style="color:var(--text)">'+esc(s.author)+'</b> · '+catLabel(s.cat)+' · '+esc(s.license)+'</div></div>'+
           '<div class="head-actions">'+
             '<button class="icon-btn brand" id="pageShare" type="button" aria-label="Share this skill">'+ICON_SHARE+'</button>'+
           '</div>'+
@@ -2324,25 +2181,24 @@
         '</div>'+
         '<div>'+
           '<div class="install" style="margin-top:0">'+
-            '<div class="cmd"><span class="prompt">$</span><span>'+esc(installCmd(s))+'</span></div>'+
-            '<div class="install-actions"><button class="copy-btn" type="button" data-act="copy">Copy install command</button></div>'+
+            '<div class="cmd"><span class="prompt">⌁</span><span>'+esc(installCmd(s))+'</span></div>'+
+            '<p class="install-hint">'+esc(s.installHint)+' Pinned to the exact commit Uniscan reviewed.</p>'+
+            '<div class="install-actions"><button class="copy-btn" type="button" data-act="copy">Copy pinned link</button></div>'+
             '<div class="install-actions" style="padding-top:0"><button class="save-btn'+(isSaved(s)?" saved":"")+'" type="button" data-act="save" style="flex:1">'+(isSaved(s)?"Saved":"Save to library")+'</button>'+
             '<button class="repo-btn" type="button" data-act="repo">View repo</button></div>'+
           '</div>'+
           '<p class="precheck">Before you install: this adds one skill folder to your agent. It overwrites nothing and removes nothing. unictos never installs on your behalf — the tap is always yours.</p>'+
           '<div class="side-card">'+
             '<h4>Listing facts</h4>'+
-            '<div class="kv"><span>Safety score</span><b>'+s.score+' / 100</b></div>'+
+            '<div class="kv"><span>Uniscan score</span><b>'+s.score+' / 100</b></div>'+
             '<div class="kv"><span>Last scanned</span><b>'+s.scanned+'</b></div>'+
-            '<div class="kv"><span>Verified working</span><b><i class="fdot"></i>'+freshText(s)+'</b></div>'+
-            '<div class="kv"><span>Load cost</span><b>≈ '+fmtTokens(tokensFor(s))+' tokens</b></div>'+
+            '<div class="kv"><span>Verdict</span><b>'+(s.verdict==="verified"?"Verified":"Verified with notes")+'</b></div>'+
             '<div class="kv"><span>Pinned commit</span><b class="mono">'+s.sha+'</b></div>'+
-            '<div class="kv"><span>Version</span><b>'+s.version+'</b></div>'+
+            '<div class="kv"><span>Reviewed by</span><b>'+esc(s.reviewer)+' · '+s.reviewedAt+'</b></div>'+
             '<div class="kv"><span>License</span><b>'+esc(s.license)+'</b></div>'+
-            '<div class="kv"><span>Rating</span><b>★ '+s.rating.toFixed(1)+' · '+fmt(s.worked)+' worked</b></div>'+
           '</div>'+
           '<div class="side-card">'+
-            '<h4>Community verdict <span class="sample-tag">Sample</span></h4><div data-meter="'+esc(s.name)+'">'+meterInner(s)+'</div>'+
+            '<h4>Community verdict</h4><div data-meter="'+esc(s.slug)+'">'+meterInner(s)+'</div>'+
           '</div>'+
           '<div class="side-card">'+
             '<h4>Share this skill</h4>'+
@@ -2517,7 +2373,7 @@
 
   /* ---------------- get the app ---------------- */
   $("#installBtn").addEventListener("click", function(){
-    showToast("The unictos app ships as a PWA + Android APK at launch — this website is the store demo.");
+    showToast("Get unictos as an installable app from your browser menu — this site is a PWA.");
   });
 
   /* ---------------- toast + copy ---------------- */
@@ -2684,7 +2540,7 @@
     c.fillStyle = "#9A9A9A";
     c.font = "500 27px system-ui, sans-serif";
     c.fillText("scanned " + s.scanned + " · pinned " + s.sha, px + 2, y + 108);
-    c.fillText("★ " + s.rating.toFixed(1) + " · " + fmt(s.worked) + " worked for me · " + s.license, px + 2, y + 146);
+    c.fillText("Uniscan verified · " + s.license, px + 2, y + 146);
     y += 196;
 
     /* used for */
@@ -2763,9 +2619,23 @@
   });
 
   /* ---------------- init ---------------- */
-  renderCats();
-  renderRail();
-  renderCollections();
+  function boot(){
+    var sc = $("#statCount");
+    if(sc) sc.textContent = SKILLS.length;
+    renderCats();
+    renderRail();
+    renderGrid();
+    renderCatTiles();
+    renderTopGrid();
+    renderFaq();
+    renderLibrary();
+    updateLibBadges();
+    route();
+  }
+  loadCatalog().then(boot).catch(function(){
+    var g = $("#grid");
+    if(g) g.innerHTML = '<div class="empty"><b>Catalog failed to load</b><p>Check your connection and reload.</p></div>';
+  });
 
   /* PWA: service worker (http(s) only — skipped for file:// previews) */
   if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)){
@@ -2773,13 +2643,6 @@
       navigator.serviceWorker.register("sw.js").catch(function(){});
     });
   }
-  renderGrid();
-  renderCatTiles();
-  renderTopGrid();
-  renderFaq();
-  renderLibrary();
-  updateLibBadges();
-  route();
 })();
 </script>
 </body>

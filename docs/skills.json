@@ -1,0 +1,565 @@
+{
+ "generated_at": "2026-10-13",
+ "generator": "uniscan/1.0",
+ "scanner": "skillspector",
+ "scanner_version": "2.12.0",
+ "skills": [
+  {
+   "author": "Cloudflare",
+   "category": "security",
+   "description": "Cloudflare's official skill for security questions, focused reviews, vulnerability research and full codebase audits. Ships audit playbooks covering attack classes, recon, hunting, validation and reporting, plus scripts that validate its own report format.",
+   "install_hint": "Copy skills/security-audit into your agent's skills folder.",
+   "license": "MIT",
+   "name": "security-audit",
+   "path": "skills/security-audit",
+   "permissions": [
+    [
+     "ok",
+     "Reads code you point it at"
+    ],
+    [
+     "ok",
+     "No network calls"
+    ],
+    [
+     "ok",
+     "Writes reports to your workspace"
+    ]
+   ],
+   "pinned_sha": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+   "repo": "https://github.com/cloudflare/security-audit-skill",
+   "review": {
+    "reviewed_at": "2026-10-13",
+    "reviewer": "bro",
+    "summary": "Read SKILL.md and all 20 files. Every flagged pattern traced to its source; all are the skill documenting attack classes for auditors. Scripts are JSON validators, no network or file-system abuse."
+   },
+   "slug": "security-audit",
+   "tagline": "Security guidance and vulnerability review for codebases, APIs and services",
+   "uniscan": {
+    "findings": {
+     "critical": 0,
+     "high": 10,
+     "low": 1,
+     "medium": 3
+    },
+    "notes": [
+     "10 HIGH / 3 MEDIUM / 1 LOW flagged by the scanner \u2014 all describe attack techniques (credential theft, memory manipulation, permission bypasses) inside the skill's audit playbooks. Describing attacks is this skill's job; none of the flagged text is executable attack code.",
+     "Test fixtures reference /etc/passwd paths in validator test files \u2014 test data, not accessed at runtime.",
+     "4 findings are coverage notes: the scanner could not statically inspect report files the skill generates at runtime (findings.json etc.). Expected \u2014 they don't exist until you run an audit.",
+     "No exfiltration, no obfuscation, no network calls, no credential harvesting in code. The bundled .cjs scripts only validate the skill's own report format."
+    ],
+    "report": "reports/security-audit.json",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "score": 94,
+    "verdict": "verified-with-notes"
+   },
+   "uses": [
+    "Audit a codebase for vulnerabilities",
+    "Review an API's auth design",
+    "Get a structured second opinion on a security-sensitive change"
+   ]
+  },
+  {
+   "author": "Anthropic",
+   "category": "productivity",
+   "description": "Anthropic's official PDF skill: extract text and tables, merge or split documents, rotate pages, add watermarks, create PDFs, fill forms, encrypt/decrypt, extract images and OCR scanned pages. Eight Python helper scripts, no network access.",
+   "install_hint": "Copy skills/pdf into your agent's skills folder.",
+   "license": "Anthropic ToS (source-available)",
+   "name": "pdf",
+   "path": "skills/pdf",
+   "permissions": [
+    [
+     "ok",
+     "Reads and writes PDF files you give it"
+    ],
+    [
+     "ok",
+     "No network access \u2014 nothing leaves your machine"
+    ],
+    [
+     "ok",
+     "No bundled executables beyond Python scripts"
+    ]
+   ],
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "repo": "https://github.com/anthropics/skills",
+   "review": {
+    "reviewed_at": "2026-10-13",
+    "reviewer": "bro",
+    "summary": "Read SKILL.md and all 8 scripts. Clean: local PDF processing only. License is Anthropic's source-available terms (not OSI open-source) \u2014 listed honestly, link-only as with everything here."
+   },
+   "slug": "pdf",
+   "tagline": "Anything with PDF files \u2014 read, merge, split, fill forms, OCR",
+   "uniscan": {
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 1
+    },
+    "notes": [
+     "1 MEDIUM: SKILL.md declares no tool scope (missing permissions frontmatter) \u2014 documentation hygiene, not a vulnerability.",
+     "All 8 Python scripts checked: no network calls, no environment access, no subprocess, no obfuscation. Pure local file processing."
+    ],
+    "report": "reports/pdf.json",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "score": 98,
+    "verdict": "verified"
+   },
+   "uses": [
+    "Extract text and tables from a PDF",
+    "Merge or split PDF documents",
+    "Fill a PDF form or add a watermark"
+   ]
+  },
+  {
+   "author": "Anthropic",
+   "category": "productivity",
+   "description": "Anthropic's meta-skill: scaffold skills from scratch, edit and optimize existing ones, run evals to measure performance, benchmark with variance analysis and tune descriptions for trigger accuracy. Its scripts run eval harnesses via local subprocess calls.",
+   "install_hint": "Copy skills/skill-creator into your agent's skills folder.",
+   "license": "Apache-2.0",
+   "name": "skill-creator",
+   "path": "skills/skill-creator",
+   "permissions": [
+    [
+     "warn",
+     "Runs local subprocesses (claude -p) to execute evals"
+    ],
+    [
+     "ok",
+     "Reads your project files"
+    ],
+    [
+     "ok",
+     "Scripts make no network calls themselves"
+    ]
+   ],
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "repo": "https://github.com/anthropics/skills",
+   "review": {
+    "reviewed_at": "2026-10-13",
+    "reviewer": "bro",
+    "summary": "Read SKILL.md and all 9 scripts. Every HIGH traced to source; all are normal eval-harness behavior (subprocess + env inheritance), documented in code comments. No exfiltration, no network, no obfuscation."
+   },
+   "slug": "skill-creator",
+   "tagline": "Create new skills, improve existing ones, run evals",
+   "uniscan": {
+    "findings": {
+     "critical": 0,
+     "high": 4,
+     "low": 0,
+     "medium": 5
+    },
+    "notes": [
+     "2 HIGH 'Env Variable Harvesting' are false positives with receipts: the code copies os.environ only to pass it to a local `claude -p` subprocess (the default inheritance) while explicitly REMOVING the CLAUDECODE var to allow nesting. Nothing is sent anywhere.",
+     "1 HIGH 'Agent Config Directory Access' is find_project_root() checking for a .claude/ directory upward from cwd \u2014 read-only existence check, standard project discovery.",
+     "3 MEDIUM subprocess findings are the skill's core function: running eval harnesses via local `claude -p` calls. User-initiated, local only.",
+     "1 MEDIUM 'Session Persistence' is SKILL.md docs mentioning nohup for background eval runs \u2014 documentation, not code.",
+     "1 MEDIUM: SKILL.md declares no tool scope \u2014 documentation hygiene."
+    ],
+    "report": "reports/skill-creator.json",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "score": 92,
+    "verdict": "verified-with-notes"
+   },
+   "uses": [
+    "Scaffold a brand-new agent skill",
+    "Run evals to test a skill's performance",
+    "Improve a skill's description and triggering"
+   ]
+  },
+  {
+   "author": "Anthropic",
+   "category": "devops",
+   "description": "Anthropic's toolkit for interacting with local web applications: verify frontend functionality, debug UI behavior, capture browser screenshots and read browser logs via Playwright. Ships with_server helpers and automation examples.",
+   "install_hint": "Copy skills/webapp-testing into your agent's skills folder.",
+   "license": "Apache-2.0",
+   "name": "webapp-testing",
+   "path": "skills/webapp-testing",
+   "permissions": [
+    [
+     "warn",
+     "Starts local servers via shell commands you approve"
+    ],
+    [
+     "ok",
+     "Localhost only \u2014 nothing leaves your machine"
+    ],
+    [
+     "ok",
+     "You choose what it runs and when"
+    ]
+   ],
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "repo": "https://github.com/anthropics/skills",
+   "review": {
+    "reviewed_at": "2026-10-13",
+    "reviewer": "bro",
+    "summary": "Read SKILL.md, with_server.py and examples. Subprocess use is the documented purpose (spin up local servers for Playwright tests). No remote execution, no exfiltration."
+   },
+   "slug": "webapp-testing",
+   "tagline": "Test local web apps with Playwright \u2014 screenshots, logs, UI checks",
+   "uniscan": {
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 3
+    },
+    "notes": [
+     "HIGH + MEDIUM subprocess findings are with_server.py starting local test servers \u2014 the skill's entire documented purpose. Commands come from the skill's own server config, run on localhost, user-initiated.",
+     "Note: with_server.py uses shell=True. Acceptable here (local test servers from the skill's own config), but worth knowing.",
+     "1 MEDIUM: SKILL.md declares no tool scope \u2014 documentation hygiene."
+    ],
+    "report": "reports/webapp-testing.json",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "score": 90,
+    "verdict": "verified-with-notes"
+   },
+   "uses": [
+    "Test a local web app end-to-end",
+    "Capture screenshots of a UI state",
+    "Debug frontend behavior with browser logs"
+   ]
+  },
+  {
+   "author": "Anthropic",
+   "category": "design",
+   "description": "Anthropic's skill for creating algorithmic art: flow fields, particle systems and other generative techniques with seeded randomness and interactive parameter exploration. Outputs a philosophy doc, an interactive viewer page and the generative script.",
+   "install_hint": "Copy skills/algorithmic-art into your agent's skills folder.",
+   "license": "Apache-2.0",
+   "name": "algorithmic-art",
+   "path": "skills/algorithmic-art",
+   "permissions": [
+    [
+     "ok",
+     "Generates local HTML/JS art files"
+    ],
+    [
+     "warn",
+     "Generated pages load pinned p5.js (1.7.0) from CDN"
+    ],
+    [
+     "ok",
+     "No data collection of any kind"
+    ]
+   ],
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "repo": "https://github.com/anthropics/skills",
+   "review": {
+    "reviewed_at": "2026-10-13",
+    "reviewer": "bro",
+    "summary": "Read SKILL.md and both templates. The generator is pure p5.js math \u2014 no network, no eval. CDN loads in generated pages are pinned and standard."
+   },
+   "slug": "algorithmic-art",
+   "tagline": "Generative art with p5.js \u2014 seeded randomness, interactive explorer",
+   "uniscan": {
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 0
+    },
+    "notes": [
+     "1 HIGH is a coverage note: the static parser hit a span limit on the 222-line p5.js template \u2014 inspected manually instead.",
+     "Template checked by hand: no fetch, no eval, no cookie access. Generated viewer pages load p5.js 1.7.0 and Google Fonts from CDN (pinned versions, standard for p5.js sketches)."
+    ],
+    "report": "reports/algorithmic-art.json",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "score": 95,
+    "verdict": "verified-with-notes"
+   },
+   "uses": [
+    "Generate p5.js art from a text description",
+    "Explore seeded variations of a piece",
+    "Get an interactive viewer page for the artwork"
+   ]
+  },
+  {
+   "author": "Vercel",
+   "category": "design",
+   "description": "Vercel's skill for reviewing UI code against web interface guidelines: accessibility checks, design audits and UX reviews. Pure markdown guidance \u2014 no executable code.",
+   "install_hint": "Copy skills/web-design-guidelines into your agent's skills folder.",
+   "license": "MIT",
+   "name": "web-design-guidelines",
+   "path": "skills/web-design-guidelines",
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only \u2014 no code runs"
+    ],
+    [
+     "ok",
+     "Reads UI code you share"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "pinned_sha": "063bee94c3f4df8453406c830b0a7df0f2860278",
+   "repo": "https://github.com/vercel-labs/agent-skills",
+   "review": {
+    "reviewed_at": "2026-10-13",
+    "reviewer": "bro",
+    "summary": "39-line SKILL.md, markdown only. Nothing executable ships with this skill."
+   },
+   "slug": "web-design-guidelines",
+   "tagline": "Audit any UI against web interface guidelines \u2014 a11y, UX, design",
+   "uniscan": {
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0
+    },
+    "notes": [
+     "Zero findings. Single SKILL.md, no scripts, no executables \u2014 nothing to exploit."
+    ],
+    "report": "reports/web-design-guidelines.json",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "score": 100,
+    "verdict": "verified"
+   },
+   "uses": [
+    "Audit a UI for accessibility issues",
+    "Review a page against interface guidelines",
+    "Check UX before shipping"
+   ]
+  },
+  {
+   "author": "Vercel",
+   "category": "code",
+   "description": "Vercel Engineering's 70 performance rules across 8 categories for React and Next.js: server components, caching, bundle optimization, data fetching patterns and rendering. Triggers when writing, reviewing or refactoring React code.",
+   "install_hint": "Copy skills/react-best-practices into your agent's skills folder.",
+   "license": "MIT",
+   "name": "vercel-react-best-practices",
+   "path": "skills/react-best-practices",
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only \u2014 no code runs"
+    ],
+    [
+     "ok",
+     "Reads code you share"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "pinned_sha": "063bee94c3f4df8453406c830b0a7df0f2860278",
+   "repo": "https://github.com/vercel-labs/agent-skills",
+   "review": {
+    "reviewed_at": "2026-10-13",
+    "reviewer": "bro",
+    "summary": "Read SKILL.md and the flagged rule files. Every HIGH traced to documentation examples of patterns the guide itself teaches. No executable skill code beyond markdown."
+   },
+   "slug": "react-best-practices",
+   "tagline": "70 React/Next.js performance rules from Vercel Engineering",
+   "uniscan": {
+    "findings": {
+     "critical": 0,
+     "high": 3,
+     "low": 0,
+     "medium": 2
+    },
+    "notes": [
+     "3 HIGH 'Unvalidated Output Injection' are documentation examples: the well-known theme-flicker-prevention pattern using dangerouslySetInnerHTML with a static localStorage-theme string. It's Vercel's own documented pattern shown as example code \u2014 not executable skill behavior, and the injected string is not model output.",
+     "2 MEDIUM 'npx svgo' rug-pull notes: docs suggest the user run npx svgo themselves to optimize SVGs. Unpinned npx in a docs suggestion, not executed by the skill.",
+     "1 HIGH is a coverage note on the large AGENTS.md (2,500+ lines, partially parsed)."
+    ],
+    "report": "reports/react-best-practices.json",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "score": 93,
+    "verdict": "verified-with-notes"
+   },
+   "uses": [
+    "Review React code for performance issues",
+    "Apply Vercel's 70 performance rules",
+    "Refactor a slow component with guidance"
+   ]
+  },
+  {
+   "author": "Vercel",
+   "category": "devops",
+   "description": "Vercel's official deploy skill: push apps live, create preview deployments and ship static sites. Uses your own Vercel CLI authentication and explicitly excludes .env secrets from deployment bundles.",
+   "install_hint": "Copy skills/deploy-to-vercel into your agent's skills folder.",
+   "license": "MIT",
+   "name": "deploy-to-vercel",
+   "path": "skills/deploy-to-vercel",
+   "permissions": [
+    [
+     "warn",
+     "Runs shell deploy scripts"
+    ],
+    [
+     "warn",
+     "Uses your own Vercel CLI login \u2014 never handles tokens"
+    ],
+    [
+     "ok",
+     "Excludes .env secrets from what it uploads"
+    ]
+   ],
+   "pinned_sha": "063bee94c3f4df8453406c830b0a7df0f2860278",
+   "repo": "https://github.com/vercel-labs/agent-skills",
+   "review": {
+    "reviewed_at": "2026-10-13",
+    "reviewer": "bro",
+    "summary": "Read SKILL.md and both deploy scripts. The .env findings invert on inspection (exclusion, not theft). Auth via user's own CLI. Sloppy zip, honest scripts."
+   },
+   "slug": "deploy-to-vercel",
+   "tagline": "Deploy apps and sites to Vercel \u2014 preview and production",
+   "uniscan": {
+    "findings": {
+     "critical": 0,
+     "high": 7,
+     "low": 0,
+     "medium": 4
+    },
+    "notes": [
+     "4 HIGH '.env credential access' are false positives with receipts: deploy.sh line 204 EXCLUDES .env from the deployment tarball (--exclude='.env'). The skill protects secrets; it doesn't harvest them.",
+     "7 findings (HIGH + MEDIUM) are __MACOSX/._* Finder metadata files accidentally committed inside Archive.zip \u2014 sloppy packaging, not malicious. The zip duplicates the live scripts.",
+     "Auth model verified in SKILL.md: uses your own `vercel whoami` CLI login. The skill never sees, stores or transmits tokens.",
+     "Network use is the documented purpose (deploying to Vercel), user-initiated per deploy."
+    ],
+    "report": "reports/deploy-to-vercel.json",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "score": 90,
+    "verdict": "verified-with-notes"
+   },
+   "uses": [
+    "Deploy an app to Vercel",
+    "Create a preview deployment for a branch",
+    "Ship a static site live in one command"
+   ]
+  },
+  {
+   "author": "Addy Osmani",
+   "category": "writing",
+   "description": "Addy Osmani's skill for recording architecture decisions (ADRs) and the reasoning behind design choices: public API changes, shipped features and the context future engineers and agents need to understand a codebase.",
+   "install_hint": "Copy skills/documentation-and-adrs into your agent's skills folder.",
+   "license": "MIT",
+   "name": "documentation-and-adrs",
+   "path": "skills/documentation-and-adrs",
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only \u2014 no code runs"
+    ],
+    [
+     "ok",
+     "Text in, text out"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "review": {
+    "reviewed_at": "2026-10-13",
+    "reviewer": "bro",
+    "summary": "297-line SKILL.md, markdown only. Nothing executable ships with this skill."
+   },
+   "slug": "documentation-and-adrs",
+   "tagline": "Architecture decision records and docs that future engineers need",
+   "uniscan": {
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0
+    },
+    "notes": [
+     "Zero findings. Single SKILL.md, no scripts, no executables \u2014 nothing to exploit."
+    ],
+    "report": "reports/documentation-and-adrs.json",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "score": 100,
+    "verdict": "verified"
+   },
+   "uses": [
+    "Write an architecture decision record",
+    "Document why a design choice was made",
+    "Record context for future engineers and agents"
+   ]
+  },
+  {
+   "author": "Addy Osmani",
+   "category": "code",
+   "description": "Addy Osmani's skill for conducting code review across five dimensions: correctness, readability, architecture, security and performance. Use before merging any change, on your own diffs or anyone else's.",
+   "install_hint": "Copy skills/code-review-and-quality into your agent's skills folder.",
+   "license": "MIT",
+   "name": "code-review-and-quality",
+   "path": "skills/code-review-and-quality",
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only \u2014 no code runs"
+    ],
+    [
+     "ok",
+     "Reads code you share"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "review": {
+    "reviewed_at": "2026-10-13",
+    "reviewer": "bro",
+    "summary": "398-line SKILL.md, markdown only. Nothing executable ships with this skill."
+   },
+   "slug": "code-review-and-quality",
+   "tagline": "Multi-axis code review \u2014 correctness, security, perf, readability",
+   "uniscan": {
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0
+    },
+    "notes": [
+     "Zero findings. Single SKILL.md, no scripts, no executables \u2014 nothing to exploit."
+    ],
+    "report": "reports/code-review-and-quality.json",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "score": 100,
+    "verdict": "verified"
+   },
+   "uses": [
+    "Review a pull request before merging",
+    "Assess code across 5 quality axes",
+    "Get a second opinion on your own diff"
+   ]
+  }
+ ],
+ "version": 1
+}

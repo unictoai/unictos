@@ -1,0 +1,46 @@
+name: Uniscan
+
+# Uniscan: the unictos verification pipeline.
+# - Manual: scan one skill (or all) at its pinned commit, refresh the report.
+# - Weekly: re-scan every pinned skill with the latest scanner; if upstream
+#   moved past the pinned SHA, flip the badge to "re-review" — never silent.
+# The Action NEVER assigns scores or verdicts (except re-review on upstream
+# change). Scores come from human review after the scan. That boundary is
+# deliberate: the scanner flags, the human decides.
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Skill slug to scan (blank = all skills)"
+        required: false
+        default: ""
+  schedule:
+    - cron: "0 3 * * 0" # Sundays 03:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  uniscan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install SkillSpector
+        run: pip install "git+https://github.com/NVIDIA/skillspector.git"
+
+      - name: Run Uniscan
+        run: python tools/uniscan.py ${{ inputs.slug }}
+
+      - name: Commit updated catalog + reports
+        run: |
+          git config user.name "uniscan-bot"
+          git config user.email "uniscan@unictos"
+          git add docs/skills.json docs/reports/
+          git diff --quiet --cached || git commit -m "uniscan: scan update $(date -u +%F)"
+          git push
