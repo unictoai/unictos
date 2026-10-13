@@ -1,5 +1,5 @@
 /* unictos PWA service worker: network-first for pages (always fresh), cache-first for icons, offline fallback */
-var CACHE = "unictos-v4";
+var CACHE = "unictos-v5";
 var ASSETS = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png"];
 
 self.addEventListener("install", function(e){
