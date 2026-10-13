@@ -2457,9 +2457,38 @@
       if (bad) bad.scrollIntoView({behavior:"smooth", block:"center"});
       return;
     }
+    var issueTitle = "[Skill submission] " + name;
+    var issueBody = [
+      "**Repository:** " + repo,
+      "**Skill name:** " + name,
+      "**Category:** " + catLabel(catSelect.value),
+      "**Tagline:** " + tag,
+      "**License:** " + lic,
+      "",
+      "---",
+      "_Submitted via the unictos PWA submit form._"
+    ].join("\n");
+    var issueURL = "https://github.com/unictoai/unictos/issues/new" +
+      "?title=" + encodeURIComponent(issueTitle) +
+      "&body=" + encodeURIComponent(issueBody) +
+      "&labels=skill-submission";
+    var win = window.open(issueURL, "_blank", "noopener");
     var r = $("#submitResult");
-    $("#srTitle").textContent = "“"+name+"” is queued for scanning";
-    $("#srText").textContent = "Demo only — nothing was sent. At launch, "+repo+" enters the pipeline below, the report publishes on the listing whether it passes or not, and installs pin to the scanned commit. Category: "+catLabel(catSelect.value)+" · License: "+lic+".";
+    $("#srTitle").textContent = "“"+name+"” is on its way";
+    var note = "We've opened a pre-filled submission on GitHub — review it and hit “Submit new issue” there. It lands in our public queue, the scan pipeline picks it up, and the report publishes whether it passes or not.";
+    var t = $("#srText");
+    t.textContent = "";
+    if (win){
+      t.textContent = note;
+    } else {
+      t.textContent = "Your browser blocked the new tab — tap to finish your submission: ";
+      var a = document.createElement("a");
+      a.href = issueURL; a.target = "_blank"; a.rel = "noopener";
+      a.textContent = "open it on GitHub";
+      a.style.color = "var(--brand)"; a.style.fontWeight = "700";
+      t.appendChild(a);
+      t.appendChild(document.createTextNode(" " + note));
+    }
     form.style.display = "none";
     r.classList.add("show");
     r.scrollIntoView({behavior:"smooth", block:"center"});

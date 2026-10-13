@@ -1,0 +1,57 @@
+name: Skill submission
+description: Submit an AI skill for scanning, review and listing on unictos.
+title: "[Skill submission] "
+labels: ["skill-submission"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Repository URL
+      description: The author's GitHub repository for this skill.
+      placeholder: https://github.com/author/skill-name
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Skill name
+      placeholder: My Skill
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Coding
+        - Writing
+        - Research
+        - Data
+        - DevOps
+        - Design
+        - Productivity
+        - Security
+    validations:
+      required: true
+  - type: textarea
+    id: tagline
+    attributes:
+      label: What does it do?
+      description: One or two plain sentences.
+      placeholder: Turns plain-English questions into safe read-only SQL.
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License
+      placeholder: MIT
+    validations:
+      required: true
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Agreement
+      options:
+        - label: I confirm this is the author's original repository (or I have the right to submit it), and I understand the scan report will be published whether the skill passes or not.
+          required: true
