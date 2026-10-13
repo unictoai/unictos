@@ -1,0 +1,33 @@
+name: Publish MCP to npm
+
+on:
+  push:
+    branches: [main]
+    paths: ["mcp/**"]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    defaults:
+      run:
+        working-directory: mcp
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org
+      - run: npm install --no-audit --no-fund
+      - name: Publish if version is new
+        run: |
+          VER=$(node -p "require('./package.json').version")
+          if npm view "unictos-mcp@$VER" version >/dev/null 2>&1; then
+            echo "unictos-mcp@$VER already published — skipping"
+          else
+            npm publish --access public
+            echo "published unictos-mcp@$VER"
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
