@@ -3666,6 +3666,281 @@
     "reviewed_at": "2026-10-13",
     "summary": "Verified the key flow: user env -> OpenRouter API only. Academic DB queries are the documented function. No other network."
    }
+  },
+  {
+   "slug": "resend",
+   "name": "resend",
+   "tagline": "Send email via Resend \u2014 transactional, templates, webhooks",
+   "description": "Resend's official resend skill: send transactional email, manage templates, domains, webhooks, broadcasts via the Resend API.",
+   "repo": "https://github.com/resend/resend-skills",
+   "path": "skills/resend",
+   "pinned_sha": "f943baf634c1d761cd8b883febe44c4a0d8a525f",
+   "category": "automation",
+   "license": "MIT",
+   "author": "Resend",
+   "install_hint": "Copy skills/resend into your agent's skills folder.",
+   "uses": [
+    "Send transactional email",
+    "Set up email webhooks",
+    "Manage templates"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Needs your Resend API key"
+    ],
+    [
+     "warn",
+     "Sends email via api.resend.com (its purpose)"
+    ],
+    [
+     "ok",
+     "Key stays in your environment"
+    ]
+   ],
+   "uniscan": {
+    "score": 87,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 1,
+     "high": 7,
+     "medium": 16,
+     "low": 0
+    },
+    "notes": [
+     "24 findings, all reviewed. The CRITICAL YARA hit ('credential_exfiltration_webhook') is a false positive on Resend's own email-receiving webhook documentation.",
+     "'Hidden Instructions' is on HTML email templates with {{{VARIABLE}}} placeholders \u2014 Handlebars-style templating, not hidden prompts.",
+     "'Sudo/Root' is docs showing sudo tailscale for local webhook tunneling. 'External Transmission' flags are the Resend API calls themselves."
+    ],
+    "report": "reports/resend.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Verified the API flows: user key -> api.resend.com only. Template variables are standard email templating."
+   }
+  },
+  {
+   "slug": "resend-cli",
+   "name": "resend-cli",
+   "tagline": "Operate Resend from the terminal",
+   "description": "Resend's resend-cli skill: operate the Resend platform from the terminal \u2014 sends, domains, contacts, broadcasts, webhooks, logs.",
+   "repo": "https://github.com/resend/resend-skills",
+   "path": "skills/resend-cli",
+   "pinned_sha": "f943baf634c1d761cd8b883febe44c4a0d8a525f",
+   "category": "automation",
+   "license": "MIT",
+   "author": "Resend",
+   "install_hint": "Copy skills/resend-cli into your agent's skills folder.",
+   "uses": [
+    "Send email from CLI",
+    "Manage Resend domains",
+    "Check email logs"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Needs your Resend API key"
+    ],
+    [
+     "ok",
+     "Official CLI wrapper"
+    ],
+    [
+     "ok",
+     "Key stays in your environment"
+    ]
+   ],
+   "uniscan": {
+    "score": 90,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 2,
+     "medium": 12,
+     "low": 0
+    },
+    "notes": [
+     "14 findings, all reviewed \u2014 coverage notes and docs prose. Same API-key pattern as the resend skill."
+    ],
+    "report": "reports/resend-cli.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. CLI wrapper for Resend's API, user key only."
+   }
+  },
+  {
+   "slug": "agent-email-inbox",
+   "name": "agent-email-inbox",
+   "tagline": "Build systems where email triggers agent actions",
+   "description": "Resend's agent-email-inbox: build systems where incoming email triggers actions \u2014 agent inboxes, support handlers, email-to-task pipelines, with security patterns.",
+   "repo": "https://github.com/resend/resend-skills",
+   "path": "skills/agent-email-inbox",
+   "pinned_sha": "f943baf634c1d761cd8b883febe44c4a0d8a525f",
+   "category": "automation",
+   "license": "MIT",
+   "author": "Resend",
+   "install_hint": "Copy skills/agent-email-inbox into your agent's skills folder.",
+   "uses": [
+    "Build an email-triggered agent",
+    "Handle support emails automatically",
+    "Create email-to-task pipelines"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Receives email via webhooks \u2014 higher inherent risk"
+    ],
+    [
+     "warn",
+     "Docs suggest curl|sh for Tailscale (official installer)"
+    ],
+    [
+     "ok",
+     "Includes security patterns"
+    ]
+   ],
+   "uniscan": {
+    "score": 85,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 1,
+     "high": 3,
+     "medium": 9,
+     "low": 0
+    },
+    "notes": [
+     "13 findings, all reviewed. The CRITICAL YARA hit is a false positive on webhook-setup documentation.",
+     "'External Script Fetching' is curl|sh for Tailscale's official installer (for local webhook tunneling) \u2014 legitimate but disclosed.",
+     "Inherently higher-risk category: it receives external email and triggers actions. The skill includes webhook signature verification patterns \u2014 follow them."
+    ],
+    "report": "reports/agent-email-inbox.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Reviewed webhook-setup docs. Signature verification is documented. The risk is in the use case (email-triggered automation), not the skill's code."
+   }
+  },
+  {
+   "slug": "owb",
+   "name": "owb",
+   "tagline": "Drive your real browser via CLI \u2014 logged-in sessions, forms, flows",
+   "description": "woniu9524's owb (open-web-bridge): drive your own real browser via CLI \u2014 logged-in sessions, forms, multi-step flows, network-traffic capture.",
+   "repo": "https://github.com/woniu9524/open-web-bridge",
+   "path": "owb-skills/owb",
+   "pinned_sha": "27c9ebe62c338edc851dc01bef73465712be2006",
+   "category": "automation",
+   "license": "MIT",
+   "author": "woniu9524",
+   "install_hint": "Copy owb-skills/owb into your agent's skills folder.",
+   "uses": [
+    "Automate with your logged-in browser",
+    "Fill complex forms",
+    "Capture network traffic"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Controls your real browser with your sessions"
+    ],
+    [
+     "ok",
+     "Local CLI tool"
+    ],
+    [
+     "ok",
+     "No data leaves your machine"
+    ]
+   ],
+   "uniscan": {
+    "score": 92,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 7,
+     "medium": 3,
+     "low": 0
+    },
+    "notes": [
+     "10 findings, all reviewed. 7 HIGH are coverage notes on the large SKILL.md. 3 MEDIUM are MCP server references in relay docs.",
+     "The skill drives the user's own browser \u2014 powerful by design, user-initiated, local only."
+    ],
+    "report": "reports/owb.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Browser automation via local CLI, no external network by the skill."
+   }
+  },
+  {
+   "slug": "workflow-architect",
+   "name": "workflow-architect",
+   "tagline": "Design production-grade n8n workflows",
+   "description": "masteranime's workflow-architect: design production-grade n8n workflows from requirements \u2014 webhooks, APIs, databases, LLMs, Stripe, Sheets.",
+   "repo": "https://github.com/masteranime/n8n-claude-skills",
+   "path": "skills/workflow-architect",
+   "pinned_sha": "4cb50176ad2fedf010bbfb5a5d1f6b049a90348c",
+   "category": "automation",
+   "license": "MIT",
+   "author": "masteranime",
+   "install_hint": "Copy skills/workflow-architect into your agent's skills folder.",
+   "uses": [
+    "Design an n8n workflow",
+    "Connect APIs and databases",
+    "Plan a Stripe integration"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Designs for your n8n instance"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 97,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "1 MEDIUM, reviewed \u2014 minor docs note."
+    ],
+    "report": "reports/workflow-architect.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Workflow design guidance, nothing executable."
+   }
   }
  ],
  "version": 1
