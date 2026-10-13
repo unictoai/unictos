@@ -2320,7 +2320,8 @@
   function showPage(name){
     currentPage = name;
     PAGES.forEach(function(p){
-      $("#page-"+p).classList.toggle("on", p===name);
+      var el = $("#page-"+p);
+      if (el) el.classList.toggle("on", p===name);
     });
     $$(".nav-link").forEach(function(a){
       var k = a.getAttribute("data-navlink");
