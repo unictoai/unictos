@@ -1,0 +1,961 @@
+{
+  "skill": {
+    "name": "autoresearch",
+    "source": "/tmp/uniscan-trial/orchestra/0-autoresearch-skill",
+    "scanned_at": "2026-10-13T08:19:13.644532+00:00"
+  },
+  "risk_assessment": {
+    "score": 38,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION",
+    "max_issue_severity": "HIGH"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 411,
+      "executable": false,
+      "size_bytes": 24945,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/agent-continuity.md",
+      "type": "markdown",
+      "lines": 94,
+      "executable": false,
+      "size_bytes": 4690,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/progress-reporting.md",
+      "type": "markdown",
+      "lines": 165,
+      "executable": false,
+      "size_bytes": 6467,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/skill-routing.md",
+      "type": "markdown",
+      "lines": 218,
+      "executable": false,
+      "size_bytes": 8546,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "templates/findings.md",
+      "type": "markdown",
+      "lines": 43,
+      "executable": false,
+      "size_bytes": 1494,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "templates/progress-presentation.html",
+      "type": "other",
+      "lines": 306,
+      "executable": false,
+      "size_bytes": 8685,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "templates/research-log.md",
+      "type": "markdown",
+      "lines": 40,
+      "executable": false,
+      "size_bytes": 5011,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "templates/research-state.yaml",
+      "type": "yaml",
+      "lines": 57,
+      "executable": false,
+      "size_bytes": 2102,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    }
+  ],
+  "structured_summaries": [],
+  "issues": [
+    {
+      "id": "P2",
+      "finding_id": "finding-c11d29180467451ba350933fc1aa53c4",
+      "category": "Prompt Injection",
+      "pattern": "Hidden Instructions",
+      "severity": "HIGH",
+      "confidence": 0.7,
+      "location": {
+        "file": "templates/progress-presentation.html",
+        "start_line": 183,
+        "end_line": 192,
+        "start_column": 4,
+        "end_column": 7
+      },
+      "finding": "<!--\n        AGENT INSTRUCTIONS:\n        This is a starting point. Fill in, rearrange, add, or remove sections\n        based on what's compelling from your current research. The goal is a\n        rese",
+      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
+      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
+      "code_snippet": "</head>\n<body>\n\n    <!--\n        AGENT INSTRUCTIONS:\n        This is a starting point. Fill in, rearrange, add, or remove sections\n        based on what's compelling from your current research. The goal is a",
+      "intent": null,
+      "tags": [
+        "Prompt Injection"
+      ],
+      "evidence": {},
+      "match_fingerprint": "6a46fc1b392cc3c07cd133818645b69ec1b1cce4c7714ed1470e928a64bbd9dc",
+      "occurrences": [
+        {
+          "file": "templates/progress-presentation.html",
+          "start_line": 183,
+          "end_line": 192,
+          "start_column": 4,
+          "end_column": 7
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "finding_id": "finding-3eef06d3f1a4475ea3f1ac6352527482",
+      "category": "Prompt Injection",
+      "pattern": "Hidden Instructions",
+      "severity": "HIGH",
+      "confidence": 0.7,
+      "location": {
+        "file": "templates/research-log.md",
+        "start_line": 9,
+        "end_line": 40,
+        "start_column": 0,
+        "end_column": 3
+      },
+      "finding": "<!-- Entry types:\n  bootstrap    \u2014 initial scoping, literature search, hypothesis formation\n  inner-loop   \u2014 experiment run and result\n  outer-loop   \u2014 synthesis, reflection, direction decision\n  pivo",
+      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
+      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
+      "code_snippet": "|---|------|------|---------|\n| | | | |\n\n<!-- Entry types:\n  bootstrap    \u2014 initial scoping, literature search, hypothesis formation\n  inner-loop   \u2014 experiment run and result\n  outer-loop   \u2014 synthesis, reflection, direction decision",
+      "intent": null,
+      "tags": [
+        "Prompt Injection"
+      ],
+      "evidence": {},
+      "match_fingerprint": "e938d196e81f8f5b728dcc173e4d42167d188c9cedb08f1e0e97c6f2b088a3d3",
+      "occurrences": [
+        {
+          "file": "templates/research-log.md",
+          "start_line": 9,
+          "end_line": 40,
+          "start_column": 0,
+          "end_column": 3
+        }
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-63c6de8c834d4a318cf61752c3b89e95",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.8,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 16,
+        "end_line": null,
+        "start_column": 34
+      },
+      "finding": "Do not ask the user",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "\nYou are a research project manager, not a domain expert. You orchestrate; the domain skills execute.\n\n**This runs fully autonomously.** Do not ask the user for permission or confirmation \u2014 use your best judgment and keep moving. Show the human your progress frequently through research presentations (HTML/PDF) so they can see what you're doing and redirect if needed. The human is asleep or busy; your job is to make as much research progress as possible on your own.\n\n## Getting Started\n",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ],
+      "evidence": {},
+      "match_fingerprint": "53c32905e950cbdc0f915b81bab4262cf87077e93ee69f468581a690049d9c76",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 16,
+          "end_line": null,
+          "start_column": 34
+        }
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-b99376bd11044f86acfbba50aab97824",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "references/progress-reporting.md",
+        "start_line": 165,
+        "end_line": null,
+        "start_column": 75
+      },
+      "finding": "without asking",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "- **Use color consistently** \u2014 one color for improvements, another for baselines\n- **Include confidence intervals** or error bars where meaningful\n- **Show the trajectory early** \u2014 it's the hook that tells the reader \"this is working\"\n- **End with a clear next step** \u2014 the human should know what happens next without asking",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ],
+      "evidence": {},
+      "match_fingerprint": "8dc77d3dce9ba1f2672e813265a1b1a0c8594866ef38a4e978bf4f4451795465",
+      "occurrences": [
+        {
+          "file": "references/progress-reporting.md",
+          "start_line": 165,
+          "end_line": null,
+          "start_column": 75
+        }
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": false,
+    "skillspector_version": "2.12.0",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "llm_provenance": {
+      "schema_version": 1,
+      "provider": {
+        "configured_adapter": "unknown",
+        "resolved_adapter": "unknown",
+        "effective_adapter": "not_applicable",
+        "effective_adapters": [],
+        "service": "unknown",
+        "routing": {
+          "deployment_override": null,
+          "deployment_source": "unknown",
+          "api_version": null,
+          "api_version_source": "unknown"
+        }
+      },
+      "analyzers": [
+        {
+          "analyzer_id": "mcp_tool_poisoning",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_developer_intent",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_quality_policy",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_security_discovery",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "meta_analyzer",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        }
+      ],
+      "sampling": {
+        "temperature": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "seed": {
+          "requested": null,
+          "source": "unset",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "reasoning_effort": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        }
+      },
+      "determinism": {
+        "classification": "not_applicable",
+        "control_status": "not_applied",
+        "provider_guarantee": false,
+        "reason": "LLM analysis was not executed for this scan."
+      }
+    },
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 8,
+    "scanned_components": 8,
+    "coverage_percent": 100.0,
+    "is_complete": false,
+    "status": "partial",
+    "execution_successful": true,
+    "fully_inspected_files": 8,
+    "partially_inspected_files": 0,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 56,
+        "end_line": 56,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 58,
+        "end_line": 58,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 101,
+        "end_line": 101,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 106,
+        "end_line": 106,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 262,
+        "end_line": 262,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 279,
+        "end_line": 279,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 396,
+        "end_line": 396,
+        "fatal": false
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "artifact_integrity",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "bundled_execution_surface",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "references": [
+      {
+        "source_path": "SKILL.md",
+        "line": 31,
+        "column": 93,
+        "evidence": "efore anything else**: Set up the agent continuity loop. See [Agent Continuity](#agent-continuity-mandatory--set-up-first). This is MANDATORY. Without it, the r",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 56,
+        "column": 243,
+        "evidence": "t, reanalyze, and write up the paper properly. Name files descriptively (e.g., `trajectory_H1_runs001-010.csv`). Large files like model checkpoints should go to",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 58,
+        "column": 13,
+        "evidence": "Initialize `research-state.yaml`, `research-log.md`, and `findings.md` from [templates/](templates/). Adapt the workspace as the project evolves \u2014 this is a sta",
+        "target_path": "templates/research-state.yaml",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 58,
+        "column": 36,
+        "evidence": "Initialize `research-state.yaml`, `research-log.md`, and `findings.md` from [templates/](templates/). Adapt the workspace as the project evolves \u2014 this is a sta",
+        "target_path": "templates/research-log.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 58,
+        "column": 59,
+        "evidence": "Initialize `research-state.yaml`, `research-log.md`, and `findings.md` from [templates/](templates/). Adapt the workspace as the project evolves \u2014 this is a sta",
+        "target_path": "templates/findings.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 58,
+        "column": 90,
+        "evidence": "e `research-state.yaml`, `research-log.md`, and `findings.md` from [templates/](templates/). Adapt the workspace as the project evolves \u2014 this is a starting poi",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 101,
+        "column": 163,
+        "evidence": "tation graphs, and specific paper lookup. See `20-ml-paper-writing` skill's `references/citation-workflow.md` for complete API code examples",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 106,
+        "column": 224,
+        "evidence": " to your question, and the URL/DOI. Create one file per paper and a running `literature/survey.md` with all summaries. This is your reference library \u2014 you and ",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 168,
+        "column": 132,
+        "evidence": " workflows, common issues, and code examples. See [references/skill-routing.md](references/skill-routing.md) for a complete guide.",
+        "target_path": "references/skill-routing.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 168,
+        "column": 103,
+        "evidence": "L.md before starting \u2014 it has workflows, common issues, and code examples. See [references/skill-routing.md](references/skill-routing.md) for a complete guide.",
+        "target_path": "references/skill-routing.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 262,
+        "column": 10,
+        "evidence": "Use the `cron.add` tool to create a recurring job bound to this chat session:",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 279,
+        "column": 32,
+        "evidence": "- After creation, verify with `cron.list` that the job exists and is enabled",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 286,
+        "column": 10,
+        "evidence": "1. Read `research-state.yaml` and `findings.md` \u2014 remember where you are",
+        "target_path": "templates/research-state.yaml",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 286,
+        "column": 36,
+        "evidence": "1. Read `research-state.yaml` and `findings.md` \u2014 remember where you are",
+        "target_path": "templates/findings.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 313,
+        "column": 40,
+        "evidence": "See [references/progress-reporting.md](references/progress-reporting.md) for template scaffolding and the optimization plot approach. Use the template as a star",
+        "target_path": "references/progress-reporting.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 313,
+        "column": 6,
+        "evidence": "See [references/progress-reporting.md](references/progress-reporting.md) for template scaffolding and the optimization plot approach. Use the template as a star",
+        "target_path": "references/progress-reporting.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 396,
+        "column": 223,
+        "evidence": "arXiv for preprints (`pip install arxiv`). Check `20-ml-paper-writing` skill's `references/citation-workflow.md` for complete API code. Note: Google Scholar has",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 409,
+        "column": 67,
+        "evidence": "- **Detailed agent continuity**: [references/agent-continuity.md](references/agent-continuity.md)",
+        "target_path": "references/agent-continuity.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 409,
+        "column": 35,
+        "evidence": "- **Detailed agent continuity**: [references/agent-continuity.md](references/agent-continuity.md)",
+        "target_path": "references/agent-continuity.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 410,
+        "column": 75,
+        "evidence": "- **Progress presentation templates**: [references/progress-reporting.md](references/progress-reporting.md)",
+        "target_path": "references/progress-reporting.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 410,
+        "column": 41,
+        "evidence": "- **Progress presentation templates**: [references/progress-reporting.md](references/progress-reporting.md)",
+        "target_path": "references/progress-reporting.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 411,
+        "column": 61,
+        "evidence": "- **Complete skill routing**: [references/skill-routing.md](references/skill-routing.md)",
+        "target_path": "references/skill-routing.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 411,
+        "column": 32,
+        "evidence": "- **Complete skill routing**: [references/skill-routing.md](references/skill-routing.md)",
+        "target_path": "references/skill-routing.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      }
+    ],
+    "limitations": [],
+    "findings_before_filtering": 4,
+    "findings_after_filtering": 4
+  }
+}

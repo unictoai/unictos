@@ -1,0 +1,939 @@
+{
+  "skill": {
+    "name": "expo-design-system",
+    "source": "/tmp/uniscan-trial/expo-skills/plugins/expo/skills/expo-design-system",
+    "scanned_at": "2026-10-13T08:19:07.517340+00:00"
+  },
+  "risk_assessment": {
+    "score": 7,
+    "severity": "LOW",
+    "recommendation": "CAUTION",
+    "max_issue_severity": "MEDIUM"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 376,
+      "executable": false,
+      "size_bytes": 19388,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/openai.yaml",
+      "type": "yaml",
+      "lines": 4,
+      "executable": false,
+      "size_bytes": 576,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/audit.md",
+      "type": "markdown",
+      "lines": 190,
+      "executable": false,
+      "size_bytes": 8462,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/native-slop.md",
+      "type": "markdown",
+      "lines": 74,
+      "executable": false,
+      "size_bytes": 8440,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    }
+  ],
+  "structured_summaries": [],
+  "issues": [
+    {
+      "id": "RP1",
+      "finding_id": "finding-f4354105394c4deebe71ad5d02df4571",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx --yes submit-expo-feedback'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 373,
+        "end_line": null
+      },
+      "finding": "npx --yes submit-expo-feedback",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "257c594c81201fe41a735ca6fab91968ae051f5738e8ab5d0961e13105ad7350",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 373,
+          "end_line": null
+        }
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": false,
+    "skillspector_version": "2.12.0",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "llm_provenance": {
+      "schema_version": 1,
+      "provider": {
+        "configured_adapter": "unknown",
+        "resolved_adapter": "unknown",
+        "effective_adapter": "not_applicable",
+        "effective_adapters": [],
+        "service": "unknown",
+        "routing": {
+          "deployment_override": null,
+          "deployment_source": "unknown",
+          "api_version": null,
+          "api_version_source": "unknown"
+        }
+      },
+      "analyzers": [
+        {
+          "analyzer_id": "mcp_tool_poisoning",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_developer_intent",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_quality_policy",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_security_discovery",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "meta_analyzer",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        }
+      ],
+      "sampling": {
+        "temperature": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "seed": {
+          "requested": null,
+          "source": "unset",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "reasoning_effort": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        }
+      },
+      "determinism": {
+        "classification": "not_applicable",
+        "control_status": "not_applied",
+        "provider_guarantee": false,
+        "reason": "LLM analysis was not executed for this scan."
+      }
+    },
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 4,
+    "scanned_components": 4,
+    "coverage_percent": 100.0,
+    "is_complete": false,
+    "status": "partial",
+    "execution_successful": true,
+    "fully_inspected_files": 4,
+    "partially_inspected_files": 0,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 17,
+        "end_line": 17,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 36,
+        "end_line": 36,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 58,
+        "end_line": 58,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 68,
+        "end_line": 68,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 71,
+        "end_line": 71,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 109,
+        "end_line": 109,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 127,
+        "end_line": 127,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 136,
+        "end_line": 136,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 148,
+        "end_line": 148,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 157,
+        "end_line": 157,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 159,
+        "end_line": 159,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 180,
+        "end_line": 180,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 200,
+        "end_line": 200,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 216,
+        "end_line": 216,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 229,
+        "end_line": 229,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 254,
+        "end_line": 254,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 257,
+        "end_line": 257,
+        "fatal": false
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "artifact_integrity",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "bundled_execution_surface",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "references": [
+      {
+        "source_path": "SKILL.md",
+        "line": 17,
+        "column": 40,
+        "evidence": "For Tailwind projects, keep tokens in `global.css` as CSS variables and follow the styling library's own setup guidance. The scales and naming in this skill sti",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 36,
+        "column": 43,
+        "evidence": "1. **Look for a declared system.** Check `package.json` for a styling library - NativeWind/Tailwind, Tamagui, Restyle, Unistyles, styled-components. Then look f",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 36,
+        "column": 179,
+        "evidence": "d, Tamagui, Restyle, Unistyles, styled-components. Then look for a token file: `theme.ts`, `src/theme/`, `constants/theme.ts`, or `constants/Colors.ts` (the cre",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 36,
+        "column": 205,
+        "evidence": "yles, styled-components. Then look for a token file: `theme.ts`, `src/theme/`, `constants/theme.ts`, or `constants/Colors.ts` (the create-expo-app default).",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 36,
+        "column": 230,
+        "evidence": "Then look for a token file: `theme.ts`, `src/theme/`, `constants/theme.ts`, or `constants/Colors.ts` (the create-expo-app default).",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 38,
+        "column": 267,
+        "evidence": "ority: derive tokens from the most frequent ones, snapped to the 4-point grid (`references/audit.md` \u00a75).",
+        "target_path": "references/audit.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 58,
+        "column": 42,
+        "evidence": "A brand-new app can begin with a single `src/theme.ts` holding all of the objects below, then promote it to the folder form once any one class needs its own fil",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 68,
+        "column": 89,
+        "evidence": "e palette from platform semantic colors: `Color` from `expo-router` wrapped in `Platform.select`, centralized in `theme/colors.ts`. Semantic colors resolve on-d",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 68,
+        "column": 123,
+        "evidence": "olors: `Color` from `expo-router` wrapped in `Platform.select`, centralized in `theme/colors.ts`. Semantic colors resolve on-device and adapt to light/dark auto",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 71,
+        "column": 4,
+        "evidence": "// theme/colors.ts",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 109,
+        "column": 4,
+        "evidence": "// theme/colors.ts (brand additions)",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 127,
+        "column": 117,
+        "evidence": " above) are **static-safe**: they resolve on-device, so plain token files like `theme/typography.ts` can import them at module scope.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 136,
+        "column": 4,
+        "evidence": "// theme/spacing.ts",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 148,
+        "column": 27,
+        "evidence": "- Screen edge padding is `spacing.md` unless the design says otherwise - pick one and keep it.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 157,
+        "column": 4,
+        "evidence": "// theme/typography.ts",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 159,
+        "column": 25,
+        "evidence": "import { colors } from \"./colors\";",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 180,
+        "column": 4,
+        "evidence": "// components/themed-text.tsx",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 200,
+        "column": 4,
+        "evidence": "// theme/radius.ts",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 216,
+        "column": 4,
+        "evidence": "// theme/shadows.ts",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 229,
+        "column": 4,
+        "evidence": "// theme/motion.ts",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 254,
+        "column": 4,
+        "evidence": "// components/button.tsx",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 257,
+        "column": 29,
+        "evidence": "import { ThemedText } from \"./themed-text\";",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 345,
+        "column": 129,
+        "evidence": "it and check it against these principles (from [Expo's design-principles guide](https://expo.dev/blog/how-to-apply-professional-design-principles-in-ai-app-deve",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 364,
+        "column": 224,
+        "evidence": "d existing design system. The full list of 20 and candidate grep checks are in `./references/native-slop.md`; use them to explain the problem and replacement wh",
+        "target_path": "references/native-slop.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 368,
+        "column": 134,
+        "evidence": " hardcoded hex values, arbitrary spacing, inconsistent component APIs - follow `./references/audit.md`. It contains grep-based checks, a scoring rubric, an incr",
+        "target_path": "references/audit.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      }
+    ],
+    "limitations": [],
+    "findings_before_filtering": 1,
+    "findings_after_filtering": 1
+  }
+}

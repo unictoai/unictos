@@ -1,0 +1,831 @@
+{
+  "skill": {
+    "name": "brainstorming",
+    "source": "/tmp/uniscan-trial/obra-superpowers/skills/brainstorming",
+    "scanned_at": "2026-10-13T08:16:15.847122+00:00"
+  },
+  "risk_assessment": {
+    "score": 75,
+    "severity": "HIGH",
+    "recommendation": "DO_NOT_INSTALL",
+    "max_issue_severity": "HIGH"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 225,
+      "executable": false,
+      "size_bytes": 10073,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "builder-check-prompt.md",
+      "type": "markdown",
+      "lines": 23,
+      "executable": false,
+      "size_bytes": 881,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/frame-template.html",
+      "type": "other",
+      "lines": 213,
+      "executable": false,
+      "size_bytes": 8094,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/helper.js",
+      "type": "javascript",
+      "lines": 167,
+      "executable": true,
+      "size_bytes": 5615,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/server.cjs",
+      "type": "other",
+      "lines": 723,
+      "executable": true,
+      "size_bytes": 25699,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/start-server.sh",
+      "type": "shell",
+      "lines": 209,
+      "executable": true,
+      "size_bytes": 6908,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/stop-server.sh",
+      "type": "shell",
+      "lines": 120,
+      "executable": true,
+      "size_bytes": 3263,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "visual-companion.md",
+      "type": "markdown",
+      "lines": 299,
+      "executable": false,
+      "size_bytes": 13413,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    }
+  ],
+  "structured_summaries": [],
+  "issues": [
+    {
+      "id": "P2",
+      "finding_id": "finding-7b8d57a2738d4043abb336deff1cd35c",
+      "category": "Prompt Injection",
+      "pattern": "Hidden Instructions",
+      "severity": "HIGH",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/server.cjs",
+        "start_line": 174,
+        "end_line": 255,
+        "start_column": 6,
+        "end_column": 38
+      },
+      "finding": "<!-- BRANDING --><h1>Brainstorm Companion</h1>\n<p>Waiting for the agent to push a screen...</p></body></html>`);\n}\n\nconst FORBIDDEN_PAGE = `<!DOCTYPE html>\n<html>\n<head><meta charset=\"utf-8\"><title>Se",
+      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
+      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
+      "code_snippet": ".brand-logo { display: block; height: 1em; width: auto; max-width: 180px; filter: invert(1); }\n</style>\n</head>\n<body><!-- BRANDING --><h1>Brainstorm Companion</h1>\n<p>Waiting for the agent to push a screen...</p></body></html>`);\n}\n",
+      "intent": null,
+      "tags": [
+        "Prompt Injection"
+      ],
+      "evidence": {},
+      "match_fingerprint": "eeff47c834295264670de2db6e48bab8cb6c52ba6c357d1b32f4a396a57ff1af",
+      "occurrences": [
+        {
+          "file": "scripts/server.cjs",
+          "start_line": 174,
+          "end_line": 255,
+          "start_column": 6,
+          "end_column": 38
+        }
+      ]
+    },
+    {
+      "id": "TM1",
+      "finding_id": "finding-1f76270b89da40b39626e4388e58bfcb",
+      "category": "Tool Misuse",
+      "pattern": "Tool Parameter Abuse",
+      "severity": "HIGH",
+      "confidence": 0.95,
+      "location": {
+        "file": "scripts/stop-server.sh",
+        "start_line": 22,
+        "end_line": null,
+        "start_column": 2
+      },
+      "finding": "rm -f \"${STATE_DIR}/server-info\"",
+      "explanation": "Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks (e.g. shell=True, --force, dangerous glob patterns).",
+      "remediation": "Validate all tool parameters against an allowlist. Reject dangerous parameter values (shell=True, --force, -rf /) and use safe defaults.",
+      "code_snippet": "\nmark_stopped() {\n  local reason=\"$1\"\n  rm -f \"${STATE_DIR}/server-info\"\n  printf '{\"reason\":\"%s\",\"timestamp\":%s}\\n' \"$reason\" \"$(date +%s)\" > \"${STATE_DIR}/server-stopped\"\n}\n",
+      "intent": null,
+      "tags": [
+        "Tool Misuse"
+      ],
+      "evidence": {},
+      "match_fingerprint": "cfcff570082293a2f0d8ff84580726582b1114dc18f308571e4f18927f3dbc46",
+      "occurrences": [
+        {
+          "file": "scripts/stop-server.sh",
+          "start_line": 22,
+          "end_line": null,
+          "start_column": 2
+        }
+      ]
+    },
+    {
+      "id": "LP3",
+      "finding_id": "finding-dd7df3c6c17c43ee96ec111df6d708a7",
+      "category": "MCP Least Privilege",
+      "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, network, shell.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 1,
+        "end_line": null
+      },
+      "finding": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, network, shell.",
+      "explanation": "Without declared permissions the skill's intent is opaque and cannot be validated.",
+      "remediation": "Clarify the skill's intended tool scope and review how the host runtime enforces it; runtime permissions are unknown unless separately verified. For Claude Code / Agent Skills SKILL.md, 'allowed-tools' records preapproved tools, not a permission ceiling; add a tool only when it is independently approved as necessary, not to silence this finding. For MCP server manifests, use a 'permissions' list naming the required capabilities.",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI02"
+      ],
+      "evidence": {},
+      "match_fingerprint": null,
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 1,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "RA2",
+      "finding_id": "finding-0c28dc0d71d04e1a9e7752666807b2cd",
+      "category": "Rogue Agent",
+      "pattern": "Session Persistence",
+      "severity": "MEDIUM",
+      "confidence": 0.65,
+      "location": {
+        "file": "scripts/start-server.sh",
+        "start_line": 102,
+        "end_line": null,
+        "start_column": 25
+      },
+      "finding": "nohup ",
+      "explanation": "Skill establishes unauthorized persistence across sessions via cron jobs, startup scripts, or state files. Session persistence allows an attacker to maintain access beyond the current interaction.",
+      "remediation": "Remove any persistence mechanisms (cron jobs, startup scripts, state files). Skills should not maintain state across sessions without explicit user consent.",
+      "code_snippet": "  FOREGROUND=\"true\"\nfi\n\n# Windows/Git Bash reaps nohup background processes. Auto-foreground when detected.\nif [[ \"$FOREGROUND\" != \"true\" && \"$FORCE_BACKGROUND\" != \"true\" ]]; then\n  if is_windows_like_shell; then\n    FOREGROUND=\"true\"",
+      "intent": null,
+      "tags": [
+        "Rogue Agent"
+      ],
+      "evidence": {},
+      "match_fingerprint": "a3b2c30e52b72d9ed99fed84c020ce072453b04697f4f184c9268de970914edb",
+      "occurrences": [
+        {
+          "file": "scripts/start-server.sh",
+          "start_line": 102,
+          "end_line": null,
+          "start_column": 25
+        }
+      ]
+    },
+    {
+      "id": "RA2",
+      "finding_id": "finding-4621ea0fd02b4fc0aa76cecf6ac2554c",
+      "category": "Rogue Agent",
+      "pattern": "Session Persistence",
+      "severity": "MEDIUM",
+      "confidence": 0.65,
+      "location": {
+        "file": "scripts/start-server.sh",
+        "start_line": 179,
+        "end_line": null,
+        "start_column": 6
+      },
+      "finding": "nohup ",
+      "explanation": "Skill establishes unauthorized persistence across sessions via cron jobs, startup scripts, or state files. Session persistence allows an attacker to maintain access beyond the current interaction.",
+      "remediation": "Remove any persistence mechanisms (cron jobs, startup scripts, state files). Skills should not maintain state across sessions without explicit user consent.",
+      "code_snippet": "fi\n\n# Start server, capturing output to log file\n# Use nohup to survive shell exit; disown to remove from job table\nnohup env BRAINSTORM_DIR=\"$SESSION_DIR\" BRAINSTORM_HOST=\"$BIND_HOST\" BRAINSTORM_URL_HOST=\"$URL_HOST\" BRAINSTORM_OWNER_PID=\"$OWNER_PID\" node server.cjs \"--brainstorm-server-id=$SERVER_ID\" > \"$LOG_FILE\" 2>&1 &\nSERVER_PID=$!\ndisown \"$SERVER_PID\" 2>/dev/null",
+      "intent": null,
+      "tags": [
+        "Rogue Agent"
+      ],
+      "evidence": {},
+      "match_fingerprint": "a3b2c30e52b72d9ed99fed84c020ce072453b04697f4f184c9268de970914edb",
+      "occurrences": [
+        {
+          "file": "scripts/start-server.sh",
+          "start_line": 179,
+          "end_line": null,
+          "start_column": 6
+        }
+      ]
+    },
+    {
+      "id": "RA2",
+      "finding_id": "finding-ec15a71dc20f4a818b20c4126317fbee",
+      "category": "Rogue Agent",
+      "pattern": "Session Persistence",
+      "severity": "MEDIUM",
+      "confidence": 0.65,
+      "location": {
+        "file": "scripts/start-server.sh",
+        "start_line": 180,
+        "end_line": null,
+        "start_column": 0
+      },
+      "finding": "nohup ",
+      "explanation": "Skill establishes unauthorized persistence across sessions via cron jobs, startup scripts, or state files. Session persistence allows an attacker to maintain access beyond the current interaction.",
+      "remediation": "Remove any persistence mechanisms (cron jobs, startup scripts, state files). Skills should not maintain state across sessions without explicit user consent.",
+      "code_snippet": "\n# Start server, capturing output to log file\n# Use nohup to survive shell exit; disown to remove from job table\nnohup env BRAINSTORM_DIR=\"$SESSION_DIR\" BRAINSTORM_HOST=\"$BIND_HOST\" BRAINSTORM_URL_HOST=\"$URL_HOST\" BRAINSTORM_OWNER_PID=\"$OWNER_PID\" node server.cjs \"--brainstorm-server-id=$SERVER_ID\" > \"$LOG_FILE\" 2>&1 &\nSERVER_PID=$!\ndisown \"$SERVER_PID\" 2>/dev/null\necho \"$SERVER_PID\" > \"$PID_FILE\"",
+      "intent": null,
+      "tags": [
+        "Rogue Agent"
+      ],
+      "evidence": {},
+      "match_fingerprint": "a3b2c30e52b72d9ed99fed84c020ce072453b04697f4f184c9268de970914edb",
+      "occurrences": [
+        {
+          "file": "scripts/start-server.sh",
+          "start_line": 180,
+          "end_line": null,
+          "start_column": 0
+        }
+      ]
+    },
+    {
+      "id": "RA2",
+      "finding_id": "finding-17fdd4743a404387b34091500aaa7434",
+      "category": "Rogue Agent",
+      "pattern": "Session Persistence",
+      "severity": "MEDIUM",
+      "confidence": 0.65,
+      "location": {
+        "file": "scripts/start-server.sh",
+        "start_line": 179,
+        "end_line": null,
+        "start_column": 35
+      },
+      "finding": "disown ",
+      "explanation": "Skill establishes unauthorized persistence across sessions via cron jobs, startup scripts, or state files. Session persistence allows an attacker to maintain access beyond the current interaction.",
+      "remediation": "Remove any persistence mechanisms (cron jobs, startup scripts, state files). Skills should not maintain state across sessions without explicit user consent.",
+      "code_snippet": "fi\n\n# Start server, capturing output to log file\n# Use nohup to survive shell exit; disown to remove from job table\nnohup env BRAINSTORM_DIR=\"$SESSION_DIR\" BRAINSTORM_HOST=\"$BIND_HOST\" BRAINSTORM_URL_HOST=\"$URL_HOST\" BRAINSTORM_OWNER_PID=\"$OWNER_PID\" node server.cjs \"--brainstorm-server-id=$SERVER_ID\" > \"$LOG_FILE\" 2>&1 &\nSERVER_PID=$!\ndisown \"$SERVER_PID\" 2>/dev/null",
+      "intent": null,
+      "tags": [
+        "Rogue Agent"
+      ],
+      "evidence": {},
+      "match_fingerprint": "72c100fe5d6d3128aaece0be49962c029cb95703b6df45da1f736801c627186b",
+      "occurrences": [
+        {
+          "file": "scripts/start-server.sh",
+          "start_line": 179,
+          "end_line": null,
+          "start_column": 35
+        }
+      ]
+    },
+    {
+      "id": "RA2",
+      "finding_id": "finding-cd5fdc5127ac4a2aaa630c25dc63e10a",
+      "category": "Rogue Agent",
+      "pattern": "Session Persistence",
+      "severity": "MEDIUM",
+      "confidence": 0.65,
+      "location": {
+        "file": "scripts/start-server.sh",
+        "start_line": 182,
+        "end_line": null,
+        "start_column": 0
+      },
+      "finding": "disown ",
+      "explanation": "Skill establishes unauthorized persistence across sessions via cron jobs, startup scripts, or state files. Session persistence allows an attacker to maintain access beyond the current interaction.",
+      "remediation": "Remove any persistence mechanisms (cron jobs, startup scripts, state files). Skills should not maintain state across sessions without explicit user consent.",
+      "code_snippet": "# Use nohup to survive shell exit; disown to remove from job table\nnohup env BRAINSTORM_DIR=\"$SESSION_DIR\" BRAINSTORM_HOST=\"$BIND_HOST\" BRAINSTORM_URL_HOST=\"$URL_HOST\" BRAINSTORM_OWNER_PID=\"$OWNER_PID\" node server.cjs \"--brainstorm-server-id=$SERVER_ID\" > \"$LOG_FILE\" 2>&1 &\nSERVER_PID=$!\ndisown \"$SERVER_PID\" 2>/dev/null\necho \"$SERVER_PID\" > \"$PID_FILE\"\n\n# Wait for server-started message (check log file)",
+      "intent": null,
+      "tags": [
+        "Rogue Agent"
+      ],
+      "evidence": {},
+      "match_fingerprint": "72c100fe5d6d3128aaece0be49962c029cb95703b6df45da1f736801c627186b",
+      "occurrences": [
+        {
+          "file": "scripts/start-server.sh",
+          "start_line": 182,
+          "end_line": null,
+          "start_column": 0
+        }
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": true,
+    "skillspector_version": "2.12.0",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "llm_provenance": {
+      "schema_version": 1,
+      "provider": {
+        "configured_adapter": "unknown",
+        "resolved_adapter": "unknown",
+        "effective_adapter": "not_applicable",
+        "effective_adapters": [],
+        "service": "unknown",
+        "routing": {
+          "deployment_override": null,
+          "deployment_source": "unknown",
+          "api_version": null,
+          "api_version_source": "unknown"
+        }
+      },
+      "analyzers": [
+        {
+          "analyzer_id": "mcp_tool_poisoning",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_developer_intent",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_quality_policy",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_security_discovery",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "meta_analyzer",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        }
+      ],
+      "sampling": {
+        "temperature": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "seed": {
+          "requested": null,
+          "source": "unset",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "reasoning_effort": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        }
+      },
+      "determinism": {
+        "classification": "not_applicable",
+        "control_status": "not_applied",
+        "provider_guarantee": false,
+        "reason": "LLM analysis was not executed for this scan."
+      }
+    },
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 8,
+    "scanned_components": 6,
+    "coverage_percent": 75.0,
+    "is_complete": false,
+    "status": "partial",
+    "execution_successful": true,
+    "fully_inspected_files": 6,
+    "partially_inspected_files": 2,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/server.cjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/stop-server.sh",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "artifact_integrity",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "bundled_execution_surface",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "degraded",
+        "planned_work": 8,
+        "completed": 6,
+        "partial": 2,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 8,
+        "completed": 8,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "references": [
+      {
+        "source_path": "SKILL.md",
+        "line": 161,
+        "column": 2,
+        "evidence": "`builder-check-prompt.md` in this directory. When you tell your human",
+        "target_path": "builder-check-prompt.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 224,
+        "column": 23,
+        "evidence": "If they accept, read `visual-companion.md` in this directory before",
+        "target_path": "visual-companion.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      }
+    ],
+    "limitations": [
+      "Analyzer static_patterns_tool_misuse status: degraded."
+    ],
+    "findings_before_filtering": 8,
+    "findings_after_filtering": 8
+  }
+}

@@ -1651,6 +1651,551 @@
     "reviewed_at": "2026-10-13",
     "summary": "Verified the API flows: key from user env -> api.exa.ai only. No other network, no exfiltration."
    }
+  },
+  {
+   "slug": "semgrep",
+   "name": "semgrep",
+   "tagline": "Run Semgrep security scans with explicit approval",
+   "description": "Trail of Bits' semgrep skill: run Semgrep security scans \u2014 detects languages, selects rulesets, presents the plan for explicit approval before running. Merges SARIF output.",
+   "repo": "https://github.com/trailofbits/skills",
+   "path": "plugins/static-analysis/skills/semgrep",
+   "pinned_sha": "442fc9d6c89b1e937e6f7a477e7071ea75fcbea4",
+   "category": "security",
+   "license": "CC-BY-SA-4.0",
+   "author": "Trail of Bits",
+   "install_hint": "Copy plugins/static-analysis/skills/semgrep into your agent's skills folder.",
+   "uses": [
+    "Run a Semgrep security scan",
+    "Merge SARIF reports",
+    "Get approval-gated scan plans"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Runs Semgrep locally on code you provide"
+    ],
+    [
+     "ok",
+     "Plan requires your explicit approval"
+    ],
+    [
+     "ok",
+     "No network calls by the scripts"
+    ]
+   ],
+   "uniscan": {
+    "score": 90,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 15,
+     "medium": 9,
+     "low": 0
+    },
+    "notes": [
+     "24 findings, all reviewed. 12 are coverage notes on referenced workflow files. 'Tool Parameter/Chaining Abuse' flags are on docs showing a guarded rm -rf (with [ -n guard and scope explanation).",
+     "Subprocess calls are in the skill's own test suite. merge_sarif.py writes merged SARIF \u2014 its documented purpose.",
+     "License note: CC-BY-SA-4.0 \u2014 we link only, never redistribute."
+    ],
+    "report": "reports/semgrep.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Reviewed test scripts and workflows. The rm -rf in docs is guarded and its scope is explicitly documented. No exfiltration."
+   }
+  },
+  {
+   "slug": "vercel-optimize",
+   "name": "vercel-optimize",
+   "tagline": "Cut Vercel costs and fix slow routes",
+   "description": "Vercel's vercel-optimize: cost and performance optimization \u2014 bill reduction, slow routes, caching, Core Web Vitals, with ranked metric-backed recommendations. Ships local scanner scripts.",
+   "repo": "https://github.com/vercel-labs/agent-skills",
+   "path": "skills/vercel-optimize",
+   "pinned_sha": "063bee94c3f4df8453406c830b0a7df0f2860278",
+   "category": "devops",
+   "license": "MIT",
+   "author": "Vercel",
+   "install_hint": "Copy skills/vercel-optimize into your agent's skills folder.",
+   "uses": [
+    "Cut a Vercel bill",
+    "Find slow routes",
+    "Fix Core Web Vitals"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Analyzes code you provide"
+    ],
+    [
+     "ok",
+     "Local scanner scripts"
+    ],
+    [
+     "ok",
+     "No network calls"
+    ]
+   ],
+   "uniscan": {
+    "score": 90,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 16,
+     "medium": 6,
+     "low": 0
+    },
+    "notes": [
+     "22 findings, all reviewed. 13 are coverage notes. 2 YARA 'info_stealer' hits are false positives on Next.js cookies() API mentions in cost-optimization rules.",
+     "'System Prompt Leakage' flag is on citation-matching logic, not prompt extraction. Scanner scripts are local code-analysis tools."
+    ],
+    "report": "reports/vercel-optimize.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged scanner code. All local analysis, no exfiltration, no network."
+   }
+  },
+  {
+   "slug": "writing-guidelines",
+   "name": "writing-guidelines",
+   "tagline": "Review docs for voice, tone and style compliance",
+   "description": "Vercel's writing-guidelines: review docs and prose for Writing Guidelines compliance \u2014 voice, tone, style handbook checks.",
+   "repo": "https://github.com/vercel-labs/agent-skills",
+   "path": "skills/writing-guidelines",
+   "pinned_sha": "063bee94c3f4df8453406c830b0a7df0f2860278",
+   "category": "writing",
+   "license": "MIT",
+   "author": "Vercel",
+   "install_hint": "Copy skills/writing-guidelines into your agent's skills folder.",
+   "uses": [
+    "Check docs against a style guide",
+    "Fix voice and tone",
+    "Review prose quality"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Reads text you share"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/writing-guidelines.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Style guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "ci-cd-and-automation",
+   "name": "ci-cd-and-automation",
+   "tagline": "Automate CI/CD pipelines \u2014 quality gates, test runners, deploys",
+   "description": "Addy Osmani's ci-cd-and-automation: automate CI/CD pipeline setup \u2014 quality gates, test runners in CI, deployment strategies. Teaches proper secret management.",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "path": "skills/ci-cd-and-automation",
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "category": "automation",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/ci-cd-and-automation into your agent's skills folder.",
+   "uses": [
+    "Set up a CI pipeline",
+    "Add quality gates",
+    "Design a deploy strategy"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Teaches secret hygiene"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 94,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 7,
+     "low": 0
+    },
+    "notes": [
+     "8 findings, all reviewed. The HIGH 'Credential Access' flag is on documentation teaching secret management (.env not committed, secrets in vaults) \u2014 describing good practice, not stealing.",
+     "7 MEDIUM are unpinned npx suggestions in docs."
+    ],
+    "report": "reports/ci-cd-and-automation.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged section. It's a secrets-management best-practices guide."
+   }
+  },
+  {
+   "slug": "git-workflow-and-versioning",
+   "name": "git-workflow-and-versioning",
+   "tagline": "Git discipline \u2014 atomic commits, branching, PRs, semver",
+   "description": "Addy Osmani's git-workflow-and-versioning: Git workflow discipline \u2014 atomic commits, branching strategies, PRs, semver, changelogs.",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "path": "skills/git-workflow-and-versioning",
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "category": "code",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/git-workflow-and-versioning into your agent's skills folder.",
+   "uses": [
+    "Clean up commit history",
+    "Choose a branching strategy",
+    "Write a changelog"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 96,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "2 findings, both reviewed. HIGH 'Tool Parameter Abuse' is on git workflow documentation (commit history patterns) \u2014 docs prose, not executable."
+    ],
+    "report": "reports/git-workflow-and-versioning.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Git guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "api-and-interface-design",
+   "name": "api-and-interface-design",
+   "tagline": "Stable API design \u2014 REST/GraphQL, contracts, boundaries",
+   "description": "Addy Osmani's api-and-interface-design: stable API and interface design \u2014 REST/GraphQL, type contracts, module boundaries.",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "path": "skills/api-and-interface-design",
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "category": "code",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/api-and-interface-design into your agent's skills folder.",
+   "uses": [
+    "Design a REST API",
+    "Define type contracts",
+    "Set module boundaries"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 96,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "1 HIGH 'Tool Parameter Abuse' is on REST endpoint examples (POST /api/tasks) in the docs \u2014 documentation, not executable."
+    ],
+    "report": "reports/api-and-interface-design.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. API design guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "test-driven-development",
+   "name": "test-driven-development",
+   "tagline": "TDD red-green-refactor loop for logic, bugs and refactors",
+   "description": "Addy Osmani's test-driven-development: the TDD red-green-refactor loop for implementing logic, fixing bugs and changing behavior.",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "path": "skills/test-driven-development",
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "category": "code",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/test-driven-development into your agent's skills folder.",
+   "uses": [
+    "Practice TDD",
+    "Fix a bug test-first",
+    "Refactor safely"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 98,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "1 MEDIUM, reviewed \u2014 minor docs note."
+    ],
+    "report": "reports/test-driven-development.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. TDD methodology, nothing executable."
+   }
+  },
+  {
+   "slug": "browser-testing-with-devtools",
+   "name": "browser-testing-with-devtools",
+   "tagline": "Test in real browsers via Chrome DevTools MCP",
+   "description": "Addy Osmani's browser-testing-with-devtools: test in real browsers via Chrome DevTools MCP \u2014 DOM inspection, console errors, network analysis. Explicitly security-conscious about untrusted browser data.",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "path": "skills/browser-testing-with-devtools",
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "category": "automation",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/browser-testing-with-devtools into your agent's skills folder.",
+   "uses": [
+    "Test in a real browser",
+    "Inspect DOM and console errors",
+    "Analyze network requests"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Drives a real browser via DevTools"
+    ],
+    [
+     "ok",
+     "Teaches treating browser data as untrusted"
+    ],
+    [
+     "ok",
+     "Local only"
+    ]
+   ],
+   "uniscan": {
+    "score": 92,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 3,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "4 findings, all reviewed and notable: the YARA 'info_stealer' and 'prompt_injection' flags are on the skill's Security Boundaries section \u2014 which teaches that browser data is UNTRUSTED and must not be treated as instructions. The scanner flagged the defense as the attack.",
+     "This is exactly the right security posture for a browser-automation skill."
+    ],
+    "report": "reports/browser-testing-with-devtools.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the Security Boundaries section. The flagged text is prompt-injection defense guidance."
+   }
+  },
+  {
+   "slug": "shipping-and-launch",
+   "name": "shipping-and-launch",
+   "tagline": "Production launch prep \u2014 checklists, monitoring, rollbacks",
+   "description": "Addy Osmani's shipping-and-launch: production launch preparation \u2014 pre-launch checklists, monitoring, staged rollouts, rollback strategy.",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "path": "skills/shipping-and-launch",
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "category": "devops",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/shipping-and-launch into your agent's skills folder.",
+   "uses": [
+    "Prepare a production launch",
+    "Plan a staged rollout",
+    "Set up rollback strategy"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 96,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "1 HIGH 'Anti-Refusal' is a false positive on a launch checklist ('All tests pass', 'Build succeeds') \u2014 the scanner misread checklist prose."
+    ],
+    "report": "reports/shipping-and-launch.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Launch methodology, nothing executable."
+   }
+  },
+  {
+   "slug": "frontend-ui-engineering",
+   "name": "frontend-ui-engineering",
+   "tagline": "Production-quality accessible responsive UIs",
+   "description": "Addy Osmani's frontend-ui-engineering: production-quality accessible responsive UIs \u2014 components, layouts, WCAG, no AI-generated look.",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "path": "skills/frontend-ui-engineering",
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "category": "design",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/frontend-ui-engineering into your agent's skills folder.",
+   "uses": [
+    "Build an accessible UI",
+    "Create responsive layouts",
+    "Avoid AI-generated-looking design"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Reads code you share"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/frontend-ui-engineering.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. UI engineering guidance, nothing executable."
+   }
   }
  ],
  "version": 1

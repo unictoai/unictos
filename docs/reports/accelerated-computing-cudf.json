@@ -1,0 +1,1178 @@
+{
+  "skill": {
+    "name": "accelerated-computing-cudf",
+    "source": "/tmp/uniscan-trial/nvidia/skills/accelerated-computing-cudf",
+    "scanned_at": "2026-10-13T08:19:49.299670+00:00"
+  },
+  "risk_assessment": {
+    "score": 12,
+    "severity": "LOW",
+    "recommendation": "CAUTION",
+    "max_issue_severity": "MEDIUM"
+  },
+  "components": [
+    {
+      "path": "BENCHMARK.md",
+      "type": "markdown",
+      "lines": 145,
+      "executable": false,
+      "size_bytes": 9813,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 208,
+      "executable": false,
+      "size_bytes": 10282,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/evals.json",
+      "type": "json",
+      "lines": 210,
+      "executable": false,
+      "size_bytes": 21613,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-apply-udf/code/generate_data.py",
+      "type": "python",
+      "lines": 44,
+      "executable": true,
+      "size_bytes": 1502,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-apply-udf/code/udf_pipeline.py",
+      "type": "python",
+      "lines": 199,
+      "executable": true,
+      "size_bytes": 5445,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-csv-etl/code/etl_pipeline.py",
+      "type": "python",
+      "lines": 86,
+      "executable": true,
+      "size_bytes": 2711,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-csv-etl/code/generate_data.py",
+      "type": "python",
+      "lines": 40,
+      "executable": true,
+      "size_bytes": 1192,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-groupby-agg/code/generate_data.py",
+      "type": "python",
+      "lines": 42,
+      "executable": true,
+      "size_bytes": 1475,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-groupby-agg/code/groupby_analysis.py",
+      "type": "python",
+      "lines": 126,
+      "executable": true,
+      "size_bytes": 4448,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-multi-join/code/generate_data.py",
+      "type": "python",
+      "lines": 59,
+      "executable": true,
+      "size_bytes": 2099,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-multi-join/code/multi_join.py",
+      "type": "python",
+      "lines": 115,
+      "executable": true,
+      "size_bytes": 3708,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-native-stream-handoff-boundary/NOTICE.md",
+      "type": "markdown",
+      "lines": 8,
+      "executable": false,
+      "size_bytes": 344,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-native-stream-handoff-boundary/code/run_smoke.sh",
+      "type": "shell",
+      "lines": 12,
+      "executable": true,
+      "size_bytes": 464,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-native-stream-handoff-boundary/code/threaded_handoff.cu",
+      "type": "other",
+      "lines": 138,
+      "executable": false,
+      "size_bytes": 4007,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-null-handling/code/generate_data.py",
+      "type": "python",
+      "lines": 64,
+      "executable": true,
+      "size_bytes": 2164,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-null-handling/code/null_pipeline.py",
+      "type": "python",
+      "lines": 142,
+      "executable": true,
+      "size_bytes": 4768,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-parquet-io/code/generate_data.py",
+      "type": "python",
+      "lines": 57,
+      "executable": true,
+      "size_bytes": 2055,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-parquet-io/code/parquet_pipeline.py",
+      "type": "python",
+      "lines": 128,
+      "executable": true,
+      "size_bytes": 4382,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-pivot-melt/code/generate_data.py",
+      "type": "python",
+      "lines": 47,
+      "executable": true,
+      "size_bytes": 1483,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-pivot-melt/code/reshape_analysis.py",
+      "type": "python",
+      "lines": 175,
+      "executable": true,
+      "size_bytes": 4665,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-string-ops/code/clean_contacts.py",
+      "type": "python",
+      "lines": 109,
+      "executable": true,
+      "size_bytes": 3532,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-string-ops/code/generate_data.py",
+      "type": "python",
+      "lines": 81,
+      "executable": true,
+      "size_bytes": 2722,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-timeseries-resample/code/generate_data.py",
+      "type": "python",
+      "lines": 47,
+      "executable": true,
+      "size_bytes": 1489,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-timeseries-resample/code/timeseries_analysis.py",
+      "type": "python",
+      "lines": 117,
+      "executable": true,
+      "size_bytes": 4163,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-window-functions/code/generate_data.py",
+      "type": "python",
+      "lines": 49,
+      "executable": true,
+      "size_bytes": 1442,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/cudf-window-functions/code/window_analysis.py",
+      "type": "python",
+      "lines": 153,
+      "executable": true,
+      "size_bytes": 5209,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/negative-deep-learning-training/code/train.py",
+      "type": "python",
+      "lines": 50,
+      "executable": true,
+      "size_bytes": 1401,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/source-cudf-null-fillna-semantics/NOTICE.md",
+      "type": "markdown",
+      "lines": 8,
+      "executable": false,
+      "size_bytes": 340,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/files/source-cudf-null-fillna-semantics/code/null_cleanup.py",
+      "type": "python",
+      "lines": 47,
+      "executable": true,
+      "size_bytes": 1425,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/api-patterns.md",
+      "type": "markdown",
+      "lines": 197,
+      "executable": false,
+      "size_bytes": 7909,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/cudf-pandas-accelerator.md",
+      "type": "markdown",
+      "lines": 110,
+      "executable": false,
+      "size_bytes": 3967,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/dask-cudf-patterns.md",
+      "type": "markdown",
+      "lines": 249,
+      "executable": false,
+      "size_bytes": 7155,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skill-card.md",
+      "type": "markdown",
+      "lines": 89,
+      "executable": false,
+      "size_bytes": 5417,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skill.oms.sig",
+      "type": "oms_signature",
+      "lines": 1,
+      "executable": false,
+      "size_bytes": 12505,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    }
+  ],
+  "structured_summaries": [],
+  "issues": [
+    {
+      "id": "OH3",
+      "finding_id": "finding-b2f86a6dc529447c8d359f0bb2e453c0",
+      "category": "Output Handling",
+      "pattern": "Unbounded Output",
+      "severity": "MEDIUM",
+      "confidence": 0.8,
+      "location": {
+        "file": "evals/evals.json",
+        "start_line": 75,
+        "end_line": null,
+        "start_column": 185
+      },
+      "finding": "fill log",
+      "explanation": "Output size or generation rate is not bounded. Unbounded output enables denial-of-service through resource exhaustion, log flooding, or context-window stuffing.",
+      "remediation": "Set explicit limits on output length, generation count, and rate. Use max_tokens and truncation to prevent unbounded output.",
+      "code_snippet": "      \"evals/files/cudf-null-handling/code/generate_data.py\",\n      \"evals/files/cudf-null-handling/code/null_pipeline.py\"\n    ],\n    \"ground_truth\": \"A successful answer uses the provided cudf-null-handling starter files, especially code/null_pipeline.py, to move null detection, fill, drop, mask, and conditional fill logic to cuDF where supported. It preserves scalar and dictionary fill rules, subset and threshold drop rules, NA-aware boolean masks, interpolation or other compatibility boundaries, and reports validation performed or the runtime blocker.\",\n    \"expected_behavior\": [\n      \"Uses the provided cudf-null-handling starter workspace and edits code/null_pipeline.py.\",\n      \"Moves null detection, fill, drop, mask, and conditional fill logic to cuDF where supported.\",",
+      "intent": null,
+      "tags": [
+        "Output Handling"
+      ],
+      "evidence": {},
+      "match_fingerprint": "8b702258cf721e02407464357fb6407180222eb7e7e64adcc3ea591677760b29",
+      "occurrences": [
+        {
+          "file": "evals/evals.json",
+          "start_line": 75,
+          "end_line": null,
+          "start_column": 185
+        }
+      ]
+    },
+    {
+      "id": "OH3",
+      "finding_id": "finding-75362e68ab1346e9bf45341b83fd10f2",
+      "category": "Output Handling",
+      "pattern": "Unbounded Output",
+      "severity": "MEDIUM",
+      "confidence": 0.8,
+      "location": {
+        "file": "evals/evals.json",
+        "start_line": 78,
+        "end_line": null,
+        "start_column": 63
+      },
+      "finding": "fill log",
+      "explanation": "Output size or generation rate is not bounded. Unbounded output enables denial-of-service through resource exhaustion, log flooding, or context-window stuffing.",
+      "remediation": "Set explicit limits on output length, generation count, and rate. Use max_tokens and truncation to prevent unbounded output.",
+      "code_snippet": "    \"ground_truth\": \"A successful answer uses the provided cudf-null-handling starter files, especially code/null_pipeline.py, to move null detection, fill, drop, mask, and conditional fill logic to cuDF where supported. It preserves scalar and dictionary fill rules, subset and threshold drop rules, NA-aware boolean masks, interpolation or other compatibility boundaries, and reports validation performed or the runtime blocker.\",\n    \"expected_behavior\": [\n      \"Uses the provided cudf-null-handling starter workspace and edits code/null_pipeline.py.\",\n      \"Moves null detection, fill, drop, mask, and conditional fill logic to cuDF where supported.\",\n      \"Preserves scalar and dictionary fill rules, subset and threshold drop rules, NA-aware masks, and any interpolation compatibility boundary, then reports validation or the runtime blocker.\"\n    ]\n  },",
+      "intent": null,
+      "tags": [
+        "Output Handling"
+      ],
+      "evidence": {},
+      "match_fingerprint": "8b702258cf721e02407464357fb6407180222eb7e7e64adcc3ea591677760b29",
+      "occurrences": [
+        {
+          "file": "evals/evals.json",
+          "start_line": 78,
+          "end_line": null,
+          "start_column": 63
+        }
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": true,
+    "skillspector_version": "2.12.0",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "llm_provenance": {
+      "schema_version": 1,
+      "provider": {
+        "configured_adapter": "unknown",
+        "resolved_adapter": "unknown",
+        "effective_adapter": "not_applicable",
+        "effective_adapters": [],
+        "service": "unknown",
+        "routing": {
+          "deployment_override": null,
+          "deployment_source": "unknown",
+          "api_version": null,
+          "api_version_source": "unknown"
+        }
+      },
+      "analyzers": [
+        {
+          "analyzer_id": "mcp_tool_poisoning",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_developer_intent",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_quality_policy",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_security_discovery",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "meta_analyzer",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        }
+      ],
+      "sampling": {
+        "temperature": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "seed": {
+          "requested": null,
+          "source": "unset",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "reasoning_effort": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        }
+      },
+      "determinism": {
+        "classification": "not_applicable",
+        "control_status": "not_applied",
+        "provider_guarantee": false,
+        "reason": "LLM analysis was not executed for this scan."
+      }
+    },
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 33,
+    "scanned_components": 33,
+    "coverage_percent": 100.0,
+    "is_complete": false,
+    "status": "partial",
+    "execution_successful": true,
+    "fully_inspected_files": 33,
+    "partially_inspected_files": 0,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 19,
+        "end_line": 19,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 22,
+        "end_line": 22,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 30,
+        "end_line": 30,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 34,
+        "end_line": 34,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 80,
+        "end_line": 80,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 103,
+        "end_line": 103,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 109,
+        "end_line": 109,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 125,
+        "end_line": 125,
+        "fatal": false
+      }
+    ],
+    "scope_exclusions": [
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "oms_signature",
+        "message": "Recognized OMS signature metadata is excluded from content analysis.",
+        "path": "skill.oms.sig",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      }
+    ],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "artifact_integrity",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "completed",
+        "planned_work": 22,
+        "completed": 22,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "completed",
+        "planned_work": 22,
+        "completed": 22,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "bundled_execution_surface",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "completed",
+        "planned_work": 24,
+        "completed": 24,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 33,
+        "completed": 33,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "references": [
+      {
+        "source_path": "SKILL.md",
+        "line": 19,
+        "column": 65,
+        "evidence": "- Development release tracked by this skill: 26.12 (`VERSION`: `26.12.00`). Use the selected installed release for deployment requirements.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 21,
+        "column": 96,
+        "evidence": "pported NVIDIA GPU and compatible driver. Check the [installation requirements](https://docs.nvidia.com/datascience/install/#system-req) for the selected releas",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 22,
+        "column": 64,
+        "evidence": "- For another checkout or installed release, check `VERSION`, `dependencies.yaml`, `python/cudf/pyproject.toml`, and `cudf.__version__` before choosing versions",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 22,
+        "column": 85,
+        "evidence": "r another checkout or installed release, check `VERSION`, `dependencies.yaml`, `python/cudf/pyproject.toml`, and `cudf.__version__` before choosing versions or ",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 30,
+        "column": 231,
+        "evidence": ", fast GPU code with minimal friction. Choose the path from the user's intent: `cudf.pandas` for broad compatibility or minimal-change acceleration, explicit cu",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 34,
+        "column": 41,
+        "evidence": "1. **Choose the right cuDF path.** Use `cudf.pandas` for broad compatibility or minimal-change acceleration. Use explicit cuDF when the user asks to migrate Dat",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 39,
+        "column": 85,
+        "evidence": "6. **For data > GPU memory**, move to dask-cuDF with `enable_cudf_spill=True`. See `references/dask-cudf-patterns.md`.",
+        "target_path": "references/dask-cudf-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 68,
+        "column": 2,
+        "evidence": "`references/cudf-pandas-accelerator.md`. If the profile shows the hot path",
+        "target_path": "references/cudf-pandas-accelerator.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 80,
+        "column": 25,
+        "evidence": "df = cudf.read_parquet(\"data.parquet\")",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 91,
+        "column": 7,
+        "evidence": "# See references/api-patterns.md for known gaps and workarounds",
+        "target_path": "references/api-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 102,
+        "column": 2,
+        "evidence": "`references/api-patterns.md` for the relevant semantic checklist before",
+        "target_path": "references/api-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 103,
+        "column": 15,
+        "evidence": "rewriting. A `cudf.pandas` bootstrap is enough for a minimal-change request; an",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 109,
+        "column": 59,
+        "evidence": "Use explicit cuDF where the equivalent is supported; use `cudf.pandas` or a",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 113,
+        "column": 2,
+        "evidence": "`references/api-patterns.md`.",
+        "target_path": "references/api-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 117,
+        "column": 39,
+        "evidence": "When dataset exceeds GPU memory. See `references/dask-cudf-patterns.md` for full patterns.",
+        "target_path": "references/dask-cudf-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 125,
+        "column": 19,
+        "evidence": "dask.config.set({\"dataframe.backend\": \"cudf\"})",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 161,
+        "column": 10,
+        "evidence": "- Check `references/api-patterns.md` for known gaps.",
+        "target_path": "references/api-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 169,
+        "column": 10,
+        "evidence": "- Check `references/api-patterns.md` for the specific operation",
+        "target_path": "references/api-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 174,
+        "column": 94,
+        "evidence": "- Null/NaN handling differs: cuDF uses `<NA>` (nullable) by default, pandas uses `NaN`. See `references/api-patterns.md`.",
+        "target_path": "references/api-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 175,
+        "column": 235,
+        "evidence": " Add an original-row-position tie-breaker when equal-key ordering matters; see `references/api-patterns.md`.",
+        "target_path": "references/api-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 182,
+        "column": 22,
+        "evidence": "implementation. See `references/api-patterns.md` for nullable dtype examples.",
+        "target_path": "references/api-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 197,
+        "column": 4,
+        "evidence": "- `references/cudf-pandas-accelerator.md` \u2014 Profiling, fallback detection, cudf.pandas deep dive",
+        "target_path": "references/cudf-pandas-accelerator.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 198,
+        "column": 4,
+        "evidence": "- `references/api-patterns.md` \u2014 Known API gaps, workarounds, semantic differences",
+        "target_path": "references/api-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 199,
+        "column": 4,
+        "evidence": "- `references/dask-cudf-patterns.md` \u2014 Multi-GPU patterns, best practices, partition tuning",
+        "target_path": "references/dask-cudf-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      }
+    ],
+    "limitations": [],
+    "findings_before_filtering": 2,
+    "findings_after_filtering": 2
+  }
+}
