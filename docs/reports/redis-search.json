@@ -1,0 +1,1843 @@
+{
+  "skill": {
+    "name": "redis-search",
+    "source": "/home/hatch/workspace/ai-store/scan-work/repos/redis-agent-skills/skills/redis-search",
+    "scanned_at": "2026-10-13T08:41:24.675782+00:00"
+  },
+  "risk_assessment": {
+    "score": 43,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION",
+    "max_issue_severity": "HIGH"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 220,
+      "executable": false,
+      "size_bytes": 11447,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/aggregate-cursors.md",
+      "type": "markdown",
+      "lines": 106,
+      "executable": false,
+      "size_bytes": 3994,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/aggregate-pipeline.md",
+      "type": "markdown",
+      "lines": 381,
+      "executable": false,
+      "size_bytes": 15396,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/algorithm-choice.md",
+      "type": "markdown",
+      "lines": 103,
+      "executable": false,
+      "size_bytes": 4108,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/clients/java-jedis.md",
+      "type": "markdown",
+      "lines": 1018,
+      "executable": false,
+      "size_bytes": 51195,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/clients/python-redis-py.md",
+      "type": "markdown",
+      "lines": 788,
+      "executable": false,
+      "size_bytes": 34638,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/clients/python-redisvl.md",
+      "type": "markdown",
+      "lines": 938,
+      "executable": false,
+      "size_bytes": 50257,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/command-selection.md",
+      "type": "markdown",
+      "lines": 175,
+      "executable": false,
+      "size_bytes": 9438,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/debugging.md",
+      "type": "markdown",
+      "lines": 97,
+      "executable": false,
+      "size_bytes": 4732,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/dialect.md",
+      "type": "markdown",
+      "lines": 64,
+      "executable": false,
+      "size_bytes": 2659,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/field-types.md",
+      "type": "markdown",
+      "lines": 105,
+      "executable": false,
+      "size_bytes": 3776,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/ft-create-options.md",
+      "type": "markdown",
+      "lines": 142,
+      "executable": false,
+      "size_bytes": 6354,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/hybrid-search.md",
+      "type": "markdown",
+      "lines": 118,
+      "executable": false,
+      "size_bytes": 5131,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/index-creation.md",
+      "type": "markdown",
+      "lines": 155,
+      "executable": false,
+      "size_bytes": 7043,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/index-management.md",
+      "type": "markdown",
+      "lines": 110,
+      "executable": false,
+      "size_bytes": 3984,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/json-indexing.md",
+      "type": "markdown",
+      "lines": 136,
+      "executable": false,
+      "size_bytes": 6314,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/query-optimization.md",
+      "type": "markdown",
+      "lines": 91,
+      "executable": false,
+      "size_bytes": 3974,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/query-syntax.md",
+      "type": "markdown",
+      "lines": 195,
+      "executable": false,
+      "size_bytes": 9898,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/rag-pattern.md",
+      "type": "markdown",
+      "lines": 109,
+      "executable": false,
+      "size_bytes": 5194,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/result-shaping.md",
+      "type": "markdown",
+      "lines": 143,
+      "executable": false,
+      "size_bytes": 6038,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/search-syntax-primitives.md",
+      "type": "markdown",
+      "lines": 144,
+      "executable": false,
+      "size_bytes": 6710,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/text-tokenization.md",
+      "type": "markdown",
+      "lines": 108,
+      "executable": false,
+      "size_bytes": 4947,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/vector-query.md",
+      "type": "markdown",
+      "lines": 105,
+      "executable": false,
+      "size_bytes": 4786,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    }
+  ],
+  "structured_summaries": [],
+  "issues": [
+    {
+      "id": "AE1",
+      "finding_id": "finding-13958b6c22f14c0a8a0ed01e92a3ce62",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 105,
+        "end_line": null
+      },
+      "finding": "references/text-tokenization.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "n gotchas (stemming, stopwords, language) see [references/text-tokenization.md](references/text-tokenization.md). For result shaping (`SORTBY`, `RETURN`, `HIGHL",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/text-tokenization.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "ca4dac987b1d89b5dbae2683843ac478ba344a259a1fef0627eb4461090ed2d5",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 105,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-f70dba701e2a423b81348b98c828a48a",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 171,
+        "end_line": null
+      },
+      "finding": "references/aggregate-pipeline.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": " + `FT.CURSOR READ` to page server-side. See [references/aggregate-pipeline.md](references/aggregate-pipeline.md) and [references/aggregate-cursors.md](referenc",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/aggregate-pipeline.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "24e7399801f044a9894e4c7c00c1dec816ab12074915e10fb7010c7594ffb2ff",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 171,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-fce3373aed954d0ba4a039dfe5dd49d1",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 207,
+        "end_line": null
+      },
+      "finding": "references/clients/java-jedis.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "- **Jedis** (Java): [references/clients/java-jedis.md](references/clients/java-jedis.md)",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/clients/java-jedis.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "8fd058d481c27e2d0ccfdf925afd35492f5d5a8bae33025771c45e201e9ebe9d",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 207,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-65af6781960a45078313c73feb16fe90",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 208,
+        "end_line": null
+      },
+      "finding": "references/clients/python-redisvl.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "- **RedisVL** (Python, higher-level SDK on top of redis-py): [references/clients/python-redisvl.md](references/clients/python-redisvl.md)",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/clients/python-redisvl.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "a91b9de573565acfc220a2598ccf7e45b227a6f50ebf81f2a3957d325ecf8ae7",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 208,
+          "end_line": null
+        }
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": false,
+    "skillspector_version": "2.12.0",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "llm_provenance": {
+      "schema_version": 1,
+      "provider": {
+        "configured_adapter": "unknown",
+        "resolved_adapter": "unknown",
+        "effective_adapter": "not_applicable",
+        "effective_adapters": [],
+        "service": "unknown",
+        "routing": {
+          "deployment_override": null,
+          "deployment_source": "unknown",
+          "api_version": null,
+          "api_version_source": "unknown"
+        }
+      },
+      "analyzers": [
+        {
+          "analyzer_id": "mcp_tool_poisoning",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_developer_intent",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_quality_policy",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_security_discovery",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "meta_analyzer",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        }
+      ],
+      "sampling": {
+        "temperature": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "seed": {
+          "requested": null,
+          "source": "unset",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "reasoning_effort": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        }
+      },
+      "determinism": {
+        "classification": "not_applicable",
+        "control_status": "not_applied",
+        "provider_guarantee": false,
+        "reason": "LLM analysis was not executed for this scan."
+      }
+    },
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 23,
+    "scanned_components": 19,
+    "coverage_percent": 82.6,
+    "is_complete": false,
+    "status": "partial",
+    "execution_successful": true,
+    "fully_inspected_files": 19,
+    "partially_inspected_files": 4,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 7,
+        "end_line": 7,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 12,
+        "end_line": 12,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 16,
+        "end_line": 16,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 17,
+        "end_line": 17,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 22,
+        "end_line": 22,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 50,
+        "end_line": 50,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 52,
+        "end_line": 52,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 54,
+        "end_line": 54,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 105,
+        "end_line": 105,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 151,
+        "end_line": 151,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 157,
+        "end_line": 157,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 198,
+        "end_line": 198,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 200,
+        "end_line": 200,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "references/aggregate-pipeline.md",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "references/clients/java-jedis.md",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "references/clients/python-redisvl.md",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "references/text-tokenization.md",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "artifact_integrity",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "bundled_execution_surface",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "reference_coverage",
+        "status": "completed",
+        "planned_work": 4,
+        "completed": 4,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "degraded",
+        "planned_work": 23,
+        "completed": 19,
+        "partial": 4,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 23,
+        "completed": 23,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "references": [
+      {
+        "source_path": "SKILL.md",
+        "line": 7,
+        "column": 13,
+        "evidence": "version: \"1.0.0\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 12,
+        "column": 169,
+        "evidence": "umeric, geo, JSON-path, and vector queries. Vector fields are part of the same `FT.CREATE` machinery as TEXT/TAG/NUMERIC fields, and `FT.HYBRID` blends lexical ",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 12,
+        "column": 223,
+        "evidence": "lds are part of the same `FT.CREATE` machinery as TEXT/TAG/NUMERIC fields, and `FT.HYBRID` blends lexical and vector ranking in one command, so this skill cover",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 16,
+        "column": 60,
+        "evidence": "- Creating, modifying, or reviewing a Redis Search index (`FT.CREATE`, `FT.ALTER`).",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 16,
+        "column": 73,
+        "evidence": "- Creating, modifying, or reviewing a Redis Search index (`FT.CREATE`, `FT.ALTER`).",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 17,
+        "column": 26,
+        "evidence": "- Writing or optimizing `FT.SEARCH`, `FT.AGGREGATE`, or `FT.HYBRID` queries.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 17,
+        "column": 39,
+        "evidence": "- Writing or optimizing `FT.SEARCH`, `FT.AGGREGATE`, or `FT.HYBRID` queries.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 17,
+        "column": 58,
+        "evidence": "- Writing or optimizing `FT.SEARCH`, `FT.AGGREGATE`, or `FT.HYBRID` queries.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 22,
+        "column": 77,
+        "evidence": "- Troubleshooting empty results, slow queries, or tokenization issues with `FT.EXPLAIN`, `FT.PROFILE`, `FT.INFO`.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 22,
+        "column": 91,
+        "evidence": "- Troubleshooting empty results, slow queries, or tokenization issues with `FT.EXPLAIN`, `FT.PROFILE`, `FT.INFO`.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 22,
+        "column": 105,
+        "evidence": "- Troubleshooting empty results, slow queries, or tokenization issues with `FT.EXPLAIN`, `FT.PROFILE`, `FT.INFO`.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 50,
+        "column": 64,
+        "evidence": "For Redis < 8.4 the lexical+vector blend is approximated with `FT.SEARCH` pre-filter + `=>[KNN ...]`. See [references/command-selection.md](references/command-s",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 50,
+        "column": 141,
+        "evidence": "h `FT.SEARCH` pre-filter + `=>[KNN ...]`. See [references/command-selection.md](references/command-selection.md) and [references/hybrid-search.md](references/hy",
+        "target_path": "references/command-selection.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 50,
+        "column": 108,
+        "evidence": "+vector blend is approximated with `FT.SEARCH` pre-filter + `=>[KNN ...]`. See [references/command-selection.md](references/command-selection.md) and [reference",
+        "target_path": "references/command-selection.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 50,
+        "column": 208,
+        "evidence": "election.md](references/command-selection.md) and [references/hybrid-search.md](references/hybrid-search.md).",
+        "target_path": "references/hybrid-search.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 50,
+        "column": 179,
+        "evidence": "]`. See [references/command-selection.md](references/command-selection.md) and [references/hybrid-search.md](references/hybrid-search.md).",
+        "target_path": "references/hybrid-search.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 52,
+        "column": 24,
+        "evidence": "## 2. Schema basics \u2014 `FT.CREATE`",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 54,
+        "column": 2,
+        "evidence": "`FT.CREATE` indexes Hash or JSON documents matching a `PREFIX`. Always set `PREFIX`. Use `DIALECT 2` (the default since Redis 8; required for vector queries).",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 79,
+        "column": 94,
+        "evidence": "| JSON `$.path AS alias` | Nested JSON fields | `ON JSON`; see [references/json-indexing.md](references/json-indexing.md) |",
+        "target_path": "references/json-indexing.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 79,
+        "column": 65,
+        "evidence": "| JSON `$.path AS alias` | Nested JSON fields | `ON JSON`; see [references/json-indexing.md](references/json-indexing.md) |",
+        "target_path": "references/json-indexing.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 83,
+        "column": 36,
+        "evidence": "See [references/index-creation.md](references/index-creation.md), [references/field-types.md](references/field-types.md), [references/dialect.md](references/dia",
+        "target_path": "references/index-creation.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 83,
+        "column": 6,
+        "evidence": "See [references/index-creation.md](references/index-creation.md), [references/field-types.md](references/field-types.md), [references/dialect.md](references/dia",
+        "target_path": "references/index-creation.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 83,
+        "column": 95,
+        "evidence": "s/index-creation.md](references/index-creation.md), [references/field-types.md](references/field-types.md), [references/dialect.md](references/dialect.md), [ref",
+        "target_path": "references/field-types.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 83,
+        "column": 68,
+        "evidence": "See [references/index-creation.md](references/index-creation.md), [references/field-types.md](references/field-types.md), [references/dialect.md](references/dia",
+        "target_path": "references/field-types.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 83,
+        "column": 147,
+        "evidence": "[references/field-types.md](references/field-types.md), [references/dialect.md](references/dialect.md), [references/ft-create-options.md](references/ft-create-o",
+        "target_path": "references/dialect.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 83,
+        "column": 124,
+        "evidence": "es/index-creation.md), [references/field-types.md](references/field-types.md), [references/dialect.md](references/dialect.md), [references/ft-create-options.md]",
+        "target_path": "references/dialect.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 83,
+        "column": 205,
+        "evidence": "eferences/dialect.md](references/dialect.md), [references/ft-create-options.md](references/ft-create-options.md), [references/json-indexing.md](references/json-",
+        "target_path": "references/ft-create-options.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 83,
+        "column": 172,
+        "evidence": "d](references/field-types.md), [references/dialect.md](references/dialect.md), [references/ft-create-options.md](references/ft-create-options.md), [references/j",
+        "target_path": "references/ft-create-options.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 83,
+        "column": 269,
+        "evidence": "ate-options.md](references/ft-create-options.md), [references/json-indexing.md](references/json-indexing.md).",
+        "target_path": "references/json-indexing.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 83,
+        "column": 240,
+        "evidence": "alect.md), [references/ft-create-options.md](references/ft-create-options.md), [references/json-indexing.md](references/json-indexing.md).",
+        "target_path": "references/json-indexing.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 103,
+        "column": 233,
+        "evidence": "acters inside TAG values (`@sku:{ABC\\\\-123}`). See [references/query-syntax.md](references/query-syntax.md) and [references/search-syntax-primitives.md](referen",
+        "target_path": "references/query-syntax.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 103,
+        "column": 205,
+        "evidence": "ape hyphens and special characters inside TAG values (`@sku:{ABC\\\\-123}`). See [references/query-syntax.md](references/query-syntax.md) and [references/search-s",
+        "target_path": "references/query-syntax.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 103,
+        "column": 306,
+        "evidence": "ax.md](references/query-syntax.md) and [references/search-syntax-primitives.md](references/search-syntax-primitives.md) for the DSL vocabulary.",
+        "target_path": "references/search-syntax-primitives.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 103,
+        "column": 266,
+        "evidence": "ABC\\\\-123}`). See [references/query-syntax.md](references/query-syntax.md) and [references/search-syntax-primitives.md](references/search-syntax-primitives.md) ",
+        "target_path": "references/search-syntax-primitives.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 105,
+        "column": 96,
+        "evidence": "n gotchas (stemming, stopwords, language) see [references/text-tokenization.md](references/text-tokenization.md). For result shaping (`SORTBY`, `RETURN`, `HIGHL",
+        "target_path": "references/text-tokenization.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 105,
+        "column": 63,
+        "evidence": "For tokenization gotchas (stemming, stopwords, language) see [references/text-tokenization.md](references/text-tokenization.md). For result shaping (`SORTBY`, `",
+        "target_path": "references/text-tokenization.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 105,
+        "column": 244,
+        "evidence": "URN`, `HIGHLIGHT`, `SUMMARIZE`, `NOCONTENT`) see [references/result-shaping.md](references/result-shaping.md). For performance levers (pre-filters, `SORTABLE` f",
+        "target_path": "references/result-shaping.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 105,
+        "column": 214,
+        "evidence": "result shaping (`SORTBY`, `RETURN`, `HIGHLIGHT`, `SUMMARIZE`, `NOCONTENT`) see [references/result-shaping.md](references/result-shaping.md). For performance lev",
+        "target_path": "references/result-shaping.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 105,
+        "column": 348,
+        "evidence": "g.md). For performance levers (pre-filters, `SORTABLE` fields, tight `RETURN`, `FT.PROFILE`) see [references/query-optimization.md](references/query-optimizatio",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 105,
+        "column": 400,
+        "evidence": "E` fields, tight `RETURN`, `FT.PROFILE`) see [references/query-optimization.md](references/query-optimization.md).",
+        "target_path": "references/query-optimization.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 105,
+        "column": 366,
+        "evidence": "ance levers (pre-filters, `SORTABLE` fields, tight `RETURN`, `FT.PROFILE`) see [references/query-optimization.md](references/query-optimization.md).",
+        "target_path": "references/query-optimization.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 136,
+        "column": 34,
+        "evidence": "See [references/vector-query.md](references/vector-query.md), [references/algorithm-choice.md](references/algorithm-choice.md).",
+        "target_path": "references/vector-query.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 136,
+        "column": 6,
+        "evidence": "See [references/vector-query.md](references/vector-query.md), [references/algorithm-choice.md](references/algorithm-choice.md).",
+        "target_path": "references/vector-query.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 136,
+        "column": 96,
+        "evidence": "See [references/vector-query.md](references/vector-query.md), [references/algorithm-choice.md](references/algorithm-choice.md).",
+        "target_path": "references/algorithm-choice.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 136,
+        "column": 64,
+        "evidence": "See [references/vector-query.md](references/vector-query.md), [references/algorithm-choice.md](references/algorithm-choice.md).",
+        "target_path": "references/algorithm-choice.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 151,
+        "column": 127,
+        "evidence": "**Lexical + vector fusion** (Redis \u2265 8.4) \u2014 blend BM25 text scoring with vector similarity, fuse with `RRF` or `LINEAR`. Use `FT.HYBRID` (see \u00a71).",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 153,
+        "column": 123,
+        "evidence": "Don't fetch a wide unfiltered result and filter client-side \u2014 slower and less accurate. See [references/hybrid-search.md](references/hybrid-search.md).",
+        "target_path": "references/hybrid-search.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 153,
+        "column": 94,
+        "evidence": "Don't fetch a wide unfiltered result and filter client-side \u2014 slower and less accurate. See [references/hybrid-search.md](references/hybrid-search.md).",
+        "target_path": "references/hybrid-search.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 157,
+        "column": 2,
+        "evidence": "`FT.AGGREGATE` is the declarative result-shaping command. Build a pipeline of stages.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 171,
+        "column": 126,
+        "evidence": " + `FT.CURSOR READ` to page server-side. See [references/aggregate-pipeline.md](references/aggregate-pipeline.md) and [references/aggregate-cursors.md](referenc",
+        "target_path": "references/aggregate-pipeline.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 171,
+        "column": 92,
+        "evidence": "nning result sets use `WITHCURSOR` + `FT.CURSOR READ` to page server-side. See [references/aggregate-pipeline.md](references/aggregate-pipeline.md) and [referen",
+        "target_path": "references/aggregate-pipeline.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 171,
+        "column": 198,
+        "evidence": "ine.md](references/aggregate-pipeline.md) and [references/aggregate-cursors.md](references/aggregate-cursors.md).",
+        "target_path": "references/aggregate-cursors.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 171,
+        "column": 165,
+        "evidence": ". See [references/aggregate-pipeline.md](references/aggregate-pipeline.md) and [references/aggregate-cursors.md](references/aggregate-cursors.md).",
+        "target_path": "references/aggregate-cursors.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 185,
+        "column": 33,
+        "evidence": "See [references/rag-pattern.md](references/rag-pattern.md).",
+        "target_path": "references/rag-pattern.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 185,
+        "column": 6,
+        "evidence": "See [references/rag-pattern.md](references/rag-pattern.md).",
+        "target_path": "references/rag-pattern.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 198,
+        "column": 30,
+        "evidence": "Useful management commands: `FT.INFO`, `FT.DROPINDEX`, `FT._LIST`, `FT.ALIASADD/UPDATE/DEL`. See [references/index-management.md](references/index-management.md",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 198,
+        "column": 41,
+        "evidence": "Useful management commands: `FT.INFO`, `FT.DROPINDEX`, `FT._LIST`, `FT.ALIASADD/UPDATE/DEL`. See [references/index-management.md](references/index-management.md",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 198,
+        "column": 131,
+        "evidence": "EX`, `FT._LIST`, `FT.ALIASADD/UPDATE/DEL`. See [references/index-management.md](references/index-management.md).",
+        "target_path": "references/index-management.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 198,
+        "column": 99,
+        "evidence": "commands: `FT.INFO`, `FT.DROPINDEX`, `FT._LIST`, `FT.ALIASADD/UPDATE/DEL`. See [references/index-management.md](references/index-management.md).",
+        "target_path": "references/index-management.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 200,
+        "column": 35,
+        "evidence": "Debug empty or slow queries with `FT.EXPLAIN` (shows how the query was parsed) and `FT.PROFILE` (shows execution stats). See [references/debugging.md](reference",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 200,
+        "column": 85,
+        "evidence": "g empty or slow queries with `FT.EXPLAIN` (shows how the query was parsed) and `FT.PROFILE` (shows execution stats). See [references/debugging.md](references/de",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 200,
+        "column": 152,
+        "evidence": "parsed) and `FT.PROFILE` (shows execution stats). See [references/debugging.md](references/debugging.md).",
+        "target_path": "references/debugging.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 200,
+        "column": 127,
+        "evidence": "(shows how the query was parsed) and `FT.PROFILE` (shows execution stats). See [references/debugging.md](references/debugging.md).",
+        "target_path": "references/debugging.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 206,
+        "column": 78,
+        "evidence": "- **redis-py** (Python, raw client): [references/clients/python-redis-py.md](references/clients/python-redis-py.md)",
+        "target_path": "references/clients/python-redis-py.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 206,
+        "column": 39,
+        "evidence": "- **redis-py** (Python, raw client): [references/clients/python-redis-py.md](references/clients/python-redis-py.md)",
+        "target_path": "references/clients/python-redis-py.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 207,
+        "column": 56,
+        "evidence": "- **Jedis** (Java): [references/clients/java-jedis.md](references/clients/java-jedis.md)",
+        "target_path": "references/clients/java-jedis.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 207,
+        "column": 22,
+        "evidence": "- **Jedis** (Java): [references/clients/java-jedis.md](references/clients/java-jedis.md)",
+        "target_path": "references/clients/java-jedis.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 208,
+        "column": 101,
+        "evidence": "- **RedisVL** (Python, higher-level SDK on top of redis-py): [references/clients/python-redisvl.md](references/clients/python-redisvl.md)",
+        "target_path": "references/clients/python-redisvl.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 208,
+        "column": 63,
+        "evidence": "- **RedisVL** (Python, higher-level SDK on top of redis-py): [references/clients/python-redisvl.md](references/clients/python-redisvl.md)",
+        "target_path": "references/clients/python-redisvl.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 214,
+        "column": 29,
+        "evidence": "- [Redis: Search and query](https://redis.io/docs/latest/develop/interact/search-and-query/)",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 215,
+        "column": 20,
+        "evidence": "- [Redis: Vectors](https://redis.io/docs/latest/develop/ai/search-and-query/vectors/)",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 216,
+        "column": 25,
+        "evidence": "- [Redis: Query syntax](https://redis.io/docs/latest/develop/interact/search-and-query/query/)",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 217,
+        "column": 27,
+        "evidence": "- [Redis: Query dialects](https://redis.io/docs/latest/develop/interact/search-and-query/advanced-concepts/dialects/)",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 218,
+        "column": 27,
+        "evidence": "- [Redis: RAG quickstart](https://redis.io/docs/latest/develop/get-started/rag/)",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 219,
+        "column": 15,
+        "evidence": "- [FT.CREATE](https://redis.io/docs/latest/commands/ft.create/) \u00b7 [FT.SEARCH](https://redis.io/docs/latest/commands/ft.search/) \u00b7 [FT.AGGREGATE](https://redis.i",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 219,
+        "column": 79,
+        "evidence": "- [FT.CREATE](https://redis.io/docs/latest/commands/ft.create/) \u00b7 [FT.SEARCH](https://redis.io/docs/latest/commands/ft.search/) \u00b7 [FT.AGGREGATE](https://redis.i",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 219,
+        "column": 146,
+        "evidence": " [FT.SEARCH](https://redis.io/docs/latest/commands/ft.search/) \u00b7 [FT.AGGREGATE](https://redis.io/docs/latest/commands/ft.aggregate/) \u00b7 [FT.HYBRID](https://redis",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 219,
+        "column": 213,
+        "evidence": "T.AGGREGATE](https://redis.io/docs/latest/commands/ft.aggregate/) \u00b7 [FT.HYBRID](https://redis.io/docs/latest/commands/ft.hybrid/)",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 220,
+        "column": 27,
+        "evidence": "- [RedisVL documentation](https://docs.redisvl.com/en/latest/)",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      }
+    ],
+    "limitations": [
+      "Analyzer static_patterns_tool_misuse status: degraded."
+    ],
+    "findings_before_filtering": 4,
+    "findings_after_filtering": 4
+  }
+}

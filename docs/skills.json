@@ -5405,6 +5405,168 @@
     "reviewed_at": "2026-10-13",
     "summary": "Read the flagged references. All MCP development documentation."
    }
+  },
+  {
+   "slug": "redis-search",
+   "name": "redis-search",
+   "tagline": "Redis Search \u2014 schema design, vector search",
+   "description": "Redis's official skill: Redis Search \u2014 FT.CREATE schema design, field types, vector search.",
+   "repo": "https://github.com/redis/agent-skills",
+   "path": "skills/redis-search",
+   "pinned_sha": "a84871d065f398fed55e1633f66b66f731eb4e2b",
+   "category": "data",
+   "license": "MIT",
+   "author": "Redis",
+   "install_hint": "Copy skills/redis-search into your agent's skills folder.",
+   "uses": [
+    "Design a search schema",
+    "Add vector search",
+    "Query with RediSearch"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Official Redis guidance"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 94,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 4,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "4 HIGH are coverage notes on referenced docs \u2014 reviewed manually."
+    ],
+    "report": "reports/redis-search.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Search guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "pulumi-best-practices",
+   "name": "pulumi-best-practices",
+   "tagline": "Write, review and debug Pulumi IaC programs",
+   "description": "Pulumi's official skill: write, review and debug Pulumi TypeScript/Python infrastructure-as-code programs.",
+   "repo": "https://github.com/pulumi/agent-skills",
+   "path": "pulumi/skills/pulumi-best-practices",
+   "pinned_sha": "2517e28e4bc029424e9c9ee48016394296be0f6a",
+   "category": "devops",
+   "license": "Apache-2.0",
+   "author": "Pulumi",
+   "install_hint": "Copy pulumi/skills/pulumi-best-practices into your agent's skills folder.",
+   "uses": [
+    "Write Pulumi IaC",
+    "Review infrastructure code",
+    "Debug a Pulumi program"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Official Pulumi guidance"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/pulumi-best-practices.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. IaC guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "pulumi-automation-api",
+   "name": "pulumi-automation-api",
+   "tagline": "Run Pulumi programmatically in applications",
+   "description": "Pulumi's official skill: run Pulumi programmatically \u2014 embed infrastructure-as-code in applications via the Automation API.",
+   "repo": "https://github.com/pulumi/agent-skills",
+   "path": "pulumi/skills/pulumi-automation-api",
+   "pinned_sha": "2517e28e4bc029424e9c9ee48016394296be0f6a",
+   "category": "devops",
+   "license": "Apache-2.0",
+   "author": "Pulumi",
+   "install_hint": "Copy pulumi/skills/pulumi-automation-api into your agent's skills folder.",
+   "uses": [
+    "Embed IaC in an app",
+    "Automate deployments",
+    "Drive Pulumi from code"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Official Pulumi guidance"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/pulumi-automation-api.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Automation API guidance, nothing executable."
+   }
   }
  ],
  "version": 1
