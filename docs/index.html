@@ -1936,7 +1936,7 @@
        reviewer after reading the actual scan report. */
     var f = s.notes.map(function(n){ return esc(n); });
     f.push("<b>Pinned version.</b> Installs resolve to commit <b>"+s.sha+"</b> — the exact code Uniscan scanned on "+s.scanned+".");
-    f.push("<b>Scanner.</b> SkillSpector "+esc(s.scannerVer)+" (static analysis, no LLM) · full JSON report linked below.");
+    f.push("<b>Scanner.</b> SkillSpector "+esc(s.scannerVer)+" (static analysis, no LLM) · <a href=\""+esc(s.report)+"\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);font-weight:700\">view full JSON report</a>.");
     return f;
   }
   function historyFor(s){
