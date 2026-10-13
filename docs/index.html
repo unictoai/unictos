@@ -116,40 +116,9 @@
   .wrap{max-width:1240px;margin:0 auto;padding:0 20px 96px}
   @media (max-width:760px){.wrap{padding:0 14px 110px}}
 
-  /* ---------- hero MCP strip ---------- */
-  .hero-mcp{flex:1 1 100%;display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:rgba(205,241,77,.06);border:1px solid rgba(205,241,77,.22);border-radius:14px;padding:11px 14px}
-  .hero-mcp-tag{font-size:10.5px;font-weight:800;letter-spacing:.1em;background:var(--brand);color:#0A0A0A;border-radius:7px;padding:3px 8px;flex-shrink:0}
-  .hero-mcp-text{font-size:13.5px;color:var(--text-2)}
-  .hero-mcp-text a{color:var(--brand);font-weight:700;text-decoration:none}
-  .hero-mcp code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:#D8F7A0;background:rgba(0,0,0,.45);border:1px solid var(--border-soft);border-radius:8px;padding:5px 10px;white-space:nowrap;overflow-x:auto;max-width:100%}
-  .hero-mcp .copy-btn{margin-left:auto;flex-shrink:0}
-  /* ---------- MCP hero ---------- */
-  .mcp-hero{text-align:center;background:linear-gradient(165deg,#0E0F0A,#0A0A0B 65%);border:1px solid var(--border);border-radius:26px;padding:44px 26px 34px;overflow-wrap:break-word}
-  .mcp-hero .kicker{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin-bottom:14px}
-  .mcp-hero h2{margin:0 0 12px;font-size:clamp(30px,6.4vw,54px);font-weight:800;letter-spacing:-.03em;line-height:1.06}
-  .mcp-logo{display:inline-flex;vertical-align:-6px;margin:0 2px}
-  .mcp-amp{color:var(--text-3);font-weight:600}
-  .mcp-sub{margin:0 0 16px;color:var(--text-2);font-size:15.5px}
-  .mcp-how-link{display:inline-flex;align-items:center;gap:8px;background:none;border:none;color:var(--text);font-size:14.5px;font-weight:600;cursor:pointer;padding:8px 12px;margin-bottom:6px}
-  .mcp-how-link .q{width:22px;height:22px;border:1.5px solid var(--text-3);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12.5px;color:var(--text-2)}
-  .mcp-how{max-width:620px;margin:6px auto 18px;text-align:left;display:flex;flex-direction:column;gap:10px}
-  .mcp-how[hidden]{display:none}
-  .mcp-step{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.03);border:1px solid var(--border-soft);border-radius:14px;padding:13px 15px}
-  .mcp-step > b{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#0A0A0A;font-size:13.5px;display:flex;align-items:center;justify-content:center}
-  .mcp-step p{margin:0;font-size:13.5px;color:var(--text-2);line-height:1.6}
-  .mcp-step code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;color:#D8F7A0;background:rgba(0,0,0,.5);padding:2px 7px;border-radius:6px;overflow-wrap:break-word}
-  .mcp-hero .mcp-cmd{display:flex;align-items:center;gap:10px;max-width:620px;margin:0 auto 18px;background:#0A0A0A;border:1px solid var(--border-soft);border-radius:14px;padding:13px 14px;overflow-x:auto}
-  .mcp-hero .mcp-cmd code{flex:1;text-align:left;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;color:#D8F7A0;white-space:nowrap}
-  .mcp-connect{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;max-width:620px;margin:0 auto}
-  .mcp-btn{flex:1 1 220px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:none;border-radius:999px;padding:16px 22px;font-size:16px;font-weight:700;cursor:pointer;transition:transform 140ms ease}
-  .mcp-btn:active{transform:scale(.97)}
-  .mcp-btn.lime{background:var(--brand);color:#0A0A0A}
-  .mcp-btn.white{background:#F5F5F5;color:#0A0A0A}
-  .mcp-hero .fineprint{font-size:13px;color:var(--text-3)}
-  .mcp-hero .fineprint a{color:var(--brand);font-weight:700;text-decoration:none}
   /* ---------- pages ---------- */
   .page{display:none}
-  .page.on{display:block}
+  .page.on{display:block;animation:pageIn 320ms var(--ease-out) both}
   @keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
   /* ---------- hero ---------- */
@@ -1255,12 +1224,6 @@
       <p>unictos is the phone-first store for AI agent skills, commands and tools. Every listing is security-scanned, pinned to the exact version we checked, and re-scanned whenever its code changes. Nothing here installs silently — ever.</p>
       <div class="hero-ctas">
         <a class="btn-primary" href="#/categories">Browse the catalog</a>
-        <div class="hero-mcp">
-          <span class="hero-mcp-tag">MCP</span>
-          <span class="hero-mcp-text">Use unictos inside your agent — <a href="#/mcp">learn more</a></span>
-          <code id="heroMcpCmd">npx -y unictos-mcp</code>
-          <button class="copy-btn" type="button" id="heroMcpCopy">Copy</button>
-        </div>
         <a class="btn-ghost" href="#/verify">How verification works</a>
       </div>
       <div class="hero-stats">
@@ -1323,7 +1286,9 @@
       </div>
       <p class="fineprint"><strong>The honest ceiling:</strong> automated scanning catches roughly two-thirds of malicious skills. A clean scan means “no known patterns found,” not “guaranteed safe” — that is why permissions are written in plain words and every install is a deliberate tap, never silent. unictos links to authors’ original repositories; we never wrap, modify or re-host their code.</p>
     </section>
-    <!-- ============ PAGE: CATEGORIES ============ -->
+  </div>
+
+  <!-- ============ PAGE: CATEGORIES ============ -->
   <div class="page" id="page-categories">
     <div class="page-head">
       <div class="crumb"><a href="#/">Home</a> <span>›</span> <span>Categories</span></div>
@@ -1437,32 +1402,6 @@
     <section class="block">
       <div class="sec-head"><h2>Questions</h2></div>
       <div class="faq" id="faq"></div>
-    </section>
-  </div>
-
-  <!-- ============ PAGE: MCP ============ -->
-  <div class="page" id="page-mcp">
-    <div class="page-head">
-      <div class="crumb"><a href="#/">Home</a> <span>›</span> <span>MCP server</span></div>
-    </div>
-    <section class="block">
-      <div class="mcp-hero">
-        <span class="kicker">The unictos connector</span>
-        <h2>SEARCH VERIFIED SKILLS<br>IN <span class="mcp-logo"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12.0,1.2 13.5,5.4 16.7,2.3 16.2,6.7 20.4,5.3 18.1,9.0 22.5,9.6 18.8,12.0 22.5,14.4 18.1,15.0 20.4,18.7 16.2,17.3 16.7,21.7 13.5,18.6 12.0,22.8 10.5,18.6 7.3,21.7 7.8,17.3 3.6,18.7 5.9,15.0 1.5,14.4 5.2,12.0 1.5,9.6 5.9,9.0 3.6,5.3 7.8,6.7 7.3,2.3 10.5,5.4" fill="#D97757" stroke="#D97757" stroke-width="2.6" stroke-linejoin="round"/></svg></span> CLAUDE <span class="mcp-amp">&</span> <span class="mcp-logo"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.0,5.4 A6.6,6.6 0 1 1 9.2,18.0" fill="none" stroke="#EDEDED" stroke-width="2.1" stroke-linecap="round"/><path d="M17.7,8.7 A6.6,6.6 0 1 1 5.4,12.6" fill="none" stroke="#EDEDED" stroke-width="2.1" stroke-linecap="round"/><path d="M17.7,15.3 A6.6,6.6 0 1 1 8.2,6.6" fill="none" stroke="#EDEDED" stroke-width="2.1" stroke-linecap="round"/><path d="M12.0,18.6 A6.6,6.6 0 1 1 14.8,6.0" fill="none" stroke="#EDEDED" stroke-width="2.1" stroke-linecap="round"/><path d="M6.3,15.3 A6.6,6.6 0 1 1 18.6,11.4" fill="none" stroke="#EDEDED" stroke-width="2.1" stroke-linecap="round"/><path d="M6.3,8.7 A6.6,6.6 0 1 1 15.8,17.4" fill="none" stroke="#EDEDED" stroke-width="2.1" stroke-linecap="round"/></svg></span> CHATGPT</h2>
-        <p class="mcp-sub">With the unictos MCP server — free forever, no API key, no account.</p>
-        <button class="mcp-how-link" id="mcpHow" type="button"><span class="q">?</span><span class="lbl"> How to connect?</span></button>
-        <div class="mcp-how" id="mcpHowBody" hidden>
-          <div class="mcp-step"><b>1</b><p><b>Claude Code</b> — paste the command below into your terminal. Your agent can now search all 106 verified skills.</p></div>
-          <div class="mcp-step"><b>2</b><p><b>Claude Desktop</b> — add <code>"unictos": {"command": "npx", "args": ["-y", "unictos-mcp"]}</code> to your MCP config file.</p></div>
-          <div class="mcp-step"><b>3</b><p><b>ChatGPT</b> — add a new MCP server in ChatGPT's settings pointing at <code>npx -y unictos-mcp</code>.</p></div>
-        </div>
-        <div class="mcp-cmd"><code id="mcpCmd">claude mcp add unictos -- npx -y unictos-mcp</code><button class="copy-btn" type="button" id="mcpCopy">Copy</button></div>
-        <div class="mcp-connect">
-          <button class="mcp-btn lime" type="button" id="mcpConnectClaude"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12.0,1.2 13.5,5.4 16.7,2.3 16.2,6.7 20.4,5.3 18.1,9.0 22.5,9.6 18.8,12.0 22.5,14.4 18.1,15.0 20.4,18.7 16.2,17.3 16.7,21.7 13.5,18.6 12.0,22.8 10.5,18.6 7.3,21.7 7.8,17.3 3.6,18.7 5.9,15.0 1.5,14.4 5.2,12.0 1.5,9.6 5.9,9.0 3.6,5.3 7.8,6.7 7.3,2.3 10.5,5.4" fill="#D97757" stroke="#D97757" stroke-width="2.6" stroke-linejoin="round"/></svg> Connect to Claude</button>
-          <button class="mcp-btn white" type="button" id="mcpConnectGpt"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.0,5.4 A6.6,6.6 0 1 1 9.2,18.0" fill="none" stroke="#EDEDED" stroke-width="2.1" stroke-linecap="round"/><path d="M17.7,8.7 A6.6,6.6 0 1 1 5.4,12.6" fill="none" stroke="#EDEDED" stroke-width="2.1" stroke-linecap="round"/><path d="M17.7,15.3 A6.6,6.6 0 1 1 8.2,6.6" fill="none" stroke="#EDEDED" stroke-width="2.1" stroke-linecap="round"/><path d="M12.0,18.6 A6.6,6.6 0 1 1 14.8,6.0" fill="none" stroke="#EDEDED" stroke-width="2.1" stroke-linecap="round"/><path d="M6.3,15.3 A6.6,6.6 0 1 1 18.6,11.4" fill="none" stroke="#EDEDED" stroke-width="2.1" stroke-linecap="round"/><path d="M6.3,8.7 A6.6,6.6 0 1 1 15.8,17.4" fill="none" stroke="#EDEDED" stroke-width="2.1" stroke-linecap="round"/></svg> Connect to ChatGPT</button>
-        </div>
-        <p class="fineprint" style="margin:14px 0 0"><a href="https://www.npmjs.com/package/unictos-mcp" target="_blank" rel="noopener">unictos-mcp on npm &rarr;</a> &nbsp;&middot;&nbsp; <a href="https://github.com/unictoai/unictos/tree/main/mcp" target="_blank" rel="noopener">source on GitHub</a></p>
-      </div>
     </section>
   </div>
 
@@ -1636,7 +1575,6 @@
     {id:"writing",  label:"Writing", blurb:"Draft, polish and format words — prompts, posts, docs and meta."},
     {id:"data",     label:"Data", blurb:"Query, clean and explain datasets, spreadsheets and documents."},
     {id:"devops",   label:"DevOps", blurb:"Deploy, test and ship — the pipeline skills."},
-    {id:"testing",  label:"Testing", blurb:"Unit, end-to-end, API and accessibility testing."},
     {id:"automation",label:"Automation", blurb:"Schedules, scrapers and the glue between your tools."},
     {id:"design",   label:"Design", blurb:"Interfaces, palettes and brand assets with an eye for detail."},
     {id:"productivity",label:"Productivity", blurb:"Meetings, inboxes and changelogs — the daily admin, handled."},
@@ -1660,13 +1598,6 @@
 
   /* ---------------- helpers ---------------- */
   var $ = function(s, el){ return (el||document).querySelector(s); };
-  /* temporary on-screen error reporter for debugging blank pages */
-  window.addEventListener("error", function(e){
-    var d = document.createElement("div");
-    d.style.cssText = "position:fixed;top:8px;left:8px;right:8px;z-index:99999;background:#7a1f1f;color:#fff;font:12px monospace;padding:10px;border-radius:8px;word-break:break-all";
-    d.textContent = "JS ERROR: " + (e.message || e.type) + " @ " + (e.lineno || "?");
-    document.body.appendChild(d);
-  });
   var $$ = function(s, el){ return Array.prototype.slice.call((el||document).querySelectorAll(s)); };
 
   var HUES = [74, 96, 152, 187, 210, 258, 318, 16, 36, 128];
@@ -1718,7 +1649,7 @@
   function slugOf(s){ return s.slug || s.name.toLowerCase().replace(/[^a-z0-9]+/g,"-"); }
   function bySlug(slug){ var m = SKILLS.filter(function(x){ return slugOf(x)===slug; }); return m[0] || null; }
   function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
-  function installCmd(s){ return s.repo+"/tree/"+s.fullsha+(s.path?"/"+s.path:""); }
+  function installCmd(s){ return s.repo+"/tree/"+s.fullsha+"/"+s.path; }
 
   var ICON_CHECK = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
   var ICON_SHIELD = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.6 8-10V5l-8-3-8 3v7c0 6.4 8 10 8 10z"/><path d="m9 11.5 2 2 4-4.5"/></svg>';
@@ -2321,14 +2252,13 @@
   }
 
   /* ---------------- router ---------------- */
-  var PAGES = ["home","categories","category","skill","verify","submit","library","mcp"];
+  var PAGES = ["home","categories","category","skill","verify","submit","library"];
   var currentPage = "home";
 
   function showPage(name){
     currentPage = name;
     PAGES.forEach(function(p){
-      var el = $("#page-"+p);
-      if (el) el.classList.toggle("on", p===name);
+      $("#page-"+p).classList.toggle("on", p===name);
     });
     $$(".nav-link").forEach(function(a){
       var k = a.getAttribute("data-navlink");
@@ -2369,35 +2299,12 @@
       return;
     }
     if (parts[0] === "verify"){ showPage("verify"); return; }
-    if (parts[0] === "mcp"){ showPage("mcp"); return; }
     if (parts[0] === "submit"){ showPage("submit"); return; }
     if (parts[0] === "library"){ renderLibrary(); showPage("library"); return; }
     showPage("home");
   }
   window.addEventListener("hashchange", route);
 
-  var heroMcpCopy = $("#heroMcpCopy");
-  if (heroMcpCopy) heroMcpCopy.addEventListener("click", function(){
-    copyText($("#heroMcpCmd").textContent.trim(), "MCP command copied — paste it in your terminal.");
-  });
-  var mcpCopy = $("#mcpCopy");
-  if (mcpCopy) mcpCopy.addEventListener("click", function(){
-    copyText($("#mcpCmd").textContent.trim(), "MCP install command copied — paste it in your terminal.");
-  });
-  var mcpHow = $("#mcpHow"), mcpHowBody = $("#mcpHowBody");
-  if (mcpHow && mcpHowBody) mcpHow.addEventListener("click", function(){
-    var open = mcpHowBody.hidden;
-    mcpHowBody.hidden = !open;
-    mcpHow.querySelector(".lbl").textContent = open ? " Hide" : " How to connect?";
-  });
-  var mcpCc = $("#mcpConnectClaude");
-  if (mcpCc) mcpCc.addEventListener("click", function(){
-    copyText("claude mcp add unictos -- npx -y unictos-mcp", "Copied — paste in your terminal to connect Claude Code.");
-  });
-  var mcpCg = $("#mcpConnectGpt");
-  if (mcpCg) mcpCg.addEventListener("click", function(){
-    copyText("npx -y unictos-mcp", "Copied — add it as an MCP server in ChatGPT's settings.");
-  });
   $$("[data-goto-catalog]").forEach(function(a){
     a.addEventListener("click", function(){
       setTimeout(function(){ $("#catalog").scrollIntoView({behavior:"smooth"}); }, 80);
