@@ -1,0 +1,1584 @@
+{
+  "skill": {
+    "name": "ecs-devops",
+    "source": "/home/hatch/workspace/ai-store/scan-work/repos/aws-samples-sample-apex-skills/skills/ecs-devops",
+    "scanned_at": "2026-10-13T08:35:48.904892+00:00"
+  },
+  "risk_assessment": {
+    "score": 37,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION",
+    "max_issue_severity": "HIGH"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 258,
+      "executable": false,
+      "size_bytes": 37120,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/cicd-pipelines.md",
+      "type": "markdown",
+      "lines": 156,
+      "executable": false,
+      "size_bytes": 11559,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/controllers-and-migration.md",
+      "type": "markdown",
+      "lines": 109,
+      "executable": false,
+      "size_bytes": 10735,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/deployment-strategies.md",
+      "type": "markdown",
+      "lines": 232,
+      "executable": false,
+      "size_bytes": 19823,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/failure-detection-and-rollback.md",
+      "type": "markdown",
+      "lines": 118,
+      "executable": false,
+      "size_bytes": 13651,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    }
+  ],
+  "structured_summaries": [],
+  "issues": [
+    {
+      "id": "AE1",
+      "finding_id": "finding-8c28124e266e4c60939a493e686a6ddf",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 213,
+        "end_line": null
+      },
+      "finding": "references/cicd-pipelines.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "**For full pipeline walkthroughs, a GitHub Actions workflow skeleton, and scan-gating patterns, see:** [CI/CD Pipelines](references/cicd-pipelines.md)",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/cicd-pipelines.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "089dccfc5e586e31fce16068657cd37e6436ea4ed09c9c50124d4edb1e5acea4",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 213,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-f2aaa14847dd446cbf70534033589202",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 239,
+        "end_line": null
+      },
+      "finding": "references/cicd-pipelines.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "| [cicd-pipelines.md](references/cicd-pipelines.md) | CodePipeline ECS actions (standard + blue/green), GitHub Actions workflows for ECS, OIDC credentials, ECR ",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/cicd-pipelines.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "089dccfc5e586e31fce16068657cd37e6436ea4ed09c9c50124d4edb1e5acea4",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 239,
+          "end_line": null
+        }
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": false,
+    "skillspector_version": "2.12.0",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "llm_provenance": {
+      "schema_version": 1,
+      "provider": {
+        "configured_adapter": "unknown",
+        "resolved_adapter": "unknown",
+        "effective_adapter": "not_applicable",
+        "effective_adapters": [],
+        "service": "unknown",
+        "routing": {
+          "deployment_override": null,
+          "deployment_source": "unknown",
+          "api_version": null,
+          "api_version_source": "unknown"
+        }
+      },
+      "analyzers": [
+        {
+          "analyzer_id": "mcp_tool_poisoning",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_developer_intent",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_quality_policy",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_security_discovery",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "meta_analyzer",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        }
+      ],
+      "sampling": {
+        "temperature": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "seed": {
+          "requested": null,
+          "source": "unset",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "reasoning_effort": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        }
+      },
+      "determinism": {
+        "classification": "not_applicable",
+        "control_status": "not_applied",
+        "provider_guarantee": false,
+        "reason": "LLM analysis was not executed for this scan."
+      }
+    },
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 5,
+    "scanned_components": 4,
+    "coverage_percent": 80.0,
+    "is_complete": false,
+    "status": "partial",
+    "execution_successful": true,
+    "fully_inspected_files": 4,
+    "partially_inspected_files": 1,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 53,
+        "end_line": 53,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 54,
+        "end_line": 54,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 84,
+        "end_line": 84,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 179,
+        "end_line": 179,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 203,
+        "end_line": 203,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 204,
+        "end_line": 204,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "references/cicd-pipelines.md",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "artifact_integrity",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "bundled_execution_surface",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "reference_coverage",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "degraded",
+        "planned_work": 5,
+        "completed": 4,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 5,
+        "completed": 5,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "references": [
+      {
+        "source_path": "SKILL.md",
+        "line": 10,
+        "column": 529,
+        "evidence": " wrong*. When in doubt, defer to the live [ECS service deployment options page](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 53,
+        "column": 4,
+        "evidence": "- `deploymentController.type` has three values \u2014 `ECS`, `CODE_DEPLOY`, `EXTERNAL`.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 54,
+        "column": 36,
+        "evidence": "- Under the **`ECS` controller**, `deploymentConfiguration.strategy` selects one of four built-in strategies \u2014 `ROLLING` (default), `BLUE_GREEN` (GA Jul 17, 202",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 55,
+        "column": 186,
+        "evidence": "mmendation is the native ECS blue/green deployment ([deployment-type-bluegreen](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-blue",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 56,
+        "column": 154,
+        "evidence": "r own tooling via task-set APIs \u2014 see [references/controllers-and-migration.md](references/controllers-and-migration.md).",
+        "target_path": "references/controllers-and-migration.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 56,
+        "column": 113,
+        "evidence": "hands the whole deployment process to your own tooling via task-set APIs \u2014 see [references/controllers-and-migration.md](references/controllers-and-migration.md",
+        "target_path": "references/controllers-and-migration.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 57,
+        "column": 192,
+        "evidence": "migrate a service between controller types without recreating it ([doc history](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/document_history.htm",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 70,
+        "column": 220,
+        "evidence": "rgate/Managed Instances spend) during deployments ([deployment-type-blue-green](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-blue",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 84,
+        "column": 56,
+        "evidence": "| `CODE_DEPLOY` controller | \u2705 | \u26a0\ufe0f All-at-once only (`CodeDeployDefault.ECSAllAtOnce`) | \u274c | \u274c Load balancer required |",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 87,
+        "column": 38,
+        "evidence": "Sources: [blue/green implementation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/blue-green-deployment-implementation.html) \u00b7 [NLB nuance](https",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 87,
+        "column": 156,
+        "evidence": "latest/developerguide/blue-green-deployment-implementation.html) \u00b7 [NLB nuance](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-blue",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 87,
+        "column": 275,
+        "evidence": "atest/developerguide/deployment-type-blue-green.html) \u00b7 [CodeDeploy controller](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-blue",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 87,
+        "column": 391,
+        "evidence": "S/latest/developerguide/deployment-type-bluegreen.html) \u00b7 [external controller](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-exte",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 87,
+        "column": 521,
+        "evidence": "operguide/deployment-type-external.html) \u00b7 [Service Connect deployment support](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-conc",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 93,
+        "column": 620,
+        "evidence": "ask metadata; it is not how you *select* Managed Instances ([API_CreateService](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 94,
+        "column": 284,
+        "evidence": "R-hosted images and \u2265 1.70.0 for all other registries ([Service Connect deploy](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-conc",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 94,
+        "column": 404,
+        "evidence": "test/developerguide/service-connect-concepts-deploy.html), [rolling deployment](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-ecs.",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 95,
+        "column": 182,
+        "evidence": "ion \u2265 1.4.0. Circuit breaker GA covered both EC2 and Fargate ([GA announcement](https://aws.amazon.com/about-aws/whats-new/2020/12/amazon-ecs-announces-the-gene",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 96,
+        "column": 142,
+        "evidence": "EC2-based compute consumed **via capacity providers only** ([Managed Instances](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ManagedInstances.htm",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 96,
+        "column": 476,
+        "evidence": "r/Service Connect, not away from Managed Instances ([blue/green implementation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/blue-green-deploymen",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 96,
+        "column": 1119,
+        "evidence": "ents task-set `launchType` as `EC2 | FARGATE | EXTERNAL` ([external controller](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-exte",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 96,
+        "column": 1251,
+        "evidence": "erguide/deployment-type-external.html)) while the [CreateTaskSet API reference](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateTaskSet.html",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 97,
+        "column": 655,
+        "evidence": "pe the circuit breaker only by deployment controller, and the [GA announcement](https://aws.amazon.com/about-aws/whats-new/2020/12/amazon-ecs-announces-the-gene",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 97,
+        "column": 857,
+        "evidence": "-breaker/) names EC2 and Fargate \u2014 verify before relying on it. ([ECS Anywhere](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-anywhere.html), ",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 97,
+        "column": 962,
+        "evidence": "om/AmazonECS/latest/developerguide/ecs-anywhere.html), [Service Connect deploy](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-conc",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 106,
+        "column": 364,
+        "evidence": "s 0% via CLI/SDK/API but **50% via the console** ([API_DeploymentConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeploymentConfigur",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 110,
+        "column": 406,
+        "evidence": "gether; **whichever trips first fails the deployment** ([alarm-based detection](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-alarm-fai",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 118,
+        "column": 118,
+        "evidence": "rm gotchas, and the full rollback ladder, see:** [Failure Detection & Rollback](references/failure-detection-and-rollback.md)",
+        "target_path": "references/failure-detection-and-rollback.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 128,
+        "column": 399,
+        "evidence": "tructureRolePolicyForLoadBalancers`) ([CodeDeploy-to-native migration overview](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-codedeploy-t",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 130,
+        "column": 91,
+        "evidence": "orrect `deploymentConfiguration` shapes (`ECS` controller \u2014 [API_CreateService](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 154,
+        "column": 92,
+        "evidence": "s: `stepPercent` 3.0\u2013100.0; `stepBakeTimeInMinutes` 0\u20131440 ([linear deployment](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-line",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 156,
+        "column": 472,
+        "evidence": "ose two \u2014 not the PRE_/POST_ variants) accept Lambda hooks only ([how it works](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/blue-green-deploymen",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 158,
+        "column": 164,
+        "evidence": "d* blue/green-family deployments (the rolling scope comes from the [What's New](https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ecs-pause-continue-dep",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 158,
+        "column": 486,
+        "evidence": "ue-service-deployment --hook-id <id> --action CONTINUE|ROLLBACK` ([pause hooks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/pause-lifecycle-hook",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 161,
+        "column": 151,
+        "evidence": " details, and deployment-speed tuning, see:** [Deployment Strategies Deep Dive](references/deployment-strategies.md)",
+        "target_path": "references/deployment-strategies.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 169,
+        "column": 73,
+        "evidence": "> \u26a0\ufe0f **Scope wording trap:** one sentence on the [alarm-detection page](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-alarm-failure.htm",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 174,
+        "column": 171,
+        "evidence": " note to `deploymentCircuitBreaker` specifically ([API_DeploymentConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeploymentConfigur",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 174,
+        "column": 402,
+        "evidence": " under the `ECS` controller (not CODE_DEPLOY/EXTERNAL) \u2014 [API_DeploymentAlarms](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeploymentAlarms.h",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 174,
+        "column": 668,
+        "evidence": "tion sets `alarms` with `\"strategy\": \"BLUE_GREEN\"` ([deploy-blue-green-service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deploy-blue-green-se",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 178,
+        "column": 33,
+        "evidence": "Jul 1, 2026 knobs ([What's New](https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ecs-circuit-breaker-settings/)):",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 179,
+        "column": 4,
+        "evidence": "- `thresholdConfiguration.type`: `BOUNDED_PERCENT` (default; value default 50; threshold = ceil(value% \u00d7 desired count) clamped to min 3 / max 200), `UNBOUNDED_",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 182,
+        "column": 391,
+        "evidence": "or that deployment** \u2014 deliberately, so you can deploy a fix ([alarm detection](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-alarm-fai",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 187,
+        "column": 619,
+        "evidence": "that already reached `COMPLETED`, use rung 4 instead ([stop-service-deployment](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/stop-service-deploym",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 191,
+        "column": 500,
+        "evidence": " --stop-type ROLLBACK` or a previous task-def revision instead ([UpdateService](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateService.html",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 193,
+        "column": 127,
+        "evidence": " events, and stoppable deployment states, see:** [Failure Detection & Rollback](references/failure-detection-and-rollback.md)",
+        "target_path": "references/failure-detection-and-rollback.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 203,
+        "column": 114,
+        "evidence": "| CodePipeline \"Amazon ECS\" (standard) action | Rolling-style deploy of a new image to the service | ECS APIs | `imagedefinitions.json` |",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 204,
+        "column": 113,
+        "evidence": "\" action (`CodeDeployToECS`) | CodeDeploy-controller blue/green | CodeDeploy | `imageDetail.json` + AppSpec + task-def templates |",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 208,
+        "column": 266,
+        "evidence": "ment` to the ECS `UpdateService` API ([CodeDeploy-to-native migration overview](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-codedeploy-t",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 210,
+        "column": 282,
+        "evidence": "pector pricing applies). Gate deploys on scan findings via EventBridge ([basic](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning-basic-enab",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 210,
+        "column": 386,
+        "evidence": "com/AmazonECR/latest/userguide/image-scanning-basic-enabling.html) \u00b7 [enhanced](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning-enhanced.h",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 211,
+        "column": 310,
+        "evidence": " native blue/green-family expectations to an Anywhere service** ([ECS Anywhere](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-anywhere.html)).",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 213,
+        "column": 122,
+        "evidence": "**For full pipeline walkthroughs, a GitHub Actions workflow skeleton, and scan-gating patterns, see:** [CI/CD Pipelines](references/cicd-pipelines.md)",
+        "target_path": "references/cicd-pipelines.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 227,
+        "column": 213,
+        "evidence": " fail with an invalid-networking-configuration rollback ([migration steps page](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-code-deploy-",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 237,
+        "column": 30,
+        "evidence": "| [deployment-strategies.md](references/deployment-strategies.md) | Configuring rolling min/max, blue/green/linear/canary end-to-end (target groups, listener ru",
+        "target_path": "references/deployment-strategies.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 238,
+        "column": 39,
+        "evidence": "| [failure-detection-and-rollback.md](references/failure-detection-and-rollback.md) | Circuit breaker thresholds and worked examples, CloudWatch alarm detection",
+        "target_path": "references/failure-detection-and-rollback.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 239,
+        "column": 23,
+        "evidence": "| [cicd-pipelines.md](references/cicd-pipelines.md) | CodePipeline ECS actions (standard + blue/green), GitHub Actions workflows for ECS, OIDC credentials, ECR ",
+        "target_path": "references/cicd-pipelines.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 240,
+        "column": 34,
+        "evidence": "| [controllers-and-migration.md](references/controllers-and-migration.md) | CodeDeploy controller specifics, migrating CodeDeploy \u2192 native blue/green (three app",
+        "target_path": "references/controllers-and-migration.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 246,
+        "column": 43,
+        "evidence": "- [Amazon ECS service deployment options](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html) \u00b7 [Rolling update](https://docs.",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 246,
+        "column": 148,
+        "evidence": "om/AmazonECS/latest/developerguide/ecs_service-options.html) \u00b7 [Rolling update](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-ecs.",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 246,
+        "column": 260,
+        "evidence": "onECS/latest/developerguide/deployment-type-ecs.html) \u00b7 [Blue/green deployment](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-blue",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 246,
+        "column": 378,
+        "evidence": "latest/developerguide/deployment-type-blue-green.html) \u00b7 [How blue/green works](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/blue-green-deploymen",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 246,
+        "column": 501,
+        "evidence": "t/developerguide/blue-green-deployment-how-it-works.html) \u00b7 [Linear deployment](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-line",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 246,
+        "column": 612,
+        "evidence": "zonECS/latest/developerguide/deployment-type-linear.html) \u00b7 [Canary deployment](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/canary-deployment.ht",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 247,
+        "column": 32,
+        "evidence": "- [Deployment circuit breaker](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-circuit-breaker.html) \u00b7 [CloudWatch alarm failure detectio",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 247,
+        "column": 164,
+        "evidence": "erguide/deployment-circuit-breaker.html) \u00b7 [CloudWatch alarm failure detection](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-alarm-fai",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 247,
+        "column": 281,
+        "evidence": "/latest/developerguide/deployment-alarm-failure.html) \u00b7 [Pause lifecycle hooks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/pause-lifecycle-hook",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 247,
+        "column": 403,
+        "evidence": "st/developerguide/pause-lifecycle-hooks.html) \u00b7 [Stopping a service deployment](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/stop-service-deploym",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 248,
+        "column": 47,
+        "evidence": "- [CodeDeploy blue/green (legacy controller)](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-bluegreen.html) \u00b7 [Migrate CodeDeploy ",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 248,
+        "column": 183,
+        "evidence": "ide/deployment-type-bluegreen.html) \u00b7 [Migrate CodeDeploy to native blue/green](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-codedeploy-t",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 248,
+        "column": 320,
+        "evidence": "de/migrate-codedeploy-to-ecs-bluegreen.html) \u00b7 [External deployment controller](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-exte",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 249,
+        "column": 27,
+        "evidence": "- [ECS CreateService API](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html) \u00b7 [ECS UpdateService API](https://docs.aws.amazon.co",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 249,
+        "column": 135,
+        "evidence": "AmazonECS/latest/APIReference/API_CreateService.html) \u00b7 [ECS UpdateService API](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateService.html",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 249,
+        "column": 242,
+        "evidence": "/AmazonECS/latest/APIReference/API_UpdateService.html) \u00b7 [ECS document history](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/document_history.htm",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 250,
+        "column": 48,
+        "evidence": "- What's New: [built-in blue/green (Jul 2025)](https://aws.amazon.com/about-aws/whats-new/2025/07/amazon-ecs-built-in-blue-green-deployments/) \u00b7 [linear & canar",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 250,
+        "column": 175,
+        "evidence": "/07/amazon-ecs-built-in-blue-green-deployments/) \u00b7 [linear & canary (Oct 2025)](https://aws.amazon.com/about-aws/whats-new/2025/10/amazon-ecs-built-in-linear-ca",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 250,
+        "column": 311,
+        "evidence": "n-ecs-built-in-linear-canary-deployments/) \u00b7 [NLB for linear/canary (Feb 2026)](https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ecs-nlb-linear-canary-",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 250,
+        "column": 435,
+        "evidence": "026/02/amazon-ecs-nlb-linear-canary-deployments/) \u00b7 [pause/continue (May 2026)](https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ecs-pause-continue-dep",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 250,
+        "column": 570,
+        "evidence": "on-ecs-pause-continue-deployments/) \u00b7 [configurable circuit breaker (Jul 2026)](https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ecs-circuit-breaker-se",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 250,
+        "column": 692,
+        "evidence": "/2026/07/amazon-ecs-circuit-breaker-settings/) \u00b7 [1-click rollbacks (May 2025)](https://aws.amazon.com/about-aws/whats-new/2025/05/amazon-ecs-1-click-rollbacks-",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 251,
+        "column": 31,
+        "evidence": "- [CodePipeline integrations](https://docs.aws.amazon.com/codepipeline/latest/userguide/integrations-action-type.html) \u00b7 [CodePipeline image file reference](htt",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 251,
+        "column": 158,
+        "evidence": "/userguide/integrations-action-type.html) \u00b7 [CodePipeline image file reference](https://docs.aws.amazon.com/codepipeline/latest/userguide/file-reference.html) \u00b7",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 251,
+        "column": 273,
+        "evidence": "eline/latest/userguide/file-reference.html) \u00b7 [ECS blue/green action reference](https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-ECSbl",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 252,
+        "column": 55,
+        "evidence": "- GitHub Actions: [amazon-ecs-deploy-task-definition](https://github.com/aws-actions/amazon-ecs-deploy-task-definition) \u00b7 [amazon-ecs-render-task-definition](ht",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 252,
+        "column": 159,
+        "evidence": "ctions/amazon-ecs-deploy-task-definition) \u00b7 [amazon-ecs-render-task-definition](https://github.com/aws-actions/amazon-ecs-render-task-definition) \u00b7 [amazon-ecr-",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 252,
+        "column": 246,
+        "evidence": "/github.com/aws-actions/amazon-ecs-render-task-definition) \u00b7 [amazon-ecr-login](https://github.com/aws-actions/amazon-ecr-login) \u00b7 [configure-aws-credentials](h",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 252,
+        "column": 325,
+        "evidence": "(https://github.com/aws-actions/amazon-ecr-login) \u00b7 [configure-aws-credentials](https://github.com/aws-actions/configure-aws-credentials)",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 253,
+        "column": 24,
+        "evidence": "- [ECR basic scanning](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning-basic-enabling.html) \u00b7 [ECR enhanced scanning (Inspector)](https://",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 253,
+        "column": 153,
+        "evidence": "guide/image-scanning-basic-enabling.html) \u00b7 [ECR enhanced scanning (Inspector)](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning-enhanced.h",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 254,
+        "column": 18,
+        "evidence": "- [ECS Anywhere](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-anywhere.html) \u00b7 [ECS Managed Instances](https://docs.aws.amazon.com/AmazonECS/",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 254,
+        "column": 123,
+        "evidence": "om/AmazonECS/latest/developerguide/ecs-anywhere.html) \u00b7 [ECS Managed Instances](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ManagedInstances.htm",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 254,
+        "column": 252,
+        "evidence": "loperguide/ManagedInstances.html) \u00b7 [Service Connect deployment considerations](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-conc",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      }
+    ],
+    "limitations": [
+      "Analyzer static_patterns_tool_misuse status: degraded."
+    ],
+    "findings_before_filtering": 2,
+    "findings_after_filtering": 2
+  }
+}

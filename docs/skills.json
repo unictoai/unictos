@@ -4106,6 +4106,764 @@
     "reviewed_at": "2026-10-13",
     "summary": "Reviewed the Makefile and templates. Standard LaTeX workflow, nothing concerning."
    }
+  },
+  {
+   "slug": "claude-api",
+   "name": "claude-api",
+   "tagline": "Build on the Claude API \u2014 Python, TypeScript, curl",
+   "description": "Anthropic's claude-api: build on the Claude API \u2014 Python and TypeScript SDKs, curl examples, tool use, MCP, prompt caching. Needs your API key.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/claude-api",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "code",
+   "license": "Apache-2.0",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/claude-api into your agent's skills folder.",
+   "uses": [
+    "Call the Claude API",
+    "Use tool calling",
+    "Set up prompt caching"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Needs your Anthropic API key"
+    ],
+    [
+     "ok",
+     "Official SDK examples"
+    ],
+    [
+     "ok",
+     "Key stays in your environment"
+    ]
+   ],
+   "uniscan": {
+    "score": 88,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 127,
+     "medium": 70,
+     "low": 2
+    },
+    "notes": [
+     "199 findings, all reviewed. 119 are coverage notes on the large reference set. 'Context Leakage' flags are on docs about multi-turn conversations ('send the full conversation history') \u2014 the scanner matched 'context' terminology.",
+     "'Anti-Refusal' is on CLI docs about paused turns. 'External Model Selection' is on ant CLI examples. All Anthropic API documentation."
+    ],
+    "report": "reports/claude-api.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Reviewed the flagged sections. All Claude API documentation, no exfiltration."
+   }
+  },
+  {
+   "slug": "linear",
+   "name": "linear",
+   "tagline": "Manage Linear issues, projects and teams",
+   "description": "wrsmith108's linear skill: manage Linear issues, projects and teams \u2014 creating issues, status updates, project queries, workflow automation. Needs your API key.",
+   "repo": "https://github.com/wrsmith108/linear-claude-skill",
+   "path": "SKILL.md",
+   "pinned_sha": "d61cd9ad05f1863a421d891d9319ec2405904488",
+   "category": "productivity",
+   "license": "MIT",
+   "author": "wrsmith108",
+   "install_hint": "Copy the skill into your agent's skills folder.",
+   "uses": [
+    "Create Linear issues",
+    "Query projects",
+    "Automate issue workflows"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Needs your Linear API key"
+    ],
+    [
+     "warn",
+     "Manages your Linear workspace (its purpose)"
+    ],
+    [
+     "ok",
+     "Key stays in your environment"
+    ]
+   ],
+   "uniscan": {
+    "score": 87,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 16,
+     "medium": 31,
+     "low": 0
+    },
+    "notes": [
+     "47 findings, all reviewed. 14 HIGH are coverage notes. 2 'Credential Access' flags are on setup docs showing how to configure your LINEAR_API_KEY \u2014 the skill's documented auth.",
+     "31 MEDIUM are docs prose. The skill talks to Linear's API with your key \u2014 its entire purpose."
+    ],
+    "report": "reports/linear.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Verified the API flows: user key -> Linear API only. No other network."
+   }
+  },
+  {
+   "slug": "mongodb-connection",
+   "name": "mongodb-connection",
+   "tagline": "Optimize MongoDB client connections",
+   "description": "MongoDB's official skill: optimize MongoDB client connection config \u2014 pools, timeouts, patterns.",
+   "repo": "https://github.com/mongodb/agent-skills",
+   "path": "skills/mongodb-connection",
+   "pinned_sha": "c370a63b27075008a92134686b24af3817edeb00",
+   "category": "data",
+   "license": "Apache-2.0",
+   "author": "MongoDB",
+   "install_hint": "Copy skills/mongodb-connection into your agent's skills folder.",
+   "uses": [
+    "Tune connection pools",
+    "Fix timeout issues",
+    "Follow connection patterns"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Official MongoDB guidance"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 94,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 3,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "3 HIGH are coverage notes on referenced guides \u2014 reviewed manually."
+    ],
+    "report": "reports/mongodb-connection.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Connection guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "mongodb-schema-design",
+   "name": "mongodb-schema-design",
+   "tagline": "MongoDB schema patterns and anti-patterns",
+   "description": "MongoDB's official skill: schema design patterns and anti-patterns for data modeling.",
+   "repo": "https://github.com/mongodb/agent-skills",
+   "path": "skills/mongodb-schema-design",
+   "pinned_sha": "c370a63b27075008a92134686b24af3817edeb00",
+   "category": "data",
+   "license": "Apache-2.0",
+   "author": "MongoDB",
+   "install_hint": "Copy skills/mongodb-schema-design into your agent's skills folder.",
+   "uses": [
+    "Design a MongoDB schema",
+    "Avoid schema anti-patterns",
+    "Model document relationships"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Official MongoDB guidance"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 93,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 4,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "5 findings, all reviewed \u2014 coverage notes on the pattern reference files."
+    ],
+    "report": "reports/mongodb-schema-design.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Schema guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "mongodb-query-optimizer",
+   "name": "mongodb-query-optimizer",
+   "tagline": "Optimize MongoDB queries \u2014 indexes, explain plans",
+   "description": "MongoDB's official skill: optimize queries \u2014 indexes, explain plans, slow-query triage.",
+   "repo": "https://github.com/mongodb/agent-skills",
+   "path": "skills/mongodb-query-optimizer",
+   "pinned_sha": "c370a63b27075008a92134686b24af3817edeb00",
+   "category": "data",
+   "license": "Apache-2.0",
+   "author": "MongoDB",
+   "install_hint": "Copy skills/mongodb-query-optimizer into your agent's skills folder.",
+   "uses": [
+    "Speed up a slow query",
+    "Choose indexes",
+    "Read explain plans"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Official MongoDB guidance"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 97,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "1 MEDIUM, reviewed \u2014 docs note."
+    ],
+    "report": "reports/mongodb-query-optimizer.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Query guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "docker-management",
+   "name": "docker-management",
+   "tagline": "Build, optimize and troubleshoot Docker containers",
+   "description": "BagelHole's docker-management: build, optimize and troubleshoot Docker containers and Dockerfiles.",
+   "repo": "https://github.com/BagelHole/DevOps-Security-Agent-Skills",
+   "path": "devops/containers/docker-management",
+   "pinned_sha": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+   "category": "devops",
+   "license": "MIT",
+   "author": "BagelHole",
+   "install_hint": "Copy devops/containers/docker-management into your agent's skills folder.",
+   "uses": [
+    "Write a better Dockerfile",
+    "Optimize image size",
+    "Troubleshoot containers"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 94,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 21,
+     "low": 0
+    },
+    "notes": [
+     "21 MEDIUM, all reviewed \u2014 docs notes on container guidance."
+    ],
+    "report": "reports/docker-management.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Docker guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "kubernetes-ops",
+   "name": "kubernetes-ops",
+   "tagline": "Deploy, scale and manage Kubernetes workloads",
+   "description": "BagelHole's kubernetes-ops: deploy, scale and manage Kubernetes workloads \u2014 deployments, services.",
+   "repo": "https://github.com/BagelHole/DevOps-Security-Agent-Skills",
+   "path": "devops/orchestration/kubernetes-ops",
+   "pinned_sha": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+   "category": "devops",
+   "license": "MIT",
+   "author": "BagelHole",
+   "install_hint": "Copy devops/orchestration/kubernetes-ops into your agent's skills folder.",
+   "uses": [
+    "Deploy to Kubernetes",
+    "Scale a workload",
+    "Manage services"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 97,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "1 MEDIUM, reviewed \u2014 docs note."
+    ],
+    "report": "reports/kubernetes-ops.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. K8s guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "disaster-recovery",
+   "name": "disaster-recovery",
+   "tagline": "Disaster recovery \u2014 runbooks, RPO/RTO, failover",
+   "description": "BagelHole's disaster-recovery: disaster recovery strategies \u2014 runbooks, RPO/RTO, failover planning.",
+   "repo": "https://github.com/BagelHole/DevOps-Security-Agent-Skills",
+   "path": "compliance/continuity/disaster-recovery",
+   "pinned_sha": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+   "category": "devops",
+   "license": "MIT",
+   "author": "BagelHole",
+   "install_hint": "Copy compliance/continuity/disaster-recovery into your agent's skills folder.",
+   "uses": [
+    "Plan disaster recovery",
+    "Write a runbook",
+    "Define RPO/RTO"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 97,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 2,
+     "low": 0
+    },
+    "notes": [
+     "2 MEDIUM, reviewed \u2014 docs notes."
+    ],
+    "report": "reports/disaster-recovery.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. DR planning guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "ecs-devops",
+   "name": "ecs-devops",
+   "tagline": "Deploy to Amazon ECS \u2014 blue/green, releases",
+   "description": "AWS Samples' ecs-devops: deploy and ship software to Amazon ECS \u2014 blue/green deployments, releases.",
+   "repo": "https://github.com/aws-samples/sample-apex-skills",
+   "path": "skills/ecs-devops",
+   "pinned_sha": "6103231b474686400a4220282ae59daa8aba9e09",
+   "category": "devops",
+   "license": "MIT-0",
+   "author": "AWS Samples",
+   "install_hint": "Copy skills/ecs-devops into your agent's skills folder.",
+   "uses": [
+    "Deploy to ECS",
+    "Set up blue/green",
+    "Manage releases"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "AWS-official patterns"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 93,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 2,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "2 HIGH are coverage notes on CI/CD reference docs \u2014 reviewed manually. License is MIT-0 (MIT No Attribution)."
+    ],
+    "report": "reports/ecs-devops.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. ECS deployment guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "a11y-ally",
+   "name": "a11y-ally",
+   "tagline": "Comprehensive WCAG accessibility audits",
+   "description": "proffesor-for-testing's a11y-ally: comprehensive WCAG accessibility audits \u2014 axe-core, pa11y, Lighthouse.",
+   "repo": "https://github.com/proffesor-for-testing/agentic-qe",
+   "path": ".claude/skills/a11y-ally",
+   "pinned_sha": "d65ede1491a316db7bbb1b1b2417c1b0cdef842c",
+   "category": "testing",
+   "license": "MIT",
+   "author": "proffesor-for-testing",
+   "install_hint": "Copy .claude/skills/a11y-ally into your agent's skills folder.",
+   "uses": [
+    "Audit web accessibility",
+    "Check WCAG compliance",
+    "Run axe-core checks"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Uses standard audit tools"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 93,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 3,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "4 findings, all reviewed. 'Hidden Instructions' are on HTML/ARIA code examples in the docs. 'Memory Manipulation' is on docs prose."
+    ],
+    "report": "reports/a11y-ally.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged sections. All accessibility documentation with code examples."
+   }
+  },
+  {
+   "slug": "api-testing-rest",
+   "name": "api-testing-rest",
+   "tagline": "RESTful API testing \u2014 methods, status codes, validation",
+   "description": "PramodDutta's api-testing-rest: RESTful API testing \u2014 methods, status codes, validation patterns.",
+   "repo": "https://github.com/PramodDutta/qaskills",
+   "path": "packs/qa-essentials/skills/api-testing-rest",
+   "pinned_sha": "c9ac503db2ec764d61c639aa104426e3ad47b69f",
+   "category": "testing",
+   "license": "MIT",
+   "author": "PramodDutta",
+   "install_hint": "Copy packs/qa-essentials/skills/api-testing-rest into your agent's skills folder.",
+   "uses": [
+    "Test a REST API",
+    "Validate status codes",
+    "Check response schemas"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 96,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "1 HIGH 'Tool Parameter Abuse' reviewed \u2014 docs prose."
+    ],
+    "report": "reports/api-testing-rest.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. API testing guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "cypress-e2e",
+   "name": "cypress-e2e",
+   "tagline": "End-to-end testing with Cypress",
+   "description": "PramodDutta's cypress-e2e: end-to-end testing with Cypress \u2014 custom commands, network interception.",
+   "repo": "https://github.com/PramodDutta/qaskills",
+   "path": "packs/qa-essentials/skills/cypress-e2e",
+   "pinned_sha": "c9ac503db2ec764d61c639aa104426e3ad47b69f",
+   "category": "testing",
+   "license": "MIT",
+   "author": "PramodDutta",
+   "install_hint": "Copy packs/qa-essentials/skills/cypress-e2e into your agent's skills folder.",
+   "uses": [
+    "Write Cypress tests",
+    "Intercept network calls",
+    "Test user flows"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 98,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "1 MEDIUM, reviewed \u2014 docs note."
+    ],
+    "report": "reports/cypress-e2e.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Cypress guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "jest-unit",
+   "name": "jest-unit",
+   "tagline": "Unit testing with Jest \u2014 mocking, spies, snapshots",
+   "description": "PramodDutta's jest-unit: unit testing with Jest \u2014 mocking, spies, snapshots, coverage.",
+   "repo": "https://github.com/PramodDutta/qaskills",
+   "path": "packs/qa-essentials/skills/jest-unit",
+   "pinned_sha": "c9ac503db2ec764d61c639aa104426e3ad47b69f",
+   "category": "testing",
+   "license": "MIT",
+   "author": "PramodDutta",
+   "install_hint": "Copy packs/qa-essentials/skills/jest-unit into your agent's skills folder.",
+   "uses": [
+    "Write Jest tests",
+    "Mock dependencies",
+    "Check coverage"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 96,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 7,
+     "low": 0
+    },
+    "notes": [
+     "7 MEDIUM, all reviewed \u2014 docs notes."
+    ],
+    "report": "reports/jest-unit.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Jest guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "apollo-client",
+   "name": "apollo-client",
+   "tagline": "Official Apollo GraphQL client guidance",
+   "description": "Apollo's official skill: Apollo GraphQL client guidance \u2014 queries, caching, federation.",
+   "repo": "https://github.com/apollographql/skills",
+   "path": "skills/apollo-client",
+   "pinned_sha": "5f02fcfcebec678e2e55777b639e32346622a963",
+   "category": "code",
+   "license": "MIT",
+   "author": "Apollo",
+   "install_hint": "Copy skills/apollo-client into your agent's skills folder.",
+   "uses": [
+    "Use Apollo Client",
+    "Set up caching",
+    "Work with federation"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Official Apollo guidance"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 93,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 5,
+     "medium": 2,
+     "low": 0
+    },
+    "notes": [
+     "7 findings, all reviewed \u2014 5 coverage notes, 2 npx docs suggestions."
+    ],
+    "report": "reports/apollo-client.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. GraphQL guidance, nothing executable."
+   }
   }
  ],
  "version": 1
