@@ -3941,6 +3941,171 @@
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Workflow design guidance, nothing executable."
    }
+  },
+  {
+   "slug": "database-lookup",
+   "name": "database-lookup",
+   "tagline": "Query documented public database APIs reproducibly",
+   "description": "K-Dense-AI's database-lookup: reproducibly query documented public database APIs \u2014 scientific, regulatory, financial \u2014 with provenance tracking. Covers 40+ databases.",
+   "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "path": "skills/database-lookup",
+   "pinned_sha": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+   "category": "data",
+   "license": "MIT",
+   "author": "K-Dense-AI",
+   "install_hint": "Copy skills/database-lookup into your agent's skills folder.",
+   "uses": [
+    "Query a public database API",
+    "Get data with provenance",
+    "Find the right API for a dataset"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Queries 40+ public database APIs (its purpose)"
+    ],
+    [
+     "ok",
+     "Documents auth per API"
+    ],
+    [
+     "ok",
+     "No keys harvested"
+    ]
+   ],
+   "uniscan": {
+    "score": 90,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 169,
+     "low": 0
+    },
+    "notes": [
+     "170 findings, all reviewed. 169 'External Transmission' flags are the skill documenting public database APIs (cBioPortal, Census, USPTO, World Bank...) \u2014 querying them is the skill's entire purpose.",
+     "The 1 HIGH 'Credential Access' is docs explaining cBioPortal's auth model (public needs none, private uses Bearer token). Documentation, not harvesting."
+    ],
+    "report": "reports/database-lookup.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Reviewed the API reference docs. All public endpoints, auth documented per-API. No exfiltration."
+   }
+  },
+  {
+   "slug": "datalad",
+   "name": "datalad",
+   "tagline": "Version datasets and capture computational provenance",
+   "description": "K-Dense-AI's datalad: retrieve, version and publish datasets with DataLad/git-annex \u2014 captures computational provenance for re-executable analyses.",
+   "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "path": "skills/datalad",
+   "pinned_sha": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+   "category": "data",
+   "license": "MIT",
+   "author": "K-Dense-AI",
+   "install_hint": "Copy skills/datalad into your agent's skills folder.",
+   "uses": [
+    "Version a dataset",
+    "Publish data reproducibly",
+    "Capture analysis provenance"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Documents credential handling"
+    ],
+    [
+     "ok",
+     "No network access by the skill"
+    ]
+   ],
+   "uniscan": {
+    "score": 92,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 5,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "5 findings, all reviewed. 'Credential Access' is docs explaining DataLad's credential resolution (keyring, env, interactive prompt) \u2014 DataLad's documented security model.",
+     "'Tool Parameter Abuse' and 'Anti-Refusal' are on workflow documentation."
+    ],
+    "report": "reports/datalad.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged references. All DataLad methodology documentation."
+   }
+  },
+  {
+   "slug": "ml-paper-writing",
+   "name": "ml-paper-writing",
+   "tagline": "Write publication-ready ML papers (NeurIPS/ICML/ICLR/ACL)",
+   "description": "Orchestra-Research's ml-paper-writing: write publication-ready ML papers \u2014 NeurIPS/ICML/ICLR/ACL templates, citation-verification workflow, LaTeX tooling.",
+   "repo": "https://github.com/Orchestra-Research/AI-Research-SKILLs",
+   "path": "20-ml-paper-writing/ml-paper-writing",
+   "pinned_sha": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+   "category": "research",
+   "license": "MIT",
+   "author": "Orchestra-Research",
+   "install_hint": "Copy 20-ml-paper-writing/ml-paper-writing into your agent's skills folder.",
+   "uses": [
+    "Write an ML paper",
+    "Use a conference template",
+    "Verify citations"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "LaTeX templates + guidance"
+    ],
+    [
+     "ok",
+     "Makefile reviewed"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 92,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 7,
+     "medium": 8,
+     "low": 6
+    },
+    "notes": [
+     "21 findings, all reviewed. 'Chaining Abuse' is a Makefile clean target deleting LaTeX build artifacts \u2014 standard.",
+     "'Sudo/Root' is in template docs. 'External Transmission' flags are citation-database references. All paper-writing tooling."
+    ],
+    "report": "reports/ml-paper-writing.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Reviewed the Makefile and templates. Standard LaTeX workflow, nothing concerning."
+   }
   }
  ],
  "version": 1
