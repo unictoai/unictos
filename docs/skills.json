@@ -4864,6 +4864,492 @@
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. GraphQL guidance, nothing executable."
    }
+  },
+  {
+   "slug": "accessibility-testing",
+   "name": "accessibility-testing",
+   "tagline": "Accessibility testing workflows for web apps",
+   "description": "petrkindlmann's accessibility-testing: accessibility testing workflows for web apps.",
+   "repo": "https://github.com/petrkindlmann/qa-skills",
+   "path": "skills/accessibility-testing",
+   "pinned_sha": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+   "category": "testing",
+   "license": "MIT",
+   "author": "petrkindlmann",
+   "install_hint": "Copy skills/accessibility-testing into your agent's skills folder.",
+   "uses": [
+    "Test web accessibility",
+    "Check WCAG compliance",
+    "Find a11y issues"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 94,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 4,
+     "medium": 5,
+     "low": 0
+    },
+    "notes": [
+     "9 findings, all reviewed \u2014 4 coverage notes, 5 docs notes."
+    ],
+    "report": "reports/accessibility-testing.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. A11y testing guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "api-testing",
+   "name": "api-testing",
+   "tagline": "API testing patterns \u2014 contracts, auth, edge cases",
+   "description": "petrkindlmann's api-testing: API testing patterns \u2014 contracts, auth, edge cases.",
+   "repo": "https://github.com/petrkindlmann/qa-skills",
+   "path": "skills/api-testing",
+   "pinned_sha": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+   "category": "testing",
+   "license": "MIT",
+   "author": "petrkindlmann",
+   "install_hint": "Copy skills/api-testing into your agent's skills folder.",
+   "uses": [
+    "Test API contracts",
+    "Check auth flows",
+    "Cover edge cases"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 93,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 5,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "5 findings, all reviewed \u2014 4 coverage notes, 1 'Credential Access' on auth-testing docs (describing how to test auth, not stealing)."
+    ],
+    "report": "reports/api-testing.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged section. It's API auth testing guidance."
+   }
+  },
+  {
+   "slug": "web-accessibility",
+   "name": "web-accessibility",
+   "tagline": "Audit and improve web accessibility per WCAG 2.2",
+   "description": "Addy Osmani's web-accessibility: audit and improve web accessibility per WCAG 2.2.",
+   "repo": "https://github.com/addyosmani/web-quality-skills",
+   "path": "skills/accessibility",
+   "pinned_sha": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+   "category": "design",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/accessibility into your agent's skills folder.",
+   "uses": [
+    "Audit site accessibility",
+    "Fix WCAG issues",
+    "Improve ARIA usage"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 90,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 17,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "18 findings, all reviewed. 'Hidden Instructions' flags are on HTML/ARIA code examples (e.g. <!-- missing alt -->) \u2014 the scanner flagged HTML comments as hidden prompts."
+    ],
+    "report": "reports/web-accessibility.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged sections. All accessibility documentation with code examples."
+   }
+  },
+  {
+   "slug": "core-web-vitals",
+   "name": "core-web-vitals",
+   "tagline": "Optimize Core Web Vitals with field and lab evidence",
+   "description": "Addy Osmani's core-web-vitals: optimize Core Web Vitals (LCP, INP, CLS) with field and lab evidence.",
+   "repo": "https://github.com/addyosmani/web-quality-skills",
+   "path": "skills/core-web-vitals",
+   "pinned_sha": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+   "category": "code",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/core-web-vitals into your agent's skills folder.",
+   "uses": [
+    "Improve LCP",
+    "Fix layout shift",
+    "Optimize interaction latency"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 95,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "1 HIGH 'Hidden Instructions' is on an HTML code example \u2014 false positive."
+    ],
+    "report": "reports/core-web-vitals.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Web performance guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "aso",
+   "name": "aso",
+   "tagline": "Audit and optimize app store listings",
+   "description": "coreyhaines31's aso: audit and optimize App Store and Google Play listings \u2014 App Store Optimization.",
+   "repo": "https://github.com/coreyhaines31/marketingskills",
+   "path": "skills/aso",
+   "pinned_sha": "28e4a81a3464475cbccc3c2bbcfe414bcabae32b",
+   "category": "productivity",
+   "license": "MIT",
+   "author": "coreyhaines31",
+   "install_hint": "Copy skills/aso into your agent's skills folder.",
+   "uses": [
+    "Optimize a Play Store listing",
+    "Improve app discoverability",
+    "Audit store metadata"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/aso.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. ASO guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "ai-seo",
+   "name": "ai-seo",
+   "tagline": "Optimize content for AI search and LLM citations",
+   "description": "coreyhaines31's ai-seo: optimize content for AI search engines and LLM citations.",
+   "repo": "https://github.com/coreyhaines31/marketingskills",
+   "path": "skills/ai-seo",
+   "pinned_sha": "28e4a81a3464475cbccc3c2bbcfe414bcabae32b",
+   "category": "productivity",
+   "license": "MIT",
+   "author": "coreyhaines31",
+   "install_hint": "Copy skills/ai-seo into your agent's skills folder.",
+   "uses": [
+    "Rank in AI search",
+    "Get cited by LLMs",
+    "Optimize for answer engines"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 95,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 4,
+     "low": 0
+    },
+    "notes": [
+     "4 MEDIUM, reviewed \u2014 docs notes."
+    ],
+    "report": "reports/ai-seo.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. AI-SEO guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "ab-testing",
+   "name": "ab-testing",
+   "tagline": "Plan and run A/B tests and growth experiments",
+   "description": "coreyhaines31's ab-testing: plan, design and implement A/B tests and growth experiments.",
+   "repo": "https://github.com/coreyhaines31/marketingskills",
+   "path": "skills/ab-testing",
+   "pinned_sha": "28e4a81a3464475cbccc3c2bbcfe414bcabae32b",
+   "category": "productivity",
+   "license": "MIT",
+   "author": "coreyhaines31",
+   "install_hint": "Copy skills/ab-testing into your agent's skills folder.",
+   "uses": [
+    "Plan an A/B test",
+    "Design an experiment",
+    "Analyze test results"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/ab-testing.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Experimentation guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "seo-audit",
+   "name": "seo-audit",
+   "tagline": "Full-site SEO audit with scored report",
+   "description": "AgriciDaniel's seo-audit: full-site SEO audit with a scored, prioritized report.",
+   "repo": "https://github.com/AgriciDaniel/claude-seo",
+   "path": "skills/seo-audit",
+   "pinned_sha": "4b99de2f7de7e7d5247042e5fb5b4ea9368ef734",
+   "category": "productivity",
+   "license": "MIT",
+   "author": "AgriciDaniel",
+   "install_hint": "Copy skills/seo-audit into your agent's skills folder.",
+   "uses": [
+    "Audit site SEO",
+    "Get prioritized fixes",
+    "Score SEO health"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/seo-audit.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. SEO audit guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "seo-content-brief",
+   "name": "seo-content-brief",
+   "tagline": "SEO content briefs \u2014 keywords, structure, intent",
+   "description": "AgriciDaniel's seo-content-brief: SEO content briefs \u2014 keywords, structure, search intent.",
+   "repo": "https://github.com/AgriciDaniel/claude-seo",
+   "path": "skills/seo-content-brief",
+   "pinned_sha": "4b99de2f7de7e7d5247042e5fb5b4ea9368ef734",
+   "category": "writing",
+   "license": "MIT",
+   "author": "AgriciDaniel",
+   "install_hint": "Copy skills/seo-content-brief into your agent's skills folder.",
+   "uses": [
+    "Write an SEO brief",
+    "Target keywords",
+    "Match search intent"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/seo-content-brief.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Content brief guidance, nothing executable."
+   }
   }
  ],
  "version": 1
