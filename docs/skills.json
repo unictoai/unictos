@@ -5350,6 +5350,61 @@
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Content brief guidance, nothing executable."
    }
+  },
+  {
+   "slug": "mcp-builder",
+   "name": "mcp-builder",
+   "tagline": "Build MCP servers that actually work",
+   "description": "Anthropic's mcp-builder: build Model Context Protocol servers \u2014 best practices, OAuth, evaluation, transport options.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/mcp-builder",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "code",
+   "license": "Apache-2.0",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/mcp-builder into your agent's skills folder.",
+   "uses": [
+    "Build an MCP server",
+    "Add OAuth to MCP",
+    "Evaluate an MCP server"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Teaches OAuth best practices"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 90,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 12,
+     "medium": 5,
+     "low": 0
+    },
+    "notes": [
+     "17 findings, all reviewed. 10 HIGH are coverage notes on the reference docs. 'External Model Selection' is CLI help text for an evaluation flag.",
+     "'Credential Access' is MCP OAuth 2.1 best-practices documentation (token validation) \u2014 defensive guidance."
+    ],
+    "report": "reports/mcp-builder.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged references. All MCP development documentation."
+   }
   }
  ],
  "version": 1
