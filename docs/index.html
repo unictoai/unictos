@@ -123,20 +123,30 @@
   .hero-mcp-text a{color:var(--brand);font-weight:700;text-decoration:none}
   .hero-mcp code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:#D8F7A0;background:rgba(0,0,0,.45);border:1px solid var(--border-soft);border-radius:8px;padding:5px 10px;white-space:nowrap;overflow-x:auto;max-width:100%}
   .hero-mcp .copy-btn{margin-left:auto;flex-shrink:0}
-  /* ---------- MCP promo ---------- */
-  .mcp-card{background:linear-gradient(160deg,#101208,#0B0B0C 60%);border:1px solid var(--border);border-radius:22px;padding:30px 28px;overflow-wrap:break-word}
-  .mcp-card .kicker{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);margin-bottom:10px}
-  .mcp-card h2{margin:0 0 10px;font-size:clamp(24px,4vw,34px);font-weight:800;letter-spacing:-.03em;line-height:1.1}
-  .mcp-card h2 .lime{color:var(--brand)}
-  .mcp-card > p{margin:0 0 18px;color:var(--text-2);font-size:15px;line-height:1.65;max-width:62ch}
-  .mcp-cmd{display:flex;align-items:center;gap:10px;background:#0A0A0A;border:1px solid var(--border-soft);border-radius:14px;padding:13px 14px;margin-bottom:18px;overflow-x:auto}
-  .mcp-cmd code{flex:1;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;color:#D8F7A0;white-space:nowrap}
-  .mcp-feats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}
-  @media (max-width:760px){.mcp-feats{grid-template-columns:1fr}}
-  .mcp-feats > div{background:rgba(255,255,255,.03);border:1px solid var(--border-soft);border-radius:14px;padding:14px 15px;min-width:0}
-  .mcp-feats b{display:block;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;color:var(--brand);margin-bottom:5px}
-  .mcp-feats span{font-size:13px;color:var(--text-2);line-height:1.55}
-
+  /* ---------- MCP hero ---------- */
+  .mcp-hero{text-align:center;background:linear-gradient(165deg,#0E0F0A,#0A0A0B 65%);border:1px solid var(--border);border-radius:26px;padding:44px 26px 34px;overflow-wrap:break-word}
+  .mcp-hero .kicker{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin-bottom:14px}
+  .mcp-hero h2{margin:0 0 12px;font-size:clamp(30px,6.4vw,54px);font-weight:800;letter-spacing:-.03em;line-height:1.06}
+  .mcp-logo{display:inline-flex;vertical-align:-6px;margin:0 2px}
+  .mcp-amp{color:var(--text-3);font-weight:600}
+  .mcp-sub{margin:0 0 16px;color:var(--text-2);font-size:15.5px}
+  .mcp-how-link{display:inline-flex;align-items:center;gap:8px;background:none;border:none;color:var(--text);font-size:14.5px;font-weight:600;cursor:pointer;padding:8px 12px;margin-bottom:6px}
+  .mcp-how-link .q{width:22px;height:22px;border:1.5px solid var(--text-3);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12.5px;color:var(--text-2)}
+  .mcp-how{max-width:620px;margin:6px auto 18px;text-align:left;display:flex;flex-direction:column;gap:10px}
+  .mcp-how[hidden]{display:none}
+  .mcp-step{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.03);border:1px solid var(--border-soft);border-radius:14px;padding:13px 15px}
+  .mcp-step > b{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#0A0A0A;font-size:13.5px;display:flex;align-items:center;justify-content:center}
+  .mcp-step p{margin:0;font-size:13.5px;color:var(--text-2);line-height:1.6}
+  .mcp-step code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;color:#D8F7A0;background:rgba(0,0,0,.5);padding:2px 7px;border-radius:6px;overflow-wrap:break-word}
+  .mcp-hero .mcp-cmd{display:flex;align-items:center;gap:10px;max-width:620px;margin:0 auto 18px;background:#0A0A0A;border:1px solid var(--border-soft);border-radius:14px;padding:13px 14px;overflow-x:auto}
+  .mcp-hero .mcp-cmd code{flex:1;text-align:left;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;color:#D8F7A0;white-space:nowrap}
+  .mcp-connect{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;max-width:620px;margin:0 auto}
+  .mcp-btn{flex:1 1 220px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:none;border-radius:999px;padding:16px 22px;font-size:16px;font-weight:700;cursor:pointer;transition:transform 140ms ease}
+  .mcp-btn:active{transform:scale(.97)}
+  .mcp-btn.lime{background:var(--brand);color:#0A0A0A}
+  .mcp-btn.white{background:#F5F5F5;color:#0A0A0A}
+  .mcp-hero .fineprint{font-size:13px;color:var(--text-3)}
+  .mcp-hero .fineprint a{color:var(--brand);font-weight:700;text-decoration:none}
   /* ---------- pages ---------- */
   .page{display:none}
   .page.on{display:block;animation:pageIn 320ms var(--ease-out) both}
@@ -1313,18 +1323,23 @@
       </div>
       <p class="fineprint"><strong>The honest ceiling:</strong> automated scanning catches roughly two-thirds of malicious skills. A clean scan means “no known patterns found,” not “guaranteed safe” — that is why permissions are written in plain words and every install is a deliberate tap, never silent. unictos links to authors’ original repositories; we never wrap, modify or re-host their code.</p>
     </section>
-    <section class="block" id="mcpHome" style="margin-top:34px">
-      <div class="mcp-card">
-        <span class="kicker">Use unictos inside your agent</span>
-        <h2>The catalog, as an <span class="lime">MCP server</span></h2>
-        <p>Search all 106 verified skills from inside Claude Code, Claude Desktop, or any MCP-compatible client. Your agent gets safety scores, scan findings and pinned install links — no API key, no account, free forever.</p>
-        <div class="mcp-cmd"><code id="mcpCmd">claude mcp add unictos -- npx -y unictos-mcp</code><button class="copy-btn" type="button" id="mcpCopy">Copy</button></div>
-        <div class="mcp-feats">
-          <div><b>search_skills</b><span>Find verified skills by keyword, category and minimum safety score</span></div>
-          <div><b>get_skill</b><span>Full safety report, permissions and pinned commit for any listing</span></div>
-          <div><b>list_categories</b><span>Every shelf in the store with live skill counts</span></div>
+    <section class="block" id="mcpHome" style="margin-top:40px">
+      <div class="mcp-hero">
+        <span class="kicker">The unictos connector</span>
+        <h2>SEARCH VERIFIED SKILLS<br>IN <span class="mcp-logo"><svg width="30" height="30" viewBox="0 0 24 24" fill="#D97757" aria-hidden="true"><path d="M12 1l1.8 4.6L18 4l-1.2 4.8L21.5 9l-4.4 2 4.4 2-4.7.2L18 18l-4.2-1.6L12 21l-1.8-4.6L6 18l1.2-4.8L2.5 13l4.4-2-4.4-2 4.7-.2L6 4l4.2 1.6z"/></svg></span> CLAUDE <span class="mcp-amp">&</span> <span class="mcp-logo"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E7E7E7" stroke-width="1.7" aria-hidden="true"><path d="M12 2l2.4 2.1 3.1-.4 1.1 3 3 1.1-.4 3.1L23.3 13l-2.1 2.4.4 3.1-3 1.1-1.1 3-3.1-.4L12 24.4 9.6 22.3l-3.1.4-1.1-3-3-1.1.4-3.1L.7 13l2.1-2.4-.4-3.1 3-1.1 1.1-3 3.1.4z" transform="scale(.92) translate(1,0)"/></svg></span> CHATGPT</h2>
+        <p class="mcp-sub">With the unictos MCP server — free forever, no API key, no account.</p>
+        <button class="mcp-how-link" id="mcpHow" type="button"><span class="q">?</span> How to connect?</button>
+        <div class="mcp-how" id="mcpHowBody" hidden>
+          <div class="mcp-step"><b>1</b><p><b>Claude Code</b> — paste the command below into your terminal. Your agent can now search all 106 verified skills.</p></div>
+          <div class="mcp-step"><b>2</b><p><b>Claude Desktop</b> — add <code>"unictos": {"command": "npx", "args": ["-y", "unictos-mcp"]}</code> to your MCP config file.</p></div>
+          <div class="mcp-step"><b>3</b><p><b>ChatGPT</b> — add a new MCP server in ChatGPT's settings pointing at <code>npx -y unictos-mcp</code>.</p></div>
         </div>
-        <p class="fineprint" style="margin-bottom:0"><a href="https://www.npmjs.com/package/unictos-mcp" target="_blank" rel="noopener" style="color:var(--brand);font-weight:700;text-decoration:none">unictos-mcp on npm →</a> &nbsp;·&nbsp; Open source in the <a href="https://github.com/unictoai/unictos/tree/main/mcp" target="_blank" rel="noopener" style="color:var(--brand);font-weight:700;text-decoration:none">unictos repo</a></p>
+        <div class="mcp-cmd"><code id="mcpCmd">claude mcp add unictos -- npx -y unictos-mcp</code><button class="copy-btn" type="button" id="mcpCopy">Copy</button></div>
+        <div class="mcp-connect">
+          <button class="mcp-btn lime" type="button" id="mcpConnectClaude"><svg width="30" height="30" viewBox="0 0 24 24" fill="#D97757" aria-hidden="true"><path d="M12 1l1.8 4.6L18 4l-1.2 4.8L21.5 9l-4.4 2 4.4 2-4.7.2L18 18l-4.2-1.6L12 21l-1.8-4.6L6 18l1.2-4.8L2.5 13l4.4-2-4.4-2 4.7-.2L6 4l4.2 1.6z"/></svg> Connect to Claude</button>
+          <button class="mcp-btn white" type="button" id="mcpConnectGpt"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E7E7E7" stroke-width="1.7" aria-hidden="true"><path d="M12 2l2.4 2.1 3.1-.4 1.1 3 3 1.1-.4 3.1L23.3 13l-2.1 2.4.4 3.1-3 1.1-1.1 3-3.1-.4L12 24.4 9.6 22.3l-3.1.4-1.1-3-3-1.1.4-3.1L.7 13l2.1-2.4-.4-3.1 3-1.1 1.1-3 3.1.4z" transform="scale(.92) translate(1,0)"/></svg> Connect to ChatGPT</button>
+        </div>
+        <p class="fineprint" style="margin:14px 0 0"><a href="https://www.npmjs.com/package/unictos-mcp" target="_blank" rel="noopener">unictos-mcp on npm →</a> &nbsp;·&nbsp; <a href="https://github.com/unictoai/unictos/tree/main/mcp" target="_blank" rel="noopener">source on GitHub</a></p>
       </div>
     </section>
   </div>
@@ -2359,7 +2374,21 @@
   });
   var mcpCopy = $("#mcpCopy");
   if (mcpCopy) mcpCopy.addEventListener("click", function(){
-    copyText($("#mcpCmd").textContent.trim(), "MCP install command copied.");
+    copyText($("#mcpCmd").textContent.trim(), "MCP install command copied — paste it in your terminal.");
+  });
+  var mcpHow = $("#mcpHow"), mcpHowBody = $("#mcpHowBody");
+  if (mcpHow && mcpHowBody) mcpHow.addEventListener("click", function(){
+    var open = mcpHowBody.hidden;
+    mcpHowBody.hidden = !open;
+    mcpHow.lastChild.textContent = open ? " Hide" : " How to connect?";
+  });
+  var mcpCc = $("#mcpConnectClaude");
+  if (mcpCc) mcpCc.addEventListener("click", function(){
+    copyText("claude mcp add unictos -- npx -y unictos-mcp", "Copied — paste in your terminal to connect Claude Code.");
+  });
+  var mcpCg = $("#mcpConnectGpt");
+  if (mcpCg) mcpCg.addEventListener("click", function(){
+    copyText("npx -y unictos-mcp", "Copied — add it as an MCP server in ChatGPT's settings.");
   });
   $$("[data-goto-catalog]").forEach(function(a){
     a.addEventListener("click", function(){
