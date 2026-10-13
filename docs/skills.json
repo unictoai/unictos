@@ -3847,63 +3847,6 @@
       "type": "skill"
     },
     {
-      "slug": "agent-email-inbox",
-      "name": "agent-email-inbox",
-      "tagline": "Build systems where email triggers agent actions",
-      "description": "Resend's agent-email-inbox: build systems where incoming email triggers actions — agent inboxes, support handlers, email-to-task pipelines, with security patterns.",
-      "repo": "https://github.com/resend/resend-skills",
-      "path": "skills/agent-email-inbox",
-      "pinned_sha": "f943baf634c1d761cd8b883febe44c4a0d8a525f",
-      "category": "automation",
-      "license": "MIT",
-      "author": "Resend",
-      "install_hint": "Copy skills/agent-email-inbox into your agent's skills folder.",
-      "uses": [
-        "Build an email-triggered agent",
-        "Handle support emails automatically",
-        "Create email-to-task pipelines"
-      ],
-      "permissions": [
-        [
-          "warn",
-          "Receives email via webhooks — higher inherent risk"
-        ],
-        [
-          "warn",
-          "Docs suggest curl|sh for Tailscale (official installer)"
-        ],
-        [
-          "ok",
-          "Includes security patterns"
-        ]
-      ],
-      "uniscan": {
-        "score": 85,
-        "verdict": "verified-with-notes",
-        "scanned_at": "2026-10-13",
-        "scanner": "skillspector",
-        "scanner_version": "2.12.0",
-        "findings": {
-          "critical": 1,
-          "high": 3,
-          "medium": 9,
-          "low": 0
-        },
-        "notes": [
-          "13 findings, all reviewed. The CRITICAL YARA hit is a false positive on webhook-setup documentation.",
-          "'External Script Fetching' is curl|sh for Tailscale's official installer (for local webhook tunneling) — legitimate but disclosed.",
-          "Inherently higher-risk category: it receives external email and triggers actions. The skill includes webhook signature verification patterns — follow them."
-        ],
-        "report": "reports/agent-email-inbox.json"
-      },
-      "review": {
-        "reviewer": "unictos team",
-        "reviewed_at": "2026-10-13",
-        "summary": "Reviewed webhook-setup docs. Signature verification is documented. The risk is in the use case (email-triggered automation), not the skill's code."
-      },
-      "type": "skill"
-    },
-    {
       "slug": "owb",
       "name": "owb",
       "tagline": "Drive your real browser via CLI — logged-in sessions, forms, flows",
@@ -5888,6 +5831,711 @@
         "reviewer": "unictos team",
         "reviewed_at": "2026-10-13",
         "summary": "Read SKILL.md. Research methodology, nothing executable."
+      },
+      "type": "skill"
+    },
+    {
+      "slug": "cmd-review",
+      "name": "/review",
+      "tagline": "Critical review of uncommitted git changes",
+      "description": "Slash command that performs a critical review of your uncommitted or recent git changes and returns actionable feedback. Copy into ~/.claude/commands/.",
+      "author": "oneself",
+      "repo": "https://github.com/oneself/claude-code-commands",
+      "type": "command",
+      "category": "code",
+      "license": "GPL-3.0",
+      "path": "review.md",
+      "pinned_sha": "84f59f31da579ea655d3153f67d2663649ee3ac9",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Review uncommitted changes before committing",
+        "Get a second opinion on recent work"
+      ],
+      "install_hint": "Copy review.md into your ~/.claude/commands/ folder, then type /review.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 88,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan clean (risk score 0, no issues). Human review: prompt-only markdown, no executable code, no prompt-injection patterns, no exfiltration."
+        ],
+        "report": "reports/cmd-review.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan clean. Human-reviewed the full prompt text: legitimate assistant instructions, no malicious directives."
+      }
+    },
+    {
+      "slug": "cmd-security-review",
+      "name": "/security-review",
+      "tagline": "Security-focused review of pending branch changes",
+      "description": "Slash command that reviews pending changes on your current branch specifically for security issues. Copy into ~/.claude/commands/.",
+      "author": "oneself",
+      "repo": "https://github.com/oneself/claude-code-commands",
+      "type": "command",
+      "category": "security",
+      "license": "GPL-3.0",
+      "path": "security-review.md",
+      "pinned_sha": "84f59f31da579ea655d3153f67d2663649ee3ac9",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Security-check a branch before merging",
+        "Find vulns in pending changes"
+      ],
+      "install_hint": "Copy security-review.md into your ~/.claude/commands/ folder, then type /security-review.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 90,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan clean (risk score 0, no issues). Human review: prompt-only markdown, no executable code, no prompt-injection patterns, no exfiltration."
+        ],
+        "report": "reports/cmd-security-review.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan clean. Human-reviewed the full prompt text: legitimate assistant instructions, no malicious directives."
+      }
+    },
+    {
+      "slug": "agent-code-reviewer",
+      "name": "code-reviewer",
+      "tagline": "Reviews code for quality, security, and best practices",
+      "description": "Subagent that acts as a dedicated code reviewer: checks quality, security issues, and best-practice violations. Copy into ~/.claude/agents/.",
+      "author": "VoltAgent",
+      "repo": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "type": "subagent",
+      "category": "code",
+      "license": "MIT",
+      "path": "categories/04-quality-security/code-reviewer.md",
+      "pinned_sha": "408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Deep code review in a separate context",
+        "Security and quality pass on a PR"
+      ],
+      "install_hint": "Copy code-reviewer.md into your ~/.claude/agents/ folder.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 92,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan clean (risk score 0, no issues). Human review: prompt-only markdown, no executable code, no prompt-injection patterns, no exfiltration."
+        ],
+        "report": "reports/agent-code-reviewer.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan clean. Human-reviewed the full prompt text: legitimate assistant instructions, no malicious directives."
+      }
+    },
+    {
+      "slug": "agent-debugger",
+      "name": "debugger",
+      "tagline": "Diagnoses errors and test failures, implements fixes",
+      "description": "Subagent specialized in debugging: diagnoses errors, test failures, and unexpected behavior, and can implement fixes.",
+      "author": "VoltAgent",
+      "repo": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "type": "subagent",
+      "category": "code",
+      "license": "MIT",
+      "path": "categories/04-quality-security/debugger.md",
+      "pinned_sha": "408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Debug a failing test suite",
+        "Track down a production error"
+      ],
+      "install_hint": "Copy debugger.md into your ~/.claude/agents/ folder.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 90,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan clean (risk score 0, no issues). Human review: prompt-only markdown, no executable code, no prompt-injection patterns, no exfiltration."
+        ],
+        "report": "reports/agent-debugger.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan clean. Human-reviewed the full prompt text: legitimate assistant instructions, no malicious directives."
+      }
+    },
+    {
+      "slug": "agent-security-auditor",
+      "name": "security-auditor",
+      "tagline": "Audits code for vulnerabilities, read-only posture",
+      "description": "Subagent that audits code for security vulnerabilities. Operates read-only: reports findings without changing code.",
+      "author": "VoltAgent",
+      "repo": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "type": "subagent",
+      "category": "security",
+      "license": "MIT",
+      "path": "categories/04-quality-security/security-auditor.md",
+      "pinned_sha": "408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e",
+      "permissions": [
+        [
+          "ok",
+          "Reads code you point it at"
+        ],
+        [
+          "ok",
+          "Makes no changes"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ]
+      ],
+      "uses": [
+        "Audit a codebase for vulnerabilities",
+        "Get a security second opinion"
+      ],
+      "install_hint": "Copy security-auditor.md into your ~/.claude/agents/ folder.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 93,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan clean (risk score 0, no issues). Human review: prompt-only markdown, no executable code, no prompt-injection patterns, no exfiltration."
+        ],
+        "report": "reports/agent-security-auditor.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan clean. Human-reviewed the full prompt text: legitimate assistant instructions, no malicious directives."
+      }
+    },
+    {
+      "slug": "agent-test-automator",
+      "name": "test-automator",
+      "tagline": "Builds unit, integration, and e2e test suites",
+      "description": "Subagent that designs and writes test suites: unit, integration, and end-to-end, including test frameworks.",
+      "author": "VoltAgent",
+      "repo": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "type": "subagent",
+      "category": "testing",
+      "license": "MIT",
+      "path": "categories/04-quality-security/test-automator.md",
+      "pinned_sha": "408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Generate a test suite for a module",
+        "Set up e2e testing"
+      ],
+      "install_hint": "Copy test-automator.md into your ~/.claude/agents/ folder.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 90,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan clean (risk score 0, no issues). Human review: prompt-only markdown, no executable code, no prompt-injection patterns, no exfiltration."
+        ],
+        "report": "reports/agent-test-automator.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan clean. Human-reviewed the full prompt text: legitimate assistant instructions, no malicious directives."
+      }
+    },
+    {
+      "slug": "agent-error-detective",
+      "name": "error-detective",
+      "tagline": "Traces error root causes across stack traces and logs",
+      "description": "Subagent that investigates errors: correlates stack traces, logs, and code to find root causes.",
+      "author": "VoltAgent",
+      "repo": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "type": "subagent",
+      "category": "code",
+      "license": "MIT",
+      "path": "categories/04-quality-security/error-detective.md",
+      "pinned_sha": "408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Find why a crash happens",
+        "Correlate logs with code"
+      ],
+      "install_hint": "Copy error-detective.md into your ~/.claude/agents/ folder.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 88,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan clean (risk score 0, no issues). Human review: prompt-only markdown, no executable code, no prompt-injection patterns, no exfiltration."
+        ],
+        "report": "reports/agent-error-detective.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan clean. Human-reviewed the full prompt text: legitimate assistant instructions, no malicious directives."
+      }
+    },
+    {
+      "slug": "agent-performance-engineer",
+      "name": "performance-engineer",
+      "tagline": "Profiles bottlenecks and optimizes hot paths",
+      "description": "Subagent focused on performance: profiles bottlenecks, optimizes hot paths, and designs caching strategies.",
+      "author": "VoltAgent",
+      "repo": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "type": "subagent",
+      "category": "code",
+      "license": "MIT",
+      "path": "categories/04-quality-security/performance-engineer.md",
+      "pinned_sha": "408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Profile a slow endpoint",
+        "Optimize a hot loop"
+      ],
+      "install_hint": "Copy performance-engineer.md into your ~/.claude/agents/ folder.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 89,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan clean (risk score 0, no issues). Human review: prompt-only markdown, no executable code, no prompt-injection patterns, no exfiltration."
+        ],
+        "report": "reports/agent-performance-engineer.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan clean. Human-reviewed the full prompt text: legitimate assistant instructions, no malicious directives."
+      }
+    },
+    {
+      "slug": "agent-architect-reviewer",
+      "name": "architect-reviewer",
+      "tagline": "Reviews system design and structural decisions",
+      "description": "Subagent that reviews architecture: system design, design patterns, and structural decisions.",
+      "author": "VoltAgent",
+      "repo": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "type": "subagent",
+      "category": "code",
+      "license": "MIT",
+      "path": "categories/04-quality-security/architect-reviewer.md",
+      "pinned_sha": "408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Review a system design",
+        "Evaluate architectural trade-offs"
+      ],
+      "install_hint": "Copy architect-reviewer.md into your ~/.claude/agents/ folder.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 90,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan clean (risk score 0, no issues). Human review: prompt-only markdown, no executable code, no prompt-injection patterns, no exfiltration."
+        ],
+        "report": "reports/agent-architect-reviewer.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan clean. Human-reviewed the full prompt text: legitimate assistant instructions, no malicious directives."
+      }
+    },
+    {
+      "slug": "agent-python-pro",
+      "name": "python-pro",
+      "tagline": "Idiomatic Python with advanced features",
+      "description": "Subagent specialized in Python: idiomatic code, advanced language features, and ecosystem best practices.",
+      "author": "VoltAgent",
+      "repo": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "type": "subagent",
+      "category": "code",
+      "license": "MIT",
+      "path": "categories/02-language-specialists/python-pro.md",
+      "pinned_sha": "408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Write idiomatic Python",
+        "Review Python code"
+      ],
+      "install_hint": "Copy python-pro.md into your ~/.claude/agents/ folder.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 91,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan clean (risk score 0, no issues). Human review: prompt-only markdown, no executable code, no prompt-injection patterns, no exfiltration."
+        ],
+        "report": "reports/agent-python-pro.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan clean. Human-reviewed the full prompt text: legitimate assistant instructions, no malicious directives."
+      }
+    },
+    {
+      "slug": "agent-test-writer",
+      "name": "test-writer",
+      "tagline": "Generates tests following TDD/BDD discipline",
+      "description": "Subagent that writes comprehensive tests following test-driven and behavior-driven development principles.",
+      "author": "FlorianBruniaux",
+      "repo": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+      "type": "subagent",
+      "category": "testing",
+      "license": "CC-BY-SA-4.0",
+      "path": "examples/agents/test-writer.md",
+      "pinned_sha": "f499217fe1598e6334a0afc5c387494326510baa",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Generate tests for new code",
+        "Backfill tests for legacy code"
+      ],
+      "install_hint": "Copy test-writer.md into your ~/.claude/agents/ folder.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 89,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan clean (risk score 0, no issues). Human review: prompt-only markdown, no executable code, no prompt-injection patterns, no exfiltration."
+        ],
+        "report": "reports/agent-test-writer.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan clean. Human-reviewed the full prompt text: legitimate assistant instructions, no malicious directives."
+      }
+    },
+    {
+      "slug": "agent-refactoring-specialist",
+      "name": "refactoring-specialist",
+      "tagline": "Clean-code refactoring with safety checks",
+      "description": "Subagent that refactors code toward clean-code standards, with safety checks to preserve behavior.",
+      "author": "FlorianBruniaux",
+      "repo": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+      "type": "subagent",
+      "category": "code",
+      "license": "CC-BY-SA-4.0",
+      "path": "examples/agents/refactoring-specialist.md",
+      "pinned_sha": "f499217fe1598e6334a0afc5c387494326510baa",
+      "permissions": [
+        [
+          "ok",
+          "Reads files you point it at"
+        ],
+        [
+          "ok",
+          "No network calls"
+        ],
+        [
+          "warn",
+          "Runs inside your agent with its permissions"
+        ]
+      ],
+      "uses": [
+        "Refactor a messy module",
+        "Modernize legacy code safely"
+      ],
+      "install_hint": "Copy refactoring-specialist.md into your ~/.claude/agents/ folder.",
+      "uniscan": {
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "score": 88,
+        "verdict": "verified",
+        "findings": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "notes": [
+          "SkillSpector --no-llm scan clean (risk score 0, no issues). Human review: prompt-only markdown, no executable code, no prompt-injection patterns, no exfiltration."
+        ],
+        "report": "reports/agent-refactoring-specialist.json"
+      },
+      "review": {
+        "reviewed_at": "2026-10-13",
+        "reviewer": "unictos team",
+        "summary": "Automated scan clean. Human-reviewed the full prompt text: legitimate assistant instructions, no malicious directives."
+      }
+    },
+    {
+      "slug": "agent-email-inbox",
+      "name": "agent-email-inbox",
+      "tagline": "Build systems where email triggers agent actions",
+      "description": "Resend's agent-email-inbox: build systems where incoming email triggers actions — agent inboxes, support handlers, email-to-task pipelines, with security patterns.",
+      "repo": "https://github.com/resend/resend-skills",
+      "path": "skills/agent-email-inbox",
+      "pinned_sha": "f943baf634c1d761cd8b883febe44c4a0d8a525f",
+      "category": "automation",
+      "license": "MIT",
+      "author": "Resend",
+      "install_hint": "Copy skills/agent-email-inbox into your agent's skills folder.",
+      "uses": [
+        "Build an email-triggered agent",
+        "Handle support emails automatically",
+        "Create email-to-task pipelines"
+      ],
+      "permissions": [
+        [
+          "warn",
+          "Receives email via webhooks — higher inherent risk"
+        ],
+        [
+          "warn",
+          "Docs suggest curl|sh for Tailscale (official installer)"
+        ],
+        [
+          "ok",
+          "Includes security patterns"
+        ]
+      ],
+      "uniscan": {
+        "score": 85,
+        "verdict": "verified-with-notes",
+        "scanned_at": "2026-10-13",
+        "scanner": "skillspector",
+        "scanner_version": "2.12.0",
+        "findings": {
+          "critical": 1,
+          "high": 3,
+          "medium": 9,
+          "low": 0
+        },
+        "notes": [
+          "13 findings, all reviewed. The CRITICAL YARA hit is a false positive on webhook-setup documentation.",
+          "'External Script Fetching' is curl|sh for Tailscale's official installer (for local webhook tunneling) — legitimate but disclosed.",
+          "Inherently higher-risk category: it receives external email and triggers actions. The skill includes webhook signature verification patterns — follow them."
+        ],
+        "report": "reports/agent-email-inbox.json"
+      },
+      "review": {
+        "reviewer": "unictos team",
+        "reviewed_at": "2026-10-13",
+        "summary": "Reviewed webhook-setup docs. Signature verification is documented. The risk is in the use case (email-triggered automation), not the skill's code."
       },
       "type": "skill"
     }

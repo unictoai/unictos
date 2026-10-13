@@ -146,11 +146,15 @@
   .mcp-modal-card .fineprint a{color:var(--brand);font-weight:700;text-decoration:none}
   .btn-mcp{display:inline-flex;align-items:center;gap:8px;background:rgba(205,241,77,.1);border:1px solid rgba(205,241,77,.35);color:var(--brand);border-radius:999px;padding:12px 20px;font-size:14.5px;font-weight:700;cursor:pointer}
   /* ---------- type filter ---------- */
-  .totype{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--brand);border:1px solid rgba(205,241,77,.4);border-radius:6px;padding:2px 7px;margin-left:6px}
 
   .typefilter{display:flex;gap:8px;flex-wrap:wrap;margin:2px 0 12px}
   .tchip{background:rgba(255,255,255,.04);border:1px solid var(--border-soft);color:var(--text-2);border-radius:999px;padding:8px 15px;font-size:13px;font-weight:600;cursor:pointer}
   .tchip.on{background:var(--brand);border-color:var(--brand);color:#0A0A0A}
+  /* ---------- type filter ---------- */
+  .typefilter{display:flex;gap:8px;flex-wrap:wrap;margin:2px 0 12px}
+  .tchip{background:rgba(255,255,255,.04);border:1px solid var(--border-soft);color:var(--text-2);border-radius:999px;padding:8px 15px;font-size:13px;font-weight:600;cursor:pointer}
+  .tchip.on{background:var(--brand);border-color:var(--brand);color:#0A0A0A}
+  .totype{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--brand);border:1px solid rgba(205,241,77,.4);border-radius:6px;padding:2px 7px;margin-left:6px}
   /* ---------- pages ---------- */
   .page{display:none}
   .page.on{display:block;animation:pageIn 320ms var(--ease-out) both}
@@ -1269,6 +1273,7 @@
       </div>
     </div>
 
+    <div class="typefilter" id="typefilter" role="tablist" aria-label="Content type"></div>
     <div class="cats rise rise-d1" id="cats" role="tablist" aria-label="Categories"></div>
 
     <section class="block rise rise-d2" id="featuredBlock">
@@ -1683,6 +1688,7 @@
       report: s.uniscan.report, scannerVer: s.uniscan.scanner_version,
       reviewer: s.review.reviewer, reviewedAt: fmtDate(s.review.reviewed_at),
       reviewSummary: s.review.summary, installHint: s.install_hint,
+      type: s.type || "skill",
       isNew: false, staff: false
     };
   }
@@ -1774,7 +1780,14 @@
   }
 
   /* ---------------- state ---------------- */
-  var state = { cat:"all", query:"", sort:"score" };
+  var state = { cat:"all", query:"", sort:"score", type:"all" };
+  var TYPES = [
+    {id:"all", label:"All types"},
+    {id:"skill", label:"Skills"},
+    {id:"command", label:"Commands"},
+    {id:"subagent", label:"Subagents"}
+  ];
+  function typeLabel(id){ var t = TYPES.filter(function(x){return x.id===id;})[0]; return t ? t.label : id; }
   var catSort = "rating";
 
   var grid = $("#grid"), catsEl = $("#cats"), railEl = $("#rail"),
@@ -1791,6 +1804,20 @@
   }
 
   /* categories strip (home) */
+  function renderTypes(){
+    var el = $("#typefilter"); if(!el) return;
+    el.innerHTML = "";
+    TYPES.forEach(function(t){
+      var count = t.id==="all" ? SKILLS.length : SKILLS.filter(function(s){return (s.type||"skill")===t.id;}).length;
+      if(t.id!=="all" && count===0) return;
+      var b = document.createElement("button");
+      b.className = "tchip" + (state.type===t.id ? " on" : "");
+      b.setAttribute("role","tab");
+      b.textContent = t.label + "  " + count;
+      b.addEventListener("click", function(){ state.type = t.id; renderTypes(); renderCats(); renderGrid(); });
+      el.appendChild(b);
+    });
+  }
   function renderCats(){
     catsEl.innerHTML = "";
     CATS.forEach(function(c){
@@ -1832,8 +1859,9 @@
     var q = state.query.trim().toLowerCase();
     var list = SKILLS.filter(function(s){
       var inCat = state.cat==="all" || s.cat===state.cat;
+      var inType = state.type==="all" || (s.type||"skill")===state.type;
       var inQuery = !q || (s.name+" "+s.tag+" "+s.author+" "+s.desc).toLowerCase().indexOf(q) !== -1;
-      return inCat && inQuery;
+      return inCat && inType && inQuery;
     });
     return sortList(list, state.sort);
   }
@@ -2744,6 +2772,7 @@
   function boot(){
     var sc = $("#statCount");
     if(sc) sc.textContent = SKILLS.length;
+    renderTypes();
     renderTypes();
     renderCats();
     renderRail();
