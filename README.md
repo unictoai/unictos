@@ -17,7 +17,7 @@ Thousands of AI skills, commands, and tools are scattered across GitHub with no 
 
 ## Status
 
-**Demo built.** A working PWA demo of the storefront exists — browse, search, filter and sort 24 sample listings; open any skill for its scan report, permissions in plain words, version history and pinned install command; share any skill as a branded image card or a direct link; vote on the community verdict meter.
+**Demo live:** [unictoai.github.io/unictos](https://unictoai.github.io/unictos/) — a working PWA demo of the storefront. Browse, search, filter and sort 24 sample listings; open any skill for its scan report, permissions in plain words, version history and pinned install command; share any skill as a branded image card or a direct link; vote on the community verdict meter.
 
 > Demo data is illustrative sample data, clearly labeled in the demo. The launch catalog will be 100 hand-curated, scanned, human-reviewed listings.
 
