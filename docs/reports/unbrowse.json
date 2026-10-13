@@ -1,0 +1,1119 @@
+{
+  "skill": {
+    "name": "unbrowse",
+    "source": "/tmp/uniscan-trial/unbrowse-ai-unbrowse/skill",
+    "scanned_at": "2026-10-13T08:22:42.425677+00:00"
+  },
+  "risk_assessment": {
+    "score": 81,
+    "severity": "CRITICAL",
+    "recommendation": "DO_NOT_INSTALL",
+    "max_issue_severity": "HIGH"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 152,
+      "executable": false,
+      "size_bytes": 16230,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/tools.json",
+      "type": "json",
+      "lines": 737,
+      "executable": false,
+      "size_bytes": 32773,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    }
+  ],
+  "structured_summaries": [],
+  "issues": [
+    {
+      "id": "AS1",
+      "finding_id": "finding-eb3173d361d04bfe8622f5d4fcb63840",
+      "category": "Agent Snooping",
+      "pattern": "Agent Config Directory Access",
+      "severity": "HIGH",
+      "confidence": 0.9,
+      "location": {
+        "file": "references/tools.json",
+        "start_line": 555,
+        "end_line": null,
+        "start_column": 346
+      },
+      "finding": "~/.codex/config.toml",
+      "explanation": "Skill reads from agent configuration directories (.claude/, .codex/, .gemini/). These directories may contain API keys, personal settings, and other credentials that the skill has no legitimate need to access.",
+      "remediation": "Remove all code or instructions that access agent configuration directories (.claude/, .codex/, .gemini/). If configuration values are needed, pass them explicitly as parameters or environment variables \u2014 never read the agent's own config files.",
+      "code_snippet": "    },\n    {\n      \"name\": \"unbrowse_import_mcps\",\n      \"description\": \"Import the MCP servers this agent already has into Unbrowse, so their tools run here with the person's own account and every agent signed in to Unbrowse gets them. Read your host's MCP config yourself (Claude Code: ~/.claude.json and .mcp.json; Claude Desktop: claude_desktop_config.json; Cursor: ~/.cursor/mcp.json; Codex: ~/.codex/config.toml; VS Code: .vscode/mcp.json; Windsurf: ~/.codeium/windsurf/mcp_config.json; Gemini: ~/.gemini/settings.json) and pass each server: a remote one as {name, url}, a local one as {name, command, args}. Never pass keys, headers or env values. A remote server is connected by its address (open ones at once; one with OAuth or a key returns the link the person opens). A local server cannot run in Unbrowse's cloud: when the catalog has the same app hosted, that is connected instead, otherwise it is reported local_only and stays in the agent. Servers already connected, duplicates and Unb",
+      "intent": null,
+      "tags": [
+        "Agent Snooping"
+      ],
+      "evidence": {},
+      "match_fingerprint": "ac8a2c85e2eeb5e14c174cae3d679d330225a562a4847ce1a64de3a1bcf488fb",
+      "occurrences": [
+        {
+          "file": "references/tools.json",
+          "start_line": 555,
+          "end_line": null,
+          "start_column": 346
+        }
+      ]
+    },
+    {
+      "id": "AS1",
+      "finding_id": "finding-4c2466a78ae24e52baa5cfb7d2c21bd8",
+      "category": "Agent Snooping",
+      "pattern": "Agent Config Directory Access",
+      "severity": "HIGH",
+      "confidence": 0.9,
+      "location": {
+        "file": "references/tools.json",
+        "start_line": 555,
+        "end_line": null,
+        "start_column": 450
+      },
+      "finding": "~/.gemini/settings.json",
+      "explanation": "Skill reads from agent configuration directories (.claude/, .codex/, .gemini/). These directories may contain API keys, personal settings, and other credentials that the skill has no legitimate need to access.",
+      "remediation": "Remove all code or instructions that access agent configuration directories (.claude/, .codex/, .gemini/). If configuration values are needed, pass them explicitly as parameters or environment variables \u2014 never read the agent's own config files.",
+      "code_snippet": "   },\n    {\n      \"name\": \"unbrowse_import_mcps\",\n      \"description\": \"Import the MCP servers this agent already has into Unbrowse, so their tools run here with the person's own account and every agent signed in to Unbrowse gets them. Read your host's MCP config yourself (Claude Code: ~/.claude.json and .mcp.json; Claude Desktop: claude_desktop_config.json; Cursor: ~/.cursor/mcp.json; Codex: ~/.codex/config.toml; VS Code: .vscode/mcp.json; Windsurf: ~/.codeium/windsurf/mcp_config.json; Gemini: ~/.gemini/settings.json) and pass each server: a remote one as {name, url}, a local one as {name, command, args}. Never pass keys, headers or env values. A remote server is connected by its address (open ones at once; one with OAuth or a key returns the link the person opens). A local server cannot run in Unbrowse's cloud: when the catalog has the same app hosted, that is connected instead, otherwise it is reported local_only and stays in the agent. Servers already connected, duplicates and Unbr",
+      "intent": null,
+      "tags": [
+        "Agent Snooping"
+      ],
+      "evidence": {},
+      "match_fingerprint": "ec40e758e90832e8be75644b7141bda4e2b504644e0bfaa43be5a2ba76bc3b44",
+      "occurrences": [
+        {
+          "file": "references/tools.json",
+          "start_line": 555,
+          "end_line": null,
+          "start_column": 450
+        }
+      ]
+    },
+    {
+      "id": "AS2",
+      "finding_id": "finding-50ba6d03c4ae491498948b9540e5e3da",
+      "category": "Agent Snooping",
+      "pattern": "MCP Config Access",
+      "severity": "HIGH",
+      "confidence": 0.9,
+      "location": {
+        "file": "references/tools.json",
+        "start_line": 555,
+        "end_line": null,
+        "start_column": 257
+      },
+      "finding": "mcp.json; Claude Desktop: claude_desktop_config.json; Cursor: ~/.cursor/mcp.json; Codex: ~/.codex/config.toml; VS Code: .vscode/mcp.json; Windsurf: ~/.codeium/windsurf/mcp_config.json; Gemini: ~/.gemi",
+      "explanation": "Skill accesses MCP server configuration files (mcp.json). MCP configs contain server URLs, authentication tokens, and tool definitions \u2014 reading them allows the skill to discover and potentially abuse other tool integrations.",
+      "remediation": "Remove all code or instructions that read MCP configuration files (mcp.json). MCP server details should be managed by the agent runtime, not read by individual skills.",
+      "code_snippet": "    },\n    {\n      \"name\": \"unbrowse_import_mcps\",\n      \"description\": \"Import the MCP servers this agent already has into Unbrowse, so their tools run here with the person's own account and every agent signed in to Unbrowse gets them. Read your host's MCP config yourself (Claude Code: ~/.claude.json and .mcp.json; Claude Desktop: claude_desktop_config.json; Cursor: ~/.cursor/mcp.json; Codex: ~/.codex/config.toml; VS Code: .vscode/mcp.json; Windsurf: ~/.codeium/windsurf/mcp_config.json; Gemini: ~/.gemini/settings.json) and pass each server: a remote one as {name, url}, a local one as {name, command, args}. Never pass keys, headers or env values. A remote server is connected by its address (open ones at once; one with OAuth or a key returns the link the person opens). A local server cannot run in Unbrowse's cloud: when the catalog has the same app hosted, that is connected instead, otherwise it is reported local_only and stays in the agent. Servers already connected, duplicates and Unb",
+      "intent": null,
+      "tags": [
+        "Agent Snooping"
+      ],
+      "evidence": {},
+      "match_fingerprint": "60a0af1cc66dbde07a4bd1bc5d579ca22dee42a8ab107c2ca728b98977a5f93e",
+      "occurrences": [
+        {
+          "file": "references/tools.json",
+          "start_line": 555,
+          "end_line": null,
+          "start_column": 257
+        }
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-8b60f4862ffd47249f3f3c3a0b070ad8",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx unbrowse'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 17,
+        "end_line": null
+      },
+      "finding": "npx unbrowse",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "0eb39a6ba9af96123bca3fed46e9c2b1c5358d3645b245c2c5cd4a9f12b371f2",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 17,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-941c5324cd3445818b70ea4c41fd02de",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx unbrowse'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 34,
+        "end_line": null
+      },
+      "finding": "npx unbrowse",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "0eb39a6ba9af96123bca3fed46e9c2b1c5358d3645b245c2c5cd4a9f12b371f2",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 34,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-57c4af673d0a42ce935aaf9e4abcb354",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx unbrowse'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 39,
+        "end_line": null
+      },
+      "finding": "npx unbrowse",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "0eb39a6ba9af96123bca3fed46e9c2b1c5358d3645b245c2c5cd4a9f12b371f2",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 39,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-337dfff3c1d7490dae27906f86a6ae0f",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx unbrowse'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 41,
+        "end_line": null
+      },
+      "finding": "npx unbrowse",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "0eb39a6ba9af96123bca3fed46e9c2b1c5358d3645b245c2c5cd4a9f12b371f2",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 41,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-43e09955767642d796834add0410b263",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx unbrowse'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 43,
+        "end_line": null
+      },
+      "finding": "npx unbrowse",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "0eb39a6ba9af96123bca3fed46e9c2b1c5358d3645b245c2c5cd4a9f12b371f2",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 43,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-b845d8aedeb943a38fa71d2d238c6026",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx unbrowse'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 58,
+        "end_line": null
+      },
+      "finding": "npx unbrowse",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "0eb39a6ba9af96123bca3fed46e9c2b1c5358d3645b245c2c5cd4a9f12b371f2",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 58,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-48a20c923506490599df8eec402b0a2c",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx unbrowse'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 84,
+        "end_line": null
+      },
+      "finding": "npx unbrowse",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "0eb39a6ba9af96123bca3fed46e9c2b1c5358d3645b245c2c5cd4a9f12b371f2",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 84,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-afc22226e164429f97ad95625515bcd1",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx unbrowse'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 119,
+        "end_line": null
+      },
+      "finding": "npx unbrowse",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "0eb39a6ba9af96123bca3fed46e9c2b1c5358d3645b245c2c5cd4a9f12b371f2",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 119,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-82388d543eee4de6bff7f3cc57c9a5e8",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx unbrowse'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 147,
+        "end_line": null
+      },
+      "finding": "npx unbrowse",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "0eb39a6ba9af96123bca3fed46e9c2b1c5358d3645b245c2c5cd4a9f12b371f2",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 147,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-bbe3b7ec0cdc45f99266ee30affd9916",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx skills'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 34,
+        "end_line": null
+      },
+      "finding": "npx skills",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "2b5664f2a936abba4141331e7b3e83205cce617d2cea9af83aa306db07500782",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 34,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-b3553dd63e1a4abc92991a3b2a0b2809",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.8,
+      "location": {
+        "file": "references/tools.json",
+        "start_line": 231,
+        "end_line": null,
+        "start_column": 210
+      },
+      "finding": "never ask the user",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "    },\n    {\n      \"name\": \"unbrowse_browse_act\",\n      \"description\": \"click | fill | select | check | press | wait on a @ref, or autofill. For fill, pass `name` as the business field (origin, date, email\u2026) so the learned API gets readable inputs. For logins never ask the user for a password: `autofill` fills the page's login form (username or email, password, 2FA code) from the user's Unbrowse password manager, or fill one @ref with `vault: \\\"username\\\" | \\\"email\\\" | \\\"password\\\" | \\\"totp\\\"`. The values go straight into the page and never pass through you. If no login is saved for the site, or the user has not approved agent sign-ins there (approval_required), the error carries a link: give it to the user, wait with unbrowse_credentials_status, then repeat the action.\",\n      \"inputSchema\": {\n        \"type\": \"object\",\n        \"properties\": {",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ],
+      "evidence": {},
+      "match_fingerprint": "2a644ae57a82432a9c11f5d754db924983a683a84fee66cb1a104939410d39e6",
+      "occurrences": [
+        {
+          "file": "references/tools.json",
+          "start_line": 231,
+          "end_line": null,
+          "start_column": 210
+        }
+      ]
+    },
+    {
+      "id": "E1",
+      "finding_id": "finding-15acd7ec72d14c81b81d26a8566946c1",
+      "category": "Data Exfiltration",
+      "pattern": "External Transmission",
+      "severity": "MEDIUM",
+      "confidence": 0.5,
+      "location": {
+        "file": "references/tools.json",
+        "start_line": 431,
+        "end_line": null,
+        "start_column": 92
+      },
+      "finding": "https://api.example.com/",
+      "explanation": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recommended.",
+      "remediation": "Verify the destination URL is trusted and necessary. Remove or replace with documented APIs. Ensure no secrets, tokens, or PII are transmitted.",
+      "code_snippet": "        \"properties\": {\n          \"url\": {\n            \"type\": \"string\",\n            \"description\": \"A page, document or JSON API URL, e.g. https://docs.rs/serde or https://api.example.com/v1/items?q=x\"\n          },\n          \"formats\": {\n            \"type\": \"array\",",
+      "intent": null,
+      "tags": [
+        "Data Exfiltration"
+      ],
+      "evidence": {},
+      "match_fingerprint": "88f1946300c8ae45d5ea7e81f2b6d4309a13082e928b6f7d1215d273945a1431",
+      "occurrences": [
+        {
+          "file": "references/tools.json",
+          "start_line": 431,
+          "end_line": null,
+          "start_column": 92
+        }
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": false,
+    "skillspector_version": "2.12.0",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "llm_provenance": {
+      "schema_version": 1,
+      "provider": {
+        "configured_adapter": "unknown",
+        "resolved_adapter": "unknown",
+        "effective_adapter": "not_applicable",
+        "effective_adapters": [],
+        "service": "unknown",
+        "routing": {
+          "deployment_override": null,
+          "deployment_source": "unknown",
+          "api_version": null,
+          "api_version_source": "unknown"
+        }
+      },
+      "analyzers": [
+        {
+          "analyzer_id": "mcp_tool_poisoning",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_developer_intent",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_quality_policy",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_security_discovery",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "meta_analyzer",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        }
+      ],
+      "sampling": {
+        "temperature": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "seed": {
+          "requested": null,
+          "source": "unset",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "reasoning_effort": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        }
+      },
+      "determinism": {
+        "classification": "not_applicable",
+        "control_status": "not_applied",
+        "provider_guarantee": false,
+        "reason": "LLM analysis was not executed for this scan."
+      }
+    },
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 2,
+    "scanned_components": 2,
+    "coverage_percent": 100.0,
+    "is_complete": false,
+    "status": "partial",
+    "execution_successful": true,
+    "fully_inspected_files": 2,
+    "partially_inspected_files": 0,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 39,
+        "end_line": 39,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 75,
+        "end_line": 75,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 104,
+        "end_line": 104,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 107,
+        "end_line": 107,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 109,
+        "end_line": 109,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 128,
+        "end_line": 128,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 139,
+        "end_line": 139,
+        "fatal": false
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "artifact_integrity",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "bundled_execution_surface",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "references": [
+      {
+        "source_path": "SKILL.md",
+        "line": 39,
+        "column": 233,
+        "evidence": "rize?\u2026` link it prints, and wait for the `Signed in` line. The link returns to `127.0.0.1` on this machine, so the person must open it in a browser on the same ",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 68,
+        "column": 25,
+        "evidence": "[references/tools.json](references/tools.json) contains the exported core MCP input schemas. The connected server's `tools/list` is authoritative: it also inclu",
+        "target_path": "references/tools.json",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 68,
+        "column": 2,
+        "evidence": "[references/tools.json](references/tools.json) contains the exported core MCP input schemas. The connected server's `tools/list` is authoritative: it also inclu",
+        "target_path": "references/tools.json",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 75,
+        "column": 61,
+        "evidence": "4. `no_capability` means no reusable route matched. Follow `result.next`: `tool` is `unbrowse_index` (`POST /api/v1/index`, then `GET /api/v1/index/{jobId}`; CL",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 104,
+        "column": 307,
+        "evidence": "ilable. A PDF, .docx, .xls or .xlsx URL comes back as extracted markdown text (`metadata.pages` for PDFs; spreadsheets preserve sheet names, rows and formatted ",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 104,
+        "column": 397,
+        "evidence": "ages` for PDFs; spreadsheets preserve sheet names, rows and formatted values). `metadata.truncated` marks bounded extraction; `formats: [\"raw\"]` returns the exa",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 107,
+        "column": 9,
+        "evidence": "2. Use `browse.act` with the latest refs. For ordinary inputs, include a meaningful `name` such as `date` or `query`; exercise every filter the task needs. Refr",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 109,
+        "column": 35,
+        "evidence": "4. Close sessions when finished. `browse.close` still indexes unless `discard:true`.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 128,
+        "column": 40,
+        "evidence": "- Missing login: present the returned `signIn.url` or `details.url` save-login link. `unbrowse_credentials_request` can create one; `credentials.status` checks ",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 128,
+        "column": 56,
+        "evidence": "- Missing login: present the returned `signIn.url` or `details.url` save-login link. `unbrowse_credentials_request` can create one; `credentials.status` checks ",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 128,
+        "column": 134,
+        "evidence": " `details.url` save-login link. `unbrowse_credentials_request` can create one; `credentials.status` checks whether it was fulfilled. Resume only after it is rea",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 139,
+        "column": 6,
+        "evidence": "- A `signIn.url` (a `/connect/\u2026` link) is for that same user: deliver it to them, not to the builder or another user. They save the login there without an Unbro",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      }
+    ],
+    "limitations": [],
+    "findings_before_filtering": 16,
+    "findings_after_filtering": 16
+  }
+}

@@ -2849,6 +2849,334 @@
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Migration guidance, nothing executable."
    }
+  },
+  {
+   "slug": "pptx",
+   "name": "pptx",
+   "tagline": "Create, read and edit PowerPoint decks \u2014 layouts, charts, notes",
+   "description": "Anthropic's pptx skill: create, read and edit .pptx presentations \u2014 layouts, charts, speaker notes, templates.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/pptx",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "productivity",
+   "license": "Anthropic ToS (source-available)",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/pptx into your agent's skills folder.",
+   "uses": [
+    "Build a PowerPoint deck",
+    "Edit slides programmatically",
+    "Add charts to slides"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Runs local scripts incl. LibreOffice for conversions"
+    ],
+    [
+     "ok",
+     "Reads/writes files you give it"
+    ],
+    [
+     "ok",
+     "No data leaves your machine"
+    ]
+   ],
+   "uniscan": {
+    "score": 91,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 3,
+     "medium": 7,
+     "low": 0
+    },
+    "notes": [
+     "10 findings, all reviewed. Same office-script family as xlsx/docx \u2014 subprocess calls run local LibreOffice/document tools, the skill's core purpose.",
+     "No network, no exfiltration."
+    ],
+    "report": "reports/pptx.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md and scripts. Shares the office-script codebase. Local document processing only."
+   }
+  },
+  {
+   "slug": "sarif-parsing",
+   "name": "sarif-parsing",
+   "tagline": "Parse and analyze SARIF security-scan output",
+   "description": "Trail of Bits' sarif-parsing: parse and analyze SARIF security-scan output \u2014 extract findings, filter by severity, summarize. Ships helper scripts.",
+   "repo": "https://github.com/trailofbits/skills",
+   "path": "plugins/static-analysis/skills/sarif-parsing",
+   "pinned_sha": "442fc9d6c89b1e937e6f7a477e7071ea75fcbea4",
+   "category": "security",
+   "license": "CC-BY-SA-4.0",
+   "author": "Trail of Bits",
+   "install_hint": "Copy plugins/static-analysis/skills/sarif-parsing into your agent's skills folder.",
+   "uses": [
+    "Parse SARIF scan results",
+    "Filter findings by severity",
+    "Summarize a security scan"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Parses scan files you provide"
+    ],
+    [
+     "ok",
+     "Helper scripts reviewed"
+    ],
+    [
+     "ok",
+     "Local only"
+    ]
+   ],
+   "uniscan": {
+    "score": 90,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 7,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "8 findings, all reviewed. 'Direct Prompt Extraction' flags are on SARIF field-parsing code (extracting rule text from scan JSON) \u2014 the scanner misread data parsing as prompt theft.",
+     "file_write/network capabilities are the helper's documented functions. Subprocess is in the test file.",
+     "License note: CC-BY-SA-4.0 \u2014 we link only, never redistribute."
+    ],
+    "report": "reports/sarif-parsing.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Reviewed sarif_helpers.py. It parses SARIF JSON you give it. No exfiltration."
+   }
+  },
+  {
+   "slug": "observability-and-instrumentation",
+   "name": "observability-and-instrumentation",
+   "tagline": "Logs, metrics, traces, alerts that actually help",
+   "description": "Addy Osmani's observability-and-instrumentation: observability that actually helps \u2014 structured logs, metrics, traces, alerts, dashboards.",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "path": "skills/observability-and-instrumentation",
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "category": "devops",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/observability-and-instrumentation into your agent's skills folder.",
+   "uses": [
+    "Add structured logging",
+    "Set up useful alerts",
+    "Instrument with traces"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/observability-and-instrumentation.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Observability guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "performance-optimization",
+   "name": "performance-optimization",
+   "tagline": "Measure first, then optimize \u2014 profiling to production",
+   "description": "Addy Osmani's performance-optimization: measure first, then optimize \u2014 profiling, bottlenecks, caching, production performance.",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "path": "skills/performance-optimization",
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "category": "code",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/performance-optimization into your agent's skills folder.",
+   "uses": [
+    "Profile a bottleneck",
+    "Optimize a slow endpoint",
+    "Add caching properly"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 97,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 2,
+     "low": 0
+    },
+    "notes": [
+     "2 MEDIUM are unpinned npx suggestions in docs, not executed by the skill."
+    ],
+    "report": "reports/performance-optimization.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Performance guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "debugging-and-error-recovery",
+   "name": "debugging-and-error-recovery",
+   "tagline": "Reproduce, isolate, fix \u2014 and recover gracefully",
+   "description": "Addy Osmani's debugging-and-error-recovery: reproduce, isolate, fix \u2014 plus graceful error recovery patterns.",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "path": "skills/debugging-and-error-recovery",
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "category": "code",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/debugging-and-error-recovery into your agent's skills folder.",
+   "uses": [
+    "Reproduce a bug reliably",
+    "Isolate a failure",
+    "Design error recovery"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/debugging-and-error-recovery.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Debugging guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "security-and-hardening",
+   "name": "security-and-hardening",
+   "tagline": "Harden apps \u2014 SSRF defense, secret hygiene, secure defaults",
+   "description": "Addy Osmani's security-and-hardening: application security hardening \u2014 SSRF defense, secret hygiene, secure defaults, threat modeling. Defensive documentation.",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "path": "skills/security-and-hardening",
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "category": "security",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/security-and-hardening into your agent's skills folder.",
+   "uses": [
+    "Harden an app against SSRF",
+    "Fix secret handling",
+    "Apply secure defaults"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Teaches defensive security"
+    ],
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 88,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 20,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "21 findings, all reviewed \u2014 and this is the clearest case yet of the scanner flagging the defense: 'Cloud Metadata Access' is on documentation teaching how to BLOCK SSRF to 169.254.169.254 (called 'the #1 SSRF target').",
+     "'Credential Access' flags are .env hygiene docs. YARA 'prompt_injection' is on defensive text. 'Memory Manipulation' is on docs prose."
+    ],
+    "report": "reports/security-and-hardening.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the hardening-patterns reference. Every flagged section is defensive security guidance."
+   }
   }
  ],
  "version": 1
