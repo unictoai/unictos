@@ -5567,6 +5567,223 @@
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Automation API guidance, nothing executable."
    }
+  },
+  {
+   "slug": "courier",
+   "name": "courier",
+   "tagline": "Send notifications across email, SMS, push, WhatsApp, Slack",
+   "description": "trycourier's courier skill: build notifications across email, SMS, push, inbox, Slack, Teams, WhatsApp \u2014 sends, templates, journeys, routing. Needs your API key.",
+   "repo": "https://github.com/trycourier/courier-skills",
+   "path": "skills/courier",
+   "pinned_sha": "957d83ab0a8d9c5524a565ec789989c02f344593",
+   "category": "automation",
+   "license": "MIT",
+   "author": "trycourier",
+   "install_hint": "Copy skills/courier into your agent's skills folder.",
+   "uses": [
+    "Send multi-channel notifications",
+    "Build notification journeys",
+    "Route across providers"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Needs your Courier API key"
+    ],
+    [
+     "warn",
+     "Sends via api.courier.com (its purpose)"
+    ],
+    [
+     "ok",
+     "Key stays in your environment"
+    ]
+   ],
+   "uniscan": {
+    "score": 86,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 34,
+     "medium": 70,
+     "low": 0
+    },
+    "notes": [
+     "100+ findings, all reviewed. 'Exfiltration Commands' is on Teams webhook docs (Courier's documented feature). YARA 'prompt_injection' is on push-notification docs ('Permission prompt shown ONCE').",
+     "'Credential Access' flags are on setup docs for Expo/WhatsApp tokens in the Courier dashboard (user's own credentials). 'Hidden Instructions' are HTML doc comments. 'Tool Parameter Abuse' is on API endpoint tables."
+    ],
+    "report": "reports/courier.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Verified the API flows: user key -> api.courier.com only. All flags are on Courier's own API documentation."
+   }
+  },
+  {
+   "slug": "compose-expert",
+   "name": "compose-expert",
+   "tagline": "Jetpack Compose expert \u2014 modern Android UI",
+   "description": "aldefy's compose-expert: Jetpack Compose expert \u2014 modern Android UI development guidance.",
+   "repo": "https://github.com/aldefy/compose-skill",
+   "path": "skills/compose-expert",
+   "pinned_sha": "954ef54ea32288fbc90745f012d09d7b791f0d8a",
+   "category": "code",
+   "license": "MIT",
+   "author": "aldefy",
+   "install_hint": "Copy skills/compose-expert into your agent's skills folder.",
+   "uses": [
+    "Build Compose UI",
+    "Migrate navigation",
+    "Implement paging"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 92,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 85,
+     "medium": 8,
+     "low": 0
+    },
+    "notes": [
+     "93 findings, all reviewed. 83 HIGH are coverage notes on the large reference set. 2 'Hidden Instructions' are HTML comments in the docs (source attributions)."
+    ],
+    "report": "reports/compose-expert.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Compose guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "research-pipeline",
+   "name": "research-pipeline",
+   "tagline": "Full research pipeline \u2014 idea to polished paper PDF",
+   "description": "wanshuiyin's research-pipeline: full research pipeline \u2014 direction to idea discovery to experiments to review to polished paper PDF, with resumable runs.",
+   "repo": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+   "path": "skills/research-pipeline",
+   "pinned_sha": "26b95cfa0d8747078e9e43b42e20952709e561b8",
+   "category": "research",
+   "license": "MIT",
+   "author": "wanshuiyin",
+   "install_hint": "Copy skills/research-pipeline into your agent's skills folder.",
+   "uses": [
+    "Run a research pipeline",
+    "Go from idea to paper",
+    "Resume an interrupted run"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 95,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 3,
+     "low": 0
+    },
+    "notes": [
+     "3 MEDIUM, reviewed \u2014 docs notes."
+    ],
+    "report": "reports/research-pipeline.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Research methodology, nothing executable."
+   }
+  },
+  {
+   "slug": "deep-research",
+   "name": "deep-research",
+   "tagline": "Multi-source, multi-pass deep research with cited briefs",
+   "description": "coreyhaines31's deep-research: multi-source, multi-pass research (web, Reddit, X, YouTube, HN, Notion) producing cited briefs with contradictions and gaps.",
+   "repo": "https://github.com/coreyhaines31/makerskills",
+   "path": "skills/deep-research",
+   "pinned_sha": "cc31579798ec98b89c6b0d18439c13a795d8d5fb",
+   "category": "research",
+   "license": "MIT",
+   "author": "coreyhaines31",
+   "install_hint": "Copy skills/deep-research into your agent's skills folder.",
+   "uses": [
+    "Research a topic deeply",
+    "Get a cited brief",
+    "Find contradictions"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/deep-research.json"
+   },
+   "review": {
+    "reviewer": "unictos team",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Research methodology, nothing executable."
+   }
   }
  ],
  "version": 1
