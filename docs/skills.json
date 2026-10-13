@@ -3177,6 +3177,277 @@
     "reviewed_at": "2026-10-13",
     "summary": "Read the hardening-patterns reference. Every flagged section is defensive security guidance."
    }
+  },
+  {
+   "slug": "peer-review",
+   "name": "peer-review",
+   "tagline": "Evidence-bounded peer review drafts",
+   "description": "K-Dense-AI's peer-review: draft evidence-bounded peer reviews \u2014 structured manuscript assessments covering methods, stats, reproducibility and ethics.",
+   "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "path": "skills/peer-review",
+   "pinned_sha": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+   "category": "research",
+   "license": "MIT",
+   "author": "K-Dense-AI",
+   "install_hint": "Copy skills/peer-review into your agent's skills folder.",
+   "uses": [
+    "Draft a peer review",
+    "Assess a manuscript",
+    "Check reproducibility"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 97,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "1 MEDIUM, reviewed \u2014 minor docs note."
+    ],
+    "report": "reports/peer-review.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Review methodology, nothing executable."
+   }
+  },
+  {
+   "slug": "polars",
+   "name": "polars",
+   "tagline": "High-performance DataFrames with Polars",
+   "description": "K-Dense-AI's polars: high-performance expression-based DataFrame ETL and analytics \u2014 lazy query optimization, streaming, Arrow interop.",
+   "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "path": "skills/polars",
+   "pinned_sha": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+   "category": "data",
+   "license": "MIT",
+   "author": "K-Dense-AI",
+   "install_hint": "Copy skills/polars into your agent's skills folder.",
+   "uses": [
+    "Speed up pandas workflows",
+    "Build a lazy ETL pipeline",
+    "Process large DataFrames"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Runs code you write"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 95,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 2,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "2 HIGH are coverage notes on referenced artifacts \u2014 reviewed manually."
+    ],
+    "report": "reports/polars.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. DataFrame guidance, nothing executable by the skill."
+   }
+  },
+  {
+   "slug": "dask",
+   "name": "dask",
+   "tagline": "Scale pandas/NumPy beyond memory with Dask",
+   "description": "K-Dense-AI's dask: scale pandas and NumPy workflows beyond memory or across clusters \u2014 DataFrames, arrays, schedulers, diagnostics, Kubernetes/SLURM.",
+   "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "path": "skills/dask",
+   "pinned_sha": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+   "category": "data",
+   "license": "MIT",
+   "author": "K-Dense-AI",
+   "install_hint": "Copy skills/dask into your agent's skills folder.",
+   "uses": [
+    "Scale a pandas workflow",
+    "Run Dask on a cluster",
+    "Diagnose slow tasks"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Runs code you write"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 92,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 5,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "5 findings, all reviewed. 'Memory Manipulation' is docs about explicitly deleting large Python objects (del) for memory management.",
+     "'Credential Access' flags are docs about Kubernetes kubeconfig for Dask clusters \u2014 legitimate cluster-auth documentation."
+    ],
+    "report": "reports/dask.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged references. All distributed-computing documentation."
+   }
+  },
+  {
+   "slug": "vaex",
+   "name": "vaex",
+   "tagline": "Process larger-than-RAM datasets with Vaex",
+   "description": "K-Dense-AI's vaex: process larger-than-RAM tabular datasets (HDF5/Arrow/CSV/Parquet) with lazy expressions and streamed statistics.",
+   "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "path": "skills/vaex",
+   "pinned_sha": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+   "category": "data",
+   "license": "MIT",
+   "author": "K-Dense-AI",
+   "install_hint": "Copy skills/vaex into your agent's skills folder.",
+   "uses": [
+    "Analyze a huge CSV",
+    "Work with HDF5 data",
+    "Stream statistics lazily"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Runs code you write"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/vaex.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. DataFrame guidance, nothing executable by the skill."
+   }
+  },
+  {
+   "slug": "exploratory-data-analysis",
+   "name": "exploratory-data-analysis",
+   "tagline": "Rigorous local EDA \u2014 missingness, leakage, outliers",
+   "description": "K-Dense-AI's exploratory-data-analysis: bounded local EDA of CSV/JSON/HDF5 \u2014 missingness and leakage audits, outlier sensitivity, rigorous report scaffolds.",
+   "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "path": "skills/exploratory-data-analysis",
+   "pinned_sha": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+   "category": "data",
+   "license": "MIT",
+   "author": "K-Dense-AI",
+   "install_hint": "Copy skills/exploratory-data-analysis into your agent's skills folder.",
+   "uses": [
+    "Explore a dataset properly",
+    "Audit for data leakage",
+    "Build an EDA report"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Analyzes files you provide"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 97,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "1 MEDIUM, reviewed \u2014 minor docs note."
+    ],
+    "report": "reports/exploratory-data-analysis.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. EDA methodology, nothing executable by the skill."
+   }
   }
  ],
  "version": 1
