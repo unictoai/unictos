@@ -273,6 +273,7 @@
     display:flex;align-items:center;justify-content:center;
     font-size:22px;font-weight:800;letter-spacing:-.02em;
   }
+  .avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;z-index:1}
   .avatar .mini{
     position:absolute;right:-4px;bottom:-4px;width:18px;height:18px;border-radius:50%;
     background:var(--brand);color:var(--brand-ink);display:flex;align-items:center;justify-content:center;
@@ -898,6 +899,7 @@
     font-size:17px;font-weight:650;letter-spacing:-.02em;
     box-shadow:inset 0 0 0 1px rgba(255,255,255,.07),inset 0 1px 0 rgba(255,255,255,.08);
   }
+  .avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;z-index:1}
   .avatar .mini{
     position:absolute;right:-5px;bottom:-5px;width:19px;height:19px;border-radius:50%;
     background:var(--brand);color:var(--brand-ink);display:flex;align-items:center;justify-content:center;
@@ -1598,9 +1600,11 @@
      scores, scan dates, findings and pins all come from real scans. */
   var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   function fmtDate(iso){ var d=iso.split("-"); return MONTHS[+d[1]-1]+" "+(+d[2])+", "+d[0]; }
+  function orgOf(repo){ var m = repo.match(/github\.com\/([^\/]+)/); return m ? m[1] : ""; }
   function adaptSkill(s){
     return {
       slug: s.slug, name: s.name, author: s.author, cat: s.category,
+      avatar: "https://github.com/"+orgOf(s.repo)+".png",
       score: s.uniscan.score, verdict: s.uniscan.verdict,
       license: s.license, tag: s.tagline, desc: s.description,
       uses: s.uses, perms: s.permissions,
@@ -1644,7 +1648,11 @@
   var ICON_SAVE = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>';
 
   function avatarHTML(s){
-    return '<div class="avatar" style="'+avatarStyle(s.name)+'">'+initials(s.name)+
+    /* Author's real GitHub avatar (their actual brand). Falls back to
+       initials if the image can't load — never a broken tile. */
+    return '<div class="avatar" style="'+avatarStyle(s.name)+'">'+
+      '<img src="'+esc(s.avatar)+'" alt="" loading="lazy" onerror="this.remove()">'+
+      '<span class="avatar-fb">'+initials(s.name)+'</span>'+
       (s.score>=85 ? '<span class="mini" aria-hidden="true">'+ICON_CHECK+'</span>' : '')+'</div>';
   }
   function scorePill(s){
