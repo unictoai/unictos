@@ -1,0 +1,1570 @@
+{
+  "skill": {
+    "name": "security-and-hardening",
+    "source": "/tmp/uniscan-trial/addyosmani-skills/skills/security-and-hardening",
+    "scanned_at": "2026-10-13T08:21:58.274924+00:00"
+  },
+  "risk_assessment": {
+    "score": 100,
+    "severity": "CRITICAL",
+    "recommendation": "DO_NOT_INSTALL",
+    "max_issue_severity": "HIGH"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 216,
+      "executable": false,
+      "size_bytes": 17559,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/hardening-patterns.md",
+      "type": "markdown",
+      "lines": 324,
+      "executable": false,
+      "size_bytes": 13036,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    }
+  ],
+  "structured_summaries": [],
+  "issues": [
+    {
+      "id": "YR4",
+      "finding_id": "finding-4017c20182a84801a4d0ade04576e821",
+      "category": "YARA Match",
+      "pattern": "YARA rule 'agent_skill_prompt_injection_hidden_instructions': Prompt injection or hidden instructions embedded in AI agent skill text [agent_skills]",
+      "severity": "HIGH",
+      "confidence": 0.8,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 21,
+        "end_line": null
+      },
+      "finding": "Model; disable security",
+      "explanation": "YARA rule matched a hack tool or exploit indicator (offensive tools, reconnaissance, privilege escalation, or exploit frameworks).",
+      "remediation": "Remove offensive tool references and exploit code. Legitimate agent skills should not contain penetration testing tools, exploit frameworks, or reconnaissance utilities.",
+      "code_snippet": "ase \u2014 it's a constraint on every line of code that touches user data, authentication, or external systems.\n\n## When to Use\n\n- Building anything that accepts user input\n- Implementing authentication or authorization\n- Storing or transmitting sensitive data\n- Integrating with external APIs or services\n- Adding file uploads, webhooks, or callbacks\n- Handling payment or PII data\n\n## Process: Threat Model First\n\nControls bolted on without a threat model are guesses. Before hardening, spend five minutes thinking like an attacker:\n\n1. **Map the trust boundaries.** Where does untrusted data cross into your system? HTTP requests, form fields, file uploads, webhooks, third-party APIs, message queues, and **LLM output** \u2014 plus the local values that look internal because the OS handed them to you: another process's command line or environment, filenames on a shared volume, a path in a job payload. Trust follows who *wrote* a value, not which channel delivered it. Every boundary is attack surfa",
+      "intent": null,
+      "tags": [
+        "YARA Match"
+      ],
+      "evidence": {},
+      "match_fingerprint": "d4917bc32ab1bbcd613110cc8a6d50fce418e23d2561b1b0948af4f78abccc4c",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 21,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-a3fc8283790742bc84ed2e3a0fa1203c",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 77,
+        "end_line": null
+      },
+      "finding": "references/hardening-patterns.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "; a concrete implementation of each lives in [references/hardening-patterns.md](references/hardening-patterns.md). Open the section you need when you reach that",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/hardening-patterns.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "172d45ef9ce62b97b074eee35f98e6a518042361c00939482d45e2dcf8ade85b",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 77,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-704ffdd310484c44961966c333419e86",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 85,
+        "end_line": null
+      },
+      "finding": "references/hardening-patterns.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "Patterns: [Injection](references/hardening-patterns.md#injection), [XSS](references/hardening-patterns.md#cross-site-scripting-xss), [Access control](references",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/hardening-patterns.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "172d45ef9ce62b97b074eee35f98e6a518042361c00939482d45e2dcf8ade85b",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 85,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-14d1ef139e6b4585847207e551123f35",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 92,
+        "end_line": null
+      },
+      "finding": "references/hardening-patterns.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "Pattern: [Authentication](references/hardening-patterns.md#broken-authentication).",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/hardening-patterns.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "172d45ef9ce62b97b074eee35f98e6a518042361c00939482d45e2dcf8ade85b",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 92,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-412b4a3f9e4a4beaa426dcd980093c74",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 100,
+        "end_line": null
+      },
+      "finding": "references/hardening-patterns.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "Patterns: [Misconfiguration](references/hardening-patterns.md#security-misconfiguration), [Sensitive data exposure](references/hardening-patterns.md#sensitive-d",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/hardening-patterns.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "172d45ef9ce62b97b074eee35f98e6a518042361c00939482d45e2dcf8ade85b",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 100,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-bd785dd7dec4495b9e0a83090c1147f9",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 107,
+        "end_line": null
+      },
+      "finding": "references/hardening-patterns.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "Patterns: [Schema validation](references/hardening-patterns.md#schema-validation-at-boundaries), [File upload](references/hardening-patterns.md#file-upload-safe",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/hardening-patterns.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "172d45ef9ce62b97b074eee35f98e6a518042361c00939482d45e2dcf8ade85b",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 107,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-89d125f21db646f797378a8b57a156b2",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 113,
+        "end_line": null
+      },
+      "finding": "references/hardening-patterns.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "Pattern: [SSRF](references/hardening-patterns.md#server-side-request-forgery-ssrf).",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/hardening-patterns.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "172d45ef9ce62b97b074eee35f98e6a518042361c00939482d45e2dcf8ade85b",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 113,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-82ba705c1e9945b5ab134f1f72c577c0",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 119,
+        "end_line": null
+      },
+      "finding": "references/hardening-patterns.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "r than it reads (marker self-attestation, check/use races): [Destructive paths](references/hardening-patterns.md#destructive-operations-on-derived-paths). Worke",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/hardening-patterns.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "172d45ef9ce62b97b074eee35f98e6a518042361c00939482d45e2dcf8ade85b",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 119,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-8e4e05578add440bb8383132416f3ed8",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 125,
+        "end_line": null
+      },
+      "finding": "references/hardening-patterns.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "Pattern: [Rate limiting](references/hardening-patterns.md#rate-limiting).",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/hardening-patterns.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "172d45ef9ce62b97b074eee35f98e6a518042361c00939482d45e2dcf8ade85b",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 125,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-a50cdcb6686d4911bc940ff7e7848df8",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 131,
+        "end_line": null
+      },
+      "finding": "references/hardening-patterns.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "Pattern: [Secrets management](references/hardening-patterns.md#secrets-management).",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/hardening-patterns.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "172d45ef9ce62b97b074eee35f98e6a518042361c00939482d45e2dcf8ade85b",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 131,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-3c1635e29e2a4e1bbbaf8b552c23a10b",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 140,
+        "end_line": null
+      },
+      "finding": "references/hardening-patterns.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "Triage decision tree: [Dependency audit triage](references/hardening-patterns.md#dependency-audit-triage). Manager matrix and install-script gate: `../../refere",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/hardening-patterns.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "172d45ef9ce62b97b074eee35f98e6a518042361c00939482d45e2dcf8ade85b",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 140,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-0cb7cb6dde614211b7af1f9ace9dc467",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 152,
+        "end_line": null
+      },
+      "finding": "references/hardening-patterns.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "Classification table: [Data classification](references/hardening-patterns.md#data-classification). A privacy incident starts the breach-notification clock; run ",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/hardening-patterns.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "172d45ef9ce62b97b074eee35f98e6a518042361c00939482d45e2dcf8ade85b",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 152,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-bd667692e906403f9eb982e4b7ae2bf3",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 162,
+        "end_line": null
+      },
+      "finding": "references/hardening-patterns.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "Pattern: [LLM output handling](references/hardening-patterns.md#llm-output-handling).",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/hardening-patterns.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "172d45ef9ce62b97b074eee35f98e6a518042361c00939482d45e2dcf8ade85b",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 162,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "MP3",
+      "finding_id": "finding-5127e295cbaa459a84aa128fbfb2aabb",
+      "category": "Memory Poisoning",
+      "pattern": "Memory Manipulation",
+      "severity": "HIGH",
+      "confidence": 0.8,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 129,
+        "end_line": null,
+        "start_column": 265
+      },
+      "finding": "purge history",
+      "explanation": "Skill manipulates agent memory, state, or stored context. Memory corruption can alter personality, override safety rules, or cause unpredictable behavior.",
+      "remediation": "Protect agent memory and state from modification by untrusted content. Use read-only memory for critical instructions and validate all state changes.",
+      "code_snippet": "\n### Secrets\n\nSecrets come from the environment. `.env.example` is committed with placeholders; real `.env*` files and key material are gitignored; grep the staged diff before committing. **A secret that reaches a remote is compromised the moment it lands: rotate it first, then purge history.**\n\nPattern: [Secrets management](references/hardening-patterns.md#secrets-management).\n",
+      "intent": null,
+      "tags": [
+        "Memory Poisoning"
+      ],
+      "evidence": {},
+      "match_fingerprint": "a4ad140049198e9c3ff8b46c4dc536f942f987bcbd40322c46fb03fd4c260ed9",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 129,
+          "end_line": null,
+          "start_column": 265
+        }
+      ]
+    },
+    {
+      "id": "SSRF1",
+      "finding_id": "finding-0df7bdd72d7247da98a917b164e90677",
+      "category": "Server-Side Request Forgery",
+      "pattern": "Cloud Metadata Access",
+      "severity": "HIGH",
+      "confidence": 0.9,
+      "location": {
+        "file": "references/hardening-patterns.md",
+        "start_line": 150,
+        "end_line": null,
+        "start_column": 63
+      },
+      "finding": "169.254.169.254",
+      "explanation": "Code accesses a cloud instance metadata endpoint (e.g. 169.254.169.254). A single request can return temporary IAM credentials, making this a high-value SSRF target for credential theft.",
+      "remediation": "Remove access to cloud metadata endpoints unless strictly required. If metadata is needed, restrict it (e.g. IMDSv2 with hop limit) and never expose returned credentials.",
+      "code_snippet": "await fetch(await assertSafeUrl(req.body.webhookUrl), { redirect: 'error' });\n```\n\nThe `range() !== 'unicast'` check covers loopback, link-local `169.254.169.254` (cloud metadata, the #1 SSRF target), private, and unique-local ranges across IPv4 and IPv6.\n\n**Caveat \u2014 this still has a TOCTOU gap.** `fetch` resolves DNS again after the check, so an attacker using a short-TTL record can rebind to an internal IP between validation and connection. For high-risk surfaces, resolve once and connect to the pinned IP, or put a filtering agent in front (`request-filtering-agent` / `ssrf-req-filter`).\n",
+      "intent": null,
+      "tags": [
+        "Server-Side Request Forgery"
+      ],
+      "evidence": {},
+      "match_fingerprint": "d61ab72824eae3143803cfed4f723d8454fedefdac1d6ad5c7f4299f9032a6ee",
+      "occurrences": [
+        {
+          "file": "references/hardening-patterns.md",
+          "start_line": 150,
+          "end_line": null,
+          "start_column": 63
+        }
+      ]
+    },
+    {
+      "id": "PE3",
+      "finding_id": "finding-9e5cd4f479104e24b61a6aee70b4d7bd",
+      "category": "Privilege Escalation",
+      "pattern": "Credential Access",
+      "severity": "HIGH",
+      "confidence": 0.6,
+      "location": {
+        "file": "references/hardening-patterns.md",
+        "start_line": 276,
+        "end_line": null,
+        "start_column": 0
+      },
+      "finding": ".env ",
+      "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
+      "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
+      "code_snippet": "## Secrets Management\n\n```\n.env files:\n  \u251c\u2500\u2500 .env.example  \u2192 Committed (template with placeholder values)\n  \u251c\u2500\u2500 .env          \u2192 NOT committed (contains real secrets)\n  \u2514\u2500\u2500 .env.local    \u2192 NOT committed (local overrides)",
+      "intent": null,
+      "tags": [
+        "Privilege Escalation"
+      ],
+      "evidence": {},
+      "match_fingerprint": "66ef81c27c03406fd9935e5fc86fc4126d7150c15b8d076fdc528d05cea7c7bf",
+      "occurrences": [
+        {
+          "file": "references/hardening-patterns.md",
+          "start_line": 276,
+          "end_line": null,
+          "start_column": 0
+        }
+      ]
+    },
+    {
+      "id": "PE3",
+      "finding_id": "finding-69a32737c50b4de1a0a308a5ff7be7dd",
+      "category": "Privilege Escalation",
+      "pattern": "Credential Access",
+      "severity": "HIGH",
+      "confidence": 0.6,
+      "location": {
+        "file": "references/hardening-patterns.md",
+        "start_line": 278,
+        "end_line": null,
+        "start_column": 6
+      },
+      "finding": ".env ",
+      "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
+      "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
+      "code_snippet": "```\n.env files:\n  \u251c\u2500\u2500 .env.example  \u2192 Committed (template with placeholder values)\n  \u251c\u2500\u2500 .env          \u2192 NOT committed (contains real secrets)\n  \u2514\u2500\u2500 .env.local    \u2192 NOT committed (local overrides)\n\n.gitignore must include:",
+      "intent": null,
+      "tags": [
+        "Privilege Escalation"
+      ],
+      "evidence": {},
+      "match_fingerprint": "66ef81c27c03406fd9935e5fc86fc4126d7150c15b8d076fdc528d05cea7c7bf",
+      "occurrences": [
+        {
+          "file": "references/hardening-patterns.md",
+          "start_line": 278,
+          "end_line": null,
+          "start_column": 6
+        }
+      ]
+    },
+    {
+      "id": "PE3",
+      "finding_id": "finding-1bc940f51f224ad2991e07f7d2ecfc91",
+      "category": "Privilege Escalation",
+      "pattern": "Credential Access",
+      "severity": "HIGH",
+      "confidence": 0.6,
+      "location": {
+        "file": "references/hardening-patterns.md",
+        "start_line": 282,
+        "end_line": null,
+        "start_column": 2
+      },
+      "finding": ".env ",
+      "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
+      "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
+      "code_snippet": "  \u2514\u2500\u2500 .env.local    \u2192 NOT committed (local overrides)\n\n.gitignore must include:\n  .env\n  .env.local\n  .env.*.local\n  *.pem",
+      "intent": null,
+      "tags": [
+        "Privilege Escalation"
+      ],
+      "evidence": {},
+      "match_fingerprint": "66ef81c27c03406fd9935e5fc86fc4126d7150c15b8d076fdc528d05cea7c7bf",
+      "occurrences": [
+        {
+          "file": "references/hardening-patterns.md",
+          "start_line": 282,
+          "end_line": null,
+          "start_column": 2
+        }
+      ]
+    },
+    {
+      "id": "PE3",
+      "finding_id": "finding-b2c4cc26375849b38f053ab2e7f00b98",
+      "category": "Privilege Escalation",
+      "pattern": "Credential Access",
+      "severity": "HIGH",
+      "confidence": 0.6,
+      "location": {
+        "file": "references/hardening-patterns.md",
+        "start_line": 279,
+        "end_line": null,
+        "start_column": 6
+      },
+      "finding": ".env.local ",
+      "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
+      "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
+      "code_snippet": ".env files:\n  \u251c\u2500\u2500 .env.example  \u2192 Committed (template with placeholder values)\n  \u251c\u2500\u2500 .env          \u2192 NOT committed (contains real secrets)\n  \u2514\u2500\u2500 .env.local    \u2192 NOT committed (local overrides)\n\n.gitignore must include:\n  .env",
+      "intent": null,
+      "tags": [
+        "Privilege Escalation"
+      ],
+      "evidence": {},
+      "match_fingerprint": "021f7ffa4122cf8ed26ecae08a0a46ff9aa27fee40f717ab4c3bff5f82c6550e",
+      "occurrences": [
+        {
+          "file": "references/hardening-patterns.md",
+          "start_line": 279,
+          "end_line": null,
+          "start_column": 6
+        }
+      ]
+    },
+    {
+      "id": "PE3",
+      "finding_id": "finding-36c4c1bcb091401fb6ddb3e5a3f119ac",
+      "category": "Privilege Escalation",
+      "pattern": "Credential Access",
+      "severity": "HIGH",
+      "confidence": 0.6,
+      "location": {
+        "file": "references/hardening-patterns.md",
+        "start_line": 283,
+        "end_line": null,
+        "start_column": 2
+      },
+      "finding": ".env.local ",
+      "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
+      "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
+      "code_snippet": "\n.gitignore must include:\n  .env\n  .env.local\n  .env.*.local\n  *.pem\n  *.key",
+      "intent": null,
+      "tags": [
+        "Privilege Escalation"
+      ],
+      "evidence": {},
+      "match_fingerprint": "021f7ffa4122cf8ed26ecae08a0a46ff9aa27fee40f717ab4c3bff5f82c6550e",
+      "occurrences": [
+        {
+          "file": "references/hardening-patterns.md",
+          "start_line": 283,
+          "end_line": null,
+          "start_column": 2
+        }
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-9580829b7e4c4e11bedd6fe7f90cf310",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 198,
+        "end_line": null,
+        "start_column": 44
+      },
+      "finding": "no consent",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "- LLM/model output passed into a query, the DOM, a shell, or `eval`\n- Secrets, PII, or the full system prompt placed inside an LLM context window\n- Personal data collected with no stated purpose, retention limit, or deletion path\n- PII sent to analytics/ad/LLM vendors with no consent or data-processing agreement\n- \"Delete my account\" that only flips a flag while the personal data lingers in stores and backups\n\n## Verification",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ],
+      "evidence": {},
+      "match_fingerprint": "4b9d13ac603b6b3b7223dbea83ec4db8a7d9cd4c5f75cb33027bd83f42ec46e4",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 198,
+          "end_line": null,
+          "start_column": 44
+        }
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": false,
+    "skillspector_version": "2.12.0",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "llm_provenance": {
+      "schema_version": 1,
+      "provider": {
+        "configured_adapter": "unknown",
+        "resolved_adapter": "unknown",
+        "effective_adapter": "not_applicable",
+        "effective_adapters": [],
+        "service": "unknown",
+        "routing": {
+          "deployment_override": null,
+          "deployment_source": "unknown",
+          "api_version": null,
+          "api_version_source": "unknown"
+        }
+      },
+      "analyzers": [
+        {
+          "analyzer_id": "mcp_tool_poisoning",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_developer_intent",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_quality_policy",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_security_discovery",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "meta_analyzer",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        }
+      ],
+      "sampling": {
+        "temperature": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "seed": {
+          "requested": null,
+          "source": "unset",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "reasoning_effort": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        }
+      },
+      "determinism": {
+        "classification": "not_applicable",
+        "control_status": "not_applied",
+        "provider_guarantee": false,
+        "reason": "LLM analysis was not executed for this scan."
+      }
+    },
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 2,
+    "scanned_components": 1,
+    "coverage_percent": 50.0,
+    "is_complete": false,
+    "status": "partial",
+    "execution_successful": true,
+    "fully_inspected_files": 1,
+    "partially_inspected_files": 1,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 111,
+        "end_line": 111,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 129,
+        "end_line": 129,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "references/hardening-patterns.md",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "artifact_integrity",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "bundled_execution_surface",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "reference_coverage",
+        "status": "completed",
+        "planned_work": 12,
+        "completed": 12,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "degraded",
+        "planned_work": 2,
+        "completed": 1,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "references": [
+      {
+        "source_path": "SKILL.md",
+        "line": 77,
+        "column": 113,
+        "evidence": "; a concrete implementation of each lives in [references/hardening-patterns.md](references/hardening-patterns.md). Open the section you need when you reach that",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 77,
+        "column": 79,
+        "evidence": "The rules below are the workflow; a concrete implementation of each lives in [references/hardening-patterns.md](references/hardening-patterns.md). Open the sect",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 85,
+        "column": 23,
+        "evidence": "Patterns: [Injection](references/hardening-patterns.md#injection), [XSS](references/hardening-patterns.md#cross-site-scripting-xss), [Access control](references",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 85,
+        "column": 74,
+        "evidence": "Patterns: [Injection](references/hardening-patterns.md#injection), [XSS](references/hardening-patterns.md#cross-site-scripting-xss), [Access control](references",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 85,
+        "column": 151,
+        "evidence": "S](references/hardening-patterns.md#cross-site-scripting-xss), [Access control](references/hardening-patterns.md#broken-access-control).",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 92,
+        "column": 27,
+        "evidence": "Pattern: [Authentication](references/hardening-patterns.md#broken-authentication).",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 100,
+        "column": 30,
+        "evidence": "Patterns: [Misconfiguration](references/hardening-patterns.md#security-misconfiguration), [Sensitive data exposure](references/hardening-patterns.md#sensitive-d",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 100,
+        "column": 117,
+        "evidence": "ces/hardening-patterns.md#security-misconfiguration), [Sensitive data exposure](references/hardening-patterns.md#sensitive-data-exposure).",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 107,
+        "column": 31,
+        "evidence": "Patterns: [Schema validation](references/hardening-patterns.md#schema-validation-at-boundaries), [File upload](references/hardening-patterns.md#file-upload-safe",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 107,
+        "column": 112,
+        "evidence": "eferences/hardening-patterns.md#schema-validation-at-boundaries), [File upload](references/hardening-patterns.md#file-upload-safety).",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 111,
+        "column": 245,
+        "evidence": "* DNS records and reject any private or reserved address (loopback, link-local `169.254.169.254`, private, unique-local, for IPv4 and IPv6), and forbid redirect",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 113,
+        "column": 17,
+        "evidence": "Pattern: [SSRF](references/hardening-patterns.md#server-side-request-forgery-ssrf).",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 119,
+        "column": 103,
+        "evidence": "r than it reads (marker self-attestation, check/use races): [Destructive paths](references/hardening-patterns.md#destructive-operations-on-derived-paths). Worke",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 119,
+        "column": 192,
+        "evidence": "s/hardening-patterns.md#destructive-operations-on-derived-paths). Worked code: `../../references/security-checklist.md`.",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 125,
+        "column": 26,
+        "evidence": "Pattern: [Rate limiting](references/hardening-patterns.md#rate-limiting).",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 129,
+        "column": 37,
+        "evidence": "Secrets come from the environment. `.env.example` is committed with placeholders; real `.env*` files and key material are gitignored; grep the staged diff befor",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 131,
+        "column": 31,
+        "evidence": "Pattern: [Secrets management](references/hardening-patterns.md#secrets-management).",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 140,
+        "column": 49,
+        "evidence": "Triage decision tree: [Dependency audit triage](references/hardening-patterns.md#dependency-audit-triage). Manager matrix and install-script gate: `../../refere",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 140,
+        "column": 149,
+        "evidence": "-patterns.md#dependency-audit-triage). Manager matrix and install-script gate: `../../references/security-checklist.md`.",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 152,
+        "column": 45,
+        "evidence": "Classification table: [Data classification](references/hardening-patterns.md#data-classification). A privacy incident starts the breach-notification clock; run ",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 156,
+        "column": 139,
+        "evidence": " a new attack surface; map it to the [OWASP Top 10 for LLM Applications (2025)](https://genai.owasp.org/llm-top-10/):",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 162,
+        "column": 32,
+        "evidence": "Pattern: [LLM output handling](references/hardening-patterns.md#llm-output-handling).",
+        "target_path": "references/hardening-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 166,
+        "column": 24,
+        "evidence": "Before sign-off, walk `../../references/security-checklist.md`: it covers authentication, authorization, input, data protection and privacy, headers and CORS, d",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "quoted_or_code"
+      }
+    ],
+    "limitations": [
+      "Analyzer static_patterns_tool_misuse status: degraded."
+    ],
+    "findings_before_filtering": 21,
+    "findings_after_filtering": 21
+  }
+}

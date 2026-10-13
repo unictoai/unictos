@@ -2524,6 +2524,331 @@
     "reviewed_at": "2026-10-13",
     "summary": "Read SKILL.md. Dev-client guidance, nothing executable."
    }
+  },
+  {
+   "slug": "eas-workflows",
+   "name": "eas-workflows",
+   "tagline": "EAS Workflows \u2014 CI/CD for Expo apps",
+   "description": "Expo's eas-workflows: build CI/CD pipelines for Expo apps with EAS Workflows \u2014 YAML structure validated against Expo's official schema.",
+   "repo": "https://github.com/expo/skills",
+   "path": "plugins/expo/skills/eas-workflows",
+   "pinned_sha": "d4f484024fec15196bfd3c272e953e3f983972cf",
+   "category": "devops",
+   "license": "MIT",
+   "author": "Expo",
+   "install_hint": "Copy plugins/expo/skills/eas-workflows into your agent's skills folder.",
+   "uses": [
+    "Set up CI for an Expo app",
+    "Validate workflow YAML",
+    "Automate EAS builds"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Fetches Expo's official schema (documented)"
+    ],
+    [
+     "ok",
+     "Caches locally"
+    ],
+    [
+     "ok",
+     "No user data sent"
+    ]
+   ],
+   "uniscan": {
+    "score": 93,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 3,
+     "low": 1
+    },
+    "notes": [
+     "5 findings, all reviewed. HIGH 'network' + 'External Transmission' are the skill fetching the EAS workflow JSON schema from api.expo.dev \u2014 Expo's official API, documented in SKILL.md as the source of truth, with local caching.",
+     "No user data is transmitted; it's a schema fetch."
+    ],
+    "report": "reports/eas-workflows.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read scripts/fetch.js. Fetches api.expo.dev/v2/workflows/schema with 15-min local cache. No exfiltration."
+   }
+  },
+  {
+   "slug": "expo-router",
+   "name": "expo-router",
+   "tagline": "File-based routing for Expo and React Native",
+   "description": "Expo's expo-router: file-based routing for Expo and React Native \u2014 layouts, tabs, deep linking, typed routes.",
+   "repo": "https://github.com/expo/skills",
+   "path": "plugins/expo/skills/expo-router",
+   "pinned_sha": "d4f484024fec15196bfd3c272e953e3f983972cf",
+   "category": "code",
+   "license": "MIT",
+   "author": "Expo",
+   "install_hint": "Copy plugins/expo/skills/expo-router into your agent's skills folder.",
+   "uses": [
+    "Set up file-based routing",
+    "Add tabs navigation",
+    "Configure deep links"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Reads code you share"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 97,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 2,
+     "low": 0
+    },
+    "notes": [
+     "2 MEDIUM, reviewed \u2014 docs notes."
+    ],
+    "report": "reports/expo-router.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Routing guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "expo-design-system",
+   "name": "expo-design-system",
+   "tagline": "Build consistent UIs with Expo's design system",
+   "description": "Expo's expo-design-system: build consistent UIs with Expo's design system \u2014 tokens, components, theming.",
+   "repo": "https://github.com/expo/skills",
+   "path": "plugins/expo/skills/expo-design-system",
+   "pinned_sha": "d4f484024fec15196bfd3c272e953e3f983972cf",
+   "category": "design",
+   "license": "MIT",
+   "author": "Expo",
+   "install_hint": "Copy plugins/expo/skills/expo-design-system into your agent's skills folder.",
+   "uses": [
+    "Apply Expo design tokens",
+    "Theme an Expo app",
+    "Build consistent components"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Reads code you share"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 98,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "1 MEDIUM, reviewed \u2014 docs note."
+    ],
+    "report": "reports/expo-design-system.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Design guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "expo-upgrade",
+   "name": "expo-upgrade",
+   "tagline": "Upgrade Expo SDK versions safely",
+   "description": "Expo's expo-upgrade: upgrade between Expo SDK versions safely \u2014 breaking changes, migration steps, new architecture notes.",
+   "repo": "https://github.com/expo/skills",
+   "path": "plugins/expo/skills/expo-upgrade",
+   "pinned_sha": "d4f484024fec15196bfd3c272e953e3f983972cf",
+   "category": "code",
+   "license": "MIT",
+   "author": "Expo",
+   "install_hint": "Copy plugins/expo/skills/expo-upgrade into your agent's skills folder.",
+   "uses": [
+    "Upgrade an Expo SDK",
+    "Migrate breaking changes",
+    "Adopt the new architecture"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Reads code you share"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 94,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 15,
+     "low": 0
+    },
+    "notes": [
+     "15 MEDIUM are all unpinned npx suggestions in the migration docs, not executed by the skill."
+    ],
+    "report": "reports/expo-upgrade.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Migration guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "spec-driven-development",
+   "name": "spec-driven-development",
+   "tagline": "Write specs before code \u2014 contracts, acceptance criteria",
+   "description": "Addy Osmani's spec-driven-development: write specs before code \u2014 contracts, acceptance criteria, then implement to the spec.",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "path": "skills/spec-driven-development",
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "category": "code",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/spec-driven-development into your agent's skills folder.",
+   "uses": [
+    "Write a spec first",
+    "Define acceptance criteria",
+    "Implement to contract"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 96,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 4,
+     "low": 0
+    },
+    "notes": [
+     "4 MEDIUM, all reviewed \u2014 docs notes."
+    ],
+    "report": "reports/spec-driven-development.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Spec methodology, nothing executable."
+   }
+  },
+  {
+   "slug": "deprecation-and-migration",
+   "name": "deprecation-and-migration",
+   "tagline": "Deprecate and migrate APIs without breaking users",
+   "description": "Addy Osmani's deprecation-and-migration: deprecate and migrate APIs safely \u2014 versioning, codemods, communication.",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "path": "skills/deprecation-and-migration",
+   "pinned_sha": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+   "category": "code",
+   "license": "MIT",
+   "author": "Addy Osmani",
+   "install_hint": "Copy skills/deprecation-and-migration into your agent's skills folder.",
+   "uses": [
+    "Deprecate an API safely",
+    "Write a migration guide",
+    "Plan a version migration"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 97,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "1 MEDIUM, reviewed \u2014 docs note."
+    ],
+    "report": "reports/deprecation-and-migration.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Migration guidance, nothing executable."
+   }
   }
  ],
  "version": 1
