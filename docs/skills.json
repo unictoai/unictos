@@ -559,6 +559,1098 @@
     "Assess code across 5 quality axes",
     "Get a second opinion on your own diff"
    ]
+  },
+  {
+   "slug": "xlsx",
+   "name": "xlsx",
+   "tagline": "Read, edit and create spreadsheets \u2014 formulas, formatting, charts",
+   "description": "Anthropic's xlsx skill: read, edit and create .xlsx/.csv spreadsheets \u2014 formulas, formatting, charts, and cleaning messy data. Ships Python scripts including LibreOffice automation for conversions.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/xlsx",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "data",
+   "license": "Anthropic ToS (source-available)",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/xlsx into your agent's skills folder.",
+   "uses": [
+    "Clean up a messy spreadsheet",
+    "Build an .xlsx report with charts",
+    "Convert documents between office formats"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Runs local scripts incl. LibreOffice for conversions"
+    ],
+    [
+     "ok",
+     "Reads/writes files you give it"
+    ],
+    [
+     "ok",
+     "No data leaves your machine"
+    ]
+   ],
+   "uniscan": {
+    "score": 90,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 6,
+     "medium": 8,
+     "low": 0
+    },
+    "notes": [
+     "14 findings, all reviewed. 'Env Variable Harvesting' is the script configuring LibreOffice's own environment variables (SAL_USE_VCLPLUGIN, LD_PRELOAD shim for headless operation) \u2014 standard LO automation, stays local.",
+     "Subprocess calls run local LibreOffice/document tools \u2014 the skill's core purpose. The LD_PRELOAD socket shim is a known headless-LibreOffice pattern.",
+     "'Unsafe Defaults' flag is on careful file-permission preservation code (keeps existing mode or 0o666&~umask).",
+     "5 coverage notes on referenced artifacts."
+    ],
+    "report": "reports/xlsx.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md and the office scripts. All subprocess use is local document processing (LibreOffice, validators). No network, no exfiltration. License is Anthropic source-available."
+   }
+  },
+  {
+   "slug": "docx",
+   "name": "docx",
+   "tagline": "Create, read and edit Word documents \u2014 formatting, TOCs, tracked changes",
+   "description": "Anthropic's docx skill: create, read and edit .docx files \u2014 formatting, tables of contents, tracked changes and templates. Notably security-conscious: strips symlink entries from untrusted documents.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/docx",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "productivity",
+   "license": "Anthropic ToS (source-available)",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/docx into your agent's skills folder.",
+   "uses": [
+    "Draft a formatted Word document",
+    "Accept tracked changes in a docx",
+    "Convert a docx to another format"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Runs local scripts incl. LibreOffice for conversions"
+    ],
+    [
+     "ok",
+     "Strips symlinks from untrusted documents"
+    ],
+    [
+     "ok",
+     "No data leaves your machine"
+    ]
+   ],
+   "uniscan": {
+    "score": 90,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 3,
+     "medium": 8,
+     "low": 1
+    },
+    "notes": [
+     "12 findings, all reviewed. 'Tool Parameter/Chaining Abuse' flags are on documentation showing a bash editing workflow \u2014 the docs themselves warn that external docx files are untrusted and strip symlinks.",
+     "Same LibreOffice subprocess pattern as the xlsx skill \u2014 local document processing only.",
+     "1 LOW: SKILL.md trigger description is broad."
+    ],
+    "report": "reports/docx.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md and scripts. Shares the office-script codebase with xlsx. No network, no exfiltration."
+   }
+  },
+  {
+   "slug": "web-artifacts-builder",
+   "name": "web-artifacts-builder",
+   "tagline": "Build elaborate multi-component HTML artifacts with React + Tailwind",
+   "description": "Anthropic's skill for building rich HTML artifacts: multi-component layouts with React, Tailwind and shadcn/ui.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/web-artifacts-builder",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "code",
+   "license": "Anthropic ToS (source-available)",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/web-artifacts-builder into your agent's skills folder.",
+   "uses": [
+    "Build an interactive HTML artifact",
+    "Prototype a multi-component UI",
+    "Generate a polished single-file page"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Generates local HTML files"
+    ],
+    [
+     "ok",
+     "No scripts executed by the skill"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 95,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 2,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "2 HIGH are coverage notes (referenced artifacts partially inspected) \u2014 reviewed the referenced content manually."
+    ],
+    "report": "reports/web-artifacts-builder.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md and scripts. Guidance + templates, no concerning behavior."
+   }
+  },
+  {
+   "slug": "canvas-design",
+   "name": "canvas-design",
+   "tagline": "Create original visual art and posters as PNG/PDF",
+   "description": "Anthropic's canvas-design skill: create original visual art and posters as PNG or PDF, guided by a design philosophy.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/canvas-design",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "design",
+   "license": "Anthropic ToS (source-available)",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/canvas-design into your agent's skills folder.",
+   "uses": [
+    "Design a poster",
+    "Create original visual art",
+    "Generate a PNG/PDF artwork"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Generates local image files"
+    ],
+    [
+     "ok",
+     "No network access"
+    ],
+    [
+     "ok",
+     "No data collection"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/canvas-design.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Guidance-only skill, nothing executable of concern."
+   }
+  },
+  {
+   "slug": "frontend-design",
+   "name": "frontend-design",
+   "tagline": "Distinctive, intentional UI design that avoids templated defaults",
+   "description": "Anthropic's frontend-design skill: guidance for distinctive, intentional visual UI design \u2014 avoiding the generic AI-generated look.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/frontend-design",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "design",
+   "license": "Anthropic ToS (source-available)",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/frontend-design into your agent's skills folder.",
+   "uses": [
+    "Design a distinctive interface",
+    "Avoid templated AI-looking UI",
+    "Get intentional visual direction"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 96,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "1 HIGH 'Anti-Refusal' is a false positive: the matched text is UX-writing guidance ('Use active voice... a CTA says exactly what happens') \u2014 the scanner misread concise-copy advice as stripped safety warnings."
+    ],
+    "report": "reports/frontend-design.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged section in context. Design guidance, not a jailbreak."
+   }
+  },
+  {
+   "slug": "theme-factory",
+   "name": "theme-factory",
+   "tagline": "Style artifacts with 10 preset themes or generate a custom one",
+   "description": "Anthropic's theme-factory: apply 10 preset color/font themes to artifacts, or generate a custom theme on the fly. Bundles a theme-showcase PDF.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/theme-factory",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "design",
+   "license": "Anthropic ToS (source-available)",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/theme-factory into your agent's skills folder.",
+   "uses": [
+    "Theme an artifact quickly",
+    "Browse 10 preset color/font themes",
+    "Generate a custom theme"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance + static assets"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 95,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 2,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "2 HIGH are coverage notes on the bundled theme assets (PDF + theme files) \u2014 inspected manually, they're static design assets."
+    ],
+    "report": "reports/theme-factory.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Themes and a showcase PDF, nothing executable."
+   }
+  },
+  {
+   "slug": "brand-guidelines",
+   "name": "brand-guidelines",
+   "tagline": "Apply Anthropic's official brand colors and typography",
+   "description": "Anthropic's brand-guidelines skill: apply Anthropic's official brand colors and typography to any artifact.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/brand-guidelines",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "design",
+   "license": "Anthropic ToS (source-available)",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/brand-guidelines into your agent's skills folder.",
+   "uses": [
+    "Style something in Anthropic's brand",
+    "Get official brand colors/type",
+    "Keep artifacts on-brand"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/brand-guidelines.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Brand reference, nothing executable."
+   }
+  },
+  {
+   "slug": "slack-gif-creator",
+   "name": "slack-gif-creator",
+   "tagline": "Create animated GIFs optimized for Slack",
+   "description": "Anthropic's slack-gif-creator: create animated GIFs optimized for Slack, with constraints and validation tools.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/slack-gif-creator",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "design",
+   "license": "Anthropic ToS (source-available)",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/slack-gif-creator into your agent's skills folder.",
+   "uses": [
+    "Make a Slack-ready animated GIF",
+    "Validate GIF constraints",
+    "Create a looping animation"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Generates local GIF files"
+    ],
+    [
+     "ok",
+     "Python deps listed in requirements.txt"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan. requirements.txt lists standard Python imaging deps."
+    ],
+    "report": "reports/slack-gif-creator.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md and scripts. Local GIF generation, no concerns."
+   }
+  },
+  {
+   "slug": "doc-coauthoring",
+   "name": "doc-coauthoring",
+   "tagline": "Structured workflow for co-authoring docs, proposals and specs",
+   "description": "Anthropic's doc-coauthoring skill: a structured workflow for co-authoring documents, proposals, specs and decision records with iteration.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/doc-coauthoring",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "writing",
+   "license": "Anthropic ToS (source-available)",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/doc-coauthoring into your agent's skills folder.",
+   "uses": [
+    "Co-author a proposal",
+    "Write a spec iteratively",
+    "Draft a decision record"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Text in, text out"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/doc-coauthoring.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Workflow guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "internal-comms",
+   "name": "internal-comms",
+   "tagline": "Templates for internal comms \u2014 updates, newsletters, incident reports",
+   "description": "Anthropic's internal-comms skill: templates for internal communications \u2014 3P updates, newsletters, FAQs, status and incident reports.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/internal-comms",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "writing",
+   "license": "Anthropic ToS (source-available)",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/internal-comms into your agent's skills folder.",
+   "uses": [
+    "Write a status update",
+    "Draft an incident report",
+    "Create a team newsletter"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown templates only"
+    ],
+    [
+     "ok",
+     "Text in, text out"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan. Note: description is written first-person ('help me write') \u2014 Anthropic-internal flavor, but templates are generic."
+    ],
+    "report": "reports/internal-comms.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Template library, nothing executable."
+   }
+  },
+  {
+   "slug": "discernment-nudge",
+   "name": "discernment-nudge",
+   "tagline": "Sharp follow-up questions that pressure-test your decisions",
+   "description": "Anthropic's discernment-nudge: appends 2-3 sharp follow-up questions after substantive answers to pressure-test decisions.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/discernment-nudge",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "productivity",
+   "license": "Anthropic ToS (source-available)",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/discernment-nudge into your agent's skills folder.",
+   "uses": [
+    "Pressure-test a decision",
+    "Get challenged on your reasoning",
+    "Avoid rubber-stamping"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "No code runs"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 96,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "1 HIGH 'Anti-Refusal' is a false positive: the matched text is output-formatting guidance ('Always answer the question completely first. The nudge comes after') \u2014 the scanner misread thorough-answer instructions as refusal suppression."
+    ],
+    "report": "reports/discernment-nudge.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged section in context. Decision-quality guidance, not a jailbreak."
+   }
+  },
+  {
+   "slug": "academy-guide",
+   "name": "academy-guide",
+   "tagline": "Claude Academy courses matched to your goal",
+   "description": "Anthropic's academy-guide: recommends Claude Academy courses, tutorials and onboarding resources matched to your goal.",
+   "repo": "https://github.com/anthropics/skills",
+   "path": "skills/academy-guide",
+   "pinned_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+   "category": "productivity",
+   "license": "Anthropic ToS (source-available)",
+   "author": "Anthropic",
+   "install_hint": "Copy skills/academy-guide into your agent's skills folder.",
+   "uses": [
+    "Find the right Claude tutorial",
+    "Onboard onto Claude Code",
+    "Learn a specific capability"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Links to official docs"
+    ],
+    [
+     "ok",
+     "No network access by the skill"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/academy-guide.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Course recommendations, nothing executable."
+   }
+  },
+  {
+   "slug": "composition-patterns",
+   "name": "composition-patterns",
+   "tagline": "React composition patterns that scale",
+   "description": "Vercel's composition-patterns: React composition patterns that scale \u2014 compound components, render props, context providers, including React 19 API changes.",
+   "repo": "https://github.com/vercel-labs/agent-skills",
+   "path": "skills/composition-patterns",
+   "pinned_sha": "063bee94c3f4df8453406c830b0a7df0f2860278",
+   "category": "code",
+   "license": "MIT",
+   "author": "Vercel",
+   "install_hint": "Copy skills/composition-patterns into your agent's skills folder.",
+   "uses": [
+    "Structure a scalable React codebase",
+    "Learn compound components",
+    "Apply React 19 patterns"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Reads code you share"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 95,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "1 HIGH 'Memory Manipulation' is a false positive on React docs prose ('Lift state into provider components') \u2014 the scanner matched state-management terminology."
+    ],
+    "report": "reports/composition-patterns.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged README section. React patterns documentation."
+   }
+  },
+  {
+   "slug": "react-native-skills",
+   "name": "react-native-skills",
+   "tagline": "React Native and Expo best practices for performant mobile apps",
+   "description": "Vercel's react-native-skills: React Native and Expo best practices \u2014 list performance, animations, native modules.",
+   "repo": "https://github.com/vercel-labs/agent-skills",
+   "path": "skills/react-native-skills",
+   "pinned_sha": "063bee94c3f4df8453406c830b0a7df0f2860278",
+   "category": "code",
+   "license": "MIT",
+   "author": "Vercel",
+   "install_hint": "Copy skills/react-native-skills into your agent's skills folder.",
+   "uses": [
+    "Optimize a React Native list",
+    "Fix mobile animation jank",
+    "Follow Expo best practices"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Reads code you share"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 93,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 4,
+     "low": 0
+    },
+    "notes": [
+     "1 HIGH is a coverage note on the large AGENTS.md. 2 MEDIUM 'prompt injection' flags are documentation examples of behavior patterns. 2 MEDIUM 'npx rug-pull' notes are unpinned npx suggestions in docs, not executed by the skill."
+    ],
+    "report": "reports/react-native-skills.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Same documentation-example pattern as react-best-practices. No executable skill code."
+   }
+  },
+  {
+   "slug": "react-view-transitions",
+   "name": "react-view-transitions",
+   "tagline": "Native-feeling animations with React's View Transition API",
+   "description": "Vercel's react-view-transitions: native-feeling animations with React's View Transition API \u2014 page transitions, shared elements, no third-party libraries.",
+   "repo": "https://github.com/vercel-labs/agent-skills",
+   "path": "skills/react-view-transitions",
+   "pinned_sha": "063bee94c3f4df8453406c830b0a7df0f2860278",
+   "category": "design",
+   "license": "MIT",
+   "author": "Vercel",
+   "install_hint": "Copy skills/react-view-transitions into your agent's skills folder.",
+   "uses": [
+    "Add page transitions",
+    "Animate shared elements",
+    "Build native-feeling navigation"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Reads code you share"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 97,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 1,
+     "low": 0
+    },
+    "notes": [
+     "1 MEDIUM 'npx rug-pull' is an unpinned npx suggestion in the README docs, not executed by the skill."
+    ],
+    "report": "reports/react-view-transitions.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Animation guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "vercel-cli-with-tokens",
+   "name": "vercel-cli-with-tokens",
+   "tagline": "Vercel CLI with token auth instead of interactive login",
+   "description": "Vercel's vercel-cli-with-tokens: deploy and manage Vercel projects using token-based authentication instead of interactive login. Handles your API token by design.",
+   "repo": "https://github.com/vercel-labs/agent-skills",
+   "path": "skills/vercel-cli-with-tokens",
+   "pinned_sha": "063bee94c3f4df8453406c830b0a7df0f2860278",
+   "category": "devops",
+   "license": "MIT",
+   "author": "Vercel",
+   "install_hint": "Copy skills/vercel-cli-with-tokens into your agent's skills folder.",
+   "uses": [
+    "Deploy from CI without login",
+    "Manage Vercel via token auth",
+    "Script Vercel operations"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Works with your Vercel API token by design"
+    ],
+    [
+     "ok",
+     "Token stays in your environment"
+    ],
+    [
+     "ok",
+     "Only talks to Vercel's API"
+    ]
+   ],
+   "uniscan": {
+    "score": 85,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 11,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "11 HIGH all relate to token handling \u2014 reviewed each. The skill locates your VERCEL_TOKEN (env or .env) and passes it to Vercel CLI commands. This is its documented purpose; the token is never sent anywhere except Vercel's API.",
+     "Higher inherent risk than other listings because it handles credentials \u2014 install only if you want the agent managing Vercel deployments."
+    ],
+    "report": "reports/vercel-cli-with-tokens.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md fully. Token flows verified: env -> CLI, no exfiltration, no third parties."
+   }
+  },
+  {
+   "slug": "supabase",
+   "name": "supabase",
+   "tagline": "The official Supabase skill \u2014 database, auth, edge functions, RLS",
+   "description": "Supabase's official skill: Database, Auth, Edge Functions, Realtime, Storage, vectors, cron, queues \u2014 plus security guidance (RLS, key handling, scoped tokens).",
+   "repo": "https://github.com/supabase/agent-skills",
+   "path": "skills/supabase",
+   "pinned_sha": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+   "category": "data",
+   "license": "MIT",
+   "author": "Supabase",
+   "install_hint": "Copy skills/supabase into your agent's skills folder.",
+   "uses": [
+    "Work with a Supabase database",
+    "Set up auth correctly",
+    "Write secure RLS policies"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Guides use of your Supabase keys (never exposes them)"
+    ],
+    [
+     "ok",
+     "Teaches scoped-token best practices"
+    ],
+    [
+     "ok",
+     "No code executed by the skill"
+    ]
+   ],
+   "uniscan": {
+    "score": 92,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 12,
+     "medium": 1,
+     "low": 1
+    },
+    "notes": [
+     "14 findings, all reviewed. The YARA 'info_stealer' hit is a false positive on the SKILL.md frontmatter listing auth terms (cookies, getSession, JWT) \u2014 the skill is a security best-practices guide.",
+     "'Credential Access' flags are the skill documenting credential hygiene: 'Never expose the service_role key', 'use scoped personal access tokens'. Describing secure handling is its job.",
+     "'MCP Config Access' is guidance on configuring the Supabase MCP server with your own credentials."
+    ],
+    "report": "reports/supabase.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read the flagged sections. This is Supabase's own security-conscious documentation. No exfiltration, no malicious behavior."
+   }
+  },
+  {
+   "slug": "supabase-postgres-best-practices",
+   "name": "supabase-postgres-best-practices",
+   "tagline": "Postgres best practices maintained by Supabase",
+   "description": "Supabase's postgres best-practices: schema design, migrations, RLS, indexes, pgvector, diagnosing slow queries.",
+   "repo": "https://github.com/supabase/agent-skills",
+   "path": "skills/supabase-postgres-best-practices",
+   "pinned_sha": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+   "category": "data",
+   "license": "MIT",
+   "author": "Supabase",
+   "install_hint": "Copy skills/supabase-postgres-best-practices into your agent's skills folder.",
+   "uses": [
+    "Design a Postgres schema",
+    "Speed up a slow query",
+    "Write correct RLS policies"
+   ],
+   "permissions": [
+    [
+     "ok",
+     "Markdown guidance only"
+    ],
+    [
+     "ok",
+     "Reads schemas you share"
+    ],
+    [
+     "ok",
+     "No network access"
+    ]
+   ],
+   "uniscan": {
+    "score": 100,
+    "verdict": "verified",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 0,
+     "medium": 0,
+     "low": 0
+    },
+    "notes": [
+     "Zero findings. Clean scan."
+    ],
+    "report": "reports/supabase-postgres-best-practices.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Read SKILL.md. Database guidance, nothing executable."
+   }
+  },
+  {
+   "slug": "codeql",
+   "name": "codeql",
+   "tagline": "Scan codebases for vulnerabilities with CodeQL",
+   "description": "Trail of Bits' codeql skill: scan codebases for security vulnerabilities using CodeQL's interprocedural data flow and taint tracking. Ships its own test suite.",
+   "repo": "https://github.com/trailofbits/skills",
+   "path": "plugins/static-analysis/skills/codeql",
+   "pinned_sha": "442fc9d6c89b1e937e6f7a477e7071ea75fcbea4",
+   "category": "security",
+   "license": "CC-BY-SA-4.0",
+   "author": "Trail of Bits",
+   "install_hint": "Copy plugins/static-analysis/skills/codeql into your agent's skills folder.",
+   "uses": [
+    "Run a CodeQL security scan",
+    "Taint-track a vulnerability",
+    "Validate a scan setup"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Runs CodeQL locally (you provide the codebase)"
+    ],
+    [
+     "ok",
+     "Test suite included and reviewed"
+    ],
+    [
+     "ok",
+     "No network calls by the scripts"
+    ]
+   ],
+   "uniscan": {
+    "score": 93,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 3,
+     "medium": 11,
+     "low": 0
+    },
+    "notes": [
+     "14 findings, all in the skill's own test_*.py test suite \u2014 subprocess calls run the skill's scripts under test, env vars are test fixtures (CODEQL_LANG).",
+     "2 HIGH are coverage notes. 1 MEDIUM compile() is in a test. Well-engineered: the skill tests itself.",
+     "License note: CC-BY-SA-4.0 (copyleft) \u2014 we link only, never redistribute."
+    ],
+    "report": "reports/codeql.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Reviewed the test scripts. All subprocess use is local test execution. No exfiltration."
+   }
+  },
+  {
+   "slug": "exa-search",
+   "name": "exa-search",
+   "tagline": "Search the scientific web with Exa \u2014 academic filters, batch extraction",
+   "description": "K-Dense-AI's exa-search: search scientific and technical web content with Exa, extract page and PDF text in batches, with academic domain filters.",
+   "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "path": "skills/exa-search",
+   "pinned_sha": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+   "category": "research",
+   "license": "MIT",
+   "author": "K-Dense-AI",
+   "install_hint": "Copy skills/exa-search into your agent's skills folder.",
+   "uses": [
+    "Search scientific literature",
+    "Extract text from papers in batch",
+    "Filter to academic domains"
+   ],
+   "permissions": [
+    [
+     "warn",
+     "Needs your own Exa API key"
+    ],
+    [
+     "warn",
+     "Sends queries to api.exa.ai (its purpose)"
+    ],
+    [
+     "ok",
+     "Key stays in your environment"
+    ]
+   ],
+   "uniscan": {
+    "score": 88,
+    "verdict": "verified-with-notes",
+    "scanned_at": "2026-10-13",
+    "scanner": "skillspector",
+    "scanner_version": "2.12.0",
+    "findings": {
+     "critical": 0,
+     "high": 1,
+     "medium": 3,
+     "low": 1
+    },
+    "notes": [
+     "HIGH 'Credential Access' is the skill reading your EXA_API_KEY from .env \u2014 its documented auth method. Key is only sent to api.exa.ai.",
+     "2 MEDIUM 'External Transmission' are the Exa API calls themselves \u2014 the skill's entire purpose.",
+     "1 LOW is dynamic attribute access in the extraction script \u2014 benign."
+    ],
+    "report": "reports/exa-search.json"
+   },
+   "review": {
+    "reviewer": "bro",
+    "reviewed_at": "2026-10-13",
+    "summary": "Verified the API flows: key from user env -> api.exa.ai only. No other network, no exfiltration."
+   }
   }
  ],
  "version": 1

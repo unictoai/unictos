@@ -1,0 +1,5104 @@
+{
+  "skill": {
+    "name": "vercel-optimize",
+    "source": "/tmp/uniscan-trial/agent-skills/skills/vercel-optimize",
+    "scanned_at": "2026-10-13T08:14:08.517455+00:00"
+  },
+  "risk_assessment": {
+    "score": 100,
+    "severity": "CRITICAL",
+    "recommendation": "DO_NOT_INSTALL",
+    "max_issue_severity": "HIGH"
+  },
+  "components": [
+    {
+      "path": "AGENTS.md",
+      "type": "markdown",
+      "lines": 48,
+      "executable": false,
+      "size_bytes": 1964,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "markdown",
+      "lines": 41,
+      "executable": false,
+      "size_bytes": 2224,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "README.md",
+      "type": "markdown",
+      "lines": 91,
+      "executable": false,
+      "size_bytes": 4471,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 322,
+      "executable": false,
+      "size_bytes": 17311,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/auth-route.mjs",
+      "type": "other",
+      "lines": 23,
+      "executable": true,
+      "size_bytes": 807,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/budget-summary.mjs",
+      "type": "other",
+      "lines": 182,
+      "executable": true,
+      "size_bytes": 7145,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/citations.mjs",
+      "type": "other",
+      "lines": 139,
+      "executable": true,
+      "size_bytes": 4029,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/cost-coverage.mjs",
+      "type": "other",
+      "lines": 143,
+      "executable": true,
+      "size_bytes": 8628,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/dedup-recs.mjs",
+      "type": "other",
+      "lines": 325,
+      "executable": true,
+      "size_bytes": 10151,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/deep-dive.mjs",
+      "type": "other",
+      "lines": 350,
+      "executable": true,
+      "size_bytes": 10458,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/display-labels.mjs",
+      "type": "other",
+      "lines": 185,
+      "executable": true,
+      "size_bytes": 7611,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/extract-claims.mjs",
+      "type": "other",
+      "lines": 550,
+      "executable": true,
+      "size_bytes": 19136,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/framework-support.mjs",
+      "type": "other",
+      "lines": 67,
+      "executable": true,
+      "size_bytes": 2126,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/build-minutes-fanout.mjs",
+      "type": "other",
+      "lines": 69,
+      "executable": true,
+      "size_bytes": 3016,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/cold-start.mjs",
+      "type": "other",
+      "lines": 66,
+      "executable": true,
+      "size_bytes": 2797,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/contract.mjs",
+      "type": "other",
+      "lines": 79,
+      "executable": true,
+      "size_bytes": 3143,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/cwv-poor.mjs",
+      "type": "other",
+      "lines": 87,
+      "executable": true,
+      "size_bytes": 3372,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/external-api-slow.mjs",
+      "type": "other",
+      "lines": 55,
+      "executable": true,
+      "size_bytes": 2173,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/hard-gates.mjs",
+      "type": "other",
+      "lines": 73,
+      "executable": true,
+      "size_bytes": 2543,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/index.mjs",
+      "type": "other",
+      "lines": 45,
+      "executable": true,
+      "size_bytes": 2066,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/isr-overrevalidation.mjs",
+      "type": "other",
+      "lines": 62,
+      "executable": true,
+      "size_bytes": 2442,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/middleware-heavy.mjs",
+      "type": "other",
+      "lines": 51,
+      "executable": true,
+      "size_bytes": 2085,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/observability-events-attribution.mjs",
+      "type": "other",
+      "lines": 56,
+      "executable": true,
+      "size_bytes": 2255,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/platform-bot-protection.mjs",
+      "type": "other",
+      "lines": 115,
+      "executable": true,
+      "size_bytes": 5089,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/platform-fluid-compute.mjs",
+      "type": "other",
+      "lines": 83,
+      "executable": true,
+      "size_bytes": 3630,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/region-misconfig.mjs",
+      "type": "other",
+      "lines": 64,
+      "executable": true,
+      "size_bytes": 3101,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/route-errors.mjs",
+      "type": "other",
+      "lines": 80,
+      "executable": true,
+      "size_bytes": 3101,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/scanner-driven.mjs",
+      "type": "other",
+      "lines": 122,
+      "executable": true,
+      "size_bytes": 5191,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/select-candidates.mjs",
+      "type": "other",
+      "lines": 134,
+      "executable": true,
+      "size_bytes": 4703,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/slow-route.mjs",
+      "type": "other",
+      "lines": 88,
+      "executable": true,
+      "size_bytes": 4384,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/types.d.ts",
+      "type": "typescript",
+      "lines": 38,
+      "executable": true,
+      "size_bytes": 893,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/uncached-route.mjs",
+      "type": "other",
+      "lines": 93,
+      "executable": true,
+      "size_bytes": 3963,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/gates/usage-spike-triage.mjs",
+      "type": "other",
+      "lines": 121,
+      "executable": true,
+      "size_bytes": 5095,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/grade-recommendation.mjs",
+      "type": "other",
+      "lines": 155,
+      "executable": true,
+      "size_bytes": 6887,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/impact-label.mjs",
+      "type": "other",
+      "lines": 126,
+      "executable": true,
+      "size_bytes": 5344,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/impact-magnitude.mjs",
+      "type": "other",
+      "lines": 60,
+      "executable": true,
+      "size_bytes": 2172,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/investigation-brief.mjs",
+      "type": "other",
+      "lines": 610,
+      "executable": true,
+      "size_bytes": 35165,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/observation-safety.mjs",
+      "type": "other",
+      "lines": 174,
+      "executable": true,
+      "size_bytes": 9486,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/project-facts.mjs",
+      "type": "other",
+      "lines": 99,
+      "executable": true,
+      "size_bytes": 4399,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/queries.mjs",
+      "type": "other",
+      "lines": 315,
+      "executable": true,
+      "size_bytes": 10338,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/reconcile-candidates.mjs",
+      "type": "other",
+      "lines": 372,
+      "executable": true,
+      "size_bytes": 15966,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/render-report.mjs",
+      "type": "other",
+      "lines": 955,
+      "executable": true,
+      "size_bytes": 39131,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/repo-root.mjs",
+      "type": "other",
+      "lines": 86,
+      "executable": true,
+      "size_bytes": 3135,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/route-normalize.mjs",
+      "type": "other",
+      "lines": 220,
+      "executable": true,
+      "size_bytes": 8590,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/sanitizers/bot-protection-certainty.mjs",
+      "type": "other",
+      "lines": 38,
+      "executable": true,
+      "size_bytes": 1988,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/sanitizers/cache-tag-invalidation-certainty.mjs",
+      "type": "other",
+      "lines": 30,
+      "executable": true,
+      "size_bytes": 1522,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/sanitizers/count-correct.mjs",
+      "type": "other",
+      "lines": 52,
+      "executable": true,
+      "size_bytes": 1956,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/sanitizers/function-duration-invocations.mjs",
+      "type": "other",
+      "lines": 38,
+      "executable": true,
+      "size_bytes": 1470,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/sanitizers/index.mjs",
+      "type": "other",
+      "lines": 79,
+      "executable": true,
+      "size_bytes": 3053,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/sanitizers/middleware-conflict.mjs",
+      "type": "other",
+      "lines": 36,
+      "executable": true,
+      "size_bytes": 1586,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/sanitizers/missing-citation.mjs",
+      "type": "other",
+      "lines": 16,
+      "executable": true,
+      "size_bytes": 497,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/sanitizers/pre-release.mjs",
+      "type": "other",
+      "lines": 74,
+      "executable": true,
+      "size_bytes": 2224,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/sanitizers/rate-limit.mjs",
+      "type": "other",
+      "lines": 67,
+      "executable": true,
+      "size_bytes": 2655,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/sanitizers/rendering-mode-mislabel.mjs",
+      "type": "other",
+      "lines": 38,
+      "executable": true,
+      "size_bytes": 1670,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/sanitizers/undeclared-dep.mjs",
+      "type": "other",
+      "lines": 78,
+      "executable": true,
+      "size_bytes": 2833,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/sanitizers/vercel-directive-strip.mjs",
+      "type": "other",
+      "lines": 37,
+      "executable": true,
+      "size_bytes": 1460,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/sanitizers/window-units.mjs",
+      "type": "other",
+      "lines": 32,
+      "executable": true,
+      "size_bytes": 869,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/cache-components-suspense-dedupe.mjs",
+      "type": "other",
+      "lines": 109,
+      "executable": true,
+      "size_bytes": 4367,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/edge-heavy-import.mjs",
+      "type": "other",
+      "lines": 94,
+      "executable": true,
+      "size_bytes": 3740,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/force-dynamic.mjs",
+      "type": "other",
+      "lines": 42,
+      "executable": true,
+      "size_bytes": 1586,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/headers-in-page.mjs",
+      "type": "other",
+      "lines": 44,
+      "executable": true,
+      "size_bytes": 1537,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/index.mjs",
+      "type": "other",
+      "lines": 35,
+      "executable": true,
+      "size_bytes": 1458,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/large-static-asset.mjs",
+      "type": "other",
+      "lines": 92,
+      "executable": true,
+      "size_bytes": 3279,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/max-age-without-s-maxage.mjs",
+      "type": "other",
+      "lines": 42,
+      "executable": true,
+      "size_bytes": 1629,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/middleware-broad-matcher.mjs",
+      "type": "other",
+      "lines": 55,
+      "executable": true,
+      "size_bytes": 1986,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/missing-cache-headers.mjs",
+      "type": "other",
+      "lines": 90,
+      "executable": true,
+      "size_bytes": 3922,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/prisma-include-tree.mjs",
+      "type": "other",
+      "lines": 42,
+      "executable": true,
+      "size_bytes": 1585,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/region-pin-in-config.mjs",
+      "type": "other",
+      "lines": 88,
+      "executable": true,
+      "size_bytes": 3448,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/source-maps-production.mjs",
+      "type": "other",
+      "lines": 36,
+      "executable": true,
+      "size_bytes": 1300,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/sveltekit-prerender-missing.mjs",
+      "type": "other",
+      "lines": 43,
+      "executable": true,
+      "size_bytes": 2127,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/turbo-force-bypass.mjs",
+      "type": "other",
+      "lines": 129,
+      "executable": true,
+      "size_bytes": 4974,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/unoptimized-image.mjs",
+      "type": "other",
+      "lines": 113,
+      "executable": true,
+      "size_bytes": 4516,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/scanners/use-cache-date-stamp.mjs",
+      "type": "other",
+      "lines": 106,
+      "executable": true,
+      "size_bytes": 4040,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/support-topics.mjs",
+      "type": "other",
+      "lines": 355,
+      "executable": true,
+      "size_bytes": 12836,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/throttle.mjs",
+      "type": "other",
+      "lines": 273,
+      "executable": true,
+      "size_bytes": 8992,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/util.mjs",
+      "type": "other",
+      "lines": 17,
+      "executable": true,
+      "size_bytes": 544,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/vercel.mjs",
+      "type": "other",
+      "lines": 864,
+      "executable": true,
+      "size_bytes": 31125,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/verify-claim.mjs",
+      "type": "other",
+      "lines": 1296,
+      "executable": true,
+      "size_bytes": 60992,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "lib/workspace-resolver.mjs",
+      "type": "other",
+      "lines": 521,
+      "executable": true,
+      "size_bytes": 17545,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "metadata.json",
+      "type": "json",
+      "lines": 14,
+      "executable": false,
+      "size_bytes": 903,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/candidates.md",
+      "type": "markdown",
+      "lines": 176,
+      "executable": false,
+      "size_bytes": 8510,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/data-collection.md",
+      "type": "markdown",
+      "lines": 218,
+      "executable": false,
+      "size_bytes": 20925,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/docs-library.json",
+      "type": "json",
+      "lines": 683,
+      "executable": false,
+      "size_bytes": 31540,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/doctrine.md",
+      "type": "markdown",
+      "lines": 105,
+      "executable": false,
+      "size_bytes": 9512,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/observability-plus.md",
+      "type": "markdown",
+      "lines": 108,
+      "executable": false,
+      "size_bytes": 5329,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/playbooks/README.md",
+      "type": "markdown",
+      "lines": 53,
+      "executable": false,
+      "size_bytes": 2812,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/playbooks/ai-application.md",
+      "type": "markdown",
+      "lines": 32,
+      "executable": false,
+      "size_bytes": 3933,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/playbooks/api-service.md",
+      "type": "markdown",
+      "lines": 30,
+      "executable": false,
+      "size_bytes": 2485,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/playbooks/content-site.md",
+      "type": "markdown",
+      "lines": 30,
+      "executable": false,
+      "size_bytes": 2502,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/playbooks/ecommerce.md",
+      "type": "markdown",
+      "lines": 30,
+      "executable": false,
+      "size_bytes": 2737,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/playbooks/marketing.md",
+      "type": "markdown",
+      "lines": 30,
+      "executable": false,
+      "size_bytes": 2675,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/playbooks/saas.md",
+      "type": "markdown",
+      "lines": 31,
+      "executable": false,
+      "size_bytes": 2896,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/playbooks/sveltekit.md",
+      "type": "markdown",
+      "lines": 75,
+      "executable": false,
+      "size_bytes": 4019,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/recommendations.md",
+      "type": "markdown",
+      "lines": 203,
+      "executable": false,
+      "size_bytes": 10788,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/scanner-patterns.md",
+      "type": "markdown",
+      "lines": 251,
+      "executable": false,
+      "size_bytes": 13671,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/scoring.md",
+      "type": "markdown",
+      "lines": 205,
+      "executable": false,
+      "size_bytes": 12505,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/README.md",
+      "type": "markdown",
+      "lines": 46,
+      "executable": false,
+      "size_bytes": 1785,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/astro-edge-middleware-scope.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1012,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/astro-output-mode-and-isr.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1135,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/auth-preserving-parallelization.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1203,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/bot-protection-product-guardrails.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1119,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/build-minutes-monorepo-fanout.md",
+      "type": "markdown",
+      "lines": 23,
+      "executable": false,
+      "size_bytes": 1269,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/cache-components-static-shell-boundaries.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1162,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/cache-components-suspense-dedupe-pitfall.md",
+      "type": "markdown",
+      "lines": 23,
+      "executable": false,
+      "size_bytes": 1380,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/cdn-cache-auth-safety.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1068,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/cold-start-initialization-bundle.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1159,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/core-web-vitals-client-bottlenecks.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1037,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/database-egress-pooling-region.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1015,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/dynamic-rendering-traps.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1139,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/external-api-critical-path-platform.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1145,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/external-api-critical-path.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 978,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/fast-data-transfer-payloads.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1050,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/fluid-compute-caveats.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1125,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/function-duration-io-and-after.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1027,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/function-invocation-reduction.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1181,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/function-region-misconfiguration-ttfb.md",
+      "type": "markdown",
+      "lines": 23,
+      "executable": false,
+      "size_bytes": 1254,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/image-optimization-cost-control.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1071,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/isr-revalidation-static-generation.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1419,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/middleware-proxy-edge-cost.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 991,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/next-fetch-revalidate-floor.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1059,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/next-font-cls-self-hosting.md",
+      "type": "markdown",
+      "lines": 23,
+      "executable": false,
+      "size_bytes": 906,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/next-heavy-ui-lazy-load-boundaries.md",
+      "type": "markdown",
+      "lines": 23,
+      "executable": false,
+      "size_bytes": 1048,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/next-image-lcp-preload-sizes.md",
+      "type": "markdown",
+      "lines": 23,
+      "executable": false,
+      "size_bytes": 1062,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/next-route-handler-get-cache-defaults.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1072,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/next-script-third-party-strategy.md",
+      "type": "markdown",
+      "lines": 23,
+      "executable": false,
+      "size_bytes": 1051,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/nextjs-version-cache-semantics.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 996,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/not-found-catchall-request-waste.md",
+      "type": "markdown",
+      "lines": 23,
+      "executable": false,
+      "size_bytes": 1273,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/nuxt-route-rules-cache-isr.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1188,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/observability-events-cost-attribution.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1155,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/post-response-work-waituntil.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1009,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/route-error-durable-offload.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1298,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/route-error-runtime-limits.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 988,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/runtime-cache-reusable-data.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1180,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/sveltekit-isr-prerender-safety.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1167,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/sveltekit-split-cold-start-tradeoff.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1040,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/usage-spike-triage.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1018,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/use-cache-date-stamp-isr-write-amplifier.md",
+      "type": "markdown",
+      "lines": 23,
+      "executable": false,
+      "size_bytes": 1189,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/use-cache-remote-shared-origin-data.md",
+      "type": "markdown",
+      "lines": 22,
+      "executable": false,
+      "size_bytes": 1089,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/support-topics/workflow-resumable-stream-routes.md",
+      "type": "markdown",
+      "lines": 23,
+      "executable": false,
+      "size_bytes": 1274,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/verification.md",
+      "type": "markdown",
+      "lines": 102,
+      "executable": false,
+      "size_bytes": 9000,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/voice.md",
+      "type": "markdown",
+      "lines": 76,
+      "executable": false,
+      "size_bytes": 3731,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/budget-summary.mjs",
+      "type": "other",
+      "lines": 56,
+      "executable": true,
+      "size_bytes": 2096,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/build-docs.mjs",
+      "type": "other",
+      "lines": 74,
+      "executable": true,
+      "size_bytes": 3414,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/check-citations.mjs",
+      "type": "other",
+      "lines": 81,
+      "executable": true,
+      "size_bytes": 3531,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/check-docs-fresh.mjs",
+      "type": "other",
+      "lines": 93,
+      "executable": true,
+      "size_bytes": 3910,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/collect-signals.mjs",
+      "type": "other",
+      "lines": 576,
+      "executable": true,
+      "size_bytes": 21576,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/collect-sub-agent-outputs.mjs",
+      "type": "other",
+      "lines": 296,
+      "executable": true,
+      "size_bytes": 10123,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/deep-dive.mjs",
+      "type": "other",
+      "lines": 319,
+      "executable": true,
+      "size_bytes": 12332,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/gate-investigations.mjs",
+      "type": "other",
+      "lines": 166,
+      "executable": true,
+      "size_bytes": 6353,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/merge-signals.mjs",
+      "type": "other",
+      "lines": 192,
+      "executable": true,
+      "size_bytes": 6325,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/prepare-investigation-brief.mjs",
+      "type": "other",
+      "lines": 231,
+      "executable": true,
+      "size_bytes": 8071,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/reconcile-candidates.mjs",
+      "type": "other",
+      "lines": 62,
+      "executable": true,
+      "size_bytes": 2442,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/render-report.mjs",
+      "type": "other",
+      "lines": 437,
+      "executable": true,
+      "size_bytes": 17424,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/scan-codebase.mjs",
+      "type": "other",
+      "lines": 313,
+      "executable": true,
+      "size_bytes": 11521,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/verify-and-regen.mjs",
+      "type": "other",
+      "lines": 346,
+      "executable": true,
+      "size_bytes": 15238,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/verify-finding.mjs",
+      "type": "other",
+      "lines": 19,
+      "executable": true,
+      "size_bytes": 698,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    }
+  ],
+  "structured_summaries": [],
+  "issues": [
+    {
+      "id": "AE1",
+      "finding_id": "finding-5d0c1c6bdcca402cb43b475004420ee4",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 68,
+        "end_line": null
+      },
+      "finding": "scripts/collect-signals.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "node scripts/collect-signals.mjs [projectId] > \"$RUN_DIR/vercel-signals.json\" 2> \"$RUN_DIR/collect.stderr\"",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/collect-signals.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "15c568337f05385cbc510ed2c3850feddf638e2b629f7cdab7ba875549da035f",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 68,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-8fbcf213daf040f39feca07b85090ba5",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 77,
+        "end_line": null
+      },
+      "finding": "scripts/collect-signals.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "`collect-signals.mjs` resolves the linked project owner to `commandScope.cliScope` and verifies that the resolved account can read the resolved project before i",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/collect-signals.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "15c568337f05385cbc510ed2c3850feddf638e2b629f7cdab7ba875549da035f",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 77,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-e8c6ae7e24e14db6b173fb7ab9dd05d5",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 119,
+        "end_line": null
+      },
+      "finding": "scripts/collect-signals.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "node scripts/collect-signals.mjs [projectId] --continue-without-observability > \"$RUN_DIR/vercel-signals.json\" 2> \"$RUN_DIR/collect.stderr\"",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/collect-signals.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "15c568337f05385cbc510ed2c3850feddf638e2b629f7cdab7ba875549da035f",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 119,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-3b4c3188540d4e8da73f6a1f44b0a0e9",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 71,
+        "end_line": null
+      },
+      "finding": "scripts/scan-codebase.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "node scripts/scan-codebase.mjs <repo-root> > \"$RUN_DIR/codebase.json\"",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/scan-codebase.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "ffdb047f1f15c59e2f6d2bd20c7d0dc11fcf8050f98252a734f19fbb06b041c3",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 71,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-97c452ee51224900b37084c7ca8d3d69",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 72,
+        "end_line": null
+      },
+      "finding": "scripts/merge-signals.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "node scripts/merge-signals.mjs \"$RUN_DIR/vercel-signals.json\" \"$RUN_DIR/codebase.json\" --out \"$RUN_DIR/signals.json\"",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/merge-signals.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "335170bbf6b4f28be7b10db9c04db77c96bd7bfa18efaaae286b2752c49e2b7d",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 72,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-562c28ff8b9d4eb08f1bd7913dc6c2b9",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 167,
+        "end_line": null
+      },
+      "finding": "scripts/deep-dive.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "node scripts/deep-dive.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/gate.json\" --cwd <project-dir> > \"$RUN_DIR/investigation-evidence.json\"",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/deep-dive.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "48fd85d5858a1d1829e90569b0475e8f1d452d6238dc46f9643d07ffdd58e1d2",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 167,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-6551085d7b874458a634ad0d5821efe3",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 188,
+        "end_line": null
+      },
+      "finding": "scripts/prepare-investigation-brief.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "node scripts/prepare-investigation-brief.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/reconciled-investigation.json\" --list > \"$RUN_DIR/briefs-manifest.json\"",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/prepare-investigation-brief.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "f94fc02663d9ad200733c7472680375be2e07a5fbf1f860b75546169a30539a0",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 188,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-ab782c9df6e2427bbe2d681e99309bdc",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 195,
+        "end_line": null
+      },
+      "finding": "scripts/prepare-investigation-brief.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "node scripts/prepare-investigation-brief.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/reconciled-investigation.json\" \\",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/prepare-investigation-brief.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "f94fc02663d9ad200733c7472680375be2e07a5fbf1f860b75546169a30539a0",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 195,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-619fdcb1b2ec4ce3a982c43410311338",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 211,
+        "end_line": null
+      },
+      "finding": "references/recommendations.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "- Emit one JSON recommendation or one JSON no-change finding using [references/recommendations.md](references/recommendations.md).",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/recommendations.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_agent_snooping"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_anti_refusal"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_deserialization"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_excessive_agency"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_harmful_content"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_memory_poisoning"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_privilege_escalation"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_prompt_injection"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_rogue_agent"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_ssrf"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_supply_chain"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_system_prompt_leakage"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "8eb278541da0c9161c6f5d4b6a52d281794235215d1610f8066451e6e1c60cb9",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 211,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-eb33748acda743aaa7a3213cb75ca3fb",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 241,
+        "end_line": null
+      },
+      "finding": "references/recommendations.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "ting rules, sanitizer order, and grading rules: [references/recommendations.md](references/recommendations.md). Verification rules: [references/verification.md]",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/recommendations.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_agent_snooping"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_anti_refusal"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_deserialization"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_excessive_agency"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_harmful_content"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_memory_poisoning"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_privilege_escalation"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_prompt_injection"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_rogue_agent"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_ssrf"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_supply_chain"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_system_prompt_leakage"
+            ]
+          },
+          {
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "8eb278541da0c9161c6f5d4b6a52d281794235215d1610f8066451e6e1c60cb9",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 241,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-1254ce64c982414e890332edda2e7882",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 222,
+        "end_line": null
+      },
+      "finding": "scripts/collect-sub-agent-outputs.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "node scripts/collect-sub-agent-outputs.mjs \\",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/collect-sub-agent-outputs.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "814f1812ab5eafd4b7ba744aa956e2004600ace4de1a0ac8ab50ccc888cb0c7b",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 222,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-ab7d21eb48594dcda18f3424d7b26133",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 233,
+        "end_line": null
+      },
+      "finding": "scripts/verify-and-regen.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "node scripts/verify-and-regen.mjs \"$RUN_DIR/recommendations.json\" \\",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/verify-and-regen.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "0c56a9c04e4bdf920045216a8004ad9fbb36496ac6e321aee54ae8b4679963bc",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 233,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-d1990559f0ab4d899e599031ad657981",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 248,
+        "end_line": null
+      },
+      "finding": "scripts/render-report.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "node scripts/render-report.mjs \"$RUN_DIR/verify.json\" \"$RUN_DIR/gate.json\" \"$RUN_DIR/signals.json\" \\",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/render-report.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "ac17202058260988a70692ae8c3701003f9f0bec989be112b686710193f1d400",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 248,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "YR1",
+      "finding_id": "finding-199d6b63e2344696a3403343264c5428",
+      "category": "YARA Match",
+      "pattern": "YARA rule 'info_stealer': Information stealer patterns (credential harvesting, browser data theft) [malware]",
+      "severity": "HIGH",
+      "confidence": 0.75,
+      "location": {
+        "file": "lib/scanners/force-dynamic.mjs",
+        "start_line": 8,
+        "end_line": null
+      },
+      "finding": "cookies, headers, real-time data), often a habit that costs function-duration and edge",
+      "explanation": "YARA rule matched a known malware signature (reverse shell, backdoor, ransomware, C2 framework, or info stealer).",
+      "remediation": "Remove the malware payload or compromised file entirely. Investigate how it entered the skill and audit all other artifacts for additional indicators of compromise.",
+      "code_snippet": "export const metadata = {\n  id: 'force-dynamic',\n  title: \"export const dynamic = 'force-dynamic'\",\n  severity: 'medium',\n  billingDimension: 'function-duration',\n  trafficIndependent: false,\n  description:\n    \"force-dynamic disables static + ISR rendering. The route runs the function on every request. Sometimes necessary (cookies, headers, real-time data), often a habit that costs function-duration and edge-requests at scale.\",\n  fix:\n    \"Audit the route. If dynamic behavior comes from cookies()/headers()/searchParams, force-dynamic may be redundant \u2014 Next infers dynamic automatically. Consider revalidate / 'use cache' / generateStaticParams if any portion can be pre-rendered.\",\n  citations: [\n    'https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config',\n  ],\n  excludeGlobs: ['node_modules/**', '.next/**', 'dist/**', '__tests__/**'],\n  includeGlobs: ['**/route.{ts,tsx,js,jsx}', '**/p",
+      "intent": null,
+      "tags": [
+        "YARA Match"
+      ],
+      "evidence": {},
+      "match_fingerprint": "f3872a6a35cba8e87968619fef3d440fad2030bb53148ad065ee9799e1cd7247",
+      "occurrences": [
+        {
+          "file": "lib/scanners/force-dynamic.mjs",
+          "start_line": 8,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "YR1",
+      "finding_id": "finding-0b8f37185aa04300ad9ffc7e6bdab73b",
+      "category": "YARA Match",
+      "pattern": "YARA rule 'info_stealer': Information stealer patterns (credential harvesting, browser data theft) [malware]",
+      "severity": "HIGH",
+      "confidence": 0.75,
+      "location": {
+        "file": "references/scanner-patterns.md",
+        "start_line": 52,
+        "end_line": null
+      },
+      "finding": "cookies, headers, real-time data), often a habit that costs function-duration and edge",
+      "explanation": "YARA rule matched a known malware signature (reverse shell, backdoor, ransomware, C2 framework, or info stealer).",
+      "remediation": "Remove the malware payload or compromised file entirely. Investigate how it entered the skill and audit all other artifacts for additional indicators of compromise.",
+      "code_snippet": "ons/runtimes/edge-runtime`\n- `https://vercel.com/docs/fluid-compute`\n\n---\n\n### `force-dynamic` \u2014 export const dynamic = 'force-dynamic'\n\n- **Severity**: medium\n- **Billing dimension**: function-duration\n- **Traffic-independent**: no (cold-path findings get dropped)\n\n**Description.** force-dynamic disables static + ISR rendering. The route runs the function on every request. Sometimes necessary (cookies, headers, real-time data), often a habit that costs function-duration and edge-requests at scale.\n\n**Fix.** Audit the route. If dynamic behavior comes from cookies()/headers()/searchParams, force-dynamic may be redundant \u2014 Next infers dynamic automatically. Consider revalidate / 'use cache' / generateStaticParams if any portion can be pre-rendered.\n\n**Citations:**\n- `https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config`\n\n---\n\n### `headers-in-page` \u2014 Dynamic API call forcing dynamic rendering\n\n- **Severity**: medium\n- **Billing dimension**: function-durati",
+      "intent": null,
+      "tags": [
+        "YARA Match"
+      ],
+      "evidence": {},
+      "match_fingerprint": "f3872a6a35cba8e87968619fef3d440fad2030bb53148ad065ee9799e1cd7247",
+      "occurrences": [
+        {
+          "file": "references/scanner-patterns.md",
+          "start_line": 52,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "finding_id": "finding-8510cc202dd74aa79603c5e663a95059",
+      "category": "System Prompt Leakage",
+      "pattern": "Direct Prompt Extraction",
+      "severity": "HIGH",
+      "confidence": 0.85,
+      "location": {
+        "file": "lib/support-topics.mjs",
+        "start_line": 326,
+        "end_line": null,
+        "start_column": 4
+      },
+      "finding": "return rule",
+      "explanation": "Skill contains instructions that could directly expose system prompts, internal rules, or hidden instructions to users or external parties.",
+      "remediation": "Remove any instructions that reveal, print, or output system prompts or internal rules. System instructions should never be exposed to end users.",
+      "code_snippet": "  const lib = await loadLibrary();\n  const rule = lib.ruleSkillRefs.find((r) => `${r.skill}:${r.rule}` === citation);\n  if (rule) {\n    return rule.applicableFrameworks.includes('*')\n      || rule.applicableFrameworks.some((p) => matchesFrameworkVersion(p, framework, version));\n  }\n",
+      "intent": null,
+      "tags": [
+        "System Prompt Leakage"
+      ],
+      "evidence": {},
+      "match_fingerprint": "457bb74dd0eb3f195d54fbf3bf07e26dc6f982b06ad90b9a248f56071c83b964",
+      "occurrences": [
+        {
+          "file": "lib/support-topics.mjs",
+          "start_line": 326,
+          "end_line": null,
+          "start_column": 4
+        }
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-71ad5a556bd244bf98c9ad0442ce2fab",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx skills'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "AGENTS.md",
+        "start_line": 32,
+        "end_line": null
+      },
+      "finding": "npx skills",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "2b5664f2a936abba4141331e7b3e83205cce617d2cea9af83aa306db07500782",
+      "occurrences": [
+        {
+          "file": "AGENTS.md",
+          "start_line": 32,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-9b9bfec8463c47c3aa0238931eadbc09",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx skills'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "README.md",
+        "start_line": 14,
+        "end_line": null
+      },
+      "finding": "npx skills",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "2b5664f2a936abba4141331e7b3e83205cce617d2cea9af83aa306db07500782",
+      "occurrences": [
+        {
+          "file": "README.md",
+          "start_line": 14,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "LP3",
+      "finding_id": "finding-2cc89b83fe73449980e0dc384575b65a",
+      "category": "MCP Least Privilege",
+      "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, network.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 1,
+        "end_line": null
+      },
+      "finding": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, network.",
+      "explanation": "Without declared permissions the skill's intent is opaque and cannot be validated.",
+      "remediation": "Clarify the skill's intended tool scope and review how the host runtime enforces it; runtime permissions are unknown unless separately verified. For Claude Code / Agent Skills SKILL.md, 'allowed-tools' records preapproved tools, not a permission ceiling; add a tool only when it is independently approved as necessary, not to silence this finding. For MCP server manifests, use a 'permissions' list naming the required capabilities.",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI02"
+      ],
+      "evidence": {},
+      "match_fingerprint": null,
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 1,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-e63f05d65b8a44ac976e298cc101c5a7",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "references/doctrine.md",
+        "start_line": 89,
+        "end_line": null,
+        "start_column": 66
+      },
+      "finding": "without checking",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "\n## What bad looks like (anti-patterns we will not ship)\n\n- Recommendations from grepping the repo for known anti-patterns, without checking traffic.\n- \"Enable Fluid Compute\" without a cold-start signal.\n- \"Add caching to /api/users\" when the route has cookies() and is auth-gated.\n- \"Reduce the duration of `/.well-known/workflow/v1/step`\" because a Workflow step is long-running. Workflow runtime endpoints are generated orchestration routes; high wall-clock duration there is expected unless a separate reliability/error signal points elsewhere.",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ],
+      "evidence": {},
+      "match_fingerprint": "9341b6f34d6af9081a0d6673f4217b7307d273da9f43357efd9029e15c5da76c",
+      "occurrences": [
+        {
+          "file": "references/doctrine.md",
+          "start_line": 89,
+          "end_line": null,
+          "start_column": 66
+        }
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-f7558dc1aaee4baeaa30c69e1093ac77",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "references/support-topics/image-optimization-cost-control.md",
+        "start_line": 19,
+        "end_line": null,
+        "start_column": 149
+      },
+      "finding": "without checking",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "Inspect the sampled files for raw image tags, dimensions, remote sources, repeated transforms, source image limits, icons, SVGs, GIFs, and existing framework image components.\n\n## Do Not Recommend When\nDo not route tiny icons, SVG UI assets, or animated GIFs through image optimization just because they are images. Do not change remote-source policy without checking the existing config.\n\n## Verification\nName the image files or components, current rendering path, and the metric or scanner evidence that makes optimization material.",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ],
+      "evidence": {},
+      "match_fingerprint": "9341b6f34d6af9081a0d6673f4217b7307d273da9f43357efd9029e15c5da76c",
+      "occurrences": [
+        {
+          "file": "references/support-topics/image-optimization-cost-control.md",
+          "start_line": 19,
+          "end_line": null,
+          "start_column": 149
+        }
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-56af057dd51b44a088cde01e931126c2",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "references/support-topics/next-image-lcp-preload-sizes.md",
+        "start_line": 20,
+        "end_line": null,
+        "start_column": 135
+      },
+      "finding": "without checking",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "Inspect above-the-fold media for `next/image`, `fill` without `sizes`, deprecated `priority` on Next.js 16, missing `preload` or `fetchPriority`, oversized dimensions, and remote-image TTL/source behavior.\n\n## Do Not Recommend When\nDo not preload multiple possible LCP images or route tiny icons/SVG UI assets through image optimization. Do not change quality or TTL without checking source-update semantics.\n\n## Verification\nName the LCP value, image element or component, current props/config, and the exact line to change.",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ],
+      "evidence": {},
+      "match_fingerprint": "9341b6f34d6af9081a0d6673f4217b7307d273da9f43357efd9029e15c5da76c",
+      "occurrences": [
+        {
+          "file": "references/support-topics/next-image-lcp-preload-sizes.md",
+          "start_line": 20,
+          "end_line": null,
+          "start_column": 135
+        }
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": true,
+    "skillspector_version": "2.12.0",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "llm_provenance": {
+      "schema_version": 1,
+      "provider": {
+        "configured_adapter": "unknown",
+        "resolved_adapter": "unknown",
+        "effective_adapter": "not_applicable",
+        "effective_adapters": [],
+        "service": "unknown",
+        "routing": {
+          "deployment_override": null,
+          "deployment_source": "unknown",
+          "api_version": null,
+          "api_version_source": "unknown"
+        }
+      },
+      "analyzers": [
+        {
+          "analyzer_id": "mcp_tool_poisoning",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_developer_intent",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_quality_policy",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_security_discovery",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "meta_analyzer",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        }
+      ],
+      "sampling": {
+        "temperature": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "seed": {
+          "requested": null,
+          "source": "unset",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "reasoning_effort": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        }
+      },
+      "determinism": {
+        "classification": "not_applicable",
+        "control_status": "not_applied",
+        "provider_guarantee": false,
+        "reason": "LLM analysis was not executed for this scan."
+      }
+    },
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 156,
+    "scanned_components": 104,
+    "coverage_percent": 66.7,
+    "is_complete": false,
+    "status": "partial",
+    "execution_successful": true,
+    "fully_inspected_files": 104,
+    "partially_inspected_files": 52,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 5,
+        "end_line": 5,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 10,
+        "end_line": 10,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 32,
+        "end_line": 32,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 68,
+        "end_line": 68,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 69,
+        "end_line": 69,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 71,
+        "end_line": 71,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 72,
+        "end_line": 72,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 77,
+        "end_line": 77,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 79,
+        "end_line": 79,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 94,
+        "end_line": 94,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 119,
+        "end_line": 119,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 127,
+        "end_line": 127,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 140,
+        "end_line": 140,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 141,
+        "end_line": 141,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 151,
+        "end_line": 151,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 158,
+        "end_line": 158,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 167,
+        "end_line": 167,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 169,
+        "end_line": 169,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 170,
+        "end_line": 170,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 171,
+        "end_line": 171,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 174,
+        "end_line": 174,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_unresolved",
+        "message": "A local path-like reference matched more than one bundled artifact and could not be resolved to a single target.",
+        "path": "SKILL.md",
+        "start_line": 174,
+        "end_line": 174,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 188,
+        "end_line": 188,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 191,
+        "end_line": 191,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 195,
+        "end_line": 195,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 223,
+        "end_line": 223,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 224,
+        "end_line": 224,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 233,
+        "end_line": 233,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 234,
+        "end_line": 234,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 236,
+        "end_line": 236,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 248,
+        "end_line": 248,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 250,
+        "end_line": 250,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 251,
+        "end_line": 251,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 254,
+        "end_line": 254,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 256,
+        "end_line": 256,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 265,
+        "end_line": 265,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 276,
+        "end_line": 276,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/budget-summary.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/dedup-recs.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/display-labels.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/extract-claims.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/build-minutes-fanout.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/cold-start.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/cwv-poor.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/external-api-slow.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/isr-overrevalidation.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/middleware-heavy.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/observability-events-attribution.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/platform-bot-protection.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/platform-fluid-compute.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/region-misconfig.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/route-errors.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/scanner-driven.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/slow-route.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/uncached-route.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/gates/usage-spike-triage.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/grade-recommendation.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/impact-label.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/impact-magnitude.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/investigation-brief.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/observation-safety.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/project-facts.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/reconcile-candidates.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/render-report.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/route-normalize.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/sanitizers/count-correct.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/sanitizers/index.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/sanitizers/pre-release.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/sanitizers/rate-limit.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/sanitizers/rendering-mode-mislabel.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/sanitizers/vercel-directive-strip.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/scanners/cache-components-suspense-dedupe.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/scanners/large-static-asset.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/scanners/sveltekit-prerender-missing.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/scanners/turbo-force-bypass.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/support-topics.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/vercel.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "lib/verify-claim.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "obfuscated_instruction_text",
+        "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+        "path": "references/recommendations.md",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_agent_snooping",
+          "static_patterns_anti_refusal",
+          "static_patterns_deserialization",
+          "static_patterns_excessive_agency",
+          "static_patterns_harmful_content",
+          "static_patterns_memory_poisoning",
+          "static_patterns_privilege_escalation",
+          "static_patterns_prompt_injection",
+          "static_patterns_rogue_agent",
+          "static_patterns_ssrf",
+          "static_patterns_supply_chain",
+          "static_patterns_system_prompt_leakage",
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/build-docs.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/check-docs-fresh.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/collect-signals.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/collect-sub-agent-outputs.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/deep-dive.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/merge-signals.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/prepare-investigation-brief.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/render-report.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/scan-codebase.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/verify-and-regen.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "artifact_integrity",
+        "status": "completed",
+        "planned_work": 156,
+        "completed": 156,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "bundled_execution_surface",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "completed",
+        "planned_work": 91,
+        "completed": 91,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 156,
+        "completed": 156,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "reference_coverage",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "degraded",
+        "planned_work": 156,
+        "completed": 155,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "degraded",
+        "planned_work": 156,
+        "completed": 155,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "completed",
+        "planned_work": 156,
+        "completed": 156,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "degraded",
+        "planned_work": 156,
+        "completed": 155,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "degraded",
+        "planned_work": 156,
+        "completed": 155,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "degraded",
+        "planned_work": 156,
+        "completed": 155,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "degraded",
+        "planned_work": 156,
+        "completed": 155,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "completed",
+        "planned_work": 156,
+        "completed": 156,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "degraded",
+        "planned_work": 156,
+        "completed": 155,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "degraded",
+        "planned_work": 156,
+        "completed": 155,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "degraded",
+        "planned_work": 156,
+        "completed": 155,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "degraded",
+        "planned_work": 156,
+        "completed": 155,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "degraded",
+        "planned_work": 156,
+        "completed": 155,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "degraded",
+        "planned_work": 156,
+        "completed": 155,
+        "partial": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "degraded",
+        "planned_work": 156,
+        "completed": 104,
+        "partial": 52,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 156,
+        "completed": 156,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "references": [
+      {
+        "source_path": "SKILL.md",
+        "line": 5,
+        "column": 13,
+        "evidence": "version: \"1.2.0\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 10,
+        "column": 90,
+        "evidence": "servability-first Vercel optimization audit. Do not inspect source files until `signals.json` exists and a deterministic gate points to a route, file, or projec",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 12,
+        "column": 46,
+        "evidence": "Core doctrine: read [references/doctrine.md](references/doctrine.md) if any rule is unclear.",
+        "target_path": "references/doctrine.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 12,
+        "column": 22,
+        "evidence": "Core doctrine: read [references/doctrine.md](references/doctrine.md) if any rule is unclear.",
+        "target_path": "references/doctrine.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 15,
+        "column": 25,
+        "evidence": "- Deterministic gates. `scripts/gate-investigations.mjs` decides what deserves investigation.",
+        "target_path": "scripts/gate-investigations.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 17,
+        "column": 38,
+        "evidence": "- Version-aware citations. Use only `references/docs-library.json`; invalid or version-mismatched citations are stripped.",
+        "target_path": "references/docs-library.json",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 18,
+        "column": 45,
+        "evidence": "- Customer copy. Read [references/voice.md](references/voice.md) before writing report text or chat output.",
+        "target_path": "references/voice.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 18,
+        "column": 24,
+        "evidence": "- Customer copy. Read [references/voice.md](references/voice.md) before writing report text or chat output.",
+        "target_path": "references/voice.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 32,
+        "column": 22,
+        "evidence": "The preflight reads `package.json` and sets expectations before metric fan-out.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 68,
+        "column": 6,
+        "evidence": "node scripts/collect-signals.mjs [projectId] > \"$RUN_DIR/vercel-signals.json\" 2> \"$RUN_DIR/collect.stderr\"",
+        "target_path": "scripts/collect-signals.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 68,
+        "column": 50,
+        "evidence": "node scripts/collect-signals.mjs [projectId] > \"$RUN_DIR/vercel-signals.json\" 2> \"$RUN_DIR/collect.stderr\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 68,
+        "column": 84,
+        "evidence": "node scripts/collect-signals.mjs [projectId] > \"$RUN_DIR/vercel-signals.json\" 2> \"$RUN_DIR/collect.stderr\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 69,
+        "column": 77,
+        "evidence": "node -e 'JSON.parse(require(\"fs\").readFileSync(process.argv[1], \"utf8\"))' \"$RUN_DIR/vercel-signals.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 71,
+        "column": 6,
+        "evidence": "node scripts/scan-codebase.mjs <repo-root> > \"$RUN_DIR/codebase.json\"",
+        "target_path": "scripts/scan-codebase.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 71,
+        "column": 48,
+        "evidence": "node scripts/scan-codebase.mjs <repo-root> > \"$RUN_DIR/codebase.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 72,
+        "column": 6,
+        "evidence": "node scripts/merge-signals.mjs \"$RUN_DIR/vercel-signals.json\" \"$RUN_DIR/codebase.json\" --out \"$RUN_DIR/signals.json\"",
+        "target_path": "scripts/merge-signals.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 72,
+        "column": 34,
+        "evidence": "node scripts/merge-signals.mjs \"$RUN_DIR/vercel-signals.json\" \"$RUN_DIR/codebase.json\" --out \"$RUN_DIR/signals.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 72,
+        "column": 65,
+        "evidence": "node scripts/merge-signals.mjs \"$RUN_DIR/vercel-signals.json\" \"$RUN_DIR/codebase.json\" --out \"$RUN_DIR/signals.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 72,
+        "column": 96,
+        "evidence": "node scripts/merge-signals.mjs \"$RUN_DIR/vercel-signals.json\" \"$RUN_DIR/codebase.json\" --out \"$RUN_DIR/signals.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 75,
+        "column": 107,
+        "evidence": "s, metric IDs, and degradation behavior live in [references/data-collection.md](references/data-collection.md). The metric registry is [lib/queries.mjs](lib/que",
+        "target_path": "references/data-collection.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 75,
+        "column": 76,
+        "evidence": "Collection details, schemas, metric IDs, and degradation behavior live in [references/data-collection.md](references/data-collection.md). The metric registry is",
+        "target_path": "references/data-collection.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 75,
+        "column": 180,
+        "evidence": "on.md](references/data-collection.md). The metric registry is [lib/queries.mjs](lib/queries.mjs); keep all queries on the shared 14-day window.",
+        "target_path": "lib/queries.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 75,
+        "column": 163,
+        "evidence": "ces/data-collection.md](references/data-collection.md). The metric registry is [lib/queries.mjs](lib/queries.mjs); keep all queries on the shared 14-day window.",
+        "target_path": "lib/queries.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 77,
+        "column": 2,
+        "evidence": "`collect-signals.mjs` resolves the linked project owner to `commandScope.cliScope` and verifies that the resolved account can read the resolved project before i",
+        "target_path": "scripts/collect-signals.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 77,
+        "column": 61,
+        "evidence": "`collect-signals.mjs` resolves the linked project owner to `commandScope.cliScope` and verifies that the resolved account can read the resolved project before i",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 79,
+        "column": 309,
+        "evidence": "trics, usage, or contract collection until the link, an exact project match in `.vercel/repo.json`, or `VERCEL_PROJECT_ID` + `VERCEL_ORG_ID` identifies the inte",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 94,
+        "column": 136,
+        "evidence": "jq '{frameworkSupportBlocker, observabilityPlus, observabilityPlusUsable, observabilityPlusBlocker, observabilityPlusBlockerDetail}' \"$RUN_DIR/signals.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 103,
+        "column": 85,
+        "evidence": "- `payment_required` or `no_oplus_probe`: render [references/observability-plus.md](references/observability-plus.md) verbatim and ask.",
+        "target_path": "references/observability-plus.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 103,
+        "column": 51,
+        "evidence": "- `payment_required` or `no_oplus_probe`: render [references/observability-plus.md](references/observability-plus.md) verbatim and ask.",
+        "target_path": "references/observability-plus.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 119,
+        "column": 6,
+        "evidence": "node scripts/collect-signals.mjs [projectId] --continue-without-observability > \"$RUN_DIR/vercel-signals.json\" 2> \"$RUN_DIR/collect.stderr\"",
+        "target_path": "scripts/collect-signals.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 119,
+        "column": 83,
+        "evidence": "node scripts/collect-signals.mjs [projectId] --continue-without-observability > \"$RUN_DIR/vercel-signals.json\" 2> \"$RUN_DIR/collect.stderr\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 119,
+        "column": 117,
+        "evidence": "node scripts/collect-signals.mjs [projectId] --continue-without-observability > \"$RUN_DIR/vercel-signals.json\" 2> \"$RUN_DIR/collect.stderr\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 127,
+        "column": 6,
+        "evidence": "node scripts/gate-investigations.mjs \"$RUN_DIR/signals.json\" > \"$RUN_DIR/gate.json\"",
+        "target_path": "scripts/gate-investigations.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 127,
+        "column": 40,
+        "evidence": "node scripts/gate-investigations.mjs \"$RUN_DIR/signals.json\" > \"$RUN_DIR/gate.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 127,
+        "column": 66,
+        "evidence": "node scripts/gate-investigations.mjs \"$RUN_DIR/signals.json\" > \"$RUN_DIR/gate.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 140,
+        "column": 6,
+        "evidence": "node scripts/gate-investigations.mjs \"$RUN_DIR/signals.json\" --max-candidates 12 > \"$RUN_DIR/gate.json\"",
+        "target_path": "scripts/gate-investigations.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 140,
+        "column": 40,
+        "evidence": "node scripts/gate-investigations.mjs \"$RUN_DIR/signals.json\" --max-candidates 12 > \"$RUN_DIR/gate.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 140,
+        "column": 86,
+        "evidence": "node scripts/gate-investigations.mjs \"$RUN_DIR/signals.json\" --max-candidates 12 > \"$RUN_DIR/gate.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 141,
+        "column": 6,
+        "evidence": "node scripts/gate-investigations.mjs \"$RUN_DIR/signals.json\" --max-candidates all > \"$RUN_DIR/gate.json\"",
+        "target_path": "scripts/gate-investigations.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 141,
+        "column": 40,
+        "evidence": "node scripts/gate-investigations.mjs \"$RUN_DIR/signals.json\" --max-candidates all > \"$RUN_DIR/gate.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 141,
+        "column": 87,
+        "evidence": "node scripts/gate-investigations.mjs \"$RUN_DIR/signals.json\" --max-candidates all > \"$RUN_DIR/gate.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 144,
+        "column": 54,
+        "evidence": "Generated candidate docs: [references/candidates.md](references/candidates.md).",
+        "target_path": "references/candidates.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 144,
+        "column": 28,
+        "evidence": "Generated candidate docs: [references/candidates.md](references/candidates.md).",
+        "target_path": "references/candidates.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 151,
+        "column": 6,
+        "evidence": "node scripts/budget-summary.mjs \"$RUN_DIR/gate.json\" --format json > \"$RUN_DIR/budget-summary.json\"",
+        "target_path": "scripts/budget-summary.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 151,
+        "column": 35,
+        "evidence": "node scripts/budget-summary.mjs \"$RUN_DIR/gate.json\" --format json > \"$RUN_DIR/budget-summary.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 151,
+        "column": 72,
+        "evidence": "node scripts/budget-summary.mjs \"$RUN_DIR/gate.json\" --format json > \"$RUN_DIR/budget-summary.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 158,
+        "column": 11,
+        "evidence": "1. Print `exactChatMessage.body` exactly as returned. Do not summarize, truncate, reorder, or rewrite it.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 167,
+        "column": 6,
+        "evidence": "node scripts/deep-dive.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/gate.json\" --cwd <project-dir> > \"$RUN_DIR/investigation-evidence.json\"",
+        "target_path": "scripts/deep-dive.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 167,
+        "column": 30,
+        "evidence": "node scripts/deep-dive.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/gate.json\" --cwd <project-dir> > \"$RUN_DIR/investigation-evidence.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 167,
+        "column": 54,
+        "evidence": "node scripts/deep-dive.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/gate.json\" --cwd <project-dir> > \"$RUN_DIR/investigation-evidence.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 167,
+        "column": 97,
+        "evidence": "node scripts/deep-dive.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/gate.json\" --cwd <project-dir> > \"$RUN_DIR/investigation-evidence.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 169,
+        "column": 6,
+        "evidence": "node scripts/reconcile-candidates.mjs \"$RUN_DIR/investigation-evidence.json\" \\",
+        "target_path": "scripts/reconcile-candidates.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 169,
+        "column": 41,
+        "evidence": "node scripts/reconcile-candidates.mjs \"$RUN_DIR/investigation-evidence.json\" \\",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 170,
+        "column": 12,
+        "evidence": "--gate \"$RUN_DIR/gate.json\" \\",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 171,
+        "column": 11,
+        "evidence": "--out \"$RUN_DIR/reconciled-investigation.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 174,
+        "column": 50,
+        "evidence": "`--cwd` must be the linked project directory so `deep-dive.mjs` can verify the same project link and reuse `signals.json.commandScope.cliScope` for any follow-u",
+        "target_path": null,
+        "status": "ambiguous",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 174,
+        "column": 109,
+        "evidence": "roject directory so `deep-dive.mjs` can verify the same project link and reuse `signals.json.commandScope.cliScope` for any follow-up `vercel metrics` calls.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 188,
+        "column": 6,
+        "evidence": "node scripts/prepare-investigation-brief.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/reconciled-investigation.json\" --list > \"$RUN_DIR/briefs-manifest.json\"",
+        "target_path": "scripts/prepare-investigation-brief.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 188,
+        "column": 48,
+        "evidence": "node scripts/prepare-investigation-brief.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/reconciled-investigation.json\" --list > \"$RUN_DIR/briefs-manifest.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 188,
+        "column": 72,
+        "evidence": "node scripts/prepare-investigation-brief.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/reconciled-investigation.json\" --list > \"$RUN_DIR/briefs-manifest.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 188,
+        "column": 122,
+        "evidence": "node scripts/prepare-investigation-brief.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/reconciled-investigation.json\" --list > \"$RUN_DIR/briefs-manifest.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 191,
+        "column": 40,
+        "evidence": "Generate one brief for every entry in `briefs-manifest.json.briefs`. The `group` can be `toLaunch` or `platform`; do not generate only `toLaunch` briefs.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 195,
+        "column": 6,
+        "evidence": "node scripts/prepare-investigation-brief.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/reconciled-investigation.json\" \\",
+        "target_path": "scripts/prepare-investigation-brief.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 195,
+        "column": 48,
+        "evidence": "node scripts/prepare-investigation-brief.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/reconciled-investigation.json\" \\",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 195,
+        "column": 72,
+        "evidence": "node scripts/prepare-investigation-brief.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/reconciled-investigation.json\" \\",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 211,
+        "column": 100,
+        "evidence": "- Emit one JSON recommendation or one JSON no-change finding using [references/recommendations.md](references/recommendations.md).",
+        "target_path": "references/recommendations.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 211,
+        "column": 69,
+        "evidence": "- Emit one JSON recommendation or one JSON no-change finding using [references/recommendations.md](references/recommendations.md).",
+        "target_path": "references/recommendations.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 222,
+        "column": 6,
+        "evidence": "node scripts/collect-sub-agent-outputs.mjs \\",
+        "target_path": "scripts/collect-sub-agent-outputs.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 223,
+        "column": 16,
+        "evidence": "--manifest \"$RUN_DIR/briefs-manifest.json\" \\",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 224,
+        "column": 11,
+        "evidence": "--out \"$RUN_DIR/recommendations.json\" \\",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 233,
+        "column": 6,
+        "evidence": "node scripts/verify-and-regen.mjs \"$RUN_DIR/recommendations.json\" \\",
+        "target_path": "scripts/verify-and-regen.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 233,
+        "column": 37,
+        "evidence": "node scripts/verify-and-regen.mjs \"$RUN_DIR/recommendations.json\" \\",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 234,
+        "column": 15,
+        "evidence": "--signals \"$RUN_DIR/signals.json\" \\",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 236,
+        "column": 11,
+        "evidence": "--out \"$RUN_DIR/verify.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 241,
+        "column": 107,
+        "evidence": "ting rules, sanitizer order, and grading rules: [references/recommendations.md](references/recommendations.md). Verification rules: [references/verification.md]",
+        "target_path": "references/recommendations.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 241,
+        "column": 76,
+        "evidence": "Recommendation schema, writing rules, sanitizer order, and grading rules: [references/recommendations.md](references/recommendations.md). Verification rules: [r",
+        "target_path": "references/recommendations.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 241,
+        "column": 188,
+        "evidence": "eferences/recommendations.md). Verification rules: [references/verification.md](references/verification.md).",
+        "target_path": "references/verification.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 241,
+        "column": 160,
+        "evidence": "rences/recommendations.md](references/recommendations.md). Verification rules: [references/verification.md](references/verification.md).",
+        "target_path": "references/verification.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 248,
+        "column": 6,
+        "evidence": "node scripts/render-report.mjs \"$RUN_DIR/verify.json\" \"$RUN_DIR/gate.json\" \"$RUN_DIR/signals.json\" \\",
+        "target_path": "scripts/render-report.mjs",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 248,
+        "column": 34,
+        "evidence": "node scripts/render-report.mjs \"$RUN_DIR/verify.json\" \"$RUN_DIR/gate.json\" \"$RUN_DIR/signals.json\" \\",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 248,
+        "column": 57,
+        "evidence": "node scripts/render-report.mjs \"$RUN_DIR/verify.json\" \"$RUN_DIR/gate.json\" \"$RUN_DIR/signals.json\" \\",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 248,
+        "column": 78,
+        "evidence": "node scripts/render-report.mjs \"$RUN_DIR/verify.json\" \"$RUN_DIR/gate.json\" \"$RUN_DIR/signals.json\" \\",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 250,
+        "column": 11,
+        "evidence": "--out \"$RUN_DIR/report.md\" \\",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 251,
+        "column": 19,
+        "evidence": "--message-out \"$RUN_DIR/final-message.json\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 254,
+        "column": 20,
+        "evidence": "Use `--debug-out \"$RUN_DIR/debug.json\"` only when developing the skill. Customer Markdown and chat output must not expose `passRate`, `quality`, sanitizer trail",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 256,
+        "column": 25,
+        "evidence": "After rendering, print `final-message.json.body` verbatim and stop. Do not add highlights, debug notes, raw counts, sub-agent summaries, or extra explanation. R",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 256,
+        "column": 285,
+        "evidence": "afety drops can change the customer-visible count, so never summarize from raw `verify.json`.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 258,
+        "column": 62,
+        "evidence": "Report structure and impact framing: [references/scoring.md](references/scoring.md).",
+        "target_path": "references/scoring.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 258,
+        "column": 39,
+        "evidence": "Report structure and impact framing: [references/scoring.md](references/scoring.md).",
+        "target_path": "references/scoring.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 265,
+        "column": 42,
+        "evidence": "- Include observed metric evidence from `signals.json` or `evidence.deepDive`.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 265,
+        "column": 60,
+        "evidence": "- Include observed metric evidence from `signals.json` or `evidence.deepDive`.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 276,
+        "column": 64,
+        "evidence": "Never recommend \"verify X is on\" for facts already present in `signals.project`, including Fluid compute status, memory tier, regions, in-function concurrency, ",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 284,
+        "column": 48,
+        "evidence": "Scanner docs: [references/scanner-patterns.md](references/scanner-patterns.md).",
+        "target_path": "references/scanner-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 284,
+        "column": 16,
+        "evidence": "Scanner docs: [references/scanner-patterns.md](references/scanner-patterns.md).",
+        "target_path": "references/scanner-patterns.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 314,
+        "column": 74,
+        "evidence": "> Use the verbatim choice template in [references/observability-plus.md](references/observability-plus.md). Do not silently fall back to code-only mode; present",
+        "target_path": "references/observability-plus.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 314,
+        "column": 40,
+        "evidence": "> Use the verbatim choice template in [references/observability-plus.md](references/observability-plus.md). Do not silently fall back to code-only mode; present",
+        "target_path": "references/observability-plus.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      }
+    ],
+    "limitations": [
+      "Analyzer static_patterns_agent_snooping status: degraded.",
+      "Analyzer static_patterns_anti_refusal status: degraded.",
+      "Analyzer static_patterns_deserialization status: degraded.",
+      "Analyzer static_patterns_excessive_agency status: degraded.",
+      "Analyzer static_patterns_harmful_content status: degraded.",
+      "Analyzer static_patterns_memory_poisoning status: degraded.",
+      "Analyzer static_patterns_privilege_escalation status: degraded.",
+      "Analyzer static_patterns_prompt_injection status: degraded.",
+      "Analyzer static_patterns_rogue_agent status: degraded.",
+      "Analyzer static_patterns_ssrf status: degraded.",
+      "Analyzer static_patterns_supply_chain status: degraded.",
+      "Analyzer static_patterns_system_prompt_leakage status: degraded.",
+      "Analyzer static_patterns_tool_misuse status: degraded."
+    ],
+    "findings_before_filtering": 22,
+    "findings_after_filtering": 22
+  }
+}

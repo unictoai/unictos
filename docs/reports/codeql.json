@@ -1,0 +1,2024 @@
+{
+  "skill": {
+    "name": "codeql",
+    "source": "/tmp/uniscan-trial/trailofbits-skills/plugins/static-analysis/skills/codeql",
+    "scanned_at": "2026-10-13T08:11:40.342509+00:00"
+  },
+  "risk_assessment": {
+    "score": 96,
+    "severity": "CRITICAL",
+    "recommendation": "DO_NOT_INSTALL",
+    "max_issue_severity": "HIGH"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 295,
+      "executable": false,
+      "size_bytes": 18600,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/openai.yaml",
+      "type": "yaml",
+      "lines": 6,
+      "executable": false,
+      "size_bytes": 239,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "assets/trail-of-bits-mark.svg",
+      "type": "other",
+      "lines": 1,
+      "executable": true,
+      "size_bytes": 3084,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/build-fixes.md",
+      "type": "markdown",
+      "lines": 102,
+      "executable": false,
+      "size_bytes": 3290,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/diagnostic-query-templates.md",
+      "type": "markdown",
+      "lines": 322,
+      "executable": false,
+      "size_bytes": 9751,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/extension-yaml-format.md",
+      "type": "markdown",
+      "lines": 199,
+      "executable": false,
+      "size_bytes": 7621,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/important-only-suite.md",
+      "type": "markdown",
+      "lines": 112,
+      "executable": false,
+      "size_bytes": 5270,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/language-details.md",
+      "type": "markdown",
+      "lines": 217,
+      "executable": false,
+      "size_bytes": 5811,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/macos-arm64e-workaround.md",
+      "type": "markdown",
+      "lines": 200,
+      "executable": false,
+      "size_bytes": 7455,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/performance-tuning.md",
+      "type": "markdown",
+      "lines": 78,
+      "executable": false,
+      "size_bytes": 2835,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/quality-assessment.md",
+      "type": "markdown",
+      "lines": 196,
+      "executable": false,
+      "size_bytes": 7969,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/ruleset-catalog.md",
+      "type": "markdown",
+      "lines": 65,
+      "executable": false,
+      "size_bytes": 2197,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/run-all-suite.md",
+      "type": "markdown",
+      "lines": 99,
+      "executable": false,
+      "size_bytes": 5552,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/sarif-processing.md",
+      "type": "markdown",
+      "lines": 79,
+      "executable": false,
+      "size_bytes": 3119,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/threat-models.md",
+      "type": "markdown",
+      "lines": 33,
+      "executable": false,
+      "size_bytes": 2799,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/build_log.sh",
+      "type": "shell",
+      "lines": 45,
+      "executable": true,
+      "size_bytes": 2144,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/check_db_quality.py",
+      "type": "python",
+      "lines": 366,
+      "executable": true,
+      "size_bytes": 15069,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/find_databases.sh",
+      "type": "shell",
+      "lines": 53,
+      "executable": true,
+      "size_bytes": 2515,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/generate_suite.sh",
+      "type": "shell",
+      "lines": 112,
+      "executable": true,
+      "size_bytes": 3406,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/pyproject.toml",
+      "type": "toml",
+      "lines": 11,
+      "executable": false,
+      "size_bytes": 585,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/test_build_log.py",
+      "type": "python",
+      "lines": 91,
+      "executable": true,
+      "size_bytes": 3244,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/test_build_mode_claims.py",
+      "type": "python",
+      "lines": 88,
+      "executable": true,
+      "size_bytes": 3678,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/test_check_db_quality.py",
+      "type": "python",
+      "lines": 501,
+      "executable": true,
+      "size_bytes": 20247,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/test_find_databases.py",
+      "type": "python",
+      "lines": 145,
+      "executable": true,
+      "size_bytes": 6116,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/test_generation_scripts.py",
+      "type": "python",
+      "lines": 289,
+      "executable": true,
+      "size_bytes": 11900,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/test_script_flags.py",
+      "type": "python",
+      "lines": 167,
+      "executable": true,
+      "size_bytes": 6451,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/test_section_pointers.py",
+      "type": "python",
+      "lines": 183,
+      "executable": true,
+      "size_bytes": 8072,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/test_shell_blocks.py",
+      "type": "python",
+      "lines": 704,
+      "executable": true,
+      "size_bytes": 29804,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/test_suite_templates.py",
+      "type": "python",
+      "lines": 126,
+      "executable": true,
+      "size_bytes": 5120,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/test_verify_query_suite.py",
+      "type": "python",
+      "lines": 54,
+      "executable": true,
+      "size_bytes": 1902,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "scripts/verify_query_suite.py",
+      "type": "python",
+      "lines": 86,
+      "executable": true,
+      "size_bytes": 2802,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "workflows/build-database.md",
+      "type": "markdown",
+      "lines": 339,
+      "executable": false,
+      "size_bytes": 13273,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "workflows/create-data-extensions.md",
+      "type": "markdown",
+      "lines": 268,
+      "executable": false,
+      "size_bytes": 10555,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "workflows/run-analysis.md",
+      "type": "markdown",
+      "lines": 320,
+      "executable": false,
+      "size_bytes": 12939,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    }
+  ],
+  "structured_summaries": [],
+  "issues": [
+    {
+      "id": "AE1",
+      "finding_id": "finding-85ecdc17472746e8981d10cd0429916a",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 199,
+        "end_line": null
+      },
+      "finding": "workflows/build-database.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "| [build-database](workflows/build-database.md) | Create CodeQL database using build methods in sequence |",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "workflows/build-database.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "697b8061302463ffe0ef90478c56034de8f03d0e0bbae61cb35ede8c37de2221",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 199,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-1ffd2706a73a42a98327401c8d497429",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 219,
+        "end_line": null
+      },
+      "finding": "workflows/build-database.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "[build-database.md](workflows/build-database.md) by hand when you want a say in which method is",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "workflows/build-database.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "697b8061302463ffe0ef90478c56034de8f03d0e0bbae61cb35ede8c37de2221",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 219,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "LP1",
+      "finding_id": "finding-5db400153c9a4037ad264297ee0adaf8",
+      "category": "MCP Least Privilege",
+      "pattern": "Code capability 'env' detected in scripts/test_generation_scripts.py but not covered by declared permissions.",
+      "severity": "HIGH",
+      "confidence": 0.55,
+      "location": {
+        "file": "scripts/test_generation_scripts.py",
+        "start_line": 1,
+        "end_line": null
+      },
+      "finding": "Code capability 'env' detected in scripts/test_generation_scripts.py but not covered by declared permissions.",
+      "explanation": "The skill uses 'env' capability that is not covered by the declared 'allowed-tools' preapproval. Review the host runtime's actual enforcement policy; runtime permissions are unknown unless separately verified, and this declaration alone does not establish a permission ceiling.",
+      "remediation": "Review whether the 'env' capability is required and whether the host runtime policy permits it; runtime permissions are unknown unless separately verified. Remove code that does not need the capability; do not broaden 'allowed-tools' preapproval solely to silence this finding.",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI02"
+      ],
+      "evidence": {},
+      "match_fingerprint": null,
+      "occurrences": [
+        {
+          "file": "scripts/test_generation_scripts.py",
+          "start_line": 1,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "TM3",
+      "finding_id": "finding-557656b60e5b411ba74be9eb221e6388",
+      "category": "Tool Misuse",
+      "pattern": "Unsafe Defaults",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/important-only-suite.md",
+        "start_line": 32,
+        "end_line": null,
+        "start_column": 111
+      },
+      "finding": "world-writable",
+      "explanation": "Tool defaults are unsafe or overly permissive (e.g. disabled TLS verification, no authentication, world-writable permissions). Unsafe defaults widen the attack surface.",
+      "remediation": "Override unsafe defaults with secure settings (verify=True, auth required, restrictive permissions). Review and harden all tool configurations.",
+      "code_snippet": "| medium | >= 6.0 | **Keep** |\n| medium | < 6.0 or missing | **Drop** |\n\nThis ensures medium-precision queries with meaningful security impact (e.g., `cpp/path-injection` at 7.5, `cpp/world-writable-file-creation` at 7.8) are included, while noisy low-severity medium-precision findings are filtered out.\n\nExcluded: deprecated queries, model editor/generator queries. Experimental queries are **included**.\n",
+      "intent": null,
+      "tags": [
+        "Tool Misuse"
+      ],
+      "evidence": {},
+      "match_fingerprint": "f239fe898e7090985596902b5111ef3fb3133f3991fb13b1656c70b3bbdc433f",
+      "occurrences": [
+        {
+          "file": "references/important-only-suite.md",
+          "start_line": 32,
+          "end_line": null,
+          "start_column": 111
+        }
+      ]
+    },
+    {
+      "id": "AST4",
+      "finding_id": "finding-6062112910dc41eeb403ca3fa35b81fc",
+      "category": "Dangerous Code Execution",
+      "pattern": "subprocess module call",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/test_build_log.py",
+        "start_line": 17,
+        "end_line": 22,
+        "start_column": 11,
+        "end_column": 5
+      },
+      "finding": "subprocess.run(\n        [\"bash\", \"-c\", f'. \"{BUILD_LOG}\"\\n{script}'],\n        cwd=cwd,\n        capture_output=True,\n        text=True,\n    )",
+      "explanation": "subprocess module calls execute external commands. Without careful input validation, this enables command injection.",
+      "remediation": "Use subprocess.run() with shell=False and an explicit argument list. Validate all inputs and avoid passing user-controlled data to commands.",
+      "code_snippet": "\n\ndef _bash(script: str, cwd: Path) -> subprocess.CompletedProcess[str]:\n    return subprocess.run(\n        [\"bash\", \"-c\", f'. \"{BUILD_LOG}\"\\n{script}'],\n        cwd=cwd,\n        capture_output=True,",
+      "intent": null,
+      "tags": [
+        "Dangerous Code Execution"
+      ],
+      "evidence": {},
+      "match_fingerprint": "0d43cf3ae7954508a8e0c5c6829f53ca124e61a60c0928ea11ae5765441b5fa7",
+      "occurrences": [
+        {
+          "file": "scripts/test_build_log.py",
+          "start_line": 17,
+          "end_line": 22,
+          "start_column": 11,
+          "end_column": 5
+        }
+      ]
+    },
+    {
+      "id": "AST4",
+      "finding_id": "finding-ecd7dae5c7de4ba1ae3ab5745efffe2e",
+      "category": "Dangerous Code Execution",
+      "pattern": "subprocess module call",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/test_build_log.py",
+        "start_line": 67,
+        "end_line": 72,
+        "start_column": 13,
+        "end_column": 5
+      },
+      "finding": "subprocess.run(\n        [\"bash\", \"-c\", f'OUTPUT_DIR=\"{scans}\"\\n. \"{BUILD_LOG}\"\\nrun_logged echo hi'],\n        cwd=tmp_path,\n        capture_output=True,\n        text=True,\n    )",
+      "explanation": "subprocess module calls execute external commands. Without careful input validation, this enables command injection.",
+      "remediation": "Use subprocess.run() with shell=False and an explicit argument list. Validate all inputs and avoid passing user-controlled data to commands.",
+      "code_snippet": "def test_log_file_defaults_under_output_dir(tmp_path: Path) -> None:\n    scans = tmp_path / \"scans\"\n    scans.mkdir()\n    result = subprocess.run(\n        [\"bash\", \"-c\", f'OUTPUT_DIR=\"{scans}\"\\n. \"{BUILD_LOG}\"\\nrun_logged echo hi'],\n        cwd=tmp_path,\n        capture_output=True,",
+      "intent": null,
+      "tags": [
+        "Dangerous Code Execution"
+      ],
+      "evidence": {},
+      "match_fingerprint": "7d4960811e6b192bbbdd844099eab4181dc83cd42cddc0e25527c5ffedda7e34",
+      "occurrences": [
+        {
+          "file": "scripts/test_build_log.py",
+          "start_line": 67,
+          "end_line": 72,
+          "start_column": 13,
+          "end_column": 5
+        }
+      ]
+    },
+    {
+      "id": "AST4",
+      "finding_id": "finding-5ed88af5cb5147138394c5e91e008b77",
+      "category": "Dangerous Code Execution",
+      "pattern": "subprocess module call",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/test_build_log.py",
+        "start_line": 84,
+        "end_line": 89,
+        "start_column": 13,
+        "end_column": 5
+      },
+      "finding": "subprocess.run(\n        [\"bash\", \"-c\", f'LOG_FILE=\"{missing}\"\\n. \"{BUILD_LOG}\"\\nrun_logged true'],\n        cwd=tmp_path,\n        capture_output=True,\n        text=True,\n    )",
+      "explanation": "subprocess module calls execute external commands. Without careful input validation, this enables command injection.",
+      "remediation": "Use subprocess.run() with shell=False and an explicit argument list. Validate all inputs and avoid passing user-controlled data to commands.",
+      "code_snippet": "    failure and the run would end at --build-mode=none blaming the build.\n    \"\"\"\n    missing = tmp_path / \"no-such-dir\" / \"build.log\"\n    result = subprocess.run(\n        [\"bash\", \"-c\", f'LOG_FILE=\"{missing}\"\\n. \"{BUILD_LOG}\"\\nrun_logged true'],\n        cwd=tmp_path,\n        capture_output=True,",
+      "intent": null,
+      "tags": [
+        "Dangerous Code Execution"
+      ],
+      "evidence": {},
+      "match_fingerprint": "2612f4edb4d5d93e39a5ff47d0e02eadf9178d5f6f28b7ab2df4e1384a41d8e3",
+      "occurrences": [
+        {
+          "file": "scripts/test_build_log.py",
+          "start_line": 84,
+          "end_line": 89,
+          "start_column": 13,
+          "end_column": 5
+        }
+      ]
+    },
+    {
+      "id": "AST4",
+      "finding_id": "finding-2c68df2f5bd84b1ca6cf791a0b4a9c31",
+      "category": "Dangerous Code Execution",
+      "pattern": "subprocess module call",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/test_find_databases.py",
+        "start_line": 48,
+        "end_line": 50,
+        "start_column": 11,
+        "end_column": 5
+      },
+      "finding": "subprocess.run(\n        [str(SCRIPT), *roots], capture_output=True, text=True, cwd=tmp_path, env=env\n    )",
+      "explanation": "subprocess module calls execute external commands. Without careful input validation, this enables command injection.",
+      "remediation": "Use subprocess.run() with shell=False and an explicit argument list. Validate all inputs and avoid passing user-controlled data to commands.",
+      "code_snippet": "\ndef _invoke(tmp_path: Path, *roots: str) -> subprocess.CompletedProcess[str]:\n    env = {\"PATH\": f\"{tmp_path / 'bin'}:/usr/bin:/bin\", \"HOME\": str(tmp_path)}\n    return subprocess.run(\n        [str(SCRIPT), *roots], capture_output=True, text=True, cwd=tmp_path, env=env\n    )\n",
+      "intent": null,
+      "tags": [
+        "Dangerous Code Execution"
+      ],
+      "evidence": {},
+      "match_fingerprint": "42868a1a402be014af055c56f4a4c71cc47a5a6f0e9151d2570122b1f1af0bd4",
+      "occurrences": [
+        {
+          "file": "scripts/test_find_databases.py",
+          "start_line": 48,
+          "end_line": 50,
+          "start_column": 11,
+          "end_column": 5
+        }
+      ]
+    },
+    {
+      "id": "AST4",
+      "finding_id": "finding-627020fd3b5f45bfba3c08829e0cfc65",
+      "category": "Dangerous Code Execution",
+      "pattern": "subprocess module call",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/test_generation_scripts.py",
+        "start_line": 192,
+        "end_line": 194,
+        "start_column": 11,
+        "end_column": 5
+      },
+      "finding": "subprocess.run(\n        [str(GENERATE_SUITE), mode], capture_output=True, text=True, env=env, cwd=tmp_path\n    )",
+      "explanation": "subprocess module calls execute external commands. Without careful input validation, this enables command injection.",
+      "remediation": "Use subprocess.run() with shell=False and an explicit argument list. Validate all inputs and avoid passing user-controlled data to commands.",
+      "code_snippet": "        \"OUTPUT_DIR\": str(output_dir),\n        **env_extra,\n    }\n    return subprocess.run(\n        [str(GENERATE_SUITE), mode], capture_output=True, text=True, env=env, cwd=tmp_path\n    )\n",
+      "intent": null,
+      "tags": [
+        "Dangerous Code Execution"
+      ],
+      "evidence": {},
+      "match_fingerprint": "c910a7992cb5e5ec4aae8424ff344e2651d342c1b315a62f32bad53f392dd364",
+      "occurrences": [
+        {
+          "file": "scripts/test_generation_scripts.py",
+          "start_line": 192,
+          "end_line": 194,
+          "start_column": 11,
+          "end_column": 5
+        }
+      ]
+    },
+    {
+      "id": "AST4",
+      "finding_id": "finding-01527c3ce8664c57b52803fddfbc0812",
+      "category": "Dangerous Code Execution",
+      "pattern": "subprocess module call",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/test_script_flags.py",
+        "start_line": 49,
+        "end_line": 55,
+        "start_column": 13,
+        "end_column": 5
+      },
+      "finding": "subprocess.run(\n        [sys.executable, str(script), \"--help\"],\n        capture_output=True,\n        text=True,\n        timeout=60,\n        check=False,\n    )",
+      "explanation": "subprocess module calls execute external commands. Without careful input validation, this enables command injection.",
+      "remediation": "Use subprocess.run() with shell=False and an explicit argument list. Validate all inputs and avoid passing user-controlled data to commands.",
+      "code_snippet": "\ndef _accepted_flags(script: Path) -> set[str]:\n    \"\"\"What the script really takes, from its own --help.\"\"\"\n    result = subprocess.run(\n        [sys.executable, str(script), \"--help\"],\n        capture_output=True,\n        text=True,",
+      "intent": null,
+      "tags": [
+        "Dangerous Code Execution"
+      ],
+      "evidence": {},
+      "match_fingerprint": "500dff709deb12bd2a91a79e3ed455fd27194838d8bb8859196613b285063079",
+      "occurrences": [
+        {
+          "file": "scripts/test_script_flags.py",
+          "start_line": 49,
+          "end_line": 55,
+          "start_column": 13,
+          "end_column": 5
+        }
+      ]
+    },
+    {
+      "id": "AST4",
+      "finding_id": "finding-4390c32fa29e4945b6e2780ae32a1f45",
+      "category": "Dangerous Code Execution",
+      "pattern": "subprocess module call",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/test_shell_blocks.py",
+        "start_line": 112,
+        "end_line": 112,
+        "start_column": 17,
+        "end_column": 94
+      },
+      "finding": "subprocess.run([\"bash\", \"-n\"], input=cleaned, capture_output=True, text=True)",
+      "explanation": "subprocess module calls execute external commands. Without careful input validation, this enables command injection.",
+      "remediation": "Use subprocess.run() with shell=False and an explicit argument list. Validate all inputs and avoid passing user-controlled data to commands.",
+      "code_snippet": "    for path, line, source in ALL_BLOCKS:\n        # <BUILD_CMD>, <mode> etc. are documentation, not shell \u2014 neutralise before parsing.\n        cleaned = re.sub(r\"<[A-Za-z0-9_ .-]+>\", \"PLACEHOLDER\", source)\n        result = subprocess.run([\"bash\", \"-n\"], input=cleaned, capture_output=True, text=True)\n        if result.returncode != 0:\n            offenders.append(f\"{_ident(path, line)}: {result.stderr.strip()}\")\n",
+      "intent": null,
+      "tags": [
+        "Dangerous Code Execution"
+      ],
+      "evidence": {},
+      "match_fingerprint": "d19e7d38d5d6efbba63854e2008c848f9feae8802d94b0548accff66597731a2",
+      "occurrences": [
+        {
+          "file": "scripts/test_shell_blocks.py",
+          "start_line": 112,
+          "end_line": 112,
+          "start_column": 17,
+          "end_column": 94
+        }
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-351e21f99e694cdc80daaced39f23d88",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "scripts/test_shell_blocks.py",
+        "start_line": 298,
+        "end_line": null,
+        "start_column": 38
+      },
+      "finding": "without checking",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "        for offender in _ungated_finalizes(source)\n    ]\n    assert not offenders, (\n        \"a block finalizes a database without checking that the step before it succeeded, so \"\n        \"a failed trace-command still produces a database that resolves and holds nothing:\\n  \"\n        + \"\\n  \".join(offenders)\n    )",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ],
+      "evidence": {},
+      "match_fingerprint": "9341b6f34d6af9081a0d6673f4217b7307d273da9f43357efd9029e15c5da76c",
+      "occurrences": [
+        {
+          "file": "scripts/test_shell_blocks.py",
+          "start_line": 298,
+          "end_line": null,
+          "start_column": 38
+        }
+      ]
+    },
+    {
+      "id": "AST6",
+      "finding_id": "finding-46ad498efe2e43c5bdac883ee59b584e",
+      "category": "Dangerous Code Execution",
+      "pattern": "compile() call detected",
+      "severity": "MEDIUM",
+      "confidence": 0.65,
+      "location": {
+        "file": "scripts/test_shell_blocks.py",
+        "start_line": 702,
+        "end_line": 702,
+        "start_column": 8,
+        "end_column": 43
+      },
+      "finding": "compile(body, \"<embedded>\", \"exec\")",
+      "explanation": "compile() creates code objects from strings. When combined with exec()/eval(), it enables obfuscated code execution.",
+      "remediation": "Avoid compile() with dynamic strings. If code generation is needed, use templates or AST manipulation with strict validation.",
+      "code_snippet": "    backslashes to Python.\n    \"\"\"\n    try:\n        compile(body, \"<embedded>\", \"exec\")\n    except SyntaxError as error:\n        pytest.fail(f\"{origin} embeds Python that does not parse: {error}\\n{body}\")",
+      "intent": null,
+      "tags": [
+        "Dangerous Code Execution"
+      ],
+      "evidence": {},
+      "match_fingerprint": "1d5b26374530b8d0cd7d24444cdc90efa924caf2dff36d148351927e528a015d",
+      "occurrences": [
+        {
+          "file": "scripts/test_shell_blocks.py",
+          "start_line": 702,
+          "end_line": 702,
+          "start_column": 8,
+          "end_column": 43
+        }
+      ]
+    },
+    {
+      "id": "AST4",
+      "finding_id": "finding-b863784420884ee68de6de06986458a2",
+      "category": "Dangerous Code Execution",
+      "pattern": "subprocess module call",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/verify_query_suite.py",
+        "start_line": 31,
+        "end_line": 31,
+        "start_column": 17,
+        "end_column": 72
+      },
+      "finding": "subprocess.run(command, capture_output=True, text=True)",
+      "explanation": "subprocess module calls execute external commands. Without careful input validation, this enables command injection.",
+      "remediation": "Use subprocess.run() with shell=False and an explicit argument list. Validate all inputs and avoid passing user-controlled data to commands.",
+      "code_snippet": "        str(suite_path),\n    ]\n    try:\n        result = subprocess.run(command, capture_output=True, text=True)\n    except OSError as error:\n        raise SuiteResolutionFailure(\n            f\"Could not run CodeQL while validating {suite_path}: {error}. \"",
+      "intent": null,
+      "tags": [
+        "Dangerous Code Execution"
+      ],
+      "evidence": {},
+      "match_fingerprint": "806b894d7e0a5f2d15f45c1dc136c23fdbff09c3b83642e13f6423ee5fe11d3b",
+      "occurrences": [
+        {
+          "file": "scripts/verify_query_suite.py",
+          "start_line": 31,
+          "end_line": 31,
+          "start_column": 17,
+          "end_column": 72
+        }
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": true,
+    "skillspector_version": "2.12.0",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "llm_provenance": {
+      "schema_version": 1,
+      "provider": {
+        "configured_adapter": "unknown",
+        "resolved_adapter": "unknown",
+        "effective_adapter": "not_applicable",
+        "effective_adapters": [],
+        "service": "unknown",
+        "routing": {
+          "deployment_override": null,
+          "deployment_source": "unknown",
+          "api_version": null,
+          "api_version_source": "unknown"
+        }
+      },
+      "analyzers": [
+        {
+          "analyzer_id": "mcp_tool_poisoning",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_developer_intent",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_quality_policy",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_security_discovery",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "meta_analyzer",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "source": "package_vcs_metadata"
+            }
+          }
+        }
+      ],
+      "sampling": {
+        "temperature": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "seed": {
+          "requested": null,
+          "source": "unset",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "reasoning_effort": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        }
+      },
+      "determinism": {
+        "classification": "not_applicable",
+        "control_status": "not_applied",
+        "provider_guarantee": false,
+        "reason": "LLM analysis was not executed for this scan."
+      }
+    },
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 34,
+    "scanned_components": 31,
+    "coverage_percent": 91.2,
+    "is_complete": false,
+    "status": "partial",
+    "execution_successful": true,
+    "fully_inspected_files": 31,
+    "partially_inspected_files": 3,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 54,
+        "end_line": 54,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 96,
+        "end_line": 96,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 125,
+        "end_line": 125,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 130,
+        "end_line": 130,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 224,
+        "end_line": 224,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 240,
+        "end_line": 240,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 287,
+        "end_line": 287,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 291,
+        "end_line": 291,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 292,
+        "end_line": 292,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 293,
+        "end_line": 293,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 295,
+        "end_line": 295,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/test_script_flags.py",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "scripts/test_shell_blocks.py",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "path": "workflows/build-database.md",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ]
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "artifact_integrity",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "completed",
+        "planned_work": 12,
+        "completed": 12,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "completed",
+        "planned_work": 12,
+        "completed": 12,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "bundled_execution_surface",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "completed",
+        "planned_work": 17,
+        "completed": 17,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "reference_coverage",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "degraded",
+        "planned_work": 34,
+        "completed": 31,
+        "partial": 3,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 34,
+        "completed": 34,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "references": [
+      {
+        "source_path": "SKILL.md",
+        "line": 39,
+        "column": 2,
+        "evidence": "`build_log.sh`. Every block below that uses a value must re-establish it in the same block.",
+        "target_path": "scripts/build_log.sh",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 54,
+        "column": 37,
+        "evidence": "- **If not specified**, default to `./static_analysis_codeql_1`. If that already exists, increment to `_2`, `_3`, etc.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 96,
+        "column": 55,
+        "evidence": "A CodeQL database is identified by the presence of a `codeql-database.yml` marker file inside its directory. When searching for existing databases, **always col",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 98,
+        "column": 25,
+        "evidence": "**Discovery command.** `find_databases.sh` prints one database path per line, filtering",
+        "target_path": "scripts/find_databases.sh",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 125,
+        "column": 45,
+        "evidence": "CREATED=$(grep '^creationMetadata:' -A5 \"$db/codeql-database.yml\" 2>/dev/null | grep 'creationTime' | awk '{print $2}')",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 130,
+        "column": 35,
+        "evidence": "Never assume a database is named `codeql.db` \u2014 discover it by its marker file.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 167,
+        "column": 65,
+        "evidence": "Then resolve `OUTPUT_DIR` using the block in [Output Directory](#output-directory) above \u2014",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 181,
+        "column": 182,
+        "evidence": "64` mismatch, not a fundamental build failure. See [macos-arm64e-workaround.md](references/macos-arm64e-workaround.md).",
+        "target_path": "references/macos-arm64e-workaround.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 182,
+        "column": 53,
+        "evidence": "- **\"No findings means the code is secure\"** - Run `check_db_quality.py` and `verify_query_suite.py` and report that they passed. Without them, zero findings an",
+        "target_path": "scripts/check_db_quality.py",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 182,
+        "column": 79,
+        "evidence": "- **\"No findings means the code is secure\"** - Run `check_db_quality.py` and `verify_query_suite.py` and report that they passed. Without them, zero findings an",
+        "target_path": "scripts/verify_query_suite.py",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 199,
+        "column": 20,
+        "evidence": "| [build-database](workflows/build-database.md) | Create CodeQL database using build methods in sequence |",
+        "target_path": "workflows/build-database.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 200,
+        "column": 28,
+        "evidence": "| [create-data-extensions](workflows/create-data-extensions.md) | Detect or generate data extension models for project APIs |",
+        "target_path": "workflows/create-data-extensions.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 201,
+        "column": 18,
+        "evidence": "| [run-analysis](workflows/run-analysis.md) | Select rulesets, execute queries, process results |",
+        "target_path": "workflows/run-analysis.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 207,
+        "column": 18,
+        "evidence": "[build-fixes.md](references/build-fixes.md) between rungs, and enforce the quality gate.",
+        "target_path": "references/build-fixes.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 219,
+        "column": 21,
+        "evidence": "[build-database.md](workflows/build-database.md) by hand when you want a say in which method is",
+        "target_path": "workflows/build-database.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 224,
+        "column": 89,
+        "evidence": "r explicitly specifies** what to do (e.g., \"build a database\", \"run analysis on ./my-db\"), execute that workflow directly. **Do NOT call `AskUserQuestion` for d",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 227,
+        "column": 43,
+        "evidence": "using the command in [Database Discovery](#database-discovery) above, then decide.",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 233,
+        "column": 103,
+        "evidence": "| Multiple databases found | Use `AskUserQuestion`, capped at four options \u2014 see [Database Discovery](#database-discovery) |",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 240,
+        "column": 70,
+        "evidence": "option with the path, language, and creation time collected above \u2014 `./static_analysis_codeql_1/codeql.db",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 260,
+        "column": 35,
+        "evidence": "| [scripts/verify_query_suite.py](scripts/verify_query_suite.py) | Fails a suite that resolves to zero queries. The generation scripts run it; invoke by hand on",
+        "target_path": "scripts/verify_query_suite.py",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 260,
+        "column": 4,
+        "evidence": "| [scripts/verify_query_suite.py](scripts/verify_query_suite.py) | Fails a suite that resolves to zero queries. The generation scripts run it; invoke by hand on",
+        "target_path": "scripts/verify_query_suite.py",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 261,
+        "column": 33,
+        "evidence": "| [scripts/check_db_quality.py](scripts/check_db_quality.py) | Fails a database with no analysable source. Run after every build |",
+        "target_path": "scripts/check_db_quality.py",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 261,
+        "column": 4,
+        "evidence": "| [scripts/check_db_quality.py](scripts/check_db_quality.py) | Fails a database with no analysable source. Run after every build |",
+        "target_path": "scripts/check_db_quality.py",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 262,
+        "column": 26,
+        "evidence": "| [scripts/build_log.sh](scripts/build_log.sh) | `log_step`/`run_logged` helpers; source before any build step |",
+        "target_path": "scripts/build_log.sh",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 262,
+        "column": 4,
+        "evidence": "| [scripts/build_log.sh](scripts/build_log.sh) | `log_step`/`run_logged` helpers; source before any build step |",
+        "target_path": "scripts/build_log.sh",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 263,
+        "column": 31,
+        "evidence": "| [scripts/find_databases.sh](scripts/find_databases.sh) | Prints every database that `codeql resolve database` accepts, one per line. Build your array from it ",
+        "target_path": "scripts/find_databases.sh",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 263,
+        "column": 4,
+        "evidence": "| [scripts/find_databases.sh](scripts/find_databases.sh) | Prints every database that `codeql resolve database` accepts, one per line. Build your array from it ",
+        "target_path": "scripts/find_databases.sh",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 264,
+        "column": 31,
+        "evidence": "| [scripts/generate_suite.sh](scripts/generate_suite.sh) | Writes the run-all or important-only `.qls` and verifies it resolves to a non-zero query count |",
+        "target_path": "scripts/generate_suite.sh",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 264,
+        "column": 4,
+        "evidence": "| [scripts/generate_suite.sh](scripts/generate_suite.sh) | Writes the run-all or important-only `.qls` and verifies it resolves to a non-zero query count |",
+        "target_path": "scripts/generate_suite.sh",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 265,
+        "column": 78,
+        "evidence": "| **References** \u2014 the three workflows are listed under [Workflow Selection](#workflow-selection) | |",
+        "target_path": null,
+        "status": "rejected",
+        "disposition": "out_of_scope",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 266,
+        "column": 43,
+        "evidence": "| [references/macos-arm64e-workaround.md](references/macos-arm64e-workaround.md) | Apple Silicon build tracing workarounds |",
+        "target_path": "references/macos-arm64e-workaround.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 266,
+        "column": 4,
+        "evidence": "| [references/macos-arm64e-workaround.md](references/macos-arm64e-workaround.md) | Apple Silicon build tracing workarounds |",
+        "target_path": "references/macos-arm64e-workaround.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 267,
+        "column": 31,
+        "evidence": "| [references/build-fixes.md](references/build-fixes.md) | Build failure fix catalog |",
+        "target_path": "references/build-fixes.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 267,
+        "column": 4,
+        "evidence": "| [references/build-fixes.md](references/build-fixes.md) | Build failure fix catalog |",
+        "target_path": "references/build-fixes.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 268,
+        "column": 38,
+        "evidence": "| [references/quality-assessment.md](references/quality-assessment.md) | Database quality metrics and improvements |",
+        "target_path": "references/quality-assessment.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 268,
+        "column": 4,
+        "evidence": "| [references/quality-assessment.md](references/quality-assessment.md) | Database quality metrics and improvements |",
+        "target_path": "references/quality-assessment.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 269,
+        "column": 41,
+        "evidence": "| [references/extension-yaml-format.md](references/extension-yaml-format.md) | Data extension YAML column definitions and examples |",
+        "target_path": "references/extension-yaml-format.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 269,
+        "column": 4,
+        "evidence": "| [references/extension-yaml-format.md](references/extension-yaml-format.md) | Data extension YAML column definitions and examples |",
+        "target_path": "references/extension-yaml-format.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 270,
+        "column": 36,
+        "evidence": "| [references/sarif-processing.md](references/sarif-processing.md) | jq commands for SARIF output processing |",
+        "target_path": "references/sarif-processing.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 270,
+        "column": 4,
+        "evidence": "| [references/sarif-processing.md](references/sarif-processing.md) | jq commands for SARIF output processing |",
+        "target_path": "references/sarif-processing.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 271,
+        "column": 46,
+        "evidence": "| [references/diagnostic-query-templates.md](references/diagnostic-query-templates.md) | QL queries for source/sink enumeration |",
+        "target_path": "references/diagnostic-query-templates.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 271,
+        "column": 4,
+        "evidence": "| [references/diagnostic-query-templates.md](references/diagnostic-query-templates.md) | QL queries for source/sink enumeration |",
+        "target_path": "references/diagnostic-query-templates.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 272,
+        "column": 40,
+        "evidence": "| [references/important-only-suite.md](references/important-only-suite.md) | Important-only suite template and generation |",
+        "target_path": "references/important-only-suite.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 272,
+        "column": 4,
+        "evidence": "| [references/important-only-suite.md](references/important-only-suite.md) | Important-only suite template and generation |",
+        "target_path": "references/important-only-suite.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 273,
+        "column": 33,
+        "evidence": "| [references/run-all-suite.md](references/run-all-suite.md) | Run-all suite template |",
+        "target_path": "references/run-all-suite.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 273,
+        "column": 4,
+        "evidence": "| [references/run-all-suite.md](references/run-all-suite.md) | Run-all suite template |",
+        "target_path": "references/run-all-suite.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 274,
+        "column": 35,
+        "evidence": "| [references/ruleset-catalog.md](references/ruleset-catalog.md) | Available query packs by language |",
+        "target_path": "references/ruleset-catalog.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 274,
+        "column": 4,
+        "evidence": "| [references/ruleset-catalog.md](references/ruleset-catalog.md) | Available query packs by language |",
+        "target_path": "references/ruleset-catalog.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 275,
+        "column": 33,
+        "evidence": "| [references/threat-models.md](references/threat-models.md) | Threat model configuration |",
+        "target_path": "references/threat-models.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 275,
+        "column": 4,
+        "evidence": "| [references/threat-models.md](references/threat-models.md) | Threat model configuration |",
+        "target_path": "references/threat-models.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 276,
+        "column": 36,
+        "evidence": "| [references/language-details.md](references/language-details.md) | Language-specific build and extraction details |",
+        "target_path": "references/language-details.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 276,
+        "column": 4,
+        "evidence": "| [references/language-details.md](references/language-details.md) | Language-specific build and extraction details |",
+        "target_path": "references/language-details.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 277,
+        "column": 38,
+        "evidence": "| [references/performance-tuning.md](references/performance-tuning.md) | Memory, threading, and timeout configuration |",
+        "target_path": "references/performance-tuning.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 277,
+        "column": 4,
+        "evidence": "| [references/performance-tuning.md](references/performance-tuning.md) | Memory, threading, and timeout configuration |",
+        "target_path": "references/performance-tuning.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 287,
+        "column": 39,
+        "evidence": "- [ ] Database built (discovered via `codeql-database.yml` marker) and `{baseDir}/scripts/check_db_quality.py` exited zero",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 291,
+        "column": 40,
+        "evidence": "- [ ] Selected query packs logged to `$OUTPUT_DIR/rulesets.txt`",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 292,
+        "column": 41,
+        "evidence": "- [ ] Unfiltered results preserved in `$OUTPUT_DIR/raw/results.sarif`",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 293,
+        "column": 26,
+        "evidence": "- [ ] Final results in `$OUTPUT_DIR/results/results.sarif` (filtered for important-only, copied for run-all)",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 295,
+        "column": 32,
+        "evidence": "- [ ] Build log preserved at `$OUTPUT_DIR/build.log` with all commands, fixes, and quality assessments",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "plain_path"
+      }
+    ],
+    "limitations": [
+      "Analyzer static_patterns_tool_misuse status: degraded."
+    ],
+    "findings_before_filtering": 14,
+    "findings_after_filtering": 14
+  }
+}
