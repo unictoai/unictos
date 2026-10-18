@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "mcp-builder",
-    "source": "/home/hatch/workspace/ai-store/scan-work/repos/anthropics-skills/skills/mcp-builder",
-    "scanned_at": "2026-10-13T08:41:19.307023+00:00"
+    "source": "/tmp/uniscan-l7wcdvex/repo/skills/mcp-builder",
+    "scanned_at": "2026-10-18T08:07:26.226685+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -116,97 +116,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-5fbf4b4dd7124594ae612240e51768d9",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 58,
-        "end_line": null
-      },
-      "finding": "reference/mcp_best_practices.md (failed)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "- **MCP Best Practices**: [\ud83d\udccb View Best Practices](./reference/mcp_best_practices.md) - Core guidelines",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:failed"
-      ],
-      "evidence": {
-        "target_path": "reference/mcp_best_practices.md",
-        "target_disposition": "failed",
-        "reasons": [
-          {
-            "reason_code": "analyzer_runtime_error",
-            "message": "Analyzer failed after beginning applicable work.",
-            "phase": "analyzer",
-            "analyzers": [
-              "static_patterns_supply_chain"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "75d22e24abc82c31dd2f0254d94dbb6f3cddb9ec259fbf6aed3d8dded91c5777",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 58,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-82083a7715f146ac806cf0477f0c23ed",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 204,
-        "end_line": null
-      },
-      "finding": "reference/mcp_best_practices.md (failed)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "- [\ud83d\udccb MCP Best Practices](./reference/mcp_best_practices.md) - Universal MCP guidelines including:",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:failed"
-      ],
-      "evidence": {
-        "target_path": "reference/mcp_best_practices.md",
-        "target_disposition": "failed",
-        "reasons": [
-          {
-            "reason_code": "analyzer_runtime_error",
-            "message": "Analyzer failed after beginning applicable work.",
-            "phase": "analyzer",
-            "analyzers": [
-              "static_patterns_supply_chain"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "75d22e24abc82c31dd2f0254d94dbb6f3cddb9ec259fbf6aed3d8dded91c5777",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 204,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-80c9b9d5f5854d4b84ec0e0db366359f",
+      "finding_id": "finding-99ff0f78ccce48a98835fd5a0fcfb2ec",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -216,7 +126,7 @@
         "start_line": 62,
         "end_line": null
       },
-      "finding": "reference/node_mcp_server.md (failed)",
+      "finding": "reference/node_mcp_server.md (partial)",
       "explanation": "Referenced artifact was not completely inspected",
       "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
       "code_snippet": "- [\u26a1 TypeScript Guide](./reference/node_mcp_server.md) - TypeScript patterns and examples",
@@ -224,11 +134,11 @@
       "tags": [
         "coverage",
         "reference",
-        "target-disposition:failed"
+        "target-disposition:partial"
       ],
       "evidence": {
         "target_path": "reference/node_mcp_server.md",
-        "target_disposition": "failed",
+        "target_disposition": "partial",
         "reasons": [
           {
             "reason_code": "obfuscated_instruction_text",
@@ -311,9 +221,9 @@
             ]
           },
           {
-            "reason_code": "analyzer_runtime_error",
-            "message": "Analyzer failed after beginning applicable work.",
-            "phase": "analyzer",
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
             "analyzers": [
               "static_patterns_supply_chain"
             ]
@@ -347,7 +257,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-0a20f365f1494be9943fb039a9f95f6f",
+      "finding_id": "finding-25b6da054c2a4398b634358e287d4cd0",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -357,7 +267,7 @@
         "start_line": 83,
         "end_line": null
       },
-      "finding": "reference/node_mcp_server.md (failed)",
+      "finding": "reference/node_mcp_server.md (partial)",
       "explanation": "Referenced artifact was not completely inspected",
       "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
       "code_snippet": "- [\u26a1 TypeScript Guide](./reference/node_mcp_server.md) - Project structure, package.json, tsconfig.json",
@@ -365,11 +275,11 @@
       "tags": [
         "coverage",
         "reference",
-        "target-disposition:failed"
+        "target-disposition:partial"
       ],
       "evidence": {
         "target_path": "reference/node_mcp_server.md",
-        "target_disposition": "failed",
+        "target_disposition": "partial",
         "reasons": [
           {
             "reason_code": "obfuscated_instruction_text",
@@ -452,9 +362,9 @@
             ]
           },
           {
-            "reason_code": "analyzer_runtime_error",
-            "message": "Analyzer failed after beginning applicable work.",
-            "phase": "analyzer",
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
             "analyzers": [
               "static_patterns_supply_chain"
             ]
@@ -488,7 +398,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-8186fdab062d4a068c69d34505ea019b",
+      "finding_id": "finding-d434104219634ee1a63185c403a1caaf",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -498,7 +408,7 @@
         "start_line": 223,
         "end_line": null
       },
-      "finding": "reference/node_mcp_server.md (failed)",
+      "finding": "reference/node_mcp_server.md (partial)",
       "explanation": "Referenced artifact was not completely inspected",
       "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
       "code_snippet": "- [\u26a1 TypeScript Implementation Guide](./reference/node_mcp_server.md) - Complete TypeScript guide with:",
@@ -506,11 +416,11 @@
       "tags": [
         "coverage",
         "reference",
-        "target-disposition:failed"
+        "target-disposition:partial"
       ],
       "evidence": {
         "target_path": "reference/node_mcp_server.md",
-        "target_disposition": "failed",
+        "target_disposition": "partial",
         "reasons": [
           {
             "reason_code": "obfuscated_instruction_text",
@@ -593,9 +503,9 @@
             ]
           },
           {
-            "reason_code": "analyzer_runtime_error",
-            "message": "Analyzer failed after beginning applicable work.",
-            "phase": "analyzer",
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "phase": "static",
             "analyzers": [
               "static_patterns_supply_chain"
             ]
@@ -629,7 +539,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-8385f2f692da4ad2a7d47da0a77f5b01",
+      "finding_id": "finding-98eb498185034415bd74bd659eac0fb8",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -639,28 +549,20 @@
         "start_line": 66,
         "end_line": null
       },
-      "finding": "reference/python_mcp_server.md (failed)",
+      "finding": "reference/python_mcp_server.md (partial)",
       "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
       "code_snippet": "- [\ud83d\udc0d Python Guide](./reference/python_mcp_server.md) - Python patterns and examples",
       "intent": null,
       "tags": [
         "coverage",
         "reference",
-        "target-disposition:failed"
+        "target-disposition:partial"
       ],
       "evidence": {
         "target_path": "reference/python_mcp_server.md",
-        "target_disposition": "failed",
+        "target_disposition": "partial",
         "reasons": [
-          {
-            "reason_code": "analyzer_runtime_error",
-            "message": "Analyzer failed after beginning applicable work.",
-            "phase": "analyzer",
-            "analyzers": [
-              "static_patterns_supply_chain"
-            ]
-          },
           {
             "reason_code": "static_parse_limit",
             "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
@@ -682,7 +584,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-3f248b9e0e79455da2929e06f388a8f2",
+      "finding_id": "finding-95ed9c13288e4025ba6faab2363e9863",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -692,28 +594,20 @@
         "start_line": 84,
         "end_line": null
       },
-      "finding": "reference/python_mcp_server.md (failed)",
+      "finding": "reference/python_mcp_server.md (partial)",
       "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
       "code_snippet": "- [\ud83d\udc0d Python Guide](./reference/python_mcp_server.md) - Module organization, dependencies",
       "intent": null,
       "tags": [
         "coverage",
         "reference",
-        "target-disposition:failed"
+        "target-disposition:partial"
       ],
       "evidence": {
         "target_path": "reference/python_mcp_server.md",
-        "target_disposition": "failed",
+        "target_disposition": "partial",
         "reasons": [
-          {
-            "reason_code": "analyzer_runtime_error",
-            "message": "Analyzer failed after beginning applicable work.",
-            "phase": "analyzer",
-            "analyzers": [
-              "static_patterns_supply_chain"
-            ]
-          },
           {
             "reason_code": "static_parse_limit",
             "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
@@ -735,7 +629,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-b6931e7a1499420b83306de25b3b3135",
+      "finding_id": "finding-93d64348bd254fb6ad6dc44a43639d98",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -745,28 +639,20 @@
         "start_line": 216,
         "end_line": null
       },
-      "finding": "reference/python_mcp_server.md (failed)",
+      "finding": "reference/python_mcp_server.md (partial)",
       "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
       "code_snippet": "- [\ud83d\udc0d Python Implementation Guide](./reference/python_mcp_server.md) - Complete Python/FastMCP guide with:",
       "intent": null,
       "tags": [
         "coverage",
         "reference",
-        "target-disposition:failed"
+        "target-disposition:partial"
       ],
       "evidence": {
         "target_path": "reference/python_mcp_server.md",
-        "target_disposition": "failed",
+        "target_disposition": "partial",
         "reasons": [
-          {
-            "reason_code": "analyzer_runtime_error",
-            "message": "Analyzer failed after beginning applicable work.",
-            "phase": "analyzer",
-            "analyzers": [
-              "static_patterns_supply_chain"
-            ]
-          },
           {
             "reason_code": "static_parse_limit",
             "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
@@ -787,98 +673,8 @@
       ]
     },
     {
-      "id": "AE1",
-      "finding_id": "finding-af22cb44463b4278b40d734d00634ef2",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 155,
-        "end_line": null
-      },
-      "finding": "reference/evaluation.md (failed)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "**Load [\u2705 Evaluation Guide](./reference/evaluation.md) for complete evaluation guidelines.**",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:failed"
-      ],
-      "evidence": {
-        "target_path": "reference/evaluation.md",
-        "target_disposition": "failed",
-        "reasons": [
-          {
-            "reason_code": "analyzer_runtime_error",
-            "message": "Analyzer failed after beginning applicable work.",
-            "phase": "analyzer",
-            "analyzers": [
-              "static_patterns_supply_chain"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "79aed90be07f9865b743b7b1e36e7924d4bd4006e0bf05e896eb0642dd5f0aad",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 155,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-5a00a15297a843fd92c4b71f5352d224",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 231,
-        "end_line": null
-      },
-      "finding": "reference/evaluation.md (failed)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "- [\u2705 Evaluation Guide](./reference/evaluation.md) - Complete evaluation creation guide with:",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:failed"
-      ],
-      "evidence": {
-        "target_path": "reference/evaluation.md",
-        "target_disposition": "failed",
-        "reasons": [
-          {
-            "reason_code": "analyzer_runtime_error",
-            "message": "Analyzer failed after beginning applicable work.",
-            "phase": "analyzer",
-            "analyzers": [
-              "static_patterns_supply_chain"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "79aed90be07f9865b743b7b1e36e7924d4bd4006e0bf05e896eb0642dd5f0aad",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 231,
-          "end_line": null
-        }
-      ]
-    },
-    {
       "id": "EA5",
-      "finding_id": "finding-9bd4b0b9485243b0a17aadc01486b7ba",
+      "finding_id": "finding-eacead540af1441e9c0ffdade6ca82aa",
       "category": "Excessive Agency",
       "pattern": "External Model or Provider Selection",
       "severity": "HIGH",
@@ -914,7 +710,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-98c8b5daf45a4d0c9c0e53c9dbcdd2e5",
+      "finding_id": "finding-3527c0c95045414faa9adaee78ed38a8",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -948,7 +744,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-c3b3262bd001445190ed53ce08baf5e3",
+      "finding_id": "finding-fd35b4a4e47f44bcad78183309e2ac60",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: file_write, mcp.",
       "severity": "MEDIUM",
@@ -978,7 +774,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-a16b11ddabbc48ff9ac422ade50d84da",
+      "finding_id": "finding-b090546c9f1c4f168557e110d97b92d1",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx @modelcontextprotocol/inspector'.",
       "severity": "MEDIUM",
@@ -1008,7 +804,7 @@
     },
     {
       "id": "EA1",
-      "finding_id": "finding-3d733b146f204bcf876faebf358ff866",
+      "finding_id": "finding-57cc2a3871cc4f35b46a027adecfe57c",
       "category": "Excessive Agency",
       "pattern": "Unrestricted Tool Access",
       "severity": "MEDIUM",
@@ -1040,7 +836,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-8b9f7e4263924981ad49c98126a89673",
+      "finding_id": "finding-60fcba27881c44df8c7e9830e78bc712",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1072,7 +868,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-49cb2b2f97fb455e845abc4b287530d0",
+      "finding_id": "finding-9eea661d40df4ed38e9b2687afccfa4a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1099,6 +895,130 @@
           "start_line": 353,
           "end_line": null,
           "start_column": 16
+        }
+      ]
+    },
+    {
+      "id": "SC1",
+      "finding_id": "finding-4b3c12ddfb8247dcaf56f4436b37cf72",
+      "category": "Supply Chain",
+      "pattern": "Unpinned Dependencies",
+      "severity": "LOW",
+      "confidence": 0.5,
+      "location": {
+        "file": "scripts/requirements.txt",
+        "start_line": 1,
+        "end_line": null,
+        "start_column": 0
+      },
+      "finding": "anthropic>=0.39.0",
+      "explanation": "Dependencies lack version pinning, allowing potential malicious package updates. Consider pinning versions.",
+      "remediation": "Pin all dependency versions in requirements.txt or pyproject.toml. Use exact versions (==) or compatible ranges. Run pip-audit regularly.",
+      "code_snippet": "anthropic>=0.39.0\nmcp>=1.1.0",
+      "intent": null,
+      "tags": [
+        "Supply Chain"
+      ],
+      "evidence": {},
+      "match_fingerprint": "f9e4870c2bcd9ae839aa5166f347680a851f8eda97ff74d95760b7dfbcd4ee65",
+      "occurrences": [
+        {
+          "file": "scripts/requirements.txt",
+          "start_line": 1,
+          "end_line": null,
+          "start_column": 0
+        }
+      ]
+    },
+    {
+      "id": "SC4",
+      "finding_id": "finding-7e4d67a4fa674500af253042b9b90ebe",
+      "category": "Supply Chain",
+      "pattern": "Unverifiable Dependency: anthropic has 4 known advisory(ies) (CVE-2026-34450 (Claude SDK for Python has Insecure Default File Permissions in Local Filesystem ); CVE-2026-34452 (Claude SDK for Python: Memory Tool Path Validation Race Condition Allows Sandbox); CVE-2026-34450 (The Claude SDK for Python provides access to the Claude API from Python applicat) +1 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
+      "severity": "LOW",
+      "confidence": 0.4,
+      "location": {
+        "file": "scripts/requirements.txt",
+        "start_line": 1,
+        "end_line": null
+      },
+      "finding": "anthropic",
+      "explanation": "OSV returned advisories for this package, but its resolved version is unknown. A package-name lookup does not establish whether the installed release is affected by those advisories.",
+      "remediation": "Determine the dependency's exact resolved version from the environment or lockfile and compare it with the advisories in OSV (osv.dev). If it is affected, use a verified fixed release or remove or replace the dependency when no fix is available.",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "Supply Chain"
+      ],
+      "evidence": {},
+      "match_fingerprint": "ba396571755991a05bfe259315f0c4f9e13d9d4a7b35817c1573c851f625c481",
+      "occurrences": [
+        {
+          "file": "scripts/requirements.txt",
+          "start_line": 1,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "SC1",
+      "finding_id": "finding-76ec215b6b6a444d8765b230573ce122",
+      "category": "Supply Chain",
+      "pattern": "Unpinned Dependencies",
+      "severity": "LOW",
+      "confidence": 0.5,
+      "location": {
+        "file": "scripts/requirements.txt",
+        "start_line": 2,
+        "end_line": null,
+        "start_column": 0
+      },
+      "finding": "mcp>=1.1.0\n",
+      "explanation": "Dependencies lack version pinning, allowing potential malicious package updates. Consider pinning versions.",
+      "remediation": "Pin all dependency versions in requirements.txt or pyproject.toml. Use exact versions (==) or compatible ranges. Run pip-audit regularly.",
+      "code_snippet": "anthropic>=0.39.0\nmcp>=1.1.0",
+      "intent": null,
+      "tags": [
+        "Supply Chain"
+      ],
+      "evidence": {},
+      "match_fingerprint": "aa8cc981db80f64348adc45bffa81aee7c438189aadbc7909aa55ac9909b1c4f",
+      "occurrences": [
+        {
+          "file": "scripts/requirements.txt",
+          "start_line": 2,
+          "end_line": null,
+          "start_column": 0
+        }
+      ]
+    },
+    {
+      "id": "SC4",
+      "finding_id": "finding-a84ee684ae044396894fb1ad6be8554f",
+      "category": "Supply Chain",
+      "pattern": "Unverifiable Dependency: mcp has 13 known advisory(ies) (CVE-2025-53366 (MCP Python SDK vulnerability in the FastMCP Server causes validation error, lead); CVE-2026-59951 (MCP Python SDK: Unbounded Session Accumulation in StreamableHTTP Transport Enabl); CVE-2025-66416 (Model Context Protocol (MCP) Python SDK does not enable DNS rebinding protection) +10 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
+      "severity": "LOW",
+      "confidence": 0.4,
+      "location": {
+        "file": "scripts/requirements.txt",
+        "start_line": 2,
+        "end_line": null
+      },
+      "finding": "mcp",
+      "explanation": "OSV returned advisories for this package, but its resolved version is unknown. A package-name lookup does not establish whether the installed release is affected by those advisories.",
+      "remediation": "Determine the dependency's exact resolved version from the environment or lockfile and compare it with the advisories in OSV (osv.dev). If it is affected, use a verified fixed release or remove or replace the dependency when no fix is available.",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "Supply Chain"
+      ],
+      "evidence": {},
+      "match_fingerprint": "39a096d0bac836446c112bdf2439bf78b9303ecd528e662532db9f7085692172",
+      "occurrences": [
+        {
+          "file": "scripts/requirements.txt",
+          "start_line": 2,
+          "end_line": null
         }
       ]
     }
@@ -1136,7 +1056,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1149,7 +1069,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1162,7 +1082,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1175,7 +1095,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1188,7 +1108,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1226,46 +1146,18 @@
     },
     "filtering_mode": "heuristic"
   },
-  "execution_successful": false,
+  "execution_successful": true,
   "analysis_completeness": {
     "total_components": 10,
-    "scanned_components": 0,
-    "coverage_percent": 0.0,
+    "scanned_components": 8,
+    "coverage_percent": 80.0,
     "is_complete": false,
-    "status": "failed",
-    "execution_successful": false,
-    "fully_inspected_files": 0,
-    "partially_inspected_files": 10,
+    "status": "partial",
+    "execution_successful": true,
+    "fully_inspected_files": 8,
+    "partially_inspected_files": 2,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "LICENSE.txt",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "SKILL.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
       {
         "outcome": "partial",
         "phase": "reference_resolution",
@@ -1275,48 +1167,6 @@
         "start_line": 226,
         "end_line": 226,
         "fatal": false
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "reference/evaluation.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "reference/mcp_best_practices.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "reference/node_mcp_server.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
       },
       {
         "outcome": "partial",
@@ -1338,6 +1188,7 @@
           "static_patterns_prompt_injection",
           "static_patterns_rogue_agent",
           "static_patterns_ssrf",
+          "static_patterns_supply_chain",
           "static_patterns_system_prompt_leakage"
         ]
       },
@@ -1355,20 +1206,6 @@
         ]
       },
       {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "reference/python_mcp_server.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
@@ -1380,62 +1217,6 @@
         "analyzers": [
           "static_patterns_tool_misuse"
         ]
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "scripts/connections.py",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "scripts/evaluation.py",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "scripts/example_evaluation.xml",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "scripts/requirements.txt",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
       }
     ],
     "scope_exclusions": [],
@@ -1527,8 +1308,8 @@
       {
         "analyzer_id": "reference_coverage",
         "status": "completed",
-        "planned_work": 10,
-        "completed": 10,
+        "planned_work": 6,
+        "completed": 6,
         "partial": 0,
         "skipped": 0,
         "failed": 0,
@@ -1692,15 +1473,13 @@
       },
       {
         "analyzer_id": "static_patterns_supply_chain",
-        "status": "failed",
+        "status": "degraded",
         "planned_work": 10,
-        "completed": 0,
-        "partial": 0,
+        "completed": 9,
+        "partial": 1,
         "skipped": 0,
-        "failed": 10,
-        "unaccounted": 0,
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work."
+        "failed": 0,
+        "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_system_prompt_leakage",
@@ -1856,7 +1635,7 @@
       "Analyzer static_patterns_prompt_injection status: degraded.",
       "Analyzer static_patterns_rogue_agent status: degraded.",
       "Analyzer static_patterns_ssrf status: degraded.",
-      "Analyzer failed after beginning applicable work.",
+      "Analyzer static_patterns_supply_chain status: degraded.",
       "Analyzer static_patterns_system_prompt_leakage status: degraded.",
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],

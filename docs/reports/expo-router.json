@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "expo-router",
-    "source": "/tmp/uniscan-trial/expo-skills/plugins/expo/skills/expo-router",
-    "scanned_at": "2026-10-13T08:17:37.953565+00:00"
+    "source": "/tmp/uniscan-z2kg7z8g/repo/plugins/expo/skills/expo-router",
+    "scanned_at": "2026-10-18T07:46:57.974558+00:00"
   },
   "risk_assessment": {
     "score": 14,
@@ -96,7 +96,7 @@
   "issues": [
     {
       "id": "RP1",
-      "finding_id": "finding-0bba8742a4b64df585c2d39669f3ef63",
+      "finding_id": "finding-805749424023474ca2fceb298f29f799",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx --yes submit-expo-feedback'.",
       "severity": "MEDIUM",
@@ -126,7 +126,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-68c39fe2b9164d88913c29ea9646fd2f",
+      "finding_id": "finding-3b836a42963647599c30d4bc89f1ffd5",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -190,7 +190,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -203,7 +203,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -216,7 +216,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -229,7 +229,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -242,7 +242,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

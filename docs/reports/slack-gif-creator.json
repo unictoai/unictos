@@ -1,14 +1,14 @@
 {
   "skill": {
     "name": "slack-gif-creator",
-    "source": "/tmp/uniscan-trial/skills/skills/slack-gif-creator",
-    "scanned_at": "2026-10-13T08:06:54.484647+00:00"
+    "source": "/tmp/uniscan-s7v248kr/repo/skills/slack-gif-creator",
+    "scanned_at": "2026-10-18T07:39:14.241722+00:00"
   },
   "risk_assessment": {
-    "score": 0,
+    "score": 7,
     "severity": "LOW",
     "recommendation": "CAUTION",
-    "max_issue_severity": "NONE"
+    "max_issue_severity": "LOW"
   },
   "components": [
     {
@@ -83,7 +83,196 @@
     }
   ],
   "structured_summaries": [],
-  "issues": [],
+  "issues": [
+    {
+      "id": "SC1",
+      "finding_id": "finding-e1a96d0d166745dca192a4f341586770",
+      "category": "Supply Chain",
+      "pattern": "Unpinned Dependencies",
+      "severity": "LOW",
+      "confidence": 0.5,
+      "location": {
+        "file": "requirements.txt",
+        "start_line": 1,
+        "end_line": null,
+        "start_column": 0
+      },
+      "finding": "pillow>=10.0.0",
+      "explanation": "Dependencies lack version pinning, allowing potential malicious package updates. Consider pinning versions.",
+      "remediation": "Pin all dependency versions in requirements.txt or pyproject.toml. Use exact versions (==) or compatible ranges. Run pip-audit regularly.",
+      "code_snippet": "pillow>=10.0.0\nimageio>=2.31.0\nimageio-ffmpeg>=0.4.9\nnumpy>=1.24.0",
+      "intent": null,
+      "tags": [
+        "Supply Chain"
+      ],
+      "evidence": {},
+      "match_fingerprint": "64cbeb46dd0772a158fae9e9c2b825b4209f274364bcc9e6cbc7ba178c1f708c",
+      "occurrences": [
+        {
+          "file": "requirements.txt",
+          "start_line": 1,
+          "end_line": null,
+          "start_column": 0
+        }
+      ]
+    },
+    {
+      "id": "SC4",
+      "finding_id": "finding-5dfacd0e68e243fca50588b913398c99",
+      "category": "Supply Chain",
+      "pattern": "Unverifiable Dependency: pillow has 16 known advisory(ies) (CVE-2016-2533 (Pillow buffer overflow in ImagingPcdDecode); CVE-2023-50447 (Arbitrary Code Execution in Pillow); CVE-2021-27922 (Pillow Uncontrolled Resource Consumption) +13 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
+      "severity": "LOW",
+      "confidence": 0.4,
+      "location": {
+        "file": "requirements.txt",
+        "start_line": 1,
+        "end_line": null
+      },
+      "finding": "pillow",
+      "explanation": "OSV returned advisories for this package, but its resolved version is unknown. A package-name lookup does not establish whether the installed release is affected by those advisories.",
+      "remediation": "Determine the dependency's exact resolved version from the environment or lockfile and compare it with the advisories in OSV (osv.dev). If it is affected, use a verified fixed release or remove or replace the dependency when no fix is available.",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "Supply Chain"
+      ],
+      "evidence": {},
+      "match_fingerprint": "d997bec1825a2a3141b7e1c37f1c9e196239e295fad66b53033fbdf9e1dfcd0b",
+      "occurrences": [
+        {
+          "file": "requirements.txt",
+          "start_line": 1,
+          "end_line": null
+        }
+      ]
+    },
+    {
+      "id": "SC1",
+      "finding_id": "finding-0b704cf44dff45a2a6106abc19a73581",
+      "category": "Supply Chain",
+      "pattern": "Unpinned Dependencies",
+      "severity": "LOW",
+      "confidence": 0.5,
+      "location": {
+        "file": "requirements.txt",
+        "start_line": 2,
+        "end_line": null,
+        "start_column": 0
+      },
+      "finding": "imageio>=2.31.0",
+      "explanation": "Dependencies lack version pinning, allowing potential malicious package updates. Consider pinning versions.",
+      "remediation": "Pin all dependency versions in requirements.txt or pyproject.toml. Use exact versions (==) or compatible ranges. Run pip-audit regularly.",
+      "code_snippet": "pillow>=10.0.0\nimageio>=2.31.0\nimageio-ffmpeg>=0.4.9\nnumpy>=1.24.0",
+      "intent": null,
+      "tags": [
+        "Supply Chain"
+      ],
+      "evidence": {},
+      "match_fingerprint": "9424951e694cd28843adc6afcc3128a26a34dbb17e17c9b551bcd83c59f3c305",
+      "occurrences": [
+        {
+          "file": "requirements.txt",
+          "start_line": 2,
+          "end_line": null,
+          "start_column": 0
+        }
+      ]
+    },
+    {
+      "id": "SC1",
+      "finding_id": "finding-4329c50fdf6b46e0ae80aa3d3f1ba6a4",
+      "category": "Supply Chain",
+      "pattern": "Unpinned Dependencies",
+      "severity": "LOW",
+      "confidence": 0.5,
+      "location": {
+        "file": "requirements.txt",
+        "start_line": 3,
+        "end_line": null,
+        "start_column": 0
+      },
+      "finding": "imageio-ffmpeg>=0.4.9",
+      "explanation": "Dependencies lack version pinning, allowing potential malicious package updates. Consider pinning versions.",
+      "remediation": "Pin all dependency versions in requirements.txt or pyproject.toml. Use exact versions (==) or compatible ranges. Run pip-audit regularly.",
+      "code_snippet": "pillow>=10.0.0\nimageio>=2.31.0\nimageio-ffmpeg>=0.4.9\nnumpy>=1.24.0",
+      "intent": null,
+      "tags": [
+        "Supply Chain"
+      ],
+      "evidence": {},
+      "match_fingerprint": "8e3420115a105c31ce31d820733896dbb686c88e1b795a75275acfb12feae5c5",
+      "occurrences": [
+        {
+          "file": "requirements.txt",
+          "start_line": 3,
+          "end_line": null,
+          "start_column": 0
+        }
+      ]
+    },
+    {
+      "id": "SC1",
+      "finding_id": "finding-d33bb8e30e634aaea06211093b1ac67f",
+      "category": "Supply Chain",
+      "pattern": "Unpinned Dependencies",
+      "severity": "LOW",
+      "confidence": 0.5,
+      "location": {
+        "file": "requirements.txt",
+        "start_line": 4,
+        "end_line": null,
+        "start_column": 0
+      },
+      "finding": "numpy>=1.24.0",
+      "explanation": "Dependencies lack version pinning, allowing potential malicious package updates. Consider pinning versions.",
+      "remediation": "Pin all dependency versions in requirements.txt or pyproject.toml. Use exact versions (==) or compatible ranges. Run pip-audit regularly.",
+      "code_snippet": "pillow>=10.0.0\nimageio>=2.31.0\nimageio-ffmpeg>=0.4.9\nnumpy>=1.24.0",
+      "intent": null,
+      "tags": [
+        "Supply Chain"
+      ],
+      "evidence": {},
+      "match_fingerprint": "34e0bf1f00930f4454049cfcb34929d4ac7a3145b2da9619b4fd9e36f60bbaa1",
+      "occurrences": [
+        {
+          "file": "requirements.txt",
+          "start_line": 4,
+          "end_line": null,
+          "start_column": 0
+        }
+      ]
+    },
+    {
+      "id": "SC4",
+      "finding_id": "finding-c485786a27d447799e96f6ae17d02606",
+      "category": "Supply Chain",
+      "pattern": "Unverifiable Dependency: numpy has 16 known advisory(ies) (CVE-2014-1859 (Numpy arbitrary file write via symlink attack); CVE-2021-41495 (NumPy NULL Pointer Dereference); CVE-2021-33430 (NumPy Buffer Overflow (Disputed)) +13 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
+      "severity": "LOW",
+      "confidence": 0.4,
+      "location": {
+        "file": "requirements.txt",
+        "start_line": 4,
+        "end_line": null
+      },
+      "finding": "numpy",
+      "explanation": "OSV returned advisories for this package, but its resolved version is unknown. A package-name lookup does not establish whether the installed release is affected by those advisories.",
+      "remediation": "Determine the dependency's exact resolved version from the environment or lockfile and compare it with the advisories in OSV (osv.dev). If it is affected, use a verified fixed release or remove or replace the dependency when no fix is available.",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "Supply Chain"
+      ],
+      "evidence": {},
+      "match_fingerprint": "4f79ecef9fb365f08743ec4501c2301acbdffbc92cf5eb8581b3feba433c9899",
+      "occurrences": [
+        {
+          "file": "requirements.txt",
+          "start_line": 4,
+          "end_line": null
+        }
+      ]
+    }
+  ],
   "suppressed_count": 0,
   "suppressed": [],
   "metadata": {
@@ -117,7 +306,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -130,7 +319,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -143,7 +332,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -156,7 +345,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -169,7 +358,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -207,46 +396,18 @@
     },
     "filtering_mode": "heuristic"
   },
-  "execution_successful": false,
+  "execution_successful": true,
   "analysis_completeness": {
     "total_components": 7,
-    "scanned_components": 0,
-    "coverage_percent": 0.0,
+    "scanned_components": 6,
+    "coverage_percent": 85.7,
     "is_complete": false,
-    "status": "failed",
-    "execution_successful": false,
-    "fully_inspected_files": 0,
-    "partially_inspected_files": 7,
+    "status": "partial",
+    "execution_successful": true,
+    "fully_inspected_files": 6,
+    "partially_inspected_files": 1,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "LICENSE.txt",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "SKILL.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
       {
         "outcome": "partial",
         "phase": "reference_resolution",
@@ -328,74 +489,17 @@
         "fatal": false
       },
       {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "core/easing.py",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "core/frame_composer.py",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "core/gif_builder.py",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "core/validators.py",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "output_limit",
+        "message": "Inspection reached its configured output limit.",
         "path": "requirements.txt",
         "start_line": null,
         "end_line": null,
-        "fatal": true,
+        "fatal": false,
         "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
+          "static_patterns_supply_chain_dependencies_output_limit"
+        ]
       }
     ],
     "scope_exclusions": [],
@@ -474,15 +578,15 @@
       },
       {
         "analyzer_id": "meta_analyzer",
-        "status": "not_applicable",
+        "status": "disabled",
         "planned_work": 0,
         "completed": 0,
         "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0,
-        "reason_code": "no_applicable_files",
-        "message": "No files matched this analyzer's applicability contract."
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
       },
       {
         "analyzer_id": "semantic_developer_intent",
@@ -642,15 +746,13 @@
       },
       {
         "analyzer_id": "static_patterns_supply_chain",
-        "status": "failed",
-        "planned_work": 7,
-        "completed": 0,
-        "partial": 0,
+        "status": "degraded",
+        "planned_work": 8,
+        "completed": 7,
+        "partial": 1,
         "skipped": 0,
-        "failed": 7,
-        "unaccounted": 0,
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work."
+        "failed": 0,
+        "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_system_prompt_leakage",
@@ -766,9 +868,9 @@
       }
     ],
     "limitations": [
-      "Analyzer failed after beginning applicable work."
+      "Analyzer static_patterns_supply_chain status: degraded."
     ],
-    "findings_before_filtering": 0,
-    "findings_after_filtering": 0
+    "findings_before_filtering": 6,
+    "findings_after_filtering": 6
   }
 }

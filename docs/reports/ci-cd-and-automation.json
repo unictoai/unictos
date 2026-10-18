@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "ci-cd-and-automation",
-    "source": "/tmp/uniscan-trial/addyosmani-skills/skills/ci-cd-and-automation",
-    "scanned_at": "2026-10-13T08:15:38.714026+00:00"
+    "source": "/tmp/uniscan-essai9tl/repo/skills/ci-cd-and-automation",
+    "scanned_at": "2026-10-18T07:44:52.851466+00:00"
   },
   "risk_assessment": {
     "score": 27,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "PE3",
-      "finding_id": "finding-2233d8c45b2149a6a3cd4a6e55d35cff",
+      "finding_id": "finding-0c8dab09079c416ab37ed30824848319",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -58,7 +58,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-e6ee13a353414a5fa5da0657d88cbefc",
+      "finding_id": "finding-97a9e01ff29b4807bde88ec68ca974fa",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx tsc'.",
       "severity": "MEDIUM",
@@ -88,7 +88,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-5f2171a1b61d44d0995401e146910498",
+      "finding_id": "finding-b276aa2fe7174fc5ac9452807acb5a1f",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx tsc'.",
       "severity": "MEDIUM",
@@ -118,7 +118,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-141dacd0a2b840b694f5568f3d69cd9b",
+      "finding_id": "finding-be8698d135db4eee9e305941d8aaa09b",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx prisma'.",
       "severity": "MEDIUM",
@@ -148,7 +148,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-a01c0e172b844df5991c14a4141145db",
+      "finding_id": "finding-91a15f14f89640258d6c859df22a9469",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -178,7 +178,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-ef8a243b1d4548609ce7a8039d2de3c9",
+      "finding_id": "finding-b85a8c06a6934c0d9074ece3b3d6140c",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -208,7 +208,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-6deca1e72013458c9008b0c3071848b3",
+      "finding_id": "finding-b8147f02f4984833a823b4119eba839d",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx vercel'.",
       "severity": "MEDIUM",
@@ -238,7 +238,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-df05ebb7526f431c8b04e75b4bbf09a1",
+      "finding_id": "finding-28fad1eda6ff49439181f60a5f5e5319",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx vercel'.",
       "severity": "MEDIUM",
@@ -300,7 +300,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -313,7 +313,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -326,7 +326,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -339,7 +339,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -352,7 +352,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

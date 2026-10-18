@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "git-workflow-and-versioning",
-    "source": "/tmp/uniscan-trial/addyosmani-skills/skills/git-workflow-and-versioning",
-    "scanned_at": "2026-10-13T08:14:44.000397+00:00"
+    "source": "/tmp/uniscan-6tyfrnyi/repo/skills/git-workflow-and-versioning",
+    "scanned_at": "2026-10-18T07:45:01.552350+00:00"
   },
   "risk_assessment": {
     "score": 23,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "TM1",
-      "finding_id": "finding-c36d3b10320d4a3c8a57b2f720644168",
+      "finding_id": "finding-05c0789bc8d54c5cb2d2d7ce8e596f3b",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -58,7 +58,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-9c7c3cd46b4b474995a8a0b94fab7e1d",
+      "finding_id": "finding-959017cc9f1246b2b3c3c1038b2b0a44",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx tsc'.",
       "severity": "MEDIUM",
@@ -120,7 +120,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -133,7 +133,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -146,7 +146,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -159,7 +159,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -172,7 +172,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

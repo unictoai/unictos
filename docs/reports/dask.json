@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "dask",
-    "source": "/tmp/uniscan-trial/k-dense-ai/skills/dask",
-    "scanned_at": "2026-10-13T08:18:24.722832+00:00"
+    "source": "/tmp/uniscan-ey9073al/repo/skills/dask",
+    "scanned_at": "2026-10-18T07:51:16.897713+00:00"
   },
   "risk_assessment": {
     "score": 80,
@@ -96,7 +96,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-7bf9d9f33506414aa3528f608fb8d08b",
+      "finding_id": "finding-3144f08702054a2e94d0697b29b39d82",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -141,7 +141,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-b3156c45c202428daaa8f74bd917b703",
+      "finding_id": "finding-3bea9486fc8a43f296b081c4def0ce85",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -186,7 +186,7 @@
     },
     {
       "id": "MP3",
-      "finding_id": "finding-8b1477a79488423cafdf194340e629a5",
+      "finding_id": "finding-0ddcc2147515488fa1ec36f027c79777",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -218,7 +218,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-69edc6a9d9704dbcaa3a40c754b16dcc",
+      "finding_id": "finding-f4936b70dde142589075faab6106da43",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -250,7 +250,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-106b84679fef477b9e5827cc8ba54a0c",
+      "finding_id": "finding-dbaf346daef5424586c4013de4459d75",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -314,7 +314,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -327,7 +327,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -340,7 +340,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -353,7 +353,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -366,7 +366,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -407,28 +407,15 @@
   "execution_successful": true,
   "analysis_completeness": {
     "total_components": 8,
-    "scanned_components": 6,
-    "coverage_percent": 75.0,
+    "scanned_components": 7,
+    "coverage_percent": 87.5,
     "is_complete": false,
     "status": "partial",
     "execution_successful": true,
-    "fully_inspected_files": 6,
-    "partially_inspected_files": 2,
+    "fully_inspected_files": 7,
+    "partially_inspected_files": 1,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "SKILL.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
       {
         "outcome": "partial",
         "phase": "reference_resolution",
@@ -795,8 +782,8 @@
         "analyzer_id": "static_patterns_tool_misuse",
         "status": "degraded",
         "planned_work": 8,
-        "completed": 6,
-        "partial": 2,
+        "completed": 7,
+        "partial": 1,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0

@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "api-testing-rest",
-    "source": "/home/hatch/workspace/ai-store/scan-work/repos/pramoddutta-qaskills/packs/qa-essentials/skills/api-testing-rest",
-    "scanned_at": "2026-10-13T08:32:57.957954+00:00"
+    "source": "/tmp/uniscan-x8euj8w2/repo/packs/qa-essentials/skills/api-testing-rest",
+    "scanned_at": "2026-10-18T08:04:39.695870+00:00"
   },
   "risk_assessment": {
     "score": 20,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "TM1",
-      "finding_id": "finding-c658f55f50204c6285ac72c9982f4c0e",
+      "finding_id": "finding-2ba90b93a6004853abc0bdf8cf3578c9",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -90,7 +90,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -103,7 +103,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -116,7 +116,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -129,7 +129,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -142,7 +142,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

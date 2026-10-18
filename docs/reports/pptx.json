@@ -1,11 +1,11 @@
 {
   "skill": {
     "name": "pptx",
-    "source": "/tmp/uniscan-trial/skills/skills/pptx",
-    "scanned_at": "2026-10-13T08:20:10.957317+00:00"
+    "source": "/tmp/uniscan-etplul4o/repo/skills/pptx",
+    "scanned_at": "2026-10-18T07:48:49.314964+00:00"
   },
   "risk_assessment": {
-    "score": 92,
+    "score": 82,
     "severity": "CRITICAL",
     "recommendation": "DO_NOT_INSTALL",
     "max_issue_severity": "HIGH"
@@ -576,7 +576,7 @@
   "issues": [
     {
       "id": "TM1",
-      "finding_id": "finding-ab18d2f67cb8402683225c8c9f1571c9",
+      "finding_id": "finding-74ae03b6701d410c9cf881d80864a066",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -608,7 +608,7 @@
     },
     {
       "id": "TM2",
-      "finding_id": "finding-7fd8f8488b5a4796a5a475b85265dba0",
+      "finding_id": "finding-9c498aebc72a4a08b1d2f4cb15048842",
       "category": "Tool Misuse",
       "pattern": "Chaining Abuse",
       "severity": "HIGH",
@@ -640,7 +640,7 @@
     },
     {
       "id": "E2",
-      "finding_id": "finding-5bcb0810e7c14c82b1ec5e0a8ff46ea8",
+      "finding_id": "finding-3d0a498abdea4964a18c14a5a02140aa",
       "category": "Data Exfiltration",
       "pattern": "Env Variable Harvesting",
       "severity": "HIGH",
@@ -672,7 +672,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-3d5a0fcf66db4dab9225463bc19f4437",
+      "finding_id": "finding-fafc28961b2041c1aafa5a4aa44a5562",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, file_read, file_write, network, shell.",
       "severity": "MEDIUM",
@@ -701,40 +701,8 @@
       ]
     },
     {
-      "id": "TM3",
-      "finding_id": "finding-76a602bae0cd42acaa20e97d19930be4",
-      "category": "Tool Misuse",
-      "pattern": "Unsafe Defaults",
-      "severity": "MEDIUM",
-      "confidence": 0.8,
-      "location": {
-        "file": "scripts/office/helpers/__init__.py",
-        "start_line": 106,
-        "end_line": null,
-        "start_column": 12
-      },
-      "finding": "mode = 0o666",
-      "explanation": "Tool defaults are unsafe or overly permissive (e.g. disabled TLS verification, no authentication, world-writable permissions). Unsafe defaults widen the attack surface.",
-      "remediation": "Override unsafe defaults with secure settings (verify=True, auth required, restrictive permissions). Review and harden all tool configurations.",
-      "code_snippet": "        else:\n            umask = os.umask(0)\n            os.umask(umask)\n            mode = 0o666 & ~umask\n        os.chmod(tmp_out, mode)\n        os.replace(tmp_out, out_path)\n    finally:",
-      "intent": null,
-      "tags": [
-        "Tool Misuse"
-      ],
-      "evidence": {},
-      "match_fingerprint": "6b10849df15ce835f8b28741a605dea179b23806159ea9cf608e3a2a658016df",
-      "occurrences": [
-        {
-          "file": "scripts/office/helpers/__init__.py",
-          "start_line": 106,
-          "end_line": null,
-          "start_column": 12
-        }
-      ]
-    },
-    {
       "id": "AST4",
-      "finding_id": "finding-88eb96fd94834922a01b5fc9addbd535",
+      "finding_id": "finding-2f016dba823241f2a10ec46802a1e3ca",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -768,7 +736,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-c4f22e1567ea47e1b3df0e6fa7cf60d3",
+      "finding_id": "finding-3479e6b535f24a71bc1927cd4c34eae6",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -802,7 +770,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-e36ec7ded25f4d67af19102b878c1ebd",
+      "finding_id": "finding-48038fae28fd430e917b44b33af85a73",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -836,7 +804,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-34d0c8cbbab147faab2b2ae38e1e62bd",
+      "finding_id": "finding-bbd6920461a34c02a9911f3b5905d6e8",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -870,7 +838,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-b8c2dd9962f64338bd5409ad11ac576a",
+      "finding_id": "finding-3f5b1ede85724ce782c025717726fec3",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -936,7 +904,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -949,7 +917,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -962,7 +930,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -975,7 +943,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -988,7 +956,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1934,7 +1902,7 @@
       "Analyzer static_patterns_system_prompt_leakage status: degraded.",
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 10,
-    "findings_after_filtering": 10
+    "findings_before_filtering": 9,
+    "findings_after_filtering": 9
   }
 }

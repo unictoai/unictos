@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "a11y-ally",
-    "source": "/home/hatch/workspace/ai-store/scan-work/repos/proffesor-for-testing-agentic-qe/.claude/skills/a11y-ally",
-    "scanned_at": "2026-10-13T08:31:53.296089+00:00"
+    "source": "/tmp/uniscan-ti8ecd7c/repo/.claude/skills/a11y-ally",
+    "scanned_at": "2026-10-18T08:04:31.577581+00:00"
   },
   "risk_assessment": {
     "score": 54,
@@ -56,7 +56,7 @@
   "issues": [
     {
       "id": "P2",
-      "finding_id": "finding-71821f0a43e3488398c068fa6346730d",
+      "finding_id": "finding-a1d7606f41fb440cb30ed064bc60e05c",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -90,7 +90,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-24e3e8646eb34d41b307b31793389f49",
+      "finding_id": "finding-719665de9ac04daab410c18557a3bc79",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -125,7 +125,7 @@
     },
     {
       "id": "MP3",
-      "finding_id": "finding-4727e082c65446f29618d4a9c2b8c6a4",
+      "finding_id": "finding-91e39a25eee74c2da1399c4ae26cbbe2",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -157,7 +157,7 @@
     },
     {
       "id": "AS3",
-      "finding_id": "finding-dbfe177bfea544099075bcc77ffeeb00",
+      "finding_id": "finding-7364bf770fd141628b64c7a2619cfda8",
       "category": "Agent Snooping",
       "pattern": "Skill Enumeration",
       "severity": "MEDIUM",
@@ -221,7 +221,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -234,7 +234,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -247,7 +247,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -260,7 +260,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -273,7 +273,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

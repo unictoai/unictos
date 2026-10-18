@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "resend",
-    "source": "/tmp/uniscan-trial/resend/skills/resend",
-    "scanned_at": "2026-10-13T08:20:40.713679+00:00"
+    "source": "/tmp/uniscan-2jpm_tb5/repo/skills/resend",
+    "scanned_at": "2026-10-18T07:54:56.647454+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -236,7 +236,7 @@
   "issues": [
     {
       "id": "YR1",
-      "finding_id": "finding-cd88fec03cce45f0a8241f9282770949",
+      "finding_id": "finding-b6a9d33f65f043718a63445ded295af6",
       "category": "YARA Match",
       "pattern": "YARA rule 'agent_skill_credential_exfiltration_webhook': AI agent skill credential harvesting followed by webhook or external exfiltration [agent_skills]",
       "severity": "CRITICAL",
@@ -266,7 +266,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-7b6273157bed481d9b7d5384a588855b",
+      "finding_id": "finding-6a61636b2c8d42228d2d229c46094aa0",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -311,7 +311,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-cf2c83ae8eb4412f8e4e9488f9fab9a4",
+      "finding_id": "finding-6b8efa617a0d4e6d944f77b6b47f6b4f",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -356,7 +356,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-d0ac18ae2d764db6b64399f2a029ac89",
+      "finding_id": "finding-a4c0bc9981e3488c82b37c68bd7fe841",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -401,7 +401,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-fe3e0b0014ae42afba12316ac668ce2b",
+      "finding_id": "finding-7ebb23e2391e451abb249fbc2b636257",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -446,52 +446,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-c37ae5a602924aa1a288c10a9733facf",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 172,
-        "end_line": null
-      },
-      "finding": "references/automations.md (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "| **Create automations** (event-driven workflows) | [automations.md](references/automations.md) \u2014 steps, connections, runs, conditions |",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
-      ],
-      "evidence": {
-        "target_path": "references/automations.md",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "a797a762c16f3259956f2aff032d639b5752dddb76a904cf3facdec7b4d0e867",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 172,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-f314d0e9bbd64423b58ad01143741d4d",
+      "finding_id": "finding-d722ee46297b451388ba038dfa92fef6",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -536,7 +491,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-1427aa8d63a54482abdb774c3a531e1f",
+      "finding_id": "finding-542ce5447b444a0392c5196d8c57ecd5",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -570,7 +525,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-5ba4eded4ddb45a4884a1c57661bc137",
+      "finding_id": "finding-c234774a598a4f379608a87b3ce660fe",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env.",
       "severity": "MEDIUM",
@@ -600,7 +555,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-ab061fad4b1241f6b564d83696f64849",
+      "finding_id": "finding-f4d79e5f0ba04601a05f96938fbfcddf",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -632,7 +587,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-4db5493132c24bffaa758a8a544d0251",
+      "finding_id": "finding-dfcc435bfcdd4bd9a326b712edc1f529",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -664,7 +619,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-4cf06483656f4d08a937c7d31f42a768",
+      "finding_id": "finding-6c0efb1bf46645a381772226a0b4b108",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -696,7 +651,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-df8af88473f2459880d6dc09b9daaf64",
+      "finding_id": "finding-ce6a5dd6cb90485aa67ff23821d547c0",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -728,7 +683,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-de978c24b0024dbe8ad805fbafd89c9a",
+      "finding_id": "finding-dc9fc5d36b7545fe9736a5cc3c9a4acb",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -760,7 +715,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-41a2ea14748641058810e188601f9506",
+      "finding_id": "finding-d0960949dbd84a42824fd447e97cfb4b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -792,7 +747,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f58548d1190d426bb5363d9fa78c8c84",
+      "finding_id": "finding-e4c15a27d8eb4322a9208db23986553a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -824,7 +779,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-32189d18cad54751986c8907cbc6b465",
+      "finding_id": "finding-c628f23968d948db9f0b4383e22ff3e0",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -856,7 +811,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-922dcd6039b4444984af706ca3f584fd",
+      "finding_id": "finding-c54d92201cd241168191233e6b187303",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -888,7 +843,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-d8affe11602e4db9aa3a219dcafbf5e0",
+      "finding_id": "finding-823f35dc47ce4a449fb33ac90a4f330e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -920,7 +875,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-2d0edcab37364239b85573f046a00262",
+      "finding_id": "finding-b04f2027a08d44b08c6960f58bdcabb0",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -952,7 +907,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-6f2c329dd47d40aabd50092780e7400c",
+      "finding_id": "finding-a21e75f2704c4fb59c350c65ae049388",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx skills'.",
       "severity": "MEDIUM",
@@ -982,7 +937,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-1952f53807c8469bb3e89f4ec4cbe6f8",
+      "finding_id": "finding-f9146430e76a4e73898b3dc4925cda6d",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1014,7 +969,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-338a07be59254e8ca4593e5716de3350",
+      "finding_id": "finding-dfd9ad75ec054cb59c5388e18cf9036d",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -1046,7 +1001,7 @@
     },
     {
       "id": "PE2",
-      "finding_id": "finding-99b178179f0b4ab39c9134267a7ada43",
+      "finding_id": "finding-50f6356898d04690bb4e703c1643a0c6",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -1112,7 +1067,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1125,7 +1080,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1138,7 +1093,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1151,7 +1106,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1164,7 +1119,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1205,13 +1160,13 @@
   "execution_successful": true,
   "analysis_completeness": {
     "total_components": 22,
-    "scanned_components": 15,
-    "coverage_percent": 68.2,
+    "scanned_components": 16,
+    "coverage_percent": 72.7,
     "is_complete": false,
     "status": "partial",
     "execution_successful": true,
-    "fully_inspected_files": 15,
-    "partially_inspected_files": 7,
+    "fully_inspected_files": 16,
+    "partially_inspected_files": 6,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
       {
@@ -1432,19 +1387,6 @@
         "phase": "static",
         "reason_code": "static_parse_limit",
         "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "references/automations.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
         "path": "references/logs.md",
         "start_line": null,
         "end_line": null,
@@ -1599,8 +1541,8 @@
       {
         "analyzer_id": "reference_coverage",
         "status": "completed",
-        "planned_work": 6,
-        "completed": 6,
+        "planned_work": 5,
+        "completed": 5,
         "partial": 0,
         "skipped": 0,
         "failed": 0,
@@ -1786,8 +1728,8 @@
         "analyzer_id": "static_patterns_tool_misuse",
         "status": "degraded",
         "planned_work": 22,
-        "completed": 15,
-        "partial": 7,
+        "completed": 16,
+        "partial": 6,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -2418,7 +2360,7 @@
     "limitations": [
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 24,
-    "findings_after_filtering": 24
+    "findings_before_filtering": 23,
+    "findings_after_filtering": 23
   }
 }

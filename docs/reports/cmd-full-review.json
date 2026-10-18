@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "unknown",
-    "source": "/tmp/skillspector_4lcud4fb",
-    "scanned_at": "2026-10-13T12:45:38.453754+00:00"
+    "source": "/tmp/skillspector_0d4gp1ex",
+    "scanned_at": "2026-10-18T08:17:30.256386+00:00"
   },
   "risk_assessment": {
     "score": 20,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "YR4",
-      "finding_id": "finding-2a14ad75aa3c41df81224c14c2f1175e",
+      "finding_id": "finding-f755c89bd66442bca5d51ede5dfae3c7",
       "category": "YARA Match",
       "pattern": "YARA rule 'agent_skill_prompt_injection_hidden_instructions': Prompt injection or hidden instructions embedded in AI agent skill text [agent_skills]",
       "severity": "HIGH",
@@ -88,7 +88,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "b07f181d9138878c3827de0947a9fd2c6a84a66c",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -101,7 +101,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "b07f181d9138878c3827de0947a9fd2c6a84a66c",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -114,7 +114,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "b07f181d9138878c3827de0947a9fd2c6a84a66c",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -127,7 +127,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "b07f181d9138878c3827de0947a9fd2c6a84a66c",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -140,7 +140,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "b07f181d9138878c3827de0947a9fd2c6a84a66c",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

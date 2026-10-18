@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "security-and-hardening",
-    "source": "/tmp/uniscan-trial/addyosmani-skills/skills/security-and-hardening",
-    "scanned_at": "2026-10-13T08:21:58.274924+00:00"
+    "source": "/tmp/uniscan-q2ix1yxe/repo/skills/security-and-hardening",
+    "scanned_at": "2026-10-18T07:49:36.444306+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -36,7 +36,7 @@
   "issues": [
     {
       "id": "YR4",
-      "finding_id": "finding-4017c20182a84801a4d0ade04576e821",
+      "finding_id": "finding-cd4cf4d42af24211906935f1cfc7f459",
       "category": "YARA Match",
       "pattern": "YARA rule 'agent_skill_prompt_injection_hidden_instructions': Prompt injection or hidden instructions embedded in AI agent skill text [agent_skills]",
       "severity": "HIGH",
@@ -66,7 +66,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a3fc8283790742bc84ed2e3a0fa1203c",
+      "finding_id": "finding-1966650ecbf74c5e95613e0eaa3c6f76",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -111,7 +111,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-704ffdd310484c44961966c333419e86",
+      "finding_id": "finding-216a303ed6e2470a93a335ae3a6b2aaf",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -156,7 +156,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-14d1ef139e6b4585847207e551123f35",
+      "finding_id": "finding-e083c764f1ae47199e448f1946843e29",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -201,7 +201,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-412b4a3f9e4a4beaa426dcd980093c74",
+      "finding_id": "finding-232cf72c2ffe4288ae0dac41e13a318e",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -246,7 +246,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-bd785dd7dec4495b9e0a83090c1147f9",
+      "finding_id": "finding-fd1f7836fd3f415d82184fa1e9adf99a",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -291,7 +291,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-89d125f21db646f797378a8b57a156b2",
+      "finding_id": "finding-3aabd7fc173f40c0922e68ec76047adc",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -336,7 +336,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-82ba705c1e9945b5ab134f1f72c577c0",
+      "finding_id": "finding-8a7dff994aae4812819acfb9acdb81f1",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -381,7 +381,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-8e4e05578add440bb8383132416f3ed8",
+      "finding_id": "finding-c60eb55c3adf46fea8df6a5d17e4116a",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -426,7 +426,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a50cdcb6686d4911bc940ff7e7848df8",
+      "finding_id": "finding-1cf4febc1f084028863762e0867afd88",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -471,7 +471,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-3c1635e29e2a4e1bbbaf8b552c23a10b",
+      "finding_id": "finding-762b83d978624052a433fe63d4c476ea",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -516,7 +516,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-0cb7cb6dde614211b7af1f9ace9dc467",
+      "finding_id": "finding-aca63836e01e4cce9bec382c74cd5414",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -561,7 +561,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-bd667692e906403f9eb982e4b7ae2bf3",
+      "finding_id": "finding-aa403d51a0734389909699ebe0d4d98d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -606,7 +606,7 @@
     },
     {
       "id": "MP3",
-      "finding_id": "finding-5127e295cbaa459a84aa128fbfb2aabb",
+      "finding_id": "finding-c9627728dd584af28c6a64ee9a82b160",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -638,7 +638,7 @@
     },
     {
       "id": "SSRF1",
-      "finding_id": "finding-0df7bdd72d7247da98a917b164e90677",
+      "finding_id": "finding-1adc7eb218b34b069526fbb76c5b9611",
       "category": "Server-Side Request Forgery",
       "pattern": "Cloud Metadata Access",
       "severity": "HIGH",
@@ -670,7 +670,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-9e5cd4f479104e24b61a6aee70b4d7bd",
+      "finding_id": "finding-fa7d211c44e746eb900290288817592b",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -702,7 +702,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-69a32737c50b4de1a0a308a5ff7be7dd",
+      "finding_id": "finding-07b8149d997c4613a36806699d0718e2",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -734,7 +734,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-1bc940f51f224ad2991e07f7d2ecfc91",
+      "finding_id": "finding-27939220e90f469984d55fffd6b88f87",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -766,7 +766,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-b2c4cc26375849b38f053ab2e7f00b98",
+      "finding_id": "finding-8a772cd4882d474680d7b18dbef3e478",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -798,7 +798,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-36c4c1bcb091401fb6ddb3e5a3f119ac",
+      "finding_id": "finding-4765dccfa2224f67869246aa1dcb9021",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -830,7 +830,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-9580829b7e4c4e11bedd6fe7f90cf310",
+      "finding_id": "finding-1c4ba44ad713489bb5a906e5bd1b97cd",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -894,7 +894,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -907,7 +907,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -920,7 +920,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -933,7 +933,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -946,7 +946,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

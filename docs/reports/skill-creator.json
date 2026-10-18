@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "skill-creator",
-    "source": "/tmp/uniscan-trial/skills/skills/skill-creator",
-    "scanned_at": "2026-10-13T07:52:38.801253+00:00"
+    "source": "/tmp/uniscan-l2qer0_c/repo/skills/skill-creator",
+    "scanned_at": "2026-10-18T07:34:30.342092+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -196,7 +196,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-a3573d27299b4426b593b89b36d9c913",
+      "finding_id": "finding-8e279e7f4907462688933edf1c8a0a04",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -241,7 +241,7 @@
     },
     {
       "id": "E2",
-      "finding_id": "finding-0aea103e1ce64213896853599bc626ab",
+      "finding_id": "finding-75d5be0d57af48ffb204197425cdc9b5",
       "category": "Data Exfiltration",
       "pattern": "Env Variable Harvesting",
       "severity": "HIGH",
@@ -273,7 +273,7 @@
     },
     {
       "id": "E2",
-      "finding_id": "finding-76e48b74f7fc44d98d889eab89c69c34",
+      "finding_id": "finding-37294ebece1a413ca210643afed7ccba",
       "category": "Data Exfiltration",
       "pattern": "Env Variable Harvesting",
       "severity": "HIGH",
@@ -305,7 +305,7 @@
     },
     {
       "id": "AS1",
-      "finding_id": "finding-4251838b16fe4620b93ab12f575b0192",
+      "finding_id": "finding-e043d0fd361d4b779a99c21f61433b5f",
       "category": "Agent Snooping",
       "pattern": "Agent Config Directory Access",
       "severity": "HIGH",
@@ -337,7 +337,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-0237a24e1de84ffd8e7670f58791871b",
+      "finding_id": "finding-c1875c008fa8436ab3506e0f96c07b4a",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, file_read, file_write, shell.",
       "severity": "MEDIUM",
@@ -367,7 +367,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-a3601348d897436faaa3ee1c726e969d",
+      "finding_id": "finding-61343f2f91a24a65a29c6b7de3de917e",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -399,7 +399,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-73d0c3a39d4e451ca956d6831956f1d1",
+      "finding_id": "finding-e6c703fe7ee44e8294579975a783002b",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -433,7 +433,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-05be39849ee440959b61a7f6443bba01",
+      "finding_id": "finding-47ad819d98b145c8b8022cfdd81cfe95",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -467,7 +467,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-e04541d5434e4670b7dff450671cf7a9",
+      "finding_id": "finding-0338bf7b49dd4bcfaba10d5143f929e4",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -533,7 +533,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -546,7 +546,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -559,7 +559,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -572,7 +572,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -585,7 +585,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

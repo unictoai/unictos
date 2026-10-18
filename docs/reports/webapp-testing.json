@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "webapp-testing",
-    "source": "/tmp/uniscan-trial/skills/skills/webapp-testing",
-    "scanned_at": "2026-10-13T07:52:45.882371+00:00"
+    "source": "/tmp/uniscan-0psu_y5s/repo/skills/webapp-testing",
+    "scanned_at": "2026-10-18T07:34:35.868022+00:00"
   },
   "risk_assessment": {
     "score": 49,
@@ -76,7 +76,7 @@
   "issues": [
     {
       "id": "TM1",
-      "finding_id": "finding-d667da07a7a1448e8fcd8b50f98e2e91",
+      "finding_id": "finding-f5664827839b4e1bb6b2c998cf119ad4",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -108,7 +108,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-9a21f2e025164795924b8217a9beff5f",
+      "finding_id": "finding-b0da9b96f65248248c031efe200adebc",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: file_write, shell.",
       "severity": "MEDIUM",
@@ -138,7 +138,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-f5a8dd0e87154be8830ba18bb15a864d",
+      "finding_id": "finding-1c92b866de5a45bf9ffcf7e36ba4da10",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -172,7 +172,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-29e4f1a28ab7426fb4834328f3d5d51e",
+      "finding_id": "finding-9d24029de88843f6992029017acc4abb",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -238,7 +238,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -251,7 +251,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -264,7 +264,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -277,7 +277,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -290,7 +290,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

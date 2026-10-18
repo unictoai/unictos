@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "discernment-nudge",
-    "source": "/tmp/uniscan-trial/skills/skills/discernment-nudge",
-    "scanned_at": "2026-10-13T08:08:06.328849+00:00"
+    "source": "/tmp/uniscan-1nds3159/repo/skills/discernment-nudge",
+    "scanned_at": "2026-10-18T07:39:39.305747+00:00"
   },
   "risk_assessment": {
     "score": 17,
@@ -36,7 +36,7 @@
   "issues": [
     {
       "id": "AR1",
-      "finding_id": "finding-7bada4104e974c54ae0318c5dd312422",
+      "finding_id": "finding-fce1ab357e6e4a8b8eac5d38f22a3be2",
       "category": "Anti-Refusal",
       "pattern": "Anti-Refusal Statement",
       "severity": "HIGH",
@@ -102,7 +102,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -115,7 +115,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -128,7 +128,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -141,7 +141,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -154,7 +154,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

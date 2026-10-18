@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "jest-unit",
-    "source": "/home/hatch/workspace/ai-store/scan-work/repos/pramoddutta-qaskills/packs/qa-essentials/skills/jest-unit",
-    "scanned_at": "2026-10-13T08:34:53.845056+00:00"
+    "source": "/tmp/uniscan-q933rt6m/repo/packs/qa-essentials/skills/jest-unit",
+    "scanned_at": "2026-10-18T08:04:58.798717+00:00"
   },
   "risk_assessment": {
     "score": 12,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "RP1",
-      "finding_id": "finding-d0fdcadc63c7480f8368675b8e431959",
+      "finding_id": "finding-28cac766dcaa4e1ca379a0a38dd74dab",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -56,7 +56,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-4d1f64a1f1f141c58c60984ad44f8e0f",
+      "finding_id": "finding-e1946a5ecf7b4b5684cc4565fd1def04",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -86,7 +86,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-6bde5bdf1a1f48a0be8cab2a9512318a",
+      "finding_id": "finding-e92569c003794a92bfd3c1439fb0af4b",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -116,7 +116,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-bd440c622845469f81bdccc9fd0fbcab",
+      "finding_id": "finding-ea0332803fdb4942829a8a9d0cecca31",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -146,7 +146,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-3bd975e5914c4de5b08e37503abc0e19",
+      "finding_id": "finding-1d1fc333b6c9487c9b8d419d1d77bc14",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -176,7 +176,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-f3b1138b09b64552aa4f79ce928b808b",
+      "finding_id": "finding-4442f5625ce644bc82828e27a51ccab7",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -206,7 +206,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-d64e5019872e4efc9603cf67b5a1b9a9",
+      "finding_id": "finding-6045694e8e00456f92bdc88c4e20a477",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -268,7 +268,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -281,7 +281,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -294,7 +294,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -307,7 +307,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -320,7 +320,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

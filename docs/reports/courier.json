@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "courier",
-    "source": "/home/hatch/workspace/ai-store/scan-work/repos/trycourier-courier-skills/skills/courier",
-    "scanned_at": "2026-10-13T08:44:24.014611+00:00"
+    "source": "/tmp/uniscan-t2ntr73r/repo/skills/courier",
+    "scanned_at": "2026-10-18T08:09:53.980636+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -436,7 +436,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-2c19d6c11b9048eebec6bda50f109b31",
+      "finding_id": "finding-160218e81017416781fded9098f40b7b",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -481,7 +481,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-acfa7397cc0d4e0892b55b663cfb53c1",
+      "finding_id": "finding-bbcfd91201a14b5fbccf85889df58a50",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -526,7 +526,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-7237fb37e70f431bb72371305feb35c3",
+      "finding_id": "finding-6b9c10e26b7744d8bbc5e6534ec5fc2d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -571,7 +571,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-d3bfb7f523c046f287904c8931a4bfea",
+      "finding_id": "finding-6ae56d45d6cd46c883d01a3cad196039",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -616,7 +616,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-191bb151fa2048edb0ad5e5c8f6aec0f",
+      "finding_id": "finding-04948ef2a05849359c92dec6fbf2c068",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -661,7 +661,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-8fa295c3fb3744fd9b7aa3e5836caaff",
+      "finding_id": "finding-2ac97536f8b8493ab9db6fb248880237",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -706,7 +706,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-9c8b33ecaaf44fb49ad53b1dee4ed6ac",
+      "finding_id": "finding-314dc602f42044e3861ca5ab43c3bee3",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -751,7 +751,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-e24333c563c44751a80ed41bbbc6bd0e",
+      "finding_id": "finding-f8c53e3573104d699e668b145c3e7e71",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -796,7 +796,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a9c8b2259bf94430910d3c2d29a39276",
+      "finding_id": "finding-a0344ce11ff64ee09c0197fb936fe258",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -937,7 +937,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-b09fe9d9520443a39e626354c26040c0",
+      "finding_id": "finding-6fc4663982f94cf992565fab7cb2c5d6",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -982,7 +982,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a96ad0ddee3248a1ab47568f023996eb",
+      "finding_id": "finding-9c5b30f5f3af44a3a078c86588979728",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1027,7 +1027,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-0599acf956094551ac87695f0d7c3b07",
+      "finding_id": "finding-b42a5f287e1b4647bd25386cd336112d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-25b3c53d56fb48729eea3b036fa2a9b5",
+      "finding_id": "finding-6c007732712c4744910f6903b32465df",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-4a72625dbb5d49f0b74df72dd49eb0e1",
+      "finding_id": "finding-a6027bac893f4593bd1a24df7bd986ac",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1162,7 +1162,7 @@
     },
     {
       "id": "P3",
-      "finding_id": "finding-87260c8dbb3b4c4cb3ea8bae91fefef6",
+      "finding_id": "finding-5fb6936a8bff4d15a8d4342e4f244f42",
       "category": "Prompt Injection",
       "pattern": "Exfiltration Commands",
       "severity": "HIGH",
@@ -1196,7 +1196,7 @@
     },
     {
       "id": "YR4",
-      "finding_id": "finding-78114a0657a541d88523cd8f68dadd1a",
+      "finding_id": "finding-0420894c1ea6490bbd4c3fba7169a481",
       "category": "YARA Match",
       "pattern": "YARA rule 'agent_skill_prompt_injection_hidden_instructions': Prompt injection or hidden instructions embedded in AI agent skill text [agent_skills]",
       "severity": "HIGH",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-54de7277f0f44d76b2aa3ba0fe18a35f",
+      "finding_id": "finding-aa68b6b04e874873acfaf4a6fcb4d14e",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -1260,7 +1260,7 @@
     },
     {
       "id": "P6",
-      "finding_id": "finding-8a84a8c915cc449091686f48f0c45c60",
+      "finding_id": "finding-b2e4c347a82d4655bd9abc1c5ea1029b",
       "category": "System Prompt Leakage",
       "pattern": "Direct Prompt Extraction",
       "severity": "HIGH",
@@ -1292,7 +1292,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-21190836a11d464abc603e2945de1bec",
+      "finding_id": "finding-af9010bc35854843a083868e947ce218",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -1324,7 +1324,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-408c617445464ff498829df6e9aeaef3",
+      "finding_id": "finding-ab05dd1c803e4341ab3f8c35f809f710",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -1358,7 +1358,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-dbfc6275d2704211950469383ebda494",
+      "finding_id": "finding-93ec7a871a9646ebbcd070ab0b249b57",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -1390,7 +1390,7 @@
     },
     {
       "id": "SC2",
-      "finding_id": "finding-5f19a443bd104fc98f1491cc30548641",
+      "finding_id": "finding-dc4da5e56e5a41b297a244524508b483",
       "category": "Supply Chain",
       "pattern": "External Script Fetching",
       "severity": "HIGH",
@@ -1422,7 +1422,7 @@
     },
     {
       "id": "AR1",
-      "finding_id": "finding-e39c36a650ee474a9f295dbcea92aa00",
+      "finding_id": "finding-39c5ea46357d417aa9dd91a92ac89a90",
       "category": "Anti-Refusal",
       "pattern": "Anti-Refusal Statement",
       "severity": "HIGH",
@@ -1458,7 +1458,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-e204b41b4de54d0c8629b3ae424204b1",
+      "finding_id": "finding-98d71330f4b0476f8cfed6ddf1e6adc9",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -1490,7 +1490,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-95b4233d6213419b9480c0faac87819b",
+      "finding_id": "finding-319a66685aba46809c766c5a512472f8",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -1524,7 +1524,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-fc330fbf3ae04c1c90a309d092f46c7c",
+      "finding_id": "finding-9c0be73f892646539cfa105dc8086bfb",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -1558,7 +1558,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-17507570ec8841c9a86d179879163067",
+      "finding_id": "finding-accaaf82127349238f3381b75b81ad2a",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -1590,7 +1590,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-1f79f040800f45fd9e8f24d855b5b060",
+      "finding_id": "finding-750f70fe13ca437e90d2493d7ab5fd62",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -1622,7 +1622,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-7135edca7f864581b58aee22a431bea3",
+      "finding_id": "finding-1d2090687abe4962b981a4c9d4130eb4",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -1654,7 +1654,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-3ee08e7a65aa493ea81f4fe44a341190",
+      "finding_id": "finding-20b0a715624d445e871369846bfd1ce7",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -1688,7 +1688,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-d0865f02ba9144e7a76ea108db66c1b9",
+      "finding_id": "finding-84a8a8e678a74cef8fb3bd5f58b18cb1",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -1723,7 +1723,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-e0f78ebfebb14c2480e3b2f54cd8d180",
+      "finding_id": "finding-c41700accf8e415ca00fa3f6f06ba765",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -1757,7 +1757,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-dc5fbf3bc4f24925ae80ab5c28dfdb3d",
+      "finding_id": "finding-407741f169494925be3c451736a5054f",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -1791,7 +1791,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-839f66c0ee8942fd848f87b6f01d64b1",
+      "finding_id": "finding-b93e63d379cd4bfa8b2e0e0c9d97bff5",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -1825,7 +1825,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-d92709079c664366bd0469222a86b43e",
+      "finding_id": "finding-52e7377f885f44b59720920ea98631c5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1857,7 +1857,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-2ee98938ba23467bab39759f86ae5830",
+      "finding_id": "finding-8120db602b244cf9a2b4310ddcb5efdf",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1889,7 +1889,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-847c8d1ea5b149ad99ccabb9c064ce68",
+      "finding_id": "finding-5eca129ad75a481f95d4cf050ac38871",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1921,7 +1921,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-46596789d64349ef9204bd296ea15f62",
+      "finding_id": "finding-aead3751e1e149b196de0c3f4260f75d",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1953,7 +1953,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-446cee48bca943f48200111d52864c5f",
+      "finding_id": "finding-45ebc30800a44ad2b538744e9bd7b460",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1985,7 +1985,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-75b68f430d2c461aa579aeaab817e9a5",
+      "finding_id": "finding-a200f8f512ef4f18aaee4ae9f45c489f",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2017,7 +2017,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-3b2816a74ec24dce890529d005a0fb07",
+      "finding_id": "finding-daee2e06b6b041c289b05bec53531cf2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2049,7 +2049,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-84cb0763893e4bcaa91eb04e54c94c71",
+      "finding_id": "finding-8bbb64d18f4b4d59830ded4e659ffc0b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2081,7 +2081,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-6bec0f06c4644388a571bebf2a4f5712",
+      "finding_id": "finding-69a19069b1014edb855740cad69eb326",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2113,7 +2113,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-93d900b4b47e494c9e934114778b4110",
+      "finding_id": "finding-20d3863da930455ca7b826db5bdefc1d",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2145,7 +2145,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-033dcd434f884d898db0e5edb4284b91",
+      "finding_id": "finding-65a1e0112bc744308e3ef98b4a6a94e7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2177,7 +2177,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-5728ed3840d54b738b46f1d8ab095a5c",
+      "finding_id": "finding-00302ccba5fa497d98d99e0f824d2078",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2209,7 +2209,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-b5b97ffdc6d04db4aba721520c466166",
+      "finding_id": "finding-42508513d09c4ae5bd8fe25ac98dbc0f",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2241,7 +2241,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-1115ea37fe874aabb62589e86a94d86f",
+      "finding_id": "finding-ed077cedc2be4ce2a371f7f8c8abcd4e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2273,7 +2273,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-8ac9703139e14110ac01ee09aa14c923",
+      "finding_id": "finding-736cf35315de4fa5aeacbc2c0593b36c",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2305,7 +2305,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f8bc0451a887442d9524493f29f0f5c8",
+      "finding_id": "finding-1d2ecb80f71a49a4934e4a8b065bf4f4",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2337,7 +2337,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-70c3a19e29bc47d6b26e80f9f1e09ea8",
+      "finding_id": "finding-f0141fb0c4b4404daa826f081f47e949",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2369,7 +2369,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-1a781f1cd58842b189f6c01098fa8b64",
+      "finding_id": "finding-00482d43007c4c3c9b7146b4b7f03ddc",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2401,7 +2401,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-2703d23384e7418ea322a43d80548446",
+      "finding_id": "finding-9f41162cdb0b4978be7419db4fb3d6a3",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2433,7 +2433,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-2886b5e189d54e728fa9344e7792f768",
+      "finding_id": "finding-fbcb90b6d04e42b7be448d09a2b3dcd4",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2465,7 +2465,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-5800e3c3d5df4d05913169fccc7b16a3",
+      "finding_id": "finding-bf48acae30144e8f854d0994d24960d1",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2497,7 +2497,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-b1bdb9a327554504b9de37d186c1e325",
+      "finding_id": "finding-d78143a486de4654b2c940c804e70d0e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2529,7 +2529,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-1c2fc6a7680143efa5ce32bac9affc78",
+      "finding_id": "finding-0e0b9dd0c1424078b6620e07cc247d70",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2561,7 +2561,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f68206967d764b1fb956598a6ca219e7",
+      "finding_id": "finding-0405528d31c44df6a61cddddf50f18d7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2593,7 +2593,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-b30c867745cc4c2694408c93eb15fdc9",
+      "finding_id": "finding-3d3fb2faf4ba4dc3a978efc5d841a0f4",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2625,7 +2625,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-41df43b25151495dad9b7a6fe1669552",
+      "finding_id": "finding-d59f6d3a189a434e92e42566f6bac0dc",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2657,7 +2657,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-783966377d654c009b42e6353c2391ec",
+      "finding_id": "finding-c84529b17f5041fab91bd4b1a47694e6",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2689,7 +2689,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-c3ce7c4448374e2b90ca4afde0342dfa",
+      "finding_id": "finding-b28cdac4f3cd4f89a20d433d72fae3eb",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2721,7 +2721,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-4e5e0add70804509a5591eb8845f96b1",
+      "finding_id": "finding-6a0d755f9d664a45a948796dbd1d4987",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2753,7 +2753,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f23d1e0473f04560a558b2d7b7a2f75d",
+      "finding_id": "finding-f488eb35315c4807873f5360dc72e89f",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2785,7 +2785,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-c9436522f9e143b3b8518bc7a6a6fee0",
+      "finding_id": "finding-cd042f8a01d347bfa49d29e5b6295bc7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2817,7 +2817,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-d2f746d0068d49a29b1f0eb06364fdd5",
+      "finding_id": "finding-a061bb0a14414419ad07f20e8f8f9830",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2849,7 +2849,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-a394a4ed87264be6a7e55d69971392fb",
+      "finding_id": "finding-d78afbc786f54f8eb670adcf33d5c447",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2881,7 +2881,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-fb799a1d596b4eb889b1895737d1bf43",
+      "finding_id": "finding-932f1ab54f6f4c69b3496390989293f2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2913,7 +2913,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-4223ff8dfb234941a720864d8f3ed2fc",
+      "finding_id": "finding-0d16e28df90947b4955d408b183bdac9",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2945,7 +2945,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-fc9eb4e5a1ad471cb50663d11873f19d",
+      "finding_id": "finding-a26c0538d085460db8b3844fcdde569e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2977,7 +2977,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-2eb21f0e35e443be9b9d01a31fbfa969",
+      "finding_id": "finding-a3bce478f81f4c96af993a466efc946a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3009,7 +3009,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-5cbc86aaac10447b8fc972874b2b04a8",
+      "finding_id": "finding-b0b3d08e1b20418e8bb3974c2682cc60",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3041,7 +3041,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-b71deba7d01d4cd48319108bba7c1044",
+      "finding_id": "finding-f7acc4ddc35743c39e04fdaa3ff0c681",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3073,7 +3073,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-accd0c7277c542808dc251f5d7794e13",
+      "finding_id": "finding-677a777abd1c4cab8e459622c81afda1",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3105,7 +3105,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-d525fdb81b37474ea31d59e60b314e26",
+      "finding_id": "finding-842ce94e52a245499d6eee9de677e3c4",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3137,7 +3137,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-8a990dc742f14e7a811b96fafc347572",
+      "finding_id": "finding-10f9aa8678f54804aa7132ead1b2175e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3169,7 +3169,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-e61aef71990d451887660643ec291aa7",
+      "finding_id": "finding-eab29fc689ae49068de31e13131f2c0e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3201,7 +3201,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-475f3cf8c5904e75a02f2463eeac0c79",
+      "finding_id": "finding-cf450b112a974e0ab97c77183915bfd1",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3233,7 +3233,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-77878eaa12ef4e5dbb953f57692dde9f",
+      "finding_id": "finding-b069bd3649f24078b08c2649baaa5fc5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3265,7 +3265,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-285c311e1db74719b32efece974a345d",
+      "finding_id": "finding-ea5b7ce92cea4157a1d60fed7d5548b9",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3297,7 +3297,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-798724077de94b76a32df2d8f2fc5839",
+      "finding_id": "finding-58796a60afbf492c9468246dbc0b4a07",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3329,7 +3329,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-1e740552ad6143a58a1bec0a83d74fe5",
+      "finding_id": "finding-26bba6c6f68b450b9b288c7e08145675",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3361,7 +3361,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-4880e821d1e245ff956a3dd67b855d79",
+      "finding_id": "finding-5dde9a59e03e466991a2bada05e01d83",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3393,7 +3393,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-4dc2a92414b44633a592c3cfa4829cfa",
+      "finding_id": "finding-37e3308758644c43baf4caaa2f625ade",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3425,7 +3425,7 @@
     },
     {
       "id": "EA4",
-      "finding_id": "finding-7dfa1b47b32e481280cb2627c25750e7",
+      "finding_id": "finding-6debf49b7882439f96ce32880b55998e",
       "category": "Excessive Agency",
       "pattern": "Unbounded Resource Access",
       "severity": "MEDIUM",
@@ -3457,7 +3457,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-79d3f0d5dd8a4b3a96ca4eed228015a8",
+      "finding_id": "finding-435f87d40edb4a26a5f5a6f7b7762195",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3489,7 +3489,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-5fc07e0fb7bc4f30b0ee8c34cdd29133",
+      "finding_id": "finding-d2c5e18cc2294967a0ff15574d14d0d9",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3521,7 +3521,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-103d1b9c543142cf961925683af52dc3",
+      "finding_id": "finding-f18b92917ed7435fb8385a0b7ace56c9",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3553,7 +3553,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-83fcae1e58e04e47a1d956c00734398a",
+      "finding_id": "finding-dd9eb64eb6824166a501da2944d92200",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3585,7 +3585,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-551bdd4aa84945e79d0422ccdc19ccd8",
+      "finding_id": "finding-88b51cebbd7548f99eb9792724d60047",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3617,7 +3617,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-41af691f4c0e4e979c50b79b8b0fe86d",
+      "finding_id": "finding-708d528419444e9d848057815b1c54e8",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3649,7 +3649,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-82bc0b170ad04d4390d9be67b64d1b49",
+      "finding_id": "finding-0cfbf699d8ce448799d15c78dec3b299",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx -y mcp-remote'.",
       "severity": "MEDIUM",
@@ -3679,7 +3679,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-539c2513484b4449b6a4befdb32a92d1",
+      "finding_id": "finding-c085a944b30c43e8a8f90af3fd095d59",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3711,7 +3711,7 @@
     },
     {
       "id": "EA4",
-      "finding_id": "finding-44dffc79de0243259e9098920abe1f4e",
+      "finding_id": "finding-31a9b548d98d48558b5a5693fdac3e1f",
       "category": "Excessive Agency",
       "pattern": "Unbounded Resource Access",
       "severity": "MEDIUM",
@@ -3743,7 +3743,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-899f41e25d7b4c6e8bab0cac1aa19c1c",
+      "finding_id": "finding-08a0df18c441447888b26d1c1106f4a4",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3775,7 +3775,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-215eb0846b874cda862ac1ec18fb8963",
+      "finding_id": "finding-f3cbaa8b35034d8d9706270773637139",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3807,7 +3807,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-e11d47282469415d9e929e2c30d58287",
+      "finding_id": "finding-8893129d047f4f0ea5e41d37d99bbdfa",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3839,7 +3839,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-a1050d7ec7214927ae00c65ed955d2b4",
+      "finding_id": "finding-48fbbc3c283f40b9b563d807baac765a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3871,7 +3871,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-0fb9ba4e1a2c48ef83494efb566d878d",
+      "finding_id": "finding-5507822613bd42dda8042a05505f715b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3903,7 +3903,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-be99b2ab1a4f45dfa4db7aa9700f459d",
+      "finding_id": "finding-edc96e3b42674b7ba0e6f075d970bf81",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3935,7 +3935,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-4bbb299b6eda4ec3ae552447be0e644e",
+      "finding_id": "finding-ca37b7f39947436c8e7fd307e83c8823",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3967,7 +3967,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-cdf1f01c56b242b7bebff3d7f3638403",
+      "finding_id": "finding-755233a6b0b74071bbe14dcb4c4a6b94",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3999,7 +3999,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-a90170e72c664011996cc0a781b2d844",
+      "finding_id": "finding-f46580da63954812938c26f60b39bf43",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4031,7 +4031,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-47689494173b460381e9367cc5281aed",
+      "finding_id": "finding-19f5e90789f947cca6b7ff6c4e62e8a9",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4095,7 +4095,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -4108,7 +4108,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -4121,7 +4121,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -4134,7 +4134,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -4147,7 +4147,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

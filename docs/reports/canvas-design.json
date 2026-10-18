@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "canvas-design",
-    "source": "/tmp/uniscan-trial/skills/skills/canvas-design",
-    "scanned_at": "2026-10-13T08:08:00.510154+00:00"
+    "source": "/tmp/uniscan-zt5nw4cp/repo/skills/canvas-design",
+    "scanned_at": "2026-10-18T07:38:36.371234+00:00"
   },
   "risk_assessment": {
     "score": 0,
@@ -877,7 +877,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -890,7 +890,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -903,7 +903,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -916,7 +916,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -929,7 +929,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -2580,151 +2580,151 @@
       {
         "analyzer_id": "static_patterns_agent_snooping",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_anti_refusal",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_data_exfiltration",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_deserialization",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_excessive_agency",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_harmful_content",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_memory_poisoning",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_output_handling",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_privilege_escalation",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_prompt_injection",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_rogue_agent",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_ssrf",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_supply_chain",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_system_prompt_leakage",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_tool_misuse",
         "status": "completed",
-        "planned_work": 83,
+        "planned_work": 29,
         "completed": 29,
         "partial": 0,
         "skipped": 0,
-        "failed": 54,
+        "failed": 0,
         "unaccounted": 0
       },
       {

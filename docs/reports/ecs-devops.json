@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "ecs-devops",
-    "source": "/home/hatch/workspace/ai-store/scan-work/repos/aws-samples-sample-apex-skills/skills/ecs-devops",
-    "scanned_at": "2026-10-13T08:35:48.904892+00:00"
+    "source": "/tmp/uniscan-tufceorb/repo/skills/ecs-devops",
+    "scanned_at": "2026-10-18T08:04:13.573400+00:00"
   },
   "risk_assessment": {
     "score": 37,
@@ -66,7 +66,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-8c28124e266e4c60939a493e686a6ddf",
+      "finding_id": "finding-41342ac5173449eeb0e43139e1490269",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -111,7 +111,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-f2aaa14847dd446cbf70534033589202",
+      "finding_id": "finding-38fd1fd6ad3940bfbff0eaee98b86095",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -188,7 +188,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -201,7 +201,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -214,7 +214,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -227,7 +227,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -240,7 +240,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

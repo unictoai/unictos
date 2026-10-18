@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "disaster-recovery",
-    "source": "/home/hatch/workspace/ai-store/scan-work/repos/bagelhole-devops-security-agent-skills/compliance/continuity/disaster-recovery",
-    "scanned_at": "2026-10-13T08:32:47.251196+00:00"
+    "source": "/tmp/uniscan-kx5cn9r_/repo/compliance/continuity/disaster-recovery",
+    "scanned_at": "2026-10-18T08:03:53.024096+00:00"
   },
   "risk_assessment": {
     "score": 8,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "E1",
-      "finding_id": "finding-72bf8af69b7d4e8393d80e95b4320708",
+      "finding_id": "finding-aa0366e71d744b32964e09ff516e10bc",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -58,7 +58,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-0e562668361047b3adf013903cb5965b",
+      "finding_id": "finding-27b74718845d4c2ea95bbce053a94b40",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -122,7 +122,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -135,7 +135,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -148,7 +148,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -161,7 +161,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -174,7 +174,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

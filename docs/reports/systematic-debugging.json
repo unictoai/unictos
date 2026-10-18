@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "systematic-debugging",
-    "source": "/tmp/uniscan-trial/obra-superpowers/skills/systematic-debugging",
-    "scanned_at": "2026-10-13T08:17:20.515235+00:00"
+    "source": "/tmp/uniscan-ykg6uos1/repo/skills/systematic-debugging",
+    "scanned_at": "2026-10-18T07:46:07.800041+00:00"
   },
   "risk_assessment": {
     "score": 77,
@@ -126,7 +126,7 @@
   "issues": [
     {
       "id": "PE3",
-      "finding_id": "finding-56b1561482ef4246b8527b79279604d7",
+      "finding_id": "finding-bded916c6fe6488fac2e9196f755c0e2",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -158,7 +158,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-eeabecb2636f4536b84530ccdbee3dc8",
+      "finding_id": "finding-78c7ad51462248c887deef1fccfe5ec9",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -190,7 +190,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-3bfb639167834263bd9f499e74a3c7d1",
+      "finding_id": "finding-bb076de4e5c04fec8a0e04af28711af2",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -235,7 +235,7 @@
     },
     {
       "id": "E4",
-      "finding_id": "finding-a3480bba5bf44bdb9d4831ab30aab72f",
+      "finding_id": "finding-cf47c49dac3f47abb3f2cf2b9df4dbff",
       "category": "Data Exfiltration",
       "pattern": "Context Leakage",
       "severity": "HIGH",
@@ -267,7 +267,7 @@
     },
     {
       "id": "EA4",
-      "finding_id": "finding-0929f72775d048e4b24689d852db8029",
+      "finding_id": "finding-bef5b9a9927f48cb821bf72461a3b16f",
       "category": "Excessive Agency",
       "pattern": "Unbounded Resource Access",
       "severity": "MEDIUM",
@@ -331,7 +331,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -344,7 +344,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -357,7 +357,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -370,7 +370,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -383,7 +383,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

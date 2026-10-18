@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "agent-email-inbox",
-    "source": "/tmp/uniscan-trial/resend/skills/agent-email-inbox",
-    "scanned_at": "2026-10-13T08:23:02.663484+00:00"
+    "source": "/tmp/uniscan-lh7lvw8m/repo/skills/agent-email-inbox",
+    "scanned_at": "2026-10-18T08:16:50.515730+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -56,7 +56,7 @@
   "issues": [
     {
       "id": "YR1",
-      "finding_id": "finding-d78b590312eb4bc48a85d28ec230ce8b",
+      "finding_id": "finding-34bd9a5e537a462f9277d71f32da1f2d",
       "category": "YARA Match",
       "pattern": "YARA rule 'agent_skill_credential_exfiltration_webhook': AI agent skill credential harvesting followed by webhook or external exfiltration [agent_skills]",
       "severity": "CRITICAL",
@@ -86,7 +86,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-14bbdf0c3da64014ab139e209b3eb590",
+      "finding_id": "finding-9b4f3d8da4a84f27b8be0209768091b7",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -131,7 +131,7 @@
     },
     {
       "id": "SC2",
-      "finding_id": "finding-b40a902766f34ab2a9d2c07e9ad3f239",
+      "finding_id": "finding-bb0820c160274131871de2ba8142a5fc",
       "category": "Supply Chain",
       "pattern": "External Script Fetching",
       "severity": "HIGH",
@@ -163,7 +163,7 @@
     },
     {
       "id": "TM2",
-      "finding_id": "finding-5cc437e66f7e4e568f5b2fde9362c341",
+      "finding_id": "finding-ab1bfdd09aa148d9bdcb396342d3d093",
       "category": "Tool Misuse",
       "pattern": "Chaining Abuse",
       "severity": "HIGH",
@@ -195,7 +195,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-494a4c5804d04985b094dd283a097bd5",
+      "finding_id": "finding-1f8a76f0a26d4e2bb4703b5d45ea69ac",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -227,7 +227,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-ff91d05ad8f34dad9f613a3cb899c608",
+      "finding_id": "finding-ddf8ad95da7648809c4f8193d4627cd9",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -259,7 +259,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-7080f62042384ac5b2a9221bb54bbdac",
+      "finding_id": "finding-eeebbccd0b494259a900c527ff14cff5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -291,7 +291,7 @@
     },
     {
       "id": "PE2",
-      "finding_id": "finding-cad10f7ff1c449d58187eb338458aae5",
+      "finding_id": "finding-af0e36082c6a404c92560039299b4834",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -323,7 +323,7 @@
     },
     {
       "id": "PE2",
-      "finding_id": "finding-eece4b65c80b4f6b83411287d068143e",
+      "finding_id": "finding-4c90293a74e2400299a7a49d7bcf1ec2",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -355,7 +355,7 @@
     },
     {
       "id": "PE2",
-      "finding_id": "finding-2521dfd2532a454e807398460b9e2f7c",
+      "finding_id": "finding-fbfffcfd04dd46adba9a743e45d796ce",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -387,7 +387,7 @@
     },
     {
       "id": "PE2",
-      "finding_id": "finding-4183f84d021d49c3b8eb467435fec551",
+      "finding_id": "finding-0c08e4fa462d4fd489c139d806b6f806",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -421,7 +421,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-062d510cac91421f90ad7bfa85dd5b96",
+      "finding_id": "finding-60aa6faf47f1451c9f84af5abae8e1f6",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -453,7 +453,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-0b7cb4175ab04edf8076565a8027d9fe",
+      "finding_id": "finding-6d496c95ce6b4492a12e8d2cb9647186",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx localtunnel'.",
       "severity": "MEDIUM",
@@ -515,7 +515,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -528,7 +528,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -541,7 +541,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -554,7 +554,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -567,7 +567,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

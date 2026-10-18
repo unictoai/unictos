@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "vercel-optimize",
-    "source": "/tmp/uniscan-trial/agent-skills/skills/vercel-optimize",
-    "scanned_at": "2026-10-13T08:14:08.517455+00:00"
+    "source": "/tmp/uniscan-k8wdeytg/repo/skills/vercel-optimize",
+    "scanned_at": "2026-10-18T07:44:40.581608+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -1576,7 +1576,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-5d0c1c6bdcca402cb43b475004420ee4",
+      "finding_id": "finding-1fa76eeb1d984a72845ad2c6aef633b1",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1621,7 +1621,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-8fbcf213daf040f39feca07b85090ba5",
+      "finding_id": "finding-32e801133eaf4b41a4b27003aac5dba1",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1666,7 +1666,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-e8c6ae7e24e14db6b173fb7ab9dd05d5",
+      "finding_id": "finding-bdaeb51b62874b849e2cf913c25e9497",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1711,7 +1711,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-3b4c3188540d4e8da73f6a1f44b0a0e9",
+      "finding_id": "finding-7a2b640442814b7e87c5c3dd67a263f4",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1756,7 +1756,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-97c452ee51224900b37084c7ca8d3d69",
+      "finding_id": "finding-bcab78bfc9b74f0da093d10c47eb0ea2",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1801,7 +1801,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-562c28ff8b9d4eb08f1bd7913dc6c2b9",
+      "finding_id": "finding-2cd8420aa6bc4025b2774280cfc9f9f6",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1846,7 +1846,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-6551085d7b874458a634ad0d5821efe3",
+      "finding_id": "finding-3c04b3ff5e9f4f22a023bfde41d3b193",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1891,7 +1891,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-ab782c9df6e2427bbe2d681e99309bdc",
+      "finding_id": "finding-3cb18f4d3dd549428856950c10b967f1",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1936,7 +1936,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-619fdcb1b2ec4ce3a982c43410311338",
+      "finding_id": "finding-6687d8c229a140ec92a81387681dca21",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2077,7 +2077,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-eb33748acda743aaa7a3213cb75ca3fb",
+      "finding_id": "finding-ea602b60f28c437fbf3c631bb88643f3",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2218,7 +2218,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-1254ce64c982414e890332edda2e7882",
+      "finding_id": "finding-17015480d1124b84aa2ba0f7665bce58",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2263,7 +2263,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-ab7d21eb48594dcda18f3424d7b26133",
+      "finding_id": "finding-380f1545596342fa8742a76c555b618e",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2308,7 +2308,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-d1990559f0ab4d899e599031ad657981",
+      "finding_id": "finding-2dda002b813b4e4abc8644961973f80c",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2353,7 +2353,7 @@
     },
     {
       "id": "YR1",
-      "finding_id": "finding-199d6b63e2344696a3403343264c5428",
+      "finding_id": "finding-374814738ff6489cae75c3fd999e97d6",
       "category": "YARA Match",
       "pattern": "YARA rule 'info_stealer': Information stealer patterns (credential harvesting, browser data theft) [malware]",
       "severity": "HIGH",
@@ -2383,7 +2383,7 @@
     },
     {
       "id": "YR1",
-      "finding_id": "finding-0b8f37185aa04300ad9ffc7e6bdab73b",
+      "finding_id": "finding-0798f4556297477fbd86929f5338b170",
       "category": "YARA Match",
       "pattern": "YARA rule 'info_stealer': Information stealer patterns (credential harvesting, browser data theft) [malware]",
       "severity": "HIGH",
@@ -2413,7 +2413,7 @@
     },
     {
       "id": "P6",
-      "finding_id": "finding-8510cc202dd74aa79603c5e663a95059",
+      "finding_id": "finding-5f6b24ac079e402a9d199dd6a99655b7",
       "category": "System Prompt Leakage",
       "pattern": "Direct Prompt Extraction",
       "severity": "HIGH",
@@ -2445,7 +2445,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-71ad5a556bd244bf98c9ad0442ce2fab",
+      "finding_id": "finding-0659fc1ed8704b31b7f25acb2185e164",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx skills'.",
       "severity": "MEDIUM",
@@ -2475,7 +2475,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-9b9bfec8463c47c3aa0238931eadbc09",
+      "finding_id": "finding-d4d0e24ceef64c53acfcda6d18d835c3",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx skills'.",
       "severity": "MEDIUM",
@@ -2505,7 +2505,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-2cc89b83fe73449980e0dc384575b65a",
+      "finding_id": "finding-d41646f0523847028579a2c2df5a319c",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, network.",
       "severity": "MEDIUM",
@@ -2535,7 +2535,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-e63f05d65b8a44ac976e298cc101c5a7",
+      "finding_id": "finding-c2f119184ee347839ae7493bf9747114",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -2567,7 +2567,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-f7558dc1aaee4baeaa30c69e1093ac77",
+      "finding_id": "finding-cd8120b6d19d4aa19ada6738fe703d04",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -2599,7 +2599,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-56af057dd51b44a088cde01e931126c2",
+      "finding_id": "finding-01c1786135804600957f9903ba7713ab",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -2663,7 +2663,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -2676,7 +2676,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -2689,7 +2689,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -2702,7 +2702,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -2715,7 +2715,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -2756,13 +2756,13 @@
   "execution_successful": true,
   "analysis_completeness": {
     "total_components": 156,
-    "scanned_components": 104,
-    "coverage_percent": 66.7,
+    "scanned_components": 105,
+    "coverage_percent": 67.3,
     "is_complete": false,
     "status": "partial",
     "execution_successful": true,
-    "fully_inspected_files": 104,
-    "partially_inspected_files": 52,
+    "fully_inspected_files": 105,
+    "partially_inspected_files": 51,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
       {
@@ -3439,19 +3439,6 @@
         "phase": "static",
         "reason_code": "static_parse_limit",
         "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/observation-safety.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
         "path": "lib/project-facts.mjs",
         "start_line": null,
         "end_line": null,
@@ -4104,8 +4091,8 @@
         "analyzer_id": "static_patterns_tool_misuse",
         "status": "degraded",
         "planned_work": 156,
-        "completed": 104,
-        "partial": 52,
+        "completed": 105,
+        "partial": 51,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0

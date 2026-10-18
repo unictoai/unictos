@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "algorithmic-art",
-    "source": "/tmp/uniscan-trial/skills/skills/algorithmic-art",
-    "scanned_at": "2026-10-13T07:51:41.839664+00:00"
+    "source": "/tmp/uniscan-ovhmvieo/repo/skills/algorithmic-art",
+    "scanned_at": "2026-10-18T07:34:49.319015+00:00"
   },
   "risk_assessment": {
     "score": 25,
@@ -56,7 +56,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-00e56f7f3ada4fd39ea66842ba28df67",
+      "finding_id": "finding-3a3fdbe19e3a46f4a5c7b5c2b0b5a50d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -133,7 +133,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -146,7 +146,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -159,7 +159,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -172,7 +172,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -185,7 +185,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

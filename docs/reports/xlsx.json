@@ -1,13 +1,13 @@
 {
   "skill": {
     "name": "xlsx",
-    "source": "/tmp/uniscan-trial/skills/skills/xlsx",
-    "scanned_at": "2026-10-13T08:09:59.655929+00:00"
+    "source": "/tmp/uniscan-s9_3fpqd/repo/skills/xlsx",
+    "scanned_at": "2026-10-18T07:37:01.500504+00:00"
   },
   "risk_assessment": {
-    "score": 96,
-    "severity": "CRITICAL",
-    "recommendation": "DO_NOT_INSTALL",
+    "score": 42,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION",
     "max_issue_severity": "HIGH"
   },
   "components": [
@@ -545,233 +545,8 @@
   "structured_summaries": [],
   "issues": [
     {
-      "id": "AE1",
-      "finding_id": "finding-76ed1f93b36145439e6068f9adf1fda6",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 23,
-        "end_line": null
-      },
-      "finding": "scripts/recalc.py (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "- **Zero formula errors.** Never ship while `recalc.py` reports `errors_found`. If you think an error predates you, prove it: load the *original* with `data_onl",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
-      ],
-      "evidence": {
-        "target_path": "scripts/recalc.py",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "3fbb4a3b813d8d874044e85b31a7b1eef4259de0c331770f655d508db001280a",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 23,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-fdfc3b37e326456ea0f84768fd3465ab",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 37,
-        "end_line": null
-      },
-      "finding": "scripts/recalc.py (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "python scripts/recalc.py output.xlsx [timeout_seconds] # default 30",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
-      ],
-      "evidence": {
-        "target_path": "scripts/recalc.py",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "3fbb4a3b813d8d874044e85b31a7b1eef4259de0c331770f655d508db001280a",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 37,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-a630eff9793841d2b81bf2b4314b5157",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 57,
-        "end_line": null
-      },
-      "finding": "scripts/recalc.py (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "real, fails, writes `#NAME?`, and deletes every link. `recalc.py` refuses to run in that state",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
-      ],
-      "evidence": {
-        "target_path": "scripts/recalc.py",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "3fbb4a3b813d8d874044e85b31a7b1eef4259de0c331770f655d508db001280a",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 57,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-0998f38ebd6c4191baac638f3e102dae",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 68,
-        "end_line": null
-      },
-      "finding": "scripts/recalc.py (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "s no spill metadata, so only the top-left cell of the range gets a value \u2014 and `recalc.py` reports `total_errors: 0` on the truncated result. Use `INDEX`/`MATCH",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
-      ],
-      "evidence": {
-        "target_path": "scripts/recalc.py",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "3fbb4a3b813d8d874044e85b31a7b1eef4259de0c331770f655d508db001280a",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 68,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-1c1ab96cac9a401e8fa2769d0e63d979",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 75,
-        "end_line": null
-      },
-      "finding": "scripts/recalc.py (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "ata_only=True` on a file openpyxl just wrote returns `None` everywhere** \u2014 run `recalc.py` first. (A formula whose result is `\"\"` also reads back as `None`.)",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
-      ],
-      "evidence": {
-        "target_path": "scripts/recalc.py",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "3fbb4a3b813d8d874044e85b31a7b1eef4259de0c331770f655d508db001280a",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 75,
-          "end_line": null
-        }
-      ]
-    },
-    {
       "id": "E2",
-      "finding_id": "finding-24dabd44c6894fcf8802fb1daaed3b95",
+      "finding_id": "finding-91e4211b26a748098426a17e895117a5",
       "category": "Data Exfiltration",
       "pattern": "Env Variable Harvesting",
       "severity": "HIGH",
@@ -803,7 +578,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-7259c800071e4673aa41c8541b85bda9",
+      "finding_id": "finding-fe061d41ccc54713b4d2f3798caf8f28",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, file_read, file_write, network, shell.",
       "severity": "MEDIUM",
@@ -832,40 +607,8 @@
       ]
     },
     {
-      "id": "TM3",
-      "finding_id": "finding-72aefe6c6a0742d6af062a8ce1b193bb",
-      "category": "Tool Misuse",
-      "pattern": "Unsafe Defaults",
-      "severity": "MEDIUM",
-      "confidence": 0.8,
-      "location": {
-        "file": "scripts/office/helpers/__init__.py",
-        "start_line": 106,
-        "end_line": null,
-        "start_column": 12
-      },
-      "finding": "mode = 0o666",
-      "explanation": "Tool defaults are unsafe or overly permissive (e.g. disabled TLS verification, no authentication, world-writable permissions). Unsafe defaults widen the attack surface.",
-      "remediation": "Override unsafe defaults with secure settings (verify=True, auth required, restrictive permissions). Review and harden all tool configurations.",
-      "code_snippet": "        else:\n            umask = os.umask(0)\n            os.umask(umask)\n            mode = 0o666 & ~umask\n        os.chmod(tmp_out, mode)\n        os.replace(tmp_out, out_path)\n    finally:",
-      "intent": null,
-      "tags": [
-        "Tool Misuse"
-      ],
-      "evidence": {},
-      "match_fingerprint": "6b10849df15ce835f8b28741a605dea179b23806159ea9cf608e3a2a658016df",
-      "occurrences": [
-        {
-          "file": "scripts/office/helpers/__init__.py",
-          "start_line": 106,
-          "end_line": null,
-          "start_column": 12
-        }
-      ]
-    },
-    {
       "id": "AST4",
-      "finding_id": "finding-daee04948fee4af293dd8abf6b1fb192",
+      "finding_id": "finding-db461b7e83fe42edbb27fa0b35f1e722",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -899,7 +642,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-3eb17290ad9f48e6853529163456b819",
+      "finding_id": "finding-5ff5d8bc29dd44bfa8e7050d66a8316f",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -933,7 +676,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-15941eef79074d86b72c788c12eb4551",
+      "finding_id": "finding-55c3009f3468451e8b517435fe466e95",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -967,7 +710,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-a05a72217726463a8145b1592124b034",
+      "finding_id": "finding-2e0215626d944644a2a67ec92707bbcc",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -1001,7 +744,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-a6790a5adde940cabc55ddb3948922fe",
+      "finding_id": "finding-c957bc51faf04fe48b22d3d7e19cdb7e",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -1035,7 +778,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-8e6015a47c8d413eb976536868cab670",
+      "finding_id": "finding-fffd4233a4414162936fdcb9ca27a543",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -1101,7 +844,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1114,7 +857,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1127,7 +870,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1140,7 +883,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1153,7 +896,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1194,13 +937,13 @@
   "execution_successful": true,
   "analysis_completeness": {
     "total_components": 53,
-    "scanned_components": 47,
-    "coverage_percent": 88.7,
+    "scanned_components": 48,
+    "coverage_percent": 90.6,
     "is_complete": false,
     "status": "partial",
     "execution_successful": true,
-    "fully_inspected_files": 47,
-    "partially_inspected_files": 6,
+    "fully_inspected_files": 48,
+    "partially_inspected_files": 5,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
       {
@@ -1357,19 +1100,6 @@
           "static_patterns_system_prompt_leakage",
           "static_patterns_tool_misuse"
         ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "scripts/recalc.py",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
       }
     ],
     "scope_exclusions": [],
@@ -1457,16 +1187,6 @@
         "unaccounted": 0,
         "reason_code": "disabled_by_configuration",
         "message": "Analyzer was disabled by the requested configuration."
-      },
-      {
-        "analyzer_id": "reference_coverage",
-        "status": "completed",
-        "planned_work": 5,
-        "completed": 5,
-        "partial": 0,
-        "skipped": 0,
-        "failed": 0,
-        "unaccounted": 0
       },
       {
         "analyzer_id": "semantic_developer_intent",
@@ -1648,8 +1368,8 @@
         "analyzer_id": "static_patterns_tool_misuse",
         "status": "degraded",
         "planned_work": 53,
-        "completed": 47,
-        "partial": 6,
+        "completed": 48,
+        "partial": 5,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -1822,7 +1542,7 @@
       "Analyzer static_patterns_system_prompt_leakage status: degraded.",
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 14,
-    "findings_after_filtering": 14
+    "findings_before_filtering": 8,
+    "findings_after_filtering": 8
   }
 }

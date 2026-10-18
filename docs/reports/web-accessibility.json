@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "accessibility",
-    "source": "/home/hatch/workspace/ai-store/scan-work/repos/addyosmani-web-quality-skills/skills/accessibility",
-    "scanned_at": "2026-10-13T08:33:58.133012+00:00"
+    "source": "/tmp/uniscan-em__p0vx/repo/skills/accessibility",
+    "scanned_at": "2026-10-18T08:05:45.030992+00:00"
   },
   "risk_assessment": {
     "score": 81,
@@ -46,7 +46,7 @@
   "issues": [
     {
       "id": "P2",
-      "finding_id": "finding-0a6d2575527c4c6a9f5d863bf3e747b8",
+      "finding_id": "finding-8e0ea1ae9b244bdb852a32516164e2cb",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -80,7 +80,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-8df75d8bfbac4452aa98911e9f6ce174",
+      "finding_id": "finding-a5533f2a5edf483a9927f0c15711838f",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -115,7 +115,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-7b511e9d7d854521ab16e4257376d322",
+      "finding_id": "finding-9adc046fc2124d0cbe649187ea68847b",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -160,7 +160,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-9f8cf3d5288241b780c8214854b98f46",
+      "finding_id": "finding-41d68ba86747436aad156267423fa91d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -205,7 +205,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-06331f460a6c45e8a5eb8dc3fb140c4d",
+      "finding_id": "finding-252b25e4ded34256b39fcd30184edcbe",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -250,7 +250,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-073c366aa9e2434781a16df265f178bd",
+      "finding_id": "finding-f87132e49f324a18a74ada4f72e7f116",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -295,7 +295,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-718266349584403d88cc7213615afeb1",
+      "finding_id": "finding-4d969d00500a42f083fa697254fdccb5",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -340,7 +340,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a33b1a3beead449ba31daeb436a2109e",
+      "finding_id": "finding-b55743c5c0c849c4b32a199853b2a30d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -385,7 +385,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-96e3e2c5e6514ce1960d3458a3726aa4",
+      "finding_id": "finding-7f10757008a54b2d9284076548ca2f9f",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -430,7 +430,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-787901a5cedd4936b52da95053bcaed2",
+      "finding_id": "finding-54a429a3293c48cdbb5d0c0ffa77f7db",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -475,7 +475,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-74d06444e5094b89a6ddda5ed2463ffe",
+      "finding_id": "finding-02825992e44a4101886f348d1b549438",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -520,7 +520,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-4ae3b357502040eab480c4d9ce77c9c9",
+      "finding_id": "finding-2f19ca3ef84742f383be8e18799cabce",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -554,7 +554,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-555f6d07c27d48308d5afe115123314c",
+      "finding_id": "finding-5055723c8dbc477cb9f1e19fa9716df5",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -588,7 +588,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-4c9cd04c4d70453c8dd66a94282bc26d",
+      "finding_id": "finding-f7fb202ba66d4fc2a2ad1ec06b0274cd",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -622,7 +622,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-d6970f61bc33468bbad08f4338acbdbd",
+      "finding_id": "finding-7326ad7820734663bce2a3177c60cc04",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -656,7 +656,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-212a7cd547884a14b823b975e9bf039f",
+      "finding_id": "finding-efa5e82b3c3f4f3a981240dde74987d9",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -691,7 +691,7 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-aa68a04f12944a969302d254abcaaaeb",
+      "finding_id": "finding-e203a1fd8e164fdea3ba6d25438ed600",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -725,7 +725,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-d6acf626431b47aa821b417a03cb50d7",
+      "finding_id": "finding-2174c4170fc2410ca9297ce5011aee51",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx lighthouse'.",
       "severity": "MEDIUM",
@@ -787,7 +787,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -800,7 +800,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -813,7 +813,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -826,7 +826,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -839,7 +839,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

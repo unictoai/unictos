@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "semgrep",
-    "source": "/tmp/uniscan-trial/trailofbits-skills/plugins/static-analysis/skills/semgrep",
-    "scanned_at": "2026-10-13T08:16:32.931666+00:00"
+    "source": "/tmp/uniscan-a4npkb6c/repo/plugins/static-analysis/skills/semgrep",
+    "scanned_at": "2026-10-18T07:42:50.830092+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -106,7 +106,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-17e18bd4150b45c8a6f70bd3bc2a649d",
+      "finding_id": "finding-172cb758574e4c0bb088f333481814a8",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -151,7 +151,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-303f0bfc361e4b83ac1a0e1187d59615",
+      "finding_id": "finding-9390bf9db6704b7ab45e786c1f833d54",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -196,7 +196,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-1e677cd1acf740849b9caa09ac2acc41",
+      "finding_id": "finding-fc86773c987a4fefa132e2fba40bc606",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -241,7 +241,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a463dce20fa7454ba3645ffc0fa359a1",
+      "finding_id": "finding-fc9edabf9f364d29808fecb63c5229d0",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -286,7 +286,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-53d3a23d4043435999eb139a33cd9d2a",
+      "finding_id": "finding-15f660c61bcb4eb48e8d79e2cb9362cd",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -331,7 +331,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-d533460292504b618590c585f079b9a6",
+      "finding_id": "finding-b8bd965eaabb482b8aefff31357e73f4",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -376,7 +376,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-5a61ca93b29c43f08f2cecb4282c2db4",
+      "finding_id": "finding-d5cb802afa0d40508448544379d66232",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -421,7 +421,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-bbe666f7426e4c738e2c8ac9b0409a26",
+      "finding_id": "finding-8f48ee43ee654d57b01fe19543bbd4d2",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -466,7 +466,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-395dee9ec0a24dada018fe96a23740cf",
+      "finding_id": "finding-5bf947a345b341b6a4dd9aefb5154c6d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -511,7 +511,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-4a99f7a6e9c84a698e244c6a19a5e1dd",
+      "finding_id": "finding-2677e2fbc1ad45b08be2596f54e62409",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -556,7 +556,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-fa8ede833c0f46e18c63bceef3acd365",
+      "finding_id": "finding-bbdf3532504c4e3ea931b3b3dfd2c2c2",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -601,7 +601,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-2b4617195442446b810e7300a72ff332",
+      "finding_id": "finding-b10b53dbeb884b3ab14a28af3d0362db",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -646,7 +646,7 @@
     },
     {
       "id": "LP1",
-      "finding_id": "finding-6faf9637294d4e179f1420ad2d46dc29",
+      "finding_id": "finding-da573b517c88441392a85ff66b0993c8",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'file_write' detected in scripts/merge_sarif.py but not covered by declared permissions.",
       "severity": "HIGH",
@@ -676,7 +676,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-d97526ff7ba94ae79fd2466dbe937dec",
+      "finding_id": "finding-c194b2ef47e54cd2917925d290fa4b52",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -708,7 +708,7 @@
     },
     {
       "id": "TM2",
-      "finding_id": "finding-fd324a2059964772b793a9aeb7d5bb5c",
+      "finding_id": "finding-ca7742297d264ade8008d17010a8b71e",
       "category": "Tool Misuse",
       "pattern": "Chaining Abuse",
       "severity": "HIGH",
@@ -740,7 +740,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-fce03398494e420aab60e8031a16bab7",
+      "finding_id": "finding-7516e34feaa742aea1d8e6c6645b36cb",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -772,7 +772,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-dbc0beab805d4326b15e15ad9e065cbc",
+      "finding_id": "finding-87aecc39b920495bbd6b352249763c6a",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -804,7 +804,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-87e51c470fc84339a78ed8278324238a",
+      "finding_id": "finding-4273621a231c432084bea601ffe06068",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx @microsoft/sarif-multitool'.",
       "severity": "MEDIUM",
@@ -834,7 +834,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-10cec000a2244eb69084aaba61b0af5f",
+      "finding_id": "finding-d35771ce8695433a8639c3adbe367797",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx @microsoft/sarif-multitool'.",
       "severity": "MEDIUM",
@@ -864,7 +864,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-73eb963824f740d6a2758b2344a6f9a4",
+      "finding_id": "finding-140e2f09651b498891c351539417a899",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx cache'.",
       "severity": "MEDIUM",
@@ -893,8 +893,42 @@
       ]
     },
     {
+      "id": "TT2",
+      "finding_id": "finding-edae075ce17d4a33b44e356c4ab12aea",
+      "category": "Data Flow",
+      "pattern": "Tainted flow: 'merged' from pathlib.Path.read_text (line 287, file read) \u2192 pathlib.Path.write_text (file write)",
+      "severity": "MEDIUM",
+      "confidence": 0.65,
+      "location": {
+        "file": "scripts/merge_sarif.py",
+        "start_line": 332,
+        "end_line": 332,
+        "start_column": 4,
+        "end_column": 56
+      },
+      "finding": "output_file.write_text(json.dumps(merged, indent=2))",
+      "explanation": "Data from a source is assigned to a variable that is later passed to a sink, creating a variable-mediated taint flow.",
+      "remediation": "Validate tainted variables before passing them to sinks. Use allowlists, type checks, or sanitization functions on data from external sources.",
+      "code_snippet": "    print(f\"Merged SARIF contains {result_count} findings\")\n\n    # Write output\n    output_file.write_text(json.dumps(merged, indent=2))\n    print(f\"Written to {output_file}\")\n\n    return 0",
+      "intent": null,
+      "tags": [
+        "Data Flow"
+      ],
+      "evidence": {},
+      "match_fingerprint": "80b9104b2ec7952dffe1cb73f0f45e4c93eff7d4f367185a94df40bab474274a",
+      "occurrences": [
+        {
+          "file": "scripts/merge_sarif.py",
+          "start_line": 332,
+          "end_line": 332,
+          "start_column": 4,
+          "end_column": 56
+        }
+      ]
+    },
+    {
       "id": "AST4",
-      "finding_id": "finding-44a2c8691c6b45f7a453cb73ea9284ad",
+      "finding_id": "finding-b7da80fa97e642b58c536fac2521579f",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -928,7 +962,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-2f378b2fefd84065a7f44e177bdfdd85",
+      "finding_id": "finding-e335bd86db554479b9228554c0851ab6",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -962,7 +996,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-02e385615d41404e95c8102686182a04",
+      "finding_id": "finding-4847eac959644658a252827b860f666d",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx cache.'.",
       "severity": "MEDIUM",
@@ -992,7 +1026,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-5107d60032504699bbecaf0b5d81ae4f",
+      "finding_id": "finding-a95dd7ec1c2546a5a6d5ff68f5994801",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -1058,7 +1092,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1071,7 +1105,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1084,7 +1118,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1097,7 +1131,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1110,7 +1144,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -2028,7 +2062,7 @@
     "limitations": [
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 24,
-    "findings_after_filtering": 24
+    "findings_before_filtering": 25,
+    "findings_after_filtering": 25
   }
 }

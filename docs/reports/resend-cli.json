@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "resend-cli",
-    "source": "/tmp/uniscan-trial/resend/skills/resend-cli",
-    "scanned_at": "2026-10-13T08:22:18.762760+00:00"
+    "source": "/tmp/uniscan-rjuq1y79/repo/skills/resend-cli",
+    "scanned_at": "2026-10-18T07:55:12.060136+00:00"
   },
   "risk_assessment": {
     "score": 52,
@@ -196,7 +196,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-687daf8d85f44a4f9614aa517749d9bb",
+      "finding_id": "finding-9101a7c2ecf0482a8f41fc99e4298c58",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -241,7 +241,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-595edd4a366d467cb02787da112d0ff3",
+      "finding_id": "finding-1875cc1991b343c8904018efb650db48",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -286,7 +286,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-e35db7630fae4d3781099e4246fa293f",
+      "finding_id": "finding-1e58eb132f0f463db6ce19d77265ffe8",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -318,7 +318,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-0ad56a3159cb4f1582b5c766e968a827",
+      "finding_id": "finding-3ccfc0763d3a44e39f1d5573b3e5638e",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -350,7 +350,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-d61c9e68808743b8ad08874cc9b8ab67",
+      "finding_id": "finding-dbf59cf274474f0083edf056eebb4d0c",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -382,7 +382,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-bd9252eb84ce460aaf10b0eca604c0a0",
+      "finding_id": "finding-5adcd94b878d459593abe9530b43e444",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -414,7 +414,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-df4da2e38143468f8c33108b6cc015f8",
+      "finding_id": "finding-14b009cd1d6f4a0180c221f8796f7ef7",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -446,7 +446,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-1fe8255902db46eca123192185e1c40b",
+      "finding_id": "finding-2b80411a10d0465cafa6ab1398e2ecb2",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -478,7 +478,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-ece26f51b09547bc8efe1729a31ce364",
+      "finding_id": "finding-a3e2ee4ea92a466fabf0082247efb1c7",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -510,7 +510,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-c16c96ae02da4b1d82ba4eb92739330d",
+      "finding_id": "finding-678c9e89757942fea34abb67e9cbb4c9",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -542,7 +542,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-b6933a460dac4672864f8fb66006dd8d",
+      "finding_id": "finding-5ee6df1898e24a0ab8b8e08b27f726d9",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -574,7 +574,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-ef331fa392424cceb5d98830152f7032",
+      "finding_id": "finding-bffcd948cb01435287a7e58b43b006ed",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -606,7 +606,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-e52998be3bcd4fc88cbd353b4e13caf2",
+      "finding_id": "finding-ec0eb3d98604402dad56654159a11437",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -638,7 +638,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-66f2a39ad4294ffb83ecb1191255b102",
+      "finding_id": "finding-c54921fc41b743128dff1c8d109f3196",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -702,7 +702,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -715,7 +715,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -728,7 +728,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -741,7 +741,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -754,7 +754,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

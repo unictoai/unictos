@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "frontend-design",
-    "source": "/tmp/uniscan-trial/skills/skills/frontend-design",
-    "scanned_at": "2026-10-13T08:08:22.151396+00:00"
+    "source": "/tmp/uniscan-ffaw745f/repo/skills/frontend-design",
+    "scanned_at": "2026-10-18T07:38:45.138761+00:00"
   },
   "risk_assessment": {
     "score": 13,
@@ -36,7 +36,7 @@
   "issues": [
     {
       "id": "AR2",
-      "finding_id": "finding-c055fdb954e749af80e0c399748abf3d",
+      "finding_id": "finding-2ae7bcc925d044459c5b025f124a6f30",
       "category": "Anti-Refusal",
       "pattern": "Anti-Refusal Statement",
       "severity": "HIGH",
@@ -102,7 +102,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -115,7 +115,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -128,7 +128,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -141,7 +141,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -154,7 +154,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

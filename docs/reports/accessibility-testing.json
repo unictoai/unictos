@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "accessibility-testing",
-    "source": "/home/hatch/workspace/ai-store/scan-work/repos/petrkindlmann-qa-skills/skills/accessibility-testing",
-    "scanned_at": "2026-10-13T08:36:17.009904+00:00"
+    "source": "/tmp/uniscan-wv_o0qv2/repo/skills/accessibility-testing",
+    "scanned_at": "2026-10-18T08:05:28.009909+00:00"
   },
   "risk_assessment": {
     "score": 56,
@@ -46,7 +46,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-df9a438941d346d7a1532f69ec470add",
+      "finding_id": "finding-cf7d80e7c5b44b61bb4c6f4478e68a11",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -91,7 +91,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-fa3eb84edcc24395be0ff76ee27655e6",
+      "finding_id": "finding-dce44d4eadc64821844297cfdc0411e6",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -136,7 +136,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-4e3764d4fee340d28a0b95ea789b2cd7",
+      "finding_id": "finding-6bd888a210c0479294676955f962fade",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -181,7 +181,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-141cfab544f54a97ab73532b4d02fa05",
+      "finding_id": "finding-ed917d7b67514c9f92085f1bc7b650de",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -226,7 +226,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-5d0bf58189c248f983b5b54df552fff1",
+      "finding_id": "finding-dfb426ccceac40008c71b14bae8985f4",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -256,7 +256,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-740d4a938ddf45c0ae94d552a7c20793",
+      "finding_id": "finding-3be6b8bcf7d3402594a7cb375d4085d3",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -286,7 +286,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-fe6599de91cf417493ba5443f699fd75",
+      "finding_id": "finding-37055e955aa14bc3be1b4e0ac4ed210c",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -316,7 +316,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-09de3a657c834a18a66eff7e6dbb0d4a",
+      "finding_id": "finding-e364b06f13b2434cbf62cf3b9d898fc6",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -346,7 +346,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-63d7da61272a455bb4de749f5e5117e9",
+      "finding_id": "finding-24aed48a920d4124a34ba9dad4b65da1",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx wait-on'.",
       "severity": "MEDIUM",
@@ -408,7 +408,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -421,7 +421,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -434,7 +434,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -447,7 +447,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -460,7 +460,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "theme-factory",
-    "source": "/tmp/uniscan-trial/skills/skills/theme-factory",
-    "scanned_at": "2026-10-13T08:08:44.130058+00:00"
+    "source": "/tmp/uniscan-9tev3q9u/repo/skills/theme-factory",
+    "scanned_at": "2026-10-18T07:38:53.744769+00:00"
   },
   "risk_assessment": {
     "score": 37,
@@ -146,7 +146,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-913d898081eb47d9a767ecde9dcd3553",
+      "finding_id": "finding-5f1beeceb2ec4b41b79d2a4dc38a7f3f",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -158,7 +158,7 @@
       },
       "finding": "theme-showcase.pdf (partial)",
       "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Provide inspectable source or analysis support for the referenced format. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "remediation": "Provide inspectable source or analysis support for the referenced format. Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
       "code_snippet": "1. **Show the theme showcase**: Display the `theme-showcase.pdf` file to allow users to see all available themes visually. Do not make any modifications to it; ",
       "intent": null,
       "tags": [
@@ -171,124 +171,16 @@
         "target_disposition": "partial",
         "reasons": [
           {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_agent_snooping"
-            ]
+            "reason_code": "binary_text_projection",
+            "message": "Only bounded printable text was inspected; binary structure and behavior are outside scope.",
+            "phase": "cache",
+            "analyzers": []
           },
           {
             "reason_code": "opaque_content",
             "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_anti_refusal"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_data_exfiltration"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_deserialization"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_excessive_agency"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_harmful_content"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_memory_poisoning"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_output_handling"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_privilege_escalation"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_prompt_injection"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_rogue_agent"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_ssrf"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_supply_chain"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_system_prompt_leakage"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
+            "phase": "cache",
+            "analyzers": []
           }
         ]
       },
@@ -303,7 +195,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-c30203b9ae954499bee7794ba09ea9ff",
+      "finding_id": "finding-62f46d6474914cb497164a7bc590d9a3",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -315,7 +207,7 @@
       },
       "finding": "theme-showcase.pdf (partial)",
       "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Provide inspectable source or analysis support for the referenced format. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "remediation": "Provide inspectable source or analysis support for the referenced format. Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
       "code_snippet": "The following 10 themes are available, each showcased in `theme-showcase.pdf`:",
       "intent": null,
       "tags": [
@@ -328,124 +220,16 @@
         "target_disposition": "partial",
         "reasons": [
           {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_agent_snooping"
-            ]
+            "reason_code": "binary_text_projection",
+            "message": "Only bounded printable text was inspected; binary structure and behavior are outside scope.",
+            "phase": "cache",
+            "analyzers": []
           },
           {
             "reason_code": "opaque_content",
             "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_anti_refusal"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_data_exfiltration"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_deserialization"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_excessive_agency"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_harmful_content"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_memory_poisoning"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_output_handling"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_privilege_escalation"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_prompt_injection"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_rogue_agent"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_ssrf"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_supply_chain"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_system_prompt_leakage"
-            ]
-          },
-          {
-            "reason_code": "opaque_content",
-            "message": "Artifact contents could not be fully interpreted.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
+            "phase": "cache",
+            "analyzers": []
           }
         ]
       },
@@ -492,7 +276,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -505,7 +289,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -518,7 +302,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -531,7 +315,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -544,7 +328,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -591,38 +375,32 @@
     "status": "partial",
     "execution_successful": true,
     "fully_inspected_files": 12,
-    "partially_inspected_files": 0,
-    "entirely_uninspected_files": 1,
+    "partially_inspected_files": 1,
+    "entirely_uninspected_files": 0,
     "ledger_exceptions": [
       {
         "outcome": "partial",
-        "phase": "static",
+        "phase": "cache",
         "reason_code": "opaque_content",
         "message": "Artifact contents could not be fully interpreted.",
         "path": "theme-showcase.pdf",
         "start_line": null,
         "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_agent_snooping",
-          "static_patterns_anti_refusal",
-          "static_patterns_data_exfiltration",
-          "static_patterns_deserialization",
-          "static_patterns_excessive_agency",
-          "static_patterns_harmful_content",
-          "static_patterns_memory_poisoning",
-          "static_patterns_output_handling",
-          "static_patterns_privilege_escalation",
-          "static_patterns_prompt_injection",
-          "static_patterns_rogue_agent",
-          "static_patterns_ssrf",
-          "static_patterns_supply_chain",
-          "static_patterns_system_prompt_leakage",
-          "static_patterns_tool_misuse"
-        ]
+        "fatal": false
       }
     ],
-    "scope_exclusions": [],
+    "scope_exclusions": [
+      {
+        "outcome": "out_of_scope",
+        "phase": "cache",
+        "reason_code": "binary_text_projection",
+        "message": "Only bounded printable text was inspected; binary structure and behavior are outside scope.",
+        "path": "theme-showcase.pdf",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      }
+    ],
     "analyzer_statuses": [
       {
         "analyzer_id": "artifact_integrity",
@@ -762,150 +540,150 @@
       },
       {
         "analyzer_id": "static_patterns_agent_snooping",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_anti_refusal",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_data_exfiltration",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_deserialization",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_excessive_agency",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_harmful_content",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_memory_poisoning",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_output_handling",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_privilege_escalation",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_prompt_injection",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_rogue_agent",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_ssrf",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_supply_chain",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_system_prompt_leakage",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_tool_misuse",
-        "status": "degraded",
+        "status": "completed",
         "planned_work": 13,
-        "completed": 12,
-        "partial": 1,
+        "completed": 13,
+        "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -929,7 +707,7 @@
         "evidence": "1. **Show the theme showcase**: Display the `theme-showcase.pdf` file to allow users to see all available themes visually. Do not make any modifications to it; ",
         "target_path": "theme-showcase.pdf",
         "status": "resolved",
-        "disposition": "out_of_scope",
+        "disposition": "partial",
         "reference_kind": "quoted_or_code"
       },
       {
@@ -939,27 +717,11 @@
         "evidence": "The following 10 themes are available, each showcased in `theme-showcase.pdf`:",
         "target_path": "theme-showcase.pdf",
         "status": "resolved",
-        "disposition": "out_of_scope",
+        "disposition": "partial",
         "reference_kind": "quoted_or_code"
       }
     ],
-    "limitations": [
-      "Analyzer static_patterns_agent_snooping status: degraded.",
-      "Analyzer static_patterns_anti_refusal status: degraded.",
-      "Analyzer static_patterns_data_exfiltration status: degraded.",
-      "Analyzer static_patterns_deserialization status: degraded.",
-      "Analyzer static_patterns_excessive_agency status: degraded.",
-      "Analyzer static_patterns_harmful_content status: degraded.",
-      "Analyzer static_patterns_memory_poisoning status: degraded.",
-      "Analyzer static_patterns_output_handling status: degraded.",
-      "Analyzer static_patterns_privilege_escalation status: degraded.",
-      "Analyzer static_patterns_prompt_injection status: degraded.",
-      "Analyzer static_patterns_rogue_agent status: degraded.",
-      "Analyzer static_patterns_ssrf status: degraded.",
-      "Analyzer static_patterns_supply_chain status: degraded.",
-      "Analyzer static_patterns_system_prompt_leakage status: degraded.",
-      "Analyzer static_patterns_tool_misuse status: degraded."
-    ],
+    "limitations": [],
     "findings_before_filtering": 2,
     "findings_after_filtering": 2
   }

@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "eas-workflows",
-    "source": "/tmp/uniscan-trial/expo-skills/plugins/expo/skills/eas-workflows",
-    "scanned_at": "2026-10-13T08:16:17.970413+00:00"
+    "source": "/tmp/uniscan-vmd0f9aj/repo/plugins/expo/skills/eas-workflows",
+    "scanned_at": "2026-10-18T07:46:44.323933+00:00"
   },
   "risk_assessment": {
     "score": 43,
@@ -56,7 +56,7 @@
   "issues": [
     {
       "id": "LP1",
-      "finding_id": "finding-246b67282fb34c6385c011118c10bd62",
+      "finding_id": "finding-b79b12c373f34ea8a34f432e50a23791",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'network' detected in scripts/fetch.js but not covered by declared permissions.",
       "severity": "HIGH",
@@ -86,7 +86,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f59f8e85756e4f279adc63bf812f3f25",
+      "finding_id": "finding-b061ed00f52e472f92f111a52a84280b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -118,7 +118,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-90c45f62577f422fba0d778ac5be7cee",
+      "finding_id": "finding-778d52c71fb041f397be3612acf98a6d",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx -y eas-cli'.",
       "severity": "MEDIUM",
@@ -148,7 +148,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-e0cf777d8e6b44f0a3e08382a9893281",
+      "finding_id": "finding-8ee62c6d15864d309b20922dc8cb30ba",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx --yes submit-expo-feedback'.",
       "severity": "MEDIUM",
@@ -178,7 +178,7 @@
     },
     {
       "id": "TR1",
-      "finding_id": "finding-069c6b6ee89e4c99b8b0ff98a2bce4fa",
+      "finding_id": "finding-9aee18d3c2564d4797cd6a49ca3244db",
       "category": "Trigger Abuse",
       "pattern": "Overly Broad Trigger",
       "severity": "LOW",
@@ -240,7 +240,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -253,7 +253,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -266,7 +266,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -279,7 +279,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -292,7 +292,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

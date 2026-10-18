@@ -1,11 +1,11 @@
 {
   "skill": {
     "name": "playwright-skill",
-    "source": "/tmp/uniscan-trial/lackeyjb-playwright-skill/skills/playwright-skill",
-    "scanned_at": "2026-10-13T08:20:20.667834+00:00"
+    "source": "/tmp/uniscan-xy319uzm/repo/skills/playwright-skill",
+    "scanned_at": "2026-10-18T07:46:32.202328+00:00"
   },
   "risk_assessment": {
-    "score": 95,
+    "score": 97,
     "severity": "CRITICAL",
     "recommendation": "DO_NOT_INSTALL",
     "max_issue_severity": "HIGH"
@@ -76,7 +76,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-999fb6431c9e413fb4d82ded5a9d0758",
+      "finding_id": "finding-940e7acbf1f34feebca4cfeeb3dba6bd",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -86,28 +86,20 @@
         "start_line": 214,
         "end_line": null
       },
-      "finding": "API_REFERENCE.md (failed)",
+      "finding": "API_REFERENCE.md (partial)",
       "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
       "code_snippet": "See [API_REFERENCE.md](API_REFERENCE.md) for network interception, API mocking,",
       "intent": null,
       "tags": [
         "coverage",
         "reference",
-        "target-disposition:failed"
+        "target-disposition:partial"
       ],
       "evidence": {
         "target_path": "API_REFERENCE.md",
-        "target_disposition": "failed",
+        "target_disposition": "partial",
         "reasons": [
-          {
-            "reason_code": "analyzer_runtime_error",
-            "message": "Analyzer failed after beginning applicable work.",
-            "phase": "analyzer",
-            "analyzers": [
-              "static_patterns_supply_chain"
-            ]
-          },
           {
             "reason_code": "static_parse_limit",
             "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
@@ -129,7 +121,7 @@
     },
     {
       "id": "LP1",
-      "finding_id": "finding-df7e8d312f234456ad816b6b51e00506",
+      "finding_id": "finding-d0ab2b2be31942c78ccff14e62e5e42b",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'env' detected in lib/helpers.js but not covered by declared permissions.",
       "severity": "HIGH",
@@ -159,7 +151,7 @@
     },
     {
       "id": "MP3",
-      "finding_id": "finding-61a34b29ad97417795f0ea4b1143d7d0",
+      "finding_id": "finding-225dfb5bb5274703a05997fa4852ee92",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -191,7 +183,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-647bd3a4b4754db7ba6d4ba63283af92",
+      "finding_id": "finding-40ceda1f56e94f4aae6fb29e43506276",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -221,7 +213,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-f45fb406e69b45dabda4a82bf3184c25",
+      "finding_id": "finding-24f1ec2a5ec041b3871c39cfa091655b",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -251,7 +243,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-403e5498d5954970bd25178b9d4682b9",
+      "finding_id": "finding-5c7710c21ecd499b861ccede4f510cf6",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -281,7 +273,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-d53972a22d9f484fb464bb37d0ecc2f4",
+      "finding_id": "finding-bcd4fa49d183400aa4774378ba24e4f6",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -311,7 +303,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-0aa44bdf48e24aba8f1cabcd6a4aa34c",
+      "finding_id": "finding-f624d6579f344bde949d7560739b0469",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -341,7 +333,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-7e25a54d4ac4435492223b59e3966a0d",
+      "finding_id": "finding-4e43cf2d9ecc43f1be745f8ac930bbd1",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -371,7 +363,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-44702a964092410f8fd7d1ee036dd88f",
+      "finding_id": "finding-56ae9522fcc844b19ae97d3315b4552f",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -401,7 +393,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-034b045548764caf8e538c3e5660ce68",
+      "finding_id": "finding-fe5c9d51a3384affabb03148627e1cea",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -431,7 +423,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-0ac33c0c1af14aa5865b8881e29485e8",
+      "finding_id": "finding-8e11a1abc043411b9e1bb8f68d0538e9",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -461,7 +453,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-fae6f67cac134ce89a89d20b58ad5301",
+      "finding_id": "finding-1f62f773607643bfb81fbca9283f4ebd",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -491,7 +483,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-63e26d7834874b09a7410eb42da0baac",
+      "finding_id": "finding-6291f8108fa94e2fa254fa295ed08809",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -521,7 +513,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-4d85f492359d4cb18fd5183eaf59ecaf",
+      "finding_id": "finding-bb1e066a22ea4245a3dc07f9b7d16c10",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -551,7 +543,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-bb46410d3aba43c584139b3deb24654b",
+      "finding_id": "finding-7a2606f3da504900b321f5dbf22274a5",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -578,6 +570,38 @@
           "start_line": 53,
           "end_line": null,
           "start_column": 70
+        }
+      ]
+    },
+    {
+      "id": "SC1",
+      "finding_id": "finding-d109a6d1e7f2487f9339c8ec80c43b67",
+      "category": "Supply Chain",
+      "pattern": "Unpinned Dependencies",
+      "severity": "LOW",
+      "confidence": 0.4,
+      "location": {
+        "file": "package.json",
+        "start_line": 21,
+        "end_line": null,
+        "start_column": 4
+      },
+      "finding": "\"playwright\": \"^1.62.0\"",
+      "explanation": "Dependencies lack version pinning, allowing potential malicious package updates. Consider pinning versions.",
+      "remediation": "Pin all dependency versions in requirements.txt or pyproject.toml. Use exact versions (==) or compatible ranges. Run pip-audit regularly.",
+      "code_snippet": "    \"general-purpose\"\n  ],\n  \"dependencies\": {\n    \"playwright\": \"^1.62.0\"\n  },\n  \"engines\": {\n    \"node\": \">=20.0.0\"",
+      "intent": null,
+      "tags": [
+        "Supply Chain"
+      ],
+      "evidence": {},
+      "match_fingerprint": "6f06667243b6f16abb99a37bbd03b7be3bed48b7c193562ff243c6c188869761",
+      "occurrences": [
+        {
+          "file": "package.json",
+          "start_line": 21,
+          "end_line": null,
+          "start_column": 4
         }
       ]
     }
@@ -615,7 +639,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -628,7 +652,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -641,7 +665,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -654,7 +678,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -667,7 +691,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -705,32 +729,18 @@
     },
     "filtering_mode": "heuristic"
   },
-  "execution_successful": false,
+  "execution_successful": true,
   "analysis_completeness": {
     "total_components": 6,
-    "scanned_components": 0,
-    "coverage_percent": 0.0,
+    "scanned_components": 2,
+    "coverage_percent": 33.3,
     "is_complete": false,
-    "status": "failed",
-    "execution_successful": false,
-    "fully_inspected_files": 0,
-    "partially_inspected_files": 6,
+    "status": "partial",
+    "execution_successful": true,
+    "fully_inspected_files": 2,
+    "partially_inspected_files": 4,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "API_REFERENCE.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
       {
         "outcome": "partial",
         "phase": "static",
@@ -743,20 +753,6 @@
         "analyzers": [
           "static_patterns_tool_misuse"
         ]
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "SKILL.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
       },
       {
         "outcome": "partial",
@@ -842,20 +838,6 @@
         "fatal": false
       },
       {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "lib/helpers.js",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
@@ -867,48 +849,6 @@
         "analyzers": [
           "static_patterns_tool_misuse"
         ]
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "package-lock.json",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "package.json",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
-      },
-      {
-        "outcome": "failed",
-        "phase": "analyzer",
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work.",
-        "path": "run.js",
-        "start_line": null,
-        "end_line": null,
-        "fatal": true,
-        "analyzers": [
-          "static_patterns_supply_chain"
-        ],
-        "error_class": "InvalidURL"
       },
       {
         "outcome": "partial",
@@ -1182,15 +1122,13 @@
       },
       {
         "analyzer_id": "static_patterns_supply_chain",
-        "status": "failed",
+        "status": "completed",
         "planned_work": 6,
-        "completed": 0,
+        "completed": 6,
         "partial": 0,
         "skipped": 0,
-        "failed": 6,
-        "unaccounted": 0,
-        "reason_code": "analyzer_runtime_error",
-        "message": "Analyzer failed after beginning applicable work."
+        "failed": 0,
+        "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_system_prompt_leakage",
@@ -1356,10 +1294,9 @@
       }
     ],
     "limitations": [
-      "Analyzer failed after beginning applicable work.",
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 16,
-    "findings_after_filtering": 16
+    "findings_before_filtering": 17,
+    "findings_after_filtering": 17
   }
 }

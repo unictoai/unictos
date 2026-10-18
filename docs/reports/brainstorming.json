@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "brainstorming",
-    "source": "/tmp/uniscan-trial/obra-superpowers/skills/brainstorming",
-    "scanned_at": "2026-10-13T08:16:15.847122+00:00"
+    "source": "/tmp/uniscan-93yzmvdu/repo/skills/brainstorming",
+    "scanned_at": "2026-10-18T07:45:58.399022+00:00"
   },
   "risk_assessment": {
     "score": 75,
@@ -96,7 +96,7 @@
   "issues": [
     {
       "id": "P2",
-      "finding_id": "finding-7b8d57a2738d4043abb336deff1cd35c",
+      "finding_id": "finding-7145704612ed4f7aaababf63ce7bf6a4",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
@@ -130,7 +130,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-1f76270b89da40b39626e4388e58bfcb",
+      "finding_id": "finding-1e94b5f105e841038d9806b98fd91071",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -162,7 +162,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-dd7df3c6c17c43ee96ec111df6d708a7",
+      "finding_id": "finding-48279c16f2284bf7a0907639f21fac73",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, network, shell.",
       "severity": "MEDIUM",
@@ -192,7 +192,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-0c28dc0d71d04e1a9e7752666807b2cd",
+      "finding_id": "finding-44653615b89d4b42b1eee34d8bbde2c8",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -224,7 +224,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-4621ea0fd02b4fc0aa76cecf6ac2554c",
+      "finding_id": "finding-667f4dfa767e42cba23589c0726d9724",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -256,7 +256,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-ec15a71dc20f4a818b20c4126317fbee",
+      "finding_id": "finding-dfcb6f4c9cea41cdbca3fef9eef72198",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -288,7 +288,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-17fdd4743a404387b34091500aaa7434",
+      "finding_id": "finding-0838110b57c84d7195d0a92009ead89f",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -320,7 +320,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-cd5fdc5127ac4a2aaa630c25dc63e10a",
+      "finding_id": "finding-28d0ad18bda041bb8d7c087ef00c49dc",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -384,7 +384,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -397,7 +397,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -410,7 +410,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -423,7 +423,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -436,7 +436,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }

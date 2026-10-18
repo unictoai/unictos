@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "deploy-to-vercel",
-    "source": "/tmp/uniscan-trial/agent-skills/skills/deploy-to-vercel",
-    "scanned_at": "2026-10-13T07:51:39.501145+00:00"
+    "source": "/tmp/uniscan-y84s0iqp/repo/skills/deploy-to-vercel",
+    "scanned_at": "2026-10-18T07:35:39.813935+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -175,7 +175,7 @@
   "issues": [
     {
       "id": "SC9",
-      "finding_id": "finding-ffa76dc945084877b75f542fc8a30a71",
+      "finding_id": "finding-d8cb28be8bf1425184738a59919110df",
       "category": "Supply Chain",
       "pattern": "Concealed Executable Artifact",
       "severity": "HIGH",
@@ -211,6 +211,7 @@
         "local_only": true,
         "referenced": false,
         "excluded_from_analysis": true,
+        "partially_analyzed_executable": false,
         "excluded_inspection_incomplete": false,
         "inherited_exclusion_reason": "binary_content",
         "inspection_limitation_reason": null
@@ -226,7 +227,7 @@
     },
     {
       "id": "SC9",
-      "finding_id": "finding-8115d2755e2f40c08119e87a6c8c1a92",
+      "finding_id": "finding-3a6226da49a14620839da4a7b085c4bc",
       "category": "Supply Chain",
       "pattern": "Concealed Executable Artifact",
       "severity": "HIGH",
@@ -262,6 +263,7 @@
         "local_only": true,
         "referenced": false,
         "excluded_from_analysis": true,
+        "partially_analyzed_executable": false,
         "excluded_inspection_incomplete": false,
         "inherited_exclusion_reason": "binary_content",
         "inspection_limitation_reason": null
@@ -277,7 +279,7 @@
     },
     {
       "id": "SC9",
-      "finding_id": "finding-13bd33d8600c47a089acff983dbb1c20",
+      "finding_id": "finding-a995c599ceb842f5bc7f86d5b9cba106",
       "category": "Supply Chain",
       "pattern": "Concealed Executable Artifact",
       "severity": "HIGH",
@@ -313,6 +315,7 @@
         "local_only": true,
         "referenced": false,
         "excluded_from_analysis": true,
+        "partially_analyzed_executable": false,
         "excluded_inspection_incomplete": false,
         "inherited_exclusion_reason": "binary_content",
         "inspection_limitation_reason": null
@@ -328,7 +331,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-0245ec82d5ff41ca908ea1859ec40fb7",
+      "finding_id": "finding-a26fc9b83622467c9b5b4e4673d7cd58",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -360,7 +363,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-1eb5f9e0aed142548d6d77d46f0b5ce0",
+      "finding_id": "finding-1bbe9a7cd3c4419a83106571a78dacfc",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -392,7 +395,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-192a265ab7b543d0b686f20e421f7751",
+      "finding_id": "finding-30287d26ef594f58b727bd714ead58e8",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -424,7 +427,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-9f20a2297b844dd5b8c523e0ca286338",
+      "finding_id": "finding-991c5c3a1aa447be9340d17812afaebf",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -456,7 +459,7 @@
     },
     {
       "id": "AE2",
-      "finding_id": "finding-f6c22e781a9d4ddf9e2a4a2507a22d1a",
+      "finding_id": "finding-86b33ce909b24216a3e299d7785714a2",
       "category": "analysis-evasion",
       "pattern": null,
       "severity": "MEDIUM",
@@ -486,7 +489,7 @@
     },
     {
       "id": "AE2",
-      "finding_id": "finding-c94a3ffbf7a442dd8858132c8ec2c2c4",
+      "finding_id": "finding-78a43f81f5084560a813c87d00356fc9",
       "category": "analysis-evasion",
       "pattern": null,
       "severity": "MEDIUM",
@@ -516,7 +519,7 @@
     },
     {
       "id": "AE2",
-      "finding_id": "finding-d4285689cc6d458d86d6014ae2c885d8",
+      "finding_id": "finding-a4d59455ba9441089538c4eaebe8c026",
       "category": "analysis-evasion",
       "pattern": null,
       "severity": "MEDIUM",
@@ -546,7 +549,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-58d5efcdad5b46b49414146b4e1e485f",
+      "finding_id": "finding-52e7d457c7b546428bf8ff6018195f14",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: shell.",
       "severity": "MEDIUM",
@@ -608,7 +611,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -621,7 +624,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -634,7 +637,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -647,7 +650,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -660,7 +663,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1089,151 +1092,151 @@
       {
         "analyzer_id": "static_patterns_agent_snooping",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_anti_refusal",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_data_exfiltration",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_deserialization",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_excessive_agency",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_harmful_content",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_memory_poisoning",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_output_handling",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_privilege_escalation",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_prompt_injection",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_rogue_agent",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_ssrf",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_supply_chain",
         "status": "completed",
-        "planned_work": 14,
+        "planned_work": 10,
         "completed": 10,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_system_prompt_leakage",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_tool_misuse",
         "status": "completed",
-        "planned_work": 11,
+        "planned_work": 7,
         "completed": 7,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {

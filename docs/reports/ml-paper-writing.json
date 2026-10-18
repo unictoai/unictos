@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "ml-paper-writing",
-    "source": "/tmp/uniscan-trial/orchestra/20-ml-paper-writing/ml-paper-writing",
-    "scanned_at": "2026-10-13T08:25:36.750043+00:00"
+    "source": "/tmp/uniscan-3t8omi2v/repo/20-ml-paper-writing/ml-paper-writing",
+    "scanned_at": "2026-10-18T07:58:00.696074+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -526,97 +526,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-6edddcc0830348fda9cf9fe29b8d6d3b",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 346,
-        "end_line": null
-      },
-      "finding": "references/checklists.md (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "NeurIPS, ICML, and ICLR all require paper checklists. See [references/checklists.md](references/checklists.md).",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
-      ],
-      "evidence": {
-        "target_path": "references/checklists.md",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "420056285b7f802777d95fd2d0418ac5b399cda4e60114ae87a99d55ff7ba227",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 346,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-5107a891c6084a318e4cfb11604f2686",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 951,
-        "end_line": null
-      },
-      "finding": "references/checklists.md (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "| [checklists.md](references/checklists.md) | NeurIPS 16-item, ICML, ICLR, ACL requirements |",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
-      ],
-      "evidence": {
-        "target_path": "references/checklists.md",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "420056285b7f802777d95fd2d0418ac5b399cda4e60114ae87a99d55ff7ba227",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 951,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-cf8c06ef12574d3fa270f9b544256c5d",
+      "finding_id": "finding-b6c137aafd6e4be68a92b8bd3228ed47",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -661,7 +571,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-8cc26aa875fa43ac83ae0530be0556eb",
+      "finding_id": "finding-c28b3bc03a6c4a65a0d73839c764b887",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -706,7 +616,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-66a71cb9ed9f4ed58b4701c3d220dcc0",
+      "finding_id": "finding-8de48b3618164bd99932e692d3e7862a",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -751,7 +661,7 @@
     },
     {
       "id": "TM2",
-      "finding_id": "finding-f6ed0162256541e48b4304c12a5959de",
+      "finding_id": "finding-c0ac28647f82411c8cdd02aae385db52",
       "category": "Tool Misuse",
       "pattern": "Chaining Abuse",
       "severity": "HIGH",
@@ -783,7 +693,7 @@
     },
     {
       "id": "TM2",
-      "finding_id": "finding-cf43178f5e754cb189bb3b7b3e5ab827",
+      "finding_id": "finding-64bced556940439aa00a74a86546d0fb",
       "category": "Tool Misuse",
       "pattern": "Chaining Abuse",
       "severity": "HIGH",
@@ -815,7 +725,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-71a30c7c4db94f0abf4d700e90d9cd8b",
+      "finding_id": "finding-e4a1d8eeea7f4e04b1292356e17536fe",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx -y mcp-remote'.",
       "severity": "MEDIUM",
@@ -845,7 +755,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-a44d338b57ea4ee5a4eab4e36897ade1",
+      "finding_id": "finding-733338e8cd384f2ca5e4d827d483eca0",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -877,7 +787,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-9c17694d32ca4b80a7fb6900513aabb7",
+      "finding_id": "finding-8bbff302047a42c8bc2323bc3187a0d1",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -909,7 +819,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-c97f44cc5706477da7784385c96e40dd",
+      "finding_id": "finding-b0ec3a173f4a409898c7959f3ffacd82",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -941,7 +851,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-20357692ec824dfc95dcab362a68031a",
+      "finding_id": "finding-cde046615996477a9f51aac3a96b0dc5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -973,7 +883,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-044f4d5b6db848ccbcbf719b259fb213",
+      "finding_id": "finding-513acbc3ebed472da8ae3a46968a8c20",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1005,7 +915,7 @@
     },
     {
       "id": "PE2",
-      "finding_id": "finding-8b1684f4825d4a9e83e484565aa6f8c2",
+      "finding_id": "finding-aed23ab281c74736977771d0f64fdd78",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -1037,7 +947,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-cf1ee70725f548a09d4297c410c35626",
+      "finding_id": "finding-5199ec8489e64322a512bd7af595c72d",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -1069,7 +979,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-a2cded114c0940219ad7e32aa42954e3",
+      "finding_id": "finding-c058d93b3e5442b4af0e4bb713474125",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1101,7 +1011,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-92a73a01f8de4062bd7a5400c7659163",
+      "finding_id": "finding-b9ae49a5b9f74cf99e7f34c3a0bace25",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1133,7 +1043,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-a929e5451c9c45349a6e06ad7de5bd18",
+      "finding_id": "finding-4823e2390c864d8eb450126ed2ea2f15",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1165,7 +1075,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-2d970c4bfbe149f5af28da6f555062fa",
+      "finding_id": "finding-1c685530be514a7d966ca35aa1026324",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1197,7 +1107,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-a3aee277e8ae4aac8f69748175a6a275",
+      "finding_id": "finding-c6770db0ddc044f1b8050563c9973499",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1229,7 +1139,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-0a5de0d3ceb54cba99706f2d381bb07c",
+      "finding_id": "finding-1f8c308d09254c38a96c850e491955e0",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1293,7 +1203,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1306,7 +1216,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1319,7 +1229,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1332,7 +1242,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1345,7 +1255,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "789f517585564b72c6c85c387dcd2101c91da1b4",
+              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
               "source": "package_vcs_metadata"
             }
           }
@@ -1386,13 +1296,13 @@
   "execution_successful": true,
   "analysis_completeness": {
     "total_components": 47,
-    "scanned_components": 36,
-    "coverage_percent": 76.6,
+    "scanned_components": 37,
+    "coverage_percent": 78.7,
     "is_complete": false,
     "status": "partial",
     "execution_successful": true,
-    "fully_inspected_files": 36,
-    "partially_inspected_files": 11,
+    "fully_inspected_files": 37,
+    "partially_inspected_files": 10,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
       {
@@ -1437,19 +1347,6 @@
         "start_line": 791,
         "end_line": 791,
         "fatal": false
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "references/checklists.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
       },
       {
         "outcome": "partial",
@@ -1572,111 +1469,43 @@
     "scope_exclusions": [
       {
         "outcome": "out_of_scope",
-        "phase": "static",
-        "reason_code": "binary_content",
-        "message": "Binary content is unsupported by this analyzer.",
+        "phase": "cache",
+        "reason_code": "binary_text_projection",
+        "message": "Only bounded printable text was inspected; binary structure and behavior are outside scope.",
         "path": "templates/colm2025/colm2025_conference.pdf",
         "start_line": null,
         "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_agent_snooping",
-          "static_patterns_anti_refusal",
-          "static_patterns_data_exfiltration",
-          "static_patterns_deserialization",
-          "static_patterns_excessive_agency",
-          "static_patterns_harmful_content",
-          "static_patterns_memory_poisoning",
-          "static_patterns_output_handling",
-          "static_patterns_privilege_escalation",
-          "static_patterns_prompt_injection",
-          "static_patterns_rogue_agent",
-          "static_patterns_ssrf",
-          "static_patterns_supply_chain",
-          "static_patterns_system_prompt_leakage",
-          "static_patterns_tool_misuse"
-        ]
+        "fatal": false
       },
       {
         "outcome": "out_of_scope",
-        "phase": "static",
-        "reason_code": "binary_content",
-        "message": "Binary content is unsupported by this analyzer.",
+        "phase": "cache",
+        "reason_code": "binary_text_projection",
+        "message": "Only bounded printable text was inspected; binary structure and behavior are outside scope.",
         "path": "templates/iclr2026/iclr2026_conference.pdf",
         "start_line": null,
         "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_agent_snooping",
-          "static_patterns_anti_refusal",
-          "static_patterns_data_exfiltration",
-          "static_patterns_deserialization",
-          "static_patterns_excessive_agency",
-          "static_patterns_harmful_content",
-          "static_patterns_memory_poisoning",
-          "static_patterns_output_handling",
-          "static_patterns_privilege_escalation",
-          "static_patterns_prompt_injection",
-          "static_patterns_rogue_agent",
-          "static_patterns_ssrf",
-          "static_patterns_supply_chain",
-          "static_patterns_system_prompt_leakage",
-          "static_patterns_tool_misuse"
-        ]
+        "fatal": false
       },
       {
         "outcome": "out_of_scope",
-        "phase": "static",
-        "reason_code": "binary_content",
-        "message": "Binary content is unsupported by this analyzer.",
+        "phase": "cache",
+        "reason_code": "binary_text_projection",
+        "message": "Only bounded printable text was inspected; binary structure and behavior are outside scope.",
         "path": "templates/icml2026/example_paper.pdf",
         "start_line": null,
         "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_agent_snooping",
-          "static_patterns_anti_refusal",
-          "static_patterns_data_exfiltration",
-          "static_patterns_deserialization",
-          "static_patterns_excessive_agency",
-          "static_patterns_harmful_content",
-          "static_patterns_memory_poisoning",
-          "static_patterns_output_handling",
-          "static_patterns_privilege_escalation",
-          "static_patterns_prompt_injection",
-          "static_patterns_rogue_agent",
-          "static_patterns_ssrf",
-          "static_patterns_supply_chain",
-          "static_patterns_system_prompt_leakage",
-          "static_patterns_tool_misuse"
-        ]
+        "fatal": false
       },
       {
         "outcome": "out_of_scope",
-        "phase": "static",
-        "reason_code": "binary_content",
-        "message": "Binary content is unsupported by this analyzer.",
+        "phase": "cache",
+        "reason_code": "binary_text_projection",
+        "message": "Only bounded printable text was inspected; binary structure and behavior are outside scope.",
         "path": "templates/icml2026/icml_numpapers.pdf",
         "start_line": null,
         "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_agent_snooping",
-          "static_patterns_anti_refusal",
-          "static_patterns_data_exfiltration",
-          "static_patterns_deserialization",
-          "static_patterns_excessive_agency",
-          "static_patterns_harmful_content",
-          "static_patterns_memory_poisoning",
-          "static_patterns_output_handling",
-          "static_patterns_privilege_escalation",
-          "static_patterns_prompt_injection",
-          "static_patterns_rogue_agent",
-          "static_patterns_ssrf",
-          "static_patterns_supply_chain",
-          "static_patterns_system_prompt_leakage",
-          "static_patterns_tool_misuse"
-        ]
+        "fatal": false
       }
     ],
     "analyzer_statuses": [
@@ -1773,8 +1602,8 @@
       {
         "analyzer_id": "reference_coverage",
         "status": "completed",
-        "planned_work": 5,
-        "completed": 5,
+        "planned_work": 3,
+        "completed": 3,
         "partial": 0,
         "skipped": 0,
         "failed": 0,
@@ -1820,150 +1649,150 @@
         "analyzer_id": "static_patterns_agent_snooping",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_anti_refusal",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_data_exfiltration",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_deserialization",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_excessive_agency",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_harmful_content",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_memory_poisoning",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_output_handling",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_privilege_escalation",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_prompt_injection",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_rogue_agent",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_ssrf",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_supply_chain",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_system_prompt_leakage",
         "status": "completed",
         "planned_work": 51,
-        "completed": 47,
+        "completed": 51,
         "partial": 0,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
         "analyzer_id": "static_patterns_tool_misuse",
         "status": "degraded",
         "planned_work": 51,
-        "completed": 36,
-        "partial": 11,
+        "completed": 41,
+        "partial": 10,
         "skipped": 0,
-        "failed": 4,
+        "failed": 0,
         "unaccounted": 0
       },
       {
@@ -2622,7 +2451,7 @@
     "limitations": [
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 21,
-    "findings_after_filtering": 21
+    "findings_before_filtering": 19,
+    "findings_after_filtering": 19
   }
 }
