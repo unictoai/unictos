@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "pdf",
-    "source": "/tmp/uniscan-6msbgz22/repo/skills/pdf",
-    "scanned_at": "2026-10-18T07:33:53.325698+00:00"
+    "source": "/tmp/uniscan-kml_b56c/repo/skills/pdf",
+    "scanned_at": "2026-10-25T07:56:43.450369+00:00"
   },
   "risk_assessment": {
     "score": 7,
@@ -136,7 +136,7 @@
   "issues": [
     {
       "id": "LP3",
-      "finding_id": "finding-eb46e81c1d6c4c99af0cbb05e7397c72",
+      "finding_id": "finding-28daf383c0a747c780ef747559acd2e7",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: file_read, file_write.",
       "severity": "MEDIUM",
@@ -198,7 +198,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -211,7 +211,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -224,7 +224,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -237,7 +237,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -250,7 +250,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "experimental-design",
-    "source": "/tmp/uniscan-7dz2wndh/repo/skills/experimental-design",
-    "scanned_at": "2026-10-18T07:53:53.072412+00:00"
+    "source": "/tmp/uniscan-743t3w4h/repo/skills/experimental-design",
+    "scanned_at": "2026-10-25T08:16:18.556141+00:00"
   },
   "risk_assessment": {
     "score": 0,
@@ -117,7 +117,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -130,7 +130,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -143,7 +143,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -156,7 +156,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -169,7 +169,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

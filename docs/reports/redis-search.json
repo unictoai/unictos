@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "redis-search",
-    "source": "/tmp/uniscan-xqxsd6ir/repo/skills/redis-search",
-    "scanned_at": "2026-10-18T08:08:09.013951+00:00"
+    "source": "/tmp/uniscan-7xd0fvb3/repo/skills/redis-search",
+    "scanned_at": "2026-10-25T08:30:33.629599+00:00"
   },
   "risk_assessment": {
     "score": 43,
@@ -246,7 +246,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-66956d01718341af8cc95e087b36c2ba",
+      "finding_id": "finding-391ceec67529442ba2e9bd07141595f6",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -291,7 +291,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-1a60a999beba4116b9ebc91d207b3733",
+      "finding_id": "finding-13d0a98264d2445694f77968ef04d0d1",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -336,7 +336,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-bea6a8551a1142a3b0149db2eb01a89a",
+      "finding_id": "finding-df4df4a908404d8e857b35576a099423",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -381,7 +381,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-4fe8ec6d5a54424a90fc971499e1b049",
+      "finding_id": "finding-edce56565fa44320b0e96011d0c8487e",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -458,7 +458,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -471,7 +471,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -484,7 +484,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -497,7 +497,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -510,7 +510,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

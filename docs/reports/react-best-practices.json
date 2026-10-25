@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "vercel-react-best-practices",
-    "source": "/tmp/uniscan-3i17hrnh/repo/skills/react-best-practices",
-    "scanned_at": "2026-10-18T07:35:27.935026+00:00"
+    "source": "/tmp/uniscan-ytph0b_i/repo/skills/react-best-practices",
+    "scanned_at": "2026-10-25T07:58:18.814572+00:00"
   },
   "risk_assessment": {
     "score": 34,
@@ -776,7 +776,7 @@
   "issues": [
     {
       "id": "OH1",
-      "finding_id": "finding-14f2e9c1424d4cc18cecf46727eeaff9",
+      "finding_id": "finding-5704e78250604114ade50c7bfe553491",
       "category": "Output Handling",
       "pattern": "Unvalidated Output Injection",
       "severity": "HIGH",
@@ -808,7 +808,7 @@
     },
     {
       "id": "OH1",
-      "finding_id": "finding-4f7d9e1bf3f8404ca3b58e61974d6ed9",
+      "finding_id": "finding-f4564ef729804ecca9fb69bb1df98027",
       "category": "Output Handling",
       "pattern": "Unvalidated Output Injection",
       "severity": "HIGH",
@@ -840,7 +840,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-a10f74019cc34a6caac59a8455b2182b",
+      "finding_id": "finding-dbd20f61b1ed4a42a9b5b0976f130f5c",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx svgo'.",
       "severity": "MEDIUM",
@@ -870,7 +870,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-4d101ca376ef4154925cba9165c1d897",
+      "finding_id": "finding-c4f162634eb049ea9aa441ca9bf7ab2b",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx svgo'.",
       "severity": "MEDIUM",
@@ -932,7 +932,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -945,7 +945,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -958,7 +958,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -971,7 +971,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -984,7 +984,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

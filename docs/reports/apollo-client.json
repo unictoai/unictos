@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "apollo-client",
-    "source": "/tmp/uniscan-ocnlcvwn/repo/skills/apollo-client",
-    "scanned_at": "2026-10-18T08:05:18.946323+00:00"
+    "source": "/tmp/uniscan-dbacw_fn/repo/skills/apollo-client",
+    "scanned_at": "2026-10-25T08:27:44.410839+00:00"
   },
   "risk_assessment": {
     "score": 54,
@@ -156,7 +156,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-db4e47b78efa4005a447fe8f071f1060",
+      "finding_id": "finding-fb92bdc786df4c41ba5113b0e3f212c9",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -201,7 +201,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-ad5da22d13484f29bca0c83525e7535b",
+      "finding_id": "finding-646410dc073e45998c703e7266429da5",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -246,7 +246,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-ed24cb11433040089c84e2fb6696647d",
+      "finding_id": "finding-0f6c8d78d5634d369f301c96fce5c382",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -387,7 +387,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-2bf5d5ff5ce341a29c4d16e513d9f625",
+      "finding_id": "finding-b7138b39f1c8451b8b98e4e89fdc0224",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -432,7 +432,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-c064364ecf4a42b691bfcf7545991cc6",
+      "finding_id": "finding-9f2a2385ba424d28a23c9851f86c05c9",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -477,7 +477,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-21ce395edd774c04b8efa08c79ebd40b",
+      "finding_id": "finding-0c2d625e3f0a4357abc9c533689ef537",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx react-router'.",
       "severity": "MEDIUM",
@@ -507,7 +507,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-69f30ccfff1a414fb599d9a5c036f9bd",
+      "finding_id": "finding-1e7e258d69354b2b9be530b64b98e3bd",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx create-tsrouter-app'.",
       "severity": "MEDIUM",
@@ -569,7 +569,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -582,7 +582,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -595,7 +595,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -608,7 +608,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -621,7 +621,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "security-audit",
-    "source": "/tmp/uniscan-x0q3ytkc/repo/skills/security-audit",
-    "scanned_at": "2026-10-18T07:33:44.641985+00:00"
+    "source": "/tmp/uniscan-jy2hknjj/repo/skills/security-audit",
+    "scanned_at": "2026-10-25T07:56:35.011895+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -216,7 +216,7 @@
   "issues": [
     {
       "id": "MP3",
-      "finding_id": "finding-956b2a748c2d4a8c858fb3004690bc60",
+      "finding_id": "finding-b52e51270aa841d38f6ea5813378ad69",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -248,7 +248,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-f43c64a306a94229ab07fad6b87711a5",
+      "finding_id": "finding-2872b475b5084e138ad064b68dc994c0",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -280,7 +280,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-92dc043470c34960878caaa416a82dd7",
+      "finding_id": "finding-8d164260bdf547f99daa151b4cdb8fa8",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -312,7 +312,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-b1f4ed5f33b644d9964a46c6aa7e09dd",
+      "finding_id": "finding-f4efc6f2d161427db35d3c984c4d6fa0",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -357,7 +357,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-3da7a2c37b994fa7900853a99d239c4b",
+      "finding_id": "finding-f7e1c091ede34e7aba94f73db7406a48",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -402,7 +402,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-16bca344cba44d389d6fdf703c678613",
+      "finding_id": "finding-71d309a9271d45ea862c43e0b1558355",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -447,7 +447,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-2ea448016b344418b5b363a3d65c777b",
+      "finding_id": "finding-8f7ce59abcbc4ad7a72f89025c64b630",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -492,7 +492,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-268a2d95a63d4e1fa9c54d10dfc8c012",
+      "finding_id": "finding-372471a4e76a4842a420089712f996d0",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -524,7 +524,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-13559cbb6b3e44f0966d7240b5fb2e77",
+      "finding_id": "finding-4ab70827e1244785b3ea81cf1ccbb263",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -556,7 +556,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-f6c16e07a82245f398707b61ac9a525a",
+      "finding_id": "finding-e60f56debd3849c3863fbdaede8479b0",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -588,7 +588,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-8fbbd9db09c445af862bd5fd580e0a09",
+      "finding_id": "finding-4168d05397e841d3a794cc209d00a45c",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -620,7 +620,7 @@
     },
     {
       "id": "TM3",
-      "finding_id": "finding-83e68a5a4646477a868324888f63416c",
+      "finding_id": "finding-66517bf965cb44588a47d1a881f0b106",
       "category": "Tool Misuse",
       "pattern": "Unsafe Defaults",
       "severity": "MEDIUM",
@@ -652,7 +652,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-b7c78208b26845438e5501bb2e8054da",
+      "finding_id": "finding-dcfcca29ab7442de87e30a7671deab09",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -684,7 +684,7 @@
     },
     {
       "id": "PE1",
-      "finding_id": "finding-11e45ecc0d0d42adb8f70c73ad55dd89",
+      "finding_id": "finding-7734facfe6474499bdc8570209bf2b82",
       "category": "Privilege Escalation",
       "pattern": "Excessive Permissions",
       "severity": "LOW",
@@ -748,7 +748,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -761,7 +761,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -774,7 +774,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -787,7 +787,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -800,7 +800,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

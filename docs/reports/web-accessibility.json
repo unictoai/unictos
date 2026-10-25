@@ -1,12 +1,12 @@
 {
   "skill": {
     "name": "accessibility",
-    "source": "/tmp/uniscan-em__p0vx/repo/skills/accessibility",
-    "scanned_at": "2026-10-18T08:05:45.030992+00:00"
+    "source": "/tmp/uniscan-fy60qsjn/repo/skills/accessibility",
+    "scanned_at": "2026-10-25T08:28:10.066532+00:00"
   },
   "risk_assessment": {
-    "score": 81,
-    "severity": "CRITICAL",
+    "score": 68,
+    "severity": "HIGH",
     "recommendation": "DO_NOT_INSTALL",
     "max_issue_severity": "HIGH"
   },
@@ -45,77 +45,8 @@
   "structured_summaries": [],
   "issues": [
     {
-      "id": "P2",
-      "finding_id": "finding-8e0ea1ae9b244bdb852a32516164e2cb",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 50,
-        "end_line": 309,
-        "start_column": 0,
-        "end_column": 32
-      },
-      "finding": "<!-- \u274c Missing alt -->\n<img src=\"chart.png\">\n\n<!-- \u2705 Descriptive alt -->\n<img src=\"chart.png\" alt=\"Bar chart showing 40% increase in Q3 sales\">\n\n<!-- \u2705 Decorative image (empty alt) -->\n<img src=\"decor",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "\n**Images require alt text:**\n```html\n<!-- \u274c Missing alt -->\n<img src=\"chart.png\">\n\n<!-- \u2705 Descriptive alt -->",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "75a7faa02b71093eb8dcdad0afa6be2ad007f5c6ba93f35f5e8f9f057f634305",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 50,
-          "end_line": 309,
-          "start_column": 0,
-          "end_column": 32
-        }
-      ]
-    },
-    {
-      "id": "P2",
-      "finding_id": "finding-a5533f2a5edf483a9927f0c15711838f",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 50,
-        "end_line": 309,
-        "start_column": 0,
-        "end_column": 32
-      },
-      "finding": "<!-- \u274c Missing alt -->\n<img src=\"chart.png\">\n\n<!-- \u2705 Descriptive alt -->\n<img src=\"chart.png\" alt=\"Bar chart showing 40% increase in Q3 sales\">\n\n<!-- \u2705 Decorative image (empty alt) -->\n<img src=\"decor",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "\n**Images require alt text:**\n```html\n<!-- \u274c Missing alt -->\n<img src=\"chart.png\">\n\n<!-- \u2705 Descriptive alt -->",
-      "intent": null,
-      "tags": [
-        "Prompt Injection",
-        "normalized-view"
-      ],
-      "evidence": {},
-      "match_fingerprint": "1a143b851311afc4d3636995afa795caa8c0667a3b39864c60653bdc8e5b020a",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 50,
-          "end_line": 309,
-          "start_column": 0,
-          "end_column": 32
-        }
-      ]
-    },
-    {
       "id": "AE1",
-      "finding_id": "finding-9adc046fc2124d0cbe649187ea68847b",
+      "finding_id": "finding-bd9bfb8c98a64813990c37f4bfd4adac",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -160,7 +91,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-41d68ba86747436aad156267423fa91d",
+      "finding_id": "finding-8acdc6aea6464d81b1b443bee45b8a3f",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -205,7 +136,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-252b25e4ded34256b39fcd30184edcbe",
+      "finding_id": "finding-6784c030a77340268b0352125ef46da8",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -250,7 +181,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-f87132e49f324a18a74ada4f72e7f116",
+      "finding_id": "finding-ea594a93a2e7404c824ad8889936caaa",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -295,7 +226,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-4d969d00500a42f083fa697254fdccb5",
+      "finding_id": "finding-f80b634b2e944945bfaecf782f64f84f",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -340,7 +271,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-b55743c5c0c849c4b32a199853b2a30d",
+      "finding_id": "finding-e9812a23a617485ba69c2c3f73e9984e",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -385,7 +316,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-7f10757008a54b2d9284076548ca2f9f",
+      "finding_id": "finding-e1920213404f43f495a1a7b7dbf3b5cb",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -430,7 +361,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-54a429a3293c48cdbb5d0c0ffa77f7db",
+      "finding_id": "finding-fa45da01662c4866acd89812f178d94d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -475,7 +406,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-02825992e44a4101886f348d1b549438",
+      "finding_id": "finding-69a047b562414f53b9dbee59239c0447",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -520,100 +451,32 @@
     },
     {
       "id": "P2",
-      "finding_id": "finding-2f19ca3ef84742f383be8e18799cabce",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 312,
-        "end_line": 349,
-        "start_column": 0,
-        "end_column": 50
-      },
-      "finding": "<!-- \u2705 Language specified -->\n<html lang=\"en\">\n\n<!-- \u2705 Language changes within page -->\n<p>The French word for hello is <span lang=\"fr\">bonjour</span>.</p>\n```\n\n### Consistent navigation (3.2.3)\n\n```h",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "<!-- \u274c No language specified -->\n<html>\n\n<!-- \u2705 Language specified -->\n<html lang=\"en\">\n\n<!-- \u2705 Language changes within page -->",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "65d3c334756aa192d35a046b33bc1b5d37f55c93cb4d20520d7318575c4d903e",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 312,
-          "end_line": 349,
-          "start_column": 0,
-          "end_column": 50
-        }
-      ]
-    },
-    {
-      "id": "P2",
-      "finding_id": "finding-5055723c8dbc477cb9f1e19fa9716df5",
+      "finding_id": "finding-b29119a0c172451693a4ee37da04356f",
       "category": "Prompt Injection",
       "pattern": "Hidden Instructions",
       "severity": "HIGH",
       "confidence": 0.7,
       "location": {
         "file": "references/A11Y-PATTERNS.md",
-        "start_line": 49,
-        "end_line": 114,
-        "start_column": 10,
-        "end_column": 31
-      },
-      "finding": "<!-- navigation --></header>\n  <main id=\"main-content\" tabindex=\"-1\">\n    <!-- main content -->\n  </main>\n</body>\n```\n\n```css\n.skip-link {\n  position: absolute;\n  top: -40px;\n  left: 0;\n  background: ",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "```html\n<body>\n  <a href=\"#main-content\" class=\"skip-link\">Skip to main content</a>\n  <header><!-- navigation --></header>\n  <main id=\"main-content\" tabindex=\"-1\">\n    <!-- main content -->\n  </main>",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "a311c4ef8e844e283461b54dbdd393e6f450c28c6081ab2ff8dc778a6a5f61a0",
-      "occurrences": [
-        {
-          "file": "references/A11Y-PATTERNS.md",
-          "start_line": 49,
-          "end_line": 114,
-          "start_column": 10,
-          "end_column": 31
-        }
-      ]
-    },
-    {
-      "id": "P2",
-      "finding_id": "finding-f7fb202ba66d4fc2a2ad1ec06b0274cd",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/A11Y-PATTERNS.md",
-        "start_line": 117,
+        "start_line": 128,
         "end_line": 128,
         "start_column": 0,
         "end_column": 28
       },
-      "finding": "<!-- \u2705 Explicit label -->\n<label for=\"email\">Email address</label>\n<input type=\"email\" id=\"email\" name=\"email\"\n       autocomplete=\"email\" required>\n\n<!-- \u2705 Implicit label -->\n<label>\n  Email address\n",
+      "finding": "<!-- \u2705 With instructions -->",
       "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
       "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "<!-- \u274c No label association -->\n<input type=\"email\" placeholder=\"Email\">\n\n<!-- \u2705 Explicit label -->\n<label for=\"email\">Email address</label>\n<input type=\"email\" id=\"email\" name=\"email\"\n       autocomplete=\"email\" required>",
+      "code_snippet": "  <input type=\"email\" name=\"email\" autocomplete=\"email\" required>\n</label>\n\n<!-- \u2705 With instructions -->\n<label for=\"password\">Password</label>\n<input type=\"password\" id=\"password\"\n       aria-describedby=\"password-requirements\">",
       "intent": null,
       "tags": [
         "Prompt Injection"
       ],
       "evidence": {},
-      "match_fingerprint": "fba60d4e14837ccc6175089784137723b5d6f5e2dc867194bee6813dfad4edd0",
+      "match_fingerprint": "b65dc6feb140000a30d34e7af466feaa14a455804d321338ab2278a35e13687d",
       "occurrences": [
         {
           "file": "references/A11Y-PATTERNS.md",
-          "start_line": 117,
+          "start_line": 128,
           "end_line": 128,
           "start_column": 0,
           "end_column": 28
@@ -621,111 +484,8 @@
       ]
     },
     {
-      "id": "P2",
-      "finding_id": "finding-7326ad7820734663bce2a3177c60cc04",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/A11Y-PATTERNS.md",
-        "start_line": 144,
-        "end_line": 181,
-        "start_column": 0,
-        "end_column": 24
-      },
-      "finding": "<!-- \u274c Drag-only reorder -->\n<ul class=\"sortable-list\" draggable=\"true\">\n  <li>Item 1</li>\n  <li>Item 2</li>\n</ul>\n\n<!-- \u2705 Drag + button alternatives -->\n<ul class=\"sortable-list\">\n  <li>\n    <span>It",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "Any action triggered by dragging must offer a single-pointer alternative (WCAG 2.5.7).\n\n```html\n<!-- \u274c Drag-only reorder -->\n<ul class=\"sortable-list\" draggable=\"true\">\n  <li>Item 1</li>\n  <li>Item 2</li>",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "cce7a93a64c5b2f8c75bba76e86bb035419db009b4f83fa9e0316d6a92afd404",
-      "occurrences": [
-        {
-          "file": "references/A11Y-PATTERNS.md",
-          "start_line": 144,
-          "end_line": 181,
-          "start_column": 0,
-          "end_column": 24
-        }
-      ]
-    },
-    {
-      "id": "P2",
-      "finding_id": "finding-efa5e82b3c3f4f3a981240dde74987d9",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/WCAG.md",
-        "start_line": 103,
-        "end_line": 145,
-        "start_column": 0,
-        "end_column": 18
-      },
-      "finding": "<!-- or -->\n<button aria-label=\"Close dialog\">x</button>\n```\n\n### Links\n```html\n<a href=\"/page\">Descriptive link text</a>\n<!-- External links -->\n<a href=\"https://external.com\" target=\"_blank\" rel=\"no",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "### Buttons\n```html\n<button>Label</button>\n<!-- or -->\n<button aria-label=\"Close dialog\">x</button>\n```\n",
-      "intent": null,
-      "tags": [
-        "Prompt Injection",
-        "normalized-view"
-      ],
-      "evidence": {},
-      "match_fingerprint": "c0dbd27ee84b8f3b875579add37c36b060fc8a91c031b49309b000780dcdfe68",
-      "occurrences": [
-        {
-          "file": "references/WCAG.md",
-          "start_line": 103,
-          "end_line": 145,
-          "start_column": 0,
-          "end_column": 18
-        }
-      ]
-    },
-    {
-      "id": "P2",
-      "finding_id": "finding-e203a1fd8e164fdea3ba6d25438ed600",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/WCAG.md",
-        "start_line": 103,
-        "end_line": 145,
-        "start_column": 0,
-        "end_column": 18
-      },
-      "finding": "<!-- or -->\n<button aria-label=\"Close dialog\">\u00d7</button>\n```\n\n### Links\n```html\n<a href=\"/page\">Descriptive link text</a>\n<!-- External links -->\n<a href=\"https://external.com\" target=\"_blank\" rel=\"no",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "### Buttons\n```html\n<button>Label</button>\n<!-- or -->\n<button aria-label=\"Close dialog\">\u00d7</button>\n```\n",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "cf40b191a1aa5fccf1fcc7ec7d9d4fcd89b5f2ee50e8135bede3b2e188ea74a5",
-      "occurrences": [
-        {
-          "file": "references/WCAG.md",
-          "start_line": 103,
-          "end_line": 145,
-          "start_column": 0,
-          "end_column": 18
-        }
-      ]
-    },
-    {
       "id": "RP1",
-      "finding_id": "finding-2174c4170fc2410ca9297ce5011aee51",
+      "finding_id": "finding-9a3aa91f01e14629a78b37523ab4a221",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx lighthouse'.",
       "severity": "MEDIUM",
@@ -787,7 +547,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -800,7 +560,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -813,7 +573,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -826,7 +586,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -839,7 +599,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1527,7 +1287,7 @@
     "limitations": [
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 18,
-    "findings_after_filtering": 18
+    "findings_before_filtering": 11,
+    "findings_after_filtering": 11
   }
 }

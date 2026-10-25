@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "research-pipeline",
-    "source": "/tmp/uniscan-m48pw7h0/repo/skills/research-pipeline",
-    "scanned_at": "2026-10-18T08:15:00.893521+00:00"
+    "source": "/tmp/uniscan-oxljqkfv/repo/skills/research-pipeline",
+    "scanned_at": "2026-10-25T08:37:33.069213+00:00"
   },
   "risk_assessment": {
     "score": 19,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "EA2",
-      "finding_id": "finding-d774656b983e4c119067e9d80da90300",
+      "finding_id": "finding-a2223d293f024553a82cef5c8b51eca1",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -58,7 +58,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-b78c44f114ee4d179f6031b1d34b9170",
+      "finding_id": "finding-e840a9b1d76c45918c6ec468abf23360",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -90,7 +90,7 @@
     },
     {
       "id": "EA4",
-      "finding_id": "finding-0e8969abc74249fb929253e133e6e322",
+      "finding_id": "finding-7f1c34563331407e87a632b320c06a6b",
       "category": "Excessive Agency",
       "pattern": "Unbounded Resource Access",
       "severity": "MEDIUM",
@@ -154,7 +154,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -167,7 +167,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -180,7 +180,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -193,7 +193,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -206,7 +206,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

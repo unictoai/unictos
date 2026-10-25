@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18",
+ "generated_at": "2026-10-25",
  "generator": "uniscan/1.0",
  "scanner": "skillspector",
  "scanner_version": "2.12.0",
@@ -105,7 +105,7 @@
      "All 8 Python scripts checked: no network calls, no environment access, no subprocess, no obfuscation. Pure local file processing."
     ],
     "report": "reports/pdf.json",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 98,
@@ -221,7 +221,7 @@
      "1 MEDIUM: SKILL.md declares no tool scope \u2014 documentation hygiene."
     ],
     "report": "reports/webapp-testing.json",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 90,
@@ -277,7 +277,7 @@
      "Template checked by hand: no fetch, no eval, no cookie access. Generated viewer pages load p5.js 1.7.0 and Google Fonts from CDN (pinned versions, standard for p5.js sketches)."
     ],
     "report": "reports/algorithmic-art.json",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 95,
@@ -332,7 +332,7 @@
      "Zero findings. Single SKILL.md, no scripts, no executables \u2014 nothing to exploit."
     ],
     "report": "reports/web-design-guidelines.json",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 100,
@@ -389,7 +389,7 @@
      "1 HIGH is a coverage note on the large AGENTS.md (2,500+ lines, partially parsed)."
     ],
     "report": "reports/react-best-practices.json",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 93,
@@ -502,7 +502,7 @@
      "Zero findings. Single SKILL.md, no scripts, no executables \u2014 nothing to exploit."
     ],
     "report": "reports/documentation-and-adrs.json",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 100,
@@ -558,7 +558,7 @@
      "Zero findings. Single SKILL.md, no scripts, no executables \u2014 nothing to exploit."
     ],
     "report": "reports/code-review-and-quality.json",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 100,
@@ -606,7 +606,7 @@
    "uniscan": {
     "score": 90,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -721,7 +721,7 @@
    "uniscan": {
     "score": 95,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -776,7 +776,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -831,7 +831,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -886,7 +886,7 @@
    "uniscan": {
     "score": 95,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -941,7 +941,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -996,7 +996,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1051,7 +1051,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1106,7 +1106,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1161,7 +1161,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1216,7 +1216,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1271,7 +1271,7 @@
    "uniscan": {
     "score": 95,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1326,7 +1326,7 @@
    "uniscan": {
     "score": 93,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1381,7 +1381,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1436,7 +1436,7 @@
    "uniscan": {
     "score": 85,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1549,7 +1549,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1661,8 +1661,8 @@
    ],
    "uniscan": {
     "score": 88,
-    "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1676,7 +1676,8 @@
      "2 MEDIUM 'External Transmission' are the Exa API calls themselves \u2014 the skill's entire purpose.",
      "1 LOW is dynamic attribute access in the extraction script \u2014 benign."
     ],
-    "report": "reports/exa-search.json"
+    "report": "reports/exa-search.json",
+    "upstream_sha": "593377bb048752abb0152deab9fbb1083a6087df"
    },
    "review": {
     "reviewer": "unictos team",
@@ -1833,7 +1834,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1888,7 +1889,7 @@
    "uniscan": {
     "score": 94,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1945,7 +1946,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2001,7 +2002,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2057,7 +2058,7 @@
    "uniscan": {
     "score": 98,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2170,7 +2171,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2226,7 +2227,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2281,7 +2282,7 @@
    ],
    "uniscan": {
     "score": 85,
-    "verdict": "verified-with-notes",
+    "verdict": "re-review",
     "scanned_at": "2026-10-13",
     "scanner": "skillspector",
     "scanner_version": "2.12.0",
@@ -2296,7 +2297,8 @@
      "'Session Persistence' is the localhost server staying up during the brainstorming session. 'Tool Parameter Abuse' is on the stop-server script.",
      "The server is a legitimate interactive pattern: localhost-only, token-authenticated, user-initiated. But it IS more invasive than a markdown skill \u2014 disclosed here."
     ],
-    "report": "reports/brainstorming.json"
+    "report": "reports/brainstorming.json",
+    "upstream_sha": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b"
    },
    "review": {
     "reviewer": "unictos team",
@@ -2338,7 +2340,7 @@
    ],
    "uniscan": {
     "score": 92,
-    "verdict": "verified-with-notes",
+    "verdict": "re-review",
     "scanned_at": "2026-10-13",
     "scanner": "skillspector",
     "scanner_version": "2.12.0",
@@ -2352,7 +2354,8 @@
      "5 findings, all reviewed. 'Credential Access' flags are on documentation showing how to debug Apple code-signing (IDENTITY env var, keychain listing) \u2014 debugging guidance, not theft.",
      "'Context Leakage' is on debug-instrumentation docs. 'Unbounded Resource Access' is on condition-based-waiting docs."
     ],
-    "report": "reports/systematic-debugging.json"
+    "report": "reports/systematic-debugging.json",
+    "upstream_sha": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b"
    },
    "review": {
     "reviewer": "unictos team",
@@ -2394,8 +2397,8 @@
    ],
    "uniscan": {
     "score": 100,
-    "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2407,7 +2410,8 @@
     "notes": [
      "Zero findings. Clean scan."
     ],
-    "report": "reports/writing-plans.json"
+    "report": "reports/writing-plans.json",
+    "upstream_sha": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b"
    },
    "review": {
     "reviewer": "unictos team",
@@ -2449,8 +2453,8 @@
    ],
    "uniscan": {
     "score": 95,
-    "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2462,7 +2466,8 @@
     "notes": [
      "1 HIGH 'Tool Parameter Abuse' is on documentation mentioning git clean -fdx \u2014 and the docs explicitly warn it 'will destroy the workspace'. The scanner flagged the warning as the threat."
     ],
-    "report": "reports/executing-plans.json"
+    "report": "reports/executing-plans.json",
+    "upstream_sha": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b"
    },
    "review": {
     "reviewer": "unictos team",
@@ -2561,7 +2566,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2617,7 +2622,7 @@
    "uniscan": {
     "score": 93,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2674,7 +2679,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2730,7 +2735,7 @@
    "uniscan": {
     "score": 98,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2786,7 +2791,7 @@
    "uniscan": {
     "score": 94,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2842,7 +2847,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2898,7 +2903,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3068,7 +3073,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3124,7 +3129,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3180,7 +3185,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3292,8 +3297,8 @@
    ],
    "uniscan": {
     "score": 97,
-    "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3305,7 +3310,8 @@
     "notes": [
      "1 MEDIUM, reviewed \u2014 minor docs note."
     ],
-    "report": "reports/peer-review.json"
+    "report": "reports/peer-review.json",
+    "upstream_sha": "593377bb048752abb0152deab9fbb1083a6087df"
    },
    "review": {
     "reviewer": "unictos team",
@@ -3347,8 +3353,8 @@
    ],
    "uniscan": {
     "score": 95,
-    "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3360,7 +3366,8 @@
     "notes": [
      "2 HIGH are coverage notes on referenced artifacts \u2014 reviewed manually."
     ],
-    "report": "reports/polars.json"
+    "report": "reports/polars.json",
+    "upstream_sha": "593377bb048752abb0152deab9fbb1083a6087df"
    },
    "review": {
     "reviewer": "unictos team",
@@ -3402,7 +3409,7 @@
    ],
    "uniscan": {
     "score": 92,
-    "verdict": "verified-with-notes",
+    "verdict": "re-review",
     "scanned_at": "2026-10-13",
     "scanner": "skillspector",
     "scanner_version": "2.12.0",
@@ -3416,7 +3423,8 @@
      "5 findings, all reviewed. 'Memory Manipulation' is docs about explicitly deleting large Python objects (del) for memory management.",
      "'Credential Access' flags are docs about Kubernetes kubeconfig for Dask clusters \u2014 legitimate cluster-auth documentation."
     ],
-    "report": "reports/dask.json"
+    "report": "reports/dask.json",
+    "upstream_sha": "593377bb048752abb0152deab9fbb1083a6087df"
    },
    "review": {
     "reviewer": "unictos team",
@@ -3458,8 +3466,8 @@
    ],
    "uniscan": {
     "score": 100,
-    "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3471,7 +3479,8 @@
     "notes": [
      "Zero findings. Clean scan."
     ],
-    "report": "reports/vaex.json"
+    "report": "reports/vaex.json",
+    "upstream_sha": "593377bb048752abb0152deab9fbb1083a6087df"
    },
    "review": {
     "reviewer": "unictos team",
@@ -3513,8 +3522,8 @@
    ],
    "uniscan": {
     "score": 97,
-    "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3526,7 +3535,8 @@
     "notes": [
      "1 MEDIUM, reviewed \u2014 minor docs note."
     ],
-    "report": "reports/exploratory-data-analysis.json"
+    "report": "reports/exploratory-data-analysis.json",
+    "upstream_sha": "593377bb048752abb0152deab9fbb1083a6087df"
    },
    "review": {
     "reviewer": "unictos team",
@@ -3568,7 +3578,7 @@
    ],
    "uniscan": {
     "score": 88,
-    "verdict": "verified-with-notes",
+    "verdict": "re-review",
     "scanned_at": "2026-10-13",
     "scanner": "skillspector",
     "scanner_version": "2.12.0",
@@ -3582,7 +3592,8 @@
      "26 findings, all reviewed. 'External Transmission' flags are the skill's API calls to OpenAlex, PubMed and Google Scholar \u2014 citation discovery is its entire purpose.",
      "Dynamic __import__ calls are a plugin/loader pattern in the search scripts. 'Anti-Refusal' is on a LaTeX checklist ('PDF renders correctly'). 'env' is standard config loading."
     ],
-    "report": "reports/citation-management.json"
+    "report": "reports/citation-management.json",
+    "upstream_sha": "593377bb048752abb0152deab9fbb1083a6087df"
    },
    "review": {
     "reviewer": "unictos team",
@@ -3624,7 +3635,7 @@
    ],
    "uniscan": {
     "score": 95,
-    "verdict": "verified-with-notes",
+    "verdict": "re-review",
     "scanned_at": "2026-10-13",
     "scanner": "skillspector",
     "scanner_version": "2.12.0",
@@ -3637,7 +3648,8 @@
     "notes": [
      "4 findings, all false positives. 'Anti-Refusal' is on a validator script docstring ('Validate a structured hypothesis record without judging scientific merit')."
     ],
-    "report": "reports/hypothesis-generation.json"
+    "report": "reports/hypothesis-generation.json",
+    "upstream_sha": "593377bb048752abb0152deab9fbb1083a6087df"
    },
    "review": {
     "reviewer": "unictos team",
@@ -3679,8 +3691,8 @@
    ],
    "uniscan": {
     "score": 100,
-    "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3692,7 +3704,8 @@
     "notes": [
      "Zero findings. Clean scan."
     ],
-    "report": "reports/experimental-design.json"
+    "report": "reports/experimental-design.json",
+    "upstream_sha": "593377bb048752abb0152deab9fbb1083a6087df"
    },
    "review": {
     "reviewer": "unictos team",
@@ -3734,7 +3747,7 @@
    ],
    "uniscan": {
     "score": 86,
-    "verdict": "verified-with-notes",
+    "verdict": "re-review",
     "scanned_at": "2026-10-13",
     "scanner": "skillspector",
     "scanner_version": "2.12.0",
@@ -3748,7 +3761,8 @@
      "27 findings, all reviewed. 12 'Credential Access' flags are on the schematic generator resolving your OPENROUTER_API_KEY (env/.env/CLI) to call OpenRouter's API for AI-generated diagrams \u2014 documented, user key, sent only to OpenRouter.",
      "'External Transmission' flags are queries to PubMed/arXiv/Semantic Scholar \u2014 the skill's purpose. Subprocess calls generate PDFs locally."
     ],
-    "report": "reports/literature-review.json"
+    "report": "reports/literature-review.json",
+    "upstream_sha": "593377bb048752abb0152deab9fbb1083a6087df"
    },
    "review": {
     "reviewer": "unictos team",
@@ -3961,7 +3975,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4015,8 +4029,8 @@
    ],
    "uniscan": {
     "score": 90,
-    "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4029,7 +4043,8 @@
      "170 findings, all reviewed. 169 'External Transmission' flags are the skill documenting public database APIs (cBioPortal, Census, USPTO, World Bank...) \u2014 querying them is the skill's entire purpose.",
      "The 1 HIGH 'Credential Access' is docs explaining cBioPortal's auth model (public needs none, private uses Bearer token). Documentation, not harvesting."
     ],
-    "report": "reports/database-lookup.json"
+    "report": "reports/database-lookup.json",
+    "upstream_sha": "593377bb048752abb0152deab9fbb1083a6087df"
    },
    "review": {
     "reviewer": "unictos team",
@@ -4071,7 +4086,7 @@
    ],
    "uniscan": {
     "score": 92,
-    "verdict": "verified-with-notes",
+    "verdict": "re-review",
     "scanned_at": "2026-10-13",
     "scanner": "skillspector",
     "scanner_version": "2.12.0",
@@ -4085,7 +4100,8 @@
      "5 findings, all reviewed. 'Credential Access' is docs explaining DataLad's credential resolution (keyring, env, interactive prompt) \u2014 DataLad's documented security model.",
      "'Tool Parameter Abuse' and 'Anti-Refusal' are on workflow documentation."
     ],
-    "report": "reports/datalad.json"
+    "report": "reports/datalad.json",
+    "upstream_sha": "593377bb048752abb0152deab9fbb1083a6087df"
    },
    "review": {
     "reviewer": "unictos team",
@@ -4240,7 +4256,7 @@
    "uniscan": {
     "score": 87,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4296,7 +4312,7 @@
    "uniscan": {
     "score": 94,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4408,7 +4424,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4464,7 +4480,7 @@
    "uniscan": {
     "score": 94,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4519,7 +4535,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4574,7 +4590,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4628,8 +4644,8 @@
    ],
    "uniscan": {
     "score": 93,
-    "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4641,7 +4657,8 @@
     "notes": [
      "2 HIGH are coverage notes on CI/CD reference docs \u2014 reviewed manually. License is MIT-0 (MIT No Attribution)."
     ],
-    "report": "reports/ecs-devops.json"
+    "report": "reports/ecs-devops.json",
+    "upstream_sha": "491cbb02290d04090a086a26c2b401306a628601"
    },
    "review": {
     "reviewer": "unictos team",
@@ -4684,12 +4701,12 @@
    "uniscan": {
     "score": 93,
     "verdict": "re-review",
-    "scanned_at": "2026-10-13",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
-    "scanner_version": "2.12.0",
+    "scanner_version": "v2.12.0",
     "findings": {
      "critical": 0,
-     "high": 3,
+     "high": 1,
      "medium": 1,
      "low": 0
     },
@@ -4739,8 +4756,8 @@
    ],
    "uniscan": {
     "score": 96,
-    "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4752,7 +4769,8 @@
     "notes": [
      "1 HIGH 'Tool Parameter Abuse' reviewed \u2014 docs prose."
     ],
-    "report": "reports/api-testing-rest.json"
+    "report": "reports/api-testing-rest.json",
+    "upstream_sha": "6fc32e4adb7449fd5136746efc7f085357fca6c8"
    },
    "review": {
     "reviewer": "unictos team",
@@ -4794,8 +4812,8 @@
    ],
    "uniscan": {
     "score": 98,
-    "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4807,7 +4825,8 @@
     "notes": [
      "1 MEDIUM, reviewed \u2014 docs note."
     ],
-    "report": "reports/cypress-e2e.json"
+    "report": "reports/cypress-e2e.json",
+    "upstream_sha": "6fc32e4adb7449fd5136746efc7f085357fca6c8"
    },
    "review": {
     "reviewer": "unictos team",
@@ -4849,8 +4868,8 @@
    ],
    "uniscan": {
     "score": 96,
-    "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4862,7 +4881,8 @@
     "notes": [
      "7 MEDIUM, all reviewed \u2014 docs notes."
     ],
-    "report": "reports/jest-unit.json"
+    "report": "reports/jest-unit.json",
+    "upstream_sha": "6fc32e4adb7449fd5136746efc7f085357fca6c8"
    },
    "review": {
     "reviewer": "unictos team",
@@ -4960,7 +4980,7 @@
    ],
    "uniscan": {
     "score": 94,
-    "verdict": "verified-with-notes",
+    "verdict": "re-review",
     "scanned_at": "2026-10-13",
     "scanner": "skillspector",
     "scanner_version": "2.12.0",
@@ -4973,7 +4993,8 @@
     "notes": [
      "9 findings, all reviewed \u2014 4 coverage notes, 5 docs notes."
     ],
-    "report": "reports/accessibility-testing.json"
+    "report": "reports/accessibility-testing.json",
+    "upstream_sha": "62434253c2592f27b494609c27f224939c86346d"
    },
    "review": {
     "reviewer": "unictos team",
@@ -5015,7 +5036,7 @@
    ],
    "uniscan": {
     "score": 93,
-    "verdict": "verified-with-notes",
+    "verdict": "re-review",
     "scanned_at": "2026-10-13",
     "scanner": "skillspector",
     "scanner_version": "2.12.0",
@@ -5028,7 +5049,8 @@
     "notes": [
      "5 findings, all reviewed \u2014 4 coverage notes, 1 'Credential Access' on auth-testing docs (describing how to test auth, not stealing)."
     ],
-    "report": "reports/api-testing.json"
+    "report": "reports/api-testing.json",
+    "upstream_sha": "62434253c2592f27b494609c27f224939c86346d"
    },
    "review": {
     "reviewer": "unictos team",
@@ -5126,12 +5148,12 @@
    "uniscan": {
     "score": 95,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
      "critical": 0,
-     "high": 1,
+     "high": 0,
      "medium": 0,
      "low": 0
     },
@@ -5181,7 +5203,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5237,7 +5259,7 @@
    "uniscan": {
     "score": 95,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5293,7 +5315,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5348,8 +5370,8 @@
    ],
    "uniscan": {
     "score": 100,
-    "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5361,7 +5383,8 @@
     "notes": [
      "Zero findings. Clean scan."
     ],
-    "report": "reports/seo-audit.json"
+    "report": "reports/seo-audit.json",
+    "upstream_sha": "6be93f45064ffbadced572b5d5c95f55fd263af0"
    },
    "review": {
     "reviewer": "unictos team",
@@ -5403,8 +5426,8 @@
    ],
    "uniscan": {
     "score": 100,
-    "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5416,7 +5439,8 @@
     "notes": [
      "Zero findings. Clean scan."
     ],
-    "report": "reports/seo-content-brief.json"
+    "report": "reports/seo-content-brief.json",
+    "upstream_sha": "6be93f45064ffbadced572b5d5c95f55fd263af0"
    },
    "review": {
     "reviewer": "unictos team",
@@ -5515,7 +5539,7 @@
    "uniscan": {
     "score": 94,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5570,7 +5594,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5625,7 +5649,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5679,7 +5703,7 @@
    ],
    "uniscan": {
     "score": 86,
-    "verdict": "verified-with-notes",
+    "verdict": "re-review",
     "scanned_at": "2026-10-13",
     "scanner": "skillspector",
     "scanner_version": "2.12.0",
@@ -5693,7 +5717,8 @@
      "100+ findings, all reviewed. 'Exfiltration Commands' is on Teams webhook docs (Courier's documented feature). YARA 'prompt_injection' is on push-notification docs ('Permission prompt shown ONCE').",
      "'Credential Access' flags are on setup docs for Expo/WhatsApp tokens in the Courier dashboard (user's own credentials). 'Hidden Instructions' are HTML doc comments. 'Tool Parameter Abuse' is on API endpoint tables."
     ],
-    "report": "reports/courier.json"
+    "report": "reports/courier.json",
+    "upstream_sha": "18c7bcbeee6d5deb58a0d9dfec9ded4f960b2132"
    },
    "review": {
     "reviewer": "unictos team",
@@ -5791,7 +5816,7 @@
    "uniscan": {
     "score": 95,
     "verdict": "re-review",
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5846,8 +5871,8 @@
    ],
    "uniscan": {
     "score": 100,
-    "verdict": "verified",
-    "scanned_at": "2026-10-18",
+    "verdict": "re-review",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5859,7 +5884,8 @@
     "notes": [
      "Zero findings. Clean scan."
     ],
-    "report": "reports/deep-research.json"
+    "report": "reports/deep-research.json",
+    "upstream_sha": "ea7dd78515839ff11fc24e79ba0c53db2d5fff6c"
    },
    "review": {
     "reviewer": "unictos team",
@@ -5900,7 +5926,7 @@
    ],
    "install_hint": "Copy review.md into your ~/.claude/commands/ folder, then type /review.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 88,
@@ -5954,7 +5980,7 @@
    ],
    "install_hint": "Copy security-review.md into your ~/.claude/commands/ folder, then type /security-review.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 90,
@@ -6008,7 +6034,7 @@
    ],
    "install_hint": "Copy code-reviewer.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 92,
@@ -6062,7 +6088,7 @@
    ],
    "install_hint": "Copy debugger.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 90,
@@ -6116,7 +6142,7 @@
    ],
    "install_hint": "Copy security-auditor.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 93,
@@ -6170,7 +6196,7 @@
    ],
    "install_hint": "Copy test-automator.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 90,
@@ -6224,7 +6250,7 @@
    ],
    "install_hint": "Copy error-detective.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 88,
@@ -6278,7 +6304,7 @@
    ],
    "install_hint": "Copy performance-engineer.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 89,
@@ -6332,7 +6358,7 @@
    ],
    "install_hint": "Copy architect-reviewer.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 90,
@@ -6386,7 +6412,7 @@
    ],
    "install_hint": "Copy python-pro.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 91,
@@ -6440,7 +6466,7 @@
    ],
    "install_hint": "Copy test-writer.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 89,
@@ -6495,7 +6521,7 @@
    ],
    "install_hint": "Copy refactoring-specialist.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 88,
@@ -6608,7 +6634,7 @@
    ],
    "install_hint": "Copy smart-debug.md into your ~/.claude/commands/ folder, then type /smart-debug.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 92,
@@ -6663,7 +6689,7 @@
    ],
    "install_hint": "Copy refactor-clean.md into your ~/.claude/commands/ folder, then type /refactor-clean.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 90,
@@ -6718,7 +6744,7 @@
    ],
    "install_hint": "Copy tech-debt.md into your ~/.claude/commands/ folder, then type /tech-debt.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 89,
@@ -6773,7 +6799,7 @@
    ],
    "install_hint": "Copy doc-generate.md into your ~/.claude/commands/ folder, then type /doc-generate.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 88,
@@ -6828,7 +6854,7 @@
    ],
    "install_hint": "Copy full-review.md into your ~/.claude/commands/ folder, then type /full-review.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 87,
@@ -6883,7 +6909,7 @@
    ],
    "install_hint": "Copy workflow-automate.md into your ~/.claude/commands/ folder, then type /workflow-automate.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 82,
@@ -6939,7 +6965,7 @@
    ],
    "install_hint": "Copy sql-migrations.md into your ~/.claude/commands/ folder, then type /sql-migrations.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 91,
@@ -6994,7 +7020,7 @@
    ],
    "install_hint": "Copy deps-audit.md into your ~/.claude/commands/ folder, then type /deps-audit.",
    "uniscan": {
-    "scanned_at": "2026-10-18",
+    "scanned_at": "2026-10-25",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 89,

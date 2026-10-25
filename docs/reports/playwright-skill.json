@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "playwright-skill",
-    "source": "/tmp/uniscan-xy319uzm/repo/skills/playwright-skill",
-    "scanned_at": "2026-10-18T07:46:32.202328+00:00"
+    "source": "/tmp/uniscan-v_za4mjb/repo/skills/playwright-skill",
+    "scanned_at": "2026-10-25T08:09:20.020618+00:00"
   },
   "risk_assessment": {
     "score": 97,
@@ -76,7 +76,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-940e7acbf1f34feebca4cfeeb3dba6bd",
+      "finding_id": "finding-130ecfeca2b74e57b8071ef0abe785ed",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -121,7 +121,7 @@
     },
     {
       "id": "LP1",
-      "finding_id": "finding-d0ab2b2be31942c78ccff14e62e5e42b",
+      "finding_id": "finding-b25ef12bbe374e739cb12f9f630fb882",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'env' detected in lib/helpers.js but not covered by declared permissions.",
       "severity": "HIGH",
@@ -151,7 +151,7 @@
     },
     {
       "id": "MP3",
-      "finding_id": "finding-225dfb5bb5274703a05997fa4852ee92",
+      "finding_id": "finding-34cb40f59b3e4c82bddce84301ec7fad",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -183,7 +183,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-40ceda1f56e94f4aae6fb29e43506276",
+      "finding_id": "finding-f9368490dadb4a9382f46d8419639282",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -213,7 +213,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-24f1ec2a5ec041b3871c39cfa091655b",
+      "finding_id": "finding-1f911d53d2d94e5e8eb303f85842d709",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -243,7 +243,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-5c7710c21ecd499b861ccede4f510cf6",
+      "finding_id": "finding-e641ff77b4534c4cbb634f0439c344d8",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -273,7 +273,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-bcd4fa49d183400aa4774378ba24e4f6",
+      "finding_id": "finding-0d6de4e856a54b9ca49e0181e720535e",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -303,7 +303,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-f624d6579f344bde949d7560739b0469",
+      "finding_id": "finding-27a8e442191d4ef894adafa193c6bca5",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -333,7 +333,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-4e43cf2d9ecc43f1be745f8ac930bbd1",
+      "finding_id": "finding-852a902fb11a4b0785b8294aa1b92536",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -363,7 +363,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-56ae9522fcc844b19ae97d3315b4552f",
+      "finding_id": "finding-a3208ba43aae4d16ba60849c25140fc8",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -393,7 +393,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-fe5c9d51a3384affabb03148627e1cea",
+      "finding_id": "finding-a0e6f3eb91304b32bc934919bada0f29",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -423,7 +423,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-8e11a1abc043411b9e1bb8f68d0538e9",
+      "finding_id": "finding-358b839bbc2a481897d6a136f4d06465",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -453,7 +453,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-1f62f773607643bfb81fbca9283f4ebd",
+      "finding_id": "finding-d5497cb53b5f416aa6cccebc473ea852",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -483,7 +483,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-6291f8108fa94e2fa254fa295ed08809",
+      "finding_id": "finding-e34bd21cc18a4f9fa12f0d766d96e4c0",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -513,7 +513,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-bb1e066a22ea4245a3dc07f9b7d16c10",
+      "finding_id": "finding-8c869e3b507742feb569889ac04b0b53",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx playwright'.",
       "severity": "MEDIUM",
@@ -543,7 +543,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-7a2606f3da504900b321f5dbf22274a5",
+      "finding_id": "finding-0ef9d8e48c1e44fb89565ccd191a04fc",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -575,7 +575,7 @@
     },
     {
       "id": "SC1",
-      "finding_id": "finding-d109a6d1e7f2487f9339c8ec80c43b67",
+      "finding_id": "finding-da09b54ebfd64cf5b0d7983717746580",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -639,7 +639,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -652,7 +652,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -665,7 +665,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -678,7 +678,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -691,7 +691,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

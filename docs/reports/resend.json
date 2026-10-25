@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "resend",
-    "source": "/tmp/uniscan-2jpm_tb5/repo/skills/resend",
-    "scanned_at": "2026-10-18T07:54:56.647454+00:00"
+    "source": "/tmp/uniscan-0dqukolk/repo/skills/resend",
+    "scanned_at": "2026-10-25T08:17:09.354881+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -236,7 +236,7 @@
   "issues": [
     {
       "id": "YR1",
-      "finding_id": "finding-b6a9d33f65f043718a63445ded295af6",
+      "finding_id": "finding-2d5d2aca7a524501b4f643d3171f196c",
       "category": "YARA Match",
       "pattern": "YARA rule 'agent_skill_credential_exfiltration_webhook': AI agent skill credential harvesting followed by webhook or external exfiltration [agent_skills]",
       "severity": "CRITICAL",
@@ -266,7 +266,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-6a61636b2c8d42228d2d229c46094aa0",
+      "finding_id": "finding-5a1a0f4a19a741dc83105b153173bbff",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -311,7 +311,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-6b8efa617a0d4e6d944f77b6b47f6b4f",
+      "finding_id": "finding-c5847765f3f14b18859dfa428439a27a",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -356,7 +356,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a4c0bc9981e3488c82b37c68bd7fe841",
+      "finding_id": "finding-ce7a1a73155a4ae9a6f784ec48e7a32f",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -401,7 +401,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-7ebb23e2391e451abb249fbc2b636257",
+      "finding_id": "finding-f30e123fe4eb40f08c081a56cf67f102",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -446,7 +446,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-d722ee46297b451388ba038dfa92fef6",
+      "finding_id": "finding-57cad968d5c548639213e1e80052277d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -490,42 +490,8 @@
       ]
     },
     {
-      "id": "P2",
-      "finding_id": "finding-542ce5447b444a0392c5196d8c57ecd5",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/templates.md",
-        "start_line": 31,
-        "end_line": 34,
-        "start_column": 0,
-        "end_column": 55
-      },
-      "finding": "<!-- \u2705 Correct -->\n<p>Hi {{{CUSTOMER_NAME}}}, your order #{{{ORDER_ID}}} has shipped!</p>\n\n<!-- \u274c Wrong \u2014 double braces don't render in Resend -->",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "Use **triple mustache** in HTML and subject: `{{{VARIABLE_NAME}}}`\n\n```html\n<!-- \u2705 Correct -->\n<p>Hi {{{CUSTOMER_NAME}}}, your order #{{{ORDER_ID}}} has shipped!</p>\n\n<!-- \u274c Wrong \u2014 double braces don't render in Resend -->",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "a937f148d0b238017ebc9040a346fb61c20a66ea2acfc7904f013226a0dde6b9",
-      "occurrences": [
-        {
-          "file": "references/templates.md",
-          "start_line": 31,
-          "end_line": 34,
-          "start_column": 0,
-          "end_column": 55
-        }
-      ]
-    },
-    {
       "id": "LP3",
-      "finding_id": "finding-c234774a598a4f379608a87b3ce660fe",
+      "finding_id": "finding-2641bcd20b5c493091108941e3998d75",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env.",
       "severity": "MEDIUM",
@@ -555,7 +521,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f4d79e5f0ba04601a05f96938fbfcddf",
+      "finding_id": "finding-9290bb8bfe1f405bad02908fde69fab7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -587,7 +553,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-dfcc435bfcdd4bd9a326b712edc1f529",
+      "finding_id": "finding-4b3a35822bdc40bcb68488f75e4304c7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -619,7 +585,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-6c0efb1bf46645a381772226a0b4b108",
+      "finding_id": "finding-8ca97476819940e6b5e008750f0d3235",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -651,7 +617,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-ce6a5dd6cb90485aa67ff23821d547c0",
+      "finding_id": "finding-ad7ac2da11e54ff2863db1f67e83b038",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -683,7 +649,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-dc9fc5d36b7545fe9736a5cc3c9a4acb",
+      "finding_id": "finding-753ef9351aab42ad9562ff885190adb8",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -715,7 +681,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-d0960949dbd84a42824fd447e97cfb4b",
+      "finding_id": "finding-1eecc6206ad249548b215f57f8ceb695",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -747,7 +713,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-e4c15a27d8eb4322a9208db23986553a",
+      "finding_id": "finding-5e7b414a924d4380a1bfb85b1ae95bd0",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -779,7 +745,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-c628f23968d948db9f0b4383e22ff3e0",
+      "finding_id": "finding-8107530f138f4c8292138a8de1f59690",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -811,7 +777,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-c54d92201cd241168191233e6b187303",
+      "finding_id": "finding-d40389b1897248efb2f58c111fa0abd2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -843,7 +809,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-823f35dc47ce4a449fb33ac90a4f330e",
+      "finding_id": "finding-b5fc04cdf38e4b09aa9be17d9cae1fe8",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -875,7 +841,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-b04f2027a08d44b08c6960f58bdcabb0",
+      "finding_id": "finding-dbe265ee25d14311abf63ca197d903ce",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -907,7 +873,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-a21e75f2704c4fb59c350c65ae049388",
+      "finding_id": "finding-c15bedfc5acf4a32ae4e76546c816b8f",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx skills'.",
       "severity": "MEDIUM",
@@ -937,7 +903,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f9146430e76a4e73898b3dc4925cda6d",
+      "finding_id": "finding-ff87bbee25b249c39071aa93b2ffc974",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -969,7 +935,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-dfd9ad75ec054cb59c5388e18cf9036d",
+      "finding_id": "finding-4a57a68140b846ef9318a3b445922132",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -1001,7 +967,7 @@
     },
     {
       "id": "PE2",
-      "finding_id": "finding-50f6356898d04690bb4e703c1643a0c6",
+      "finding_id": "finding-77572470c0174bebb217e55e08511438",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -1067,7 +1033,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1080,7 +1046,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1093,7 +1059,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1106,7 +1072,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1119,7 +1085,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -2360,7 +2326,7 @@
     "limitations": [
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 23,
-    "findings_after_filtering": 23
+    "findings_before_filtering": 22,
+    "findings_after_filtering": 22
   }
 }

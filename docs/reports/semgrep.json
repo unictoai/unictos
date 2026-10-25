@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "semgrep",
-    "source": "/tmp/uniscan-a4npkb6c/repo/plugins/static-analysis/skills/semgrep",
-    "scanned_at": "2026-10-18T07:42:50.830092+00:00"
+    "source": "/tmp/uniscan-6nmz6szf/repo/plugins/static-analysis/skills/semgrep",
+    "scanned_at": "2026-10-25T08:05:35.146110+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -106,7 +106,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-172cb758574e4c0bb088f333481814a8",
+      "finding_id": "finding-b907a9ff09c943349f8f24e6dd20707d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -151,7 +151,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-9390bf9db6704b7ab45e786c1f833d54",
+      "finding_id": "finding-6c78437db11f4ae9b8c4926736fff8ac",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -196,7 +196,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-fc86773c987a4fefa132e2fba40bc606",
+      "finding_id": "finding-847a5dea4f6648518423167e39884a8a",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -241,7 +241,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-fc9edabf9f364d29808fecb63c5229d0",
+      "finding_id": "finding-449b636d432b4976b008b2e740c5ffb2",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -286,7 +286,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-15f660c61bcb4eb48e8d79e2cb9362cd",
+      "finding_id": "finding-8ba44ea8a808453d89e4b889caead387",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -331,7 +331,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-b8bd965eaabb482b8aefff31357e73f4",
+      "finding_id": "finding-ef4a096f0ce24e24bba76d650b41f86f",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -376,7 +376,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-d5cb802afa0d40508448544379d66232",
+      "finding_id": "finding-d90b4dfeb7f04163abb6cc32d12b72e7",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -421,7 +421,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-8f48ee43ee654d57b01fe19543bbd4d2",
+      "finding_id": "finding-c5089ad52a48419ea1120f7f6c0cfb66",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -466,7 +466,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-5bf947a345b341b6a4dd9aefb5154c6d",
+      "finding_id": "finding-4961901986924c7892804e41a6056d3d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -511,7 +511,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-2677e2fbc1ad45b08be2596f54e62409",
+      "finding_id": "finding-3c1137c0942043e5aac836b2e35aa50c",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -556,7 +556,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-bbdf3532504c4e3ea931b3b3dfd2c2c2",
+      "finding_id": "finding-191722007ca944eca9dca497afc030f9",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -601,7 +601,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-b10b53dbeb884b3ab14a28af3d0362db",
+      "finding_id": "finding-703c573357554f8ab1d3a7ce8d467185",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -646,7 +646,7 @@
     },
     {
       "id": "LP1",
-      "finding_id": "finding-da573b517c88441392a85ff66b0993c8",
+      "finding_id": "finding-59acf3856d814e6683a3fea4ebeceeae",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'file_write' detected in scripts/merge_sarif.py but not covered by declared permissions.",
       "severity": "HIGH",
@@ -676,7 +676,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-c194b2ef47e54cd2917925d290fa4b52",
+      "finding_id": "finding-e1ed4f312fad459fb4129a9ce40fe2fd",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -708,7 +708,7 @@
     },
     {
       "id": "TM2",
-      "finding_id": "finding-ca7742297d264ade8008d17010a8b71e",
+      "finding_id": "finding-8f44fe0c26414ef3953d72cc5d64852f",
       "category": "Tool Misuse",
       "pattern": "Chaining Abuse",
       "severity": "HIGH",
@@ -740,7 +740,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-7516e34feaa742aea1d8e6c6645b36cb",
+      "finding_id": "finding-89e3b3e98db9468298f1d26d61c48798",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -772,7 +772,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-87aecc39b920495bbd6b352249763c6a",
+      "finding_id": "finding-157323c9155a48ef8bac734f815f8d1c",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -804,7 +804,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-4273621a231c432084bea601ffe06068",
+      "finding_id": "finding-995f7097f3d74a4085b2f038157ac05d",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx @microsoft/sarif-multitool'.",
       "severity": "MEDIUM",
@@ -834,7 +834,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-d35771ce8695433a8639c3adbe367797",
+      "finding_id": "finding-88f2a07996044dc4b1e45bef25a6ad1b",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx @microsoft/sarif-multitool'.",
       "severity": "MEDIUM",
@@ -864,7 +864,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-140e2f09651b498891c351539417a899",
+      "finding_id": "finding-f226cf04f56f44b8bf026cb43bb469a9",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx cache'.",
       "severity": "MEDIUM",
@@ -894,7 +894,7 @@
     },
     {
       "id": "TT2",
-      "finding_id": "finding-edae075ce17d4a33b44e356c4ab12aea",
+      "finding_id": "finding-d926d974f6774e56b8ceb9b8aa264633",
       "category": "Data Flow",
       "pattern": "Tainted flow: 'merged' from pathlib.Path.read_text (line 287, file read) \u2192 pathlib.Path.write_text (file write)",
       "severity": "MEDIUM",
@@ -928,7 +928,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-b7da80fa97e642b58c536fac2521579f",
+      "finding_id": "finding-99c4dd8618e34637b5b8f7c691a1818f",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -962,7 +962,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-e335bd86db554479b9228554c0851ab6",
+      "finding_id": "finding-210e4d0a071449989a8d7837fcefab81",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -996,7 +996,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-4847eac959644658a252827b860f666d",
+      "finding_id": "finding-4ca12865f33347c6a5848c57b08a73b9",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx cache.'.",
       "severity": "MEDIUM",
@@ -1026,7 +1026,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-a95dd7ec1c2546a5a6d5ff68f5994801",
+      "finding_id": "finding-5db170fddf08492e809bc62cc8d0c314",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -1092,7 +1092,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1105,7 +1105,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1118,7 +1118,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1131,7 +1131,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1144,7 +1144,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

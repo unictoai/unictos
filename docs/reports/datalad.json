@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "datalad",
-    "source": "/tmp/uniscan-161gnjng/repo/skills/datalad",
-    "scanned_at": "2026-10-18T07:56:49.978701+00:00"
+    "source": "/tmp/uniscan-wknnls0g/repo/skills/datalad",
+    "scanned_at": "2026-10-25T08:19:01.015498+00:00"
   },
   "risk_assessment": {
     "score": 71,
@@ -56,7 +56,7 @@
   "issues": [
     {
       "id": "TM1",
-      "finding_id": "finding-f7c37895a1a645a6806c5bc70b251b44",
+      "finding_id": "finding-bee160db0b21463ca7461c42392e4bf8",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -88,7 +88,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-8c2fe19d6da3455fa0212e4d75dd7dce",
+      "finding_id": "finding-c1e5baedddeb4c979d97f3c9026b52f9",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -120,7 +120,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-e9767b6dade14f7bb830750590dd61bc",
+      "finding_id": "finding-d5c98e1d9c1e421f922ed307dbce1a1e",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -152,7 +152,7 @@
     },
     {
       "id": "AR2",
-      "finding_id": "finding-ee0ac4e9e9fe45b1842244cb6ffcd2c2",
+      "finding_id": "finding-2a89a7e47ed2422dab3d691af914131d",
       "category": "Anti-Refusal",
       "pattern": "Anti-Refusal Statement",
       "severity": "HIGH",
@@ -186,7 +186,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-f4e27ab19e0742818514b966b3af7077",
+      "finding_id": "finding-ec9ff06eb8ca4cc4bb2d4b002efb2d23",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -250,7 +250,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -263,7 +263,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -276,7 +276,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -289,7 +289,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -302,7 +302,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

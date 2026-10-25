@@ -1,14 +1,14 @@
 {
   "skill": {
     "name": "core-web-vitals",
-    "source": "/tmp/uniscan-1ju8qf1v/repo/skills/core-web-vitals",
-    "scanned_at": "2026-10-18T08:05:51.878620+00:00"
+    "source": "/tmp/uniscan-_17bm6oe/repo/skills/core-web-vitals",
+    "scanned_at": "2026-10-25T08:28:16.832291+00:00"
   },
   "risk_assessment": {
-    "score": 17,
+    "score": 0,
     "severity": "LOW",
     "recommendation": "CAUTION",
-    "max_issue_severity": "HIGH"
+    "max_issue_severity": "NONE"
   },
   "components": [
     {
@@ -53,42 +53,7 @@
     }
   ],
   "structured_summaries": [],
-  "issues": [
-    {
-      "id": "P2",
-      "finding_id": "finding-b89558abe67f4d639a6f89bb7c59beff",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 54,
-        "end_line": 210,
-        "start_column": 0,
-        "end_column": 41
-      },
-      "finding": "<!-- \u274c Blocks rendering -->\n<link rel=\"stylesheet\" href=\"/all-styles.css\">\n\n<!-- \u2705 Critical CSS inlined, rest deferred -->\n<style>/* Critical above-fold CSS */</style>\n<link rel=\"preload\" href=\"/style",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "\n**2. Render-blocking resources**\n```html\n<!-- \u274c Blocks rendering -->\n<link rel=\"stylesheet\" href=\"/all-styles.css\">\n\n<!-- \u2705 Critical CSS inlined, rest deferred -->",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "d6e4171be84813419bd56ebe414f876573e38c3171a17dbcad0c5e477d0a8fbb",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 54,
-          "end_line": 210,
-          "start_column": 0,
-          "end_column": 41
-        }
-      ]
-    }
-  ],
+  "issues": [],
   "suppressed_count": 0,
   "suppressed": [],
   "metadata": {
@@ -122,7 +87,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -135,7 +100,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -148,7 +113,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -161,7 +126,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -174,7 +139,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -347,15 +312,15 @@
       },
       {
         "analyzer_id": "meta_analyzer",
-        "status": "disabled",
+        "status": "not_applicable",
         "planned_work": 0,
         "completed": 0,
         "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0,
-        "reason_code": "disabled_by_configuration",
-        "message": "Analyzer was disabled by the requested configuration."
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
       },
       {
         "analyzer_id": "semantic_developer_intent",
@@ -727,7 +692,7 @@
       }
     ],
     "limitations": [],
-    "findings_before_filtering": 1,
-    "findings_after_filtering": 1
+    "findings_before_filtering": 0,
+    "findings_after_filtering": 0
   }
 }

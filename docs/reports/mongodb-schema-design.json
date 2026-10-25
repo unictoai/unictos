@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "mongodb-schema-design",
-    "source": "/tmp/uniscan-atsvzj7x/repo/skills/mongodb-schema-design",
-    "scanned_at": "2026-10-18T08:03:21.787892+00:00"
+    "source": "/tmp/uniscan-7sy0mybv/repo/skills/mongodb-schema-design",
+    "scanned_at": "2026-10-25T08:25:45.379597+00:00"
   },
   "risk_assessment": {
     "score": 51,
@@ -226,7 +226,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-bd40c2e180604e7f88fbd03ef141f50e",
+      "finding_id": "finding-e78bc5f4eae04d2e9421eb862166526b",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -271,7 +271,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-eb85fcd9418d4b8e908320255a05e603",
+      "finding_id": "finding-70983c328b144a66913733fcac69d45e",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -316,7 +316,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-c59904f1e63a45b597e1e2955b3b3bdc",
+      "finding_id": "finding-a3e42ae6012c40aca12c9e60071be77c",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -361,7 +361,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-f18d3642e53d4620bf8f3f1abb8c943e",
+      "finding_id": "finding-97bbda77ba264ce6a4e66fb2f942fc87",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -406,7 +406,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-457b9ae2a5d1486db0cc2648ab8695d6",
+      "finding_id": "finding-39dfa9752a4a484e80c2c1088f3781d1",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -470,7 +470,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -483,7 +483,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -496,7 +496,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -509,7 +509,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -522,7 +522,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

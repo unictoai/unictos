@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "executing-plans",
-    "source": "/tmp/uniscan-1vdwoqie/repo/skills/executing-plans",
-    "scanned_at": "2026-10-18T07:46:23.365438+00:00"
+    "source": "/tmp/uniscan-zmr4zww1/repo/skills/executing-plans",
+    "scanned_at": "2026-10-25T08:09:11.518342+00:00"
   },
   "risk_assessment": {
     "score": 17,
@@ -46,7 +46,7 @@
   "issues": [
     {
       "id": "TM1",
-      "finding_id": "finding-8c4cd1f3ff6840f6872394c519ddc8f3",
+      "finding_id": "finding-8cc13122909b4e94934f3e11cab4352e",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -110,7 +110,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -123,7 +123,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -136,7 +136,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -149,7 +149,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -162,7 +162,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

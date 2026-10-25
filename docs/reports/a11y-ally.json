@@ -1,13 +1,13 @@
 {
   "skill": {
     "name": "a11y-ally",
-    "source": "/tmp/uniscan-ti8ecd7c/repo/.claude/skills/a11y-ally",
-    "scanned_at": "2026-10-18T08:04:31.577581+00:00"
+    "source": "/tmp/uniscan-fbm0k5q9/repo/.claude/skills/a11y-ally",
+    "scanned_at": "2026-10-25T08:26:53.302623+00:00"
   },
   "risk_assessment": {
-    "score": 54,
-    "severity": "HIGH",
-    "recommendation": "DO_NOT_INSTALL",
+    "score": 28,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION",
     "max_issue_severity": "HIGH"
   },
   "components": [
@@ -55,77 +55,8 @@
   "structured_summaries": [],
   "issues": [
     {
-      "id": "P2",
-      "finding_id": "finding-a1d7606f41fb440cb30ed064bc60e05c",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 719,
-        "end_line": 1265,
-        "start_column": 39,
-        "end_column": 16
-      },
-      "finding": "<!-- THIS IS THE VIOLATION -->\n       <svg class=\"icon-cart\">...</svg>\n     </button>\n   </div>\n   ```\n\n2. **INFER PURPOSE** from:\n   - Class names: `add-to-cart`, `wishlist`, `menu-toggle`\n   - Paren",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "   <div class=\"product-card\" data-product=\"Adidas Superstar\">\n     <img src=\"superstar.jpg\" alt=\"White sneakers\">\n     <span class=\"price\">$99</span>\n     <button class=\"btn add-to-cart\">  <!-- THIS IS THE VIOLATION -->\n       <svg class=\"icon-cart\">...</svg>\n     </button>\n   </div>",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "c6ad0c9b930f3f0de65322be84990f882e31add41d5a234386e21ae9a2219524",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 719,
-          "end_line": 1265,
-          "start_column": 39,
-          "end_column": 16
-        }
-      ]
-    },
-    {
-      "id": "P2",
-      "finding_id": "finding-719665de9ac04daab410c18557a3bc79",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 719,
-        "end_line": 1265,
-        "start_column": 39,
-        "end_column": 16
-      },
-      "finding": "<!-- THIS IS THE VIOLATION -->\n       <svg class=\"icon-cart\">...</svg>\n     </button>\n   </div>\n   ```\n\n2. **INFER PURPOSE** from:\n   - Class names: `add-to-cart`, `wishlist`, `menu-toggle`\n   - Paren",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "   <div class=\"product-card\" data-product=\"Adidas Superstar\">\n     <img src=\"superstar.jpg\" alt=\"White sneakers\">\n     <span class=\"price\">$99</span>\n     <button class=\"btn add-to-cart\">  <!-- THIS IS THE VIOLATION -->\n       <svg class=\"icon-cart\">...</svg>\n     </button>\n   </div>",
-      "intent": null,
-      "tags": [
-        "Prompt Injection",
-        "normalized-view"
-      ],
-      "evidence": {},
-      "match_fingerprint": "d38eb61a9ee871b311428544541076bbe21b4d61c11936328fc9ba2b5fa95de2",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 719,
-          "end_line": 1265,
-          "start_column": 39,
-          "end_column": 16
-        }
-      ]
-    },
-    {
       "id": "MP3",
-      "finding_id": "finding-91e39a25eee74c2da1399c4ae26cbbe2",
+      "finding_id": "finding-044e117af69747aab01371df3edbc58a",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -157,7 +88,7 @@
     },
     {
       "id": "AS3",
-      "finding_id": "finding-7364bf770fd141628b64c7a2619cfda8",
+      "finding_id": "finding-5bf687b240ac4f69bb16639af1599d7a",
       "category": "Agent Snooping",
       "pattern": "Skill Enumeration",
       "severity": "MEDIUM",
@@ -221,7 +152,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -234,7 +165,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -247,7 +178,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -260,7 +191,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -273,7 +204,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -971,7 +902,7 @@
     "limitations": [
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 4,
-    "findings_after_filtering": 4
+    "findings_before_filtering": 2,
+    "findings_after_filtering": 2
   }
 }

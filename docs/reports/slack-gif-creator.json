@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "slack-gif-creator",
-    "source": "/tmp/uniscan-s7v248kr/repo/skills/slack-gif-creator",
-    "scanned_at": "2026-10-18T07:39:14.241722+00:00"
+    "source": "/tmp/uniscan-o3eqfiwd/repo/skills/slack-gif-creator",
+    "scanned_at": "2026-10-25T08:02:01.669053+00:00"
   },
   "risk_assessment": {
     "score": 7,
@@ -86,7 +86,7 @@
   "issues": [
     {
       "id": "SC1",
-      "finding_id": "finding-e1a96d0d166745dca192a4f341586770",
+      "finding_id": "finding-0ab9e04eae614ca898b957704de7d900",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -118,9 +118,9 @@
     },
     {
       "id": "SC4",
-      "finding_id": "finding-5dfacd0e68e243fca50588b913398c99",
+      "finding_id": "finding-91d26c84bf634d9c8b1932dc1c5df97c",
       "category": "Supply Chain",
-      "pattern": "Unverifiable Dependency: pillow has 16 known advisory(ies) (CVE-2016-2533 (Pillow buffer overflow in ImagingPcdDecode); CVE-2023-50447 (Arbitrary Code Execution in Pillow); CVE-2021-27922 (Pillow Uncontrolled Resource Consumption) +13 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
+      "pattern": "Unverifiable Dependency: pillow has 16 known advisory(ies) (CVE-2026-112390 (Pillow: Infinite loop in MIC n_frames when the embedded TIFF); CVE-2026-96638 (Pillow: BMP RLE decoder memory-amplification DoS via unbounded delta escape / ab); CVE-2026-112391 (Pillow: PdfParser can recurse without limit in get_value() and linearize_page_tr) +13 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
       "severity": "LOW",
       "confidence": 0.4,
       "location": {
@@ -148,7 +148,7 @@
     },
     {
       "id": "SC1",
-      "finding_id": "finding-0b704cf44dff45a2a6106abc19a73581",
+      "finding_id": "finding-d1813ee277984652a180d85c4a76fe1e",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -180,7 +180,7 @@
     },
     {
       "id": "SC1",
-      "finding_id": "finding-4329c50fdf6b46e0ae80aa3d3f1ba6a4",
+      "finding_id": "finding-a732a9b2d3e643f8baaa29802059b4b4",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -212,7 +212,7 @@
     },
     {
       "id": "SC1",
-      "finding_id": "finding-d33bb8e30e634aaea06211093b1ac67f",
+      "finding_id": "finding-d7111a7cb9ce4612a81d88dc9bdcd1f7",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -244,7 +244,7 @@
     },
     {
       "id": "SC4",
-      "finding_id": "finding-c485786a27d447799e96f6ae17d02606",
+      "finding_id": "finding-7498f6603dd84fe5a18d326b551514b9",
       "category": "Supply Chain",
       "pattern": "Unverifiable Dependency: numpy has 16 known advisory(ies) (CVE-2014-1859 (Numpy arbitrary file write via symlink attack); CVE-2021-41495 (NumPy NULL Pointer Dereference); CVE-2021-33430 (NumPy Buffer Overflow (Disputed)) +13 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
       "severity": "LOW",
@@ -306,7 +306,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -319,7 +319,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -332,7 +332,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -345,7 +345,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -358,7 +358,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

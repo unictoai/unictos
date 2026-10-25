@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "vercel-composition-patterns",
-    "source": "/tmp/uniscan-9xjx3b02/repo/skills/composition-patterns",
-    "scanned_at": "2026-10-18T07:40:00.329661+00:00"
+    "source": "/tmp/uniscan-alsrks30/repo/skills/composition-patterns",
+    "scanned_at": "2026-10-25T08:02:45.893251+00:00"
   },
   "risk_assessment": {
     "score": 20,
@@ -156,7 +156,7 @@
   "issues": [
     {
       "id": "MP3",
-      "finding_id": "finding-154cdedb034b4794b4e4a6c18f3490eb",
+      "finding_id": "finding-65cfc5ce3b7648b6994755020432ef24",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -220,7 +220,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -233,7 +233,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -246,7 +246,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -259,7 +259,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -272,7 +272,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

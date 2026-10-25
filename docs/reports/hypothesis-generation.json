@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "hypothesis-generation",
-    "source": "/tmp/uniscan-hsh5c2ty/repo/skills/hypothesis-generation",
-    "scanned_at": "2026-10-18T07:53:22.974181+00:00"
+    "source": "/tmp/uniscan-bmac8vsv/repo/skills/hypothesis-generation",
+    "scanned_at": "2026-10-25T08:16:01.706149+00:00"
   },
   "risk_assessment": {
     "score": 65,
@@ -286,7 +286,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-ad760dc5955f4b20ae84f1d6f225966b",
+      "finding_id": "finding-58f63d6f221744cfb549f7ebbf2328ca",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -331,7 +331,7 @@
     },
     {
       "id": "AR2",
-      "finding_id": "finding-35ad581968684336b2c2cc23c7262609",
+      "finding_id": "finding-5873f11c0b0841d6992a6b4ba6ad5d07",
       "category": "Anti-Refusal",
       "pattern": "Anti-Refusal Statement",
       "severity": "HIGH",
@@ -365,7 +365,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-7fb968d13bb54527a31c3cef35b10cbe",
+      "finding_id": "finding-9164806b4ab14493beb91c516f4e4a25",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: file_read, shell.",
       "severity": "MEDIUM",
@@ -395,7 +395,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-2712f58113dc42448a1f9a23f5e4996a",
+      "finding_id": "finding-646d03cf891b4e8ca3c85006015ccbe8",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -459,7 +459,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -472,7 +472,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -485,7 +485,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -498,7 +498,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -511,7 +511,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

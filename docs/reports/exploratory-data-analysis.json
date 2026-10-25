@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "exploratory-data-analysis",
-    "source": "/tmp/uniscan-zr3otkrd/repo/skills/exploratory-data-analysis",
-    "scanned_at": "2026-10-18T07:51:56.607565+00:00"
+    "source": "/tmp/uniscan-iddckvr8/repo/skills/exploratory-data-analysis",
+    "scanned_at": "2026-10-25T08:14:36.452034+00:00"
   },
   "risk_assessment": {
     "score": 8,
@@ -226,7 +226,7 @@
   "issues": [
     {
       "id": "EA2",
-      "finding_id": "finding-f091ecc354184cf89383a7bd41c8e525",
+      "finding_id": "finding-dc3da9f61b1f41909a7e7b40509f2c2b",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -290,7 +290,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -303,7 +303,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -316,7 +316,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -329,7 +329,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -342,7 +342,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

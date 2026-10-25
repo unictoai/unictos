@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "spec-driven-development",
-    "source": "/tmp/uniscan-jt5qgql1/repo/skills/spec-driven-development",
-    "scanned_at": "2026-10-18T07:47:29.219736+00:00"
+    "source": "/tmp/uniscan-ykpjfvrr/repo/skills/spec-driven-development",
+    "scanned_at": "2026-10-25T08:10:15.590280+00:00"
   },
   "risk_assessment": {
     "score": 21,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "EA2",
-      "finding_id": "finding-3e852eeb42d644d09585077ad4996887",
+      "finding_id": "finding-8269e2129a3644f7858100c78a128652",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -58,7 +58,7 @@
     },
     {
       "id": "AS3",
-      "finding_id": "finding-65c1c85178d943a1b748bdc5017a485c",
+      "finding_id": "finding-2998be658873496cb89ca90bee51d3f7",
       "category": "Agent Snooping",
       "pattern": "Skill Enumeration",
       "severity": "MEDIUM",
@@ -90,7 +90,7 @@
     },
     {
       "id": "AS3",
-      "finding_id": "finding-dadff00ada614cdfbd9a7b0f50cab29d",
+      "finding_id": "finding-e1623a013ee94040800b52d80dd67759",
       "category": "Agent Snooping",
       "pattern": "Skill Enumeration",
       "severity": "MEDIUM",
@@ -122,7 +122,7 @@
     },
     {
       "id": "AS3",
-      "finding_id": "finding-952ae64c54a34d88a192fc483eadaad7",
+      "finding_id": "finding-1538cdb4b8aa4eeeb78f7b472c7ca11a",
       "category": "Agent Snooping",
       "pattern": "Skill Enumeration",
       "severity": "MEDIUM",
@@ -186,7 +186,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -199,7 +199,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -212,7 +212,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -225,7 +225,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -238,7 +238,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

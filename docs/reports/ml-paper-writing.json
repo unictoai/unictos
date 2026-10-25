@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "ml-paper-writing",
-    "source": "/tmp/uniscan-3t8omi2v/repo/20-ml-paper-writing/ml-paper-writing",
-    "scanned_at": "2026-10-18T07:58:00.696074+00:00"
+    "source": "/tmp/uniscan-b1ykxly4/repo/20-ml-paper-writing/ml-paper-writing",
+    "scanned_at": "2026-10-25T08:20:12.668318+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -526,7 +526,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-b6c137aafd6e4be68a92b8bd3228ed47",
+      "finding_id": "finding-67ab045663da4e8280b67edbbee910b7",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -571,7 +571,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-c28b3bc03a6c4a65a0d73839c764b887",
+      "finding_id": "finding-88087ff60d864a51bb4824169b96dd7c",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -616,7 +616,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-8de48b3618164bd99932e692d3e7862a",
+      "finding_id": "finding-8638b1fd374f4550b14403248796a9eb",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -661,7 +661,7 @@
     },
     {
       "id": "TM2",
-      "finding_id": "finding-c0ac28647f82411c8cdd02aae385db52",
+      "finding_id": "finding-3d1c48ca11bd4301944aeacaf2ca55db",
       "category": "Tool Misuse",
       "pattern": "Chaining Abuse",
       "severity": "HIGH",
@@ -693,7 +693,7 @@
     },
     {
       "id": "TM2",
-      "finding_id": "finding-64bced556940439aa00a74a86546d0fb",
+      "finding_id": "finding-c51dac7a3e824892890f136aec0b596d",
       "category": "Tool Misuse",
       "pattern": "Chaining Abuse",
       "severity": "HIGH",
@@ -725,7 +725,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-e4a1d8eeea7f4e04b1292356e17536fe",
+      "finding_id": "finding-9c51d27fea044bf28cf9f39bb005dd7d",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx -y mcp-remote'.",
       "severity": "MEDIUM",
@@ -755,7 +755,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-733338e8cd384f2ca5e4d827d483eca0",
+      "finding_id": "finding-929b264751454fe5b0eb00e17791d192",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -787,7 +787,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-8bbff302047a42c8bc2323bc3187a0d1",
+      "finding_id": "finding-d4ca17b3bd0e4c07ac999ac5f0370392",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -819,7 +819,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-b0ec3a173f4a409898c7959f3ffacd82",
+      "finding_id": "finding-56d70c992dad46e99bd6a3d5087f2b68",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -851,7 +851,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-cde046615996477a9f51aac3a96b0dc5",
+      "finding_id": "finding-99ecf559fb1047a7bc8516cb9b363b69",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -883,7 +883,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-513acbc3ebed472da8ae3a46968a8c20",
+      "finding_id": "finding-cce3b8a401804d34ab118a27247b8209",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -915,7 +915,7 @@
     },
     {
       "id": "PE2",
-      "finding_id": "finding-aed23ab281c74736977771d0f64fdd78",
+      "finding_id": "finding-7a2225f359544a2a8884b9b6b29061b4",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -947,7 +947,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-5199ec8489e64322a512bd7af595c72d",
+      "finding_id": "finding-532b475025ea4d6d902533c34bd0ba66",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -979,7 +979,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-c058d93b3e5442b4af0e4bb713474125",
+      "finding_id": "finding-054fd76236bc4ec3a19018ec9147da6a",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1011,7 +1011,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-b9ae49a5b9f74cf99e7f34c3a0bace25",
+      "finding_id": "finding-dce118bb0c4245d4aa5a405af10a5e1f",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1043,7 +1043,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-4823e2390c864d8eb450126ed2ea2f15",
+      "finding_id": "finding-c6eef00533b44c218ffeddc5a9236547",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1075,7 +1075,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-1c685530be514a7d966ca35aa1026324",
+      "finding_id": "finding-0e6b4f6430f549fa865f93213914fbab",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1107,7 +1107,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-c6770db0ddc044f1b8050563c9973499",
+      "finding_id": "finding-f420a080d59745cdbec75bfaab656123",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1139,7 +1139,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-1f8c308d09254c38a96c850e491955e0",
+      "finding_id": "finding-4dc4a0992b104a2b83d9f16ba4fa84b5",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1203,7 +1203,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1216,7 +1216,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1229,7 +1229,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1242,7 +1242,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1255,7 +1255,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

@@ -1,11 +1,11 @@
 {
   "skill": {
     "name": "brainstorming",
-    "source": "/tmp/uniscan-93yzmvdu/repo/skills/brainstorming",
-    "scanned_at": "2026-10-18T07:45:58.399022+00:00"
+    "source": "/tmp/uniscan-hlmvsdbp/repo/skills/brainstorming",
+    "scanned_at": "2026-10-25T08:08:46.652236+00:00"
   },
   "risk_assessment": {
-    "score": 75,
+    "score": 52,
     "severity": "HIGH",
     "recommendation": "DO_NOT_INSTALL",
     "max_issue_severity": "HIGH"
@@ -95,42 +95,8 @@
   "structured_summaries": [],
   "issues": [
     {
-      "id": "P2",
-      "finding_id": "finding-7145704612ed4f7aaababf63ce7bf6a4",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "scripts/server.cjs",
-        "start_line": 174,
-        "end_line": 255,
-        "start_column": 6,
-        "end_column": 38
-      },
-      "finding": "<!-- BRANDING --><h1>Brainstorm Companion</h1>\n<p>Waiting for the agent to push a screen...</p></body></html>`);\n}\n\nconst FORBIDDEN_PAGE = `<!DOCTYPE html>\n<html>\n<head><meta charset=\"utf-8\"><title>Se",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": ".brand-logo { display: block; height: 1em; width: auto; max-width: 180px; filter: invert(1); }\n</style>\n</head>\n<body><!-- BRANDING --><h1>Brainstorm Companion</h1>\n<p>Waiting for the agent to push a screen...</p></body></html>`);\n}\n",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "eeff47c834295264670de2db6e48bab8cb6c52ba6c357d1b32f4a396a57ff1af",
-      "occurrences": [
-        {
-          "file": "scripts/server.cjs",
-          "start_line": 174,
-          "end_line": 255,
-          "start_column": 6,
-          "end_column": 38
-        }
-      ]
-    },
-    {
       "id": "TM1",
-      "finding_id": "finding-1e94b5f105e841038d9806b98fd91071",
+      "finding_id": "finding-4960b12586054ebc820700b6b4d57019",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -162,7 +128,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-48279c16f2284bf7a0907639f21fac73",
+      "finding_id": "finding-8ac74f397cd440b7b49679a20b44a7a3",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, network, shell.",
       "severity": "MEDIUM",
@@ -192,7 +158,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-44653615b89d4b42b1eee34d8bbde2c8",
+      "finding_id": "finding-7ee05148be814537a776b71b2958704b",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -224,7 +190,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-667f4dfa767e42cba23589c0726d9724",
+      "finding_id": "finding-18b7618203ae4441be29ec2fe0bd5613",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -256,7 +222,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-dfcb6f4c9cea41cdbca3fef9eef72198",
+      "finding_id": "finding-4e18603e92c0461f89ed34a890da29b0",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -288,7 +254,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-0838110b57c84d7195d0a92009ead89f",
+      "finding_id": "finding-1d5a79e4a9bd4545b67ecca735a65083",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -320,7 +286,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-28d0ad18bda041bb8d7c087ef00c49dc",
+      "finding_id": "finding-870ccc1aceb14924ad29b08397916685",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -384,7 +350,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -397,7 +363,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -410,7 +376,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -423,7 +389,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -436,7 +402,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -825,7 +791,7 @@
     "limitations": [
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 8,
-    "findings_after_filtering": 8
+    "findings_before_filtering": 7,
+    "findings_after_filtering": 7
   }
 }

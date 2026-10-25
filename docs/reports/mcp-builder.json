@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "mcp-builder",
-    "source": "/tmp/uniscan-l7wcdvex/repo/skills/mcp-builder",
-    "scanned_at": "2026-10-18T08:07:26.226685+00:00"
+    "source": "/tmp/uniscan-_7mk2mtj/repo/skills/mcp-builder",
+    "scanned_at": "2026-10-25T08:29:51.109657+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -116,7 +116,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-99ff0f78ccce48a98835fd5a0fcfb2ec",
+      "finding_id": "finding-1d45da1310e64966af387d1ed9eddc44",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -257,7 +257,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-25b6da054c2a4398b634358e287d4cd0",
+      "finding_id": "finding-10ee9038fd6f461e9af38d8c15b86334",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -398,7 +398,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-d434104219634ee1a63185c403a1caaf",
+      "finding_id": "finding-153f3f3a90564c5cbdf3f26883967fd1",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -539,7 +539,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-98eb498185034415bd74bd659eac0fb8",
+      "finding_id": "finding-e23f636fea6342759d45c89cf1e06100",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -584,7 +584,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-95ed9c13288e4025ba6faab2363e9863",
+      "finding_id": "finding-1d7040413e6646e2a5c6f6654c98679d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -629,7 +629,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-93d64348bd254fb6ad6dc44a43639d98",
+      "finding_id": "finding-762193fd11984ce3a0c830d5ebca9ec9",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -674,7 +674,7 @@
     },
     {
       "id": "EA5",
-      "finding_id": "finding-eacead540af1441e9c0ffdade6ca82aa",
+      "finding_id": "finding-257c4746b5b54352848c15d7324d436f",
       "category": "Excessive Agency",
       "pattern": "External Model or Provider Selection",
       "severity": "HIGH",
@@ -710,7 +710,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-3527c0c95045414faa9adaee78ed38a8",
+      "finding_id": "finding-d6f0ba79ffbc4a4ba37933c147788c7a",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -744,7 +744,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-fd35b4a4e47f44bcad78183309e2ac60",
+      "finding_id": "finding-2e826916e91b49c69b4262a969f91d5c",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: file_write, mcp.",
       "severity": "MEDIUM",
@@ -774,7 +774,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-b090546c9f1c4f168557e110d97b92d1",
+      "finding_id": "finding-98508e64f197462cbc71ba535226e040",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx @modelcontextprotocol/inspector'.",
       "severity": "MEDIUM",
@@ -804,7 +804,7 @@
     },
     {
       "id": "EA1",
-      "finding_id": "finding-57cc2a3871cc4f35b46a027adecfe57c",
+      "finding_id": "finding-6e8279e0357b456ba1c04f2e7d95cf08",
       "category": "Excessive Agency",
       "pattern": "Unrestricted Tool Access",
       "severity": "MEDIUM",
@@ -836,7 +836,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-60fcba27881c44df8c7e9830e78bc712",
+      "finding_id": "finding-0df02ddeb47d4a02aeceac8ac26300f6",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -868,7 +868,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-9eea661d40df4ed38e9b2687afccfa4a",
+      "finding_id": "finding-14158cd4b7b2458998736adc6de37114",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -900,7 +900,7 @@
     },
     {
       "id": "SC1",
-      "finding_id": "finding-4b3c12ddfb8247dcaf56f4436b37cf72",
+      "finding_id": "finding-3716f983b4454b658bc2c82d92c9021d",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -932,7 +932,7 @@
     },
     {
       "id": "SC4",
-      "finding_id": "finding-7e4d67a4fa674500af253042b9b90ebe",
+      "finding_id": "finding-886d8abc10f34672a21675d18e763d64",
       "category": "Supply Chain",
       "pattern": "Unverifiable Dependency: anthropic has 4 known advisory(ies) (CVE-2026-34450 (Claude SDK for Python has Insecure Default File Permissions in Local Filesystem ); CVE-2026-34452 (Claude SDK for Python: Memory Tool Path Validation Race Condition Allows Sandbox); CVE-2026-34450 (The Claude SDK for Python provides access to the Claude API from Python applicat) +1 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
       "severity": "LOW",
@@ -962,7 +962,7 @@
     },
     {
       "id": "SC1",
-      "finding_id": "finding-76ec215b6b6a444d8765b230573ce122",
+      "finding_id": "finding-ee485a5f64fe4f9ba139bf87094658a0",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -994,7 +994,7 @@
     },
     {
       "id": "SC4",
-      "finding_id": "finding-a84ee684ae044396894fb1ad6be8554f",
+      "finding_id": "finding-9a06200f78934101bbd9184634f3ea35",
       "category": "Supply Chain",
       "pattern": "Unverifiable Dependency: mcp has 13 known advisory(ies) (CVE-2025-53366 (MCP Python SDK vulnerability in the FastMCP Server causes validation error, lead); CVE-2026-59951 (MCP Python SDK: Unbounded Session Accumulation in StreamableHTTP Transport Enabl); CVE-2025-66416 (Model Context Protocol (MCP) Python SDK does not enable DNS rebinding protection) +10 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
       "severity": "LOW",
@@ -1056,7 +1056,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1069,7 +1069,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1082,7 +1082,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1095,7 +1095,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1108,7 +1108,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

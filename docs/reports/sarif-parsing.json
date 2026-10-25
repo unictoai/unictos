@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "sarif-parsing",
-    "source": "/tmp/uniscan-y6idmo3l/repo/plugins/static-analysis/skills/sarif-parsing",
-    "scanned_at": "2026-10-18T07:48:58.566130+00:00"
+    "source": "/tmp/uniscan-bntg1346/repo/plugins/static-analysis/skills/sarif-parsing",
+    "scanned_at": "2026-10-25T08:11:44.878616+00:00"
   },
   "risk_assessment": {
     "score": 87,
@@ -96,7 +96,7 @@
   "issues": [
     {
       "id": "P6",
-      "finding_id": "finding-509d32ad81ad436ba9c7d64eff4fe7b9",
+      "finding_id": "finding-c1055e14dce64b02b216a82e46bccfb5",
       "category": "System Prompt Leakage",
       "pattern": "Direct Prompt Extraction",
       "severity": "HIGH",
@@ -128,7 +128,7 @@
     },
     {
       "id": "P6",
-      "finding_id": "finding-0b3309ef4fe24f97a758fbb55bcbca0e",
+      "finding_id": "finding-c7a0097f206d4e2794aa14c587539f83",
       "category": "System Prompt Leakage",
       "pattern": "Direct Prompt Extraction",
       "severity": "HIGH",
@@ -159,40 +159,8 @@
       ]
     },
     {
-      "id": "P6",
-      "finding_id": "finding-7b8fd0233fd74212b190c77d551699c3",
-      "category": "System Prompt Leakage",
-      "pattern": "Direct Prompt Extraction",
-      "severity": "HIGH",
-      "confidence": 0.85,
-      "location": {
-        "file": "resources/sarif_helpers.py",
-        "start_line": 135,
-        "end_line": null,
-        "start_column": 12
-      },
-      "finding": "return rule",
-      "explanation": "Skill contains instructions that could directly expose system prompts, internal rules, or hidden instructions to users or external parties.",
-      "remediation": "Remove any instructions that reveal, print, or output system prompts or internal rules. System instructions should never be exposed to end users.",
-      "code_snippet": "    if rule:\n        rule_level = safe_get(rule, \"defaultConfiguration\", \"level\")\n        if rule_level:\n            return rule_level\n\n    return SARIF_DEFAULT_LEVEL\n",
-      "intent": null,
-      "tags": [
-        "System Prompt Leakage"
-      ],
-      "evidence": {},
-      "match_fingerprint": "457bb74dd0eb3f195d54fbf3bf07e26dc6f982b06ad90b9a248f56071c83b964",
-      "occurrences": [
-        {
-          "file": "resources/sarif_helpers.py",
-          "start_line": 135,
-          "end_line": null,
-          "start_column": 12
-        }
-      ]
-    },
-    {
       "id": "LP1",
-      "finding_id": "finding-45b400d31a674ad981e582fe9ad00019",
+      "finding_id": "finding-294fcf252df8407e99f3b3973050d2c0",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'file_write' detected in resources/sarif_helpers.py but not covered by declared permissions.",
       "severity": "HIGH",
@@ -222,7 +190,7 @@
     },
     {
       "id": "LP1",
-      "finding_id": "finding-ee64b4d50dba406ca02fa2983bbf2742",
+      "finding_id": "finding-ee1ea491b93d4403b04de87fe1dc4a17",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'network' detected in resources/sarif_helpers.py but not covered by declared permissions.",
       "severity": "HIGH",
@@ -252,7 +220,7 @@
     },
     {
       "id": "P6",
-      "finding_id": "finding-186f2efb85c246ca829305aa05134c20",
+      "finding_id": "finding-5b69c2727ae04ddf9725f3552c5babcd",
       "category": "System Prompt Leakage",
       "pattern": "Direct Prompt Extraction",
       "severity": "HIGH",
@@ -284,7 +252,7 @@
     },
     {
       "id": "P6",
-      "finding_id": "finding-305b72118eed435485cb4727032ba205",
+      "finding_id": "finding-02be67889db14686952f7ed8f15912b0",
       "category": "System Prompt Leakage",
       "pattern": "Direct Prompt Extraction",
       "severity": "HIGH",
@@ -316,7 +284,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-87b4e36e2c3641b5a424e181fab8c6d7",
+      "finding_id": "finding-a2df3cd815d5487992212f220891745b",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -382,7 +350,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -395,7 +363,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -408,7 +376,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -421,7 +389,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -434,7 +402,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1430,7 +1398,7 @@
       "Analyzer static_patterns_system_prompt_leakage status: degraded.",
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 8,
-    "findings_after_filtering": 8
+    "findings_before_filtering": 7,
+    "findings_after_filtering": 7
   }
 }

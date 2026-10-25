@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "courier",
-    "source": "/tmp/uniscan-t2ntr73r/repo/skills/courier",
-    "scanned_at": "2026-10-18T08:09:53.980636+00:00"
+    "source": "/tmp/uniscan-u_ab9s7k/repo/skills/courier",
+    "scanned_at": "2026-10-25T08:32:19.861418+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -436,7 +436,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-160218e81017416781fded9098f40b7b",
+      "finding_id": "finding-a46c8d1a7ab840239c4fd9162ce5f182",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -481,7 +481,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-bbcfd91201a14b5fbccf85889df58a50",
+      "finding_id": "finding-dab3779515ad4a23a310c4a9a1d917dc",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -526,7 +526,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-6b9c10e26b7744d8bbc5e6534ec5fc2d",
+      "finding_id": "finding-1fb42dbf91d44914a727116413519d1a",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -571,7 +571,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-6ae56d45d6cd46c883d01a3cad196039",
+      "finding_id": "finding-74ec96b22a8b4dbe95cbf51735d4560b",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -616,7 +616,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-04948ef2a05849359c92dec6fbf2c068",
+      "finding_id": "finding-6f167ea8206a4db0b36e2ac11fe718a0",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -661,7 +661,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-2ac97536f8b8493ab9db6fb248880237",
+      "finding_id": "finding-9cd6c304d0824028a7336f839cb5fec2",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -706,7 +706,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-314dc602f42044e3861ca5ab43c3bee3",
+      "finding_id": "finding-1c55eebe32fe46438803cf7f227fe8c9",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -751,7 +751,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-f8c53e3573104d699e668b145c3e7e71",
+      "finding_id": "finding-a2d82af7cf2e4700b0a5e2bdf65a633d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -796,7 +796,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a0344ce11ff64ee09c0197fb936fe258",
+      "finding_id": "finding-e4e627e8a9ae4fd1a515abbbc662366d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -937,7 +937,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-6fc4663982f94cf992565fab7cb2c5d6",
+      "finding_id": "finding-51a0a8865e2b4037b7da04fd6e57e550",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -982,7 +982,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-9c5b30f5f3af44a3a078c86588979728",
+      "finding_id": "finding-5be14bdee6f94ff18e18bb6c114b1ec0",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1027,7 +1027,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-b42a5f287e1b4647bd25386cd336112d",
+      "finding_id": "finding-0a38647c0170438b915b283834b9012d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-6c007732712c4744910f6903b32465df",
+      "finding_id": "finding-dc8c850469f84a799fb5db17cb76f299",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a6027bac893f4593bd1a24df7bd986ac",
+      "finding_id": "finding-7d04019579fb4d63b1485eb9c6bb843d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1162,7 +1162,7 @@
     },
     {
       "id": "P3",
-      "finding_id": "finding-5fb6936a8bff4d15a8d4342e4f244f42",
+      "finding_id": "finding-1057156ca44c41b2b871c8c90784f2aa",
       "category": "Prompt Injection",
       "pattern": "Exfiltration Commands",
       "severity": "HIGH",
@@ -1196,7 +1196,7 @@
     },
     {
       "id": "YR4",
-      "finding_id": "finding-0420894c1ea6490bbd4c3fba7169a481",
+      "finding_id": "finding-bea11cc7d0224221a1c02e2958c3ddd6",
       "category": "YARA Match",
       "pattern": "YARA rule 'agent_skill_prompt_injection_hidden_instructions': Prompt injection or hidden instructions embedded in AI agent skill text [agent_skills]",
       "severity": "HIGH",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-aa68b6b04e874873acfaf4a6fcb4d14e",
+      "finding_id": "finding-7c5a1f47c7ea487cbc56df1cca3c4097",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -1260,7 +1260,7 @@
     },
     {
       "id": "P6",
-      "finding_id": "finding-b2e4c347a82d4655bd9abc1c5ea1029b",
+      "finding_id": "finding-0d20d812169b4368a9e3ca003c78d9d0",
       "category": "System Prompt Leakage",
       "pattern": "Direct Prompt Extraction",
       "severity": "HIGH",
@@ -1292,7 +1292,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-af9010bc35854843a083868e947ce218",
+      "finding_id": "finding-acf7fb87adc54b8387dbb4abae420971",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -1323,42 +1323,8 @@
       ]
     },
     {
-      "id": "P2",
-      "finding_id": "finding-ab05dd1c803e4341ab3f8c35f809f710",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/guides/elemental.md",
-        "start_line": 539,
-        "end_line": 539,
-        "start_column": 0,
-        "end_column": 157
-      },
-      "finding": "<!-- Target line budget: <= 550 lines. If you are about to push this past 575, split (e.g., control flow + localization out) rather than letting it grow. -->",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "- [Elemental Overview](https://www.courier.com/docs/design/elemental/overview), official reference\n- [Elements Reference](https://www.courier.com/docs/design/elemental/elements/text), one page per element type, starting with `text`\n\n<!-- Target line budget: <= 550 lines. If you are about to push this past 575, split (e.g., control flow + localization out) rather than letting it grow. -->",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "0113b0ddbae493e102c37bf67f5053da275c2f4a9f6d3c98126b0d84e364f56d",
-      "occurrences": [
-        {
-          "file": "references/guides/elemental.md",
-          "start_line": 539,
-          "end_line": 539,
-          "start_column": 0,
-          "end_column": 157
-        }
-      ]
-    },
-    {
       "id": "TM1",
-      "finding_id": "finding-93ec7a871a9646ebbcd070ab0b249b57",
+      "finding_id": "finding-f38be1b62fbb4e11a51a49a5371b1a3c",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -1390,7 +1356,7 @@
     },
     {
       "id": "SC2",
-      "finding_id": "finding-dc4da5e56e5a41b297a244524508b483",
+      "finding_id": "finding-21ff6b280e2644b48a62e7fea7577ec5",
       "category": "Supply Chain",
       "pattern": "External Script Fetching",
       "severity": "HIGH",
@@ -1422,7 +1388,7 @@
     },
     {
       "id": "AR1",
-      "finding_id": "finding-39c5ea46357d417aa9dd91a92ac89a90",
+      "finding_id": "finding-5c8a806136ca4812b246e253f673f7a3",
       "category": "Anti-Refusal",
       "pattern": "Anti-Refusal Statement",
       "severity": "HIGH",
@@ -1458,7 +1424,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-98d71330f4b0476f8cfed6ddf1e6adc9",
+      "finding_id": "finding-ae0e0d8001904906a83a890aa4ffca72",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -1489,76 +1455,8 @@
       ]
     },
     {
-      "id": "P2",
-      "finding_id": "finding-319a66685aba46809c766c5a512472f8",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/guides/providers.md",
-        "start_line": 303,
-        "end_line": 303,
-        "start_column": 0,
-        "end_column": 42
-      },
-      "finding": "<!-- Target line budget: <= 500 lines. -->",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "- [List available provider types](https://www.courier.com/docs/api-reference/providers/list-available-provider-types), `/providers/catalog` reference\n- [Integrations Overview](https://www.courier.com/docs/integrations/overview), human-facing integration docs\n\n<!-- Target line budget: <= 500 lines. -->",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "3fff7f0fbd0085194abafecff0c9db992e4f83ca902cb4c31198d484f6c8784e",
-      "occurrences": [
-        {
-          "file": "references/guides/providers.md",
-          "start_line": 303,
-          "end_line": 303,
-          "start_column": 0,
-          "end_column": 42
-        }
-      ]
-    },
-    {
-      "id": "P2",
-      "finding_id": "finding-9c0be73f892646539cfa105dc8086bfb",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/guides/routing-strategies.md",
-        "start_line": 433,
-        "end_line": 433,
-        "start_column": 0,
-        "end_column": 42
-      },
-      "finding": "<!-- Target line budget: <= 500 lines. -->",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "- [Archive Routing Strategy](https://www.courier.com/docs/api-reference/routing-strategies/archive-routing-strategy)\n- [Routing Configuration (Design Studio)](https://www.courier.com/docs/send/routing), dashboard equivalent\n\n<!-- Target line budget: <= 500 lines. -->",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "3fff7f0fbd0085194abafecff0c9db992e4f83ca902cb4c31198d484f6c8784e",
-      "occurrences": [
-        {
-          "file": "references/guides/routing-strategies.md",
-          "start_line": 433,
-          "end_line": 433,
-          "start_column": 0,
-          "end_column": 42
-        }
-      ]
-    },
-    {
       "id": "TM1",
-      "finding_id": "finding-accaaf82127349238f3381b75b81ad2a",
+      "finding_id": "finding-cc200084d8ab44f8863d88be1dd0a1ca",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -1590,7 +1488,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-750f70fe13ca437e90d2493d7ab5fd62",
+      "finding_id": "finding-42557d475a8f4e7d98f7c113e5c82f7b",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -1622,7 +1520,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-1d2090687abe4962b981a4c9d4130eb4",
+      "finding_id": "finding-7155129f9b9d463eaf01d86e48a1ee06",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -1653,179 +1551,8 @@
       ]
     },
     {
-      "id": "P2",
-      "finding_id": "finding-20b0a715624d445e871369846bfd1ce7",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/guides/templates.md",
-        "start_line": 518,
-        "end_line": 541,
-        "start_column": 0,
-        "end_column": 27
-      },
-      "finding": "<!-- OLD ELEMENTAL REFERENCE REMOVED, moved to elemental.md. Keep this pointer. -->\n\n<details>\n<summary>Minimal Elemental shape (for context)</summary>\n\n```json\n{\n  \"version\": \"2022-01-01\",\n  \"element",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "\nFor the full element-by-element reference, all element types, properties, control flow (`if`, `loop`, `ref`, `channels`), and localization. See **[Elemental](./elemental.md)**. The example below uses Elemental; consult the Elemental guide when you need more than `meta`, `text`, `action`, and `channel`.\n\n<!-- OLD ELEMENTAL REFERENCE REMOVED, moved to elemental.md. Keep this pointer. -->\n\n<details>\n<summary>Minimal Elemental shape (for context)</summary>",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "e5fd90f0835bd057c89ceada50ebfda9ee9a36e6239c793903df52c91d629f3a",
-      "occurrences": [
-        {
-          "file": "references/guides/templates.md",
-          "start_line": 518,
-          "end_line": 541,
-          "start_column": 0,
-          "end_column": 27
-        }
-      ]
-    },
-    {
-      "id": "P2",
-      "finding_id": "finding-84a8a8e678a74cef8fb3bd5f58b18cb1",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/guides/templates.md",
-        "start_line": 518,
-        "end_line": 541,
-        "start_column": 0,
-        "end_column": 27
-      },
-      "finding": "<!-- OLD ELEMENTAL REFERENCE REMOVED, moved to elemental.md. Keep this pointer. -->\n\n<details>\n<summary>Minimal Elemental shape (for context)</summary>\n\n```json\n{\n  \"version\": \"2022-01-01\",\n  \"element",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "\nFor the full element-by-element reference, all element types, properties, control flow (`if`, `loop`, `ref`, `channels`), and localization. See **[Elemental](./elemental.md)**. The example below uses Elemental; consult the Elemental guide when you need more than `meta`, `text`, `action`, and `channel`.\n\n<!-- OLD ELEMENTAL REFERENCE REMOVED, moved to elemental.md. Keep this pointer. -->\n\n<details>\n<summary>Minimal Elemental shape (for context)</summary>",
-      "intent": null,
-      "tags": [
-        "Prompt Injection",
-        "normalized-view"
-      ],
-      "evidence": {},
-      "match_fingerprint": "10c5523a53c82c1b05560d3ae32f4a1ffc3101f8c703f233422f93a276794eaf",
-      "occurrences": [
-        {
-          "file": "references/guides/templates.md",
-          "start_line": 518,
-          "end_line": 541,
-          "start_column": 0,
-          "end_column": 27
-        }
-      ]
-    },
-    {
-      "id": "P2",
-      "finding_id": "finding-c41700accf8e415ca00fa3f6f06ba765",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/guides/templates.md",
-        "start_line": 789,
-        "end_line": 789,
-        "start_column": 0,
-        "end_column": 168
-      },
-      "finding": "<!-- Target line budget: <= 750 lines. If you are about to push this past 800, split further rather than letting it grow. Elemental reference lives in elemental.md. -->",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "- [Elements Reference](https://www.courier.com/docs/design/elemental/elements/text) - One page per element type\n- [Templates API](https://www.courier.com/docs/design/templates/api) - API endpoint reference\n\n<!-- Target line budget: <= 750 lines. If you are about to push this past 800, split further rather than letting it grow. Elemental reference lives in elemental.md. -->\n<!-- Target line budget (elemental.md): see the footer comment in elemental.md itself. -->\n",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "ca83c8ff35315451a2228ca9f28b48fffa9b0a48a265841549837a949d5613cc",
-      "occurrences": [
-        {
-          "file": "references/guides/templates.md",
-          "start_line": 789,
-          "end_line": 789,
-          "start_column": 0,
-          "end_column": 168
-        }
-      ]
-    },
-    {
-      "id": "P2",
-      "finding_id": "finding-407741f169494925be3c451736a5054f",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/guides/templates.md",
-        "start_line": 790,
-        "end_line": 790,
-        "start_column": 0,
-        "end_column": 90
-      },
-      "finding": "<!-- Target line budget (elemental.md): see the footer comment in elemental.md itself. -->",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "- [Templates API](https://www.courier.com/docs/design/templates/api) - API endpoint reference\n\n<!-- Target line budget: <= 750 lines. If you are about to push this past 800, split further rather than letting it grow. Elemental reference lives in elemental.md. -->\n<!-- Target line budget (elemental.md): see the footer comment in elemental.md itself. -->\n",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "c6732011a5ec423245dd7223be716271c330f5bc8bf2916a0202bddbd7268ed5",
-      "occurrences": [
-        {
-          "file": "references/guides/templates.md",
-          "start_line": 790,
-          "end_line": 790,
-          "start_column": 0,
-          "end_column": 90
-        }
-      ]
-    },
-    {
-      "id": "P2",
-      "finding_id": "finding-b93e63d379cd4bfa8b2e0e0c9d97bff5",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/inbox/legacy-v7.md",
-        "start_line": 119,
-        "end_line": 119,
-        "start_column": 0,
-        "end_column": 170
-      },
-      "finding": "<!-- Target line budget: <= 200 lines. This file exists to recognize v7 and route to migration; detailed v8 content lives in react.md, web-components.md, and auth.md. -->",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "- [Authentication](./auth.md), JWT generation and refresh\n- [v8 Migration Guide](https://www.courier.com/docs/sdk-libraries/courier-react-v8-migration-guide), official step-by-step\n\n<!-- Target line budget: <= 200 lines. This file exists to recognize v7 and route to migration; detailed v8 content lives in react.md, web-components.md, and auth.md. -->",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "0a39e52b7a8110d8fd10936e916ff4df0b5ad64564354f3afaa475f6d49edbce",
-      "occurrences": [
-        {
-          "file": "references/inbox/legacy-v7.md",
-          "start_line": 119,
-          "end_line": 119,
-          "start_column": 0,
-          "end_column": 170
-        }
-      ]
-    },
-    {
       "id": "E1",
-      "finding_id": "finding-52e7377f885f44b59720920ea98631c5",
+      "finding_id": "finding-7b88775b66544fa089c0bcc28d8a5845",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1857,7 +1584,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-8120db602b244cf9a2b4310ddcb5efdf",
+      "finding_id": "finding-b08b7925d26e454f83fe16dbc71f2f41",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1889,7 +1616,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-5eca129ad75a481f95d4cf050ac38871",
+      "finding_id": "finding-a7015d2e353c4cbe9f61e1270f0737c2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1921,7 +1648,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-aead3751e1e149b196de0c3f4260f75d",
+      "finding_id": "finding-b7f1365ad9ba4e7fac3165e9ffc8c45d",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1953,7 +1680,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-45ebc30800a44ad2b538744e9bd7b460",
+      "finding_id": "finding-416bac8d06a4449b9def7d78fbb99a4b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1985,7 +1712,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-a200f8f512ef4f18aaee4ae9f45c489f",
+      "finding_id": "finding-c31288ea0070480780a209453316dac6",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2017,7 +1744,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-daee2e06b6b041c289b05bec53531cf2",
+      "finding_id": "finding-befe7645ce0a4814a6f1451c7715941e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2049,7 +1776,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-8bbb64d18f4b4d59830ded4e659ffc0b",
+      "finding_id": "finding-56a1f599ee0a4df4823bc190167f65bc",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2081,7 +1808,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-69a19069b1014edb855740cad69eb326",
+      "finding_id": "finding-188efa22f99745dba59f9a077406db45",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2113,7 +1840,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-20d3863da930455ca7b826db5bdefc1d",
+      "finding_id": "finding-35cd1631e3194c97a20a189bb42051c0",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2145,7 +1872,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-65a1e0112bc744308e3ef98b4a6a94e7",
+      "finding_id": "finding-4c79f6def6dc4d0ea02a485c7c43f781",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2177,7 +1904,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-00302ccba5fa497d98d99e0f824d2078",
+      "finding_id": "finding-4a1ea72ad19448fabc14bac8cc7eb3b5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2209,7 +1936,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-42508513d09c4ae5bd8fe25ac98dbc0f",
+      "finding_id": "finding-cf718e8c915644068764dae084d07e68",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2241,7 +1968,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-ed077cedc2be4ce2a371f7f8c8abcd4e",
+      "finding_id": "finding-b0c199d52dda4915be2da4a96c8fc229",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2273,7 +2000,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-736cf35315de4fa5aeacbc2c0593b36c",
+      "finding_id": "finding-bb1ec1e55d6a484db17c3604dbdaccdd",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2305,7 +2032,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-1d2ecb80f71a49a4934e4a8b065bf4f4",
+      "finding_id": "finding-c4e160f2be6e4e6e971e49976756b291",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2337,7 +2064,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f0141fb0c4b4404daa826f081f47e949",
+      "finding_id": "finding-918cffec8c154310b8b0a5958cdbfe7e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2369,7 +2096,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-00482d43007c4c3c9b7146b4b7f03ddc",
+      "finding_id": "finding-82f815f3a49245e380f85a1f2788c730",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2401,7 +2128,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-9f41162cdb0b4978be7419db4fb3d6a3",
+      "finding_id": "finding-b219154128c9459d826d330eda79e7c3",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2433,7 +2160,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-fbcb90b6d04e42b7be448d09a2b3dcd4",
+      "finding_id": "finding-4888a52e8f314a81aabaa8c2658163b5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2465,7 +2192,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-bf48acae30144e8f854d0994d24960d1",
+      "finding_id": "finding-02ed15d3762e4e7db5f24209052d00b5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2497,7 +2224,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-d78143a486de4654b2c940c804e70d0e",
+      "finding_id": "finding-2883c0a0ec8f472090d00880dc0c67d2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2529,7 +2256,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-0e0b9dd0c1424078b6620e07cc247d70",
+      "finding_id": "finding-e7805129b7c24800b449743d10bb5d71",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2561,7 +2288,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-0405528d31c44df6a61cddddf50f18d7",
+      "finding_id": "finding-9c6ab011f21440459078839b635122c7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2593,7 +2320,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-3d3fb2faf4ba4dc3a978efc5d841a0f4",
+      "finding_id": "finding-8dea2ef8a6c547ec8ad0f6078d85063b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2625,7 +2352,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-d59f6d3a189a434e92e42566f6bac0dc",
+      "finding_id": "finding-afddb4fc3ac74c59aa86cd1d1cd35925",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2657,7 +2384,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-c84529b17f5041fab91bd4b1a47694e6",
+      "finding_id": "finding-f14a966dd3db479fa725e5f1c2ab376d",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2689,7 +2416,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-b28cdac4f3cd4f89a20d433d72fae3eb",
+      "finding_id": "finding-8316f69945c14ee89d1553ffe86dbdc0",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2721,7 +2448,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-6a0d755f9d664a45a948796dbd1d4987",
+      "finding_id": "finding-8aaa672e241e48c98e784b8f4cc49959",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2753,7 +2480,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f488eb35315c4807873f5360dc72e89f",
+      "finding_id": "finding-113a75d2cd4e4cab8410d352bde19489",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2785,7 +2512,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-cd042f8a01d347bfa49d29e5b6295bc7",
+      "finding_id": "finding-10dd3a905f31422d91db7e4a313bed1f",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2817,7 +2544,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-a061bb0a14414419ad07f20e8f8f9830",
+      "finding_id": "finding-06ea2a4dbd6841248d6e961ef93dd84e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2849,7 +2576,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-d78afbc786f54f8eb670adcf33d5c447",
+      "finding_id": "finding-10e9dd1606d34e3dad7c33df67a038bb",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2881,7 +2608,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-932f1ab54f6f4c69b3496390989293f2",
+      "finding_id": "finding-9c91dbc969da4a3b9eeaafcdb8dfff90",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2913,7 +2640,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-0d16e28df90947b4955d408b183bdac9",
+      "finding_id": "finding-99ced0e3c31b4721ac0aa91d592a1a72",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2945,7 +2672,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-a26c0538d085460db8b3844fcdde569e",
+      "finding_id": "finding-44630d3116b34454b707618a20713ef2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2977,7 +2704,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-a3bce478f81f4c96af993a466efc946a",
+      "finding_id": "finding-009fca63df0641c9872ed75162ed43bc",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3009,7 +2736,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-b0b3d08e1b20418e8bb3974c2682cc60",
+      "finding_id": "finding-09cd720a9249403cb883ee13636bb491",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3041,7 +2768,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f7acc4ddc35743c39e04fdaa3ff0c681",
+      "finding_id": "finding-cce3fa4291df441aa45683d505216353",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3073,7 +2800,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-677a777abd1c4cab8e459622c81afda1",
+      "finding_id": "finding-5a85216032d944908fd5588b68e6ed16",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3105,7 +2832,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-842ce94e52a245499d6eee9de677e3c4",
+      "finding_id": "finding-e3826ff82ea049059072d1501d245ad2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3137,7 +2864,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-10f9aa8678f54804aa7132ead1b2175e",
+      "finding_id": "finding-0abf577dd58b433499aa0603d7d7da80",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3169,7 +2896,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-eab29fc689ae49068de31e13131f2c0e",
+      "finding_id": "finding-d087e74185044e4eb7da93a86191a42c",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3201,7 +2928,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-cf450b112a974e0ab97c77183915bfd1",
+      "finding_id": "finding-2fa222f7adf04c7dbc2325b64482ab00",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3233,7 +2960,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-b069bd3649f24078b08c2649baaa5fc5",
+      "finding_id": "finding-7cab6f997058443f9b2c0ca55ff69c4b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3265,7 +2992,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-ea5b7ce92cea4157a1d60fed7d5548b9",
+      "finding_id": "finding-6bcdbadd2ced4287b2a35980d7f4b4ef",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3297,7 +3024,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-58796a60afbf492c9468246dbc0b4a07",
+      "finding_id": "finding-faf52e84414a47029cc5f8cb790ab07c",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3329,7 +3056,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-26bba6c6f68b450b9b288c7e08145675",
+      "finding_id": "finding-341869c0fcb0481cb963e6cd90efed0b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3361,7 +3088,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-5dde9a59e03e466991a2bada05e01d83",
+      "finding_id": "finding-842576f0fd614510a4b0dee1c6555831",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3393,7 +3120,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-37e3308758644c43baf4caaa2f625ade",
+      "finding_id": "finding-3861ad8343a6447685c723ea855d248f",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3425,7 +3152,7 @@
     },
     {
       "id": "EA4",
-      "finding_id": "finding-6debf49b7882439f96ce32880b55998e",
+      "finding_id": "finding-355826891cc4468f89107289b31174d8",
       "category": "Excessive Agency",
       "pattern": "Unbounded Resource Access",
       "severity": "MEDIUM",
@@ -3457,7 +3184,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-435f87d40edb4a26a5f5a6f7b7762195",
+      "finding_id": "finding-dcfcc2c0eaeb40a3bca886688d5a75e4",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3489,7 +3216,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-d2c5e18cc2294967a0ff15574d14d0d9",
+      "finding_id": "finding-e2a6d85b6c29412ab70ecb4d55258a95",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3521,7 +3248,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f18b92917ed7435fb8385a0b7ace56c9",
+      "finding_id": "finding-7e92ac76097d40ba87e7dd183b0f2055",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3553,7 +3280,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-dd9eb64eb6824166a501da2944d92200",
+      "finding_id": "finding-1db11d95f030494f8b92f6ae0ee25802",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3585,7 +3312,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-88b51cebbd7548f99eb9792724d60047",
+      "finding_id": "finding-f8e2f105666a4b7a945d9b456a3a7a5a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3617,7 +3344,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-708d528419444e9d848057815b1c54e8",
+      "finding_id": "finding-d716c31521ca464688bd0cbb8e9ccc90",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3649,7 +3376,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-0cfbf699d8ce448799d15c78dec3b299",
+      "finding_id": "finding-9bac30bfc243401b89a3d64b2cde13b2",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx -y mcp-remote'.",
       "severity": "MEDIUM",
@@ -3679,7 +3406,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-c085a944b30c43e8a8f90af3fd095d59",
+      "finding_id": "finding-ccf9ecbdad0d41fd857d25eabc542b2e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3711,7 +3438,7 @@
     },
     {
       "id": "EA4",
-      "finding_id": "finding-31a9b548d98d48558b5a5693fdac3e1f",
+      "finding_id": "finding-20b52e077bed4368ba81fbd90fe2bf27",
       "category": "Excessive Agency",
       "pattern": "Unbounded Resource Access",
       "severity": "MEDIUM",
@@ -3743,7 +3470,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-08a0df18c441447888b26d1c1106f4a4",
+      "finding_id": "finding-d748805dfa0b454c88e953a8a6e6a132",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3775,7 +3502,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f3cbaa8b35034d8d9706270773637139",
+      "finding_id": "finding-01f67da4d48448b1a4f35957c75287d8",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3807,7 +3534,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-8893129d047f4f0ea5e41d37d99bbdfa",
+      "finding_id": "finding-c21e72a46fd74696a276397fe8a1e26a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3839,7 +3566,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-48fbbc3c283f40b9b563d807baac765a",
+      "finding_id": "finding-6accc86a71134efaa1ffd679b39f778a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3871,7 +3598,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-5507822613bd42dda8042a05505f715b",
+      "finding_id": "finding-12986c0fec744fc5a9d8fc727c76a94b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3903,7 +3630,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-edc96e3b42674b7ba0e6f075d970bf81",
+      "finding_id": "finding-71a0485f71d045699c24179ec5f05cb0",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3935,7 +3662,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-ca37b7f39947436c8e7fd307e83c8823",
+      "finding_id": "finding-786b2ea7daa3473a83cd75f0267992c2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3967,7 +3694,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-755233a6b0b74071bbe14dcb4c4a6b94",
+      "finding_id": "finding-92f0ac6998e342b492baf3f8aa0be58f",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3999,7 +3726,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f46580da63954812938c26f60b39bf43",
+      "finding_id": "finding-3e6e848d4cb54aa0833902b80d3a0f1e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4031,7 +3758,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-19f5e90789f947cca6b7ff6c4e62e8a9",
+      "finding_id": "finding-2dcef8b40ad14046b6d201d3f6543150",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4095,7 +3822,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -4108,7 +3835,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -4121,7 +3848,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -4134,7 +3861,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -4147,7 +3874,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -5601,7 +5328,7 @@
       "Analyzer static_patterns_system_prompt_leakage status: degraded.",
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 104,
-    "findings_after_filtering": 104
+    "findings_before_filtering": 96,
+    "findings_after_filtering": 96
   }
 }

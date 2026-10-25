@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "exa-search",
-    "source": "/tmp/uniscan-wmoq34ib/repo/skills/exa-search",
-    "scanned_at": "2026-10-18T07:42:25.122683+00:00"
+    "source": "/tmp/uniscan-az4ubufh/repo/skills/exa-search",
+    "scanned_at": "2026-10-25T08:05:09.998718+00:00"
   },
   "risk_assessment": {
     "score": 32,
@@ -66,7 +66,7 @@
   "issues": [
     {
       "id": "PE3",
-      "finding_id": "finding-42efc33b0c5c49a2a46932a0a722a77d",
+      "finding_id": "finding-127eb8b67d274c54a8200fc0683ada47",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -98,7 +98,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-956d8c7e544347e58cae8295f453a325",
+      "finding_id": "finding-c3833711244645169724b162027021f0",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, file_write.",
       "severity": "MEDIUM",
@@ -128,7 +128,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-0ec6d995923e47e3a29edea0185b6d6d",
+      "finding_id": "finding-e686216749b74a2b85e963702d68bb36",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -160,7 +160,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-7dc462c2472c4644b5492364e1b40f27",
+      "finding_id": "finding-2b3dea35ce9345e2ad44253aacfb7e8c",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -192,7 +192,7 @@
     },
     {
       "id": "AST7",
-      "finding_id": "finding-8be14dbb9a174343b4360935d9d0f022",
+      "finding_id": "finding-4acea386c260494d83e0f194c07b3513",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic attribute access via getattr()",
       "severity": "LOW",
@@ -258,7 +258,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -271,7 +271,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -284,7 +284,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -297,7 +297,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -310,7 +310,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

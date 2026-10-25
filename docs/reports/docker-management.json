@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "docker-management",
-    "source": "/tmp/uniscan-tu58pdu9/repo/devops/containers/docker-management",
-    "scanned_at": "2026-10-18T08:03:37.210475+00:00"
+    "source": "/tmp/uniscan-_n99jww3/repo/devops/containers/docker-management",
+    "scanned_at": "2026-10-25T08:26:00.303188+00:00"
   },
   "risk_assessment": {
     "score": 21,
@@ -36,7 +36,7 @@
   "issues": [
     {
       "id": "RP1",
-      "finding_id": "finding-9f4cc89730d641ff9365f26fb999bae5",
+      "finding_id": "finding-66dc95167eb949e2a569c2b8b72f5ee4",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -d'.",
       "severity": "MEDIUM",
@@ -66,7 +66,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-2804720bf95a4206b189a9c8f5ebb58d",
+      "finding_id": "finding-8f58a4170c5a4eaf858165bc0408e127",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -d'.",
       "severity": "MEDIUM",
@@ -96,7 +96,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-a5536b1cf8c04225a5fdf3d373973a4b",
+      "finding_id": "finding-8b155a3b257343159caea620de374a7b",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -d'.",
       "severity": "MEDIUM",
@@ -126,7 +126,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-edcfd0ff733f4f9bafdbd2ab684f1a1b",
+      "finding_id": "finding-a846ba48f51649328537c67e03763780",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -d'.",
       "severity": "MEDIUM",
@@ -156,7 +156,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-8dfb15f83e49495a871bc3a94ec72698",
+      "finding_id": "finding-248df70cce6340388855c2e324349327",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -d'.",
       "severity": "MEDIUM",
@@ -186,7 +186,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-40fa40273c454be8bb1cdbc522170149",
+      "finding_id": "finding-8e192f4a29e043359be37e4efc69ffc1",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -d'.",
       "severity": "MEDIUM",
@@ -216,7 +216,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-9150f8207646402183175176e402a480",
+      "finding_id": "finding-39c54b551f2e4a2c8bef8dea045678e1",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -d'.",
       "severity": "MEDIUM",
@@ -246,7 +246,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-1708bf38d215415b8bf554df531cdd31",
+      "finding_id": "finding-c71d9c9b002d4511a65fad318d000d16",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -d'.",
       "severity": "MEDIUM",
@@ -276,7 +276,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-f9c4f200e50940f4b36766cd32b014af",
+      "finding_id": "finding-887d73c3c0654c4eab07b329fd68506b",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -v'.",
       "severity": "MEDIUM",
@@ -306,7 +306,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-77dd4944cf984366a0cbdc7f505f549d",
+      "finding_id": "finding-0584120def804c20aa5d1879c82f88ce",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -v'.",
       "severity": "MEDIUM",
@@ -336,7 +336,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-5591d33d26834df691a3edf4df81c818",
+      "finding_id": "finding-a6ba23de123e4bcbb9f7851a1d693fdd",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -v'.",
       "severity": "MEDIUM",
@@ -366,7 +366,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-fbf75ddfd4414014a616bcbdfb15cfc7",
+      "finding_id": "finding-9e18eac9dc5d4a0487f3d8f2ffcc8239",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -v'.",
       "severity": "MEDIUM",
@@ -396,7 +396,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-a3709e9605184b6384dc38f8b1490405",
+      "finding_id": "finding-2ff8f3dc149e4d09a812d5919a37d112",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run --tmpfs'.",
       "severity": "MEDIUM",
@@ -426,7 +426,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-dbf0d86d4a1f42fb98ea92722c90a866",
+      "finding_id": "finding-86659ba228834826b75504555930524d",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -it'.",
       "severity": "MEDIUM",
@@ -456,7 +456,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-616a4d9d74b645f79c2b5f66c763406a",
+      "finding_id": "finding-97ac3acece5c4d29b6b0f4c98fd50c1c",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -it'.",
       "severity": "MEDIUM",
@@ -486,7 +486,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-58e6d92254ac4c219656c6d5b133eee8",
+      "finding_id": "finding-fe279425225443ac8a542cc2414773db",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run -it'.",
       "severity": "MEDIUM",
@@ -516,7 +516,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-7eaebde4ffe5424aa069614bebd0e827",
+      "finding_id": "finding-4223300e047b4ba7ad5d80ae12887927",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker pull myregistry.com/myapp:v1.0'.",
       "severity": "MEDIUM",
@@ -546,7 +546,7 @@
     },
     {
       "id": "PE2",
-      "finding_id": "finding-59b7f6c15df0428d89298c7de14e0c83",
+      "finding_id": "finding-b865365e0c8344fca49dc1705eba1bda",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -578,7 +578,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-0ac3cea41a114c709ec90743e0267469",
+      "finding_id": "finding-3e5c23bedd974fdb815aae74721ce2e6",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker pull nginx:latest'.",
       "severity": "MEDIUM",
@@ -608,7 +608,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-f00720b59c2f462c84a99518e216f6ae",
+      "finding_id": "finding-955d1f49eeb8474c89824039690030d5",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run --network'.",
       "severity": "MEDIUM",
@@ -638,7 +638,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-4bebd6071fa547a79d9ca20faa5ae425",
+      "finding_id": "finding-fd406ac1982e42ae8732906abe6fa2f7",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker run --mount'.",
       "severity": "MEDIUM",
@@ -700,7 +700,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -713,7 +713,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -726,7 +726,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -739,7 +739,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -752,7 +752,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

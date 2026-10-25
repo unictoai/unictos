@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "literature-review",
-    "source": "/tmp/uniscan-qihybb9k/repo/skills/literature-review",
-    "scanned_at": "2026-10-18T07:54:30.558014+00:00"
+    "source": "/tmp/uniscan-kbbdrko1/repo/skills/literature-review",
+    "scanned_at": "2026-10-25T08:16:42.439985+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -136,7 +136,7 @@
   "issues": [
     {
       "id": "TT3",
-      "finding_id": "finding-6fa4a899ae064e639e41079897872700",
+      "finding_id": "finding-1fcaccab6094425d862adc4b55db0028",
       "category": "Data Flow",
       "pattern": "Tainted flow: 'headers' from os.environ.get (line 256, credential/environment) \u2192 requests.post (network output)",
       "severity": "CRITICAL",
@@ -170,7 +170,7 @@
     },
     {
       "id": "LP1",
-      "finding_id": "finding-a53312fe48f84d5f83319ee1521b0ddd",
+      "finding_id": "finding-a4c083b19b8442b791e20829c07c0c7b",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'env' detected in scripts/generate_schematic.py but not covered by declared permissions.",
       "severity": "HIGH",
@@ -200,7 +200,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-0e4df83a38be4b68af4f25898def5c2c",
+      "finding_id": "finding-644b1a528817493caa7d7270b8838d23",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -232,7 +232,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-657fcdfd04d0485a971e6f7528146ae8",
+      "finding_id": "finding-5cb62ab7eee540369a8e489d88c673cd",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -264,7 +264,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-f8f078d0b5764ca2a46dd76766a5ab8e",
+      "finding_id": "finding-f87deb4722b14510bf6b8954c2bfe446",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -296,7 +296,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-edf5451a6b14488786d31d73c049486e",
+      "finding_id": "finding-bc23413605ad4806977e4250dfa6b264",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -328,7 +328,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-c9d2152fa19547f59d17b754a8fa4618",
+      "finding_id": "finding-5dc6814abb604ae181b6b52882adbe3d",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -360,7 +360,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-8c69f441de694a6ebd28929e33e788dd",
+      "finding_id": "finding-ae3ca48878ab4a74b31daf8b3aabe028",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -392,7 +392,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-493e2cfa31a44355a24830f937645340",
+      "finding_id": "finding-ab254662ea3a40fbaf1b6c624933e11e",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -424,7 +424,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-44bc3e5a514f4f30bfc478589fb65867",
+      "finding_id": "finding-8c12c7df27c7407187b217b0df31bc55",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -456,7 +456,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-1d2addd5014644d99977a38273b641fc",
+      "finding_id": "finding-9883ce6baaf04efb807d2b7a1b169be1",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -488,7 +488,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-546f8e19d6f6450394206d8a9c86aa44",
+      "finding_id": "finding-3a360e7d78e646aa810d7d38db2f2157",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -520,7 +520,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-9ea5b7199fe248faa93d1537287c0c4e",
+      "finding_id": "finding-4509881e73f8436eb0b37c5f114a0326",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -552,7 +552,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-adf9931551c64b4cbf4d7d1e91f48489",
+      "finding_id": "finding-bda627628b5d41eaaa2f7c2ef6b26033",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -584,7 +584,7 @@
     },
     {
       "id": "LP1",
-      "finding_id": "finding-44bf21fcb7914cd6b9fe86b5ba2b7190",
+      "finding_id": "finding-94360857cb9148788a59b5c76396b6cd",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'network' detected in scripts/generate_schematic_ai.py but not covered by declared permissions.",
       "severity": "HIGH",
@@ -614,7 +614,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-a22715f7a0954b699664bf060a4b0907",
+      "finding_id": "finding-9bd4711f88a74b6bb19f8922471337da",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -646,7 +646,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-ea8eca10c6d04914b78d3eb21ffa46b9",
+      "finding_id": "finding-269cf106cb294d25b370288c47f29ac4",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -678,7 +678,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-2b4706b8ab5349f8a28cb9f6b2afb089",
+      "finding_id": "finding-a6909cb03aeb4adaa8eaae85e0b03fd7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -710,7 +710,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-addff374227d48c88b25edf42f729b79",
+      "finding_id": "finding-9ce1e6a517c545efa7b044949f5d139d",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -742,7 +742,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-744c654985f04acc893a8c51a1481a27",
+      "finding_id": "finding-f4406ec3805f471785583aff5531ca16",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -774,7 +774,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-aefa49b20ba54fcc9ff33374fe4c733e",
+      "finding_id": "finding-41918889da5443a2804389b86901ac69",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -806,7 +806,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-2c0e2354124149e59d660ee422ca4d02",
+      "finding_id": "finding-8df28164afa84407913ca434baf71a86",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -840,7 +840,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-d599b8751e76467c87fdc4963fa7e4cf",
+      "finding_id": "finding-5fc9a8fe426443a39fc7384f660a8498",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -874,7 +874,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-5437aac0a9d9422599139fd5db16e0f9",
+      "finding_id": "finding-1e5fa5046b9a4b6d8c6ea7b268829abe",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -908,7 +908,7 @@
     },
     {
       "id": "TT2",
-      "finding_id": "finding-89e465c5e21142f38f3d0bc148fe0850",
+      "finding_id": "finding-9c7a7766324447f6b02517baab7ee493",
       "category": "Data Flow",
       "pattern": "Tainted flow: 'api_key' from os.environ.get (line 160, credential/environment) \u2192 subprocess.run (code execution)",
       "severity": "MEDIUM",
@@ -942,7 +942,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-f0717db85a3b479f96e560b9b82f4bfc",
+      "finding_id": "finding-36594c9f84d24ae2a41fe48d0b274919",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -974,7 +974,7 @@
     },
     {
       "id": "TT2",
-      "finding_id": "finding-f3fc5dec4efd4c3399dfe9cc43c211c1",
+      "finding_id": "finding-0831e37884fa44bebce5fa59c2d382ba",
       "category": "Data Flow",
       "pattern": "Tainted flow: 'payload' from requests.post (line 362, network input) \u2192 requests.post (network output)",
       "severity": "MEDIUM",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-900b32e2b8124948b1f8b254c5e625ea",
+      "finding_id": "finding-b66cb270fdef43baba8fb5673fc43bb5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1040,7 +1040,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-8562870220a740f2b8899f1664c322cf",
+      "finding_id": "finding-2a8e89e5ab1f4d78bdf0a3b0242f7457",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-91556e6f11fe4f4f8c2221a53cf58819",
+      "finding_id": "finding-565cc81d97a84cfb8a36d7f62b00214d",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1136,7 +1136,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1149,7 +1149,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1162,7 +1162,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1175,7 +1175,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1188,7 +1188,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

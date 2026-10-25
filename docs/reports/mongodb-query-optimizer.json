@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "mongodb-query-optimizer",
-    "source": "/tmp/uniscan-2w8ge2ys/repo/skills/mongodb-query-optimizer",
-    "scanned_at": "2026-10-18T08:03:29.578143+00:00"
+    "source": "/tmp/uniscan-_e4l1gv4/repo/skills/mongodb-query-optimizer",
+    "scanned_at": "2026-10-25T08:25:53.002456+00:00"
   },
   "risk_assessment": {
     "score": 7,
@@ -66,7 +66,7 @@
   "issues": [
     {
       "id": "TR2",
-      "finding_id": "finding-9ed782809b894d5dbcbf6260a2350737",
+      "finding_id": "finding-d3c15f797bcd4beab541e7cc38a243c6",
       "category": "Trigger Abuse",
       "pattern": "Shadow Command Trigger",
       "severity": "MEDIUM",
@@ -128,7 +128,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -141,7 +141,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -154,7 +154,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -167,7 +167,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -180,7 +180,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

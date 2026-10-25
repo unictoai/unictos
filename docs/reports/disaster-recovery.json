@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "disaster-recovery",
-    "source": "/tmp/uniscan-kx5cn9r_/repo/compliance/continuity/disaster-recovery",
-    "scanned_at": "2026-10-18T08:03:53.024096+00:00"
+    "source": "/tmp/uniscan-ykaaso39/repo/compliance/continuity/disaster-recovery",
+    "scanned_at": "2026-10-25T08:26:15.830700+00:00"
   },
   "risk_assessment": {
     "score": 8,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "E1",
-      "finding_id": "finding-aa0366e71d744b32964e09ff516e10bc",
+      "finding_id": "finding-0819876017ff4c289d54fd2eb9150c01",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -58,7 +58,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-27b74718845d4c2ea95bbce053a94b40",
+      "finding_id": "finding-2ee0a8b137594544974e88468fa0e287",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -122,7 +122,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -135,7 +135,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -148,7 +148,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -161,7 +161,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -174,7 +174,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

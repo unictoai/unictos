@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "deploy-to-vercel",
-    "source": "/tmp/uniscan-y84s0iqp/repo/skills/deploy-to-vercel",
-    "scanned_at": "2026-10-18T07:35:39.813935+00:00"
+    "source": "/tmp/uniscan-pa1b1gzo/repo/skills/deploy-to-vercel",
+    "scanned_at": "2026-10-25T07:58:30.782094+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -175,7 +175,7 @@
   "issues": [
     {
       "id": "SC9",
-      "finding_id": "finding-d8cb28be8bf1425184738a59919110df",
+      "finding_id": "finding-a229519510024a4a96b45ae551bef951",
       "category": "Supply Chain",
       "pattern": "Concealed Executable Artifact",
       "severity": "HIGH",
@@ -227,7 +227,7 @@
     },
     {
       "id": "SC9",
-      "finding_id": "finding-3a6226da49a14620839da4a7b085c4bc",
+      "finding_id": "finding-a7a02ac9629b434d97f78911a388aee1",
       "category": "Supply Chain",
       "pattern": "Concealed Executable Artifact",
       "severity": "HIGH",
@@ -279,7 +279,7 @@
     },
     {
       "id": "SC9",
-      "finding_id": "finding-a995c599ceb842f5bc7f86d5b9cba106",
+      "finding_id": "finding-682931998f984c76b1a991faf81500ac",
       "category": "Supply Chain",
       "pattern": "Concealed Executable Artifact",
       "severity": "HIGH",
@@ -331,7 +331,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-a26fc9b83622467c9b5b4e4673d7cd58",
+      "finding_id": "finding-c23987d66826445bbd191e2de17e7faf",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -363,7 +363,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-1bbe9a7cd3c4419a83106571a78dacfc",
+      "finding_id": "finding-d8a19a98a372414ea9790b3f7116f1c9",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -395,7 +395,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-30287d26ef594f58b727bd714ead58e8",
+      "finding_id": "finding-3978783b6a12418dbc5e735f6c4b920d",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -427,7 +427,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-991c5c3a1aa447be9340d17812afaebf",
+      "finding_id": "finding-364a2e31e9f44abdbf30a16201474c8c",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -459,7 +459,7 @@
     },
     {
       "id": "AE2",
-      "finding_id": "finding-86b33ce909b24216a3e299d7785714a2",
+      "finding_id": "finding-2f0d5524d51b4ad488a3fe979ed98fe5",
       "category": "analysis-evasion",
       "pattern": null,
       "severity": "MEDIUM",
@@ -489,7 +489,7 @@
     },
     {
       "id": "AE2",
-      "finding_id": "finding-78a43f81f5084560a813c87d00356fc9",
+      "finding_id": "finding-737a082e13af43ea8e1cd7e2ed302c3d",
       "category": "analysis-evasion",
       "pattern": null,
       "severity": "MEDIUM",
@@ -519,7 +519,7 @@
     },
     {
       "id": "AE2",
-      "finding_id": "finding-a4d59455ba9441089538c4eaebe8c026",
+      "finding_id": "finding-87b0806af1894d39a786909d5a05d04c",
       "category": "analysis-evasion",
       "pattern": null,
       "severity": "MEDIUM",
@@ -549,7 +549,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-52e7d457c7b546428bf8ff6018195f14",
+      "finding_id": "finding-0fb9d2cf231c42d89c58061718812fdf",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: shell.",
       "severity": "MEDIUM",
@@ -611,7 +611,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -624,7 +624,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -637,7 +637,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -650,7 +650,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -663,7 +663,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }

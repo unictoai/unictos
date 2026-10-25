@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "compose-expert",
-    "source": "/tmp/uniscan-u6i1vbnh/repo/skills/compose-expert",
-    "scanned_at": "2026-10-18T08:14:53.125932+00:00"
+    "source": "/tmp/uniscan-zcecptrm/repo/skills/compose-expert",
+    "scanned_at": "2026-10-25T08:37:25.526627+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -356,7 +356,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-b23c84afdffe487d90d582e85fa87c84",
+      "finding_id": "finding-0cdb941ec941450ca709ff90b1c45967",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -497,7 +497,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-43a8d7d8fad742b1ae08a6e433fd56ea",
+      "finding_id": "finding-e6297b5f9fdc4f5ca42d33462393b1d5",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -638,7 +638,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-6f6f30b2472347d4ae505b0b1aff23c8",
+      "finding_id": "finding-fbc17efc0470441eb46560c5931cd910",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -779,7 +779,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-5abb328ea78b4b61bb57ecf144519235",
+      "finding_id": "finding-4bd5d209fe4a4394bb2ab0bc78febdeb",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -920,7 +920,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-13442683fd004af98fbf94063ee72948",
+      "finding_id": "finding-f71d6579c8384258982e2f5838c384b5",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-deb61aef773a4624893f4791f79f9432",
+      "finding_id": "finding-da5c0468696b436fbf448003b46ed134",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1202,7 +1202,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-c7bed7e1bb1248cabd320fb400f01722",
+      "finding_id": "finding-a22c519a330c4bbb85f6a90142be4fae",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1247,7 +1247,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-4f5cf887e709478e80923deaa13643e2",
+      "finding_id": "finding-2fec9c6f67b24daca5b29d9d6e726288",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1292,7 +1292,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-60b1686dad5540c79af7a5258a30a87d",
+      "finding_id": "finding-c3e284a7c0d047f58c821d753909b247",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1337,7 +1337,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-1e982ffe929545f296b45867aeddb05f",
+      "finding_id": "finding-2e5f9121c6274488bcc8643232c013b4",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1381,76 +1381,8 @@
       ]
     },
     {
-      "id": "P2",
-      "finding_id": "finding-0456fbfe9a8b450288a3b86aba40b84e",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/navigation-migration.md",
-        "start_line": 27,
-        "end_line": 181,
-        "start_column": 0,
-        "end_column": 265
-      },
-      "finding": "<!-- source: references/source-code/navigation-source.md \u2014 search \"NavController\" and \"NavBackStackEntry\" for the Nav 2 ownership model this migration moves away from -->\n\n## Migration steps\n\n### 1. M",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "| `currentBackStackEntryAsState()` for tab selection | Inspect the list directly: `backStack.last()` |\n| `saveState` / `restoreState` for tab persistence | Per-tab back stacks held in your state, or a root-swap pattern |\n\n<!-- source: references/source-code/navigation-source.md \u2014 search \"NavController\" and \"NavBackStackEntry\" for the Nav 2 ownership model this migration moves away from -->\n\n## Migration steps\n",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "e2436b41481a5047ac34dea644285d47e14ed6e836ceda24118221abd11b4e94",
-      "occurrences": [
-        {
-          "file": "references/navigation-migration.md",
-          "start_line": 27,
-          "end_line": 181,
-          "start_column": 0,
-          "end_column": 265
-        }
-      ]
-    },
-    {
-      "id": "P2",
-      "finding_id": "finding-b0c7de2d73344c2a93b2efb65fd62b0f",
-      "category": "Prompt Injection",
-      "pattern": "Hidden Instructions",
-      "severity": "HIGH",
-      "confidence": 0.7,
-      "location": {
-        "file": "references/paging.md",
-        "start_line": 104,
-        "end_line": 237,
-        "start_column": 0,
-        "end_column": 190
-      },
-      "finding": "<!-- source: not bundled \u2014 PagingSource lives in androidx.paging:paging-common -->\n\n## Pager and ViewModel wiring\n\n```kotlin\nclass ItemListViewModel(\n    private val repository: ItemRepository,\n) : Vi",
-      "explanation": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review is recommended.",
-      "remediation": "Audit all comments and invisible characters. Remove any instructions that direct the agent to perform unauthorized actions. Use plain, reviewable content.",
-      "code_snippet": "- Return `null` for `prevKey`/`nextKey` to signal end of pagination.\n- For cursor-based APIs, use `String` as the key type and pass the next cursor.\n\n<!-- source: not bundled \u2014 PagingSource lives in androidx.paging:paging-common -->\n\n## Pager and ViewModel wiring\n",
-      "intent": null,
-      "tags": [
-        "Prompt Injection"
-      ],
-      "evidence": {},
-      "match_fingerprint": "91b81558ae971dc4e8dd3f7e17c6aa08e5202c5ef0bc50403ea82fb4ae886f32",
-      "occurrences": [
-        {
-          "file": "references/paging.md",
-          "start_line": 104,
-          "end_line": 237,
-          "start_column": 0,
-          "end_column": 190
-        }
-      ]
-    },
-    {
       "id": "MP3",
-      "finding_id": "finding-bdba04bec4f44cb7ae819ac27ff17286",
+      "finding_id": "finding-a5f245c4d34545e5819f098269215076",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -1482,7 +1414,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-d481a3ce2dcf4a619eb4bdc6fb86b782",
+      "finding_id": "finding-719f69d9aad14a4f82ab322d0885170d",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -1516,7 +1448,7 @@
     },
     {
       "id": "P4",
-      "finding_id": "finding-9c770d70740545be9de32f161c7ca5c7",
+      "finding_id": "finding-9709222051e14821ad54261329e8d9c8",
       "category": "Prompt Injection",
       "pattern": "Behavior Manipulation",
       "severity": "MEDIUM",
@@ -1550,7 +1482,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-04742ed54c724336b22565b248370c59",
+      "finding_id": "finding-9f3a9e353b074599a49aa066ab765763",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -1582,7 +1514,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-571edefc9ba645fb9d702874d1633baa",
+      "finding_id": "finding-5f6d71e34d5e4e75bfd0aae3c730cdb1",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -1614,7 +1546,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-b8f4c5ee289246e4999c35b1b8945895",
+      "finding_id": "finding-f75e10f7112940aeb202fd6c337846c7",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -1646,7 +1578,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-00345bd9a6ef44898d51c65a762c7a15",
+      "finding_id": "finding-9d6941811e144fe5a94d0a32f12c4707",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -1678,7 +1610,7 @@
     },
     {
       "id": "MP2",
-      "finding_id": "finding-73b35450474f4d94833283752d2974da",
+      "finding_id": "finding-5b596e5f18154f8eafc9f007747f08b3",
       "category": "Memory Poisoning",
       "pattern": "Context Window Stuffing",
       "severity": "MEDIUM",
@@ -1710,7 +1642,7 @@
     },
     {
       "id": "MP2",
-      "finding_id": "finding-9dab0b3a7fc146cca518a74257b17c31",
+      "finding_id": "finding-8741b1cbd5ab47bf98fa214e238c482f",
       "category": "Memory Poisoning",
       "pattern": "Context Window Stuffing",
       "severity": "MEDIUM",
@@ -1742,7 +1674,7 @@
     },
     {
       "id": "MP2",
-      "finding_id": "finding-20fd2acb51eb4384975bd7f29b78b7a5",
+      "finding_id": "finding-ec55c5413e0548fa9c1f10a557623590",
       "category": "Memory Poisoning",
       "pattern": "Context Window Stuffing",
       "severity": "MEDIUM",
@@ -1774,7 +1706,7 @@
     },
     {
       "id": "MP2",
-      "finding_id": "finding-98d9e67d5ef64d718672487097d64c31",
+      "finding_id": "finding-cb9b3c8d52bf4b318980de5bb8e29d4f",
       "category": "Memory Poisoning",
       "pattern": "Context Window Stuffing",
       "severity": "MEDIUM",
@@ -1838,7 +1770,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1851,7 +1783,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1864,7 +1796,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1877,7 +1809,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -1890,7 +1822,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "cf5cac7ba5c756a6e0ebf52dc9763f49422f889f",
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
               "source": "package_vcs_metadata"
             }
           }
@@ -3422,7 +3354,7 @@
       "Analyzer static_patterns_system_prompt_leakage status: degraded.",
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 23,
-    "findings_after_filtering": 23
+    "findings_before_filtering": 21,
+    "findings_after_filtering": 21
   }
 }
