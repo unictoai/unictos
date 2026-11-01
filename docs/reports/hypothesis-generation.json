@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "hypothesis-generation",
-    "source": "/tmp/uniscan-bmac8vsv/repo/skills/hypothesis-generation",
-    "scanned_at": "2026-10-25T08:16:01.706149+00:00"
+    "source": "/tmp/uniscan-pazdw4_i/repo/skills/hypothesis-generation",
+    "scanned_at": "2026-11-01T10:05:01.058967+00:00"
   },
   "risk_assessment": {
     "score": 65,
@@ -286,7 +286,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-58f63d6f221744cfb549f7ebbf2328ca",
+      "finding_id": "finding-f272596b453842c39f7d406e6064b744",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -331,7 +331,7 @@
     },
     {
       "id": "AR2",
-      "finding_id": "finding-5873f11c0b0841d6992a6b4ba6ad5d07",
+      "finding_id": "finding-7d06b20962e6445eab6b9e97deca4de3",
       "category": "Anti-Refusal",
       "pattern": "Anti-Refusal Statement",
       "severity": "HIGH",
@@ -365,7 +365,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-9164806b4ab14493beb91c516f4e4a25",
+      "finding_id": "finding-e1db74eb34644e3da80b4e6b66cc6beb",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: file_read, shell.",
       "severity": "MEDIUM",
@@ -395,7 +395,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-646d03cf891b4e8ca3c85006015ccbe8",
+      "finding_id": "finding-3cd223f06e3d41e68bbd17de07425c6e",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -459,7 +459,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -472,7 +472,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -485,7 +485,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -498,7 +498,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -511,7 +511,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1254,6 +1254,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 4,
-    "findings_after_filtering": 4
+    "findings_after_filtering": 4,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

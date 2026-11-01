@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "compose-expert",
-    "source": "/tmp/uniscan-zcecptrm/repo/skills/compose-expert",
-    "scanned_at": "2026-10-25T08:37:25.526627+00:00"
+    "source": "/tmp/uniscan-8s1teryn/repo/skills/compose-expert",
+    "scanned_at": "2026-11-01T10:16:18.082043+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -356,7 +356,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-0cdb941ec941450ca709ff90b1c45967",
+      "finding_id": "finding-5b7d794eeeb74afabb48819ec36cdf6a",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -497,7 +497,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-e6297b5f9fdc4f5ca42d33462393b1d5",
+      "finding_id": "finding-1feecb293e354f2e833e590e4b9a065c",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -638,7 +638,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-fbc17efc0470441eb46560c5931cd910",
+      "finding_id": "finding-6c064d6710f54c428cf3a5f496783e52",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -779,7 +779,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-4bd5d209fe4a4394bb2ab0bc78febdeb",
+      "finding_id": "finding-22615c049391411f9111ce839211afde",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -920,7 +920,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-f71d6579c8384258982e2f5838c384b5",
+      "finding_id": "finding-630aa26d3e8e4542b5a0abca64d42290",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-da5c0468696b436fbf448003b46ed134",
+      "finding_id": "finding-f9e4798b0a5f444b8e9d1f0f2db3e634",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1202,7 +1202,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a22c519a330c4bbb85f6a90142be4fae",
+      "finding_id": "finding-74c3d921ab1549dfad611405dae3418f",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1247,7 +1247,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-2fec9c6f67b24daca5b29d9d6e726288",
+      "finding_id": "finding-bd46bd77f0634ffd81ba062aca66090c",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1292,7 +1292,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-c3e284a7c0d047f58c821d753909b247",
+      "finding_id": "finding-1ca9ae8535494ae5b5f47f261eab89fa",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1337,7 +1337,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-2e5f9121c6274488bcc8643232c013b4",
+      "finding_id": "finding-a4616a73f6e74d39abc637dd7fe6a8d9",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1382,7 +1382,7 @@
     },
     {
       "id": "MP3",
-      "finding_id": "finding-a5f245c4d34545e5819f098269215076",
+      "finding_id": "finding-1df2a7e3be1348729d294493f9394ce9",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -1414,7 +1414,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-719f69d9aad14a4f82ab322d0885170d",
+      "finding_id": "finding-9a42441e9a404b6da9bd95736a318323",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -1448,7 +1448,7 @@
     },
     {
       "id": "P4",
-      "finding_id": "finding-9709222051e14821ad54261329e8d9c8",
+      "finding_id": "finding-e76c9ad682ba4c6f8eb85666c98cb0a5",
       "category": "Prompt Injection",
       "pattern": "Behavior Manipulation",
       "severity": "MEDIUM",
@@ -1482,7 +1482,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-9f3a9e353b074599a49aa066ab765763",
+      "finding_id": "finding-715e1fe876df4492a4b00021edd638b1",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -1514,7 +1514,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-5f6d71e34d5e4e75bfd0aae3c730cdb1",
+      "finding_id": "finding-32609a46eb8c4b8ab8e20ea422ada34b",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -1546,7 +1546,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-f75e10f7112940aeb202fd6c337846c7",
+      "finding_id": "finding-4d2b5d7bf259407faa7d5f1aa6b5449e",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -1578,7 +1578,7 @@
     },
     {
       "id": "RA2",
-      "finding_id": "finding-9d6941811e144fe5a94d0a32f12c4707",
+      "finding_id": "finding-8face391bd7f463fa611c7ddfb7799fb",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -1610,7 +1610,7 @@
     },
     {
       "id": "MP2",
-      "finding_id": "finding-5b596e5f18154f8eafc9f007747f08b3",
+      "finding_id": "finding-bba4f0f08bae42cb969ba1e6ae6a4ae3",
       "category": "Memory Poisoning",
       "pattern": "Context Window Stuffing",
       "severity": "MEDIUM",
@@ -1642,7 +1642,7 @@
     },
     {
       "id": "MP2",
-      "finding_id": "finding-8741b1cbd5ab47bf98fa214e238c482f",
+      "finding_id": "finding-b56c7dc720db4c07a2d405a7da2c3ab7",
       "category": "Memory Poisoning",
       "pattern": "Context Window Stuffing",
       "severity": "MEDIUM",
@@ -1674,7 +1674,7 @@
     },
     {
       "id": "MP2",
-      "finding_id": "finding-ec55c5413e0548fa9c1f10a557623590",
+      "finding_id": "finding-15b06843beea4411b87695dd45bf0a2a",
       "category": "Memory Poisoning",
       "pattern": "Context Window Stuffing",
       "severity": "MEDIUM",
@@ -1706,7 +1706,7 @@
     },
     {
       "id": "MP2",
-      "finding_id": "finding-cb9b3c8d52bf4b318980de5bb8e29d4f",
+      "finding_id": "finding-230b870ccdea423ab4f881b283455d13",
       "category": "Memory Poisoning",
       "pattern": "Context Window Stuffing",
       "severity": "MEDIUM",
@@ -1770,7 +1770,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1783,7 +1783,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1796,7 +1796,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1809,7 +1809,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1822,7 +1822,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -3355,6 +3355,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 21,
-    "findings_after_filtering": 21
+    "findings_after_filtering": 21,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

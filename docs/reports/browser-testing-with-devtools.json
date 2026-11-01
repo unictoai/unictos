@@ -1,13 +1,13 @@
 {
   "skill": {
     "name": "browser-testing-with-devtools",
-    "source": "/tmp/uniscan-r_ck6is_/repo/skills/browser-testing-with-devtools",
-    "scanned_at": "2026-10-25T08:08:16.233180+00:00"
+    "source": "/tmp/uniscan-ebdnrr69/repo/skills/browser-testing-with-devtools",
+    "scanned_at": "2026-11-01T10:00:27.708454+00:00"
   },
   "risk_assessment": {
-    "score": 65,
-    "severity": "HIGH",
-    "recommendation": "DO_NOT_INSTALL",
+    "score": 47,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION",
     "max_issue_severity": "HIGH"
   },
   "components": [
@@ -25,38 +25,8 @@
   "structured_summaries": [],
   "issues": [
     {
-      "id": "YR1",
-      "finding_id": "finding-db418b6709af40d9bdb903287ff00c25",
-      "category": "YARA Match",
-      "pattern": "YARA rule 'info_stealer': Information stealer patterns (credential harvesting, browser data theft) [malware]",
-      "severity": "HIGH",
-      "confidence": 0.75,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 64,
-        "end_line": null
-      },
-      "finding": "cookies. (`--browser-url` is less exposed by design: Chrome",
-      "explanation": "YARA rule matched a known malware signature (reverse shell, backdoor, ransomware, C2 framework, or info stealer).",
-      "remediation": "Remove the malware payload or compromised file entirely. Investigate how it entered the skill and audit all other artifacts for additional indicators of compromise.",
-      "code_snippet": "bugging (see Security Boundaries) |\n\n## Security Boundaries\n\n### Profile Isolation\n\nThe blast radius of every rule below depends on which browser the agent is attached to. With `--autoConnect`, the agent attaches to your running Chrome's default profile and \u2014 per the chrome-devtools-mcp docs \u2014 has access to **all open windows** of that profile: logged-in email, banking, GitHub sessions, saved cookies. (`--browser-url` is less exposed by design: Chrome requires a non-default user data directory to enable the remote debugging port \u2014 don't defeat that by pointing it at a copy of your real profile.) One page with injected instructions plus an agent holding your authenticated browser is the worst-case combination \u2014 the untrusted-data rules below become the only line of defense instead of one of two.\n\n**Rules:**\n- **Default to the dedicated profile** (no connect flags) or `--isolated`. Testing localhost almost never needs your real sessions.\n- **If logged-in state is required**, pref",
-      "intent": null,
-      "tags": [
-        "YARA Match"
-      ],
-      "evidence": {},
-      "match_fingerprint": "198ecc1c8b7cc789ad73fcec02976232d2ac9862a469c411dd190afffbd16213",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 64,
-          "end_line": null
-        }
-      ]
-    },
-    {
       "id": "P1",
-      "finding_id": "finding-2effe12aa2e94dfc93d8f5b2dfd75d08",
+      "finding_id": "finding-b684e23de77d444a9577f3a5db174b87",
       "category": "Prompt Injection",
       "pattern": "Instruction Override",
       "severity": "HIGH",
@@ -90,7 +60,7 @@
     },
     {
       "id": "YR4",
-      "finding_id": "finding-10ce1712f12348a385c03909a265d90e",
+      "finding_id": "finding-269ff5968d80491ba7a372a764d960cd",
       "category": "YARA Match",
       "pattern": "YARA rule 'agent_skill_prompt_injection_hidden_instructions': Prompt injection or hidden instructions embedded in AI agent skill text [agent_skills]",
       "severity": "HIGH",
@@ -120,7 +90,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-119525cdf08d4bbb9e923b9a223e5389",
+      "finding_id": "finding-111db511e1904911892ee2992f767082",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx install'.",
       "severity": "MEDIUM",
@@ -182,7 +152,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -195,7 +165,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -208,7 +178,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -221,7 +191,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -234,7 +204,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -277,8 +247,8 @@
     "total_components": 1,
     "scanned_components": 1,
     "coverage_percent": 100.0,
-    "is_complete": false,
-    "status": "partial",
+    "is_complete": true,
+    "status": "complete_with_caveats",
     "execution_successful": true,
     "fully_inspected_files": 1,
     "partially_inspected_files": 0,
@@ -597,7 +567,15 @@
       }
     ],
     "limitations": [],
-    "findings_before_filtering": 4,
-    "findings_after_filtering": 4
+    "findings_before_filtering": 3,
+    "findings_after_filtering": 3,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

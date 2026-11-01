@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "vercel-optimize",
-    "source": "/tmp/uniscan-o1jh9do5/repo/skills/vercel-optimize",
-    "scanned_at": "2026-10-25T08:07:28.897384+00:00"
+    "source": "/tmp/uniscan-m9xv_v7d/repo/skills/vercel-optimize",
+    "scanned_at": "2026-11-01T10:00:01.786713+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -53,7 +53,7 @@
     },
     {
       "path": "lib/auth-route.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 23,
       "executable": true,
       "size_bytes": 807,
@@ -63,7 +63,7 @@
     },
     {
       "path": "lib/budget-summary.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 182,
       "executable": true,
       "size_bytes": 7145,
@@ -73,7 +73,7 @@
     },
     {
       "path": "lib/citations.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 139,
       "executable": true,
       "size_bytes": 4029,
@@ -83,7 +83,7 @@
     },
     {
       "path": "lib/cost-coverage.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 143,
       "executable": true,
       "size_bytes": 8628,
@@ -93,7 +93,7 @@
     },
     {
       "path": "lib/dedup-recs.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 325,
       "executable": true,
       "size_bytes": 10151,
@@ -103,7 +103,7 @@
     },
     {
       "path": "lib/deep-dive.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 350,
       "executable": true,
       "size_bytes": 10458,
@@ -113,7 +113,7 @@
     },
     {
       "path": "lib/display-labels.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 185,
       "executable": true,
       "size_bytes": 7611,
@@ -123,7 +123,7 @@
     },
     {
       "path": "lib/extract-claims.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 550,
       "executable": true,
       "size_bytes": 19136,
@@ -133,7 +133,7 @@
     },
     {
       "path": "lib/framework-support.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 67,
       "executable": true,
       "size_bytes": 2126,
@@ -143,7 +143,7 @@
     },
     {
       "path": "lib/gates/build-minutes-fanout.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 69,
       "executable": true,
       "size_bytes": 3016,
@@ -153,7 +153,7 @@
     },
     {
       "path": "lib/gates/cold-start.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 66,
       "executable": true,
       "size_bytes": 2797,
@@ -163,7 +163,7 @@
     },
     {
       "path": "lib/gates/contract.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 79,
       "executable": true,
       "size_bytes": 3143,
@@ -173,7 +173,7 @@
     },
     {
       "path": "lib/gates/cwv-poor.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 87,
       "executable": true,
       "size_bytes": 3372,
@@ -183,7 +183,7 @@
     },
     {
       "path": "lib/gates/external-api-slow.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 55,
       "executable": true,
       "size_bytes": 2173,
@@ -193,7 +193,7 @@
     },
     {
       "path": "lib/gates/hard-gates.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 73,
       "executable": true,
       "size_bytes": 2543,
@@ -203,7 +203,7 @@
     },
     {
       "path": "lib/gates/index.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 45,
       "executable": true,
       "size_bytes": 2066,
@@ -213,7 +213,7 @@
     },
     {
       "path": "lib/gates/isr-overrevalidation.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 62,
       "executable": true,
       "size_bytes": 2442,
@@ -223,7 +223,7 @@
     },
     {
       "path": "lib/gates/middleware-heavy.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 51,
       "executable": true,
       "size_bytes": 2085,
@@ -233,7 +233,7 @@
     },
     {
       "path": "lib/gates/observability-events-attribution.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 56,
       "executable": true,
       "size_bytes": 2255,
@@ -243,7 +243,7 @@
     },
     {
       "path": "lib/gates/platform-bot-protection.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 115,
       "executable": true,
       "size_bytes": 5089,
@@ -253,7 +253,7 @@
     },
     {
       "path": "lib/gates/platform-fluid-compute.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 83,
       "executable": true,
       "size_bytes": 3630,
@@ -263,7 +263,7 @@
     },
     {
       "path": "lib/gates/region-misconfig.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 64,
       "executable": true,
       "size_bytes": 3101,
@@ -273,7 +273,7 @@
     },
     {
       "path": "lib/gates/route-errors.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 80,
       "executable": true,
       "size_bytes": 3101,
@@ -283,7 +283,7 @@
     },
     {
       "path": "lib/gates/scanner-driven.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 122,
       "executable": true,
       "size_bytes": 5191,
@@ -293,7 +293,7 @@
     },
     {
       "path": "lib/gates/select-candidates.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 134,
       "executable": true,
       "size_bytes": 4703,
@@ -303,7 +303,7 @@
     },
     {
       "path": "lib/gates/slow-route.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 88,
       "executable": true,
       "size_bytes": 4384,
@@ -323,7 +323,7 @@
     },
     {
       "path": "lib/gates/uncached-route.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 93,
       "executable": true,
       "size_bytes": 3963,
@@ -333,7 +333,7 @@
     },
     {
       "path": "lib/gates/usage-spike-triage.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 121,
       "executable": true,
       "size_bytes": 5095,
@@ -343,7 +343,7 @@
     },
     {
       "path": "lib/grade-recommendation.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 155,
       "executable": true,
       "size_bytes": 6887,
@@ -353,7 +353,7 @@
     },
     {
       "path": "lib/impact-label.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 126,
       "executable": true,
       "size_bytes": 5344,
@@ -363,7 +363,7 @@
     },
     {
       "path": "lib/impact-magnitude.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 60,
       "executable": true,
       "size_bytes": 2172,
@@ -373,7 +373,7 @@
     },
     {
       "path": "lib/investigation-brief.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 610,
       "executable": true,
       "size_bytes": 35165,
@@ -383,7 +383,7 @@
     },
     {
       "path": "lib/observation-safety.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 174,
       "executable": true,
       "size_bytes": 9486,
@@ -393,7 +393,7 @@
     },
     {
       "path": "lib/project-facts.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 99,
       "executable": true,
       "size_bytes": 4399,
@@ -403,7 +403,7 @@
     },
     {
       "path": "lib/queries.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 315,
       "executable": true,
       "size_bytes": 10338,
@@ -413,7 +413,7 @@
     },
     {
       "path": "lib/reconcile-candidates.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 372,
       "executable": true,
       "size_bytes": 15966,
@@ -423,7 +423,7 @@
     },
     {
       "path": "lib/render-report.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 955,
       "executable": true,
       "size_bytes": 39131,
@@ -433,7 +433,7 @@
     },
     {
       "path": "lib/repo-root.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 86,
       "executable": true,
       "size_bytes": 3135,
@@ -443,7 +443,7 @@
     },
     {
       "path": "lib/route-normalize.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 220,
       "executable": true,
       "size_bytes": 8590,
@@ -453,7 +453,7 @@
     },
     {
       "path": "lib/sanitizers/bot-protection-certainty.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 38,
       "executable": true,
       "size_bytes": 1988,
@@ -463,7 +463,7 @@
     },
     {
       "path": "lib/sanitizers/cache-tag-invalidation-certainty.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 30,
       "executable": true,
       "size_bytes": 1522,
@@ -473,7 +473,7 @@
     },
     {
       "path": "lib/sanitizers/count-correct.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 52,
       "executable": true,
       "size_bytes": 1956,
@@ -483,7 +483,7 @@
     },
     {
       "path": "lib/sanitizers/function-duration-invocations.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 38,
       "executable": true,
       "size_bytes": 1470,
@@ -493,7 +493,7 @@
     },
     {
       "path": "lib/sanitizers/index.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 79,
       "executable": true,
       "size_bytes": 3053,
@@ -503,7 +503,7 @@
     },
     {
       "path": "lib/sanitizers/middleware-conflict.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 36,
       "executable": true,
       "size_bytes": 1586,
@@ -513,7 +513,7 @@
     },
     {
       "path": "lib/sanitizers/missing-citation.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 16,
       "executable": true,
       "size_bytes": 497,
@@ -523,7 +523,7 @@
     },
     {
       "path": "lib/sanitizers/pre-release.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 74,
       "executable": true,
       "size_bytes": 2224,
@@ -533,7 +533,7 @@
     },
     {
       "path": "lib/sanitizers/rate-limit.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 67,
       "executable": true,
       "size_bytes": 2655,
@@ -543,7 +543,7 @@
     },
     {
       "path": "lib/sanitizers/rendering-mode-mislabel.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 38,
       "executable": true,
       "size_bytes": 1670,
@@ -553,7 +553,7 @@
     },
     {
       "path": "lib/sanitizers/undeclared-dep.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 78,
       "executable": true,
       "size_bytes": 2833,
@@ -563,7 +563,7 @@
     },
     {
       "path": "lib/sanitizers/vercel-directive-strip.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 37,
       "executable": true,
       "size_bytes": 1460,
@@ -573,7 +573,7 @@
     },
     {
       "path": "lib/sanitizers/window-units.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 32,
       "executable": true,
       "size_bytes": 869,
@@ -583,7 +583,7 @@
     },
     {
       "path": "lib/scanners/cache-components-suspense-dedupe.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 109,
       "executable": true,
       "size_bytes": 4367,
@@ -593,7 +593,7 @@
     },
     {
       "path": "lib/scanners/edge-heavy-import.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 94,
       "executable": true,
       "size_bytes": 3740,
@@ -603,7 +603,7 @@
     },
     {
       "path": "lib/scanners/force-dynamic.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 42,
       "executable": true,
       "size_bytes": 1586,
@@ -613,7 +613,7 @@
     },
     {
       "path": "lib/scanners/headers-in-page.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 44,
       "executable": true,
       "size_bytes": 1537,
@@ -623,7 +623,7 @@
     },
     {
       "path": "lib/scanners/index.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 35,
       "executable": true,
       "size_bytes": 1458,
@@ -633,7 +633,7 @@
     },
     {
       "path": "lib/scanners/large-static-asset.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 92,
       "executable": true,
       "size_bytes": 3279,
@@ -643,7 +643,7 @@
     },
     {
       "path": "lib/scanners/max-age-without-s-maxage.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 42,
       "executable": true,
       "size_bytes": 1629,
@@ -653,7 +653,7 @@
     },
     {
       "path": "lib/scanners/middleware-broad-matcher.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 55,
       "executable": true,
       "size_bytes": 1986,
@@ -663,7 +663,7 @@
     },
     {
       "path": "lib/scanners/missing-cache-headers.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 90,
       "executable": true,
       "size_bytes": 3922,
@@ -673,7 +673,7 @@
     },
     {
       "path": "lib/scanners/prisma-include-tree.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 42,
       "executable": true,
       "size_bytes": 1585,
@@ -683,7 +683,7 @@
     },
     {
       "path": "lib/scanners/region-pin-in-config.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 88,
       "executable": true,
       "size_bytes": 3448,
@@ -693,7 +693,7 @@
     },
     {
       "path": "lib/scanners/source-maps-production.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 36,
       "executable": true,
       "size_bytes": 1300,
@@ -703,7 +703,7 @@
     },
     {
       "path": "lib/scanners/sveltekit-prerender-missing.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 43,
       "executable": true,
       "size_bytes": 2127,
@@ -713,7 +713,7 @@
     },
     {
       "path": "lib/scanners/turbo-force-bypass.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 129,
       "executable": true,
       "size_bytes": 4974,
@@ -723,7 +723,7 @@
     },
     {
       "path": "lib/scanners/unoptimized-image.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 113,
       "executable": true,
       "size_bytes": 4516,
@@ -733,7 +733,7 @@
     },
     {
       "path": "lib/scanners/use-cache-date-stamp.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 106,
       "executable": true,
       "size_bytes": 4040,
@@ -743,7 +743,7 @@
     },
     {
       "path": "lib/support-topics.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 355,
       "executable": true,
       "size_bytes": 12836,
@@ -753,7 +753,7 @@
     },
     {
       "path": "lib/throttle.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 273,
       "executable": true,
       "size_bytes": 8992,
@@ -763,7 +763,7 @@
     },
     {
       "path": "lib/util.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 17,
       "executable": true,
       "size_bytes": 544,
@@ -773,7 +773,7 @@
     },
     {
       "path": "lib/vercel.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 864,
       "executable": true,
       "size_bytes": 31125,
@@ -783,7 +783,7 @@
     },
     {
       "path": "lib/verify-claim.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 1296,
       "executable": true,
       "size_bytes": 60992,
@@ -793,7 +793,7 @@
     },
     {
       "path": "lib/workspace-resolver.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 521,
       "executable": true,
       "size_bytes": 17545,
@@ -1423,7 +1423,7 @@
     },
     {
       "path": "scripts/budget-summary.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 56,
       "executable": true,
       "size_bytes": 2096,
@@ -1433,7 +1433,7 @@
     },
     {
       "path": "scripts/build-docs.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 74,
       "executable": true,
       "size_bytes": 3414,
@@ -1443,7 +1443,7 @@
     },
     {
       "path": "scripts/check-citations.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 81,
       "executable": true,
       "size_bytes": 3531,
@@ -1453,7 +1453,7 @@
     },
     {
       "path": "scripts/check-docs-fresh.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 93,
       "executable": true,
       "size_bytes": 3910,
@@ -1463,7 +1463,7 @@
     },
     {
       "path": "scripts/collect-signals.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 576,
       "executable": true,
       "size_bytes": 21576,
@@ -1473,7 +1473,7 @@
     },
     {
       "path": "scripts/collect-sub-agent-outputs.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 296,
       "executable": true,
       "size_bytes": 10123,
@@ -1483,7 +1483,7 @@
     },
     {
       "path": "scripts/deep-dive.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 319,
       "executable": true,
       "size_bytes": 12332,
@@ -1493,7 +1493,7 @@
     },
     {
       "path": "scripts/gate-investigations.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 166,
       "executable": true,
       "size_bytes": 6353,
@@ -1503,7 +1503,7 @@
     },
     {
       "path": "scripts/merge-signals.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 192,
       "executable": true,
       "size_bytes": 6325,
@@ -1513,7 +1513,7 @@
     },
     {
       "path": "scripts/prepare-investigation-brief.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 231,
       "executable": true,
       "size_bytes": 8071,
@@ -1523,7 +1523,7 @@
     },
     {
       "path": "scripts/reconcile-candidates.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 62,
       "executable": true,
       "size_bytes": 2442,
@@ -1533,7 +1533,7 @@
     },
     {
       "path": "scripts/render-report.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 437,
       "executable": true,
       "size_bytes": 17424,
@@ -1543,7 +1543,7 @@
     },
     {
       "path": "scripts/scan-codebase.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 313,
       "executable": true,
       "size_bytes": 11521,
@@ -1553,7 +1553,7 @@
     },
     {
       "path": "scripts/verify-and-regen.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 346,
       "executable": true,
       "size_bytes": 15238,
@@ -1563,7 +1563,7 @@
     },
     {
       "path": "scripts/verify-finding.mjs",
-      "type": "other",
+      "type": "javascript",
       "lines": 19,
       "executable": true,
       "size_bytes": 698,
@@ -1576,7 +1576,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-999692e805ed4c9c89cb69d53ada8308",
+      "finding_id": "finding-53f21ac7fe6f4a10889ff1f9601dc8ff",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1621,7 +1621,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-7332d5598d954f66803a1c4b5f9b90b8",
+      "finding_id": "finding-a201fce1144e41918bac8e4de40e64ca",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1666,7 +1666,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-c372cd1431364ecfb3e2a1d7e36f0467",
+      "finding_id": "finding-94818f0d120240b4b9f76c3db7c7c64e",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1711,7 +1711,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-3fce731fff294c939927aa8aee8388dc",
+      "finding_id": "finding-f4b71f1245414cd2b57f9ac40e80fede",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1756,7 +1756,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-99dc5fed08e04058b7e631a762c68bc0",
+      "finding_id": "finding-6cd0122a57974ebcbe7c5044986d6fe2",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1801,7 +1801,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-be0281c5ad394584b58636af6a8ee945",
+      "finding_id": "finding-eeba59a2a763447180b445d095233ab3",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1846,7 +1846,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-84dc01fa8d454de9b8bb624d26b1b0d9",
+      "finding_id": "finding-4c727a92af2b4fe780119fd3af9bae65",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1891,7 +1891,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-c800c5c4c652460c9c3ff7b09e7efc16",
+      "finding_id": "finding-fb8d7f53aa3844aea631a8d8ee1fa65f",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1936,7 +1936,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-56d8d99a16cf45869a7af122579e47e3",
+      "finding_id": "finding-3a65fd27937d4a11ad173f11fce357b7",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2077,7 +2077,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-7aa7d3d3f390485c8db4be827f3f6c0d",
+      "finding_id": "finding-b32da3463b774a0e93e67e0cf785882e",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2218,7 +2218,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-f7b00fc7b3ba44589af0ca06cf98a086",
+      "finding_id": "finding-77aef741cbe3413ba9eb4e9e5f7c2399",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2263,7 +2263,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-cfdaa7fec7fa4cd0bcb30a451e2d792f",
+      "finding_id": "finding-b1127b82003f42bcb617fc8d47bf30ca",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2308,7 +2308,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-2735aa127df847ddb4e3c8ebe81a23ef",
+      "finding_id": "finding-f6b1df286aed41f69aa54e86d914cb22",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2352,68 +2352,8 @@
       ]
     },
     {
-      "id": "YR1",
-      "finding_id": "finding-f8ea809f5ab34e8a9ec464d2e8d95eaf",
-      "category": "YARA Match",
-      "pattern": "YARA rule 'info_stealer': Information stealer patterns (credential harvesting, browser data theft) [malware]",
-      "severity": "HIGH",
-      "confidence": 0.75,
-      "location": {
-        "file": "lib/scanners/force-dynamic.mjs",
-        "start_line": 8,
-        "end_line": null
-      },
-      "finding": "cookies, headers, real-time data), often a habit that costs function-duration and edge",
-      "explanation": "YARA rule matched a known malware signature (reverse shell, backdoor, ransomware, C2 framework, or info stealer).",
-      "remediation": "Remove the malware payload or compromised file entirely. Investigate how it entered the skill and audit all other artifacts for additional indicators of compromise.",
-      "code_snippet": "export const metadata = {\n  id: 'force-dynamic',\n  title: \"export const dynamic = 'force-dynamic'\",\n  severity: 'medium',\n  billingDimension: 'function-duration',\n  trafficIndependent: false,\n  description:\n    \"force-dynamic disables static + ISR rendering. The route runs the function on every request. Sometimes necessary (cookies, headers, real-time data), often a habit that costs function-duration and edge-requests at scale.\",\n  fix:\n    \"Audit the route. If dynamic behavior comes from cookies()/headers()/searchParams, force-dynamic may be redundant \u2014 Next infers dynamic automatically. Consider revalidate / 'use cache' / generateStaticParams if any portion can be pre-rendered.\",\n  citations: [\n    'https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config',\n  ],\n  excludeGlobs: ['node_modules/**', '.next/**', 'dist/**', '__tests__/**'],\n  includeGlobs: ['**/route.{ts,tsx,js,jsx}', '**/p",
-      "intent": null,
-      "tags": [
-        "YARA Match"
-      ],
-      "evidence": {},
-      "match_fingerprint": "f3872a6a35cba8e87968619fef3d440fad2030bb53148ad065ee9799e1cd7247",
-      "occurrences": [
-        {
-          "file": "lib/scanners/force-dynamic.mjs",
-          "start_line": 8,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "YR1",
-      "finding_id": "finding-52187908d8c94625af9357ecb9f6ca63",
-      "category": "YARA Match",
-      "pattern": "YARA rule 'info_stealer': Information stealer patterns (credential harvesting, browser data theft) [malware]",
-      "severity": "HIGH",
-      "confidence": 0.75,
-      "location": {
-        "file": "references/scanner-patterns.md",
-        "start_line": 52,
-        "end_line": null
-      },
-      "finding": "cookies, headers, real-time data), often a habit that costs function-duration and edge",
-      "explanation": "YARA rule matched a known malware signature (reverse shell, backdoor, ransomware, C2 framework, or info stealer).",
-      "remediation": "Remove the malware payload or compromised file entirely. Investigate how it entered the skill and audit all other artifacts for additional indicators of compromise.",
-      "code_snippet": "ons/runtimes/edge-runtime`\n- `https://vercel.com/docs/fluid-compute`\n\n---\n\n### `force-dynamic` \u2014 export const dynamic = 'force-dynamic'\n\n- **Severity**: medium\n- **Billing dimension**: function-duration\n- **Traffic-independent**: no (cold-path findings get dropped)\n\n**Description.** force-dynamic disables static + ISR rendering. The route runs the function on every request. Sometimes necessary (cookies, headers, real-time data), often a habit that costs function-duration and edge-requests at scale.\n\n**Fix.** Audit the route. If dynamic behavior comes from cookies()/headers()/searchParams, force-dynamic may be redundant \u2014 Next infers dynamic automatically. Consider revalidate / 'use cache' / generateStaticParams if any portion can be pre-rendered.\n\n**Citations:**\n- `https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config`\n\n---\n\n### `headers-in-page` \u2014 Dynamic API call forcing dynamic rendering\n\n- **Severity**: medium\n- **Billing dimension**: function-durati",
-      "intent": null,
-      "tags": [
-        "YARA Match"
-      ],
-      "evidence": {},
-      "match_fingerprint": "f3872a6a35cba8e87968619fef3d440fad2030bb53148ad065ee9799e1cd7247",
-      "occurrences": [
-        {
-          "file": "references/scanner-patterns.md",
-          "start_line": 52,
-          "end_line": null
-        }
-      ]
-    },
-    {
       "id": "P6",
-      "finding_id": "finding-a1ba1df75d394c19bede6699e7c57439",
+      "finding_id": "finding-53749d53bc174cf587af696e486793f6",
       "category": "System Prompt Leakage",
       "pattern": "Direct Prompt Extraction",
       "severity": "HIGH",
@@ -2445,7 +2385,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-9f1d11a839f94888a2cb3ed4fcd39337",
+      "finding_id": "finding-5752fe6eefae45f090065b0e858a15b6",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx skills'.",
       "severity": "MEDIUM",
@@ -2475,7 +2415,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-a19eabd55dcd481eaf8aca1f32f139de",
+      "finding_id": "finding-dff0a2786ce9483bbaa18eae7be2469d",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx skills'.",
       "severity": "MEDIUM",
@@ -2505,7 +2445,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-86f2667ed24740d091088d6279156bb1",
+      "finding_id": "finding-f89fb5c9aeae44ed8c6f89c1580e12fc",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, network.",
       "severity": "MEDIUM",
@@ -2535,7 +2475,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-e894c2da12b04a95850dde2653a4a5fc",
+      "finding_id": "finding-cacddf8120f64cdf853def280dd9b70e",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -2567,7 +2507,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-38768b40e79f40ad87b067f16a9da90e",
+      "finding_id": "finding-c31b9a9b6db043be9738861bf2e8b6e7",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -2599,7 +2539,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-68b9e8e9f30d45e59ca2619a75e1f77b",
+      "finding_id": "finding-bd57c56f37364be7b5047f65a5b05711",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -2663,7 +2603,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -2676,7 +2616,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -2689,7 +2629,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -2702,7 +2642,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -2715,7 +2655,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -2756,13 +2696,13 @@
   "execution_successful": true,
   "analysis_completeness": {
     "total_components": 156,
-    "scanned_components": 105,
-    "coverage_percent": 67.3,
+    "scanned_components": 107,
+    "coverage_percent": 68.6,
     "is_complete": false,
     "status": "partial",
     "execution_successful": true,
-    "fully_inspected_files": 105,
-    "partially_inspected_files": 51,
+    "fully_inspected_files": 107,
+    "partially_inspected_files": 49,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
       {
@@ -3530,33 +3470,7 @@
         "phase": "static",
         "reason_code": "static_parse_limit",
         "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/sanitizers/rate-limit.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
         "path": "lib/sanitizers/rendering-mode-mislabel.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/sanitizers/vercel-directive-strip.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
@@ -4091,8 +4005,8 @@
         "analyzer_id": "static_patterns_tool_misuse",
         "status": "degraded",
         "planned_work": 156,
-        "completed": 105,
-        "partial": 51,
+        "completed": 107,
+        "partial": 49,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -5085,7 +4999,15 @@
       "Analyzer static_patterns_system_prompt_leakage status: degraded.",
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 22,
-    "findings_after_filtering": 22
+    "findings_before_filtering": 20,
+    "findings_after_filtering": 20,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

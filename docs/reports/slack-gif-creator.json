@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "slack-gif-creator",
-    "source": "/tmp/uniscan-o3eqfiwd/repo/skills/slack-gif-creator",
-    "scanned_at": "2026-10-25T08:02:01.669053+00:00"
+    "source": "/tmp/uniscan-tvca6eb5/repo/skills/slack-gif-creator",
+    "scanned_at": "2026-11-01T09:57:12.468309+00:00"
   },
   "risk_assessment": {
     "score": 7,
@@ -86,7 +86,7 @@
   "issues": [
     {
       "id": "SC1",
-      "finding_id": "finding-0ab9e04eae614ca898b957704de7d900",
+      "finding_id": "finding-1c155c7b7f6b456da893677114309276",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -118,7 +118,7 @@
     },
     {
       "id": "SC4",
-      "finding_id": "finding-91d26c84bf634d9c8b1932dc1c5df97c",
+      "finding_id": "finding-7240322f9e344babaa1bbc795536fcb2",
       "category": "Supply Chain",
       "pattern": "Unverifiable Dependency: pillow has 16 known advisory(ies) (CVE-2026-112390 (Pillow: Infinite loop in MIC n_frames when the embedded TIFF); CVE-2026-96638 (Pillow: BMP RLE decoder memory-amplification DoS via unbounded delta escape / ab); CVE-2026-112391 (Pillow: PdfParser can recurse without limit in get_value() and linearize_page_tr) +13 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
       "severity": "LOW",
@@ -148,7 +148,7 @@
     },
     {
       "id": "SC1",
-      "finding_id": "finding-d1813ee277984652a180d85c4a76fe1e",
+      "finding_id": "finding-c5e58508b5b04a938c806191fd792e66",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -180,7 +180,7 @@
     },
     {
       "id": "SC1",
-      "finding_id": "finding-a732a9b2d3e643f8baaa29802059b4b4",
+      "finding_id": "finding-6dbcc1521a4a4bbc9cf70be4d9309ada",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -212,7 +212,7 @@
     },
     {
       "id": "SC1",
-      "finding_id": "finding-d7111a7cb9ce4612a81d88dc9bdcd1f7",
+      "finding_id": "finding-d4694effa82b405380ecc65cb340ecb1",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -244,7 +244,7 @@
     },
     {
       "id": "SC4",
-      "finding_id": "finding-7498f6603dd84fe5a18d326b551514b9",
+      "finding_id": "finding-b538ddc5532a4a51822031dbc6fe9cfe",
       "category": "Supply Chain",
       "pattern": "Unverifiable Dependency: numpy has 16 known advisory(ies) (CVE-2014-1859 (Numpy arbitrary file write via symlink attack); CVE-2021-41495 (NumPy NULL Pointer Dereference); CVE-2021-33430 (NumPy Buffer Overflow (Disputed)) +13 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
       "severity": "LOW",
@@ -306,7 +306,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -319,7 +319,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -332,7 +332,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -345,7 +345,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -358,7 +358,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -871,6 +871,14 @@
       "Analyzer static_patterns_supply_chain status: degraded."
     ],
     "findings_before_filtering": 6,
-    "findings_after_filtering": 6
+    "findings_after_filtering": 6,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

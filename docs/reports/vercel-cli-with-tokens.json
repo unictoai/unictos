@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "vercel-cli-with-tokens",
-    "source": "/tmp/uniscan-xyqw1xvz/repo/skills/vercel-cli-with-tokens",
-    "scanned_at": "2026-10-25T08:03:46.269402+00:00"
+    "source": "/tmp/uniscan-m23yg_25/repo/skills/vercel-cli-with-tokens",
+    "scanned_at": "2026-11-01T09:58:04.434163+00:00"
   },
   "risk_assessment": {
     "score": 43,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "PE3",
-      "finding_id": "finding-46fa197a1d0548a28c6aca61e1207bc9",
+      "finding_id": "finding-a39ecbd5e9e44870b7a0ee3e0f00596d",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -58,7 +58,7 @@
     },
     {
       "id": "E2",
-      "finding_id": "finding-6b176ac1046347ac8b61146badbbd887",
+      "finding_id": "finding-f524da0ca310483eb4d06d9eee9fc944",
       "category": "Data Exfiltration",
       "pattern": "Env Variable Harvesting",
       "severity": "HIGH",
@@ -90,7 +90,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-8ce0c7fe4b5b42558c3bfc5aec1bcaae",
+      "finding_id": "finding-e77c1b4771f74f5ab166dc372a4cfdd9",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -122,7 +122,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-2c6a067aed434a2781a7c450f7f9e9ca",
+      "finding_id": "finding-f8acc00f52d5484594e6d6ee26b965f2",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -154,7 +154,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-94d657757b9844a495c036a4159757b5",
+      "finding_id": "finding-a92afc2505ea45ab8ab62b7989a42b26",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -186,7 +186,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-c4728be8e6514df2a344c95a27452337",
+      "finding_id": "finding-dd9e91d5b8da464e9d84bafcc2361dbd",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -218,7 +218,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-a87adea724724483adb7c422b71300d8",
+      "finding_id": "finding-996d826e77224fa0a451b610f030b495",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -229,7 +229,7 @@
         "end_line": null,
         "start_column": 11
       },
-      "finding": ".env ",
+      "finding": ".env\n",
       "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
       "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
       "code_snippet": "printenv VERCEL_PROJECT_ID\nprintenv VERCEL_ORG_ID\n\n# Or check .env\ngrep -i 'vercel' .env 2>/dev/null\n```\n",
@@ -250,7 +250,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-add4f506b1c54d5788bdfc0623429f0b",
+      "finding_id": "finding-d860167779ac4ad99e596e5e52a7c19a",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -282,7 +282,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-0ff2a90a3a6243159c2247bc74e6bee3",
+      "finding_id": "finding-d575a5d6dd9d4e7a9f0290d845cefeaa",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -314,7 +314,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-24d7a0a1cbab412894106d35fd49607b",
+      "finding_id": "finding-423a78a8f2ab4c0cb8d086a428acb8c9",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -346,7 +346,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-61454332c7d64ab69aea954028f350f8",
+      "finding_id": "finding-2e9f01672020439cb246763cf02b7e7d",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -410,7 +410,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -423,7 +423,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -436,7 +436,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -449,7 +449,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -462,7 +462,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -505,8 +505,8 @@
     "total_components": 1,
     "scanned_components": 1,
     "coverage_percent": 100.0,
-    "is_complete": false,
-    "status": "partial",
+    "is_complete": true,
+    "status": "complete_with_caveats",
     "execution_successful": true,
     "fully_inspected_files": 1,
     "partially_inspected_files": 0,
@@ -1026,6 +1026,14 @@
     ],
     "limitations": [],
     "findings_before_filtering": 11,
-    "findings_after_filtering": 11
+    "findings_after_filtering": 11,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

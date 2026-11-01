@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "canvas-design",
-    "source": "/tmp/uniscan-vqngxg27/repo/skills/canvas-design",
-    "scanned_at": "2026-10-25T08:01:23.641346+00:00"
+    "source": "/tmp/uniscan-co1sbutl/repo/skills/canvas-design",
+    "scanned_at": "2026-11-01T09:56:51.202976+00:00"
   },
   "risk_assessment": {
     "score": 0,
@@ -877,7 +877,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -890,7 +890,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -903,7 +903,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -916,7 +916,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -929,7 +929,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -982,8 +982,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 108,
         "end_line": 108,
@@ -2744,14 +2744,22 @@
         "line": 108,
         "column": 761,
         "evidence": "sional execution. **IMPORTANT: Use different fonts if writing text. Search the `./canvas-fonts` directory. Regardless of approach, sophistication is non-negotia",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "canvas-fonts",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "plain_path"
       }
     ],
     "limitations": [],
     "findings_before_filtering": 0,
-    "findings_after_filtering": 0
+    "findings_after_filtering": 0,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

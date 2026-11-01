@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "datalad",
-    "source": "/tmp/uniscan-wknnls0g/repo/skills/datalad",
-    "scanned_at": "2026-10-25T08:19:01.015498+00:00"
+    "source": "/tmp/uniscan-dct883xy/repo/skills/datalad",
+    "scanned_at": "2026-11-01T10:06:58.571934+00:00"
   },
   "risk_assessment": {
     "score": 71,
@@ -56,7 +56,7 @@
   "issues": [
     {
       "id": "TM1",
-      "finding_id": "finding-bee160db0b21463ca7461c42392e4bf8",
+      "finding_id": "finding-f5b6cd403aa345568bd747b0ff8b2844",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -88,7 +88,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-c1e5baedddeb4c979d97f3c9026b52f9",
+      "finding_id": "finding-684715616c4c490e8ab6e1367f5cfc49",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -120,7 +120,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-d5c98e1d9c1e421f922ed307dbce1a1e",
+      "finding_id": "finding-e987aa85fc0d4a6a831f8458cd053579",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -152,7 +152,7 @@
     },
     {
       "id": "AR2",
-      "finding_id": "finding-2a89a7e47ed2422dab3d691af914131d",
+      "finding_id": "finding-561e74adf77949a496cbd415c420fd34",
       "category": "Anti-Refusal",
       "pattern": "Anti-Refusal Statement",
       "severity": "HIGH",
@@ -186,7 +186,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-ec9ff06eb8ca4cc4bb2d4b002efb2d23",
+      "finding_id": "finding-6f58b264c38a4b40aedd53afdf8b512f",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -250,7 +250,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -263,7 +263,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -276,7 +276,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -289,7 +289,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -302,7 +302,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -345,8 +345,8 @@
     "total_components": 4,
     "scanned_components": 4,
     "coverage_percent": 100.0,
-    "is_complete": false,
-    "status": "partial",
+    "is_complete": true,
+    "status": "complete_with_caveats",
     "execution_successful": true,
     "fully_inspected_files": 4,
     "partially_inspected_files": 0,
@@ -986,6 +986,14 @@
     ],
     "limitations": [],
     "findings_before_filtering": 5,
-    "findings_after_filtering": 5
+    "findings_after_filtering": 5,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

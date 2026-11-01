@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "Linear",
-    "source": "/tmp/skillspector_4szwhcq7",
-    "scanned_at": "2026-10-25T08:25:11.356546+00:00"
+    "source": "/tmp/skillspector_fnn4ur3_",
+    "scanned_at": "2026-11-01T10:10:03.908881+00:00"
   },
   "risk_assessment": {
     "score": 33,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "PE3",
-      "finding_id": "finding-bcce46eb67934aef8b73089f2f26e1b9",
+      "finding_id": "finding-60dbc9f41255433496b0bb33b9bbb3f2",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -58,7 +58,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-5d799fcf279049babb815c64802e6566",
+      "finding_id": "finding-79c5422ce9354ea3b2a3b5c80546ed19",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -90,7 +90,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-547fafcbac724ac78b780b12494e96f7",
+      "finding_id": "finding-54865c50ef874bdfae295d150f6c0e9d",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx tsx'.",
       "severity": "MEDIUM",
@@ -120,7 +120,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-665facbc03c14f6b8f064658578ca016",
+      "finding_id": "finding-6410d6193d7d4b6485826e43973b655c",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx tsx'.",
       "severity": "MEDIUM",
@@ -182,7 +182,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -195,7 +195,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -208,7 +208,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -221,7 +221,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -234,7 +234,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -300,8 +300,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 85,
         "end_line": 85,
@@ -310,8 +310,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 186,
         "end_line": 186,
@@ -320,8 +320,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 213,
         "end_line": 213,
@@ -330,8 +330,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 215,
         "end_line": 215,
@@ -350,8 +350,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 455,
         "end_line": 455,
@@ -370,8 +370,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 478,
         "end_line": 478,
@@ -380,8 +380,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 504,
         "end_line": 504,
@@ -400,8 +400,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 577,
         "end_line": 577,
@@ -410,8 +410,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 590,
         "end_line": 590,
@@ -420,8 +420,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 602,
         "end_line": 602,
@@ -430,8 +430,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 614,
         "end_line": 614,
@@ -440,8 +440,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 629,
         "end_line": 629,
@@ -450,8 +450,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 659,
         "end_line": 659,
@@ -470,8 +470,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 682,
         "end_line": 682,
@@ -500,8 +500,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 690,
         "end_line": 690,
@@ -530,8 +530,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 719,
         "end_line": 719,
@@ -540,8 +540,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 720,
         "end_line": 720,
@@ -550,8 +550,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 721,
         "end_line": 721,
@@ -560,8 +560,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 722,
         "end_line": 722,
@@ -570,8 +570,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 723,
         "end_line": 723,
@@ -580,8 +580,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 724,
         "end_line": 724,
@@ -883,8 +883,8 @@
         "line": 85,
         "column": 12,
         "evidence": "1. Create `.env.schema` with `@sensitive` annotation:",
-        "target_path": null,
-        "status": "missing",
+        "target_path": ".env.schema",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "quoted_or_code"
       },
@@ -913,8 +913,8 @@
         "line": 186,
         "column": 209,
         "evidence": "ith at least 2 concrete, testable checklist items. See [docs/issue-template.md](docs/issue-template.md) for the canonical template plus a populated full example",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "docs/issue-template.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -923,8 +923,8 @@
         "line": 186,
         "column": 185,
         "evidence": "ance Criteria` section with at least 2 concrete, testable checklist items. See [docs/issue-template.md](docs/issue-template.md) for the canonical template plus ",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "docs/issue-template.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "plain_path"
       },
@@ -933,8 +933,8 @@
         "line": 213,
         "column": 110,
         "evidence": "Print the template on demand with: `npm run ops -- create-issue --template`. See [docs/issue-template.md](docs/issue-template.md) for a fully populated example.",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "docs/issue-template.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -943,8 +943,8 @@
         "line": 213,
         "column": 86,
         "evidence": "Print the template on demand with: `npm run ops -- create-issue --template`. See [docs/issue-template.md](docs/issue-template.md) for a fully populated example.",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "docs/issue-template.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "plain_path"
       },
@@ -953,8 +953,8 @@
         "line": 215,
         "column": 48,
         "evidence": "2. **Labels.** Apply from the [label taxonomy](docs/labels.md):",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "docs/labels.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -993,8 +993,8 @@
         "line": 455,
         "column": 82,
         "evidence": "> **WARNING**: Do NOT use deprecated community servers. See [troubleshooting.md](troubleshooting.md) for details.",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "troubleshooting.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1013,8 +1013,8 @@
         "line": 478,
         "column": 62,
         "evidence": "For detailed helper script usage, see **[troubleshooting.md](troubleshooting.md)**.",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "troubleshooting.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1023,8 +1023,8 @@
         "line": 504,
         "column": 17,
         "evidence": "See **[sync.md](sync.md)** for parallel execution patterns.",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "sync.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1043,8 +1043,8 @@
         "line": 577,
         "column": 21,
         "evidence": "See **[projects.md](projects.md)** for complete project creation checklist.",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "projects.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1063,8 +1063,8 @@
         "line": 590,
         "column": 147,
         "evidence": "st](#issue-creation-checklist-required) for required rules and [docs/labels.md](docs/labels.md) for the full taxonomy.",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "docs/labels.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1073,8 +1073,8 @@
         "line": 590,
         "column": 131,
         "evidence": "Creation Checklist](#issue-creation-checklist-required) for required rules and [docs/labels.md](docs/labels.md) for the full taxonomy.",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "docs/labels.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "plain_path"
       },
@@ -1083,8 +1083,8 @@
         "line": 602,
         "column": 164,
         "evidence": "s, mapping, or bulk updates, write TypeScript scripts using `@linear/sdk`. See `sdk.md` for:",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "sdk.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "quoted_or_code"
       },
@@ -1093,8 +1093,8 @@
         "line": 614,
         "column": 16,
         "evidence": "See **[api.md](api.md)** for complete documentation including:",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "api.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1103,8 +1103,8 @@
         "line": 629,
         "column": 78,
         "evidence": "For advanced project and initiative management patterns, see **[projects.md](projects.md)**.",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "projects.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1113,8 +1113,8 @@
         "line": 659,
         "column": 69,
         "evidence": "For bulk synchronization of code changes to Linear, see **[sync.md](sync.md)**.",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "sync.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1133,8 +1133,8 @@
         "line": 682,
         "column": 28,
         "evidence": "LINEAR_API_KEY=xxx npx tsx scripts/bulk-create.ts \\",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "scripts/bulk-create.ts",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "plain_path"
       },
@@ -1163,8 +1163,8 @@
         "line": 690,
         "column": 9,
         "evidence": "npx tsx scripts/bulk-create.ts \\",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "scripts/bulk-create.ts",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "plain_path"
       },
@@ -1193,8 +1193,8 @@
         "line": 719,
         "column": 12,
         "evidence": "| [api.md](api.md) | GraphQL API reference, timeout handling |",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "api.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1203,8 +1203,8 @@
         "line": 720,
         "column": 12,
         "evidence": "| [sdk.md](sdk.md) | SDK automation patterns |",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "sdk.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1213,8 +1213,8 @@
         "line": 721,
         "column": 13,
         "evidence": "| [sync.md](sync.md) | Bulk sync patterns |",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "sync.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1223,8 +1223,8 @@
         "line": 722,
         "column": 17,
         "evidence": "| [projects.md](projects.md) | Project & initiative management |",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "projects.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1233,8 +1233,8 @@
         "line": 723,
         "column": 24,
         "evidence": "| [troubleshooting.md](troubleshooting.md) | Common issues, MCP debugging |",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "troubleshooting.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1243,8 +1243,8 @@
         "line": 724,
         "column": 20,
         "evidence": "| [docs/labels.md](docs/labels.md) | Label taxonomy |",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "docs/labels.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -1253,8 +1253,8 @@
         "line": 724,
         "column": 4,
         "evidence": "| [docs/labels.md](docs/labels.md) | Label taxonomy |",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "docs/labels.md",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "plain_path"
       },
@@ -1273,6 +1273,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 4,
-    "findings_after_filtering": 4
+    "findings_after_filtering": 4,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

@@ -1,13 +1,13 @@
 {
   "skill": {
     "name": "jest-unit",
-    "source": "/tmp/uniscan-g7glwd_m/repo/packs/qa-essentials/skills/jest-unit",
-    "scanned_at": "2026-10-25T08:27:24.390414+00:00"
+    "source": "/tmp/uniscan-w6gf4cob/repo/packs/qa-essentials/skills/jest-unit",
+    "scanned_at": "2026-11-01T10:11:19.820169+00:00"
   },
   "risk_assessment": {
     "score": 12,
     "severity": "LOW",
-    "recommendation": "CAUTION",
+    "recommendation": "SAFE",
     "max_issue_severity": "MEDIUM"
   },
   "components": [
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "RP1",
-      "finding_id": "finding-6db7f5a22f0647f28ee671a19d5a202d",
+      "finding_id": "finding-bdad9b7f5456426ea0d8555b5b9ca921",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -56,7 +56,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-571e85fa9efc4cf5837181f474747653",
+      "finding_id": "finding-4c98ee1e1f5a41adab17c037e0866a57",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -86,7 +86,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-5692115733f2488f81110c13d82d7979",
+      "finding_id": "finding-e9b1c539f7344d1c8365454a6247dd79",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -116,7 +116,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-db9ce85610a24735a5189d883e39e379",
+      "finding_id": "finding-b975a781764645e587acf4ce2e74bbe7",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -146,7 +146,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-5b47e8e008e940ca9ff09b80d2189c33",
+      "finding_id": "finding-cc5338342366469689695b18483d433f",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -176,7 +176,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-526a549d9c794069b0291791687d4b94",
+      "finding_id": "finding-3a60f3396996425d8df58d0de96efb66",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -206,7 +206,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-b43d0775b4564678b46e80c42a7ae2b1",
+      "finding_id": "finding-38f1eaee92fa4d7a992ff453c5fddbd5",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -268,7 +268,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -281,7 +281,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -294,7 +294,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -307,7 +307,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -320,7 +320,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -363,8 +363,8 @@
     "total_components": 1,
     "scanned_components": 1,
     "coverage_percent": 100.0,
-    "is_complete": false,
-    "status": "partial",
+    "is_complete": true,
+    "status": "complete_with_caveats",
     "execution_successful": true,
     "fully_inspected_files": 1,
     "partially_inspected_files": 0,
@@ -984,6 +984,14 @@
     ],
     "limitations": [],
     "findings_before_filtering": 7,
-    "findings_after_filtering": 7
+    "findings_after_filtering": 7,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

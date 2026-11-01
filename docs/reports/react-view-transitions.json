@@ -1,13 +1,13 @@
 {
   "skill": {
     "name": "vercel-react-view-transitions",
-    "source": "/tmp/uniscan-3kaljf40/repo/skills/react-view-transitions",
-    "scanned_at": "2026-10-25T08:03:38.098969+00:00"
+    "source": "/tmp/uniscan-z4bm22u8/repo/skills/react-view-transitions",
+    "scanned_at": "2026-11-01T09:58:00.129164+00:00"
   },
   "risk_assessment": {
     "score": 7,
     "severity": "LOW",
-    "recommendation": "CAUTION",
+    "recommendation": "SAFE",
     "max_issue_severity": "MEDIUM"
   },
   "components": [
@@ -106,7 +106,7 @@
   "issues": [
     {
       "id": "RP1",
-      "finding_id": "finding-bc10d98bdfbb425f99ff79252d6aa5fe",
+      "finding_id": "finding-51ccebdcb14146d1aa94f6cf7201b411",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx skills'.",
       "severity": "MEDIUM",
@@ -168,7 +168,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -181,7 +181,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -194,7 +194,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -207,7 +207,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -220,7 +220,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -263,8 +263,8 @@
     "total_components": 9,
     "scanned_components": 9,
     "coverage_percent": 100.0,
-    "is_complete": false,
-    "status": "partial",
+    "is_complete": true,
+    "status": "complete_with_caveats",
     "execution_successful": true,
     "fully_inspected_files": 9,
     "partially_inspected_files": 0,
@@ -834,6 +834,14 @@
     ],
     "limitations": [],
     "findings_before_filtering": 1,
-    "findings_after_filtering": 1
+    "findings_after_filtering": 1,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

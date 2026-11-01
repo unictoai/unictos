@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "citation-management",
-    "source": "/tmp/uniscan-t9ps5vjx/repo/skills/citation-management",
-    "scanned_at": "2026-10-25T08:15:16.215562+00:00"
+    "source": "/tmp/uniscan-e1nl02kw/repo/skills/citation-management",
+    "scanned_at": "2026-11-01T10:04:41.679400+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -236,7 +236,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-5ff460cf99cd4f0bbcbb7ef106178697",
+      "finding_id": "finding-238696787f9148d58219bbb6b9f17542",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -281,7 +281,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-0a3e0fc54d574554b53158cbdf017975",
+      "finding_id": "finding-3ba312fb6d8944f2bf731cb0371b0a8b",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -326,7 +326,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-6cb5d84af27a4bc689138edd9ae90496",
+      "finding_id": "finding-878aaeb45cff4652bcc3294ff9115cd0",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -371,7 +371,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a8539bee40124320b3a908accac1b6da",
+      "finding_id": "finding-608d7a4d5683458ea3731c5b52ed93d8",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -416,7 +416,7 @@
     },
     {
       "id": "AR2",
-      "finding_id": "finding-185b266c6c9441df9673aa326c9c0609",
+      "finding_id": "finding-e1f6e88bc61e4094a7187e38b3581914",
       "category": "Anti-Refusal",
       "pattern": "Anti-Refusal Statement",
       "severity": "HIGH",
@@ -450,7 +450,7 @@
     },
     {
       "id": "TM1",
-      "finding_id": "finding-9a3608114e8942d18eb486c622585900",
+      "finding_id": "finding-660bf92ef74b4029800caacb57e0c477",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -482,7 +482,7 @@
     },
     {
       "id": "LP1",
-      "finding_id": "finding-063507902ab14de5b4847a96e94ff2c2",
+      "finding_id": "finding-ad315ec7624d40599b144ab6e8826de6",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'env' detected in scripts/extract_metadata.py but not covered by declared permissions.",
       "severity": "HIGH",
@@ -512,7 +512,7 @@
     },
     {
       "id": "AST3",
-      "finding_id": "finding-a7ff73775ed5425ea73e8dddc1a6785d",
+      "finding_id": "finding-ad1a844c226f4370a7b39ae3af06bfc5",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic import via __import__()",
       "severity": "MEDIUM",
@@ -546,7 +546,7 @@
     },
     {
       "id": "AST3",
-      "finding_id": "finding-3d1a709f90254553a71659476d9e9ef2",
+      "finding_id": "finding-10b38e39f27845718cd6ff1a3de3bf13",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic import via __import__()",
       "severity": "MEDIUM",
@@ -580,7 +580,7 @@
     },
     {
       "id": "AST3",
-      "finding_id": "finding-696813ff7e1c44d3a94fb1f6823938ed",
+      "finding_id": "finding-6f9a4e0df07e4397b10a601f54b0f2d2",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic import via __import__()",
       "severity": "MEDIUM",
@@ -614,7 +614,7 @@
     },
     {
       "id": "AST3",
-      "finding_id": "finding-4830a3318091499ea937d54aebdeb871",
+      "finding_id": "finding-f3930b4794284ecaa8b43beba659f08e",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic import via __import__()",
       "severity": "MEDIUM",
@@ -648,7 +648,7 @@
     },
     {
       "id": "AST3",
-      "finding_id": "finding-5e90d74d64bd43c792004f5ac0348d48",
+      "finding_id": "finding-a4410fe0afa84451a1c1c979c40a0342",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic import via __import__()",
       "severity": "MEDIUM",
@@ -682,7 +682,7 @@
     },
     {
       "id": "AST3",
-      "finding_id": "finding-d945931f9ab54a36b005cce9eca70704",
+      "finding_id": "finding-562427d9a4ce45eb8b8ceab80f17ead7",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic import via __import__()",
       "severity": "MEDIUM",
@@ -716,7 +716,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-fbcfd7f110b14ecebbcbcec895c0345c",
+      "finding_id": "finding-be2cc1acab164d489a439abacfc2b9be",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -748,7 +748,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-886f78d35c334eeb9986c3774536691b",
+      "finding_id": "finding-9a71e93817244ed98c3833d8724ce487",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -780,7 +780,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-307f37c8793442a98528aaff788aa9af",
+      "finding_id": "finding-8afbb79c21be4553b97c07a6727fe276",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -812,7 +812,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-8f2adb79556b4e5fb3986bf4ba704427",
+      "finding_id": "finding-897047285a5044a1aebb18a40e72eafb",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -844,7 +844,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-2a4b72936a324b8fa58822620a9eed2a",
+      "finding_id": "finding-e7ac2cc6dbb34cb992b2232a7ed2dc85",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -876,7 +876,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-8840a342c9724fb4a9932efb902cdbb8",
+      "finding_id": "finding-b125e7abd1db4eb6962805be3b83274b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -908,7 +908,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-4fdf630a6a6d4c66bb5774bc6d6eaed9",
+      "finding_id": "finding-25fea55f60e64d2f85bdaeabf7d345c8",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -940,7 +940,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-96127b5dcc944ec8a9442e87f605c96d",
+      "finding_id": "finding-5e288981b74943cdb5f857826c6dcbe9",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -972,7 +972,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-dc57cfe199e2412a8af64bdaf6cc1238",
+      "finding_id": "finding-6c4dc4bd8a51461785b10ad5457e2123",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-0505660dc1a240bf9bb6f28c7fed5e03",
+      "finding_id": "finding-167b782b7b204f7e866dd4b2a361f2e9",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1036,7 +1036,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-69aa7da6fc9941bb9b6eb11f8c02ae34",
+      "finding_id": "finding-3a3115c6d8ce473eb3b8e93a6d435f87",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1068,7 +1068,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-88d6033067c6445caaa28905493a4b6b",
+      "finding_id": "finding-13442993f87f44c5b3277cb75c191b19",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1100,7 +1100,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-4bc39264f4984b9fb39ab52f15011f42",
+      "finding_id": "finding-78b20d437a7e4df6806137dd3e788c97",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1164,7 +1164,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1177,7 +1177,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1190,7 +1190,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1203,7 +1203,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1216,7 +1216,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -2472,6 +2472,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 26,
-    "findings_after_filtering": 26
+    "findings_after_filtering": 26,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

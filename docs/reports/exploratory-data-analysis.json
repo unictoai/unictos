@@ -1,13 +1,13 @@
 {
   "skill": {
     "name": "exploratory-data-analysis",
-    "source": "/tmp/uniscan-iddckvr8/repo/skills/exploratory-data-analysis",
-    "scanned_at": "2026-10-25T08:14:36.452034+00:00"
+    "source": "/tmp/uniscan-84dbrxb6/repo/skills/exploratory-data-analysis",
+    "scanned_at": "2026-11-01T10:04:19.375953+00:00"
   },
   "risk_assessment": {
     "score": 8,
     "severity": "LOW",
-    "recommendation": "CAUTION",
+    "recommendation": "SAFE",
     "max_issue_severity": "MEDIUM"
   },
   "components": [
@@ -226,7 +226,7 @@
   "issues": [
     {
       "id": "EA2",
-      "finding_id": "finding-dc3da9f61b1f41909a7e7b40509f2c2b",
+      "finding_id": "finding-7c5c5b4235b940dc96a40c53d4e6e606",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -290,7 +290,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -303,7 +303,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -316,7 +316,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -329,7 +329,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -342,7 +342,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -385,8 +385,8 @@
     "total_components": 21,
     "scanned_components": 21,
     "coverage_percent": 100.0,
-    "is_complete": false,
-    "status": "partial",
+    "is_complete": true,
+    "status": "complete_with_caveats",
     "execution_successful": true,
     "fully_inspected_files": 21,
     "partially_inspected_files": 0,
@@ -1230,6 +1230,14 @@
     ],
     "limitations": [],
     "findings_before_filtering": 1,
-    "findings_after_filtering": 1
+    "findings_after_filtering": 1,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "deploy-to-vercel",
-    "source": "/tmp/uniscan-pa1b1gzo/repo/skills/deploy-to-vercel",
-    "scanned_at": "2026-10-25T07:58:30.782094+00:00"
+    "source": "/tmp/uniscan-x5yta20g/repo/skills/deploy-to-vercel",
+    "scanned_at": "2026-11-01T09:55:19.162849+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -175,7 +175,7 @@
   "issues": [
     {
       "id": "SC9",
-      "finding_id": "finding-a229519510024a4a96b45ae551bef951",
+      "finding_id": "finding-c8e7d1b45417440d9c9ad3d1c2784d08",
       "category": "Supply Chain",
       "pattern": "Concealed Executable Artifact",
       "severity": "HIGH",
@@ -227,7 +227,7 @@
     },
     {
       "id": "SC9",
-      "finding_id": "finding-a7a02ac9629b434d97f78911a388aee1",
+      "finding_id": "finding-a8b4bb7235454d9bae4c3b31c74e0af9",
       "category": "Supply Chain",
       "pattern": "Concealed Executable Artifact",
       "severity": "HIGH",
@@ -279,7 +279,7 @@
     },
     {
       "id": "SC9",
-      "finding_id": "finding-682931998f984c76b1a991faf81500ac",
+      "finding_id": "finding-606d0b170e4444e39bb09422c08256af",
       "category": "Supply Chain",
       "pattern": "Concealed Executable Artifact",
       "severity": "HIGH",
@@ -331,7 +331,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-c23987d66826445bbd191e2de17e7faf",
+      "finding_id": "finding-07fbfc1b5a4240b287d07ac01262ad67",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -363,7 +363,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-d8a19a98a372414ea9790b3f7116f1c9",
+      "finding_id": "finding-e8b547f39d6b4ad6b795320d9c9d7822",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -395,7 +395,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-3978783b6a12418dbc5e735f6c4b920d",
+      "finding_id": "finding-0b9bd78a18b74171a76b3ebfe01ed2c3",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -427,7 +427,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-364a2e31e9f44abdbf30a16201474c8c",
+      "finding_id": "finding-06f8cf8fd6ec40aa95867351764cd8c4",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -459,7 +459,7 @@
     },
     {
       "id": "AE2",
-      "finding_id": "finding-2f0d5524d51b4ad488a3fe979ed98fe5",
+      "finding_id": "finding-dc43c100bcc749d484a5a405feb458f0",
       "category": "analysis-evasion",
       "pattern": null,
       "severity": "MEDIUM",
@@ -489,7 +489,7 @@
     },
     {
       "id": "AE2",
-      "finding_id": "finding-737a082e13af43ea8e1cd7e2ed302c3d",
+      "finding_id": "finding-0acaabc0403d40c2abb42e78adc18dc4",
       "category": "analysis-evasion",
       "pattern": null,
       "severity": "MEDIUM",
@@ -519,7 +519,7 @@
     },
     {
       "id": "AE2",
-      "finding_id": "finding-87b0806af1894d39a786909d5a05d04c",
+      "finding_id": "finding-58a15efdb76c40b7a1272ea5634e2924",
       "category": "analysis-evasion",
       "pattern": null,
       "severity": "MEDIUM",
@@ -549,7 +549,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-0fb9d2cf231c42d89c58061718812fdf",
+      "finding_id": "finding-7fe6d73451a84fc281a5a7bbd1a19bd7",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: shell.",
       "severity": "MEDIUM",
@@ -611,7 +611,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -624,7 +624,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -637,7 +637,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -650,7 +650,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -663,7 +663,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -703,14 +703,14 @@
   },
   "execution_successful": true,
   "analysis_completeness": {
-    "total_components": 6,
+    "total_components": 7,
     "scanned_components": 6,
-    "coverage_percent": 100.0,
+    "coverage_percent": 85.7,
     "is_complete": false,
     "status": "partial",
     "execution_successful": true,
     "fully_inspected_files": 6,
-    "partially_inspected_files": 0,
+    "partially_inspected_files": 1,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
       {
@@ -1384,6 +1384,14 @@
     ],
     "limitations": [],
     "findings_before_filtering": 11,
-    "findings_after_filtering": 11
+    "findings_after_filtering": 11,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

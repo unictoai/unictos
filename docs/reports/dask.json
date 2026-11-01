@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "dask",
-    "source": "/tmp/uniscan-w9k3uy6k/repo/skills/dask",
-    "scanned_at": "2026-10-25T08:13:59.496392+00:00"
+    "source": "/tmp/uniscan-juowwc5v/repo/skills/dask",
+    "scanned_at": "2026-11-01T10:03:55.860223+00:00"
   },
   "risk_assessment": {
     "score": 80,
@@ -96,7 +96,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-37efe5b9fd564113bc785fb9a33ee416",
+      "finding_id": "finding-72968ca0df4b4434a845b5b9cfa0afe5",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -141,7 +141,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-6f76ad21a4f44e4492868f44b8ff0ed7",
+      "finding_id": "finding-5f9ec84dac8c4f1088a53d3ca7698931",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -186,7 +186,7 @@
     },
     {
       "id": "MP3",
-      "finding_id": "finding-dae6f384e8ee4dd9a6fb30a46ea5f985",
+      "finding_id": "finding-5de420ad8fcf427a992e058b2b2b1e89",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -218,7 +218,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-48d0263041424f05b05b7d4960283d52",
+      "finding_id": "finding-e3278f210d8247a5a08b9eea874f66cb",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -250,7 +250,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-fbbef4055cc34862952aa0f09bc4e61d",
+      "finding_id": "finding-c45078a01c30404f927453a4965fc9c9",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -314,7 +314,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -327,7 +327,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -340,7 +340,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -353,7 +353,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -366,7 +366,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1025,6 +1025,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 5,
-    "findings_after_filtering": 5
+    "findings_after_filtering": 5,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "owb",
-    "source": "/tmp/uniscan-648xcyu9/repo/owb-skills/owb",
-    "scanned_at": "2026-10-25T08:17:46.047955+00:00"
+    "source": "/tmp/uniscan-vlujce6c/repo/owb-skills/owb",
+    "scanned_at": "2026-11-01T10:06:15.063819+00:00"
   },
   "risk_assessment": {
     "score": 56,
@@ -76,7 +76,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-629dcc510ec34285a25ae95f6c50ecf9",
+      "finding_id": "finding-4fdd8ec991d94d7498842a35a1b07b06",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -121,7 +121,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-2da580d0deb34f2dadc7bc8a99979412",
+      "finding_id": "finding-917ddf6e92f94ed7ba34cc40a8030219",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -166,7 +166,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-18a3c2fefcc14e559ceb9da4a72d9271",
+      "finding_id": "finding-8c02007748714a63a181849bd92813c5",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -211,7 +211,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-709249881bbc40b68b269a66a9c6bdbe",
+      "finding_id": "finding-467eba2072e6412b9a8fc2b8c9ee9bee",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -256,7 +256,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-914205d973e94bb28b1e1581b80f81b2",
+      "finding_id": "finding-bb9f53d4522740db98637bb5e25e8f67",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -301,7 +301,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-8f20a070725e4a7195f5326f346510f6",
+      "finding_id": "finding-7a2314238e784cc58824e04921e226b3",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -346,7 +346,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-275685fb43a94278963822b700ec1632",
+      "finding_id": "finding-0cc13bb625d44a62b017f7b8523a7eb2",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -391,7 +391,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-cdf9ef26289846cc809f3ce112332a88",
+      "finding_id": "finding-92323a36a6e645988f04df2ce514ddf9",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx wrangler'.",
       "severity": "MEDIUM",
@@ -421,7 +421,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-36951623942a4fe99e56fc1316cc0c6c",
+      "finding_id": "finding-1ff8eb4f72424eb2929dfc853b3f5cf8",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx wrangler'.",
       "severity": "MEDIUM",
@@ -451,7 +451,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-d4bab4fb7907459797c26a1d18fb95af",
+      "finding_id": "finding-703b69a8511f47a19a59a1cf1f5baf5d",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx wrangler'.",
       "severity": "MEDIUM",
@@ -513,7 +513,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -526,7 +526,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -539,7 +539,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -552,7 +552,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -565,7 +565,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1154,6 +1154,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 10,
-    "findings_after_filtering": 10
+    "findings_after_filtering": 10,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

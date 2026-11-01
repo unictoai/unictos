@@ -1,13 +1,13 @@
 {
   "skill": {
     "name": "vercel-composition-patterns",
-    "source": "/tmp/uniscan-alsrks30/repo/skills/composition-patterns",
-    "scanned_at": "2026-10-25T08:02:45.893251+00:00"
+    "source": "/tmp/uniscan-lzg42b8l/repo/skills/composition-patterns",
+    "scanned_at": "2026-11-01T09:57:35.843833+00:00"
   },
   "risk_assessment": {
     "score": 20,
     "severity": "LOW",
-    "recommendation": "CAUTION",
+    "recommendation": "SAFE",
     "max_issue_severity": "HIGH"
   },
   "components": [
@@ -156,7 +156,7 @@
   "issues": [
     {
       "id": "MP3",
-      "finding_id": "finding-65cfc5ce3b7648b6994755020432ef24",
+      "finding_id": "finding-b8493b0ba0f44861918ad3e975007e06",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -220,7 +220,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -233,7 +233,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -246,7 +246,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -259,7 +259,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -272,7 +272,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -315,8 +315,8 @@
     "total_components": 14,
     "scanned_components": 14,
     "coverage_percent": 100.0,
-    "is_complete": false,
-    "status": "partial",
+    "is_complete": true,
+    "status": "complete_with_caveats",
     "execution_successful": true,
     "fully_inspected_files": 14,
     "partially_inspected_files": 0,
@@ -666,6 +666,14 @@
     ],
     "limitations": [],
     "findings_before_filtering": 1,
-    "findings_after_filtering": 1
+    "findings_after_filtering": 1,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

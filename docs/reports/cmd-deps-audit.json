@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "unknown",
-    "source": "/tmp/skillspector_8l9vlygy",
-    "scanned_at": "2026-10-25T08:40:24.616907+00:00"
+    "source": "/tmp/skillspector_qbjz5re7",
+    "scanned_at": "2026-11-01T10:17:59.842954+00:00"
   },
   "risk_assessment": {
     "score": 16,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "E1",
-      "finding_id": "finding-d367314f46fd4589a00eababd4185689",
+      "finding_id": "finding-eb04ac7ad7b741e29e4cbee44ec74277",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -58,7 +58,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-d0b1818f76a546d6b37a2f61718fcd44",
+      "finding_id": "finding-a29e641ef5f64bd5bf5273b0954a326a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -90,7 +90,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-83fa804126ed48edb6880ea002db61d3",
+      "finding_id": "finding-972b5779ae3d41649c7e73caed187dc6",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx license-checker'.",
       "severity": "MEDIUM",
@@ -152,7 +152,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -165,7 +165,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -178,7 +178,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -191,7 +191,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -204,7 +204,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -564,6 +564,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 3,
-    "findings_after_filtering": 3
+    "findings_after_filtering": 3,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

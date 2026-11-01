@@ -1,13 +1,13 @@
 {
   "skill": {
     "name": "expo-upgrade",
-    "source": "/tmp/uniscan-9uqe2er6/repo/plugins/expo/skills/expo-upgrade",
-    "scanned_at": "2026-10-25T08:10:07.126547+00:00"
+    "source": "/tmp/uniscan-bp8atpso/repo/plugins/expo/skills/expo-upgrade",
+    "scanned_at": "2026-11-01T10:01:29.597449+00:00"
   },
   "risk_assessment": {
     "score": 12,
     "severity": "LOW",
-    "recommendation": "CAUTION",
+    "recommendation": "SAFE",
     "max_issue_severity": "MEDIUM"
   },
   "components": [
@@ -106,7 +106,7 @@
   "issues": [
     {
       "id": "RP1",
-      "finding_id": "finding-e698f504f92f442bb1cba32c2f074193",
+      "finding_id": "finding-ac05086c8cd5412ca9842758f5c3f2a9",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -136,7 +136,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-f953a1f75dfd40d99be2f4589164ff84",
+      "finding_id": "finding-433ce88d7f7f457f9e4e53e106b31018",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -166,7 +166,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-07319e2025ee4999a8eb756395f243d6",
+      "finding_id": "finding-beb405d6a82f4ddda9be3ac593c077f8",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -196,7 +196,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-a19bde900e434907bc029045bd53fdae",
+      "finding_id": "finding-12143d10b7cf4ccfa03095c262a3c7b7",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -226,7 +226,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-f760861b7ccf43ad9b8518f30df27061",
+      "finding_id": "finding-4b2501b673ca4710ad2cc444825b4571",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -256,7 +256,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-1334188411ff40efb53fde7f37a0059e",
+      "finding_id": "finding-8550b19a2768402e897fa583941d4bf9",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -286,7 +286,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-120e95ccb29f4b9bb1081dcd409108aa",
+      "finding_id": "finding-acf0cb5d31524c27b8978e5e78d25afb",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -316,7 +316,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-f4ecfa35f86c4f4eb9a210823bda1783",
+      "finding_id": "finding-f0f47167b41249f0ad092c607bc230cf",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -346,7 +346,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-61b4f27452d34fd7a576e6ab7d24c531",
+      "finding_id": "finding-a29c3f1fa98d45a09eedbdd55be625f0",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -376,7 +376,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-6c2bf16c552d4fac9d529101bc3af72c",
+      "finding_id": "finding-2777e4c4fdab4927a8fc6efaeba6bd4a",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -406,7 +406,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-199b5cf74e7a4ae683d24d52c7b9a8c5",
+      "finding_id": "finding-f6480f993d3748a39afea9a17726a54d",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo-doctor'.",
       "severity": "MEDIUM",
@@ -436,7 +436,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-1be3a7ef3d674bf283f3262c945cd5c9",
+      "finding_id": "finding-81e99a690eab457390de138f9023ad52",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo-doctor'.",
       "severity": "MEDIUM",
@@ -466,7 +466,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-c21dad2526774f2280c393b14ac5050b",
+      "finding_id": "finding-ad02d865517d4ee8b9a07d13b633224b",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx --yes submit-expo-feedback'.",
       "severity": "MEDIUM",
@@ -496,7 +496,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-416c5ffc4bd5472dbb4167344e60a6e5",
+      "finding_id": "finding-37e31477ee7d46569299750107da5f75",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo-codemod'.",
       "severity": "MEDIUM",
@@ -526,7 +526,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-bfc4ff2d7d794be9ba7707e831e54e74",
+      "finding_id": "finding-51ce6aa45377463a9f6ff886055f221a",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo-codemod'.",
       "severity": "MEDIUM",
@@ -588,7 +588,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -601,7 +601,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -614,7 +614,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -627,7 +627,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -640,7 +640,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -683,8 +683,8 @@
     "total_components": 9,
     "scanned_components": 9,
     "coverage_percent": 100.0,
-    "is_complete": false,
-    "status": "partial",
+    "is_complete": true,
+    "status": "complete_with_caveats",
     "execution_successful": true,
     "fully_inspected_files": 9,
     "partially_inspected_files": 0,
@@ -1194,6 +1194,14 @@
     ],
     "limitations": [],
     "findings_before_filtering": 15,
-    "findings_after_filtering": 15
+    "findings_after_filtering": 15,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

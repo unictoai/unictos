@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "redis-search",
-    "source": "/tmp/uniscan-7xd0fvb3/repo/skills/redis-search",
-    "scanned_at": "2026-10-25T08:30:33.629599+00:00"
+    "source": "/tmp/uniscan-m5opfbv4/repo/skills/redis-search",
+    "scanned_at": "2026-11-01T10:13:03.676420+00:00"
   },
   "risk_assessment": {
     "score": 43,
@@ -246,52 +246,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-391ceec67529442ba2e9bd07141595f6",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 105,
-        "end_line": null
-      },
-      "finding": "references/text-tokenization.md (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "n gotchas (stemming, stopwords, language) see [references/text-tokenization.md](references/text-tokenization.md). For result shaping (`SORTBY`, `RETURN`, `HIGHL",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
-      ],
-      "evidence": {
-        "target_path": "references/text-tokenization.md",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "ca4dac987b1d89b5dbae2683843ac478ba344a259a1fef0627eb4461090ed2d5",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 105,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-13d0a98264d2445694f77968ef04d0d1",
+      "finding_id": "finding-49c1daff48a1474c82f1047e1b0e8a43",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -336,7 +291,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-df4df4a908404d8e857b35576a099423",
+      "finding_id": "finding-e405d0f192164cf58782dd517665e147",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -381,7 +336,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-edce56565fa44320b0e96011d0c8487e",
+      "finding_id": "finding-8c7355cad82f4ce499c7cbd90ba82b2b",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -458,7 +413,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -471,7 +426,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -484,7 +439,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -497,7 +452,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -510,7 +465,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -551,13 +506,13 @@
   "execution_successful": true,
   "analysis_completeness": {
     "total_components": 23,
-    "scanned_components": 19,
-    "coverage_percent": 82.6,
+    "scanned_components": 20,
+    "coverage_percent": 87.0,
     "is_complete": false,
     "status": "partial",
     "execution_successful": true,
-    "fully_inspected_files": 19,
-    "partially_inspected_files": 4,
+    "fully_inspected_files": 20,
+    "partially_inspected_files": 3,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
       {
@@ -728,19 +683,6 @@
         "analyzers": [
           "static_patterns_tool_misuse"
         ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "references/text-tokenization.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
       }
     ],
     "scope_exclusions": [],
@@ -838,8 +780,8 @@
       {
         "analyzer_id": "reference_coverage",
         "status": "completed",
-        "planned_work": 4,
-        "completed": 4,
+        "planned_work": 3,
+        "completed": 3,
         "partial": 0,
         "skipped": 0,
         "failed": 0,
@@ -1025,8 +967,8 @@
         "analyzer_id": "static_patterns_tool_misuse",
         "status": "degraded",
         "planned_work": 23,
-        "completed": 19,
-        "partial": 4,
+        "completed": 20,
+        "partial": 3,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -1837,7 +1779,15 @@
     "limitations": [
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 4,
-    "findings_after_filtering": 4
+    "findings_before_filtering": 3,
+    "findings_after_filtering": 3,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

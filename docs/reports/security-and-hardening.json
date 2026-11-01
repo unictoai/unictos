@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "security-and-hardening",
-    "source": "/tmp/uniscan-y3ueyt61/repo/skills/security-and-hardening",
-    "scanned_at": "2026-10-25T08:12:21.860867+00:00"
+    "source": "/tmp/uniscan-_nu3mpiq/repo/skills/security-and-hardening",
+    "scanned_at": "2026-11-01T10:02:43.285425+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -36,7 +36,7 @@
   "issues": [
     {
       "id": "YR4",
-      "finding_id": "finding-e6bab5cd72c34e0a91ad5d01caacaf4a",
+      "finding_id": "finding-7021de65119f4690bb3e6f63c129abc3",
       "category": "YARA Match",
       "pattern": "YARA rule 'agent_skill_prompt_injection_hidden_instructions': Prompt injection or hidden instructions embedded in AI agent skill text [agent_skills]",
       "severity": "HIGH",
@@ -66,7 +66,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-ac4d2b3f12fa4d8d8fad537a9e0296a1",
+      "finding_id": "finding-4fd4e756df4145cc89fe6a4485fbd497",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -111,7 +111,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-b7cb73ab70e047869edf556f638b422f",
+      "finding_id": "finding-a97735693efc478287d80e37d8875d33",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -156,7 +156,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-4c5244adfb9243669dba101226ba3863",
+      "finding_id": "finding-5bc34c3e0c05450dadc1312d95f1ccbd",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -201,7 +201,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-01f210aa5dce4bf8a20843169825820f",
+      "finding_id": "finding-3e9ddfd6f7374b8faae5f1c0c384ed58",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -246,7 +246,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-d497420e1e6b4e5eaa6b9ebe338b48da",
+      "finding_id": "finding-8e75f21ab7b4450db929b298cb92c56e",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -291,7 +291,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-e208bb42353f4afca7f173f4a85ab757",
+      "finding_id": "finding-eae0c102986b491a8afa9ca5ebaa332d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -336,7 +336,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-2a3aea9e5bda43b6b730a0a590fac912",
+      "finding_id": "finding-b7b2d9e4e441496299adcd4abe23d783",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -381,7 +381,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a7f43d34b951444ab424364beff00cc2",
+      "finding_id": "finding-7d7a22eb324645f8a1c7e7718d777d0b",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -426,7 +426,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-05f967bf45a942bdbe50d43eb4d311e1",
+      "finding_id": "finding-4d584b765e5e482ebd6b17e38257bfcc",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -471,7 +471,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-0a54e1cae88d4525a7a87a17cf0c1ba4",
+      "finding_id": "finding-e5c432f5396a4b17b6a686a8a956bf40",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -516,7 +516,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-5731532105ee40d09b3d20a44cb0d224",
+      "finding_id": "finding-631001c9948246708ea9cdc078f7517f",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -561,7 +561,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-4ddde944e0274661822e7cfd8220903d",
+      "finding_id": "finding-c23af9318f6647af841410bd803207a3",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -606,7 +606,7 @@
     },
     {
       "id": "MP3",
-      "finding_id": "finding-cfe483d4996145a1ac4e6e2e9f8a1862",
+      "finding_id": "finding-3f721b8756e24ae0b98378a8fd16cb91",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -638,7 +638,7 @@
     },
     {
       "id": "SSRF1",
-      "finding_id": "finding-defb6495d6aa42ae863dd4abf4ed6e68",
+      "finding_id": "finding-2616a22842404ca79a39c18031347f5a",
       "category": "Server-Side Request Forgery",
       "pattern": "Cloud Metadata Access",
       "severity": "HIGH",
@@ -670,7 +670,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-c60f6b17257b491eb724cf65029e2400",
+      "finding_id": "finding-bb8e0bad0e62487496344dc53c46b300",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -702,7 +702,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-e4ba7d89daed47da8f50b4175e565da9",
+      "finding_id": "finding-c3213134d2a34c76b8f3135ecc4781a5",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -734,7 +734,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-19a54d0808d84dd59bdebe94d5018260",
+      "finding_id": "finding-6aa90eec111245c682685e08553fde74",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -745,7 +745,7 @@
         "end_line": null,
         "start_column": 2
       },
-      "finding": ".env ",
+      "finding": ".env\n",
       "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
       "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
       "code_snippet": "  \u2514\u2500\u2500 .env.local    \u2192 NOT committed (local overrides)\n\n.gitignore must include:\n  .env\n  .env.local\n  .env.*.local\n  *.pem",
@@ -766,7 +766,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-05980b2a4e1a481c9a7e0a1868ee7f60",
+      "finding_id": "finding-402d0e5b48d94aa785c524c72fe45c3b",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -798,7 +798,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-815a838cddc74aaca2ef103d2122e080",
+      "finding_id": "finding-5d48365614014e86bca16d607298b57a",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -809,7 +809,7 @@
         "end_line": null,
         "start_column": 2
       },
-      "finding": ".env.local ",
+      "finding": ".env.local\n",
       "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
       "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
       "code_snippet": "\n.gitignore must include:\n  .env\n  .env.local\n  .env.*.local\n  *.pem\n  *.key",
@@ -830,7 +830,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-7d8c32a5cc544bd49b4e20fb744d0053",
+      "finding_id": "finding-fae96c3a10434753bc5e0f9373e54770",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -894,7 +894,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -907,7 +907,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -920,7 +920,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -933,7 +933,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -946,7 +946,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1565,6 +1565,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 21,
-    "findings_after_filtering": 21
+    "findings_after_filtering": 21,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

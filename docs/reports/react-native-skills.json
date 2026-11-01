@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "vercel-react-native-skills",
-    "source": "/tmp/uniscan-o18cb49d/repo/skills/react-native-skills",
-    "scanned_at": "2026-10-25T08:03:12.281444+00:00"
+    "source": "/tmp/uniscan-577qeibn/repo/skills/react-native-skills",
+    "scanned_at": "2026-11-01T09:57:48.275567+00:00"
   },
   "risk_assessment": {
     "score": 46,
@@ -436,7 +436,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-e27733c347eb485ba039ba3d3877fe29",
+      "finding_id": "finding-36e166052ee34d38ac8a01f3031fb597",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -481,7 +481,7 @@
     },
     {
       "id": "P4",
-      "finding_id": "finding-5c541106ed99436ea3721e1f9a5d19b5",
+      "finding_id": "finding-b200f7e740664b0d8946bffcd5208ceb",
       "category": "Prompt Injection",
       "pattern": "Behavior Manipulation",
       "severity": "MEDIUM",
@@ -515,7 +515,7 @@
     },
     {
       "id": "P4",
-      "finding_id": "finding-f3ff29b600974ebeb59644c879d7df04",
+      "finding_id": "finding-e538cd3735464207b194b57b3f396d73",
       "category": "Prompt Injection",
       "pattern": "Behavior Manipulation",
       "severity": "MEDIUM",
@@ -549,7 +549,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-743cb98904f14879ba85aa00506d0756",
+      "finding_id": "finding-6ce36ab8e8b74d7991dc777c4f9ef75e",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -579,7 +579,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-9ca699b9cdc245ecac582a154304e940",
+      "finding_id": "finding-87d15543e95f48fc84e627f4a9f4b239",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -641,7 +641,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -654,7 +654,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -667,7 +667,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -680,7 +680,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -693,7 +693,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1138,6 +1138,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 5,
-    "findings_after_filtering": 5
+    "findings_after_filtering": 5,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

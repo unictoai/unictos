@@ -1,12 +1,12 @@
 {
   "skill": {
     "name": "supabase",
-    "source": "/tmp/uniscan-lo57uyt7/repo/skills/supabase",
-    "scanned_at": "2026-10-25T08:03:55.569446+00:00"
+    "source": "/tmp/uniscan-etygl03v/repo/skills/supabase",
+    "scanned_at": "2026-11-01T09:58:09.195264+00:00"
   },
   "risk_assessment": {
-    "score": 83,
-    "severity": "CRITICAL",
+    "score": 64,
+    "severity": "HIGH",
     "recommendation": "DO_NOT_INSTALL",
     "max_issue_severity": "HIGH"
   },
@@ -56,7 +56,7 @@
   "issues": [
     {
       "id": "PE3",
-      "finding_id": "finding-673d78ff0a1f4c38b06301b18d8bf514",
+      "finding_id": "finding-4db92a09fed3459c886a6c74867adb7a",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -88,7 +88,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-20ad765d397247f2a8ec01fa0127ed69",
+      "finding_id": "finding-665e8dc5bdf2436590fa53e2a1807f19",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -120,7 +120,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-292432a5a4cf48728783b40104508c30",
+      "finding_id": "finding-87566d100bc04a4c9c44799089ee8b3b",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -152,7 +152,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-9d2726abe2e54ad2874022c66e060488",
+      "finding_id": "finding-4329b22d2dbe46e5bb61a01576828cf5",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -184,7 +184,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-d02de9ccb18145b7a18c9953b9078aa5",
+      "finding_id": "finding-4eab585b86b14286bc0eb99a5451efac",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -216,7 +216,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-6fd23df8d10c4b83a860bea8f851579c",
+      "finding_id": "finding-dea93695e5bf4ddeb766b80011e14bf5",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -247,38 +247,8 @@
       ]
     },
     {
-      "id": "YR1",
-      "finding_id": "finding-48d5a6053fdd4f60953c006c2b4f777f",
-      "category": "YARA Match",
-      "pattern": "YARA rule 'info_stealer': Information stealer patterns (credential harvesting, browser data theft) [malware]",
-      "severity": "HIGH",
-      "confidence": 0.75,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 3,
-        "end_line": null
-      },
-      "finding": "cookies, getSession, getUser, getClaims, RLS); Supabase CLI or MCP server; schema changes, migrations, declarative schemas, security audits, Postgres extensions (pg_graphql, pg_cron, pg_vector); debug",
-      "explanation": "YARA rule matched a known malware signature (reverse shell, backdoor, ransomware, C2 framework, or info stealer).",
-      "remediation": "Remove the malware payload or compromised file entirely. Investigate how it entered the skill and audit all other artifacts for additional indicators of compromise.",
-      "code_snippet": "---\nname: supabase\ndescription: \"Use when doing ANY task involving Supabase. Triggers: Supabase products (Database, Auth, Edge Functions, Realtime, Storage, Vectors, Cron, Queues); client libraries and SSR integrations (supabase-js, @supabase/ssr) in Next.js, React, SvelteKit, Astro, Remix; auth issues (login, logout, sessions, JWT, cookies, getSession, getUser, getClaims, RLS); Supabase CLI or MCP server; schema changes, migrations, declarative schemas, security audits, Postgres extensions (pg_graphql, pg_cron, pg_vector); debugging and troubleshooting errors or unexpected behavior on Supabase projects (HTTP errors, Postgres errors, RLS surprises, permission denied, schema cache issues, timeouts, Edge Function crashes, Realtime drops, Storage failures) and reading or querying logs (Logs Explorer, ClickHouse).\"\nmetadata:\n  author: supabase\n  version: \"0.1.2\"\n---\n\n# Supabase\n\n## Core Principles\n\n**1. Supabase changes frequ",
-      "intent": null,
-      "tags": [
-        "YARA Match"
-      ],
-      "evidence": {},
-      "match_fingerprint": "293d73f5ef89357d4d22a9749d98561c9a43054b78c5e3a9e8ce486e2310b34b",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 3,
-          "end_line": null
-        }
-      ]
-    },
-    {
       "id": "PE3",
-      "finding_id": "finding-3f6dc980895f4e4ba9e4a8725593409f",
+      "finding_id": "finding-79b04988ce614c45af19c2109b9ee898",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -310,7 +280,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-85856c5bb8d347d5bd99c9027a69c5fc",
+      "finding_id": "finding-41ccabf87e3b4f929c118a2ed63ac8d9",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -342,7 +312,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-3224ae1396394566b46bd4f6acff6632",
+      "finding_id": "finding-ff2ce2ee90ef4b61a2180a505f51f4db",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -374,7 +344,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-c53be5a77fb84a0092ad1c7e97884932",
+      "finding_id": "finding-98a0264fd413433eb78c0ac341d1106a",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -406,7 +376,7 @@
     },
     {
       "id": "AS2",
-      "finding_id": "finding-4a543955402140e193e60947b0156e1d",
+      "finding_id": "finding-7bd6929a3fe24aa18f08d61f8242cec7",
       "category": "Agent Snooping",
       "pattern": "MCP Config Access",
       "severity": "HIGH",
@@ -418,8 +388,8 @@
         "start_column": 41
       },
       "finding": "mcp.json` with the correct server URL",
-      "explanation": "Skill accesses MCP server configuration files (mcp.json). MCP configs contain server URLs, authentication tokens, and tool definitions \u2014 reading them allows the skill to discover and potentially abuse other tool integrations.",
-      "remediation": "Remove all code or instructions that read MCP configuration files (mcp.json). MCP server details should be managed by the agent runtime, not read by individual skills.",
+      "explanation": "Skill accesses MCP server configuration files (such as mcp.json or claude_desktop_config.json). MCP configs contain server URLs, authentication tokens, and tool definitions \u2014 reading them allows the skill to discover and potentially abuse other tool integrations.",
+      "remediation": "Remove all code or instructions that read MCP configuration files (such as mcp.json or claude_desktop_config.json). MCP server details should be managed by the agent runtime, not read by individual skills.",
       "code_snippet": "   A `401` is expected (no token) and means the server is up. Timeout or \"connection refused\" means it may be down.\n\n2. **Check `.mcp.json` configuration:**\n   Verify the project root has a valid `.mcp.json` with the correct server URL. If missing, create one pointing to `https://mcp.supabase.com/mcp`.\n\n3. **Authenticate the MCP server:**\n   If the server is reachable and `.mcp.json` is correct but tools aren't visible, the user needs to authenticate. The Supabase MCP server uses OAuth 2.1 \u2014 tell the user to trigger the auth flow in their agent, complete it in the browser, and reload the session.",
       "intent": null,
       "tags": [
@@ -438,7 +408,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-54ce8839d47d451faa430b90377f8016",
+      "finding_id": "finding-505b04946a2349f0967f90b7ca1923ea",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -470,7 +440,7 @@
     },
     {
       "id": "PE1",
-      "finding_id": "finding-6dc5305eda044d64832760001995d11a",
+      "finding_id": "finding-183ab82bcbe04a3b800fc763af135bf3",
       "category": "Privilege Escalation",
       "pattern": "Excessive Permissions",
       "severity": "LOW",
@@ -534,7 +504,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -547,7 +517,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -560,7 +530,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -573,7 +543,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -586,7 +556,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -629,8 +599,8 @@
     "total_components": 4,
     "scanned_components": 4,
     "coverage_percent": 100.0,
-    "is_complete": false,
-    "status": "partial",
+    "is_complete": true,
+    "status": "complete_with_caveats",
     "execution_successful": true,
     "fully_inspected_files": 4,
     "partially_inspected_files": 0,
@@ -1169,7 +1139,15 @@
       }
     ],
     "limitations": [],
-    "findings_before_filtering": 14,
-    "findings_after_filtering": 14
+    "findings_before_filtering": 13,
+    "findings_after_filtering": 13,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

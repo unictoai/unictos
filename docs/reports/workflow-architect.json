@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "workflow-architect",
-    "source": "/tmp/uniscan-4w55p2rk/repo/skills/workflow-architect",
-    "scanned_at": "2026-10-25T08:17:52.565820+00:00"
+    "source": "/tmp/uniscan-frt162xn/repo/skills/workflow-architect",
+    "scanned_at": "2026-11-01T10:06:20.108660+00:00"
   },
   "risk_assessment": {
     "score": 7,
@@ -46,7 +46,7 @@
   "issues": [
     {
       "id": "OH3",
-      "finding_id": "finding-d837a5f604fb4234adcfde1be7c8fd14",
+      "finding_id": "finding-feaf6ac2ab8e42e8b63f8df5505dfb0a",
       "category": "Output Handling",
       "pattern": "Unbounded Output",
       "severity": "MEDIUM",
@@ -110,7 +110,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -123,7 +123,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -136,7 +136,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -149,7 +149,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -162,7 +162,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -525,6 +525,14 @@
     ],
     "limitations": [],
     "findings_before_filtering": 1,
-    "findings_after_filtering": 1
+    "findings_after_filtering": 1,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

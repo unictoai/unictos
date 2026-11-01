@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "ml-paper-writing",
-    "source": "/tmp/uniscan-b1ykxly4/repo/20-ml-paper-writing/ml-paper-writing",
-    "scanned_at": "2026-10-25T08:20:12.668318+00:00"
+    "source": "/tmp/uniscan-cci9b35x/repo/20-ml-paper-writing/ml-paper-writing",
+    "scanned_at": "2026-11-01T10:07:35.803903+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -526,7 +526,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-67ab045663da4e8280b67edbbee910b7",
+      "finding_id": "finding-1d491ef66b5a4ac490ba0337ed8061b5",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -571,7 +571,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-88087ff60d864a51bb4824169b96dd7c",
+      "finding_id": "finding-e65dbbadc6eb43718f2abea8faca6991",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -616,7 +616,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-8638b1fd374f4550b14403248796a9eb",
+      "finding_id": "finding-dcb04bfbe5dd4c90b921066f5573b156",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -661,7 +661,7 @@
     },
     {
       "id": "TM2",
-      "finding_id": "finding-3d1c48ca11bd4301944aeacaf2ca55db",
+      "finding_id": "finding-f31fe5591ad04968aae650e1de4ffcd4",
       "category": "Tool Misuse",
       "pattern": "Chaining Abuse",
       "severity": "HIGH",
@@ -693,7 +693,7 @@
     },
     {
       "id": "TM2",
-      "finding_id": "finding-c51dac7a3e824892890f136aec0b596d",
+      "finding_id": "finding-61e1e4d6ea6245de868c9412e461ed8c",
       "category": "Tool Misuse",
       "pattern": "Chaining Abuse",
       "severity": "HIGH",
@@ -725,7 +725,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-9c51d27fea044bf28cf9f39bb005dd7d",
+      "finding_id": "finding-3b4f8c83cf0b470ca79e1dcd8db07a5e",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx -y mcp-remote'.",
       "severity": "MEDIUM",
@@ -755,7 +755,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-929b264751454fe5b0eb00e17791d192",
+      "finding_id": "finding-c6e361b5c5f64406829966bd7655b201",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -787,7 +787,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-d4ca17b3bd0e4c07ac999ac5f0370392",
+      "finding_id": "finding-028b11254a7d4b15bf68c16fbe96ef92",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -819,7 +819,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-56d70c992dad46e99bd6a3d5087f2b68",
+      "finding_id": "finding-9d64010fac374f7ca9368d24ec0866f5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -851,7 +851,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-99ecf559fb1047a7bc8516cb9b363b69",
+      "finding_id": "finding-adb123953ff14d6db67892b98afc68d3",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -883,7 +883,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-cce3b8a401804d34ab118a27247b8209",
+      "finding_id": "finding-8c25fd636b104c66b11e292e7312532e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -915,7 +915,7 @@
     },
     {
       "id": "PE2",
-      "finding_id": "finding-7a2225f359544a2a8884b9b6b29061b4",
+      "finding_id": "finding-bedd9284bc6f4630a1285fb3f7b95a36",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -947,7 +947,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-532b475025ea4d6d902533c34bd0ba66",
+      "finding_id": "finding-d27ed56ed252463e9463691158ff58ab",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -979,7 +979,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-054fd76236bc4ec3a19018ec9147da6a",
+      "finding_id": "finding-2a64cb58ef224f8cb55078cbddeaada4",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1011,7 +1011,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-dce118bb0c4245d4aa5a405af10a5e1f",
+      "finding_id": "finding-eea90904532c46088420a3b6862bc4cb",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1043,7 +1043,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-c6eef00533b44c218ffeddc5a9236547",
+      "finding_id": "finding-d0d02c2da51c4472815f5b4b0f241043",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1075,7 +1075,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-0e6b4f6430f549fa865f93213914fbab",
+      "finding_id": "finding-0a6984b8e58e4a2284fe29a2f7846313",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1107,7 +1107,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-f420a080d59745cdbec75bfaab656123",
+      "finding_id": "finding-12a1d67c380a4583ab70f043013dea0a",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1139,7 +1139,7 @@
     },
     {
       "id": "EA3",
-      "finding_id": "finding-4dc4a0992b104a2b83d9f16ba4fa84b5",
+      "finding_id": "finding-d22faee13e6f43a4946783d16799ca11",
       "category": "Excessive Agency",
       "pattern": "Scope Creep",
       "severity": "LOW",
@@ -1203,7 +1203,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1216,7 +1216,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1229,7 +1229,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1242,7 +1242,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1255,7 +1255,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1331,8 +1331,8 @@
       {
         "outcome": "partial",
         "phase": "reference_resolution",
-        "reason_code": "reference_missing",
-        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "reason_code": "referenced_uninspected",
+        "message": "A referenced artifact was not completely inspected.",
         "path": "SKILL.md",
         "start_line": 463,
         "end_line": 463,
@@ -2002,8 +2002,8 @@
         "line": 463,
         "column": 39,
         "evidence": "**LaTeX Templates:** See [templates/](templates/) directory for all conference templates.",
-        "target_path": null,
-        "status": "missing",
+        "target_path": "templates",
+        "status": "uninspected",
         "disposition": "partial",
         "reference_kind": "markdown_link"
       },
@@ -2452,6 +2452,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 19,
-    "findings_after_filtering": 19
+    "findings_after_filtering": 19,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "web-artifacts-builder",
-    "source": "/tmp/uniscan-c1ivh7av/repo/skills/web-artifacts-builder",
-    "scanned_at": "2026-10-25T08:01:05.408241+00:00"
+    "source": "/tmp/uniscan-fp6vve96/repo/skills/web-artifacts-builder",
+    "scanned_at": "2026-11-01T09:56:41.875160+00:00"
   },
   "risk_assessment": {
     "score": 37,
@@ -66,7 +66,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-f3ab23fb77b7410092f0ce4c219110c1",
+      "finding_id": "finding-71d0b7ebbded491e9203a5e3f8ef4966",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -111,7 +111,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-6b0c487427d74309a548d28360015aa6",
+      "finding_id": "finding-ab74accd7d834db48e817d565782cf21",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -188,7 +188,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -201,7 +201,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -214,7 +214,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -227,7 +227,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -240,7 +240,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -715,6 +715,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 2,
-    "findings_after_filtering": 2
+    "findings_after_filtering": 2,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

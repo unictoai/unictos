@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "eas-workflows",
-    "source": "/tmp/uniscan-6ww7ukcg/repo/plugins/expo/skills/eas-workflows",
-    "scanned_at": "2026-10-25T08:09:31.506465+00:00"
+    "source": "/tmp/uniscan-t6mjm4m6/repo/plugins/expo/skills/eas-workflows",
+    "scanned_at": "2026-11-01T10:01:12.125399+00:00"
   },
   "risk_assessment": {
     "score": 43,
@@ -56,7 +56,7 @@
   "issues": [
     {
       "id": "LP1",
-      "finding_id": "finding-76c92ab9dc8d43b7b0e8ca1e2b6ec3e2",
+      "finding_id": "finding-021ac7ff735743339f32cb4999d948ed",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'network' detected in scripts/fetch.js but not covered by declared permissions.",
       "severity": "HIGH",
@@ -86,7 +86,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-7f7fd866b0194217b232b92644290aa9",
+      "finding_id": "finding-49407ace28ec4adb95c1641eae9e8a82",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -118,7 +118,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-24133173d1e14cf4ab5788481d7b74e8",
+      "finding_id": "finding-5b065ea8736b41f69c06c38074389b1b",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx -y eas-cli'.",
       "severity": "MEDIUM",
@@ -148,7 +148,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-e65cd6a5f97f460ba967a9fff3ff8163",
+      "finding_id": "finding-f758a9c1c80144ea8b7fd33b6634fd3b",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx --yes submit-expo-feedback'.",
       "severity": "MEDIUM",
@@ -178,7 +178,7 @@
     },
     {
       "id": "TR1",
-      "finding_id": "finding-d1f7f78752d3457eb57eb88c0329512a",
+      "finding_id": "finding-4c3896d49ea44b30990087fc979025b6",
       "category": "Trigger Abuse",
       "pattern": "Overly Broad Trigger",
       "severity": "LOW",
@@ -240,7 +240,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -253,7 +253,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -266,7 +266,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -279,7 +279,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -292,7 +292,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -335,8 +335,8 @@
     "total_components": 4,
     "scanned_components": 4,
     "coverage_percent": 100.0,
-    "is_complete": false,
-    "status": "partial",
+    "is_complete": true,
+    "status": "complete_with_caveats",
     "execution_successful": true,
     "fully_inspected_files": 4,
     "partially_inspected_files": 0,
@@ -654,6 +654,14 @@
     ],
     "limitations": [],
     "findings_before_filtering": 5,
-    "findings_after_filtering": 5
+    "findings_after_filtering": 5,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

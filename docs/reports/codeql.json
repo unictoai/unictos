@@ -1,11 +1,11 @@
 {
   "skill": {
     "name": "codeql",
-    "source": "/tmp/uniscan-ugd10zvz/repo/plugins/static-analysis/skills/codeql",
-    "scanned_at": "2026-10-25T08:04:47.644256+00:00"
+    "source": "/tmp/uniscan-7ttqctjm/repo/plugins/static-analysis/skills/codeql",
+    "scanned_at": "2026-11-01T09:58:35.184656+00:00"
   },
   "risk_assessment": {
-    "score": 96,
+    "score": 100,
     "severity": "CRITICAL",
     "recommendation": "DO_NOT_INSTALL",
     "max_issue_severity": "HIGH"
@@ -356,7 +356,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-5c0dd1d13de84f78812ea83905aa285b",
+      "finding_id": "finding-ae28458262cd4531a40afb29f549b7c5",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -401,7 +401,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-8e311da3d9524858836e69ca4364482c",
+      "finding_id": "finding-a4e8b1db979e45b1aff99ddcddf10170",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -446,7 +446,7 @@
     },
     {
       "id": "LP1",
-      "finding_id": "finding-0f107cc0f57f4592a97e10074fcf7a90",
+      "finding_id": "finding-3badfb1e83474da1be1d1b9be338be10",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'env' detected in scripts/test_generation_scripts.py but not covered by declared permissions.",
       "severity": "HIGH",
@@ -476,7 +476,7 @@
     },
     {
       "id": "TM3",
-      "finding_id": "finding-1c5630f6b65a49f989d5e66fe3addef7",
+      "finding_id": "finding-3d6d3f89ab3e4d2d9941514faa1953c3",
       "category": "Tool Misuse",
       "pattern": "Unsafe Defaults",
       "severity": "MEDIUM",
@@ -508,7 +508,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-cfe5144e91454e2380ae2e13df2cf825",
+      "finding_id": "finding-070a9848e0dc40b49eb6be2126021111",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -542,7 +542,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-88ba154f6b494603954fd3ab368fc1cf",
+      "finding_id": "finding-b4253c695b3c4e1fb3ea89a6c1504aff",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -576,7 +576,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-a26ff8255b004b2eaa33bdc67e13c143",
+      "finding_id": "finding-ee58763c42fd4ab9ab1eebd82d086e96",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -610,7 +610,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-5376181f98264f71a3e666d8f325239c",
+      "finding_id": "finding-2d074124fe2d45b7a88f6ae41fefae69",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -644,7 +644,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-b4015582a6994fb5965160547787fb79",
+      "finding_id": "finding-f620364e8f8947bda19d8ded015f5d59",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -677,8 +677,42 @@
       ]
     },
     {
+      "id": "TT2",
+      "finding_id": "finding-bf5ba312244f4e1180f333a54b814b87",
+      "category": "Data Flow",
+      "pattern": "Tainted flow: 'env' from os.environ (line 186, credential/environment) \u2192 subprocess.run (code execution)",
+      "severity": "MEDIUM",
+      "confidence": 0.65,
+      "location": {
+        "file": "scripts/test_generation_scripts.py",
+        "start_line": 192,
+        "end_line": 194,
+        "start_column": 11,
+        "end_column": 5
+      },
+      "finding": "subprocess.run(\n        [str(GENERATE_SUITE), mode], capture_output=True, text=True, env=env, cwd=tmp_path\n    )",
+      "explanation": "Data from a source is assigned to a variable that is later passed to a sink, creating a variable-mediated taint flow.",
+      "remediation": "Validate tainted variables before passing them to sinks. Use allowlists, type checks, or sanitization functions on data from external sources.",
+      "code_snippet": "        \"OUTPUT_DIR\": str(output_dir),\n        **env_extra,\n    }\n    return subprocess.run(\n        [str(GENERATE_SUITE), mode], capture_output=True, text=True, env=env, cwd=tmp_path\n    )\n",
+      "intent": null,
+      "tags": [
+        "Data Flow"
+      ],
+      "evidence": {},
+      "match_fingerprint": "5cc72354d8cdb7d45ce9faf065d4b16a2e30a8d2d99e06a9c551d36720e2fbc4",
+      "occurrences": [
+        {
+          "file": "scripts/test_generation_scripts.py",
+          "start_line": 192,
+          "end_line": 194,
+          "start_column": 11,
+          "end_column": 5
+        }
+      ]
+    },
+    {
       "id": "AST4",
-      "finding_id": "finding-bcba4161c4ff4af08b6b87e78084c197",
+      "finding_id": "finding-2afb3ee4ef2b44eeb3a22d84460da562",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -712,7 +746,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-e39c12b0a8264320855533c40965bc85",
+      "finding_id": "finding-51bf3cd0aa08479386d390237c5e49ea",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -746,7 +780,7 @@
     },
     {
       "id": "EA2",
-      "finding_id": "finding-862eb515f48c4bcba4cfe4329c0a9a7f",
+      "finding_id": "finding-0f3b601e76e74f159ce9f0cdfafa70fe",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -778,7 +812,7 @@
     },
     {
       "id": "AST6",
-      "finding_id": "finding-e557afd0931d4c238b18d3d2b17ae9b3",
+      "finding_id": "finding-2a13af400b3c4c8d98743bf4d010fd0d",
       "category": "Dangerous Code Execution",
       "pattern": "compile() call detected",
       "severity": "MEDIUM",
@@ -812,7 +846,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-08413d22ce2d4961978094c713db3e43",
+      "finding_id": "finding-1a6d8bf9461a4c9d899c017710977a7b",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -878,7 +912,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -891,7 +925,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -904,7 +938,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -917,7 +951,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -930,7 +964,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -2018,7 +2052,15 @@
     "limitations": [
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 14,
-    "findings_after_filtering": 14
+    "findings_before_filtering": 15,
+    "findings_after_filtering": 15,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

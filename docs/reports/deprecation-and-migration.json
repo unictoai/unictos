@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "deprecation-and-migration",
-    "source": "/tmp/uniscan-c6u0lb6a/repo/skills/deprecation-and-migration",
-    "scanned_at": "2026-10-25T08:10:23.972487+00:00"
+    "source": "/tmp/uniscan-_l89_1_c/repo/skills/deprecation-and-migration",
+    "scanned_at": "2026-11-01T10:01:38.621338+00:00"
   },
   "risk_assessment": {
     "score": 7,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "RP1",
-      "finding_id": "finding-8c02520ef14a4f7aa69e0f7f3ab20f1b",
+      "finding_id": "finding-e333fa973cac48f897808a8481f0a7be",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx migrate-check'.",
       "severity": "MEDIUM",
@@ -88,7 +88,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -101,7 +101,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -114,7 +114,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -127,7 +127,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -140,7 +140,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -482,6 +482,14 @@
     "references": [],
     "limitations": [],
     "findings_before_filtering": 1,
-    "findings_after_filtering": 1
+    "findings_after_filtering": 1,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

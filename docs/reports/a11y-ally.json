@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "a11y-ally",
-    "source": "/tmp/uniscan-fbm0k5q9/repo/.claude/skills/a11y-ally",
-    "scanned_at": "2026-10-25T08:26:53.302623+00:00"
+    "source": "/tmp/uniscan-aaqg1x29/repo/.claude/skills/a11y-ally",
+    "scanned_at": "2026-11-01T10:11:00.948098+00:00"
   },
   "risk_assessment": {
     "score": 28,
@@ -56,7 +56,7 @@
   "issues": [
     {
       "id": "MP3",
-      "finding_id": "finding-044e117af69747aab01371df3edbc58a",
+      "finding_id": "finding-27f5dc591cab41c8b7e1676fd03422f2",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -88,7 +88,7 @@
     },
     {
       "id": "AS3",
-      "finding_id": "finding-5bf687b240ac4f69bb16639af1599d7a",
+      "finding_id": "finding-bf2952e2408c438189beac904b6481a0",
       "category": "Agent Snooping",
       "pattern": "Skill Enumeration",
       "severity": "MEDIUM",
@@ -152,7 +152,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -165,7 +165,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -178,7 +178,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -191,7 +191,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -204,7 +204,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -903,6 +903,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 2,
-    "findings_after_filtering": 2
+    "findings_after_filtering": 2,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

@@ -1,14 +1,14 @@
 {
   "skill": {
     "name": "api-testing-rest",
-    "source": "/tmp/uniscan-u3guzs63/repo/packs/qa-essentials/skills/api-testing-rest",
-    "scanned_at": "2026-10-25T08:27:03.986700+00:00"
+    "source": "/tmp/uniscan-_mfkkdgl/repo/packs/qa-essentials/skills/api-testing-rest",
+    "scanned_at": "2026-11-01T10:11:08.335343+00:00"
   },
   "risk_assessment": {
-    "score": 20,
+    "score": 0,
     "severity": "LOW",
     "recommendation": "CAUTION",
-    "max_issue_severity": "HIGH"
+    "max_issue_severity": "NONE"
   },
   "components": [
     {
@@ -23,40 +23,7 @@
     }
   ],
   "structured_summaries": [],
-  "issues": [
-    {
-      "id": "TM1",
-      "finding_id": "finding-e2755efce48347e28b53314f5bda9e82",
-      "category": "Tool Misuse",
-      "pattern": "Tool Parameter Abuse",
-      "severity": "HIGH",
-      "confidence": 0.8,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 281,
-        "end_line": null,
-        "start_column": 12
-      },
-      "finding": "DELETE /api/users/:id",
-      "explanation": "Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks (e.g. shell=True, --force, dangerous glob patterns).",
-      "remediation": "Validate all tool parameters against an allowlist. Reject dangerous parameter values (shell=True, --force, -rf /) and use safe defaults.",
-      "code_snippet": "    });\n  });\n\n  describe('DELETE /api/users/:id', () => {\n    it('should delete user', async () => {\n      const response = await api.delete(`/api/users/${createdUserId}`);\n",
-      "intent": null,
-      "tags": [
-        "Tool Misuse"
-      ],
-      "evidence": {},
-      "match_fingerprint": "9f1906315ebc6fc66487d8309cebd49f2e3acb75715baa26d093773f431a4004",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 281,
-          "end_line": null,
-          "start_column": 12
-        }
-      ]
-    }
-  ],
+  "issues": [],
   "suppressed_count": 0,
   "suppressed": [],
   "metadata": {
@@ -90,7 +57,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -103,7 +70,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -116,7 +83,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -129,7 +96,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -142,7 +109,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -322,15 +289,15 @@
       },
       {
         "analyzer_id": "meta_analyzer",
-        "status": "disabled",
+        "status": "not_applicable",
         "planned_work": 0,
         "completed": 0,
         "partial": 0,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0,
-        "reason_code": "disabled_by_configuration",
-        "message": "Analyzer was disabled by the requested configuration."
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
       },
       {
         "analyzer_id": "semantic_developer_intent",
@@ -556,7 +523,15 @@
       "Analyzer static_patterns_system_prompt_leakage status: degraded.",
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 1,
-    "findings_after_filtering": 1
+    "findings_before_filtering": 0,
+    "findings_after_filtering": 0,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

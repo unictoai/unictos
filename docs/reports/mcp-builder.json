@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "mcp-builder",
-    "source": "/tmp/uniscan-_7mk2mtj/repo/skills/mcp-builder",
-    "scanned_at": "2026-10-25T08:29:51.109657+00:00"
+    "source": "/tmp/uniscan-jqvgaw__/repo/skills/mcp-builder",
+    "scanned_at": "2026-11-01T10:12:41.932290+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -116,7 +116,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-1d45da1310e64966af387d1ed9eddc44",
+      "finding_id": "finding-150ddc37b7aa4c89b798ec1cf60f3744",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -257,7 +257,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-10ee9038fd6f461e9af38d8c15b86334",
+      "finding_id": "finding-b6d087c86e184c12a8573312810373bf",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -398,7 +398,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-153f3f3a90564c5cbdf3f26883967fd1",
+      "finding_id": "finding-79bc3949218040dcaae534ebb172e251",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -539,7 +539,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-e23f636fea6342759d45c89cf1e06100",
+      "finding_id": "finding-0eff068d8703446cb750cfe2996eb0e5",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -584,7 +584,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-1d7040413e6646e2a5c6f6654c98679d",
+      "finding_id": "finding-04e827a93cb74c19a2985ff972c1448e",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -629,7 +629,7 @@
     },
     {
       "id": "AE1",
-      "finding_id": "finding-762193fd11984ce3a0c830d5ebca9ec9",
+      "finding_id": "finding-5d4f5f70ca084499b73a80d3bf5861ba",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -674,7 +674,7 @@
     },
     {
       "id": "EA5",
-      "finding_id": "finding-257c4746b5b54352848c15d7324d436f",
+      "finding_id": "finding-3547f6d6230c4195b5045cc66f92e5ca",
       "category": "Excessive Agency",
       "pattern": "External Model or Provider Selection",
       "severity": "HIGH",
@@ -710,7 +710,7 @@
     },
     {
       "id": "PE3",
-      "finding_id": "finding-d6f0ba79ffbc4a4ba37933c147788c7a",
+      "finding_id": "finding-16119156587246478da2256278419b77",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -744,7 +744,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-2e826916e91b49c69b4262a969f91d5c",
+      "finding_id": "finding-9d3f63cb29e04932b54efc700bc4ed3a",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: file_write, mcp.",
       "severity": "MEDIUM",
@@ -774,7 +774,7 @@
     },
     {
       "id": "RP1",
-      "finding_id": "finding-98508e64f197462cbc71ba535226e040",
+      "finding_id": "finding-d3089c36f6364011a6a7052ad5e42a61",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx @modelcontextprotocol/inspector'.",
       "severity": "MEDIUM",
@@ -804,7 +804,7 @@
     },
     {
       "id": "EA1",
-      "finding_id": "finding-6e8279e0357b456ba1c04f2e7d95cf08",
+      "finding_id": "finding-42e8dc7f77a24971bf7a5ae428efeb22",
       "category": "Excessive Agency",
       "pattern": "Unrestricted Tool Access",
       "severity": "MEDIUM",
@@ -836,7 +836,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-0df02ddeb47d4a02aeceac8ac26300f6",
+      "finding_id": "finding-8f96d30e82ce499e83d31300c947bcfe",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -868,7 +868,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-14158cd4b7b2458998736adc6de37114",
+      "finding_id": "finding-ec255acdfeae413a8b60bd51acd046e0",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -900,7 +900,7 @@
     },
     {
       "id": "SC1",
-      "finding_id": "finding-3716f983b4454b658bc2c82d92c9021d",
+      "finding_id": "finding-9bf8ac35961949349abede30e65038ec",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -932,7 +932,7 @@
     },
     {
       "id": "SC4",
-      "finding_id": "finding-886d8abc10f34672a21675d18e763d64",
+      "finding_id": "finding-21bfdf2fecf84a21bb70f7724554e1fb",
       "category": "Supply Chain",
       "pattern": "Unverifiable Dependency: anthropic has 4 known advisory(ies) (CVE-2026-34450 (Claude SDK for Python has Insecure Default File Permissions in Local Filesystem ); CVE-2026-34452 (Claude SDK for Python: Memory Tool Path Validation Race Condition Allows Sandbox); CVE-2026-34450 (The Claude SDK for Python provides access to the Claude API from Python applicat) +1 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
       "severity": "LOW",
@@ -962,7 +962,7 @@
     },
     {
       "id": "SC1",
-      "finding_id": "finding-ee485a5f64fe4f9ba139bf87094658a0",
+      "finding_id": "finding-7a99fd6aefc24991a31bed1934710c60",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -994,9 +994,9 @@
     },
     {
       "id": "SC4",
-      "finding_id": "finding-9a06200f78934101bbd9184634f3ea35",
+      "finding_id": "finding-8e026e4fe70d49729f3d68f79d85e47f",
       "category": "Supply Chain",
-      "pattern": "Unverifiable Dependency: mcp has 13 known advisory(ies) (CVE-2025-53366 (MCP Python SDK vulnerability in the FastMCP Server causes validation error, lead); CVE-2026-59951 (MCP Python SDK: Unbounded Session Accumulation in StreamableHTTP Transport Enabl); CVE-2025-66416 (Model Context Protocol (MCP) Python SDK does not enable DNS rebinding protection) +10 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
+      "pattern": "Unverifiable Dependency: mcp has 16 known advisory(ies) (CVE-2025-53366 (MCP Python SDK vulnerability in the FastMCP Server causes validation error, lead); CVE-2026-116685 (Model Context Protocol Python SDK: HTTP client transports followed cross-origin ); CVE-2026-59951 (MCP Python SDK: Unbounded Session Accumulation in StreamableHTTP Transport Enabl) +13 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
       "severity": "LOW",
       "confidence": 0.4,
       "location": {
@@ -1056,7 +1056,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1069,7 +1069,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1082,7 +1082,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1095,7 +1095,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1108,7 +1108,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1640,6 +1640,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 17,
-    "findings_after_filtering": 17
+    "findings_after_filtering": 17,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

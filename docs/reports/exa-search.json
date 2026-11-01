@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "exa-search",
-    "source": "/tmp/uniscan-az4ubufh/repo/skills/exa-search",
-    "scanned_at": "2026-10-25T08:05:09.998718+00:00"
+    "source": "/tmp/uniscan-hq1pjc6j/repo/skills/exa-search",
+    "scanned_at": "2026-11-01T09:58:54.828039+00:00"
   },
   "risk_assessment": {
     "score": 32,
@@ -66,7 +66,7 @@
   "issues": [
     {
       "id": "PE3",
-      "finding_id": "finding-127eb8b67d274c54a8200fc0683ada47",
+      "finding_id": "finding-ab8399f162214add899c017c140a6696",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -98,7 +98,7 @@
     },
     {
       "id": "LP3",
-      "finding_id": "finding-c3833711244645169724b162027021f0",
+      "finding_id": "finding-8aeb742149dd47cea0ae25192e674885",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, file_write.",
       "severity": "MEDIUM",
@@ -128,7 +128,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-e686216749b74a2b85e963702d68bb36",
+      "finding_id": "finding-38cf9b5ed5f74bf9aa88ad802d3fe424",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -160,7 +160,7 @@
     },
     {
       "id": "E1",
-      "finding_id": "finding-2b3dea35ce9345e2ad44253aacfb7e8c",
+      "finding_id": "finding-04b8062f24994b189e24997d99f99c61",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -192,7 +192,7 @@
     },
     {
       "id": "AST7",
-      "finding_id": "finding-4acea386c260494d83e0f194c07b3513",
+      "finding_id": "finding-f02f4e32c6e4403dbf12e0d53024a1d7",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic attribute access via getattr()",
       "severity": "LOW",
@@ -258,7 +258,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -271,7 +271,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -284,7 +284,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -297,7 +297,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -310,7 +310,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -353,8 +353,8 @@
     "total_components": 5,
     "scanned_components": 5,
     "coverage_percent": 100.0,
-    "is_complete": false,
-    "status": "partial",
+    "is_complete": true,
+    "status": "complete_with_caveats",
     "execution_successful": true,
     "fully_inspected_files": 5,
     "partially_inspected_files": 0,
@@ -908,6 +908,14 @@
     ],
     "limitations": [],
     "findings_before_filtering": 5,
-    "findings_after_filtering": 5
+    "findings_after_filtering": 5,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }

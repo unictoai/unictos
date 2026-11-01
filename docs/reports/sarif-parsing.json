@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "sarif-parsing",
-    "source": "/tmp/uniscan-bntg1346/repo/plugins/static-analysis/skills/sarif-parsing",
-    "scanned_at": "2026-10-25T08:11:44.878616+00:00"
+    "source": "/tmp/uniscan-yxuf0i6x/repo/plugins/static-analysis/skills/sarif-parsing",
+    "scanned_at": "2026-11-01T10:02:22.531797+00:00"
   },
   "risk_assessment": {
     "score": 87,
@@ -96,7 +96,7 @@
   "issues": [
     {
       "id": "P6",
-      "finding_id": "finding-c1055e14dce64b02b216a82e46bccfb5",
+      "finding_id": "finding-980a7c54f82c45c5b39727603aee584b",
       "category": "System Prompt Leakage",
       "pattern": "Direct Prompt Extraction",
       "severity": "HIGH",
@@ -128,7 +128,7 @@
     },
     {
       "id": "P6",
-      "finding_id": "finding-c7a0097f206d4e2794aa14c587539f83",
+      "finding_id": "finding-344f507023c14e5087add5231dc9a24c",
       "category": "System Prompt Leakage",
       "pattern": "Direct Prompt Extraction",
       "severity": "HIGH",
@@ -160,7 +160,7 @@
     },
     {
       "id": "LP1",
-      "finding_id": "finding-294fcf252df8407e99f3b3973050d2c0",
+      "finding_id": "finding-09aac409b9414444a5b566a30ebfe52b",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'file_write' detected in resources/sarif_helpers.py but not covered by declared permissions.",
       "severity": "HIGH",
@@ -190,7 +190,7 @@
     },
     {
       "id": "LP1",
-      "finding_id": "finding-ee1ea491b93d4403b04de87fe1dc4a17",
+      "finding_id": "finding-682866f14c3c4e64be0ba7a86b405635",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'network' detected in resources/sarif_helpers.py but not covered by declared permissions.",
       "severity": "HIGH",
@@ -220,7 +220,7 @@
     },
     {
       "id": "P6",
-      "finding_id": "finding-5b69c2727ae04ddf9725f3552c5babcd",
+      "finding_id": "finding-9d4b6e06bbae4e26ae1d0cfe91241e80",
       "category": "System Prompt Leakage",
       "pattern": "Direct Prompt Extraction",
       "severity": "HIGH",
@@ -252,7 +252,7 @@
     },
     {
       "id": "P6",
-      "finding_id": "finding-02be67889db14686952f7ed8f15912b0",
+      "finding_id": "finding-a31bf0520eb540f099a8e0ea7d30f65c",
       "category": "System Prompt Leakage",
       "pattern": "Direct Prompt Extraction",
       "severity": "HIGH",
@@ -284,7 +284,7 @@
     },
     {
       "id": "AST4",
-      "finding_id": "finding-a2df3cd815d5487992212f220891745b",
+      "finding_id": "finding-7db3f1ef76f44508a75ec903f10a2a3b",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -350,7 +350,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -363,7 +363,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -376,7 +376,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -389,7 +389,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -402,7 +402,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
               "source": "package_vcs_metadata"
             }
           }
@@ -1399,6 +1399,14 @@
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
     "findings_before_filtering": 7,
-    "findings_after_filtering": 7
+    "findings_after_filtering": 7,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
   }
 }
