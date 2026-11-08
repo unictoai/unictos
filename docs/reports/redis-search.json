@@ -1,11 +1,11 @@
 {
   "skill": {
     "name": "redis-search",
-    "source": "/tmp/uniscan-m5opfbv4/repo/skills/redis-search",
-    "scanned_at": "2026-11-01T10:13:03.676420+00:00"
+    "source": "/tmp/uniscan-gd211vse/repo/skills/redis-search",
+    "scanned_at": "2026-11-08T10:00:24.180580+00:00"
   },
   "risk_assessment": {
-    "score": 43,
+    "score": 37,
     "severity": "MEDIUM",
     "recommendation": "CAUTION",
     "max_issue_severity": "HIGH"
@@ -246,52 +246,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-49c1daff48a1474c82f1047e1b0e8a43",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 171,
-        "end_line": null
-      },
-      "finding": "references/aggregate-pipeline.md (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": " + `FT.CURSOR READ` to page server-side. See [references/aggregate-pipeline.md](references/aggregate-pipeline.md) and [references/aggregate-cursors.md](referenc",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
-      ],
-      "evidence": {
-        "target_path": "references/aggregate-pipeline.md",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "24e7399801f044a9894e4c7c00c1dec816ab12074915e10fb7010c7594ffb2ff",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 171,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-e405d0f192164cf58782dd517665e147",
+      "finding_id": "finding-b7da21b9516445a3943a8d313d5ab888",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -317,7 +272,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -332,11 +287,12 @@
           "start_line": 207,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-8c7355cad82f4ce499c7cbd90ba82b2b",
+      "finding_id": "finding-85609c601f8048bf9815cb32fbdcf96e",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -362,7 +318,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -377,7 +333,8 @@
           "start_line": 208,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -413,7 +370,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -426,7 +383,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -439,7 +396,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -452,7 +409,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -465,7 +422,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -506,13 +463,13 @@
   "execution_successful": true,
   "analysis_completeness": {
     "total_components": 23,
-    "scanned_components": 20,
-    "coverage_percent": 87.0,
+    "scanned_components": 21,
+    "coverage_percent": 91.3,
     "is_complete": false,
     "status": "partial",
     "execution_successful": true,
-    "fully_inspected_files": 20,
-    "partially_inspected_files": 3,
+    "fully_inspected_files": 21,
+    "partially_inspected_files": 2,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
       {
@@ -649,40 +606,53 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "references/aggregate-pipeline.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command word boundary; location: reported source range; unchecked scope: command word. Relevant parser input fully checked.",
         "path": "references/clients/java-jedis.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "command_word_boundary",
+          "source_start_offset": 43014,
+          "source_end_offset": 50966,
+          "start_line": 916,
+          "end_line": 1018,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": false,
+          "full_input_checked": true,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command argument boundary; location: reported source range; unchecked scope: command arguments. Relevant parser input not fully checked. Parser measurements: characters: observed at least 8192, limit 8192.",
         "path": "references/clients/python-redisvl.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "command_argument_boundary",
+          "source_start_offset": 9227,
+          "source_end_offset": 17425,
+          "start_line": 142,
+          "end_line": 330,
+          "unchecked_scope": "command_arguments",
+          "observed_is_lower_bound": true,
+          "full_input_checked": false,
+          "location_precision": "source_span",
+          "observed_characters": 8192,
+          "limit_characters": 8192
+        }
       }
     ],
     "scope_exclusions": [],
@@ -780,8 +750,8 @@
       {
         "analyzer_id": "reference_coverage",
         "status": "completed",
-        "planned_work": 3,
-        "completed": 3,
+        "planned_work": 2,
+        "completed": 2,
         "partial": 0,
         "skipped": 0,
         "failed": 0,
@@ -967,8 +937,8 @@
         "analyzer_id": "static_patterns_tool_misuse",
         "status": "degraded",
         "planned_work": 23,
-        "completed": 20,
-        "partial": 3,
+        "completed": 21,
+        "partial": 2,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -1779,8 +1749,8 @@
     "limitations": [
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 3,
-    "findings_after_filtering": 3,
+    "findings_before_filtering": 2,
+    "findings_after_filtering": 2,
     "dependency_inspection": {
       "enabled": false,
       "status": "not_requested",

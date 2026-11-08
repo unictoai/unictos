@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "security-and-hardening",
-    "source": "/tmp/uniscan-_nu3mpiq/repo/skills/security-and-hardening",
-    "scanned_at": "2026-11-01T10:02:43.285425+00:00"
+    "source": "/tmp/uniscan-wqoqcwj9/repo/skills/security-and-hardening",
+    "scanned_at": "2026-11-08T09:50:52.944300+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -36,7 +36,7 @@
   "issues": [
     {
       "id": "YR4",
-      "finding_id": "finding-7021de65119f4690bb3e6f63c129abc3",
+      "finding_id": "finding-6a8fbfc5ee9540bb81506a16aead1109",
       "category": "YARA Match",
       "pattern": "YARA rule 'agent_skill_prompt_injection_hidden_instructions': Prompt injection or hidden instructions embedded in AI agent skill text [agent_skills]",
       "severity": "HIGH",
@@ -62,11 +62,12 @@
           "start_line": 21,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-4fd4e756df4145cc89fe6a4485fbd497",
+      "finding_id": "finding-e546af1eaf98494aadbda47a85f8f68d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -92,7 +93,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -107,11 +108,12 @@
           "start_line": 77,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a97735693efc478287d80e37d8875d33",
+      "finding_id": "finding-539edfdaced2449dbf73dc4c8d5f58b0",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -137,7 +139,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -152,11 +154,12 @@
           "start_line": 85,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-5bc34c3e0c05450dadc1312d95f1ccbd",
+      "finding_id": "finding-7e4ba9ee7ae34d2ebcbd1818b21732e2",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -182,7 +185,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -197,11 +200,12 @@
           "start_line": 92,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-3e9ddfd6f7374b8faae5f1c0c384ed58",
+      "finding_id": "finding-9d88fbcfcec949b2a7436801539a98ec",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -227,7 +231,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -242,11 +246,12 @@
           "start_line": 100,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-8e75f21ab7b4450db929b298cb92c56e",
+      "finding_id": "finding-8283c38c4bca4211949458ac1778610d",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -272,7 +277,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -287,11 +292,12 @@
           "start_line": 107,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-eae0c102986b491a8afa9ca5ebaa332d",
+      "finding_id": "finding-226bebcf2679409a821494af6a81fef5",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -317,7 +323,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -332,11 +338,12 @@
           "start_line": 113,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-b7b2d9e4e441496299adcd4abe23d783",
+      "finding_id": "finding-7f236a75031e4d4a86649defa832d0dd",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -362,7 +369,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -377,11 +384,12 @@
           "start_line": 119,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-7d7a22eb324645f8a1c7e7718d777d0b",
+      "finding_id": "finding-38ba496cc2da44cbbc099ae3628364f2",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -407,7 +415,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -422,11 +430,12 @@
           "start_line": 125,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-4d584b765e5e482ebd6b17e38257bfcc",
+      "finding_id": "finding-6bccefa2e02b47fd9226052af2b446d6",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -452,7 +461,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -467,11 +476,12 @@
           "start_line": 131,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-e5c432f5396a4b17b6a686a8a956bf40",
+      "finding_id": "finding-744ef1ab471e4c48af7f377a3402d947",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -497,7 +507,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -512,11 +522,12 @@
           "start_line": 140,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-631001c9948246708ea9cdc078f7517f",
+      "finding_id": "finding-8c844a0535764baf93f9a3035e2795d1",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -542,7 +553,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -557,11 +568,12 @@
           "start_line": 152,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-c23af9318f6647af841410bd803207a3",
+      "finding_id": "finding-beb5214dd71a41209482994a67e42df9",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -587,7 +599,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -602,11 +614,12 @@
           "start_line": 162,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "MP3",
-      "finding_id": "finding-3f721b8756e24ae0b98378a8fd16cb91",
+      "finding_id": "finding-ab13ff214b2d47d2ae8113140e4ebb93",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -634,11 +647,12 @@
           "end_line": null,
           "start_column": 265
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "SSRF1",
-      "finding_id": "finding-2616a22842404ca79a39c18031347f5a",
+      "finding_id": "finding-0f2acb8ad8604e9a82f2d3ca586042f3",
       "category": "Server-Side Request Forgery",
       "pattern": "Cloud Metadata Access",
       "severity": "HIGH",
@@ -666,11 +680,12 @@
           "end_line": null,
           "start_column": 63
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-bb8e0bad0e62487496344dc53c46b300",
+      "finding_id": "finding-32640800d1ce42c39752889e38189aa7",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -698,11 +713,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-c3213134d2a34c76b8f3135ecc4781a5",
+      "finding_id": "finding-d4a216c1c85443688ef9fba0d1f2ea79",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -730,11 +746,12 @@
           "end_line": null,
           "start_column": 6
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-6aa90eec111245c682685e08553fde74",
+      "finding_id": "finding-27db2c409dd4435cbb79605d2dc6d71f",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -762,11 +779,12 @@
           "end_line": null,
           "start_column": 2
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-402d0e5b48d94aa785c524c72fe45c3b",
+      "finding_id": "finding-9c93808bfea04f179afee5ae5278390e",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -794,11 +812,12 @@
           "end_line": null,
           "start_column": 6
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-5d48365614014e86bca16d607298b57a",
+      "finding_id": "finding-99ab5153b3304a15821a688200a4d9bf",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -826,11 +845,12 @@
           "end_line": null,
           "start_column": 2
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-fae96c3a10434753bc5e0f9373e54770",
+      "finding_id": "finding-620ef5cc893c47e4b22a66aec7250d8d",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -858,7 +878,8 @@
           "end_line": null,
           "start_column": 44
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -894,7 +915,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -907,7 +928,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -920,7 +941,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -933,7 +954,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -946,7 +967,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1020,14 +1041,26 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: expansion boundary; location: reported source range; unchecked scope: expression. Relevant parser input fully checked.",
         "path": "references/hardening-patterns.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "expansion_boundary",
+          "source_start_offset": 12334,
+          "source_end_offset": 12895,
+          "start_line": 311,
+          "end_line": 324,
+          "unchecked_scope": "expression",
+          "observed_is_lower_bound": false,
+          "full_input_checked": true,
+          "location_precision": "source_span"
+        }
       }
     ],
     "scope_exclusions": [],

@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "test-driven-development",
-    "source": "/tmp/uniscan-kmcqhkht/repo/skills/test-driven-development",
-    "scanned_at": "2026-11-01T10:00:23.354030+00:00"
+    "source": "/tmp/uniscan-hetja_do/repo/skills/test-driven-development",
+    "scanned_at": "2026-11-08T09:48:43.456127+00:00"
   },
   "risk_assessment": {
     "score": 7,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "EA2",
-      "finding_id": "finding-c47476a6f9f145719c2657be753543be",
+      "finding_id": "finding-cead5e96437a40e084dd4dc9f7b8543d",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -54,7 +54,8 @@
           "end_line": null,
           "start_column": 51
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -90,7 +91,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -103,7 +104,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -116,7 +117,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -129,7 +130,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -142,7 +143,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }

@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "resend-cli",
-    "source": "/tmp/uniscan-sun3h1xa/repo/skills/resend-cli",
-    "scanned_at": "2026-11-01T10:06:01.967405+00:00"
+    "source": "/tmp/uniscan-3er4cw62/repo/skills/resend-cli",
+    "scanned_at": "2026-11-08T09:53:52.725045+00:00"
   },
   "risk_assessment": {
     "score": 52,
@@ -196,7 +196,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-a3fb169b2d724dc09a0dbd1df1f5721d",
+      "finding_id": "finding-2a3cdb17f18741f5a24cbaf2ac2e46c0",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -222,7 +222,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -237,11 +237,12 @@
           "start_line": 64,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-2372c0b9303342329552ffb2dd7176ef",
+      "finding_id": "finding-8a5b680bf8de4db6976a84cd57b1cdbc",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -267,7 +268,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -282,11 +283,12 @@
           "start_line": 228,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-4b30eefeafce4ce38cb4889444f0d706",
+      "finding_id": "finding-735c1dda32e14d1c87653b5c1936d615",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -314,11 +316,12 @@
           "end_line": null,
           "start_column": 46
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-f55d225a4ab64142805477166c852e82",
+      "finding_id": "finding-b5de693f5bf84f16b96fb15d93f2994c",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -346,11 +349,12 @@
           "end_line": null,
           "start_column": 46
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-ed68b110c032488e9a168da341fbe303",
+      "finding_id": "finding-b0e98b1ce2bf422581253f41972e070a",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -378,11 +382,12 @@
           "end_line": null,
           "start_column": 46
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-0d2985e72d904e8ab79c4fd821629abb",
+      "finding_id": "finding-f440d59ea86240b3837d0b23f7086be3",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -410,11 +415,12 @@
           "end_line": null,
           "start_column": 46
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-677bdca3d53c448ebf68d4e6a43da0fe",
+      "finding_id": "finding-aa4da0e39e504949a070bb743734dc03",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -442,11 +448,12 @@
           "end_line": null,
           "start_column": 46
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-6a7c9f325f064975b97a8eb5190dedf8",
+      "finding_id": "finding-d3f0c45e14f14a409a04a6000f6d77ef",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -474,11 +481,12 @@
           "end_line": null,
           "start_column": 46
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-ba7813335bb044bdba25e740f4f4346a",
+      "finding_id": "finding-a64d21dfebb4411a86c651d08b2f75aa",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -506,11 +514,12 @@
           "end_line": null,
           "start_column": 46
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-fc3418d3fa824adbbfb24e072bcef7dd",
+      "finding_id": "finding-6750dc3ea47b401b9bf8a85f5998db84",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -538,11 +547,12 @@
           "end_line": null,
           "start_column": 46
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-c9c7c31f8ade43d085c1a57e8fea6973",
+      "finding_id": "finding-cd8c00a13689432893c6bf76ac8c7bd5",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -570,11 +580,12 @@
           "end_line": null,
           "start_column": 46
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-dc874df9b2544df78cb2afb25995ffa8",
+      "finding_id": "finding-e0df3c01481c4a36abe21a08157d94fa",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -602,11 +613,12 @@
           "end_line": null,
           "start_column": 46
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-a5c9a5e511444f6ab0c7248987ecb6ae",
+      "finding_id": "finding-7da17a6895f644fcafd53260ca01d650",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -634,11 +646,12 @@
           "end_line": null,
           "start_column": 46
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-d2ef777888394c7da6eb2777a0b85813",
+      "finding_id": "finding-11e6a01cd013463a8cc742b052932a1e",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -666,7 +679,8 @@
           "end_line": null,
           "start_column": 46
         }
-      ]
+      ],
+      "surface": "docs"
     }
   ],
   "suppressed_count": 0,
@@ -702,7 +716,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -715,7 +729,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -728,7 +742,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -741,7 +755,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -754,7 +768,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -873,14 +887,26 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command argument boundary; location: reported source range; unchecked scope: command arguments. Relevant parser input fully checked.",
         "path": "references/workflows.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "command_argument_boundary",
+          "source_start_offset": 9281,
+          "source_end_offset": 11850,
+          "start_line": 368,
+          "end_line": 452,
+          "unchecked_scope": "command_arguments",
+          "observed_is_lower_bound": false,
+          "full_input_checked": true,
+          "location_precision": "source_span"
+        }
       }
     ],
     "scope_exclusions": [],

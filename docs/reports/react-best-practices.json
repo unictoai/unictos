@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "vercel-react-best-practices",
-    "source": "/tmp/uniscan-nxlwze3t/repo/skills/react-best-practices",
-    "scanned_at": "2026-11-01T09:55:13.552762+00:00"
+    "source": "/tmp/uniscan-ftzygsee/repo/skills/react-best-practices",
+    "scanned_at": "2026-11-08T09:43:50.230715+00:00"
   },
   "risk_assessment": {
     "score": 59,
@@ -776,7 +776,7 @@
   "issues": [
     {
       "id": "OH1",
-      "finding_id": "finding-803115c21d67453b8327dfbf1691d932",
+      "finding_id": "finding-728df83e200040e1bc8225c414f99122",
       "category": "Output Handling",
       "pattern": "Unvalidated Output Injection",
       "severity": "HIGH",
@@ -804,11 +804,12 @@
           "end_line": null,
           "start_column": 8
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "OH1",
-      "finding_id": "finding-2cdae4cedc304bf59bd83b7322ac5f59",
+      "finding_id": "finding-b756fd17a4184b9f96b060a7390cdede",
       "category": "Output Handling",
       "pattern": "Unvalidated Output Injection",
       "severity": "HIGH",
@@ -836,11 +837,12 @@
           "end_line": null,
           "start_column": 8
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-82c760b89b22413fa4a0f8162a97de45",
+      "finding_id": "finding-f5d22a367658434f81d2301e41112098",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -866,7 +868,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -881,11 +883,12 @@
           "start_line": 149,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-6416fd50b16749c6913a116327b82136",
+      "finding_id": "finding-7ffc152ebaf94c1dbb1495fc22c93169",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx svgo'.",
       "severity": "MEDIUM",
@@ -911,11 +914,12 @@
           "start_line": 2477,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-29094ef7b3b042b8a58d7040bf21ae2a",
+      "finding_id": "finding-32e61699c3764326b294a92181c5c18d",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx svgo'.",
       "severity": "MEDIUM",
@@ -941,7 +945,8 @@
           "start_line": 27,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "docs"
     }
   ],
   "suppressed_count": 0,
@@ -977,7 +982,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -990,7 +995,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1003,7 +1008,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1016,7 +1021,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1029,7 +1034,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1083,14 +1088,26 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: expansion boundary; location: reported source range; unchecked scope: expression. Relevant parser input fully checked.",
         "path": "AGENTS.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "expansion_boundary",
+          "source_start_offset": 97130,
+          "source_end_offset": 108212,
+          "start_line": 3401,
+          "end_line": 3810,
+          "unchecked_scope": "expression",
+          "observed_is_lower_bound": false,
+          "full_input_checked": true,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",

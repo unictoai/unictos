@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "workflow-architect",
-    "source": "/tmp/uniscan-frt162xn/repo/skills/workflow-architect",
-    "scanned_at": "2026-11-01T10:06:20.108660+00:00"
+    "source": "/tmp/uniscan-xijp2808/repo/skills/workflow-architect",
+    "scanned_at": "2026-11-08T09:54:09.231204+00:00"
   },
   "risk_assessment": {
     "score": 7,
@@ -46,7 +46,7 @@
   "issues": [
     {
       "id": "OH3",
-      "finding_id": "finding-feaf6ac2ab8e42e8b63f8df5505dfb0a",
+      "finding_id": "finding-febd181d32b54107b2f302bbd067c718",
       "category": "Output Handling",
       "pattern": "Unbounded Output",
       "severity": "MEDIUM",
@@ -74,7 +74,8 @@
           "end_line": null,
           "start_column": 25
         }
-      ]
+      ],
+      "surface": "docs"
     }
   ],
   "suppressed_count": 0,
@@ -110,7 +111,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -123,7 +124,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -136,7 +137,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -149,7 +150,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -162,7 +163,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }

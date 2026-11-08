@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "vercel-optimize",
-    "source": "/tmp/uniscan-m9xv_v7d/repo/skills/vercel-optimize",
-    "scanned_at": "2026-11-01T10:00:01.786713+00:00"
+    "source": "/tmp/uniscan-zut0iny_/repo/skills/vercel-optimize",
+    "scanned_at": "2026-11-08T09:48:22.859531+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -1576,7 +1576,191 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-53f21ac7fe6f4a10889ff1f9601dc8ff",
+      "finding_id": "finding-f99364fd45604ad89248b3ee9b520dfe",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 15,
+        "end_line": null
+      },
+      "finding": "scripts/gate-investigations.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "- Deterministic gates. `scripts/gate-investigations.mjs` decides what deserves investigation.",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/gate-investigations.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "73c62dccb85c96c965138cf0d3c3a9cb664468f64ffaf175b674aeb6d910991c",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 15,
+          "end_line": null
+        }
+      ],
+      "surface": "instructions"
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-92f8dd53cde74a968b85d38551039334",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 127,
+        "end_line": null
+      },
+      "finding": "scripts/gate-investigations.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "node scripts/gate-investigations.mjs \"$RUN_DIR/signals.json\" > \"$RUN_DIR/gate.json\"",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/gate-investigations.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "73c62dccb85c96c965138cf0d3c3a9cb664468f64ffaf175b674aeb6d910991c",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 127,
+          "end_line": null
+        }
+      ],
+      "surface": "instructions"
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-8d0ee8efbe08407f89d41ab07b8d13ee",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 140,
+        "end_line": null
+      },
+      "finding": "scripts/gate-investigations.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "node scripts/gate-investigations.mjs \"$RUN_DIR/signals.json\" --max-candidates 12 > \"$RUN_DIR/gate.json\"",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/gate-investigations.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "73c62dccb85c96c965138cf0d3c3a9cb664468f64ffaf175b674aeb6d910991c",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 140,
+          "end_line": null
+        }
+      ],
+      "surface": "instructions"
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-ce9f757f738149d9ac30357a6878b863",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 141,
+        "end_line": null
+      },
+      "finding": "scripts/gate-investigations.mjs (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "node scripts/gate-investigations.mjs \"$RUN_DIR/signals.json\" --max-candidates all > \"$RUN_DIR/gate.json\"",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/gate-investigations.mjs",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "73c62dccb85c96c965138cf0d3c3a9cb664468f64ffaf175b674aeb6d910991c",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 141,
+          "end_line": null
+        }
+      ],
+      "surface": "instructions"
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-b54812570ad4472fa0ae409496738747",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1602,7 +1786,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -1617,11 +1801,12 @@
           "start_line": 68,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a201fce1144e41918bac8e4de40e64ca",
+      "finding_id": "finding-f8dca82c91ed4f82ba5b8b8bdb30e8c3",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1647,7 +1832,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -1662,11 +1847,12 @@
           "start_line": 77,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-94818f0d120240b4b9f76c3db7c7c64e",
+      "finding_id": "finding-c2b14be5b5c54fb9ab5aff4df4c57aa1",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1692,7 +1878,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -1707,56 +1893,12 @@
           "start_line": 119,
           "end_line": null
         }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-f4b71f1245414cd2b57f9ac40e80fede",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 71,
-        "end_line": null
-      },
-      "finding": "scripts/scan-codebase.mjs (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "node scripts/scan-codebase.mjs <repo-root> > \"$RUN_DIR/codebase.json\"",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
       ],
-      "evidence": {
-        "target_path": "scripts/scan-codebase.mjs",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "ffdb047f1f15c59e2f6d2bd20c7d0dc11fcf8050f98252a734f19fbb06b041c3",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 71,
-          "end_line": null
-        }
-      ]
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-6cd0122a57974ebcbe7c5044986d6fe2",
+      "finding_id": "finding-f819741a9aca407e93bd5975c779f73f",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1782,7 +1924,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -1797,56 +1939,12 @@
           "start_line": 72,
           "end_line": null
         }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-eeba59a2a763447180b445d095233ab3",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 167,
-        "end_line": null
-      },
-      "finding": "scripts/deep-dive.mjs (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "node scripts/deep-dive.mjs \"$RUN_DIR/signals.json\" \"$RUN_DIR/gate.json\" --cwd <project-dir> > \"$RUN_DIR/investigation-evidence.json\"",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
       ],
-      "evidence": {
-        "target_path": "scripts/deep-dive.mjs",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "48fd85d5858a1d1829e90569b0475e8f1d452d6238dc46f9643d07ffdd58e1d2",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 167,
-          "end_line": null
-        }
-      ]
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-4c727a92af2b4fe780119fd3af9bae65",
+      "finding_id": "finding-07b55d0f981647898beb7bb698547c11",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1872,7 +1970,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -1887,11 +1985,12 @@
           "start_line": 188,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-fb8d7f53aa3844aea631a8d8ee1fa65f",
+      "finding_id": "finding-65c60a86cb604b40988cecb24c4c08fd",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1917,7 +2016,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -1932,11 +2031,12 @@
           "start_line": 195,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-3a65fd27937d4a11ad173f11fce357b7",
+      "finding_id": "finding-d739504a40364ccea460a5ad78eb4e24",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2073,11 +2173,12 @@
           "start_line": 211,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-b32da3463b774a0e93e67e0cf785882e",
+      "finding_id": "finding-13c9e56c0b48471996b1f4ff80d6b2fa",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2214,11 +2315,12 @@
           "start_line": 241,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-77aef741cbe3413ba9eb4e9e5f7c2399",
+      "finding_id": "finding-99fb5126eea6459b8719634864d28aa5",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2244,7 +2346,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -2259,56 +2361,12 @@
           "start_line": 222,
           "end_line": null
         }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-b1127b82003f42bcb617fc8d47bf30ca",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 233,
-        "end_line": null
-      },
-      "finding": "scripts/verify-and-regen.mjs (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "node scripts/verify-and-regen.mjs \"$RUN_DIR/recommendations.json\" \\",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
       ],
-      "evidence": {
-        "target_path": "scripts/verify-and-regen.mjs",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "0c56a9c04e4bdf920045216a8004ad9fbb36496ac6e321aee54ae8b4679963bc",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 233,
-          "end_line": null
-        }
-      ]
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-f6b1df286aed41f69aa54e86d914cb22",
+      "finding_id": "finding-c5feadb92b5f44c7a26b428c34aa3950",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -2334,7 +2392,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -2349,11 +2407,12 @@
           "start_line": 248,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "P6",
-      "finding_id": "finding-53749d53bc174cf587af696e486793f6",
+      "finding_id": "finding-b7071fd0bf4e422e84b393db01172fae",
       "category": "System Prompt Leakage",
       "pattern": "Direct Prompt Extraction",
       "severity": "HIGH",
@@ -2381,11 +2440,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-5752fe6eefae45f090065b0e858a15b6",
+      "finding_id": "finding-96ace536cd25440391373035effd2d63",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx skills'.",
       "severity": "MEDIUM",
@@ -2411,11 +2471,12 @@
           "start_line": 32,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-dff0a2786ce9483bbaa18eae7be2469d",
+      "finding_id": "finding-1502d8e7eaee406696c42a3dcb9221a7",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx skills'.",
       "severity": "MEDIUM",
@@ -2441,11 +2502,12 @@
           "start_line": 14,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "LP3",
-      "finding_id": "finding-f89fb5c9aeae44ed8c6f89c1580e12fc",
+      "finding_id": "finding-1a8b1d7b42d345769c3f215f628d6d79",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, network.",
       "severity": "MEDIUM",
@@ -2471,11 +2533,12 @@
           "start_line": 1,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-cacddf8120f64cdf853def280dd9b70e",
+      "finding_id": "finding-740ce422802740b78e553125312f6d88",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -2503,11 +2566,12 @@
           "end_line": null,
           "start_column": 66
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-c31b9a9b6db043be9738861bf2e8b6e7",
+      "finding_id": "finding-30b34005ae5143d9904bce3ad6adfb14",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -2535,11 +2599,12 @@
           "end_line": null,
           "start_column": 149
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-bd57c56f37364be7b5047f65a5b05711",
+      "finding_id": "finding-d3f898ec51ed4a989a75a07fcd60dd1f",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -2567,7 +2632,8 @@
           "end_line": null,
           "start_column": 135
         }
-      ]
+      ],
+      "surface": "docs"
     }
   ],
   "suppressed_count": 0,
@@ -2603,7 +2669,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -2616,7 +2682,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -2629,7 +2695,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -2642,7 +2708,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -2655,7 +2721,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -2696,13 +2762,13 @@
   "execution_successful": true,
   "analysis_completeness": {
     "total_components": 156,
-    "scanned_components": 107,
-    "coverage_percent": 68.6,
+    "scanned_components": 129,
+    "coverage_percent": 82.7,
     "is_complete": false,
     "status": "partial",
     "execution_successful": true,
-    "fully_inspected_files": 107,
-    "partially_inspected_files": 49,
+    "fully_inspected_files": 129,
+    "partially_inspected_files": 27,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
       {
@@ -3079,495 +3145,501 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/budget-summary.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "lib/dedup-recs.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 2207,
+          "source_end_offset": 10151,
+          "start_line": 75,
+          "end_line": 325,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/display-labels.mjs",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
+        "path": "lib/deep-dive.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 899,
+          "source_end_offset": 10444,
+          "start_line": 27,
+          "end_line": 350,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command word boundary; location: reported source range; unchecked scope: command word. Relevant parser input fully checked.",
         "path": "lib/extract-claims.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "command_word_boundary",
+          "source_start_offset": 569,
+          "source_end_offset": 19132,
+          "start_line": 13,
+          "end_line": 550,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": false,
+          "full_input_checked": true,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/gates/build-minutes-fanout.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/gates/cold-start.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "lib/gates/cwv-poor.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 2049,
+          "source_end_offset": 3372,
+          "start_line": 41,
+          "end_line": 87,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/gates/external-api-slow.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/gates/isr-overrevalidation.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/gates/middleware-heavy.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/gates/observability-events-attribution.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/gates/platform-bot-protection.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/gates/platform-fluid-compute.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/gates/region-misconfig.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "lib/gates/route-errors.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 290,
+          "source_end_offset": 3101,
+          "start_line": 8,
+          "end_line": 80,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/gates/scanner-driven.mjs",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
+        "path": "lib/gates/select-candidates.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 4233,
+          "source_end_offset": 4703,
+          "start_line": 119,
+          "end_line": 134,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/gates/slow-route.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "lib/gates/uncached-route.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 478,
+          "source_end_offset": 3955,
+          "start_line": 12,
+          "end_line": 93,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/gates/usage-spike-triage.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/grade-recommendation.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "lib/impact-label.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 1877,
+          "source_end_offset": 5320,
+          "start_line": 51,
+          "end_line": 126,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/impact-magnitude.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/investigation-brief.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/project-facts.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "lib/reconcile-candidates.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 3902,
+          "source_end_offset": 15966,
+          "start_line": 112,
+          "end_line": 372,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "lib/render-report.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 1709,
+          "source_end_offset": 39044,
+          "start_line": 31,
+          "end_line": 955,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/route-normalize.mjs",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
+        "path": "lib/sanitizers/undeclared-dep.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 2104,
+          "source_end_offset": 2831,
+          "start_line": 56,
+          "end_line": 78,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/sanitizers/count-correct.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/sanitizers/index.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/sanitizers/pre-release.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/sanitizers/rendering-mode-mislabel.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "lib/scanners/cache-components-suspense-dedupe.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 3089,
+          "source_end_offset": 4361,
+          "start_line": 65,
+          "end_line": 109,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/scanners/large-static-asset.mjs",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
+        "path": "lib/scanners/edge-heavy-import.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 2823,
+          "source_end_offset": 3738,
+          "start_line": 64,
+          "end_line": 94,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
+        "path": "lib/scanners/headers-in-page.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 1336,
+          "source_end_offset": 1535,
+          "start_line": 34,
+          "end_line": 44,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
+        "path": "lib/scanners/region-pin-in-config.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 2485,
+          "source_end_offset": 3440,
+          "start_line": 55,
+          "end_line": 88,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command argument boundary; location: reported source range; unchecked scope: command arguments. Relevant parser input fully checked.",
         "path": "lib/scanners/sveltekit-prerender-missing.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "command_argument_boundary",
+          "source_start_offset": 905,
+          "source_end_offset": 2121,
+          "start_line": 14,
+          "end_line": 43,
+          "unchecked_scope": "command_arguments",
+          "observed_is_lower_bound": false,
+          "full_input_checked": true,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/scanners/turbo-force-bypass.mjs",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
+        "path": "lib/throttle.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 2209,
+          "source_end_offset": 8985,
+          "start_line": 56,
+          "end_line": 273,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "lib/support-topics.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "lib/vercel.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 2720,
+          "source_end_offset": 31106,
+          "start_line": 72,
+          "end_line": 864,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "lib/verify-claim.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 4359,
+          "source_end_offset": 60986,
+          "start_line": 58,
+          "end_line": 1296,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
+        "path": "lib/workspace-resolver.mjs",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 9625,
+          "source_end_offset": 17541,
+          "start_line": 264,
+          "end_line": 521,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
@@ -3598,131 +3670,151 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "scripts/build-docs.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "scripts/check-docs-fresh.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "scripts/collect-signals.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 1418,
+          "source_end_offset": 21532,
+          "start_line": 46,
+          "end_line": 576,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "scripts/collect-sub-agent-outputs.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 1517,
+          "source_end_offset": 10121,
+          "start_line": 40,
+          "end_line": 296,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "scripts/deep-dive.mjs",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
+        "path": "scripts/gate-investigations.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 1405,
+          "source_end_offset": 6347,
+          "start_line": 32,
+          "end_line": 166,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "scripts/merge-signals.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 1246,
+          "source_end_offset": 6325,
+          "start_line": 31,
+          "end_line": 192,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "scripts/prepare-investigation-brief.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 1965,
+          "source_end_offset": 8065,
+          "start_line": 49,
+          "end_line": 231,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "scripts/render-report.mjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "scripts/scan-codebase.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "scripts/verify-and-regen.mjs",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 6149,
+          "source_end_offset": 17418,
+          "start_line": 132,
+          "end_line": 437,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       }
     ],
     "scope_exclusions": [],
@@ -3818,8 +3910,8 @@
       {
         "analyzer_id": "reference_coverage",
         "status": "completed",
-        "planned_work": 13,
-        "completed": 13,
+        "planned_work": 14,
+        "completed": 14,
         "partial": 0,
         "skipped": 0,
         "failed": 0,
@@ -4005,8 +4097,8 @@
         "analyzer_id": "static_patterns_tool_misuse",
         "status": "degraded",
         "planned_work": 156,
-        "completed": 107,
-        "partial": 49,
+        "completed": 129,
+        "partial": 27,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -4999,8 +5091,8 @@
       "Analyzer static_patterns_system_prompt_leakage status: degraded.",
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 20,
-    "findings_after_filtering": 20,
+    "findings_before_filtering": 21,
+    "findings_after_filtering": 21,
     "dependency_inspection": {
       "enabled": false,
       "status": "not_requested",

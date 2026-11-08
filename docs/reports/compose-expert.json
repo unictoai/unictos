@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "compose-expert",
-    "source": "/tmp/uniscan-8s1teryn/repo/skills/compose-expert",
-    "scanned_at": "2026-11-01T10:16:18.082043+00:00"
+    "source": "/tmp/uniscan-th129ojq/repo/skills/compose-expert",
+    "scanned_at": "2026-11-08T10:03:31.743407+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -356,289 +356,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-5b7d794eeeb74afabb48819ec36cdf6a",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 139,
-        "end_line": null
-      },
-      "finding": "references/accessibility.md (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "- **Accessibility, `Modifier.semantics`, TalkBack, touch target size, `contentDescription`, WCAG, traversal order** \u2192 `references/accessibility.md`",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
-      ],
-      "evidence": {
-        "target_path": "references/accessibility.md",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_agent_snooping"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_anti_refusal"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_deserialization"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_excessive_agency"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_harmful_content"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_memory_poisoning"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_privilege_escalation"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_prompt_injection"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_rogue_agent"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_ssrf"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_supply_chain"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_system_prompt_leakage"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "c30e1246f5ad8400730b7b30b6f74b2ac356224d085862416e7dc8b8c698c904",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 139,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-1feecb293e354f2e833e590e4b9a065c",
-      "category": "analysis-evasion",
-      "pattern": "Incomplete referenced artifact analysis",
-      "severity": "HIGH",
-      "confidence": 1.0,
-      "location": {
-        "file": "SKILL.md",
-        "start_line": 207,
-        "end_line": null
-      },
-      "finding": "references/accessibility.md (partial)",
-      "explanation": "Referenced artifact was not completely inspected",
-      "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
-      "code_snippet": "| Semantics, content descriptions, traversal order, testing | `references/accessibility.md` |",
-      "intent": null,
-      "tags": [
-        "coverage",
-        "reference",
-        "target-disposition:partial"
-      ],
-      "evidence": {
-        "target_path": "references/accessibility.md",
-        "target_disposition": "partial",
-        "reasons": [
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_agent_snooping"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_anti_refusal"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_deserialization"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_excessive_agency"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_harmful_content"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_memory_poisoning"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_privilege_escalation"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_prompt_injection"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_rogue_agent"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_ssrf"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_supply_chain"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_system_prompt_leakage"
-            ]
-          },
-          {
-            "reason_code": "obfuscated_instruction_text",
-            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-            "phase": "static",
-            "analyzers": [
-              "static_patterns_tool_misuse"
-            ]
-          }
-        ]
-      },
-      "match_fingerprint": "c30e1246f5ad8400730b7b30b6f74b2ac356224d085862416e7dc8b8c698c904",
-      "occurrences": [
-        {
-          "file": "SKILL.md",
-          "start_line": 207,
-          "end_line": null
-        }
-      ]
-    },
-    {
-      "id": "AE1",
-      "finding_id": "finding-6c064d6710f54c428cf3a5f496783e52",
+      "finding_id": "finding-b205e692ee1e4bd18ab86a0994564054",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -760,7 +478,7 @@
           },
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -775,11 +493,12 @@
           "start_line": 152,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-22615c049391411f9111ce839211afde",
+      "finding_id": "finding-65cd07836fe54536a35c1d08da16feb1",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -901,7 +620,7 @@
           },
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -916,11 +635,104 @@
           "start_line": 269,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-630aa26d3e8e4542b5a0abca64d42290",
+      "finding_id": "finding-1b4f9ce240a3454e943682b6edb24520",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 153,
+        "end_line": null
+      },
+      "finding": "references/source-code/ui-source.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "- UI/layout/measurement/draw internals \u2192 `references/source-code/ui-source.md`",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/source-code/ui-source.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "6fc0410dfc8c88ca02a27d865ee447f3ec0e0fc80b11eba91593933425050a69",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 153,
+          "end_line": null
+        }
+      ],
+      "surface": "instructions"
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-c64fdeb7a36d4abbb754df6648c97a25",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 270,
+        "end_line": null
+      },
+      "finding": "references/source-code/ui-source.md (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "| UI | `references/source-code/ui-source.md` | AndroidCompositionLocals.android.kt, Modifier.kt, Layout.kt, LayoutNode.kt, ModifierNodeElement.kt, DrawModifier.",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "references/source-code/ui-source.md",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "6fc0410dfc8c88ca02a27d865ee447f3ec0e0fc80b11eba91593933425050a69",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 270,
+          "end_line": null
+        }
+      ],
+      "surface": "instructions"
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-629d8615c1f045db8e5f6b12c78816b7",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1042,7 +854,7 @@
           },
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -1057,11 +869,12 @@
           "start_line": 154,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-f9e4798b0a5f444b8e9d1f0f2db3e634",
+      "finding_id": "finding-ebacd334600f4da499d3f1985caf52b7",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1183,7 +996,7 @@
           },
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -1198,11 +1011,12 @@
           "start_line": 271,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-74c3d921ab1549dfad611405dae3418f",
+      "finding_id": "finding-70985f18e0e645b9984e6a208e1279b3",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1228,7 +1042,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -1243,11 +1057,12 @@
           "start_line": 155,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-bd46bd77f0634ffd81ba062aca66090c",
+      "finding_id": "finding-6822785f969e4c6eb78b39c561154499",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1273,7 +1088,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -1288,11 +1103,12 @@
           "start_line": 272,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-1ca9ae8535494ae5b5f47f261eab89fa",
+      "finding_id": "finding-fe310a98709f4be9b4d880af086fd5f1",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1318,7 +1134,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -1333,11 +1149,12 @@
           "start_line": 156,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a4616a73f6e74d39abc637dd7fe6a8d9",
+      "finding_id": "finding-00453aeff95148f687a372a99f76344b",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -1363,7 +1180,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -1378,11 +1195,12 @@
           "start_line": 273,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "MP3",
-      "finding_id": "finding-1df2a7e3be1348729d294493f9394ce9",
+      "finding_id": "finding-dc83c05bb9da4baba25fd51661e7af64",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -1410,11 +1228,12 @@
           "end_line": null,
           "start_column": 32
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-9a42441e9a404b6da9bd95736a318323",
+      "finding_id": "finding-0a7f07d50e424dfcba88cdd1b946f118",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -1444,11 +1263,12 @@
           "end_line": null,
           "start_column": 27
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "P4",
-      "finding_id": "finding-e76c9ad682ba4c6f8eb85666c98cb0a5",
+      "finding_id": "finding-d9e948f9f1884be78a58b28a5f32f508",
       "category": "Prompt Injection",
       "pattern": "Behavior Manipulation",
       "severity": "MEDIUM",
@@ -1478,11 +1298,12 @@
           "start_column": 76,
           "end_column": 116
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "RA2",
-      "finding_id": "finding-715e1fe876df4492a4b00021edd638b1",
+      "finding_id": "finding-577832262bd94ee39c3588ad0e575a99",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -1510,11 +1331,12 @@
           "end_line": null,
           "start_column": 78
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "RA2",
-      "finding_id": "finding-32609a46eb8c4b8ab8e20ea422ada34b",
+      "finding_id": "finding-ed364bac6e724cc3863ea7785763995c",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -1542,11 +1364,12 @@
           "end_line": null,
           "start_column": 32
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "RA2",
-      "finding_id": "finding-4d2b5d7bf259407faa7d5f1aa6b5449e",
+      "finding_id": "finding-7a9b9a9b053642b5a526d4688209027c",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -1574,11 +1397,12 @@
           "end_line": null,
           "start_column": 103
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "RA2",
-      "finding_id": "finding-8face391bd7f463fa611c7ddfb7799fb",
+      "finding_id": "finding-a808bd4b140d475fbf44a92aea71fe2c",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -1606,11 +1430,12 @@
           "end_line": null,
           "start_column": 91
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "MP2",
-      "finding_id": "finding-bba4f0f08bae42cb969ba1e6ae6a4ae3",
+      "finding_id": "finding-dc2776136ebd4244a6090af298941603",
       "category": "Memory Poisoning",
       "pattern": "Context Window Stuffing",
       "severity": "MEDIUM",
@@ -1638,11 +1463,12 @@
           "end_line": null,
           "start_column": 17
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "MP2",
-      "finding_id": "finding-b56c7dc720db4c07a2d405a7da2c3ab7",
+      "finding_id": "finding-67bd993df9144e24b26b17953c73c70d",
       "category": "Memory Poisoning",
       "pattern": "Context Window Stuffing",
       "severity": "MEDIUM",
@@ -1670,11 +1496,12 @@
           "end_line": null,
           "start_column": 17
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "MP2",
-      "finding_id": "finding-15b06843beea4411b87695dd45bf0a2a",
+      "finding_id": "finding-2379cfb3b59846cf8b571157a7134f8e",
       "category": "Memory Poisoning",
       "pattern": "Context Window Stuffing",
       "severity": "MEDIUM",
@@ -1702,11 +1529,12 @@
           "end_line": null,
           "start_column": 17
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "MP2",
-      "finding_id": "finding-230b870ccdea423ab4f881b283455d13",
+      "finding_id": "finding-3617119bfdbd474eb1b3a2947d0d62cc",
       "category": "Memory Poisoning",
       "pattern": "Context Window Stuffing",
       "severity": "MEDIUM",
@@ -1734,7 +1562,8 @@
           "end_line": null,
           "start_column": 6
         }
-      ]
+      ],
+      "surface": "docs"
     }
   ],
   "suppressed_count": 0,
@@ -1770,7 +1599,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1783,7 +1612,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1796,7 +1625,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1809,7 +1638,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1822,7 +1651,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1967,31 +1796,6 @@
         "phase": "static",
         "reason_code": "obfuscated_instruction_text",
         "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
-        "path": "references/accessibility.md",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_agent_snooping",
-          "static_patterns_anti_refusal",
-          "static_patterns_deserialization",
-          "static_patterns_excessive_agency",
-          "static_patterns_harmful_content",
-          "static_patterns_memory_poisoning",
-          "static_patterns_privilege_escalation",
-          "static_patterns_prompt_injection",
-          "static_patterns_rogue_agent",
-          "static_patterns_ssrf",
-          "static_patterns_supply_chain",
-          "static_patterns_system_prompt_leakage",
-          "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "obfuscated_instruction_text",
-        "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
         "path": "references/source-code/foundation-source.md",
         "start_line": null,
         "end_line": null,
@@ -2015,40 +1819,80 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command argument boundary; location: reported source range; unchecked scope: command arguments. Relevant parser input not fully checked. Parser measurements: characters: observed at least 8192, limit 8192.",
         "path": "references/source-code/foundation-source.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "command_argument_boundary",
+          "source_start_offset": 99225,
+          "source_end_offset": 108169,
+          "start_line": 2352,
+          "end_line": 2566,
+          "unchecked_scope": "command_arguments",
+          "observed_is_lower_bound": true,
+          "full_input_checked": false,
+          "location_precision": "source_span",
+          "observed_characters": 8192,
+          "limit_characters": 8192
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command argument boundary; location: reported source range; unchecked scope: command arguments. Relevant parser input not fully checked. Parser measurements: characters: observed at least 8192, limit 8192.",
         "path": "references/source-code/material3-source.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "command_argument_boundary",
+          "source_start_offset": 127569,
+          "source_end_offset": 143343,
+          "start_line": 2701,
+          "end_line": 3042,
+          "unchecked_scope": "command_arguments",
+          "observed_is_lower_bound": true,
+          "full_input_checked": false,
+          "location_precision": "source_span",
+          "observed_characters": 8192,
+          "limit_characters": 8192
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command word boundary; location: reported source range; unchecked scope: command word. Relevant parser input fully checked.",
         "path": "references/source-code/navigation-source.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "command_word_boundary",
+          "source_start_offset": 107623,
+          "source_end_offset": 121696,
+          "start_line": 2611,
+          "end_line": 2947,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": false,
+          "full_input_checked": true,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
@@ -2078,14 +1922,55 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command argument boundary; location: reported source range; unchecked scope: command arguments. Relevant parser input not fully checked. Parser measurements: characters: observed at least 8192, limit 8192.",
         "path": "references/source-code/runtime-source.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "command_argument_boundary",
+          "source_start_offset": 22796,
+          "source_end_offset": 30994,
+          "start_line": 563,
+          "end_line": 730,
+          "unchecked_scope": "command_arguments",
+          "observed_is_lower_bound": true,
+          "full_input_checked": false,
+          "location_precision": "source_span",
+          "observed_characters": 8192,
+          "limit_characters": 8192
+        }
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command argument boundary; location: reported source range; unchecked scope: command arguments. Relevant parser input not fully checked. Parser measurements: characters: observed at least 8192, limit 8192.",
+        "path": "references/source-code/ui-source.md",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "command_argument_boundary",
+          "source_start_offset": 3859,
+          "source_end_offset": 12056,
+          "start_line": 89,
+          "end_line": 253,
+          "unchecked_scope": "command_arguments",
+          "observed_is_lower_bound": true,
+          "full_input_checked": false,
+          "location_precision": "source_span",
+          "observed_characters": 8192,
+          "limit_characters": 8192
+        }
       }
     ],
     "scope_exclusions": [],
@@ -2230,8 +2115,8 @@
         "analyzer_id": "static_patterns_agent_snooping",
         "status": "degraded",
         "planned_work": 34,
-        "completed": 31,
-        "partial": 3,
+        "completed": 32,
+        "partial": 2,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -2240,8 +2125,8 @@
         "analyzer_id": "static_patterns_anti_refusal",
         "status": "degraded",
         "planned_work": 34,
-        "completed": 31,
-        "partial": 3,
+        "completed": 32,
+        "partial": 2,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -2260,8 +2145,8 @@
         "analyzer_id": "static_patterns_deserialization",
         "status": "degraded",
         "planned_work": 34,
-        "completed": 31,
-        "partial": 3,
+        "completed": 32,
+        "partial": 2,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -2270,8 +2155,8 @@
         "analyzer_id": "static_patterns_excessive_agency",
         "status": "degraded",
         "planned_work": 34,
-        "completed": 31,
-        "partial": 3,
+        "completed": 32,
+        "partial": 2,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -2280,8 +2165,8 @@
         "analyzer_id": "static_patterns_harmful_content",
         "status": "degraded",
         "planned_work": 34,
-        "completed": 31,
-        "partial": 3,
+        "completed": 32,
+        "partial": 2,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -2290,8 +2175,8 @@
         "analyzer_id": "static_patterns_memory_poisoning",
         "status": "degraded",
         "planned_work": 34,
-        "completed": 31,
-        "partial": 3,
+        "completed": 32,
+        "partial": 2,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -2310,8 +2195,8 @@
         "analyzer_id": "static_patterns_privilege_escalation",
         "status": "degraded",
         "planned_work": 34,
-        "completed": 31,
-        "partial": 3,
+        "completed": 32,
+        "partial": 2,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -2320,8 +2205,8 @@
         "analyzer_id": "static_patterns_prompt_injection",
         "status": "degraded",
         "planned_work": 34,
-        "completed": 31,
-        "partial": 3,
+        "completed": 32,
+        "partial": 2,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -2330,8 +2215,8 @@
         "analyzer_id": "static_patterns_rogue_agent",
         "status": "degraded",
         "planned_work": 34,
-        "completed": 31,
-        "partial": 3,
+        "completed": 32,
+        "partial": 2,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -2340,8 +2225,8 @@
         "analyzer_id": "static_patterns_ssrf",
         "status": "degraded",
         "planned_work": 34,
-        "completed": 31,
-        "partial": 3,
+        "completed": 32,
+        "partial": 2,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -2350,8 +2235,8 @@
         "analyzer_id": "static_patterns_supply_chain",
         "status": "degraded",
         "planned_work": 34,
-        "completed": 31,
-        "partial": 3,
+        "completed": 32,
+        "partial": 2,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -2360,8 +2245,8 @@
         "analyzer_id": "static_patterns_system_prompt_leakage",
         "status": "degraded",
         "planned_work": 34,
-        "completed": 31,
-        "partial": 3,
+        "completed": 32,
+        "partial": 2,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0

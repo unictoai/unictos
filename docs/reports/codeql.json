@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "codeql",
-    "source": "/tmp/uniscan-7ttqctjm/repo/plugins/static-analysis/skills/codeql",
-    "scanned_at": "2026-11-01T09:58:35.184656+00:00"
+    "source": "/tmp/uniscan-kxx37myl/repo/plugins/static-analysis/skills/codeql",
+    "scanned_at": "2026-11-08T09:46:59.413252+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -35,7 +35,7 @@
       "path": "assets/trail-of-bits-mark.svg",
       "type": "other",
       "lines": 1,
-      "executable": true,
+      "executable": false,
       "size_bytes": 3084,
       "source_url": null,
       "source_identity": null,
@@ -356,7 +356,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-ae28458262cd4531a40afb29f549b7c5",
+      "finding_id": "finding-30fa0c9af5454d7a8f7594b0caf15168",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -382,7 +382,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -397,11 +397,12 @@
           "start_line": 199,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-a4e8b1db979e45b1aff99ddcddf10170",
+      "finding_id": "finding-c6ad1df678b64d2596f754f1d3f5738f",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -427,7 +428,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -442,11 +443,12 @@
           "start_line": 219,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "LP1",
-      "finding_id": "finding-3badfb1e83474da1be1d1b9be338be10",
+      "finding_id": "finding-bf2653bcfb2140709d7ad763882ffa84",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'env' detected in scripts/test_generation_scripts.py but not covered by declared permissions.",
       "severity": "HIGH",
@@ -472,11 +474,12 @@
           "start_line": 1,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "tests"
     },
     {
       "id": "TM3",
-      "finding_id": "finding-3d6d3f89ab3e4d2d9941514faa1953c3",
+      "finding_id": "finding-e08bc69146274f0684d3bd89db4c3f23",
       "category": "Tool Misuse",
       "pattern": "Unsafe Defaults",
       "severity": "MEDIUM",
@@ -504,11 +507,12 @@
           "end_line": null,
           "start_column": 111
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-070a9848e0dc40b49eb6be2126021111",
+      "finding_id": "finding-64944ceb891541c78562b4d4cfcc2e0d",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -538,11 +542,12 @@
           "start_column": 11,
           "end_column": 5
         }
-      ]
+      ],
+      "surface": "tests"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-b4253c695b3c4e1fb3ea89a6c1504aff",
+      "finding_id": "finding-9e8153340d424daca32b38cbb0a6efe3",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -572,11 +577,12 @@
           "start_column": 13,
           "end_column": 5
         }
-      ]
+      ],
+      "surface": "tests"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-ee58763c42fd4ab9ab1eebd82d086e96",
+      "finding_id": "finding-15e9d4c0c4e34e318968a91839102cea",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -606,11 +612,12 @@
           "start_column": 13,
           "end_column": 5
         }
-      ]
+      ],
+      "surface": "tests"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-2d074124fe2d45b7a88f6ae41fefae69",
+      "finding_id": "finding-89645c6a77224ce7b24fe7925313ba28",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -640,11 +647,12 @@
           "start_column": 11,
           "end_column": 5
         }
-      ]
+      ],
+      "surface": "tests"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-f620364e8f8947bda19d8ded015f5d59",
+      "finding_id": "finding-e17da2a0a88c4588a815386b756c3db2",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -674,11 +682,12 @@
           "start_column": 11,
           "end_column": 5
         }
-      ]
+      ],
+      "surface": "tests"
     },
     {
       "id": "TT2",
-      "finding_id": "finding-bf5ba312244f4e1180f333a54b814b87",
+      "finding_id": "finding-e8a48b4b0b5d4fa9acc9c629a2a96d6d",
       "category": "Data Flow",
       "pattern": "Tainted flow: 'env' from os.environ (line 186, credential/environment) \u2192 subprocess.run (code execution)",
       "severity": "MEDIUM",
@@ -708,11 +717,12 @@
           "start_column": 11,
           "end_column": 5
         }
-      ]
+      ],
+      "surface": "tests"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-2afb3ee4ef2b44eeb3a22d84460da562",
+      "finding_id": "finding-78e8d435fec242058416b668a1177130",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -742,11 +752,12 @@
           "start_column": 13,
           "end_column": 5
         }
-      ]
+      ],
+      "surface": "tests"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-51bf3cd0aa08479386d390237c5e49ea",
+      "finding_id": "finding-2703df2a21a64aaaa422e519d315cf9c",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -776,11 +787,12 @@
           "start_column": 17,
           "end_column": 94
         }
-      ]
+      ],
+      "surface": "tests"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-0f3b601e76e74f159ce9f0cdfafa70fe",
+      "finding_id": "finding-33a68acbbc484265a6466dc1eb159235",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -808,11 +820,12 @@
           "end_line": null,
           "start_column": 38
         }
-      ]
+      ],
+      "surface": "tests"
     },
     {
       "id": "AST6",
-      "finding_id": "finding-2a13af400b3c4c8d98743bf4d010fd0d",
+      "finding_id": "finding-c18b0a0e167544ecb16cb993009d1875",
       "category": "Dangerous Code Execution",
       "pattern": "compile() call detected",
       "severity": "MEDIUM",
@@ -842,11 +855,12 @@
           "start_column": 8,
           "end_column": 43
         }
-      ]
+      ],
+      "surface": "tests"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-1a6d8bf9461a4c9d899c017710977a7b",
+      "finding_id": "finding-94be4462aebe4bdda83fb3d5837bc9a2",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -876,7 +890,8 @@
           "start_column": 17,
           "end_column": 72
         }
-      ]
+      ],
+      "surface": "code"
     }
   ],
   "suppressed_count": 0,
@@ -912,7 +927,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -925,7 +940,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -938,7 +953,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -951,7 +966,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -964,7 +979,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1128,40 +1143,76 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: printf invocation; location: reported source range; unchecked scope: command word. Relevant parser input not fully checked.",
         "path": "scripts/test_script_flags.py",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "printf_invocation",
+          "source_start_offset": 3047,
+          "source_end_offset": 3078,
+          "start_line": 86,
+          "end_line": 86,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: printf invocation; location: reported source range; unchecked scope: command word. Relevant parser input not fully checked.",
         "path": "scripts/test_shell_blocks.py",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "printf_invocation",
+          "source_start_offset": 1545,
+          "source_end_offset": 1563,
+          "start_line": 38,
+          "end_line": 38,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: expansion boundary; location: reported source range; unchecked scope: expression. Relevant parser input fully checked.",
         "path": "workflows/build-database.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "expansion_boundary",
+          "source_start_offset": 13134,
+          "source_end_offset": 13227,
+          "start_line": 335,
+          "end_line": 339,
+          "unchecked_scope": "expression",
+          "observed_is_lower_bound": false,
+          "full_input_checked": true,
+          "location_precision": "source_span"
+        }
       }
     ],
     "scope_exclusions": [],
@@ -1211,8 +1262,8 @@
       {
         "analyzer_id": "mcp_least_privilege",
         "status": "completed",
-        "planned_work": 17,
-        "completed": 17,
+        "planned_work": 16,
+        "completed": 16,
         "partial": 0,
         "skipped": 0,
         "failed": 0,

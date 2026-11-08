@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "pdf",
-    "source": "/tmp/uniscan-fgfbu4no/repo/skills/pdf",
-    "scanned_at": "2026-11-01T09:54:26.141003+00:00"
+    "source": "/tmp/uniscan-usxv_we0/repo/skills/pdf",
+    "scanned_at": "2026-11-08T09:43:05.293190+00:00"
   },
   "risk_assessment": {
     "score": 7,
@@ -136,7 +136,7 @@
   "issues": [
     {
       "id": "LP3",
-      "finding_id": "finding-e7acf588387f496a88e927102e3057e8",
+      "finding_id": "finding-618f8ee8ede345a59aeb3eeadba29573",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: file_read, file_write.",
       "severity": "MEDIUM",
@@ -162,7 +162,8 @@
           "start_line": 1,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -198,7 +199,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -211,7 +212,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -224,7 +225,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -237,7 +238,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -250,7 +251,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -494,14 +495,26 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: expansion boundary; location: reported source range; unchecked scope: expression. Relevant parser input not fully checked.",
         "path": "reference.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "expansion_boundary",
+          "source_start_offset": 7046,
+          "source_end_offset": 9921,
+          "start_line": 259,
+          "end_line": 369,
+          "unchecked_scope": "expression",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       }
     ],
     "scope_exclusions": [],

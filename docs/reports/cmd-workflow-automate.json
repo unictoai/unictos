@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "unknown",
-    "source": "/tmp/skillspector_auenn0yy",
-    "scanned_at": "2026-11-01T10:17:50.399564+00:00"
+    "source": "/tmp/skillspector_x98br7qw",
+    "scanned_at": "2026-11-08T10:05:01.266290+00:00"
   },
   "risk_assessment": {
     "score": 38,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "PE3",
-      "finding_id": "finding-a52d57b6e4744819b67e7892a6fc3976",
+      "finding_id": "finding-c0a2d641fccf45799541471fc82e9338",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -54,11 +54,12 @@
           "end_line": null,
           "start_column": 14
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-bd738c1393224903b702112ce0516664",
+      "finding_id": "finding-0b359ea3c950427595fc49156a18396d",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -86,11 +87,12 @@
           "end_line": null,
           "start_column": 24
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-c0888bdaea5c45ef862a739293a178bd",
+      "finding_id": "finding-5465d9edeb7c49ed8dc173f8ef65622c",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -118,11 +120,12 @@
           "end_line": null,
           "start_column": 24
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-ed76f1d38fc548f3a2c7dea9b4428189",
+      "finding_id": "finding-b63e7e2e09a041faa63a176a418c2499",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -150,11 +153,12 @@
           "end_line": null,
           "start_column": 32
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-544d40b5a2ec4e0ba9e3f13ca9aa075f",
+      "finding_id": "finding-5ee1c17fc9d449dabf5056541f2906b4",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -182,11 +186,12 @@
           "end_line": null,
           "start_column": 20
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-09039f2d6edb4ddf8ca2c743d0c128b5",
+      "finding_id": "finding-5b289cf1235d498aae15e19e7ef48841",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -214,11 +219,12 @@
           "end_line": null,
           "start_column": 58
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-a2da9fff1e664bc4acc1041ed4495f32",
+      "finding_id": "finding-b4037ed0145a40ed88008d27d8e1f4a5",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -246,11 +252,12 @@
           "end_line": null,
           "start_column": 28
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-0767c65bc0ce409291f0aa66a1c1f15f",
+      "finding_id": "finding-b7e163ff6270403dbd27f4a658611c80",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -278,11 +285,12 @@
           "end_line": null,
           "start_column": 17
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-802685cb1579442995bddd92d519354d",
+      "finding_id": "finding-f138e50a55704f598e281d0db2b648f2",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx snyk'.",
       "severity": "MEDIUM",
@@ -308,11 +316,12 @@
           "start_line": 242,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-43c7526132ea48118c7a3ce3552926e7",
+      "finding_id": "finding-0d3aba4f0d0c4fb3a0e8fabed5e99f1b",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx license-checker'.",
       "severity": "MEDIUM",
@@ -338,11 +347,12 @@
           "start_line": 245,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-52639e2fb932435aaaed25da947d81ef",
+      "finding_id": "finding-0fc10a30f28e468888d70336b0c926c4",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx semantic-release'.",
       "severity": "MEDIUM",
@@ -368,7 +378,8 @@
           "start_line": 479,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "docs"
     }
   ],
   "suppressed_count": 0,
@@ -404,7 +415,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -417,7 +428,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -430,7 +441,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -443,7 +454,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -456,7 +467,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -510,14 +521,28 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command argument boundary; location: reported source range; unchecked scope: command arguments. Relevant parser input not fully checked. Parser measurements: characters: observed at least 8192, limit 8192.",
         "path": "workflow-automate.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "command_argument_boundary",
+          "source_start_offset": 16355,
+          "source_end_offset": 24569,
+          "start_line": 535,
+          "end_line": 881,
+          "unchecked_scope": "command_arguments",
+          "observed_is_lower_bound": true,
+          "full_input_checked": false,
+          "location_precision": "source_span",
+          "observed_characters": 8192,
+          "limit_characters": 8192
+        }
       }
     ],
     "scope_exclusions": [],

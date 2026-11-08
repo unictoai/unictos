@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "jest-unit",
-    "source": "/tmp/uniscan-w6gf4cob/repo/packs/qa-essentials/skills/jest-unit",
-    "scanned_at": "2026-11-01T10:11:19.820169+00:00"
+    "source": "/tmp/uniscan-9htxmn8z/repo/packs/qa-essentials/skills/jest-unit",
+    "scanned_at": "2026-11-08T09:58:46.910299+00:00"
   },
   "risk_assessment": {
     "score": 12,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "RP1",
-      "finding_id": "finding-bdad9b7f5456426ea0d8555b5b9ca921",
+      "finding_id": "finding-30e885d79adb4e08b95366e316c91589",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -52,11 +52,12 @@
           "start_line": 559,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-4c98ee1e1f5a41adab17c037e0866a57",
+      "finding_id": "finding-65abdfa4f26a465180135cc1c46e45e5",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -82,11 +83,12 @@
           "start_line": 562,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-e9b1c539f7344d1c8365454a6247dd79",
+      "finding_id": "finding-66b23a302744435487f837f2ea0b97bf",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -112,11 +114,12 @@
           "start_line": 565,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-b975a781764645e587acf4ce2e74bbe7",
+      "finding_id": "finding-1d82043afcb34cceab9b98b79c19f566",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -142,11 +145,12 @@
           "start_line": 568,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-cc5338342366469689695b18483d433f",
+      "finding_id": "finding-13258ba765354f0eb50501eafef19abe",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -172,11 +176,12 @@
           "start_line": 571,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-3a60f3396996425d8df58d0de96efb66",
+      "finding_id": "finding-c6f86d14c1c64517b128ca7eaaaf845a",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -202,11 +207,12 @@
           "start_line": 574,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-38f1eaee92fa4d7a992ff453c5fddbd5",
+      "finding_id": "finding-1ac9bca027334110a3eab12689d543d5",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx jest'.",
       "severity": "MEDIUM",
@@ -232,7 +238,8 @@
           "start_line": 577,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -268,7 +275,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -281,7 +288,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -294,7 +301,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -307,7 +314,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -320,7 +327,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }

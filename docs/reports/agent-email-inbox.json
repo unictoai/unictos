@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "agent-email-inbox",
-    "source": "/tmp/uniscan-77ii2trt/repo/skills/agent-email-inbox",
-    "scanned_at": "2026-11-01T10:17:22.375244+00:00"
+    "source": "/tmp/uniscan-x53uebwp/repo/skills/agent-email-inbox",
+    "scanned_at": "2026-11-08T10:04:34.549345+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -56,7 +56,7 @@
   "issues": [
     {
       "id": "YR1",
-      "finding_id": "finding-ace38e277ff2423d8f32c3390f52618d",
+      "finding_id": "finding-f957b11f02674129994e0f5209e2f721",
       "category": "YARA Match",
       "pattern": "YARA rule 'agent_skill_credential_exfiltration_webhook': AI agent skill credential harvesting followed by webhook or external exfiltration [agent_skills]",
       "severity": "CRITICAL",
@@ -82,11 +82,12 @@
           "start_line": 28,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-211e3e2bb8694a8c94612e6f004d43fe",
+      "finding_id": "finding-c164c7b3d91d40569f7af0e98ca6a821",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -112,7 +113,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -127,11 +128,12 @@
           "start_line": 173,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "SC2",
-      "finding_id": "finding-52c552d438b442ada401f2139947bd49",
+      "finding_id": "finding-c3671a43150d45e0915d7cbdbf1c4c2f",
       "category": "Supply Chain",
       "pattern": "External Script Fetching",
       "severity": "HIGH",
@@ -159,11 +161,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "TM2",
-      "finding_id": "finding-ad93a1eb33a5459ab2af1d67a65d22d5",
+      "finding_id": "finding-f03973d014f14ee1ba34a14412b9d1ca",
       "category": "Tool Misuse",
       "pattern": "Chaining Abuse",
       "severity": "HIGH",
@@ -191,11 +194,12 @@
           "end_line": null,
           "start_column": 44
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-5348bec27f7f46dc9e4d45cfc8d31f8d",
+      "finding_id": "finding-6131253139b34edc813a05d062d96186",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -223,11 +227,12 @@
           "end_line": null,
           "start_column": 26
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-bb32b4897f454996ae316239c980251f",
+      "finding_id": "finding-87a4b2f0cd994b11a1c7d7b51724e7b1",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -255,11 +260,12 @@
           "end_line": null,
           "start_column": 14
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-e002d131129547a48605180022aa089d",
+      "finding_id": "finding-9985caf8ccfc446cb46c6202c2c60a36",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -287,11 +293,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE2",
-      "finding_id": "finding-d07cdba996c142ae93d39b63d1939514",
+      "finding_id": "finding-a8936ec476bf43d797a9ff785b040d93",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -319,11 +326,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE2",
-      "finding_id": "finding-67150ef55c27477d88dcdb0bf555adf0",
+      "finding_id": "finding-e92214545e0640bf9d5a4848e9b05e1f",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -351,11 +359,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE2",
-      "finding_id": "finding-270f290f06a548d396ed0e5dc758d8a2",
+      "finding_id": "finding-f1335413d23f44ecb4d81ad4f70efd5b",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -383,11 +392,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE2",
-      "finding_id": "finding-e6f9d526602d414cbf8e9d93a36f1dc2",
+      "finding_id": "finding-d0c30394e7024a3fb65cdfc5e6200ea5",
       "category": "Privilege Escalation",
       "pattern": "Sudo/Root Execution",
       "severity": "MEDIUM",
@@ -417,11 +427,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "RA2",
-      "finding_id": "finding-dcfa3abb08f04cf98d06ea847151483d",
+      "finding_id": "finding-8419c9b17fc148568ad4f18efa9c2e07",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -449,11 +460,12 @@
           "end_line": null,
           "start_column": 2
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-241114ba60ff43e3ba771cdae226456b",
+      "finding_id": "finding-b15b55130013407991b1c4302a6e1c9f",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx localtunnel'.",
       "severity": "MEDIUM",
@@ -479,7 +491,8 @@
           "start_line": 251,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "docs"
     }
   ],
   "suppressed_count": 0,
@@ -515,7 +528,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -528,7 +541,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -541,7 +554,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -554,7 +567,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -567,7 +580,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -691,14 +704,28 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector reached a configured inspection limit. Check: command argument characters; location: reported source range; unchecked scope: command arguments. Relevant parser input not fully checked. Parser measurements: characters: observed at least 8193, limit 8192.",
         "path": "references/security-levels.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "resource_limit",
+          "check": "command_argument_characters",
+          "source_start_offset": 1371,
+          "source_end_offset": 10545,
+          "start_line": 33,
+          "end_line": 327,
+          "unchecked_scope": "command_arguments",
+          "observed_is_lower_bound": true,
+          "full_input_checked": false,
+          "location_precision": "source_span",
+          "observed_characters": 8193,
+          "limit_characters": 8192
+        }
       }
     ],
     "scope_exclusions": [],

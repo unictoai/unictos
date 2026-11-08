@@ -1,11 +1,11 @@
 {
   "skill": {
     "name": "mcp-builder",
-    "source": "/tmp/uniscan-jqvgaw__/repo/skills/mcp-builder",
-    "scanned_at": "2026-11-01T10:12:41.932290+00:00"
+    "source": "/tmp/uniscan-yepwlmk2/repo/skills/mcp-builder",
+    "scanned_at": "2026-11-08T10:00:02.502074+00:00"
   },
   "risk_assessment": {
-    "score": 100,
+    "score": 97,
     "severity": "CRITICAL",
     "recommendation": "DO_NOT_INSTALL",
     "max_issue_severity": "HIGH"
@@ -116,7 +116,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-150ddc37b7aa4c89b798ec1cf60f3744",
+      "finding_id": "finding-bfb6396da3d540398440c5909b3b802b",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -238,7 +238,7 @@
           },
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -253,11 +253,12 @@
           "start_line": 62,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-b6d087c86e184c12a8573312810373bf",
+      "finding_id": "finding-981748a8f51549ef89469126f4f00892",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -379,7 +380,7 @@
           },
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -394,11 +395,12 @@
           "start_line": 83,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-79bc3949218040dcaae534ebb172e251",
+      "finding_id": "finding-a47d561aaaba4e3b85296265a3a82d4f",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -520,7 +522,7 @@
           },
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -535,11 +537,12 @@
           "start_line": 223,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-0eff068d8703446cb750cfe2996eb0e5",
+      "finding_id": "finding-d524a9f627b440dcab41dccbc3d4e3a3",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -565,7 +568,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -580,11 +583,12 @@
           "start_line": 66,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-04e827a93cb74c19a2985ff972c1448e",
+      "finding_id": "finding-faff219836304260bd026978359d75c9",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -610,7 +614,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -625,11 +629,12 @@
           "start_line": 84,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-5d4f5f70ca084499b73a80d3bf5861ba",
+      "finding_id": "finding-5506d3f5547e41699c3aed597e9a1e3a",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -655,7 +660,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -670,47 +675,12 @@
           "start_line": 216,
           "end_line": null
         }
-      ]
-    },
-    {
-      "id": "EA5",
-      "finding_id": "finding-3547f6d6230c4195b5045cc66f92e5ca",
-      "category": "Excessive Agency",
-      "pattern": "External Model or Provider Selection",
-      "severity": "HIGH",
-      "confidence": 0.9,
-      "location": {
-        "file": "reference/evaluation.md",
-        "start_line": 488,
-        "end_line": 488,
-        "start_column": 2,
-        "end_column": 81
-      },
-      "finding": "-m, --model           Claude model to use (default: claude-3-7-sonnet-20250219)",
-      "explanation": "Skill selects an external model or provider that may use a different account or billing plan than the operator expects. Undisclosed model switches can cause unexpected cost or quota consumption.",
-      "remediation": "Remove the model/provider override or disclose it prominently and require explicit operator approval before invoking an external coding CLI or billed model.",
-      "code_snippet": "optional arguments:\n  -h, --help            Show help message\n  -t, --transport       Transport type: stdio, sse, or http (default: stdio)\n  -m, --model           Claude model to use (default: claude-3-7-sonnet-20250219)\n  -o, --output          Output file for report (default: print to stdout)\n\nstdio options:",
-      "intent": null,
-      "tags": [
-        "Excessive Agency"
       ],
-      "evidence": {
-        "selection_surface": "command"
-      },
-      "match_fingerprint": "fef38000516af8c5a0319825066ee43d7bcb464a611117ac9e6705925d8e0178",
-      "occurrences": [
-        {
-          "file": "reference/evaluation.md",
-          "start_line": 488,
-          "end_line": 488,
-          "start_column": 2,
-          "end_column": 81
-        }
-      ]
+      "surface": "instructions"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-16119156587246478da2256278419b77",
+      "finding_id": "finding-05df240b0764499a86bd716118cdde94",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -740,11 +710,12 @@
           "end_line": null,
           "start_column": 11
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "LP3",
-      "finding_id": "finding-9d3f63cb29e04932b54efc700bc4ed3a",
+      "finding_id": "finding-e71627c6374546019becd351f4130fdb",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: file_write, mcp.",
       "severity": "MEDIUM",
@@ -770,11 +741,12 @@
           "start_line": 1,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-d3089c36f6364011a6a7052ad5e42a61",
+      "finding_id": "finding-ae55f24207964764aa3e34993ba82f0d",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx @modelcontextprotocol/inspector'.",
       "severity": "MEDIUM",
@@ -800,11 +772,12 @@
           "start_line": 141,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "EA1",
-      "finding_id": "finding-42e8dc7f77a24971bf7a5ae428efeb22",
+      "finding_id": "finding-d76e564f95a64ce3ab25fa2ce6210a44",
       "category": "Excessive Agency",
       "pattern": "Unrestricted Tool Access",
       "severity": "MEDIUM",
@@ -832,11 +805,12 @@
           "end_line": null,
           "start_column": 13
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-8f96d30e82ce499e83d31300c947bcfe",
+      "finding_id": "finding-e1d3df6b2757429e8eceb23edeecbd01",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -864,11 +838,12 @@
           "end_line": null,
           "start_column": 22
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-ec255acdfeae413a8b60bd51acd046e0",
+      "finding_id": "finding-37497c17af594ce790f3cd5407f1101d",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -896,11 +871,12 @@
           "end_line": null,
           "start_column": 16
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "SC1",
-      "finding_id": "finding-9bf8ac35961949349abede30e65038ec",
+      "finding_id": "finding-faa4bcd01ba74a4692314aa2fcb63f7b",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -928,11 +904,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "config"
     },
     {
       "id": "SC4",
-      "finding_id": "finding-21bfdf2fecf84a21bb70f7724554e1fb",
+      "finding_id": "finding-0daa9cb24d464d95aad9e30f06886f83",
       "category": "Supply Chain",
       "pattern": "Unverifiable Dependency: anthropic has 4 known advisory(ies) (CVE-2026-34450 (Claude SDK for Python has Insecure Default File Permissions in Local Filesystem ); CVE-2026-34452 (Claude SDK for Python: Memory Tool Path Validation Race Condition Allows Sandbox); CVE-2026-34450 (The Claude SDK for Python provides access to the Claude API from Python applicat) +1 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
       "severity": "LOW",
@@ -958,11 +935,12 @@
           "start_line": 1,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "config"
     },
     {
       "id": "SC1",
-      "finding_id": "finding-7a99fd6aefc24991a31bed1934710c60",
+      "finding_id": "finding-f2097a78ae85459ea81acbe2d3fc97a7",
       "category": "Supply Chain",
       "pattern": "Unpinned Dependencies",
       "severity": "LOW",
@@ -990,11 +968,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "config"
     },
     {
       "id": "SC4",
-      "finding_id": "finding-8e026e4fe70d49729f3d68f79d85e47f",
+      "finding_id": "finding-bba11307472e441089e7f2807ba34c1e",
       "category": "Supply Chain",
       "pattern": "Unverifiable Dependency: mcp has 16 known advisory(ies) (CVE-2025-53366 (MCP Python SDK vulnerability in the FastMCP Server causes validation error, lead); CVE-2026-116685 (Model Context Protocol Python SDK: HTTP client transports followed cross-origin ); CVE-2026-59951 (MCP Python SDK: Unbounded Session Accumulation in StreamableHTTP Transport Enabl) +13 more), but the manifest does not pin a version, so it is unknown whether the installed release is affected",
       "severity": "LOW",
@@ -1020,7 +999,8 @@
           "start_line": 2,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "config"
     }
   ],
   "suppressed_count": 0,
@@ -1056,7 +1036,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1069,7 +1049,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1082,7 +1062,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1095,7 +1075,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1108,7 +1088,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1196,27 +1176,51 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: expansion boundary; location: reported source range; unchecked scope: expression. Relevant parser input not fully checked.",
         "path": "reference/node_mcp_server.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "expansion_boundary",
+          "source_start_offset": 15750,
+          "source_end_offset": 16766,
+          "start_line": 522,
+          "end_line": 575,
+          "unchecked_scope": "expression",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command word boundary; location: reported source range; unchecked scope: command word. Relevant parser input fully checked.",
         "path": "reference/python_mcp_server.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "command_word_boundary",
+          "source_start_offset": 20235,
+          "source_end_offset": 25099,
+          "start_line": 604,
+          "end_line": 719,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": false,
+          "full_input_checked": true,
+          "location_precision": "source_span"
+        }
       }
     ],
     "scope_exclusions": [],
@@ -1639,8 +1643,8 @@
       "Analyzer static_patterns_system_prompt_leakage status: degraded.",
       "Analyzer static_patterns_tool_misuse status: degraded."
     ],
-    "findings_before_filtering": 17,
-    "findings_after_filtering": 17,
+    "findings_before_filtering": 16,
+    "findings_after_filtering": 16,
     "dependency_inspection": {
       "enabled": false,
       "status": "not_requested",

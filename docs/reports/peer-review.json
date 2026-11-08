@@ -1,14 +1,14 @@
 {
   "skill": {
     "name": "peer-review",
-    "source": "/tmp/uniscan-dzce5v9y/repo/skills/peer-review",
-    "scanned_at": "2026-11-01T10:03:11.221402+00:00"
+    "source": "/tmp/uniscan-7qb3p2l4/repo/skills/peer-review",
+    "scanned_at": "2026-11-08T09:51:19.439626+00:00"
   },
   "risk_assessment": {
-    "score": 7,
-    "severity": "LOW",
-    "recommendation": "SAFE",
-    "max_issue_severity": "MEDIUM"
+    "score": 44,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION",
+    "max_issue_severity": "HIGH"
   },
   "components": [
     {
@@ -255,8 +255,100 @@
   "structured_summaries": [],
   "issues": [
     {
+      "id": "AE1",
+      "finding_id": "finding-69b2c55649874408b5a93a454817a8dd",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 62,
+        "end_line": null
+      },
+      "finding": "scripts/validate_review_intake.py (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "python3 scripts/validate_review_intake.py completed-intake.json",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/validate_review_intake.py",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "c37ff4cc8a524ed475d5798450c5bd240b616c96d397682501131be9083d01b1",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 62,
+          "end_line": null
+        }
+      ],
+      "surface": "instructions"
+    },
+    {
+      "id": "AE1",
+      "finding_id": "finding-42b7affbc2714535bf7a732daf67c868",
+      "category": "analysis-evasion",
+      "pattern": "Incomplete referenced artifact analysis",
+      "severity": "HIGH",
+      "confidence": 1.0,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 279,
+        "end_line": null
+      },
+      "finding": "scripts/validate_review_intake.py (partial)",
+      "explanation": "Referenced artifact was not completely inspected",
+      "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+      "code_snippet": "- `scripts/validate_review_intake.py` \u2014 scope, authorization, conflicts, policy, handling",
+      "intent": null,
+      "tags": [
+        "coverage",
+        "reference",
+        "target-disposition:partial"
+      ],
+      "evidence": {
+        "target_path": "scripts/validate_review_intake.py",
+        "target_disposition": "partial",
+        "reasons": [
+          {
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
+            "phase": "static",
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ]
+      },
+      "match_fingerprint": "c37ff4cc8a524ed475d5798450c5bd240b616c96d397682501131be9083d01b1",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 279,
+          "end_line": null
+        }
+      ],
+      "surface": "instructions"
+    },
+    {
       "id": "LP3",
-      "finding_id": "finding-6fc4c0111a5240f9b979dcd150af3189",
+      "finding_id": "finding-16b15a9c3df64cefb889b9a394f409a0",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: file_read, shell.",
       "severity": "MEDIUM",
@@ -282,7 +374,8 @@
           "start_line": 1,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -318,7 +411,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -331,7 +424,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -344,7 +437,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -357,7 +450,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -370,7 +463,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -411,13 +504,13 @@
   "execution_successful": true,
   "analysis_completeness": {
     "total_components": 24,
-    "scanned_components": 24,
-    "coverage_percent": 100.0,
-    "is_complete": true,
-    "status": "complete_with_caveats",
+    "scanned_components": 23,
+    "coverage_percent": 95.8,
+    "is_complete": false,
+    "status": "partial",
     "execution_successful": true,
-    "fully_inspected_files": 24,
-    "partially_inspected_files": 0,
+    "fully_inspected_files": 23,
+    "partially_inspected_files": 1,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
       {
@@ -429,6 +522,33 @@
         "start_line": 7,
         "end_line": 7,
         "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "static",
+        "reason_code": "static_parse_limit",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector reached a configured inspection limit. Check: command word unquoted characters; location: reported source range; unchecked scope: command word. Relevant parser input not fully checked. Parser measurements: characters: observed at least 4097, limit 4096.",
+        "path": "scripts/validate_review_intake.py",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_tool_misuse"
+        ],
+        "parser_diagnostic": {
+          "cause": "resource_limit",
+          "check": "command_word_unquoted_characters",
+          "source_start_offset": 1740,
+          "source_end_offset": 12722,
+          "start_line": 81,
+          "end_line": 403,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": true,
+          "full_input_checked": false,
+          "location_precision": "source_span",
+          "observed_characters": 4097,
+          "limit_characters": 4096
+        }
       }
     ],
     "scope_exclusions": [],
@@ -516,6 +636,16 @@
         "unaccounted": 0,
         "reason_code": "disabled_by_configuration",
         "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "reference_coverage",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
       },
       {
         "analyzer_id": "semantic_developer_intent",
@@ -695,10 +825,10 @@
       },
       {
         "analyzer_id": "static_patterns_tool_misuse",
-        "status": "completed",
+        "status": "degraded",
         "planned_work": 24,
-        "completed": 24,
-        "partial": 0,
+        "completed": 23,
+        "partial": 1,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0
@@ -1076,9 +1206,11 @@
         "reference_kind": "quoted_or_code"
       }
     ],
-    "limitations": [],
-    "findings_before_filtering": 1,
-    "findings_after_filtering": 1,
+    "limitations": [
+      "Analyzer static_patterns_tool_misuse status: degraded."
+    ],
+    "findings_before_filtering": 3,
+    "findings_after_filtering": 3,
     "dependency_inspection": {
       "enabled": false,
       "status": "not_requested",

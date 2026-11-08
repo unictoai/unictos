@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "exa-search",
-    "source": "/tmp/uniscan-hq1pjc6j/repo/skills/exa-search",
-    "scanned_at": "2026-11-01T09:58:54.828039+00:00"
+    "source": "/tmp/uniscan-qmpf3yp2/repo/skills/exa-search",
+    "scanned_at": "2026-11-08T09:47:18.838703+00:00"
   },
   "risk_assessment": {
     "score": 32,
@@ -66,7 +66,7 @@
   "issues": [
     {
       "id": "PE3",
-      "finding_id": "finding-ab8399f162214add899c017c140a6696",
+      "finding_id": "finding-175dc52d167646d9aff76afa8e4e67aa",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -94,11 +94,12 @@
           "end_line": null,
           "start_column": 10
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "LP3",
-      "finding_id": "finding-8aeb742149dd47cea0ae25192e674885",
+      "finding_id": "finding-c1672cccbe95408d82f95a29b1e36721",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, file_write.",
       "severity": "MEDIUM",
@@ -124,11 +125,12 @@
           "start_line": 1,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "E1",
-      "finding_id": "finding-38cf9b5ed5f74bf9aa88ad802d3fe424",
+      "finding_id": "finding-350d8104d1f94e7eb5980182cd78e5c7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -156,11 +158,12 @@
           "end_line": null,
           "start_column": 43
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "E1",
-      "finding_id": "finding-04b8062f24994b189e24997d99f99c61",
+      "finding_id": "finding-f355b7c32db949de9285e8ee19b77895",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -188,11 +191,12 @@
           "end_line": null,
           "start_column": 16
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AST7",
-      "finding_id": "finding-f02f4e32c6e4403dbf12e0d53024a1d7",
+      "finding_id": "finding-ef9e80de883d4fecb51b85338d8283a9",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic attribute access via getattr()",
       "severity": "LOW",
@@ -222,7 +226,8 @@
           "start_column": 18,
           "end_column": 44
         }
-      ]
+      ],
+      "surface": "code"
     }
   ],
   "suppressed_count": 0,
@@ -258,7 +263,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -271,7 +276,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -284,7 +289,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -297,7 +302,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -310,7 +315,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }

@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "a11y-ally",
-    "source": "/tmp/uniscan-aaqg1x29/repo/.claude/skills/a11y-ally",
-    "scanned_at": "2026-11-01T10:11:00.948098+00:00"
+    "source": "/tmp/uniscan-7j9rk7xs/repo/.claude/skills/a11y-ally",
+    "scanned_at": "2026-11-08T09:58:29.284223+00:00"
   },
   "risk_assessment": {
     "score": 28,
@@ -56,7 +56,7 @@
   "issues": [
     {
       "id": "MP3",
-      "finding_id": "finding-27f5dc591cab41c8b7e1676fd03422f2",
+      "finding_id": "finding-fa6fa76dbb77408d82455eebb41f25f0",
       "category": "Memory Poisoning",
       "pattern": "Memory Manipulation",
       "severity": "HIGH",
@@ -84,11 +84,12 @@
           "end_line": null,
           "start_column": 12
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AS3",
-      "finding_id": "finding-bf2952e2408c438189beac904b6481a0",
+      "finding_id": "finding-6ecc389b0b834f789dacaee67f97388a",
       "category": "Agent Snooping",
       "pattern": "Skill Enumeration",
       "severity": "MEDIUM",
@@ -116,7 +117,8 @@
           "end_line": null,
           "start_column": 172
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -152,7 +154,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -165,7 +167,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -178,7 +180,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -191,7 +193,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -204,7 +206,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -258,14 +260,26 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: expansion boundary; location: reported source range; unchecked scope: expression. Relevant parser input not fully checked.",
         "path": "SKILL.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "expansion_boundary",
+          "source_start_offset": 11696,
+          "source_end_offset": 14390,
+          "start_line": 331,
+          "end_line": 408,
+          "unchecked_scope": "expression",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",

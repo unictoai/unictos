@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "datalad",
-    "source": "/tmp/uniscan-dct883xy/repo/skills/datalad",
-    "scanned_at": "2026-11-01T10:06:58.571934+00:00"
+    "source": "/tmp/uniscan-w4k8xn_g/repo/skills/datalad",
+    "scanned_at": "2026-11-08T09:54:42.997185+00:00"
   },
   "risk_assessment": {
     "score": 71,
@@ -56,7 +56,7 @@
   "issues": [
     {
       "id": "TM1",
-      "finding_id": "finding-f5b6cd403aa345568bd747b0ff8b2844",
+      "finding_id": "finding-8c684e0626284fa689ca9db887aa3424",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -84,11 +84,12 @@
           "end_line": null,
           "start_column": 68
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "TM1",
-      "finding_id": "finding-684715616c4c490e8ab6e1367f5cfc49",
+      "finding_id": "finding-05a9a7a9ad1f484ea435fc2094ffb0d1",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -116,11 +117,12 @@
           "end_line": null,
           "start_column": 5
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "TM1",
-      "finding_id": "finding-e987aa85fc0d4a6a831f8458cd053579",
+      "finding_id": "finding-c1a43cdd6e5a44989566a41f89c4c55a",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -148,11 +150,12 @@
           "end_line": null,
           "start_column": 3
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "AR2",
-      "finding_id": "finding-561e74adf77949a496cbd415c420fd34",
+      "finding_id": "finding-2e20419732744eceb07d9e85a239aa6f",
       "category": "Anti-Refusal",
       "pattern": "Anti-Refusal Statement",
       "severity": "HIGH",
@@ -182,11 +185,12 @@
           "start_column": 83,
           "end_column": 93
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-6f58b264c38a4b40aedd53afdf8b512f",
+      "finding_id": "finding-757c2204c4c64d249c699ef60ad7bee4",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -214,7 +218,8 @@
           "end_line": null,
           "start_column": 66
         }
-      ]
+      ],
+      "surface": "docs"
     }
   ],
   "suppressed_count": 0,
@@ -250,7 +255,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -263,7 +268,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -276,7 +281,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -289,7 +294,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -302,7 +307,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }

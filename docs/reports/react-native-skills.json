@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "vercel-react-native-skills",
-    "source": "/tmp/uniscan-577qeibn/repo/skills/react-native-skills",
-    "scanned_at": "2026-11-01T09:57:48.275567+00:00"
+    "source": "/tmp/uniscan-17zsippp/repo/skills/react-native-skills",
+    "scanned_at": "2026-11-08T09:46:13.676896+00:00"
   },
   "risk_assessment": {
     "score": 46,
@@ -436,7 +436,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-36e166052ee34d38ac8a01f3031fb597",
+      "finding_id": "finding-b0c1e96918e0483a9dcf7cc2977deb46",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -462,7 +462,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -477,11 +477,12 @@
           "start_line": 121,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "P4",
-      "finding_id": "finding-b200f7e740664b0d8946bffcd5208ceb",
+      "finding_id": "finding-34ed48e1282e4ee8bc440e802b54d69f",
       "category": "Prompt Injection",
       "pattern": "Behavior Manipulation",
       "severity": "MEDIUM",
@@ -511,11 +512,12 @@
           "start_column": 0,
           "end_column": 39
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "P4",
-      "finding_id": "finding-e538cd3735464207b194b57b3f396d73",
+      "finding_id": "finding-0fdadca3bac748b2a2873bb28f309b37",
       "category": "Prompt Injection",
       "pattern": "Behavior Manipulation",
       "severity": "MEDIUM",
@@ -545,11 +547,12 @@
           "start_column": 0,
           "end_column": 39
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-6ce36ab8e8b74d7991dc777c4f9ef75e",
+      "finding_id": "finding-c043ed8519a5476798f91edf556a67a5",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -575,11 +578,12 @@
           "start_line": 2882,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-87d15543e95f48fc84e627f4a9f4b239",
+      "finding_id": "finding-e9019a8abfbb4117a60b93133c45aba9",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -605,7 +609,8 @@
           "start_line": 67,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "docs"
     }
   ],
   "suppressed_count": 0,
@@ -641,7 +646,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -654,7 +659,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -667,7 +672,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -680,7 +685,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -693,7 +698,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -747,14 +752,26 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: printf invocation; location: reported source range; unchecked scope: command word. Relevant parser input not fully checked.",
         "path": "AGENTS.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "printf_invocation",
+          "source_start_offset": 14059,
+          "source_end_offset": 14081,
+          "start_line": 457,
+          "end_line": 457,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
@@ -770,27 +787,51 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: printf invocation; location: reported source range; unchecked scope: command word. Relevant parser input not fully checked.",
         "path": "rules/list-performance-function-references.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "printf_invocation",
+          "source_start_offset": 918,
+          "source_end_offset": 940,
+          "start_line": 26,
+          "end_line": 26,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: printf invocation; location: reported source range; unchecked scope: command word. Relevant parser input not fully checked.",
         "path": "rules/list-performance-images.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "printf_invocation",
+          "source_start_offset": 944,
+          "source_end_offset": 985,
+          "start_line": 36,
+          "end_line": 36,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       }
     ],
     "scope_exclusions": [],

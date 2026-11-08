@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "brainstorming",
-    "source": "/tmp/uniscan-kh_kw_h_/repo/skills/brainstorming",
-    "scanned_at": "2026-11-01T10:00:44.394741+00:00"
+    "source": "/tmp/uniscan-1k86o0ri/repo/skills/brainstorming",
+    "scanned_at": "2026-11-08T09:49:03.931635+00:00"
   },
   "risk_assessment": {
     "score": 52,
@@ -96,7 +96,7 @@
   "issues": [
     {
       "id": "TM1",
-      "finding_id": "finding-57ecfccd30004998a742c355b235687d",
+      "finding_id": "finding-2c1d1a4791104bd693b0fded72481481",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -124,11 +124,12 @@
           "end_line": null,
           "start_column": 2
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "LP3",
-      "finding_id": "finding-918d41bfcf104d0fbcf9b43c429b1d35",
+      "finding_id": "finding-9c8f2db382cd4468b561d81d9f175da2",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, network, shell.",
       "severity": "MEDIUM",
@@ -154,11 +155,12 @@
           "start_line": 1,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RA2",
-      "finding_id": "finding-d5d9fd327b914ca38de61745418735d9",
+      "finding_id": "finding-bdaed443969141d5b94763aa18bcd6a0",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -186,11 +188,12 @@
           "end_line": null,
           "start_column": 25
         }
-      ]
+      ],
+      "surface": "comments"
     },
     {
       "id": "RA2",
-      "finding_id": "finding-4102a404ce3f452f9f285ef24fd975db",
+      "finding_id": "finding-67242ed5b2fe40888b2ba5a271bb69b6",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -218,11 +221,12 @@
           "end_line": null,
           "start_column": 6
         }
-      ]
+      ],
+      "surface": "comments"
     },
     {
       "id": "RA2",
-      "finding_id": "finding-dbf10c2fefa342e48929c3074c50004e",
+      "finding_id": "finding-037f4b147f6a4904a635c72d9c260220",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -250,11 +254,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "RA2",
-      "finding_id": "finding-72a60de93cbb4ced88b01fabc9d2b4db",
+      "finding_id": "finding-dcbbf7ed675e478aa29385f2a5cce884",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -282,11 +287,12 @@
           "end_line": null,
           "start_column": 35
         }
-      ]
+      ],
+      "surface": "comments"
     },
     {
       "id": "RA2",
-      "finding_id": "finding-8eefda903cc440f19676b45a4117c3e0",
+      "finding_id": "finding-88f01248edd9452dafc11ea8fca55ef7",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -314,7 +320,8 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "code"
     }
   ],
   "suppressed_count": 0,
@@ -350,7 +357,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -363,7 +370,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -376,7 +383,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -389,7 +396,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -402,7 +409,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -443,40 +450,39 @@
   "execution_successful": true,
   "analysis_completeness": {
     "total_components": 8,
-    "scanned_components": 6,
-    "coverage_percent": 75.0,
+    "scanned_components": 7,
+    "coverage_percent": 87.5,
     "is_complete": false,
     "status": "partial",
     "execution_successful": true,
-    "fully_inspected_files": 6,
-    "partially_inspected_files": 2,
+    "fully_inspected_files": 7,
+    "partially_inspected_files": 1,
     "entirely_uninspected_files": 0,
     "ledger_exceptions": [
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: command string runtime; location: reported source range; unchecked scope: remaining input. Relevant parser input not fully checked.",
         "path": "scripts/server.cjs",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
-      },
-      {
-        "outcome": "partial",
-        "phase": "static",
-        "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
-        "path": "scripts/stop-server.sh",
-        "start_line": null,
-        "end_line": null,
-        "fatal": false,
-        "analyzers": [
-          "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "command_string_runtime",
+          "source_start_offset": 7271,
+          "source_end_offset": 25689,
+          "start_line": 190,
+          "end_line": 723,
+          "unchecked_scope": "remaining_input",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       }
     ],
     "scope_exclusions": [],
@@ -749,8 +755,8 @@
         "analyzer_id": "static_patterns_tool_misuse",
         "status": "degraded",
         "planned_work": 8,
-        "completed": 6,
-        "partial": 2,
+        "completed": 7,
+        "partial": 1,
         "skipped": 0,
         "failed": 0,
         "unaccounted": 0

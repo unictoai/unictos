@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "browser-testing-with-devtools",
-    "source": "/tmp/uniscan-ebdnrr69/repo/skills/browser-testing-with-devtools",
-    "scanned_at": "2026-11-01T10:00:27.708454+00:00"
+    "source": "/tmp/uniscan-l3ilyx63/repo/skills/browser-testing-with-devtools",
+    "scanned_at": "2026-11-08T09:48:47.730438+00:00"
   },
   "risk_assessment": {
     "score": 47,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "P1",
-      "finding_id": "finding-b684e23de77d444a9577f3a5db174b87",
+      "finding_id": "finding-34419bfb085342e3ac4294bfd0147b4d",
       "category": "Prompt Injection",
       "pattern": "Instruction Override",
       "severity": "HIGH",
@@ -56,11 +56,12 @@
           "start_column": 225,
           "end_column": 253
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "YR4",
-      "finding_id": "finding-269ff5968d80491ba7a372a764d960cd",
+      "finding_id": "finding-f601d62e18f94d88b4a9372c08637bf6",
       "category": "YARA Match",
       "pattern": "YARA rule 'agent_skill_prompt_injection_hidden_instructions': Prompt injection or hidden instructions embedded in AI agent skill text [agent_skills]",
       "severity": "HIGH",
@@ -86,11 +87,12 @@
           "start_line": 77,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-111db511e1904911892ee2992f767082",
+      "finding_id": "finding-fcf8e27a2fce4d5a91cbd86ec7f2eeb5",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx install'.",
       "severity": "MEDIUM",
@@ -116,7 +118,8 @@
           "start_line": 41,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -152,7 +155,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -165,7 +168,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -178,7 +181,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -191,7 +194,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -204,7 +207,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }

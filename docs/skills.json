@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01",
+ "generated_at": "2026-11-08",
  "generator": "uniscan/1.0",
  "scanner": "skillspector",
  "scanner_version": "2.12.0",
@@ -105,7 +105,7 @@
      "All 8 Python scripts checked: no network calls, no environment access, no subprocess, no obfuscation. Pure local file processing."
     ],
     "report": "reports/pdf.json",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 98,
@@ -223,7 +223,7 @@
      "1 MEDIUM: SKILL.md declares no tool scope \u2014 documentation hygiene."
     ],
     "report": "reports/webapp-testing.json",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 90,
@@ -280,7 +280,7 @@
      "Template checked by hand: no fetch, no eval, no cookie access. Generated viewer pages load p5.js 1.7.0 and Google Fonts from CDN (pinned versions, standard for p5.js sketches)."
     ],
     "report": "reports/algorithmic-art.json",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 95,
@@ -336,7 +336,7 @@
      "Zero findings. Single SKILL.md, no scripts, no executables \u2014 nothing to exploit."
     ],
     "report": "reports/web-design-guidelines.json",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 100,
@@ -509,7 +509,7 @@
      "Zero findings. Single SKILL.md, no scripts, no executables \u2014 nothing to exploit."
     ],
     "report": "reports/documentation-and-adrs.json",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 100,
@@ -565,7 +565,7 @@
      "Zero findings. Single SKILL.md, no scripts, no executables \u2014 nothing to exploit."
     ],
     "report": "reports/code-review-and-quality.json",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 100,
@@ -613,7 +613,7 @@
    "uniscan": {
     "score": 90,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -730,12 +730,12 @@
    "uniscan": {
     "score": 95,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
      "critical": 0,
-     "high": 2,
+     "high": 0,
      "medium": 0,
      "low": 0
     },
@@ -786,7 +786,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -842,7 +842,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -898,7 +898,7 @@
    "uniscan": {
     "score": 95,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -954,7 +954,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1010,7 +1010,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1066,7 +1066,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1122,7 +1122,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1178,7 +1178,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1234,7 +1234,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1290,7 +1290,7 @@
    "uniscan": {
     "score": 95,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1346,7 +1346,7 @@
    "uniscan": {
     "score": 93,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1402,7 +1402,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1458,7 +1458,7 @@
    "uniscan": {
     "score": 85,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1572,7 +1572,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "verified",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1685,7 +1685,7 @@
    "uniscan": {
     "score": 88,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1858,7 +1858,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1914,7 +1914,7 @@
    "uniscan": {
     "score": 94,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -1971,7 +1971,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2027,7 +2027,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2083,7 +2083,7 @@
    "uniscan": {
     "score": 98,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2139,7 +2139,7 @@
    "uniscan": {
     "score": 92,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2196,7 +2196,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2252,7 +2252,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2423,7 +2423,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2479,7 +2479,7 @@
    "uniscan": {
     "score": 95,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2591,7 +2591,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2647,7 +2647,7 @@
    "uniscan": {
     "score": 93,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2704,7 +2704,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2760,7 +2760,7 @@
    "uniscan": {
     "score": 98,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2816,7 +2816,7 @@
    "uniscan": {
     "score": 94,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2872,7 +2872,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -2928,7 +2928,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3099,7 +3099,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3155,7 +3155,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3211,7 +3211,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3324,12 +3324,12 @@
    "uniscan": {
     "score": 97,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
      "critical": 0,
-     "high": 0,
+     "high": 2,
      "medium": 1,
      "low": 0
     },
@@ -3380,7 +3380,7 @@
    "uniscan": {
     "score": 95,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3493,7 +3493,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3549,7 +3549,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -3718,7 +3718,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4001,7 +4001,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4056,7 +4056,7 @@
    "uniscan": {
     "score": 90,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4283,7 +4283,7 @@
    "uniscan": {
     "score": 87,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4339,7 +4339,7 @@
    "uniscan": {
     "score": 94,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4451,7 +4451,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4507,7 +4507,7 @@
    "uniscan": {
     "score": 94,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4562,7 +4562,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4617,7 +4617,7 @@
    "uniscan": {
     "score": 97,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4672,7 +4672,7 @@
    "uniscan": {
     "score": 93,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4728,7 +4728,7 @@
    "uniscan": {
     "score": 93,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4784,7 +4784,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4840,7 +4840,7 @@
    "uniscan": {
     "score": 98,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -4896,7 +4896,7 @@
    "uniscan": {
     "score": 96,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5175,7 +5175,7 @@
    "uniscan": {
     "score": 95,
     "verdict": "verified-with-notes",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5230,7 +5230,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5286,7 +5286,7 @@
    "uniscan": {
     "score": 95,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5342,7 +5342,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5398,7 +5398,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5454,7 +5454,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5566,20 +5566,21 @@
    ],
    "uniscan": {
     "score": 94,
-    "verdict": "verified-with-notes",
-    "scanned_at": "2026-11-01",
+    "verdict": "re-review",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
      "critical": 0,
-     "high": 3,
+     "high": 2,
      "medium": 0,
      "low": 0
     },
     "notes": [
      "4 HIGH are coverage notes on referenced docs \u2014 reviewed manually."
     ],
-    "report": "reports/redis-search.json"
+    "report": "reports/redis-search.json",
+    "upstream_sha": "74708dab4b3f81a9845803c3f642a4f7d443af69"
    },
    "review": {
     "reviewer": "unictos team",
@@ -5622,7 +5623,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5678,7 +5679,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5790,7 +5791,7 @@
    ],
    "uniscan": {
     "score": 92,
-    "verdict": "verified-with-notes",
+    "verdict": "re-review",
     "scanned_at": "2026-10-13",
     "scanner": "skillspector",
     "scanner_version": "2.12.0",
@@ -5803,7 +5804,8 @@
     "notes": [
      "93 findings, all reviewed. 83 HIGH are coverage notes on the large reference set. 2 'Hidden Instructions' are HTML comments in the docs (source attributions)."
     ],
-    "report": "reports/compose-expert.json"
+    "report": "reports/compose-expert.json",
+    "upstream_sha": "6e838c050468b8e4c1988f121033775326d38f20"
    },
    "review": {
     "reviewer": "unictos team",
@@ -5846,7 +5848,7 @@
    "uniscan": {
     "score": 95,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5902,7 +5904,7 @@
    "uniscan": {
     "score": 100,
     "verdict": "re-review",
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "findings": {
@@ -5956,7 +5958,7 @@
    ],
    "install_hint": "Copy review.md into your ~/.claude/commands/ folder, then type /review.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 88,
@@ -6010,7 +6012,7 @@
    ],
    "install_hint": "Copy security-review.md into your ~/.claude/commands/ folder, then type /security-review.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 90,
@@ -6064,7 +6066,7 @@
    ],
    "install_hint": "Copy code-reviewer.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 92,
@@ -6119,7 +6121,7 @@
    ],
    "install_hint": "Copy debugger.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 90,
@@ -6174,7 +6176,7 @@
    ],
    "install_hint": "Copy security-auditor.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 93,
@@ -6229,7 +6231,7 @@
    ],
    "install_hint": "Copy test-automator.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 90,
@@ -6284,7 +6286,7 @@
    ],
    "install_hint": "Copy error-detective.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 88,
@@ -6339,7 +6341,7 @@
    ],
    "install_hint": "Copy performance-engineer.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 89,
@@ -6394,7 +6396,7 @@
    ],
    "install_hint": "Copy architect-reviewer.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 90,
@@ -6449,7 +6451,7 @@
    ],
    "install_hint": "Copy python-pro.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 91,
@@ -6504,7 +6506,7 @@
    ],
    "install_hint": "Copy test-writer.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 89,
@@ -6559,7 +6561,7 @@
    ],
    "install_hint": "Copy refactoring-specialist.md into your ~/.claude/agents/ folder.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 88,
@@ -6672,7 +6674,7 @@
    ],
    "install_hint": "Copy smart-debug.md into your ~/.claude/commands/ folder, then type /smart-debug.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 92,
@@ -6727,7 +6729,7 @@
    ],
    "install_hint": "Copy refactor-clean.md into your ~/.claude/commands/ folder, then type /refactor-clean.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 90,
@@ -6782,7 +6784,7 @@
    ],
    "install_hint": "Copy tech-debt.md into your ~/.claude/commands/ folder, then type /tech-debt.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 89,
@@ -6837,7 +6839,7 @@
    ],
    "install_hint": "Copy doc-generate.md into your ~/.claude/commands/ folder, then type /doc-generate.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 88,
@@ -6892,7 +6894,7 @@
    ],
    "install_hint": "Copy full-review.md into your ~/.claude/commands/ folder, then type /full-review.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 87,
@@ -6947,7 +6949,7 @@
    ],
    "install_hint": "Copy workflow-automate.md into your ~/.claude/commands/ folder, then type /workflow-automate.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 82,
@@ -7003,7 +7005,7 @@
    ],
    "install_hint": "Copy sql-migrations.md into your ~/.claude/commands/ folder, then type /sql-migrations.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 91,
@@ -7058,7 +7060,7 @@
    ],
    "install_hint": "Copy deps-audit.md into your ~/.claude/commands/ folder, then type /deps-audit.",
    "uniscan": {
-    "scanned_at": "2026-11-01",
+    "scanned_at": "2026-11-08",
     "scanner": "skillspector",
     "scanner_version": "v2.12.0",
     "score": 89,

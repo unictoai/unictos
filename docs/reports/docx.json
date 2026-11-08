@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "docx",
-    "source": "/tmp/uniscan-3gj247qa/repo/skills/docx",
-    "scanned_at": "2026-11-01T09:56:37.227221+00:00"
+    "source": "/tmp/uniscan-8cl6d9tf/repo/skills/docx",
+    "scanned_at": "2026-11-08T09:45:02.111902+00:00"
   },
   "risk_assessment": {
     "score": 86,
@@ -626,7 +626,7 @@
   "issues": [
     {
       "id": "TM1",
-      "finding_id": "finding-e75c353a99c64680b5e64877bd601b4c",
+      "finding_id": "finding-bb63db93d9184aaf982a2f67b2c9629c",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -654,11 +654,12 @@
           "end_line": null,
           "start_column": 16
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "TM2",
-      "finding_id": "finding-bb95333d999448d9981db844c6cc9a82",
+      "finding_id": "finding-72ab0252d46b409982e9772d6349ddb3",
       "category": "Tool Misuse",
       "pattern": "Chaining Abuse",
       "severity": "HIGH",
@@ -686,11 +687,12 @@
           "end_line": null,
           "start_column": 13
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "E2",
-      "finding_id": "finding-6f4aca428f734d83b469d939fbfeb22f",
+      "finding_id": "finding-f97f6b6918d8499e9d8a076d63c310c4",
       "category": "Data Exfiltration",
       "pattern": "Env Variable Harvesting",
       "severity": "HIGH",
@@ -718,11 +720,12 @@
           "end_line": 28,
           "start_column": 10
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "LP3",
-      "finding_id": "finding-bbc57be3cab4488f8d113d58098b39b2",
+      "finding_id": "finding-926df3c71fb8417c8e20095c3f6f4a70",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, file_read, file_write, network, shell.",
       "severity": "MEDIUM",
@@ -748,11 +751,12 @@
           "start_line": 1,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-d849485a66da4bbf8084b29250593f22",
+      "finding_id": "finding-635c26bbc70e4fdd84c2aba8db36a48a",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -782,11 +786,12 @@
           "start_column": 17,
           "end_column": 9
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-8d50a3d6b1284bf5874850c014a0e0a4",
+      "finding_id": "finding-5d8bdea30f3e4cacb87bb0cf0e509b17",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -816,11 +821,12 @@
           "start_column": 8,
           "end_column": 9
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-d04b6923bdcc47f1a9bf25c9a36ae3c9",
+      "finding_id": "finding-1d47a5e6db574d72972c14318abca31f",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -850,11 +856,12 @@
           "start_column": 15,
           "end_column": 82
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-ae70a7b88d2c43f2afa9d304b0b0e754",
+      "finding_id": "finding-f760fbc39c354d56927e5e56dffcb955",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -884,11 +891,12 @@
           "start_column": 4,
           "end_column": 5
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-45547dfb53ef4ac791bc3ec4cc12dd13",
+      "finding_id": "finding-8059f3abb7084e9d825365e91fa9e933",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -918,11 +926,12 @@
           "start_column": 25,
           "end_column": 17
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-e07593f6f4c9444486e46dfad85bc47f",
+      "finding_id": "finding-42263965aefe4d2a9a948496b8bac87d",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -952,11 +961,12 @@
           "start_column": 25,
           "end_column": 17
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "TR1",
-      "finding_id": "finding-403b28fa7df342d995e1e3afc79078ff",
+      "finding_id": "finding-005758feb9d842069f41b0b98fad4a1e",
       "category": "Trigger Abuse",
       "pattern": "Overly Broad Trigger",
       "severity": "LOW",
@@ -982,7 +992,8 @@
           "start_line": 2,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -1018,7 +1029,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1031,7 +1042,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1044,7 +1055,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1057,7 +1068,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1070,7 +1081,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }

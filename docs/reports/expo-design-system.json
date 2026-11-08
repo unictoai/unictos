@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "expo-design-system",
-    "source": "/tmp/uniscan-9duoslxf/repo/plugins/expo/skills/expo-design-system",
-    "scanned_at": "2026-11-01T10:01:24.342142+00:00"
+    "source": "/tmp/uniscan-41ydx2mt/repo/plugins/expo/skills/expo-design-system",
+    "scanned_at": "2026-11-08T09:49:42.173573+00:00"
   },
   "risk_assessment": {
     "score": 7,
@@ -56,7 +56,7 @@
   "issues": [
     {
       "id": "RP1",
-      "finding_id": "finding-82420391bd0f4624bff5e63fcc7a72a1",
+      "finding_id": "finding-2e5956427e544c8db2647537e5ecfff1",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx --yes submit-expo-feedback'.",
       "severity": "MEDIUM",
@@ -82,7 +82,8 @@
           "start_line": 373,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -118,7 +119,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -131,7 +132,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -144,7 +145,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -157,7 +158,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -170,7 +171,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }

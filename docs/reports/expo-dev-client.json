@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "expo-dev-client",
-    "source": "/tmp/uniscan-4jsldg5p/repo/plugins/expo/skills/expo-dev-client",
-    "scanned_at": "2026-11-01T10:01:08.006345+00:00"
+    "source": "/tmp/uniscan-4wbgt2yr/repo/plugins/expo/skills/expo-dev-client",
+    "scanned_at": "2026-11-08T09:49:26.552189+00:00"
   },
   "risk_assessment": {
     "score": 10,
@@ -36,7 +36,7 @@
   "issues": [
     {
       "id": "RP1",
-      "finding_id": "finding-fb5ae80274124d7287d471de42507960",
+      "finding_id": "finding-df1a5c51dba8462eafbafb56220a8110",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx expo'.",
       "severity": "MEDIUM",
@@ -62,11 +62,12 @@
           "start_line": 150,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-6ba7b09aaf5c46e8a174d68e0c72d497",
+      "finding_id": "finding-29bff0fb4fa246d39aad85e502479d0a",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx --yes submit-expo-feedback'.",
       "severity": "MEDIUM",
@@ -92,7 +93,8 @@
           "start_line": 179,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -128,7 +130,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -141,7 +143,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -154,7 +156,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -167,7 +169,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -180,7 +182,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -234,14 +236,26 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command argument boundary; location: reported source range; unchecked scope: command arguments. Relevant parser input fully checked.",
         "path": "SKILL.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "command_argument_boundary",
+          "source_start_offset": 473,
+          "source_end_offset": 4721,
+          "start_line": 10,
+          "end_line": 182,
+          "unchecked_scope": "command_arguments",
+          "observed_is_lower_bound": false,
+          "full_input_checked": true,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",

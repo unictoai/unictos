@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "systematic-debugging",
-    "source": "/tmp/uniscan-ce7yd7nk/repo/skills/systematic-debugging",
-    "scanned_at": "2026-11-01T10:00:50.179226+00:00"
+    "source": "/tmp/uniscan-o6et_xr5/repo/skills/systematic-debugging",
+    "scanned_at": "2026-11-08T09:49:09.678275+00:00"
   },
   "risk_assessment": {
     "score": 77,
@@ -126,7 +126,7 @@
   "issues": [
     {
       "id": "PE3",
-      "finding_id": "finding-69ef694649cf4b63af5496a116c2be98",
+      "finding_id": "finding-56d47ea2a2f24428a0b7d66806058b14",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -154,11 +154,12 @@
           "end_line": null,
           "start_column": 13
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-a215cfb89b46410188c0b996a9a4d643",
+      "finding_id": "finding-712ef25ac001411aab8c6f043bb676a9",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -186,11 +187,12 @@
           "end_line": null,
           "start_column": 17
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-5adf7bc9bab0489dad327df57d692f40",
+      "finding_id": "finding-cfddb65d0eb4464a96a7e1e031df17c8",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -216,7 +218,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -231,11 +233,12 @@
           "start_line": 283,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "E4",
-      "finding_id": "finding-e784c3444f6d4eff90d77f6b409e7199",
+      "finding_id": "finding-e15306028936409da727b46aa8520647",
       "category": "Data Exfiltration",
       "pattern": "Context Leakage",
       "severity": "HIGH",
@@ -263,11 +266,12 @@
           "end_line": null,
           "start_column": 13
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "EA4",
-      "finding_id": "finding-75d177cb3b864205ae4fd7ef96696ebf",
+      "finding_id": "finding-f904303000c343c2b3fa36fc6db7899c",
       "category": "Excessive Agency",
       "pattern": "Unbounded Resource Access",
       "severity": "MEDIUM",
@@ -295,7 +299,8 @@
           "end_line": null,
           "start_column": 18
         }
-      ]
+      ],
+      "surface": "docs"
     }
   ],
   "suppressed_count": 0,
@@ -331,7 +336,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -344,7 +349,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -357,7 +362,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -370,7 +375,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -383,7 +388,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -437,14 +442,26 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: expansion boundary; location: reported source range; unchecked scope: expression. Relevant parser input fully checked.",
         "path": "condition-based-waiting.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "expansion_boundary",
+          "source_start_offset": 2255,
+          "source_end_offset": 3498,
+          "start_line": 74,
+          "end_line": 115,
+          "unchecked_scope": "expression",
+          "observed_is_lower_bound": false,
+          "full_input_checked": true,
+          "location_precision": "source_span"
+        }
       }
     ],
     "scope_exclusions": [],

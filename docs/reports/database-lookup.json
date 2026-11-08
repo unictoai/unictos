@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "database-lookup",
-    "source": "/tmp/uniscan-vzgvlh5b/repo/skills/database-lookup",
-    "scanned_at": "2026-11-01T10:06:48.095583+00:00"
+    "source": "/tmp/uniscan-6c8zf22h/repo/skills/database-lookup",
+    "scanned_at": "2026-11-08T09:54:33.528186+00:00"
   },
   "risk_assessment": {
     "score": 26,
@@ -846,7 +846,7 @@
   "issues": [
     {
       "id": "PE3",
-      "finding_id": "finding-7e4537c3d597407fb17f424ce381687d",
+      "finding_id": "finding-726e0a66ab2c42a5be01f2567b7c0106",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -876,11 +876,12 @@
           "end_line": null,
           "start_column": 120
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-5ee283fd34c745078bcdfb2b519ec2cf",
+      "finding_id": "finding-7f01fea31afa43fab1ff48ddeccb54c3",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -908,11 +909,12 @@
           "end_line": null,
           "start_column": 39
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "E1",
-      "finding_id": "finding-63250bdf911546dfaedba47891511ee1",
+      "finding_id": "finding-e3ffb4a55bc04387b9550cb3bf0aebb1",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -940,11 +942,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-099743c451ad4bf0b7a0845fecdc985a",
+      "finding_id": "finding-09fb28575da242788395817c91f104ee",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -972,11 +975,12 @@
           "end_line": null,
           "start_column": 2
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-693d263bbcef4bc7b4dfaa4f63a6bc8b",
+      "finding_id": "finding-ad4a82c931644c78beff4b612ee2d465",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1004,11 +1008,12 @@
           "end_line": null,
           "start_column": 5
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-320bc1d14cf5404e98c14562c66f31fb",
+      "finding_id": "finding-cec314f1da724e9995b8c991ee61a15b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1036,11 +1041,12 @@
           "end_line": null,
           "start_column": 25
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-82611784b6c84174973b598abb0d3f6b",
+      "finding_id": "finding-457c9b68a06b4fef975b5e0fd14107c2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1068,11 +1074,12 @@
           "end_line": null,
           "start_column": 48
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "E1",
-      "finding_id": "finding-a9c4b95228e7403bad46590345cbe470",
+      "finding_id": "finding-afa74ce6a791415babf5484dfafa8d64",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1100,11 +1107,12 @@
           "end_line": null,
           "start_column": 59
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-70d0e1620f9e4162ab319f7929e321eb",
+      "finding_id": "finding-58df3d8d567c464993e71e129e8c0d37",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1132,11 +1140,12 @@
           "end_line": null,
           "start_column": 59
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-d5ca29c448d44c379783af77a8085fae",
+      "finding_id": "finding-80fd7eb00a924fa0adfaedebdcd28a95",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1164,11 +1173,12 @@
           "end_line": null,
           "start_column": 68
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-6d7f0c668a4f4a6c82af4d1ce34e7a96",
+      "finding_id": "finding-89de8cf4bf79424596155e6598131036",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1196,11 +1206,12 @@
           "end_line": null,
           "start_column": 49
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "E1",
-      "finding_id": "finding-096bb034bdb44bd080cdf8bcc20758cd",
+      "finding_id": "finding-bb0067db83ba401486f125f5cb87c9c2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1228,11 +1239,12 @@
           "end_line": null,
           "start_column": 20
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-3336b53a55914c308e1323c8c9cd1c8e",
+      "finding_id": "finding-35087984562544dc92bb8b9a0458b1b4",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1260,11 +1272,12 @@
           "end_line": null,
           "start_column": 29
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-6fe9f31a4516407b8ca1e343862337fa",
+      "finding_id": "finding-8415a8e7aee5422bafc7efbd97011a25",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1292,11 +1305,12 @@
           "end_line": null,
           "start_column": 105
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-e95b2cc9c74e4120b8f16e728f9d5c27",
+      "finding_id": "finding-5f06b6e9286a4d039592fd0ec30dea7a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1324,11 +1338,12 @@
           "end_line": null,
           "start_column": 91
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-66128e7e8ff74c8286478726d4bfd5a7",
+      "finding_id": "finding-8e65c0e28bd24561a3313d2e95ee3bf4",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1356,11 +1371,12 @@
           "end_line": null,
           "start_column": 101
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-dc88f2d17c074779956fcd07606ec79f",
+      "finding_id": "finding-209d9d6ae7c74f928a4dfa44f5840aef",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1388,11 +1404,12 @@
           "end_line": null,
           "start_column": 76
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-94864aebb9584ce9bc33cf5854be3963",
+      "finding_id": "finding-ddaf3558e174473a9ffd53df989f5217",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1420,11 +1437,12 @@
           "end_line": null,
           "start_column": 65
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-af142a4d1de14b8bba8fa5fd7fda85a8",
+      "finding_id": "finding-d699736e62f742d0a28392446801da67",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1452,11 +1470,12 @@
           "end_line": null,
           "start_column": 35
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-a0dbcfa30f1d47db8903b70c4cbacf7a",
+      "finding_id": "finding-c642375ba9234a23bbe3f3ff8b4638c3",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1484,11 +1503,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-c8b6cf2209184bb4b74b6b20601a7b42",
+      "finding_id": "finding-e3f76cceff214be996f224aece605bac",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1516,11 +1536,12 @@
           "end_line": null,
           "start_column": 19
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-ced28a20f77e4402966f0580ea551c0e",
+      "finding_id": "finding-e867af213dae4829afa48c38b34fb94d",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1548,11 +1569,12 @@
           "end_line": null,
           "start_column": 43
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-9da3f5d6b9704ba1b3f4c93b1ee91d3d",
+      "finding_id": "finding-1351d478d2764599afaaef551c08b898",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1580,11 +1602,12 @@
           "end_line": null,
           "start_column": 66
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "E1",
-      "finding_id": "finding-11e657990df547288d38d206e0438711",
+      "finding_id": "finding-86674ace8ed5491eb3ba9be342e028d8",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1612,11 +1635,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-7b95ee13aa434ce891dd431007e7cca9",
+      "finding_id": "finding-a19192aecfd147ada67974d2fe4d2d7d",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1644,11 +1668,12 @@
           "end_line": null,
           "start_column": 111
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-531d1eba52f942cbaf9b5b553685e9f1",
+      "finding_id": "finding-e0c51750145348b883a6cdbba353b95f",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1676,11 +1701,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-4bec9d5ec3e746419c970ff3c8fad505",
+      "finding_id": "finding-ca0e5118e8724df486acfd399adf7e2a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1708,11 +1734,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-343ecbf437874b088eaec2184d0b6e48",
+      "finding_id": "finding-4b0f111d00534fe5b3c47cbf0e504025",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1740,11 +1767,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-c50988fa275342139f444594174e15f8",
+      "finding_id": "finding-78a9151ab43f46ccbe8b990a32d934d5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1772,11 +1800,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-3475ff64321d413a9612ec2fa47f60c9",
+      "finding_id": "finding-2516088f56d54bbcb2bc69f57dea93de",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1804,11 +1833,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-f008df292ead4bd3ba42f47d4c13606b",
+      "finding_id": "finding-74135235dc5449e1a63b888caa07c255",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1836,11 +1866,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-79f801050b454cc1bb2e8b81f846b585",
+      "finding_id": "finding-aa2d33bb03004213b5dd4ad6cebaf493",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1868,11 +1899,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-c0bf39315efc44e58710c63fbed14aba",
+      "finding_id": "finding-81a16884649c4e63ba369d4811a4f753",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1900,11 +1932,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-0b05d3f8b0b44445a6073869c73db9c2",
+      "finding_id": "finding-e0c8011f794d4cf59bcebec52f535472",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1932,11 +1965,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-d5a311b0c3cf4abca72c01b362e3174f",
+      "finding_id": "finding-545560486cc3471f8320120b2f693e0a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1964,11 +1998,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-c643f26201424e4ca2d513f493f57db4",
+      "finding_id": "finding-d28514d583294ee6a835d9a4bd3f0bf7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1996,11 +2031,12 @@
           "end_line": null,
           "start_column": 29
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-cb3018396a9c45a188d19b2a980370ff",
+      "finding_id": "finding-389683a3be5d4544a60d6c7c22290e5b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2028,11 +2064,12 @@
           "end_line": null,
           "start_column": 29
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-9f23f32faf0f4c6fb941483763205788",
+      "finding_id": "finding-8dcbb1d61e1a44ea98dedea88546b352",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2060,11 +2097,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-fd4c65376f1e41b78cfa39ff92ca0790",
+      "finding_id": "finding-9c229d43478d461d8e2176c0c1cf68d6",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2092,11 +2130,12 @@
           "end_line": null,
           "start_column": 21
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-19a2851093494789bfd18a9b594db284",
+      "finding_id": "finding-0b774cb9e70a4747807938cbc1c36f98",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2124,11 +2163,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-9c59b65f7bd348c7a8be4c2a2ac56084",
+      "finding_id": "finding-3215c1fadb654be1a4bc170acf40a32c",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2156,11 +2196,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-5a667cef19a94d8c8769d1499c2cf2e6",
+      "finding_id": "finding-1c4d602daafc4351a5e111d4f7e8c63e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2188,11 +2229,12 @@
           "end_line": null,
           "start_column": 7
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-d2b05238f1f840a08ae2557e556b35e4",
+      "finding_id": "finding-4a99de2c5a8d412c9e58fd03a4ac904a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2220,11 +2262,12 @@
           "end_line": null,
           "start_column": 25
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-2d41fd62c7564d9cbf4ef8beab53b491",
+      "finding_id": "finding-7e96b823a95843e28fb71134db934476",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2252,11 +2295,12 @@
           "end_line": null,
           "start_column": 25
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-ea8ad7928d594f60b0ed488a96af7390",
+      "finding_id": "finding-0d6ba79cf04543c9a95d2d90297a26df",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2284,11 +2328,12 @@
           "end_line": null,
           "start_column": 32
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-fbe18bc652ca46299c4ae6cca83e830f",
+      "finding_id": "finding-4fb003a5dd804072b6ea887ef1dba831",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2316,11 +2361,12 @@
           "end_line": null,
           "start_column": 9
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-648c581d2e0b435ba766e71509257b74",
+      "finding_id": "finding-4094e0b0de0041cd98b4c2e646a35c58",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2348,11 +2394,12 @@
           "end_line": null,
           "start_column": 15
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-82ca777c724f409aa72257637d64b0b0",
+      "finding_id": "finding-3716d1725903455a96a20a2c7677fcaf",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2380,11 +2427,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-8f678751d0e84293a764ad7c68137e8f",
+      "finding_id": "finding-305a830950dc4e938363f64e0d8904ca",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2412,11 +2460,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-8ad21a45c60c4d35bfe788bcecd065b4",
+      "finding_id": "finding-bd41cad6e35b45eca8b371a8149aede5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2444,11 +2493,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-91a5c1c74dfb442797c0114a78bc268c",
+      "finding_id": "finding-27e16e17c269419db835eb81956f4fba",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2476,11 +2526,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-5c0ad475b6354887b1f5f1a3132196fd",
+      "finding_id": "finding-d6a07d6a4cc7439b953dd0649fbf4923",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2508,11 +2559,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-c497fa7b032a4f29825e7005f4a001f9",
+      "finding_id": "finding-f281f7175d0f4085b8cbdf9271698579",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2540,11 +2592,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-a115198deb0d49688696650e0fdbb9ac",
+      "finding_id": "finding-cac624c220bf4453888b2d17aee96409",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2572,11 +2625,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-da01376c06474e149d64d712f9ad3434",
+      "finding_id": "finding-016c465f68e24411a952bd389c5825fe",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2604,11 +2658,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-68a4be2480c84bde85d1a9861c79dde6",
+      "finding_id": "finding-54b89363cd4447d48ce64f6d84d62ad4",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2636,11 +2691,12 @@
           "end_line": null,
           "start_column": 29
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-2009c800365747eaa051573e3b41901b",
+      "finding_id": "finding-de786badf7ea41c6a68419d983e68807",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2668,11 +2724,12 @@
           "end_line": null,
           "start_column": 9
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-ac03d9b10fb840a4ab604ffc075f7248",
+      "finding_id": "finding-8eeb6af3b26941b79da7e6c6a350f7fe",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2700,11 +2757,12 @@
           "end_line": null,
           "start_column": 23
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-684b7bf544cf40e289ad35abd0f95b4d",
+      "finding_id": "finding-6984a00c45394b649bc464e783fb7dd7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2732,11 +2790,12 @@
           "end_line": null,
           "start_column": 57
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-3e3fabc3a7cb4bcd82c5c55ab92f0bbf",
+      "finding_id": "finding-11aa6d24d2484230965a7d1b4aac3d78",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2764,11 +2823,12 @@
           "end_line": null,
           "start_column": 37
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-af40950d82b44ab1a457e22e50b6b5e7",
+      "finding_id": "finding-6f29a75ee60d42fc9ba2ebbe132b236b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2796,11 +2856,12 @@
           "end_line": null,
           "start_column": 22
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-c0d21b89df024e21816dd32398d00bd7",
+      "finding_id": "finding-ddbd17a514e348c2921b89df4b0a6618",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2828,11 +2889,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-e160b125fa4a4f92bf4a7ab28ff48d00",
+      "finding_id": "finding-5a4f913f0fa34de99e15d544b1758226",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2860,11 +2922,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-39e397952cbe4e899de48a686a6e6ac0",
+      "finding_id": "finding-4f7a6b80ff8a43c6b85761c615d0be59",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2892,11 +2955,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-1c9e2f98174f45a3ad84340996bda676",
+      "finding_id": "finding-a106b8c3ae1e441d895a6f86d1e3fa6b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2924,11 +2988,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-c65567a944b94ae69e17a716afb397fd",
+      "finding_id": "finding-a40b87279cd4468ba61d7656ec298b6f",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2956,11 +3021,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-f2e4b82a27334b42a27a423102bf3443",
+      "finding_id": "finding-a03aecbc6659461581f898fab75ee190",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -2988,11 +3054,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-8bc3759384e34e7f87ec604a18f9de78",
+      "finding_id": "finding-afd2ba794c1244c1ac5b603f446de68b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3020,11 +3087,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-c40d234f5def4bb5a5753a3a22937e65",
+      "finding_id": "finding-500117535d0b4a8e952e58a804e3b7de",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3052,11 +3120,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-0deefe95c1ec45349529cf3a6ebc231a",
+      "finding_id": "finding-6e1b86146e9243658502dfad0007b315",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3084,11 +3153,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-8c32f5635a0c432a9a6ae012d8cbd13e",
+      "finding_id": "finding-72643c39749a466eaa9be981d02adb9b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3116,11 +3186,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-d60f827dfffc427a989c6281ec8acfc7",
+      "finding_id": "finding-3f852bfa286043ce879227838de634ea",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3148,11 +3219,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-b71ab7da6a194f5db5236a11de9e5c28",
+      "finding_id": "finding-69bcbc287ed6495eb52b54b24ee53baa",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3180,11 +3252,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-a9b4baf586b94422a6028e61e3dee5df",
+      "finding_id": "finding-13944fdfe28d4f3898ec4cf4f5d6c708",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3212,11 +3285,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-e6dc5876b8e54841b66aa442c2debda2",
+      "finding_id": "finding-d3b8f1b9a2ef41728e5b58f332a20911",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3244,11 +3318,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-845a428dec834c8bbd3b180656f544f7",
+      "finding_id": "finding-c48b00484fae47abbfb59e467ed5f19f",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3276,11 +3351,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-8e15399793744a69ab4c22f7bfd53d82",
+      "finding_id": "finding-d01b72069b9949ebad5b0cda98b3ecad",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3308,11 +3384,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-27f7a72035db46d2982944af0b8a1643",
+      "finding_id": "finding-09ef1abc075a44789f1a88ccae3c4be7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3340,11 +3417,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-e8bf52e711414e748bdb577732c45952",
+      "finding_id": "finding-22aac1abf07b4329b026a04dd5dcab8e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3372,11 +3450,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-af34ae1d424c4b8ca9a81faa78865561",
+      "finding_id": "finding-344ac361ad644aecbe3dd94155795e1a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3404,11 +3483,12 @@
           "end_line": null,
           "start_column": 52
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-0b00b1ded1a74ad18204dc7469c7cb72",
+      "finding_id": "finding-ef37b13beee5411da3bcf811222b1de5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3436,11 +3516,12 @@
           "end_line": null,
           "start_column": 15
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-5644206970164ad39c0e06db2bf661e3",
+      "finding_id": "finding-739028ecebdc479caf859f9528173ddb",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3468,11 +3549,12 @@
           "end_line": null,
           "start_column": 76
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-062390e0ba994ec7b951ec1e8efdab45",
+      "finding_id": "finding-9a973bdf5d5141fb8d8d8846e1e09e2f",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3500,11 +3582,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-bb3e7ad74791439480fb923e4fb51f86",
+      "finding_id": "finding-2820ca140192409488aa396fdb2cdc5c",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3532,11 +3615,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-4fdc771e4f034a5e89bf12c0a95f7d07",
+      "finding_id": "finding-38ba5765575f4a859d88c04fc4ff5a93",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3564,11 +3648,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-165b34647c6f427cb70b4f8c2667eb72",
+      "finding_id": "finding-b77f1a7e09ad4ab59de8c3473c8de4eb",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3596,11 +3681,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-c2253bcbeeda44318b025045acc29e05",
+      "finding_id": "finding-519d9f0aa5304457b6ae9ab720ffd8a0",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3628,11 +3714,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-4fb25eda45a34fa5b9c0cec0cae754f7",
+      "finding_id": "finding-13e5f49a031944cc8170cda6dc710ed7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3660,11 +3747,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-4501480957324d53b8fb060f2619f550",
+      "finding_id": "finding-0cfc86ae08e24dd39e5d9d8ad2f1bcb2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3692,11 +3780,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-ed591e16be4e4a65bdd84fb1b1cbb556",
+      "finding_id": "finding-5e0aeb37f193455c9f5d27da9395b77b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3724,11 +3813,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-1c6f1a2a6f314f2f95c356ceafd25d40",
+      "finding_id": "finding-cb5f6e1e0304489ca52dc07d11ec35a3",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3756,11 +3846,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-a1fee3ff56d646858a58ae5ce941f151",
+      "finding_id": "finding-1c2bae9ec2364880bd7cfe1180e59bf3",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3788,11 +3879,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-76069acc4d2143efb55d46fc8dbfccf6",
+      "finding_id": "finding-1a593241f38a4a4c9a7121aba32eb2d4",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3820,11 +3912,12 @@
           "end_line": null,
           "start_column": 29
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-b689afb3e07e4a218890b259ae5485f8",
+      "finding_id": "finding-96759757df03470dae91da695d45902f",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3852,11 +3945,12 @@
           "end_line": null,
           "start_column": 29
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-93e4bea7b73c45a38bc2add20932a07d",
+      "finding_id": "finding-b5e04be711de463ab7f5b68a09c53298",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3884,11 +3978,12 @@
           "end_line": null,
           "start_column": 29
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-e5fadea2d3524a518d9b6e3ee8669abc",
+      "finding_id": "finding-e801ffe57fc548f2a037fa839003ec0e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3916,11 +4011,12 @@
           "end_line": null,
           "start_column": 202
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-4ba1cddf9ba54ffcbc9fcf7428d06049",
+      "finding_id": "finding-a9a85213937b45128655bb620639f41b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3948,11 +4044,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-2ade006c36204e649214b738e82cc516",
+      "finding_id": "finding-9f3cf2e51e5248de92f031f72929d1c2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -3980,11 +4077,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-ff37a34c981d449a8033b6a0c4eca1a3",
+      "finding_id": "finding-4ef549a3ddac4d5cabc4e5926f6c21e4",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4012,11 +4110,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-68cf97b392714db794ae6116b1c73018",
+      "finding_id": "finding-066b91d4a504461693317760d39ae01d",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4044,11 +4143,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-ae907918300d4254937e7c5eb030792f",
+      "finding_id": "finding-cfb7f9f81bf240f698ac32429f7f7121",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4076,11 +4176,12 @@
           "end_line": null,
           "start_column": 21
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-9cf73287fa974759a9bcc90d8b9e6a77",
+      "finding_id": "finding-4effa5ec7fef4bd4abe340e71044f1bf",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4108,11 +4209,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-6b7a59d77c8747bba86b68574a298ea4",
+      "finding_id": "finding-81b183f50c9c40b090c249019062a997",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4140,11 +4242,12 @@
           "end_line": null,
           "start_column": 28
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-4032e5c1dba94bd092a0fca06d10702a",
+      "finding_id": "finding-049620711033448baa0d64c6bf962a9e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4172,11 +4275,12 @@
           "end_line": null,
           "start_column": 94
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-769e9f4f848c47b4920b2e12bf822439",
+      "finding_id": "finding-e73426b7aa54481ea389abb6efc09025",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4204,11 +4308,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-712c09d3aca449f38a57529fa0b3fe71",
+      "finding_id": "finding-9bef4c9c75494f85a291d0c64e512a1d",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4236,11 +4341,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-6506bd17bb6e4ee3a4152b28691d74b4",
+      "finding_id": "finding-44b776edb0e44aff9574047508de69c7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4268,11 +4374,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-9ddb3daf390e482c80d71e7056680cc0",
+      "finding_id": "finding-a1b22a3826954631be2e3c9ed23ed504",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4300,11 +4407,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-812866caa18e4ae4a7479352d48422dc",
+      "finding_id": "finding-32bc0d4becf248ea9eb968033243ad17",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4332,11 +4440,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-5f59496e89a94a0d87044775333081f1",
+      "finding_id": "finding-a517462dba7049c4abd84e0e75e2e41a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4364,11 +4473,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-3090ea13ca204a21b0a9879873fab03b",
+      "finding_id": "finding-35469cbb8d624904a2d53ed583774804",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4396,11 +4506,12 @@
           "end_line": null,
           "start_column": 306
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-96192a0b6c8248719bd6079bd6129a73",
+      "finding_id": "finding-95716a7816414ece9d93b94aa6a54846",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4428,11 +4539,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-3812220ea1894434a0a626139a6e79ff",
+      "finding_id": "finding-f9eb9e1faa7a483c90e7eb0af1c27fe9",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4460,11 +4572,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-94a22d2308d94ac99ff4f1bba02e1567",
+      "finding_id": "finding-055fecdecfc64a4ab892a0a4380eba08",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4492,11 +4605,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-be6b5f8c56584e5fa7b72792cc22f82c",
+      "finding_id": "finding-af7134edfaf143b3a6a26ff358a26b34",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4524,11 +4638,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-c67f238df7894251bafbfa5f172aa13a",
+      "finding_id": "finding-59eed14da2f4407b9596f1140090d05f",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4556,11 +4671,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-d8697529436e493bab2e90110512c1a9",
+      "finding_id": "finding-26b7abfaaea5459db9c0e70bcfd7f8f3",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4588,11 +4704,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-c9048c88680a490c8ca10d18fb126d47",
+      "finding_id": "finding-c2287fd3af6747e6ad46ba98b5d44d8e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4620,11 +4737,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-f0ce7a25efe34435a015b217514027e3",
+      "finding_id": "finding-663de5e665a1489fbd45341f40ebc194",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4652,11 +4770,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-f66b049299d34b9d820d4b6ff9721410",
+      "finding_id": "finding-0572d2cd512b40a5a13b381d3e14ef2c",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4684,11 +4803,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-94fb7f852dde4cfaa675db9a41fb7a35",
+      "finding_id": "finding-5fe698cae33c4531a3d18dc3555cb89b",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4716,11 +4836,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-4b46d33b44cb4d66b6c9f5499fed9ec0",
+      "finding_id": "finding-98262ae1f0f34b4abc7df4f4fa3efba2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4748,11 +4869,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-544e37c6214e4c358055a3979f460730",
+      "finding_id": "finding-c942056bfed34dc39e026a93f021b326",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4780,11 +4902,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-b6036b4ec5b94140b6aa28e8cf5d2f10",
+      "finding_id": "finding-ba5e85e3c99a4c038298cfe338f8e3d4",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4812,11 +4935,12 @@
           "end_line": null,
           "start_column": 17
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-9514b35a2fbf4fdba15d7655439fe025",
+      "finding_id": "finding-31271742af9445e8bff677b70034edcd",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4844,11 +4968,12 @@
           "end_line": null,
           "start_column": 16
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-419a6325c4ba4d70a170e0e544679a5a",
+      "finding_id": "finding-1a34bfd25b4b42318011c59e003b5de1",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4876,11 +5001,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-3e8ddbd0c7b54465801534d4ce9ad8ff",
+      "finding_id": "finding-58cf8a915bbf4635bb67563837b198ec",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4908,11 +5034,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-0a55c4e4a4c84f099fa36037917773ce",
+      "finding_id": "finding-eae1d29f575c49358392aec634656999",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4940,11 +5067,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-7ce387721d6847bba2668eb516bce7f8",
+      "finding_id": "finding-a0fd92d0693541b989b1eb051f82c8ea",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -4972,11 +5100,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-e1bb8ae3147b4a4caa377db0e2ad4aa6",
+      "finding_id": "finding-d20144aa93c24c079cb7b31cfbf76ae2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5004,11 +5133,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-f99607e246784dae868bef3ac52396a4",
+      "finding_id": "finding-c1071ae5f6434fc99831031400e7dc97",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5036,11 +5166,12 @@
           "end_line": null,
           "start_column": 5
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-f3c4467e06224df18af161b2c4d84d2c",
+      "finding_id": "finding-653a8f23829344dea90eb1e0aee72cf1",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5068,11 +5199,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-a642873b5f1943eda1672ed6b64f9c82",
+      "finding_id": "finding-974dbffd86e34893b118e185d5e97895",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5100,11 +5232,12 @@
           "end_line": null,
           "start_column": 56
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-9323f5572e0c47d282a86998ef7f6aaa",
+      "finding_id": "finding-ddea4519708c40cb8ae7180f5afa1723",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5132,11 +5265,12 @@
           "end_line": null,
           "start_column": 17
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-0950234fc4194d43aa41d808ec77b199",
+      "finding_id": "finding-1338e2bfd93a4ca58035fd90f9a837a5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5164,11 +5298,12 @@
           "end_line": null,
           "start_column": 10
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-711d637399ff4803af69414789a06b51",
+      "finding_id": "finding-8da6b604cdac41869277367477429c36",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5196,11 +5331,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-41aa7fc949c3422c9449e06f2efe6e93",
+      "finding_id": "finding-69aac56bd59b4236961655378b458206",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5228,11 +5364,12 @@
           "end_line": null,
           "start_column": 10
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-4077a74d3dc943d89a7a9768d99a912d",
+      "finding_id": "finding-1df32e9d515c4a24a290b2302d2b7a28",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5260,11 +5397,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-664b6460d51e4c01aa555472c76a03d7",
+      "finding_id": "finding-8881e8df99aa4b17b3c4d99062880cb3",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5292,11 +5430,12 @@
           "end_line": null,
           "start_column": 10
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-cb3cf47e7f0c4293aa9406e0cc9880b6",
+      "finding_id": "finding-a2a71397ec5647e58270dfef4216a2df",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5324,11 +5463,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-af34e25dd39a4be8a25cc37545ef16a4",
+      "finding_id": "finding-f15caec662574dd5a6a0c145e17eb7f8",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5356,11 +5496,12 @@
           "end_line": null,
           "start_column": 10
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-0e4511bb8c834da1b2ec90cd2c2f945a",
+      "finding_id": "finding-2c2a49be1e0644c5bfbeeaa8f7688e96",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5388,11 +5529,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-348f7a19e2ac40f78ceb8f14610ed2f3",
+      "finding_id": "finding-0982750986894980a204d20f482c1951",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5420,11 +5562,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-f9fb59ae39844f649ce838350ce56ad1",
+      "finding_id": "finding-d0b09c4f15194754a800a7ecee6c18e5",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5452,11 +5595,12 @@
           "end_line": null,
           "start_column": 13
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-842cba6635af4704812fb1ba43edc786",
+      "finding_id": "finding-d47f3b12148543ff91f59cdac2d38caa",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5484,11 +5628,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-472d928849994a7e9781a08b1f4e20d4",
+      "finding_id": "finding-4a1bba565d754736ba9c7250183a65ed",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5516,11 +5661,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-6e709dfedbd74bd8b6a611d31bab364d",
+      "finding_id": "finding-927c85a559ea4e2e9db7023674d415f8",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5548,11 +5694,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-6c8b97c7bd3c481a9a502437f86d3ad2",
+      "finding_id": "finding-98fa409afa894d1e97d3cd6e61058d9c",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5580,11 +5727,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-c2d43f3e2f564129bd1351c067a13a09",
+      "finding_id": "finding-2dd7f473ab7b4e479c93abd44886b6d0",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5612,11 +5760,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-7187ac3f697345998323493a955427ba",
+      "finding_id": "finding-8cd24040866b4cd1b68cba3907ffb241",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5644,11 +5793,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-971de72de811440aa522f08a7f672e94",
+      "finding_id": "finding-642683c7462243c0957abf07616f6ba2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5676,11 +5826,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-68a796ee1298454e8569f0f87e11b437",
+      "finding_id": "finding-48a6be93097c48a8a21e53180bb4be06",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5708,11 +5859,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-05628ed3f7084089a81f74f35a9ee5f9",
+      "finding_id": "finding-24d85bb931794e6e9fac9e74554788ba",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5740,11 +5892,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-e734bf843fff468f803eb0db6883d2ad",
+      "finding_id": "finding-2480667cc9e746aaa7baa21fbf25d0bc",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5772,11 +5925,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-37c35879b3f243fb970b26569450c17d",
+      "finding_id": "finding-d053a4573c264414bc5e05d9d504df3a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5804,11 +5958,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-2680c99edad24ecc909b8d7bcbb527de",
+      "finding_id": "finding-bc2505e3b8fa45768ecc68e9d1b59e49",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5836,11 +5991,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-dd3367e517ea42daa6c52bc9dedfe84a",
+      "finding_id": "finding-3d008a1fb36549a09cd540b1a9b8a692",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5868,11 +6024,12 @@
           "end_line": null,
           "start_column": 24
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-438e08de84504863badfd3ac3246c17f",
+      "finding_id": "finding-29f31aba13fb43c39f7377b2de15a2f7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5900,11 +6057,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-ae28a9f4ec404654938a96b2bef0b1a7",
+      "finding_id": "finding-9279e2086c9b4372bf3625c54ee01900",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5932,11 +6090,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-dcb9f85b78bd4181a480cad4c2faf078",
+      "finding_id": "finding-fc709194a3004c14860e3bae71505a27",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5964,11 +6123,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-611e3d6feb7d4060a60b0f3bf96e9b89",
+      "finding_id": "finding-7ece8abf43e345ca9a05f6f8b06bdac8",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -5996,11 +6156,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-4c6fb8d6bddd4c4e9598405db39f26b1",
+      "finding_id": "finding-1c63e0551d224a4cbf0d127604884444",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -6028,11 +6189,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-bcc29020ffc94203b496f53b2ce2eab2",
+      "finding_id": "finding-aefe725f38a3490b8d907b81c688bb47",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -6060,11 +6222,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-3555e94d8a174234a64d97575cb8edec",
+      "finding_id": "finding-b10686f72b5f464cbba3bfb7a6de67a2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -6092,11 +6255,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-5347d8cef07f434ca84c24d704e60101",
+      "finding_id": "finding-abdb53d000464726bf77fc473a0158c6",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -6124,11 +6288,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-0c1c2d7f60804393a51c2ad17da04e08",
+      "finding_id": "finding-8d685705e35c48b9b788db03e99b824f",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -6156,11 +6321,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-33fa9cbde58a407a901fbe962d2c22cb",
+      "finding_id": "finding-0041198b63fa436995478f8b114f603e",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -6188,11 +6354,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-31d2406984cc457dafcf5cd9e2816c2f",
+      "finding_id": "finding-8ad513c82fa244bbbc8d64225b7b3969",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -6220,11 +6387,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-d6fe6bd434a34ed199427cf3c8261e64",
+      "finding_id": "finding-5f5e969bc6cb421d880916d6e5b660b2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -6252,11 +6420,12 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-f3a317e18bb444fe86d3c605868db0ed",
+      "finding_id": "finding-ac24393832e944ed897dcccf1e8846df",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -6284,7 +6453,8 @@
           "end_line": null,
           "start_column": 0
         }
-      ]
+      ],
+      "surface": "docs"
     }
   ],
   "suppressed_count": 0,
@@ -6320,7 +6490,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -6333,7 +6503,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -6346,7 +6516,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -6359,7 +6529,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -6372,7 +6542,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }

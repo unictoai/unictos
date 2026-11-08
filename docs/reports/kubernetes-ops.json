@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "kubernetes-ops",
-    "source": "/tmp/uniscan-moavclmk/repo/devops/orchestration/kubernetes-ops",
-    "scanned_at": "2026-11-01T10:10:35.087839+00:00"
+    "source": "/tmp/uniscan-ru6dm_bb/repo/devops/orchestration/kubernetes-ops",
+    "scanned_at": "2026-11-08T09:58:05.084272+00:00"
   },
   "risk_assessment": {
     "score": 7,
@@ -86,7 +86,7 @@
   "issues": [
     {
       "id": "RP1",
-      "finding_id": "finding-766d916f44d24499a8676e79b6048d54",
+      "finding_id": "finding-b5b990fbaf7d480dae6a789063af63d8",
       "category": "MCP Rug Pull",
       "pattern": "Docker image referenced without tag or digest: 'docker pull <image>'.",
       "severity": "MEDIUM",
@@ -112,7 +112,8 @@
           "start_line": 45,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "docs"
     }
   ],
   "suppressed_count": 0,
@@ -148,7 +149,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -161,7 +162,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -174,7 +175,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -187,7 +188,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -200,7 +201,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }

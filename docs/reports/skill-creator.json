@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "skill-creator",
-    "source": "/tmp/uniscan-vzqau5_m/repo/skills/skill-creator",
-    "scanned_at": "2026-11-01T09:54:43.698329+00:00"
+    "source": "/tmp/uniscan-v5crkoou/repo/skills/skill-creator",
+    "scanned_at": "2026-11-08T09:43:22.527537+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -196,7 +196,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-b89a9c9f5a7a4f6fa647d9d0c0f18ffb",
+      "finding_id": "finding-cf1b1743fcb048c28cc33f38db012d7a",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -222,7 +222,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -237,11 +237,12 @@
           "start_line": 364,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "E2",
-      "finding_id": "finding-7ac64c5b02414c5d96fada643c0efb26",
+      "finding_id": "finding-d53692f72cbb4f4e87d4a6036da5b44c",
       "category": "Data Exfiltration",
       "pattern": "Env Variable Harvesting",
       "severity": "HIGH",
@@ -269,11 +270,12 @@
           "end_line": 33,
           "start_column": 28
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "E2",
-      "finding_id": "finding-7b934a4b5b654109b3a643ed14f2fc02",
+      "finding_id": "finding-cd5d840ef70f496d9ba8225cce502ef8",
       "category": "Data Exfiltration",
       "pattern": "Env Variable Harvesting",
       "severity": "HIGH",
@@ -301,11 +303,12 @@
           "end_line": 83,
           "start_column": 32
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AS1",
-      "finding_id": "finding-697dbb2ba4934680a0aee93e13222d8d",
+      "finding_id": "finding-bc8868e874bf4a71bf549873a497dca4",
       "category": "Agent Snooping",
       "pattern": "Agent Config Directory Access",
       "severity": "HIGH",
@@ -333,11 +336,12 @@
           "end_line": null,
           "start_column": 7
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "LP3",
-      "finding_id": "finding-cda757e31dc746a78bb437da957cc9b6",
+      "finding_id": "finding-b203877c8e4b4c15bb44216c94ba57bc",
       "category": "MCP Least Privilege",
       "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: env, file_read, file_write, shell.",
       "severity": "MEDIUM",
@@ -363,11 +367,12 @@
           "start_line": 1,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RA2",
-      "finding_id": "finding-9a220f25ee644917912fe279f27059ca",
+      "finding_id": "finding-766daf5e606345ae89fd77df82446224",
       "category": "Rogue Agent",
       "pattern": "Session Persistence",
       "severity": "MEDIUM",
@@ -395,11 +400,12 @@
           "end_line": null,
           "start_column": 3
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-7a7835a20c2147928797767388458f06",
+      "finding_id": "finding-4974ae4b58304eb891e8b564577c7fd8",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -429,11 +435,12 @@
           "start_column": 17,
           "end_column": 9
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-89b34dfbe97f40a096063952340c04b8",
+      "finding_id": "finding-8228f07a2b9d48e487d34edf44d67cf8",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -463,11 +470,12 @@
           "start_column": 13,
           "end_column": 5
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AST4",
-      "finding_id": "finding-c9fe51965dbb4d06b7472846a5622065",
+      "finding_id": "finding-b913d558eefb417b9843e406da467822",
       "category": "Dangerous Code Execution",
       "pattern": "subprocess module call",
       "severity": "MEDIUM",
@@ -497,7 +505,8 @@
           "start_column": 18,
           "end_column": 9
         }
-      ]
+      ],
+      "surface": "code"
     }
   ],
   "suppressed_count": 0,
@@ -533,7 +542,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -546,7 +555,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -559,7 +568,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -572,7 +581,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -585,7 +594,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -769,27 +778,51 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: printf invocation; location: reported source range; unchecked scope: command word. Relevant parser input not fully checked.",
         "path": "assets/eval_review.html",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "printf_invocation",
+          "source_start_offset": 6352,
+          "source_end_offset": 6445,
+          "start_line": 126,
+          "end_line": 126,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: printf invocation; location: reported source range; unchecked scope: command word. Relevant parser input not fully checked.",
         "path": "eval-viewer/viewer.html",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "printf_invocation",
+          "source_start_offset": 20668,
+          "source_end_offset": 20712,
+          "start_line": 709,
+          "end_line": 709,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       }
     ],
     "scope_exclusions": [],

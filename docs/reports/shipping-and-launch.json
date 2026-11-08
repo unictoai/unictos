@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "shipping-and-launch",
-    "source": "/tmp/uniscan-lrcmp19d/repo/skills/shipping-and-launch",
-    "scanned_at": "2026-11-01T10:00:32.007525+00:00"
+    "source": "/tmp/uniscan-6x13g46b/repo/skills/shipping-and-launch",
+    "scanned_at": "2026-11-08T09:48:51.800062+00:00"
   },
   "risk_assessment": {
     "score": 20,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "AR2",
-      "finding_id": "finding-35a763da0e5c483b940a89fe8f9c2ff0",
+      "finding_id": "finding-45a2701b34524779b51fa200f40b201d",
       "category": "Anti-Refusal",
       "pattern": "Anti-Refusal Statement",
       "severity": "HIGH",
@@ -56,7 +56,8 @@
           "start_column": 26,
           "end_column": 37
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -92,7 +93,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -105,7 +106,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -118,7 +119,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -131,7 +132,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -144,7 +145,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }

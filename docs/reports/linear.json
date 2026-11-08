@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "Linear",
-    "source": "/tmp/skillspector_fnn4ur3_",
-    "scanned_at": "2026-11-01T10:10:03.908881+00:00"
+    "source": "/tmp/skillspector_ilanoot6",
+    "scanned_at": "2026-11-08T09:57:35.370623+00:00"
   },
   "risk_assessment": {
     "score": 33,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "PE3",
-      "finding_id": "finding-60dbc9f41255433496b0bb33b9bbb3f2",
+      "finding_id": "finding-27092498387b4fc38d768fc55ea746f0",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -54,11 +54,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "PE3",
-      "finding_id": "finding-79c5422ce9354ea3b2a3b5c80546ed19",
+      "finding_id": "finding-35b7edff6fcf46a49f66f7a2d4b6c530",
       "category": "Privilege Escalation",
       "pattern": "Credential Access",
       "severity": "HIGH",
@@ -86,11 +87,12 @@
           "end_line": null,
           "start_column": 57
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-54865c50ef874bdfae295d150f6c0e9d",
+      "finding_id": "finding-c0cf0e6a5c6f46c188c675262c02cabf",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx tsx'.",
       "severity": "MEDIUM",
@@ -116,11 +118,12 @@
           "start_line": 682,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "RP1",
-      "finding_id": "finding-6410d6193d7d4b6485826e43973b655c",
+      "finding_id": "finding-94deb129adba4ddcbaa58fd1da02abd1",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx tsx'.",
       "severity": "MEDIUM",
@@ -146,7 +149,8 @@
           "start_line": 690,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -182,7 +186,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -195,7 +199,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -208,7 +212,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -221,7 +225,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -234,7 +238,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -288,14 +292,26 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: expansion boundary; location: reported source range; unchecked scope: expression. Relevant parser input not fully checked.",
         "path": "SKILL.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "expansion_boundary",
+          "source_start_offset": 8723,
+          "source_end_offset": 16159,
+          "start_line": 236,
+          "end_line": 496,
+          "unchecked_scope": "expression",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",

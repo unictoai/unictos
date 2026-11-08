@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "citation-management",
-    "source": "/tmp/uniscan-e1nl02kw/repo/skills/citation-management",
-    "scanned_at": "2026-11-01T10:04:41.679400+00:00"
+    "source": "/tmp/uniscan-humj1wx9/repo/skills/citation-management",
+    "scanned_at": "2026-11-08T09:52:47.649653+00:00"
   },
   "risk_assessment": {
     "score": 100,
@@ -236,7 +236,7 @@
   "issues": [
     {
       "id": "AE1",
-      "finding_id": "finding-238696787f9148d58219bbb6b9f17542",
+      "finding_id": "finding-7157d3cee4ef4be3aaf507fc90e5802e",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -262,7 +262,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -277,11 +277,12 @@
           "start_line": 58,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-3ba312fb6d8944f2bf731cb0371b0a8b",
+      "finding_id": "finding-f4333f7a934d48b68436459fcd1ee1a7",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -307,7 +308,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -322,11 +323,12 @@
           "start_line": 123,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-878aaeb45cff4652bcc3294ff9115cd0",
+      "finding_id": "finding-c2a37b46808d4b4ead01f61d4b53191e",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -352,7 +354,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -367,11 +369,12 @@
           "start_line": 162,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AE1",
-      "finding_id": "finding-608d7a4d5683458ea3731c5b52ed93d8",
+      "finding_id": "finding-6df41f36ed08484b9894f4d6112a944a",
       "category": "analysis-evasion",
       "pattern": "Incomplete referenced artifact analysis",
       "severity": "HIGH",
@@ -397,7 +400,7 @@
         "reasons": [
           {
             "reason_code": "static_parse_limit",
-            "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
             "phase": "static",
             "analyzers": [
               "static_patterns_tool_misuse"
@@ -412,11 +415,12 @@
           "start_line": 172,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "AR2",
-      "finding_id": "finding-e1f6e88bc61e4094a7187e38b3581914",
+      "finding_id": "finding-17464ef4aa35465e8e47d4716382c0be",
       "category": "Anti-Refusal",
       "pattern": "Anti-Refusal Statement",
       "severity": "HIGH",
@@ -446,11 +450,12 @@
           "start_column": 40,
           "end_column": 51
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "TM1",
-      "finding_id": "finding-660bf92ef74b4029800caacb57e0c477",
+      "finding_id": "finding-752c94734dfd4e37a771915b9780bdf1",
       "category": "Tool Misuse",
       "pattern": "Tool Parameter Abuse",
       "severity": "HIGH",
@@ -478,11 +483,12 @@
           "end_line": null,
           "start_column": 2
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "LP1",
-      "finding_id": "finding-ad315ec7624d40599b144ab6e8826de6",
+      "finding_id": "finding-2cb611cbc1494415a210c9c50b5b9d5b",
       "category": "MCP Least Privilege",
       "pattern": "Code capability 'env' detected in scripts/extract_metadata.py but not covered by declared permissions.",
       "severity": "HIGH",
@@ -508,11 +514,12 @@
           "start_line": 1,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AST3",
-      "finding_id": "finding-ad1a844c226f4370a7b39ae3af06bfc5",
+      "finding_id": "finding-2fdfd910b8294ad7b09311016f0d3f06",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic import via __import__()",
       "severity": "MEDIUM",
@@ -542,11 +549,12 @@
           "start_column": 23,
           "end_column": 44
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AST3",
-      "finding_id": "finding-10b38e39f27845718cd6ff1a3de3bf13",
+      "finding_id": "finding-e9d70087936c4de9ad7aa8b97c320b83",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic import via __import__()",
       "severity": "MEDIUM",
@@ -576,11 +584,12 @@
           "start_column": 23,
           "end_column": 44
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AST3",
-      "finding_id": "finding-6f9a4e0df07e4397b10a601f54b0f2d2",
+      "finding_id": "finding-617db770396447ef9bca78653bc443dc",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic import via __import__()",
       "severity": "MEDIUM",
@@ -610,11 +619,12 @@
           "start_column": 23,
           "end_column": 44
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AST3",
-      "finding_id": "finding-f3930b4794284ecaa8b43beba659f08e",
+      "finding_id": "finding-10ff986e36f74420b578bcd2bb68ba79",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic import via __import__()",
       "severity": "MEDIUM",
@@ -644,11 +654,12 @@
           "start_column": 23,
           "end_column": 44
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AST3",
-      "finding_id": "finding-a4410fe0afa84451a1c1c979c40a0342",
+      "finding_id": "finding-a002c5e265ed454cb8c5e56376c3bf4f",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic import via __import__()",
       "severity": "MEDIUM",
@@ -678,11 +689,12 @@
           "start_column": 23,
           "end_column": 44
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "AST3",
-      "finding_id": "finding-562427d9a4ce45eb8b8ceab80f17ead7",
+      "finding_id": "finding-bb0c6558f12542beae43b29ae4a27a08",
       "category": "Dangerous Code Execution",
       "pattern": "Dynamic import via __import__()",
       "severity": "MEDIUM",
@@ -712,11 +724,12 @@
           "start_column": 23,
           "end_column": 44
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "E1",
-      "finding_id": "finding-be2cc1acab164d489a439abacfc2b9be",
+      "finding_id": "finding-c2f27c85b38c4fb984bab5f70b2173c2",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -744,11 +757,12 @@
           "end_line": null,
           "start_column": 16
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "E1",
-      "finding_id": "finding-9a71e93817244ed98c3833d8724ce487",
+      "finding_id": "finding-13858efceb084c57a6c52766ff6fcc0c",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -776,11 +790,12 @@
           "end_line": null,
           "start_column": 18
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-8afbb79c21be4553b97c07a6727fe276",
+      "finding_id": "finding-eaa6200e9caf412098d808590462a0da",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -808,11 +823,12 @@
           "end_line": null,
           "start_column": 15
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-897047285a5044a1aebb18a40e72eafb",
+      "finding_id": "finding-68a17933d1d4427e8a198938d72f0df7",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -840,11 +856,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-e7ac2cc6dbb34cb992b2232a7ed2dc85",
+      "finding_id": "finding-1212ed1ef1684781a56486ab097c2c53",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -872,11 +889,12 @@
           "end_line": null,
           "start_column": 16
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "E1",
-      "finding_id": "finding-b125e7abd1db4eb6962805be3b83274b",
+      "finding_id": "finding-9771767afdee4a6883b4948bc660f631",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -904,11 +922,12 @@
           "end_line": null,
           "start_column": 29
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "E1",
-      "finding_id": "finding-25fea55f60e64d2f85bdaeabf7d345c8",
+      "finding_id": "finding-246e84abff9f470eb12c775c2367d1c6",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -936,11 +955,12 @@
           "end_line": null,
           "start_column": 18
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-5e288981b74943cdb5f857826c6dcbe9",
+      "finding_id": "finding-11147873224e45b4b6315b1320a6d183",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -968,11 +988,12 @@
           "end_line": null,
           "start_column": 11
         }
-      ]
+      ],
+      "surface": "code"
     },
     {
       "id": "E1",
-      "finding_id": "finding-6c4dc4bd8a51461785b10ad5457e2123",
+      "finding_id": "finding-edafe6d4926b42dfb3a780f6e852721a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1000,11 +1021,12 @@
           "end_line": null,
           "start_column": 16
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "E1",
-      "finding_id": "finding-167b782b7b204f7e866dd4b2a361f2e9",
+      "finding_id": "finding-68440fea42044014a241e6f45cf3ce6a",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1032,11 +1054,12 @@
           "end_line": null,
           "start_column": 18
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-3a3115c6d8ce473eb3b8e93a6d435f87",
+      "finding_id": "finding-a96dac2711ae43078cafa64822c51462",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1064,11 +1087,12 @@
           "end_line": null,
           "start_column": 15
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-13442993f87f44c5b3277cb75c191b19",
+      "finding_id": "finding-cbc8821ccbb7464c88f1e3fa51d29462",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1096,11 +1120,12 @@
           "end_line": null,
           "start_column": 4
         }
-      ]
+      ],
+      "surface": "docs"
     },
     {
       "id": "E1",
-      "finding_id": "finding-78b20d437a7e4df6806137dd3e788c97",
+      "finding_id": "finding-328cbc4245ba4f18a2124dac989e1e52",
       "category": "Data Exfiltration",
       "pattern": "External Transmission",
       "severity": "MEDIUM",
@@ -1128,7 +1153,8 @@
           "end_line": null,
           "start_column": 33
         }
-      ]
+      ],
+      "surface": "code"
     }
   ],
   "suppressed_count": 0,
@@ -1164,7 +1190,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1177,7 +1203,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1190,7 +1216,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1203,7 +1229,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1216,7 +1242,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -1270,14 +1296,26 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: printf invocation; location: reported source range; unchecked scope: command word. Relevant parser input not fully checked.",
         "path": "SKILL.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "printf_invocation",
+          "source_start_offset": 5577,
+          "source_end_offset": 5583,
+          "start_line": 116,
+          "end_line": 116,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
@@ -1353,14 +1391,26 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. Full inspection depends on information available only when this code runs. Check: printf invocation; location: reported source range; unchecked scope: command word. Relevant parser input not fully checked.",
         "path": "references/core_workflow.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "runtime_dependent",
+          "check": "printf_invocation",
+          "source_start_offset": 6733,
+          "source_end_offset": 6739,
+          "start_line": 182,
+          "end_line": 182,
+          "unchecked_scope": "command_word",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       }
     ],
     "scope_exclusions": [],

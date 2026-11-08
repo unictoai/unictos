@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "cypress-e2e",
-    "source": "/tmp/uniscan-0x6148nc/repo/packs/qa-essentials/skills/cypress-e2e",
-    "scanned_at": "2026-11-01T10:11:15.147613+00:00"
+    "source": "/tmp/uniscan-60i3fw6o/repo/packs/qa-essentials/skills/cypress-e2e",
+    "scanned_at": "2026-11-08T09:58:42.612434+00:00"
   },
   "risk_assessment": {
     "score": 7,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "RP1",
-      "finding_id": "finding-7cc1740b5bf94e4ba193ad0f4a31f48a",
+      "finding_id": "finding-c3afe49ea1664f45ad21416586cabacf",
       "category": "MCP Rug Pull",
       "pattern": "MCP server referenced without pinned version: 'npx cypress'.",
       "severity": "MEDIUM",
@@ -52,7 +52,8 @@
           "start_line": 466,
           "end_line": null
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -88,7 +89,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -101,7 +102,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -114,7 +115,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -127,7 +128,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -140,7 +141,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -194,14 +195,26 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: expansion boundary; location: reported source range; unchecked scope: expression. Relevant parser input fully checked.",
         "path": "SKILL.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "expansion_boundary",
+          "source_start_offset": 3205,
+          "source_end_offset": 13680,
+          "start_line": 122,
+          "end_line": 493,
+          "unchecked_scope": "expression",
+          "observed_is_lower_bound": false,
+          "full_input_checked": true,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",

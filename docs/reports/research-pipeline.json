@@ -1,8 +1,8 @@
 {
   "skill": {
     "name": "research-pipeline",
-    "source": "/tmp/uniscan-00mgocy8/repo/skills/research-pipeline",
-    "scanned_at": "2026-11-01T10:16:24.109679+00:00"
+    "source": "/tmp/uniscan-3t1j1ew_/repo/skills/research-pipeline",
+    "scanned_at": "2026-11-08T10:03:37.899780+00:00"
   },
   "risk_assessment": {
     "score": 19,
@@ -26,7 +26,7 @@
   "issues": [
     {
       "id": "EA2",
-      "finding_id": "finding-772bb8bda665408a9ec9e585a243caa0",
+      "finding_id": "finding-8720a47904fc4d8c9c2818bb564b23d9",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -54,11 +54,12 @@
           "end_line": null,
           "start_column": 142
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "EA2",
-      "finding_id": "finding-4293a80694b54ca9899e78dcc5f8ab8f",
+      "finding_id": "finding-533489fc06ff4922912c62ca6e3523f7",
       "category": "Excessive Agency",
       "pattern": "Autonomous Decision Making",
       "severity": "MEDIUM",
@@ -86,11 +87,12 @@
           "end_line": null,
           "start_column": 184
         }
-      ]
+      ],
+      "surface": "instructions"
     },
     {
       "id": "EA4",
-      "finding_id": "finding-38db9ef4835c45658b0d32d2f18fbff5",
+      "finding_id": "finding-55ca3fe814d14de3bcb8fadf5c44e5a9",
       "category": "Excessive Agency",
       "pattern": "Unbounded Resource Access",
       "severity": "MEDIUM",
@@ -118,7 +120,8 @@
           "end_line": null,
           "start_column": 103
         }
-      ]
+      ],
+      "surface": "instructions"
     }
   ],
   "suppressed_count": 0,
@@ -154,7 +157,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -167,7 +170,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -180,7 +183,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -193,7 +196,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -206,7 +209,7 @@
             "value": "2.12.0",
             "source": "skillspector_package",
             "source_revision": {
-              "value": "6d0b7c849949cab9181e57798247f89e48ce5d6a",
+              "value": "e48d771a26f7398b36256ceb8d8f94adce3d5c44",
               "source": "package_vcs_metadata"
             }
           }
@@ -260,14 +263,26 @@
         "outcome": "partial",
         "phase": "static",
         "reason_code": "static_parse_limit",
-        "message": "A security-relevant expression exceeded a bounded static parser's span limit.",
+        "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: expansion boundary; location: reported source range; unchecked scope: expression. Relevant parser input not fully checked.",
         "path": "SKILL.md",
         "start_line": null,
         "end_line": null,
         "fatal": false,
         "analyzers": [
           "static_patterns_tool_misuse"
-        ]
+        ],
+        "parser_diagnostic": {
+          "cause": "boundary_unresolved",
+          "check": "expansion_boundary",
+          "source_start_offset": 6283,
+          "source_end_offset": 9770,
+          "start_line": 59,
+          "end_line": 124,
+          "unchecked_scope": "expression",
+          "observed_is_lower_bound": false,
+          "full_input_checked": false,
+          "location_precision": "source_span"
+        }
       },
       {
         "outcome": "partial",
